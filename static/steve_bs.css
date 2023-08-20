@@ -23,7 +23,7 @@
 
 .border-dark {
     border-color: #aaaaaa;
-    background: #dddddd;
+    background: #eeeeee;
 }
 
 ul.lst-none {
@@ -48,7 +48,7 @@ ul.links {
 }
 
 .menu-item {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .nav-links ul li {
@@ -176,7 +176,7 @@ body {
 }
 
 nav {
-    background: #cccccc;
+    background: #eeeeee;
     height: 40px;
     display:flex;
     justify-content:center;
