@@ -24,8 +24,7 @@ export default {
       assets: 'build',
       fallback: false,
       precompress: false,
-        strict: false,
-        basepath: '/svb/'
+        strict: false
       // strict: true
     })
   }

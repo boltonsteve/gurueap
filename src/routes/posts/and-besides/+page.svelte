@@ -1,5 +1,5 @@
 <script>
-    import AndBesides from './AndBesides.svelte'
+    import AndBesides from './andBesides.svelte'
 </script>
 
 <AndBesides />
