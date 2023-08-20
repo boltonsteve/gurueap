@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Even is not Bahkan",
+        href: "even-bahkan",
+        keywords: ['compare','contrast','vocabulary','signals']
+    },
+    {
         title: "It",
         href: "it",
         keywords: ['referencing','substitution','grammar']

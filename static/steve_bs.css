@@ -120,6 +120,11 @@ ul.links {
     margin-left: var(--3);
 }
 
+.px-1 {
+    padding-left: var(--1);
+    padding-right: var(--1);
+}
+
 /* padding-top */
 .pt-0 {
     padding-top: var(--0);
