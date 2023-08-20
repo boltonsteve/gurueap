@@ -32,23 +32,18 @@
 
     let showA = false;
     let showB = false;
+    let showHide;
 
     const show1 = () => {
         showA = !showA;
-        if(showA) {
-            document.getElementById('s1').innerText = 'hide';
-        } else {
-            document.getElementById('s1').innerText = 'show';
-        }
+        showHide = showA ? 'hide' : 'show';
+        document.getElementById('s1').innerText = showHide;
     }
 
     const show2 = () => {
         showB = !showB;
-        if(showB) {
-            document.getElementById('s2').innerText = 'hide';
-        } else {
-            document.getElementById('s2').innerText = 'show';
-        }
+        showHide = showB ? 'hide' : 'show';
+        document.getElementById('s2').innerText = showHide;
     }
 
 </script>
