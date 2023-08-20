@@ -1,6 +1,6 @@
 <div class="mb-3">
     <img src="/img/youth-hoodies.png" width="100%" alt="youths">
-    <h1>Youths and young people</h1>
+    <h1>Youths and youngish people</h1>
     <p class="ml-3 font-italic">These days <span class="font-weight-bold text-danger">youths</span> are more challenged by the future because making decisions about the future is not easy.</p>
     <p>This is grammatically correct but inappropriate.</p>
 
