@@ -1,5 +1,5 @@
 <script>
-    import ItOrThis from './ItOrThis.svelte'
+    import ItOrThis from './itOrThis.svelte'
 </script>
 
 <ItOrThis />

@@ -1,5 +1,5 @@
 <script>
-    import ThereIsAda from './ThereIsAda.svelte'
+    import ThereIsAda from './thereIsAda.svelte'
 </script>
 
 <ThereIsAda />

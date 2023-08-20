@@ -1,5 +1,5 @@
 <script>
-    import Become from './Become.svelte'
+    import Become from './become.svelte'
 </script>
 
 <Become />
