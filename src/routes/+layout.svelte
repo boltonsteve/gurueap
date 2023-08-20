@@ -8,7 +8,4 @@
     </div>
 </nav>
 
-
-<div id="wrapper">
-    <slot />
-</div>
+<slot />

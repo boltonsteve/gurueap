@@ -1,4 +1,4 @@
-<div class="mb-3">
+<div class="mb-3 mw-600">
     <h1>Cannot 'also can'!</h1>
     <p class="ml-3 font-italic">In addition to smoking, excessive drinking <span class="font-weight-bold text-danger">also can</span> cause illness.</p>
 

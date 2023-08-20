@@ -1,4 +1,4 @@
-<div class="mb-3">
+<div class="mb-3 mw-600">
 
     <img src="/img/society.jpg" class="img-fluid" alt="society">
 

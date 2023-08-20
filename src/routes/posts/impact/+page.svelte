@@ -1,4 +1,4 @@
-<div class="mb-3">
+<div class="mb-3 mw-600">
 
     <h1>Have an impact on..</h1>
 

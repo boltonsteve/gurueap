@@ -1,4 +1,4 @@
-<div class="mb-3">
+<div class="mb-3 mw-600">
 
     <h1>Goodbye to 'By'</h1>
 

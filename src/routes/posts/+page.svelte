@@ -58,7 +58,8 @@
 
 </script>
 
+<div class="mb-3 mw-600">
 <h1>Posts</h1>
-
 {@html menu}
+</div>
 
