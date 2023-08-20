@@ -1,5 +1,15 @@
 export const links = [
     {
+        title: "Use or Usage",
+        href: "usage",
+        keywords: ['vocabulary']
+    },
+    {
+        title: "Million or Millions?",
+        href: "millions",
+        keywords: ['qualntifiers','vocabulary','numbers']
+    },
+    {
         title: "Even is not Bahkan",
         href: "even-bahkan",
         keywords: ['compare','contrast','vocabulary','signals']
