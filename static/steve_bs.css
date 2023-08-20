@@ -6,10 +6,23 @@
   --teal: teal;
   --orange: orange;
   --grey: #CCCCCC;
+  --light: #aaaaaa;
   --0: 0px;
   --1: 10px;
   --2: 20px;
   --3: 30px;
+}
+
+.bg-success {
+    background: var(--green);
+}
+
+.bg-danger {
+    background: var(--red);
+}
+
+.bg-warning {
+    background: var(--orange);
 }
 
 .border {
@@ -67,6 +80,10 @@ ul.links {
 .text-center {
     display: flex;
     justify-content: center; /* Centering Horizantly */
+}
+
+.text-light {
+    color: var(--light);
 }
 
 .text-success {
