@@ -1,8 +1,8 @@
 <script>
-    import { message} from '$lib/message.js';
+    import { message } from '$lib/message.js';
 </script>
 
-<div class="mw-600 mb-3" style="display:flex;align-items:center;height:80vh;">
+<div class="mw-600 mb-3" style="display:flex;align-items:center;height:70vh;">
     <div>
         <h1>Welcome to GuruEAP</h1>
         <h2>Academic English not only for Indonesians</h2>
