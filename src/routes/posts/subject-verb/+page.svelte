@@ -6,15 +6,15 @@
 
     let items = [
         "Hanging out with friends at the weekend",
-        "is:are:verb agrees with 'hanging'",
+        "is:are:verb 'is' agrees with verb 'hanging'",
         "lots of fun. On a typical Saturday, we go to the beach. Swimming when the waves are high",
-        "is:are:verb agrees with 'swimming'",
+        "is:are:verb 'is' agrees with noun 'swimming'",
         "one of our favourite activities. Towards the end of the day, if it's really hot, drinking a few beers with friends",
-        "is:are:verb agrees with 'drinking'",
+        "is:are:verb 'is' agrees with noun 'drinking'",
         "not unusual. Budi and Simon sometimes",
-        "drink:drinks:verb agrees with 'Budi and Simon' (plural!)",
+        "drink:drinks:verb 'drink' agrees with noun phrase 'Budi and Simon' (plural!)",
         "too much. Simon sometimes",
-        "drinks:drink:verb agrees with 'Simon' (singular)",
+        "drinks:drink:verb 'drinks' agrees with noun 'Simon' (singular)",
         "5 beers before heading home!"
     ]
 
@@ -27,18 +27,18 @@
         if(next.match(/:/)) {
             let parts = next.split(/:/);
             let data = parts.pop();
-            feedbacks.push(`<b>${numbering}</b>. ${data}`);
+            feedbacks.push(data);
             corrects.push(parts[0]);
 
             // Shuffle parts
             /* parts.sort(() => Math.random() - 0.5); */
             shuffle(parts);
 
-            let menu = `<b>${numbering}.</b> <select id="s${numbering-1}" class="ans">
+            let menu = `<span style="white-space:nowrap;"><b>${numbering}.</b> <select id="s${numbering-1}" class="ans">
                 <option value="select">select</option>`;
 
             let options = parts.map( (next) => `<option value="${next}">${next}</option>` );
-            menu += options.join('') + `</select>`;
+            menu += options.join('') + `</select></span>`;
             numbering ++;
             return menu;
         } else {
@@ -50,7 +50,6 @@
     console.log('Feedbacks: ', feedbacks)
 
     activity = menuedArr.join(' ');
-    console.log("menuedStr: " + activity);
 
     function shuffle(array) {
       let currentIndex = array.length,  randomIndex;
@@ -70,14 +69,15 @@
     const checkAns = () => {
         let answers = document.querySelectorAll('.ans');
         answers.forEach( (next,i) => {
+            let menu = document.getElementById('s'+i);
             if(next.value == corrects[i]) {
-                document.getElementById('s'+i).classList.add('bg-success','text-white');
+                menu.classList.add('bg-success','text-white');
             } else {
-                document.getElementById('s'+i).classList.add('bg-danger','text-white');
+                menu.classList.add('bg-danger','text-white');
             }
         });
 
-        fb = `<div class="mb-2">${feedbacks.join('<br>')}</div>`;
+        fb = `<div class="mb-2"><ol><li>${feedbacks.join('</li><li>')}</li></ul></div>`;
 
         feedback = true;
     }
