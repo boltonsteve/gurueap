@@ -10,11 +10,8 @@
     const menuDivs = links.map( next => {
         let k = 'keywords' in next ? `<div>${next.keywords.join(', ')}</div>` : ``;
 
-        return `<div class="row-col cols-11 mb-1 border border-dark rounded" style="align-items:center;">
-            <div class="menu-item">
+        return `<div class="mb-1 border border-dark rounded menu-item text-center">
                 <a href="${base}/posts/${next.href}" class="link-menu">${next.title}</a>
-            </div>
-            <div class="keywords">${k}</div>
         </div>`
     })
 
@@ -22,7 +19,7 @@
 
 </script>
 
-<div class="mb-3 mw-600">
+<div class="mb-3 mw-500">
     <h1>Posts</h1>
     {@html menu}
 </div>
