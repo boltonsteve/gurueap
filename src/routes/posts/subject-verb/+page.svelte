@@ -6,15 +6,15 @@
 
     let items = [
         "Hanging out with friends at the weekend",
-        "is:are:verb 'is' agrees with verb 'hanging'",
+        "is:are:'is' (v) agrees with 'hanging' (n)",
         "lots of fun. On a typical Saturday, we go to the beach. Swimming when the waves are high",
-        "is:are:verb 'is' agrees with noun 'swimming'",
+        "is:are:'is' (v) agrees with 'swimming' (n)",
         "one of our favourite activities. Towards the end of the day, if it's really hot, drinking a few beers with friends",
-        "is:are:verb 'is' agrees with noun 'drinking'",
+        "is:are:'is' (v) agrees with 'drinking' (n)",
         "not unusual. Budi and Simon sometimes",
-        "drink:drinks:verb 'drink' agrees with noun phrase 'Budi and Simon' (plural!)",
+        "drink:drinks:'drink' (v) agrees with 'Budi and Simon' (n, plural)",
         "too much. Simon sometimes",
-        "drinks:drink:verb 'drinks' agrees with noun 'Simon' (singular)",
+        "drinks:drink:'drinks' (v) agrees with 'Simon' (n, singular)",
         "5 beers before heading home!"
     ]
 
