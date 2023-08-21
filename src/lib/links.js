@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Make..",
+        href: "make",
+        keywords: ['grammar','collocation']
+    },
+    {
         title: "Parallel Structures",
         href: "parallel",
         keywords: ['grammar','coherence','cohesion']

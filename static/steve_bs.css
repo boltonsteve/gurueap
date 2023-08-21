@@ -13,6 +13,13 @@
   --3: 30px;
 }
 
+.alert {
+    border:1px;
+    border-radius: 5px;
+    background: pink;
+    padding: var(--3);
+}
+
 .small {
     font-size:0.8rem;
 }
@@ -222,7 +229,7 @@ body {
 
 nav {
     /* background: #eeeeee; */
-    height: 50px;
+    height: 40px;
     display:flex;
     justify-content:center;
     align-items:center;
