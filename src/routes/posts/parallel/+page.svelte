@@ -1,5 +1,7 @@
 <div class="mb-3 mw-600">
+
     <img src="/img/parallel-lines.png" class="img-fluid mb-0" alt="parallel lines">
+
     <h1>Parallel Structures</h1>
 
     <p class="ml-3 font-italic">Modern art and music can cause conflicts in existing cultural values and can cause misinterpretation or even losing their originality in cultural identity.</p>

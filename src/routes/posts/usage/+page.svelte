@@ -1,10 +1,12 @@
 <div class="mb-3 mw-600">
+
     <img src="/img/ed-tech.png" class="img-fluid" alt="ed tech">
+
     <h1><i>Use</i> or <i>Usage</i></h1>
 
     <p class="ml-3 font-italic">The <span class="font-weight-bold text-danger">usage</span> of technology is very important to learn effectively.</p>
 
-    <div class="alert"><p><b><i>Usage</i></b> is quite different from <b><i>use</i></b>.</p></div>
+    <div class="alert text-center"><p><b>Usage</b> is quite different from <b>use!</b></p></div>
 
     <p>For example, when we refer to <i><b>word usage</b></i>, we mean the <i>conventions</i> for using words:</p>
     <p class="ml-3 font-italic">This text describes the principles of word <span class="font-weight-bold text-success">usage</span>.</p>
@@ -14,7 +16,8 @@
     <ul class="lh-15">
         <li>how a word is conventionally used in a certain communicative context</li>
         <li>how a word is conventionally used next to other words in a sentence</li>
-        <li>how the same word is conventionally used in a particular language<br><span class="small">(The Indonesian meaning of 'convenient', for example, is not quite the same as the English meaning. 'Convenient' is used in different contexts in English and in Bahasa Indonesia.)</span></li>
+        <li>how the same word is conventionally used in a particular language</li>
+        <li class="small lst-none" style="line-height:1rem;">(The Indonesian meaning of 'convenient', for example, is not quite the same as the English meaning. 'Convenient' is used in different contexts in English and in Bahasa Indonesia.)</li>
     </ul>
 
     <p>On the other hand when we refer to the <i><b>use of words</b></i>, we mean only the <i>employment</i> of words:</p>

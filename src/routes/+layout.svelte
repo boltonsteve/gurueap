@@ -11,4 +11,4 @@
     </div>
 </nav>
 
-<div class="px-1"><slot /></div>
+<div class="px-2"><slot /></div>

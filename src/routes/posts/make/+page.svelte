@@ -1,4 +1,4 @@
-<div class="mb-3 mw-600">
+<div class="mb-3 mw-500">
 
     <h1>Make..</h1>
 
@@ -6,28 +6,26 @@
 
     <p>I'm not sure why Indonesian students run into problems with make, especially when make is tied to an adjective -  as it is in this example. The Indonesian structure is exactly the same as the English:</p>
 
-<table style="width: 100%;">
-<tbody>
-<tr>
-<td width="50"></td>
-<td><strong>verb</strong></td>
-<td><strong>noun</strong></td>
-<td><strong>adjective</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;">🇮🇩</td>
-<td>membuat</td>
-<td>orang</td>
-<td>senang</td>
-</tr>
-<tr>
-<td style="text-align: center;">🇬🇧</td>
-<td>make</td>
-<td>someone</td>
-<td>happy</td>
-</tr>
-</tbody>
-</table>
+    <div class="row-col cols-1222">
+    <div>&nbsp;</div>
+    <div class="font-weight-bold">verb</div>
+    <div class="font-weight-bold">noun</div>
+    <div class="font-weight-bold">adjective</div>
+    </div>
+
+    <div class="row-col cols-1222">
+        <div>🇮🇩</div>
+        <div>membuat</div>
+        <div>orang</div>
+        <div>senang</div>
+    </div>
+
+    <div class="row-col cols-1222">
+        <div>🇬🇧</div>
+        <div>make</div>
+        <div>someone</div>
+        <div>happy</div>
+    </div>
 
 <p>Buat orang senang = Make someone happy = <b>Make + noun + adjective</b></p>
 
