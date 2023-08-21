@@ -1,5 +1,5 @@
 <script>
-    import { indonesia, uk } from '$lib/flags.js';
+    import { flagIndo, flagUk } from '$lib/flags.js';
 </script>
 
 <div class="mb-3 mw-500">
@@ -18,14 +18,14 @@
     </div>
 
     <div class="row-col cols-1222">
-        <div>&#x1F1EE;&#x1F1E9;</div>
+        <div>{@html flagIndo}</div>
         <div>membuat</div>
         <div>orang</div>
         <div>senang</div>
     </div>
 
     <div class="row-col cols-1222">
-        <div>&#x1F1EC;&#x1F1E7;</div>
+        <div>{@html flagUk}</div>
         <div>make</div>
         <div>someone</div>
         <div>happy</div>

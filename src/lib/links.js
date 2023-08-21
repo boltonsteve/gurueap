@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Subject-Verb Agreement",
+        href: "subject-verb",
+        keywords: ['grammar']
+    },
+    {
         title: "Each and every ONE of them",
         href: "each-every",
         keywords: ['grammar','vocabulary']

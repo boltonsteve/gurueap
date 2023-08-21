@@ -107,6 +107,10 @@ ul.links {
     justify-content: center; /* Centering Horizantly */
 }
 
+.text-white {
+    color: white;
+}
+
 .text-light {
     color: var(--light);
 }
