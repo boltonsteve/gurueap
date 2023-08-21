@@ -1,12 +1,10 @@
 <nav>
     <div class="nav-links">
         <div>
-            <h1 class="pm-0">GuruEAP</h1>
+            <h1 class="pm-0"><a href="/">GuruEAP</a></h1>
         </div>
         <div>
             <ul class="pm-0">
-                <li><a href="/">home</a></li>
-                <li>|</li>
                 <li><a href="/posts">posts</a></li>
             </ul>
         </div>

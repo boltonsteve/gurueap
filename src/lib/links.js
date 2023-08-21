@@ -1,5 +1,15 @@
 export const links = [
     {
+        title: "Parallel Structures",
+        href: "parallel",
+        keywords: ['grammar','coherence','cohesion']
+    },
+    {
+        title: "Could or Can",
+        href: "could-can",
+        keywords: ['vocabulary','modals','probability']
+    },
+    {
         title: "Should or Have to",
         href: "should",
         keywords: ['vocabulary']

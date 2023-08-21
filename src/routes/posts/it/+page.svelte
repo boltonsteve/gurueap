@@ -21,18 +21,20 @@
 
     <p>In order to maintain 'flow' in the online shopping example, you need to do this:</p>
 
-    <p class="ml-3 font-italic">People who live in remote areas sometimes have limited access to the things they want to buy. Since the things that people who live in remote areas want to buy cannot be provided by retail shops, online shopping may be the solution.</p>
+    <p class="ml-3 font-italic">People who live in remote areas sometimes have limited access to the things they want to buy. Since <b><i>the things that people who live in remote areas want to buy</i></b> cannot be provided by retail shops, online shopping may be the solution.</p>
 
-    <p>And for even better flow you can remind your reader about the context of those retail shops. After all, you're not talking about retail shops in the middle of a large city, are you?</p>
+    <p>And for even better flow you can remind your reader about <b><i>the context of those retail shops</i></b>. After all, you're not talking about retail shops in the middle of a large city, are you?</p>
 
-    <p class="ml-3 font-italic">People who live in remote areas sometimes have limited access to the things they want to buy. Since the things that people who live in remote areas want to buy cannot be provided by retail shops in those areas, online shopping may be the solution.</p>
+    <p class="ml-3 font-italic">People who live in remote areas sometimes have limited access to the things they want to buy. Since the things that people who live in remote areas want to buy cannot be provided by <b><i>retail shops in those areas</i></b>, online shopping may be the solution.</p>
 
     <p>Students often complain, <i>"..but now there's a lot of repetition!"</i></p>
 
     <p>Perhaps, but your first priority is to communicate effectively. If the only way to achieve this is by repeating a few words, then you MUST repeat them.</p>
 
-    <p>And remember - 'it' refers back to the subject of the previous sentence. Do not make this kind of mistake:</p>
+    <p>And remember - <b><i>it</i></b> refers back to the subject of the previous sentence or verb phrase. Do not make this kind of mistake:</p>
 
-    <img src="" alt="">
+    <div class="text-center">
+        <img src="/img/dog-poo.png" alt="dog poo" class="rounded" style="width:300px;">
+    </div>
 
 </div>
