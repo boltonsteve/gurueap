@@ -105,8 +105,7 @@ ul.links {
 }
 
 .text-center {
-    display: flex;
-    justify-content: center; /* Centering Horizantly */
+    text-align:center;
 }
 
 .text-right {
@@ -189,6 +188,10 @@ ul.links {
 }
 
 /* margin-x */
+.mx-auto {
+    display: block;
+    margin:auto;
+}
 .mx-0 {
     margin-left: var(--0);
     margin-right: var(--0);

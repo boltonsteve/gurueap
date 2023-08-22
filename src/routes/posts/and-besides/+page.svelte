@@ -10,7 +10,7 @@
 
     <p class="ml-3 font-italic"><em>I don’t think we should go to the cinema tonight. First of all I don’t like the film. Secondly, there is an unusual amount of traffic in town. Finally, we don’t have any money.</em></p>
 
-    <p>Here there are three supports for <b><i>not</i></b> wanting to see the film:</p>
+    <p>Here we have three supporting claims for <b><i>not</i></b> wanting to see the film:</p>
 
     <ol>
         <li>I don’t like the film.</li>
