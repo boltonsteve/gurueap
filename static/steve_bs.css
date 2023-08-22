@@ -1,6 +1,7 @@
 /* Steve's BS Bootstrap */
 
 :root {
+  --blue: blue;
   --green: green;
   --red: red;
   --teal: teal;
@@ -166,11 +167,20 @@ ul.links {
     padding:0px;
     margin:0px;
 }
-.p-0 {
-    padding:0px;
-}
+
+/* Margins */
+/* margin x+y */
 .m-0 {
-    margin:0px;
+    margin: var(--0);
+}
+.m-1 {
+    margin: var(--1);
+}
+.m-2 {
+    margin: var(--2);
+}
+.m-3 {
+    margin: var(--3);
 }
 
 /* margin-x */
@@ -265,6 +275,7 @@ ul.links {
     margin-left: var(--3);
 }
 
+/* Padding */
 /* padding-x+y */
 .p-0 {
     padding: var(--0);
@@ -373,11 +384,17 @@ ul.links {
 
 /* Links */
 a {
+    color: blue;
     text-decoration:none;
 }
-
+a:visited {
+    color: var(--teal);
+}
 a:hover {
     text-decoration:underline;
+}
+a:active {
+    color: red;
 }
 
 /* Typography */
@@ -393,7 +410,7 @@ body, textarea {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     /* font-family:Gill Sans; */
     /* font-family:Trebuchet MS; */
-    color: #333333;
+    color: #212427;
     background: #F7F7F7;
     margin:0px;
 }

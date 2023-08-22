@@ -1,4 +1,4 @@
-<div class="mb-3 mw-600">
+<div class="mb-3 mw-500">
 
     <h1>Use 'it' with care!</h1>
 

@@ -48,7 +48,7 @@
 
 </script>
 
-<div class="mb-3 mw-600">
+<div class="mb-3 mw-500">
 
     <h1><i>Should</i> or <i>Have to</i></h1>
     

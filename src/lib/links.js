@@ -1,5 +1,15 @@
 export const links = [
     {
+        title: "You are not a staff!",
+        href: "staff",
+        keywords: ['vocabulary']
+    },
+    {
+        title: "Some",
+        href: "some",
+        keywords: ['vocabulary']
+    },
+    {
         title: "Subject-Verb Agreement",
         href: "subject-verb",
         keywords: ['grammar']

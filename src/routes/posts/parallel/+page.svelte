@@ -1,4 +1,4 @@
-<div class="mb-3 mw-600">
+<div class="mb-3 mw-500">
 
     <img src="/img/parallel-lines.png" class="img-fluid mb-0" alt="parallel lines">
 

@@ -1,4 +1,4 @@
-<div class="mb-3 mw-600">
+<div class="mb-3 mw-500">
     <h1>There is Ada</h1>
     <p class="ml-3 font-italic">In Australia <span class="text-danger font-weight-bold">there are</span> many women receive the same salary as men.</p>
     <p>A common mistake made by Indonesian native speakers is to include the 'introductory subject' <b><i>there is/there are</i></b> as well as another subject - next to each other before the verb in a sentence.</p>
