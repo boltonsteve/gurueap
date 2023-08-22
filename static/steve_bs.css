@@ -1,13 +1,14 @@
 /* Steve's BS Bootstrap */
 
 :root {
-  --blue: blue;
-  --green: green;
-  --red: red;
-  --teal: teal;
-  --orange: orange;
-  --grey: #CCCCCC;
-  --light: #aaaaaa;
+  --blue: #0d6efd;
+  --green: #28a745;
+  --teal: #17a2b8;
+  --orange: #ffc107;
+  --red: #dc3545;
+  --grey: #6c757d;
+  --light: #f8f9fa;
+  --dark: #343a40;
   --0: 0px;
   --1: 10px;
   --2: 20px;
@@ -114,6 +115,10 @@ ul.links {
 
 .text-white {
     color: white;
+}
+
+.text-black {
+    color: black;
 }
 
 .text-light {
@@ -384,7 +389,7 @@ ul.links {
 
 /* Links */
 a {
-    color: blue;
+    color: var(--blue);
     text-decoration:none;
 }
 a:visited {
@@ -394,14 +399,10 @@ a:hover {
     text-decoration:underline;
 }
 a:active {
-    color: red;
+    color: var(--red);
 }
 
 /* Typography */
-h1,h2,h3,h4,h5,h6 {
-    font-family:arial;
-}
-
 textarea {
     font-size:1rem;
 }
@@ -410,9 +411,14 @@ body, textarea {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     /* font-family:Gill Sans; */
     /* font-family:Trebuchet MS; */
-    color: #212427;
+    color: #313131;
     background: #F7F7F7;
     margin:0px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:arial;
+    color: #616161;
 }
 
 nav {
@@ -431,7 +437,7 @@ nav {
 
 input {
     border-radius: 3px;
-    border: 1px solid blue;
+    border: 1px solid var(--blue);
     height: 20px;
     padding: 5px 9px 5px 9px;
 }
