@@ -2,17 +2,27 @@
     <h1><i>Could</i> or <i>Can</i></h1>
     <p class="ml-3 font-italic">This <span class="font-weight-bold text-danger">could</span> be achieved using gravity to allow the water to flow from the higher to the lower level.</p>
 
-    <p>This is possible in some languages but not in English. In English if something happens the same way, all the time, predictably, without variation, then there isn't really any question of probability ('could'). For regular, predictable phenomena use present simple tense <span class="uli">without</span> modals:</p>
+    <p>Sometimes students are taught in school that <i><b>could</b></i> is a more formal way to write <i><b>can</b></i>. It is not.</p>
+
+    <p>In English, <i><b>can</b></i> and <i><b>could</b></i> are used - most of the time - to show <span class="uli">probability</span>:</p>
+    <ul>
+        <li><i><b>Can</b></i> - Quite possible..</li>
+        <li><i><b>Could</b></i> - Unlikely, but possible..</li>
+    </ul>
+
+    <p>In English if something happens the same way, all the time, predictably, without variation, then it's 100% probable, and so <i><b>can</b></i> is more apporpriate than <i><b>could</b></i>. In this case, use present simple tense <span class="uli">without</span> <i><b>can</b></i> and <span class="uli">without</span> <i><b>could</b></i>:</p>
 
     <p class="ml-3 font-italic">This <span class="font-weight-bold text-success">is achieved</span> using gravity to allow the water to flow from the higher to the lower level.</p>
 
-    <p>Only use modals for <i>unpredictable</i> or <i>uncertain</i> situations, and then think about the degree of predictability or certainty:</p>
+    <p>Only use <i><b>can</b></i> or <i><b>could</b></i> when there is an element of uncertainty, and then choose either <i><b>can</b></i> or <i><b>could</b></i> depending on the <span class="uli">degree of certainty</span>:</p>
 
-    <p class="ml-3 font-italic">In most situations this <span class="font-weight-bold text-success">can</span> be achieved using gravity to allow the water to flow from the higher to the lower level.<br><span class="small">(Gravity usually the best method)</span></p>
+    <p class="ml-3 font-italic">In most situations this <span class="font-weight-bold text-success">can</span> be achieved using gravity to allow the water to flow from the higher to the lower level.</p>
+    <p class="text-right my-0">(Gravity certainly a good method)</p>
 
-    <p class="ml-3 font-italic">This <span class="font-weight-bold text-success">could</span> be achieved using gravity to allow the water to flow from the higher to the lower level, but there are other, better methods.<br><span class="small">(Gravity perhaps <span class="uli">not</span> the best method)</span></p>
+    <p class="ml-3 font-italic">This <span class="font-weight-bold text-success">could</span> be achieved using gravity to allow the water to flow from the higher to the lower level, but there are other, better methods.</p>
+    <p class="text-right my-0">(Gravity <span class="uli">not necessarily</span> the best method)</p>
 
-    <p>Notice that <b><i>could</i></b> implies a more negative evaluation than <b><i>can</i></b>. Indonesians should think carefully about this distinction as they tend to over-use <b><i>could</i></b>, having been taught in school that <b><i>could</i></b> is more formal than <b><i>can</i></b>. Well, yes it is, but <span class="uli">only in offers and requests</span>:</p>
+    <p>Notice that <b><i>could</i></b> implies a more negative evaluation than <b><i>can</i></b>. Again, Indonesians should think carefully about this distinction as they tend to over-use <b><i>could</i></b>, having been taught in school that <b><i>could</i></b> is more formal than <b><i>can</i></b>. Well, yes it is, but <span class="uli">only in offers and requests</span>:</p>
     <img src="/img/pass-the-salt.png" alt="pass the salt" style="float:right;width:120px;">
 <ul class="font-italic lh-15">
     <li><span class="font-weight-bold text-success">Can</span> you pass the salt? (informal)</li>
