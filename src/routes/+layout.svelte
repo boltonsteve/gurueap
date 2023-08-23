@@ -1,13 +1,10 @@
 <nav>
-    <div class="nav-links">
-        <div>
-            <h1 class="pm-0"><a href="/">GuruEAP</a></h1>
-        </div>
-        <div>
-            <ul class="pm-0">
-                <li><a href="/posts">posts</a></li>
-            </ul>
-        </div>
+    <div class="logo">
+        <a href="/">GuruEAP</a>
+    </div>
+    <div class="menu">
+        <a href="/posts">posts</a> | 
+        <a href="/songs">songs</a>
     </div>
 </nav>
 
