@@ -1,5 +1,20 @@
 export const links = [
     {
+        title: "Present Tenses Explained",
+        href: "present-tenses",
+        keywords: ['grammar','tenses','present']
+    },
+    {
+        title: "Past Tenses Explained",
+        href: "past-tenses",
+        keywords: ['grammar','tenses','past']
+    },
+    {
+        title: "Perfect Tenses Explained",
+        href: "perfect-tenses",
+        keywords: ['grammar','tenses','perfect']
+    },
+    {
         title: "Conjunction Sandwich",
         href: "conjunctions",
         keywords: ['vocabulary'],
