@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "One of",
+        href: "one-of",
+        keywords: ['grammar','quantifiers']
+    },
+    {
         title: "Present Tenses Explained",
         href: "present-tenses",
         keywords: ['grammar','tenses','present','video']
