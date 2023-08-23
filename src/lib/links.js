@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Content(s)",
+        href: "content",
+        keywords: ['vocabulary']
+    },
+    {
         title: "One of",
         href: "one-of",
         keywords: ['grammar','quantifiers']
