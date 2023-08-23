@@ -31,17 +31,41 @@
 
 <p>Indonesian students tend to overuse <b><i>will</i></b> because they want to translate <b><i>akan</i></b>. But <b><i>will</i></b> is not used in English as much as <b><i>akan</i></b> is used in Indonesian. Actually there are generally only three situations where <b><i>will</i></b> is suitable:</p>
 
-<p>First conditional - a situation that is highly possible:</p>
+<p><b>First conditional - a situation that is highly possible:</b></p>
 
-<p class="ml-3 font-italic">Look at those clouds. I forgot my umbrella. If it rains I will get wet!</p>
+<ul class="font-italic">
+    <li>
+        Look at those clouds. I forgot my umbrella. If it rains I <span class="font-weight-bold text-success">will</span> get wet!
+    </li>
+</ul>
 
-<p>Predictions:</p>
+<p><b>Predictions:</b></p>
 
-<p class="ml-3 font-italic">Look at those dark clouds! It <span class="font-weight-bold text-success">will</span> probably rain soon.</p>
+<ul class="font-italic">
+    <li>
+        Look at those dark clouds! It <span class="font-weight-bold text-success">will</span> probably rain soon.
+    </li>
+</ul>
 
-<p>Habits (usually annoying habits):</p>
+<p><b>Habits (often annoying habits), and Routines:</b></p>
 
-<p class="ml-3 font-italic">He drives me crazy. He<span class="font-weight-bold text-success">'ll</span> (= he will) trim his nails and then leave the cuttings all over the floor for me to clean up!</p>
+<p class="ml-3">Present habits/routines</p>
+
+<ul class="font-italic">
+    <li>He drives me crazy. He'll (= he will) trim his nails and then leave the cuttings all over the floor for me to clean up!</li>
+    <li class="lst-none small mb-1">(An annoying habit..)</li>
+    <li>On a normal work day I'll arrive at work at around 8 and go straight to the canteen for a coffee.</li>
+    <li class="lst-none small">(A daily routine. Note, however, that native speakers tend to talk about present routines using present simple tense without 'will'!)</li>
+</ul>
+
+<p class="ml-3">Past habits/routines</p>
+
+<ul class="font-italic">
+    <li>My grandfather was extremely kind. He'd (= he would) always go out of his way to help people.</li>
+    <li class="lst-none small mb-1">(A past habit, this time a good habit!)</li>
+    <li>When I was a student I would often go to bed late because I had to finish assignments.</li>
+    <li class="lst-none small">(A past routine - I'm not a student any more. This is a bit like saying 'used to')</li>
+</ul>
 
 <h3>Ability</h3>
 
@@ -61,6 +85,6 @@
 
 <h3>Summing up</h3>
 
-<p>Next time you write <b><i>could</i></b> or <b><i>would</i></b> stop and think. You probably should be writing <b><i>can</i></b> or <b><i>will</i></b>!</p>
+<p>Next time you speak or write <b><i>could</i></b> or <b><i>would</i></b> stop and think. You probably should be writing <b><i>can</i></b> or <b><i>will</i></b>!</p>
 
 </div>
