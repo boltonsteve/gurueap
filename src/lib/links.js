@@ -1,5 +1,16 @@
 export const links = [
     {
+        title: "Conjunction Sandwich",
+        href: "conjunctions",
+        keywords: ['vocabulary'],
+        "notes": ["https://www.youtube.com/watch?v=L-5CqSNhIAg"]
+    },
+    {
+        title: "Can/Could Will/Would Probability/Ability",
+        href: "would",
+        keywords: ['vocabulary']
+    },
+    {
         title: "Research(es)",
         href: "research",
         keywords: ['vocabulary']
