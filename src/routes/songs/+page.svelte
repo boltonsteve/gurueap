@@ -20,8 +20,9 @@
             }
         }
 
-        return `<div class="mb-2 menu-item text-center">
-                <a href="${base}/songs/${next.href}" class="link-menu">${next.title}</a> ${emoticons}
+        return `<div class="mb-2 menu text-center">
+            <a class="song-title" href="${base}/songs/${next.href}" class="link-menu">${next.title}</a> ${emoticons}
+            <p class="mt-0">${next.description}</p>
         </div>`
     })
 

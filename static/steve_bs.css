@@ -422,6 +422,11 @@ h1,h2,h3,h4,h5,h6 {
     font-size:1.1rem;
 }
 
+.song-title {
+    font-size:1.3rem;
+    margin-bottom:0px;
+}
+
 nav {
     display:flex;
     /* background: #eeeeee; */

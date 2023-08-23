@@ -21,6 +21,6 @@ export const songs = [
         title: "Scissor!",
         href: "scissor",
         keywords: ['song','pronunciation','linking','video'],
-        description: "An exercise in 'juncture' - one of 4 strategies used by native speakers to join words together when speaking."
+        description: "An exercise in 'juncture' - One of 4 strategies used by native speakers to join words together when speaking."
     }
 ];
