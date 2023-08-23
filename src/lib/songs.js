@@ -1,5 +1,11 @@
 export const songs = [
     {
+        title: "No Money No Honey",
+        href: "no-money-no-honey",
+        keywords: ['song','collocation','vocabulary'],
+        description: "Money collocations - These don't translate well from Bahasa Indonesia to English"
+    },
+    {
         title: "Lemon Squeezy",
         href: "lemon-squeezy",
         keywords: ['song','collocation','vocabulary'],
