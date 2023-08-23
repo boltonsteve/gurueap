@@ -9,10 +9,19 @@
     console.log(base);
 
     const menuDivs = songs.map( next => {
-        let k = 'keywords' in next ? `<div>${next.keywords.join(', ')}</div>` : ``;
+    let emoticons = '';
+
+        if('keywords' in next) {
+            if(next.keywords.includes('video')) {
+                emoticons += '&#127909;&nbsp;';
+            }
+            if(next.keywords.includes('song')) {
+                emoticons += '&#127908;';
+            }
+        }
 
         return `<div class="mb-2 menu-item text-center">
-                <a href="${base}/songs/${next.href}" class="link-menu">${next.title}</a>
+                <a href="${base}/songs/${next.href}" class="link-menu">${next.title}</a> ${emoticons}
         </div>`
     })
 

@@ -2,22 +2,22 @@ export const links = [
     {
         title: "Present Tenses Explained",
         href: "present-tenses",
-        keywords: ['grammar','tenses','present']
+        keywords: ['grammar','tenses','present','video']
     },
     {
         title: "Past Tenses Explained",
         href: "past-tenses",
-        keywords: ['grammar','tenses','past']
+        keywords: ['grammar','tenses','past','video']
     },
     {
         title: "Perfect Tenses Explained",
         href: "perfect-tenses",
-        keywords: ['grammar','tenses','perfect']
+        keywords: ['grammar','tenses','perfect','video']
     },
     {
         title: "Conjunction Sandwich",
         href: "conjunctions",
-        keywords: ['vocabulary'],
+        keywords: ['vocabulary','video'],
         "notes": ["https://www.youtube.com/watch?v=L-5CqSNhIAg"]
     },
     {
