@@ -1,6 +1,6 @@
 <script>
     import { links } from '$lib/links.js';
-    console.log(links);
+    import { video, music } from '$lib/emojis.js'
 
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
@@ -11,13 +11,12 @@
         let emoticons = '';
         if('keywords' in next) {
             if(next.keywords.includes('video')) {
-                emoticons += '&#127909;&nbsp;';
+                emoticons += `${video}&nbsp;`;
             }
             if(next.keywords.includes('song')) {
-                emoticons += '&#127908;';
+                emoticons += `${music}&nbsp;`;
             }
         }
-
 
         return `<div class="mb-2 menu text-center">
                 <a href="${base}/posts/${next.href}" class="link-menu">${next.title}</a> ${emoticons}

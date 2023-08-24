@@ -1,7 +1,6 @@
 <script>
     import { songs } from '$lib/songs.js';
-
-    console.log('songs', songs);
+    import { video, music } from '$lib/emojis.js'
 
     songs.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
@@ -9,21 +8,20 @@
     console.log(base);
 
     const menuDivs = songs.map( next => {
-    let emoticons = '';
-
+        let emoticons = '';
         if('keywords' in next) {
             if(next.keywords.includes('video')) {
-                emoticons += '&#127909;&nbsp;';
+                emoticons += `${video}&nbsp;`;
             }
             if(next.keywords.includes('song')) {
-                emoticons += '&#127908;';
+                emoticons += `${music}&nbsp;`;
             }
         }
 
-        return `<div class="mb-2 menu text-center">
-            <a class="song-title" href="${base}/songs/${next.href}" class="link-menu">${next.title}</a> ${emoticons}
-            <p class="mt-0">${next.description}</p>
-        </div>`
+        return `<div class="mb-0 text-center">
+            <a class="song-title" href="${base}/songs/${next.href}">${next.title}</a> ${emoticons}
+            </div>
+            <p class="mt-0 mb-2 song-desc text-center">${next.description}</p>`
     })
 
     const menu = menuDivs.join('');
