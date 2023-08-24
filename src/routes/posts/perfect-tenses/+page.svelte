@@ -1,7 +1,5 @@
 <script>
     document.title = "Perfect tenses";
-</script>
-<script>
     import Youtube from "svelte-youtube-embed";
 </script>
 

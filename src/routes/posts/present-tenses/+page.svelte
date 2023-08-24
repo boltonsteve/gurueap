@@ -1,8 +1,6 @@
 <script>
-    document.title = "Present tenses";
-</script>
-<script>
     import Youtube from "svelte-youtube-embed";
+    document.title = "Present tenses";
 </script>
 
 <div class="mb-3 mw-500">
