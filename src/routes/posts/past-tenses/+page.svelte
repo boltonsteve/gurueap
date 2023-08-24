@@ -1,4 +1,7 @@
 <script>
+    document.title = "Past tenses";
+</script>
+<script>
     import Youtube from "svelte-youtube-embed";
 </script>
 

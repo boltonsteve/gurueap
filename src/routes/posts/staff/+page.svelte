@@ -1,5 +1,6 @@
 <script>
     import {flagIndo} from '$lib/flags.js'
+    document.title = "Staff";
 </script>
 
 <div class="mw-500 mb-3">

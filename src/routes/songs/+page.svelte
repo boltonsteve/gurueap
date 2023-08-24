@@ -19,7 +19,7 @@
         }
 
         return `<div class="mb-0 text-center">
-            <a class="song-title" href="${base}/songs/${next.href}">${next.title}</a> ${emoticons}
+            <a class="song-title" href="${base}/songs/${next.href}">${next.title}</a> <span class="text-success">${emoticons}</span>
             </div>
             <p class="mt-0 mb-2 song-desc text-center">${next.description}</p>`
     })

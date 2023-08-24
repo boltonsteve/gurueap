@@ -1,3 +1,6 @@
+<script>
+    document.title = "Society";
+</script>
 <div class="mb-3 mw-500">
 
     <img src="/img/society.jpg" class="img-fluid" alt="society">

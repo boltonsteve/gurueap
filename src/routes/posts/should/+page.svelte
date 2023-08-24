@@ -2,6 +2,8 @@
 
     import { fade, scale } from "svelte/transition";
 
+    document.title = "Should";
+
     const corrects = ['should','have to','should have','had to'];
     const checkAnswers = () => {
         let answers = document.querySelectorAll('.ans'),i;

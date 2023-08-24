@@ -1,3 +1,6 @@
+<script>
+    document.title = "Usage / Use / Utilise";
+</script>
 <div class="mb-3 mw-500">
 
     <img src="/img/ed-tech.png" class="img-fluid" alt="ed tech">

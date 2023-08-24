@@ -2,6 +2,8 @@
     import { flagIndo } from '$lib/flags.js';
     import { fade, scale } from "svelte/transition";
 
+    document.title = "Subject/Verb";
+
     let activity = '';
 
     let items = [

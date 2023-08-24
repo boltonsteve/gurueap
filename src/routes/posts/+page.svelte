@@ -19,7 +19,7 @@
         }
 
         return `<div class="mb-2 menu text-center">
-                <a href="${base}/posts/${next.href}" class="link-menu">${next.title}</a> ${emoticons}
+            <a href="${base}/posts/${next.href}" class="link-menu">${next.title}</a> <span class="text-success">${emoticons}</span>
         </div>`
     })
 

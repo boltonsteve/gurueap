@@ -1,3 +1,6 @@
+<script>
+    document.title = "One of..";
+</script>
 <div class="mb-3 mw-500">
 
     <h1>One of</h1>

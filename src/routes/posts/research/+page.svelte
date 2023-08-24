@@ -2,6 +2,7 @@
     import { tooltip } from '$lib/tooltip';
     import { scale } from "svelte/transition";
     let show = false;
+    document.title = "Research";
 </script>
 
 <div class="mw-500 mb-3">

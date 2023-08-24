@@ -1,3 +1,6 @@
+<script>
+    document.title = "Parallel Structures";
+</script>
 <div class="mb-3 mw-500">
 
     <img src="/img/parallel-lines.png" class="img-fluid mb-0" alt="parallel lines">

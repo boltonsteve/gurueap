@@ -1,3 +1,6 @@
+<script>
+    document.title = "Youths";
+</script>
 <div class="mb-3 mw-500">
 
     <img src="/img/youth-hoodies.png" class="img-fluid rounded" alt="youths">
