@@ -1,3 +1,6 @@
+<script>
+    document.title = "Goodby to 'by'";
+</script>
 <div class="mb-3 mw-500">
 
     <h1>Goodbye to 'By'</h1>

@@ -1,3 +1,6 @@
+<script>
+    document.title = 'Could/Can';
+</script>
 <div class="mb-3 mw-500">
     <h1><i>Could</i> or <i>Can</i></h1>
     <p class="ml-3 font-italic">This <span class="font-weight-bold text-danger">could</span> be achieved using gravity to allow the water to flow from the higher to the lower level.</p>

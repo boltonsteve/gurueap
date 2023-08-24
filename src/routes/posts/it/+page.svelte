@@ -1,3 +1,6 @@
+<script>
+    document.title = "It";
+</script>
 <div class="mb-3 mw-500">
 
     <h1>Use 'it' with care!</h1>

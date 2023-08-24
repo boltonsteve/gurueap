@@ -1,3 +1,6 @@
+<script>
+    document.title = "Millions";
+</script>
 <div class="mb-3 mw-500">
 
     <h1>Million or millions?</h1>

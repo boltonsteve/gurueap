@@ -1,3 +1,6 @@
+<script>
+    document.title = 'Each/Every';
+</script>
 <div class="mb-3 mw-500">
 
     <h1>Each and every ONE of them</h1>

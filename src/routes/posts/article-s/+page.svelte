@@ -5,6 +5,8 @@
     const showOriginal = () => {
         show = true;
     }
+
+    document.title = "Article and/or 's'";
 </script>
 
 <div class="mb-3 mw-500">

@@ -1,3 +1,6 @@
+<script>
+document.title = 'And besides..';
+</script>
 <div class="mb-3 mw-500">
 
     <h1>Besides...  And besides...</h1>

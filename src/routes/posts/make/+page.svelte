@@ -1,5 +1,6 @@
 <script>
     import { flagIndo, flagUk } from '$lib/flags.js';
+    document.title = "Make";
 </script>
 
 <div class="mb-3 mw-500">

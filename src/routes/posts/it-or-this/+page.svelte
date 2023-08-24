@@ -1,4 +1,9 @@
+<script>
+document.title = "It' or 'this'?";
+</script>
 <div class="mb-3 mw-500">
+
+    <img src="/img/it-or-this.jpg" class="img-fluid" alt="it or this">
 
     <h1><b><i>It</i></b> or <b><i>this</i></b>?</h1>
     <p class="ml-3 font-italic">The government has just removed fuel subsidies. <span class="font-weight-bold text-danger">It</span> means that the price of basic goods will surely go up.</p>

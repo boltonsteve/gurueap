@@ -1,3 +1,6 @@
+<script>
+    document.title = "Most of..";
+</script>
 <div class="mb-3 mw-500">
 
     <h1><i>Most</i> or <i>Most of</i>..?</h1>

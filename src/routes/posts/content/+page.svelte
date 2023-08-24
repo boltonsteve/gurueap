@@ -1,3 +1,6 @@
+<script>
+document.title = 'Content(s)';
+</script>
 <div class="mb-3 mw-500">
 
     <h1>Content(s)</h1>
