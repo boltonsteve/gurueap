@@ -1,7 +1,3 @@
-<script>
-    document.title = 'Song: Some People';
-</script>
-
 <div class="mb-3 mw-500">
 
     <h1>Some People</h1>
