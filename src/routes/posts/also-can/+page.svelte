@@ -1,6 +1,6 @@
-<script>
-    document.title = 'Also Can';
-</script>
+<svelte:head>
+    <title>Also Can</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
 
