@@ -1,8 +1,11 @@
 <script>
-document.title = 'Also Can';
+    document.title = 'Also Can';
 </script>
+
 <div class="mb-3 mw-500">
+
     <h1>Cannot 'also can'!</h1>
+
     <p class="ml-3 font-italic">In addition to smoking, excessive drinking <span class="font-weight-bold text-danger">also can</span> cause illness.</p>
 
     <p>This looks like a direct translation from Bahasa Indonesia!</p>
