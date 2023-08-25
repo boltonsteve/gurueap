@@ -5,7 +5,6 @@
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
     import { base } from '$app/paths';
-    console.log(base);
 
     const menuDivs = links.map( next => {
         let emoticons = '';

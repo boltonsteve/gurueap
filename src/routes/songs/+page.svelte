@@ -5,7 +5,6 @@
     songs.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
     import { base } from '$app/paths';
-    console.log(base);
 
     const menuDivs = songs.map( next => {
         let emoticons = '';
