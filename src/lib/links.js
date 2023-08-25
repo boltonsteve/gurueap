@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Avoid or Prevent?",
+        href: "avoid-prevent",
+        keywords: ['vocabulary']
+    },
+    {
         title: "Content(s)",
         href: "content",
         keywords: ['vocabulary']
