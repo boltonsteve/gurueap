@@ -8,10 +8,19 @@
 
     <p>Focusing on the difference between <b><i>Some</i></b> and <b><i>Some of</i></b> - <b><i>Most</i></b> and <b><i>Most of</i></b>, etc</p>
 
+    <p>And featuring Moya (L) and Dita (R):</p>
+
+    <img src="/img/moya-dita.jpg" class="img-fluid rounded" alt="Dita Moya">
+
     <ul>
         <li><span class="font-weight-bold text-primary font-italic">some</span> + <b><i>plural / uncountable noun</i></b></li>
         <li><span class="font-weight-bold text-success font-italic">some of</span> + <b><i>possessive / article / demonstrative</i></b></li>
     </ul>
+
+    <audio controls style="width:100%;">
+    <source src="/audio/some-people.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
 <h3>Lyrics</h3>
 
