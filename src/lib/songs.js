@@ -1,5 +1,11 @@
 export const songs = [
     {
+        title: "Some People",
+        href: "some-people",
+        keywords: ['song','collocation','vocabulary'],
+        description: "Clearing up confusion about 'Some/Some of' and 'Most/Most of'!"
+    },
+    {
         title: "No Money No Honey",
         href: "no-money-no-honey",
         keywords: ['song','collocation','vocabulary','video'],
