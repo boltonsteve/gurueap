@@ -1,5 +1,4 @@
 <script>
-    import Youtube from "svelte-youtube-embed";
     document.title = 'Song: Some People';
 </script>
 
@@ -13,11 +12,6 @@
         <li><span class="font-weight-bold text-primary font-italic">some</span> + <b><i>plural / uncountable noun</i></b></li>
         <li><span class="font-weight-bold text-success font-italic">some of</span> + <b><i>possessive / article / demonstrative</i></b></li>
     </ul>
-
-<audio controls style="width:100%;">
-    <source src="/audio/some-people.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
 
 <h3>Lyrics</h3>
 
