@@ -1,7 +1,10 @@
 <script>
     import { flagIndo, flagUk } from '$lib/flags.js';
-    document.title = "Make";
 </script>
+
+<svelte:head>
+    <title>Make</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
 

@@ -1,6 +1,7 @@
-<script>
-    document.title = "One of..";
-</script>
+<svelte:head>
+    <title>One of</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <h1>One of</h1>

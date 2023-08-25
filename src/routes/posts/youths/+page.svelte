@@ -1,6 +1,6 @@
-<script>
-    document.title = "Youths";
-</script>
+<svelte:head>
+    <title>Youths</title>
+</svelte:head>
 <div class="mb-3 mw-500">
 
     <img src="/img/youth-hoodies.png" class="img-fluid rounded" alt="youths">

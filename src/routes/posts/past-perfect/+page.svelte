@@ -3,18 +3,17 @@
     import { slide } from "svelte/transition";
     import * as animateScroll from "svelte-scrollto";
 
-    document.title = "Past Perfect";
-
     let show = false;
-
 
     const showSample = () => {
         show = true;
         animateScroll.scrollToBottom({duration: 3000});
     }
-
-
 </script>
+
+<svelte:head>
+    <title>Past Perfect</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
     

@@ -1,6 +1,7 @@
-<script>
-document.title = 'And besides..';
-</script>
+<svelte:head>
+    <title>And besides</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <h1>Besides...  And besides...</h1>

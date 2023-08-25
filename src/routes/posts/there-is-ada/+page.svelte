@@ -1,6 +1,7 @@
-<script>
-    document.title = "There is Ada";
-</script>
+<svelte:head>
+    <title>There is Ada</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
     <h1>There is Ada</h1>
     <p class="ml-3 font-italic">In Australia <span class="text-danger font-weight-bold">there are</span> many women receive the same salary as men.</p>

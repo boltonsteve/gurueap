@@ -2,6 +2,10 @@
     import Youtube from "svelte-youtube-embed";
 </script>
 
+<svelte:head>
+    <title>Song: No Money No Honey</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <Youtube id="3DhT_spUDIA" />

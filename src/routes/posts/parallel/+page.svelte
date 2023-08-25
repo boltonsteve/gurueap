@@ -1,6 +1,7 @@
-<script>
-    document.title = "Parallel Structures";
-</script>
+<svelte:head>
+    <title>Parallel Structures</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <img src="/img/parallel-lines.png" class="img-fluid mb-0" alt="parallel lines">

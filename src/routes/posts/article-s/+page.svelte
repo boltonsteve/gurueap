@@ -6,8 +6,11 @@
         show = true;
     }
 
-    document.title = "Article and/or 's'";
 </script>
+
+<svelte:head>
+    <title>Article and/or 's'</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
 

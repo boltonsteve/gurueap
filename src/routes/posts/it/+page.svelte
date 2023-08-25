@@ -1,6 +1,7 @@
-<script>
-    document.title = "It";
-</script>
+<svelte:head>
+    <title>It</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <h1>Use 'it' with care!</h1>

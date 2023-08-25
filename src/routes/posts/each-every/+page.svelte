@@ -1,6 +1,7 @@
-<script>
-    document.title = 'Each/Every';
-</script>
+<svelte:head>
+    <title>Each/Every</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <h1>Each and every ONE of them</h1>

@@ -1,6 +1,7 @@
-<script>
-document.title = 'Content(s)';
-</script>
+<svelte:head>
+    <title>Content(s)</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <h1>Content(s)</h1>

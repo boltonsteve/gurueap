@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Song: Some People</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <h1>Some People</h1>

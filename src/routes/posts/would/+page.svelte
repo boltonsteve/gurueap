@@ -1,6 +1,6 @@
-<script>
-    document.title = "Would";
-</script>
+<svelte:head>
+    <title>Would</title>
+</svelte:head>
 <div class="mb-3 mw-500">
 
     <h1>Can/Could Will/Would Possibility/Abiltiy</h1>

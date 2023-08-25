@@ -1,7 +1,10 @@
 <script>
     import Youtube from "svelte-youtube-embed";
-    document.title = 'Conjunctions';
 </script>
+
+<svelte:head>
+    <title>Conjunctions</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
 

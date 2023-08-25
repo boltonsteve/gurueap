@@ -2,8 +2,11 @@
     import { tooltip } from '$lib/tooltip';
     import { scale } from "svelte/transition";
     let show = false;
-    document.title = "Research";
 </script>
+
+<svelte:head>
+    <title>Research</title>
+</svelte:head>
 
 <div class="mw-500 mb-3">
 

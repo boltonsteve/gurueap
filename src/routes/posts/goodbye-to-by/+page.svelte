@@ -1,6 +1,7 @@
-<script>
-    document.title = "Goodby to 'by'";
-</script>
+<svelte:head>
+    <title>Goodbye to 'by'</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <h1>Goodbye to 'By'</h1>

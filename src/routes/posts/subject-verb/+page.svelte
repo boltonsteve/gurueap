@@ -2,8 +2,6 @@
     import { flagIndo } from '$lib/flags.js';
     import { fade, scale } from "svelte/transition";
 
-    document.title = "Subject/Verb";
-
     let activity = '';
 
     let items = [
@@ -85,6 +83,10 @@
     }
 
 </script>
+
+<svelte:head>
+    <title>Subject/Verb</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
 

@@ -1,6 +1,7 @@
-<script>
-    document.title = "Millions";
-</script>
+<svelte:head>
+    <title>Millions</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <h1>Million or millions?</h1>

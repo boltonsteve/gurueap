@@ -1,6 +1,7 @@
-<script>
-document.title = 'Become';
-</script>
+<svelte:head>
+    <title>Become</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
     <h1>When 'become' is not becoming</h1>
     <p class="ml-3 font-italic">Full-day school <span class="text-danger font-weight-bold">becomes</span> an important issue because it concerns a wide range of people, especially parents.</p>

@@ -1,6 +1,7 @@
-<script>
-document.title = "It' or 'this'?";
-</script>
+<svelte:head>
+    <title>It or This</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <img src="/img/it-or-this.jpg" class="img-fluid" alt="it or this">

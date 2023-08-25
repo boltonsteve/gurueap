@@ -2,8 +2,6 @@
 
     import { fade, scale } from "svelte/transition";
 
-    document.title = "Should";
-
     const corrects = ['should','have to','should have','had to'];
     const checkAnswers = () => {
         let answers = document.querySelectorAll('.ans'),i;
@@ -49,6 +47,10 @@
     }
 
 </script>
+
+<svelte:head>
+    <title>Should</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
 

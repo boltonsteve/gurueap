@@ -1,6 +1,6 @@
-<script>
-    document.title = "Resources";
-</script>
+<svelte:head>
+    <title>Resources</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
 

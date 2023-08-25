@@ -1,7 +1,10 @@
 <script>
     import { flagIndo } from '$lib/flags.js';
-    document.title = "Government";
 </script>
+
+<svelte:head>
+    <title>Government</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
 

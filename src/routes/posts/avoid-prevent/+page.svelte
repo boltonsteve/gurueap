@@ -1,6 +1,6 @@
-<script>
-    document.title = "Avoid or Prevent";
-</script>
+<svelte:head>
+    <title>Avoid or Prevent</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
     <h1>Avoid or Prevent?</h1>

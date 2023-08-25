@@ -1,6 +1,7 @@
-<script>
-    document.title = "Society";
-</script>
+<svelte:head>
+    <title>Society</title>
+</svelte:head>
+
 <div class="mb-3 mw-500">
 
     <img src="/img/society.jpg" class="img-fluid" alt="society">
