@@ -1,5 +1,20 @@
 export const links = [
     {
+        title: "Beware of Past Perfect",
+        href: "past-perfect",
+        keywords: ['grammar','tenses']
+    },
+    {
+        title: "The Price is not Expensive",
+        href: "price",
+        keywords: ['vocabulary']
+    },
+    {
+        title: "Government",
+        href: "government",
+        keywords: ['vocabulary']
+    },
+    {
         title: "Avoid or Prevent?",
         href: "avoid-prevent",
         keywords: ['vocabulary']

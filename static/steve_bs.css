@@ -112,12 +112,28 @@ ul.links {
     color: var(--light);
 }
 
+.text-dark {
+    color: var(--dark);
+}
+
+.text-primary {
+    color: var(--blue);
+}
+
 .text-success {
     color: var(--green);
 }
 
 .text-danger {
     color: var(--red);
+}
+
+.text-warning {
+    color: var(--orange);
+}
+
+.text-info {
+    color: var(--teal);
 }
 
 .font-weight-bold {
