@@ -14,7 +14,7 @@
             let cols = next.map( next => {
                 let bulls = next.map( next => next )
                 console.log(bulls);
-                return `<ul class="mt-0 pl-1"><li class="mb-1">${bulls.join('</li><li class="mb-1">')}</li></ul>`;
+                return `<p class="mt-0">${bulls.join('</p><p>')}</p>`;
             })
             return cols;
         })
@@ -28,7 +28,7 @@
 
         let sRows = [];
         for(let i=9;i>=0;i--) {
-            let row = [`<div class="text-center bg-white pl-1" style="font-size:2rem;">${i}</div>`];
+            let row = [`<div class="text-center pl-1" style="font-size:2rem;">${i}</div>`];
             for(let n=0;n<4;n++) {
                 let next = skills[sk][n][i];
                 row.push(`<div>${next}</div>`);
