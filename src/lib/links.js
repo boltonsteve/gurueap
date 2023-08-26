@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Know (of)",
+        href: "know-of",
+        keywords: ['vocabulary']
+    },
+    {
         title: "Beware of Past Perfect",
         href: "past-perfect",
         keywords: ['grammar','tenses']

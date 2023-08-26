@@ -80,6 +80,10 @@ ul.links {
     grid-template-columns: 1fr 1fr;
 }
 
+.cols-14 {
+    grid-template-columns: 1fr 4fr;
+}
+
 .cols-21 {
     grid-template-columns: 2fr 1fr;
 }
@@ -443,11 +447,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 nav {
-    display:flex;
     /* background: #eeeeee; */
-    height: 50px;
     display:flex;
     justify-content:space-between;
+    height: 50px;
     align-items:center;
     padding-left:20px;
     padding-right:20px;
