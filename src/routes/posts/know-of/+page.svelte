@@ -38,7 +38,9 @@
         </ul>
     </ul>
 
-    <p>And so the following would be more appropriate:</p>
+    <hr>
+
+    <p>The following would be more appropriate:</p>
 
     <div class="row-col cols-14">
         <div><b>Examiner</b></div>
