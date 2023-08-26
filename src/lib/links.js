@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "IELTS Band Descriptors",
+        href: "ielts-descriptors",
+        keywords: ['IELTS']
+    },
+    {
         title: "Know (of)",
         href: "know-of",
         keywords: ['vocabulary']
