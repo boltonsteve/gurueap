@@ -38,7 +38,7 @@
         }
 
         return `
-            <h1>${headingTexts[sk]}</h1>
+            <h1 class="mt-1 text-center">${headingTexts[sk]}</h1>
             <div class="flex row-col cols-14444 mb-3">${sRows.join('')}</div>
         `;
 
@@ -77,6 +77,7 @@
 <div class="mb-3">
 
     <div class="flex w-100 text-center">
+        <h1 class="mb-1">IELTS Band Descriptors</h1>
         <button on:click={showS}>Speaking</button>
         <button on:click={showT}>Task 1</button>
         <button on:click={showTT}>Task 2</button>
