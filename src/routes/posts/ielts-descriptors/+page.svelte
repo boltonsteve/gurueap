@@ -1,7 +1,7 @@
 <script>
 
-    import { slide } from 'svelte/transition';
-    import {descriptors} from '$lib/descriptors.js';
+    import { slide, blur, scale } from 'svelte/transition';
+    import { descriptors } from '$lib/descriptors.js';
 
     let skillCodes = [
         'speaking',
@@ -54,7 +54,7 @@
 
     const getDescriptors = (skill) => {
         let skillId = skillCodes.indexOf(skill);
-        let head = headers[skillId].map( next => `<h3 class="mb-0 px-1">${next}</h3>` );
+        let head = headers[skillId].map( next => `<h3 class="mb-0 p-1" style="border-bottom:1px solid black;">${next}</h3>` );
         let rows = [];
         rows.push(head.join(''));
         for(let i=9;i>=0;i--) {
@@ -80,6 +80,13 @@
         speaking = true;
         task1 = false;
         task2 = false;
+
+        let elements = document.getElementsByClassName('btn')
+
+        for(element of elements){
+            element.classList.remove('active')
+        }
+
     }
 
     function showT() {
@@ -108,24 +115,24 @@
 
     <div class="flex w-100 text-center">
         <h1 class="mb-1">IELTS Band Descriptors</h1>
-        <button on:click={showS}>Speaking</button>
-        <button on:click={showT}>Task 1</button>
-        <button on:click={showTT}>Task 2</button>
+        <button class="btn btn-outline-danger active" on:click={showS}>Speaking</button>
+        <button class="btn btn-outline-primary" on:click={showT}>Task 1</button>
+        <button class="btn btn-outline-success active" on:click={showTT}>Task 2</button>
     </div>
 
 {#if speaking}
-    <div in:slide={{duration:1000}} out:slide={{duration:1000}}>
+    <div transition:slide={{duration:1000}}>
         {@html sHtml}
     </div>
 {/if}
 {#if task1}
-    <div in:slide={{duration:1000}} out:slide={{duration:1000}}>
-    {@html tHtml}
+    <div transition:slide={{duration:1000}}>
+        {@html tHtml}
     </div>
 {/if}
 {#if task2}
-    <div in:slide={{duration:1000}} out:slide={{duration:1000}}>
-    {@html ttHtml}
+    <div transition:slide={{duration:1000}}>
+        {@html ttHtml}
     </div>
 {/if}
 

@@ -23,11 +23,48 @@
     width:100%;
 }
 
+/* Buttons */
+
 .btn {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
 }
+
+.btn:hover {
+    cursor:pointer;
+}
+
+.btn-outline-danger {
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.btn-outline-danger:hover, .btn-outline-danger.active {
+    background: var(--red);
+    color: var(--light);
+}
+
+.btn-outline-primary {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+.btn-outline-primary:hover {
+    background: var(--blue);
+    color: var(--light);
+}
+
+.btn-outline-success {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.btn-outline-success:hover {
+    background: var(--green);
+    color: var(--light);
+}
+
 
 .alert {
     border:1px;
@@ -40,35 +77,31 @@
     font-size:0.8rem;
 }
 
+/* bg-xxx */
 .bg-success {
     background: var(--green);
 }
-
 .bg-danger {
     background: var(--red);
 }
-
 .bg-warning {
     background: var(--orange);
 }
-
 .bg-light {
     background: var(--light);
 }
-
 .bg-white {
     background: #fff;
 }
 
+/* Borders */
 .border {
     /* border: 1px solid; */
     padding: var(--1);
 }
-
 .rounded {
     border-radius: 4px;
 }
-
 .border-dark {
     /* border-color: #aaaaaa; */
     background: #eeeeee;
@@ -88,38 +121,31 @@ ul.links {
     line-height:2em;
 }
 
+/* Grid-Template-Columns */
 .cols-11 {
     grid-template-columns: 1fr 1fr;
 }
-
 .cols-14 {
     grid-template-columns: 1fr 4fr;
 }
-
 .cols-15 {
     grid-template-columns: 1fr 5fr;
 }
-
 .cols-16 {
     grid-template-columns: 1fr 6fr;
 }
-
 .cols-17 {
     grid-template-columns: 1fr 7fr;
 }
-
 .cols-1-11 {
     grid-template-columns: 1fr 11fr;
 }
-
 .cols-21 {
     grid-template-columns: 2fr 1fr;
 }
-
 .cols-1222 {
     grid-template-columns: 1fr 3fr 3fr 3fr;
 }
-
 .cols-14444 {
     grid-template-columns: 1fr 4fr 4fr 4fr 4fr;
 }
@@ -137,11 +163,11 @@ ul.links {
 }
 
 .text-white {
-    color: white;
+    color: #fff;
 }
 
 .text-black {
-    color: black;
+    color: #000;
 }
 
 .text-light {
