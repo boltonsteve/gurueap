@@ -30,3 +30,5 @@ export const songs = [
         description: "An exercise in 'juncture' - One of 4 strategies used by native speakers to join words together when speaking."
     }
 ];
+
+export let songsCount = songs.length;

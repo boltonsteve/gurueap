@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Ask (for)",
+        href: "ask-for",
+        keywords: ['vocabulary']
+    },
+    {
         title: "Add 's' by George",
         href: "add-s",
         keywords: ['grammar','pronunciation','s','video']
