@@ -1,3 +1,6 @@
+<script>
+    import { flagIndo } from '$lib/flags.js'
+</script>
 <svelte:head>
     <title>Ask (for)</title>
 </svelte:head>
@@ -6,22 +9,31 @@
 
     <h1>Ask (for)</h1>
 
-    <p>This is a common mistake made by Indonesians translating 'tanya' instead of 'minta'.</p>
+    <p>{@html flagIndo} Indonesian IELTS candidates are sometimes confused about how to translate <b><i>tanya</i></b> and <b><i>minta</i></b>.</p>
 
-    <p>The options in English are (take a deep breath!):</p>
+    <img src="/img/menu-couple.jpg" class="mx-auto rounded" alt="menu couple" style="width:320px;">
 
-<ol>
-	<li><i>I'll <b>ask</b> the waiter.</i> (ask someone)</li>
-	<li><i>I'll <b>ask</b> the waiter to bring us the menu.</i> (ask someone to do something)</li>
-	<li><i>I'll <b>ask</b> the waiter about the menu.</i> (ask someone about something/someone)</li>
-	<li><i>I'll <b>ask</b> the waiter <b>for</b> the menu.</i> (ask someone for something)</li>
-	<li><i>I'll <b>ask for</b> the menu.</i> (ask for something/someone)</li>
-</ol>
+    <p>The options in English are as follows:</p>
 
-<p>Most native speakers would probably use Number 5.</p>
+    <div class="flex row-col cols-11 px-1">
+            <div class="font-italic">I'll <span class="text-danger">ask</span> <span class="text-primary">the waiter</span>.</div>
+        <div><span class="text-danger">ask</span> <span class="text-primary">someone</span></div>
+        <div class="font-italic">I'll <span class="text-danger">ask</span> <span class="text-primary">the waiter</span> <b>to</b> <span class="text-success">bring us the menu</span>.</div>
+        <div><span class="text-danger">ask</span> <span class="text-primary">someone</span> <b><i>to</i></b> <span class="text-success">do something</span></div>
+        <div class="font-italic">I'll <span class="text-danger">ask</span> <span class="text-primary">the waiter</span> <b>about</b> <span class="text-success">the menu</span>.</div>
+        <div><span class="text-danger">ask</span> <span class="text-primary">someone</span> <b><i>about</i></b> <span class="text-success">something/someone</span></div>
+        <div class="font-italic">I'll <span class="text-danger">ask</span> <span class="text-primary">the waiter</span> <b>for</b> <span class="text-success">the menu</span>.</div>
+        <div><span class="text-danger">ask</span> <span class="text-primary">someone</span> <b><i>for</i></b> <span class="text-success">something</span></div>
+        <div class="font-italic">I'll <span class="text-danger">ask</span> <b>for</b> <span class="text-success">the menu</span>.</div>
+        <div><span class="text-danger">ask</span> <b><i>for</i></b> <span class="text-success">something/someone</span></div>
+    </div>
 
-<p>Notice that <i><b>ask something</b></i> is not in this list. The picture below shows what might happen if you ask the menu!</p>
+<p>Most native speakers would probably use the last item in the list.</p>
 
-<p>Possibly there are different ways to translate the correct forms into Indonesian. I know that I'm never confident when using <i><b>tanya</b></i> and <b><i>minta</i></b> in Indonesian. If you have any suggestions, please share in the comments box below!</p>
+<p>Notice that <i><b>ask something</b></i> is <span class="uli">not</span> in this list. The picture below shows what might happen if you ask the menu!</p>
+
+    <img src="/img/menu-talk.jpg" class="mx-auto rounded" alt="menu talk" style="width:320px;">
+
+<p>Possibly there are different ways to translate the correct forms into Indonesian. I know that I'm never confident when using <i><b>tanya</b></i> and <b><i>minta</i></b> in Indonesian.</p>
 
 </div>

@@ -4,6 +4,8 @@
 
     songs.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
+    let songsCount = songs.length;
+
     import { base } from '$app/paths';
 
     const menuDivs = songs.map( next => {
@@ -29,6 +31,7 @@
 
 <div class="mb-3 mw-500">
     <img src="/img/guru-eap.png" class="img-fluid mx-auto mb-3" style="width:200px;" alt="gurueap">
+    <h1 class="text-center">{songsCount} Songs</h1>
     {@html menu}
 </div>
 

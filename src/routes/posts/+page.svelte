@@ -4,6 +4,8 @@
 
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
+    let linksCount = links.length;
+
     import { base } from '$app/paths';
 
     const menuDivs = links.map( next => {
@@ -27,6 +29,7 @@
 </script>
 
 <div class="mb-3 mw-500">
+    <h1 class="text-center">{linksCount} Posts</h1>
     {@html menu}
 </div>
 
