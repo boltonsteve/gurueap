@@ -1,12 +1,12 @@
 <script>
-    import { links } from '$lib/links.js';
+    import { base } from '$app/paths';
+
     import { video, music } from '$lib/emojis.js'
+    import { links } from '$lib/links.js';
 
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
     let linksCount = links.length;
-
-    import { base } from '$app/paths';
 
     const menuDivs = links.map( next => {
         let emoticons = '';
