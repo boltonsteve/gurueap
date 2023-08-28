@@ -30,7 +30,7 @@
 </script>
 
 <div class="mb-3 mw-500">
-    <input id="refine" type="text" class="form-control" autofocus>
+    <!--<input id="refine" type="text" class="form-control" autofocus>-->
     <h1 class="text-center">{linksCount} Posts</h1>
     {@html menu}
 </div>
