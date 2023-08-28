@@ -35,7 +35,7 @@
 <p class="font-italic ml-3">It is expected that there will be a dramatic <b><i>increase</i></b> in sales later this year. A <b><i>decrease</i></b> is extremely unlikely.</p>
 
 <h3>Transition Signals</h3>
-<p class="strategy">These are used to communicate cause/effect, comparison, time order, logical relationships, etc.</p>
+<p class="strategy">Sometimes called <b><i>connectives</i></b> or <b><i>discourse markers</i></b>, these are used to communicate cause/effect, comparison, time order, logical relationships, etc.</p>
 
 <p class="font-italic ml-3">Our product is not selling well. <b><i>First of all</i></b> its is expensive. <b><i>In addition</i></b>, the design is outdated.</p>
 
