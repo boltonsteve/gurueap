@@ -44,7 +44,14 @@
     let skills = descriptors.map( next => {
         let criteria = next.map( next => {
             let cols = next.map( next => {
-                let bulls = next.map( next => next )
+                let bulls = next.map( next => {
+
+                    let toReturn = next.replace(/(cohesive features|coherently|coherence)/g,`
+                        <a href="../posts/coherence-cohesion" target="_blank">$1</a>
+                    `);
+                    return toReturn;
+
+                })
                 return `<p class="mt-0">${bulls.join('</p><p>')}</p>`;
             })
             return cols;
