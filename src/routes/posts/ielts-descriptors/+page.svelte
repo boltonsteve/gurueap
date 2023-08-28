@@ -49,6 +49,10 @@
                     let toReturn = next.replace(/(cohesive features|coherently|coherence|connectives|discourse markers)/g,`
                         <a href="../posts/coherence-cohesion" target="_blank">$1</a>
                     `);
+                    toReturn = toReturn.replace(/(collocation)/g,`
+                        <a href="../posts/collocation" target="_blank">$1</a>
+                    `);
+
                     return toReturn;
 
                 })
@@ -61,7 +65,7 @@
 
     const getDescriptors = (skill) => {
         let skillId = skillCodes.indexOf(skill);
-        let head = headers[skillId].map( next => `<h3 class="mb-0 p-1" style="border-bottom:1px solid black;">${next}</h3>` );
+        let head = headers[skillId].map( next => `<h3 class="mb-0 px-1 pb-1 pt-0" style="border-bottom:1px solid black;">${next}</h3>` );
         let rows = [];
         rows.push(head.join(''));
         for(let i=9;i>=0;i--) {
@@ -74,7 +78,6 @@
             row = [];
         }
         return `
-            <h1 class="mt-1 text-center">${headingTexts[skillId]}</h1>
             <div class="flex row-col cols-14444 mb-3" style="grid-column-gap:0px;>${rows.join('')}</div>
         `;
     }

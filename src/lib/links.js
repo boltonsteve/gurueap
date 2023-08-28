@@ -1,8 +1,8 @@
 export const links = [
     {
-        title: "Use or Wear",
-        href: "use-wear",
-        keywords: ['IELTS','criteria','CC']
+        title: "Collocation",
+        href: "collocation",
+        keywords: ['IELTS','criteria','LR','collocation','vocabulary']
     },
     {
         title: "Coeherence and Cohesion (CC)",

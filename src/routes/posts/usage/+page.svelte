@@ -1,9 +1,10 @@
 <svelte:head>
     <title>Usage / Use / Utilise</title>
 </svelte:head>
+
 <div class="mb-3 mw-500">
 
-    <img src="/img/ed-tech.png" class="img-fluid" alt="ed tech">
+    <img src="/img/ed-tech.png" class="img-fluid rounded" alt="ed tech">
 
     <h1><i>Use</i> or <i>Usage</i></h1>
 
