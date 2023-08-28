@@ -76,16 +76,11 @@
     let tHtml = getDescriptors('task1');
     let ttHtml = getDescriptors('task2');
 
+
     function showS() {
         speaking = true;
         task1 = false;
         task2 = false;
-
-        let elements = document.getElementsByClassName('btn')
-
-        for(element of elements){
-            element.classList.remove('active')
-        }
 
     }
 
@@ -115,9 +110,9 @@
 
     <div class="flex w-100 text-center">
         <h1 class="mb-1">IELTS Band Descriptors</h1>
-        <button class="btn btn-outline-danger active" on:click={showS}>Speaking</button>
-        <button class="btn btn-outline-primary" on:click={showT}>Task 1</button>
-        <button class="btn btn-outline-success active" on:click={showTT}>Task 2</button>
+        <button id="btn_speaking" class="btn btn-outline-danger" class:btn-active-danger={speaking} on:click={showS}>Speaking</button>
+        <button class="btn btn-outline-primary" class:btn-active-primary={task1} on:click={showT}>Task 1</button>
+        <button class="btn btn-outline-success" class:btn-active-success={task2} on:click={showTT}>Task 2</button>
     </div>
 
 {#if speaking}

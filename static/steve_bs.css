@@ -40,7 +40,7 @@
     color: var(--red);
 }
 
-.btn-outline-danger:hover, .btn-outline-danger.active {
+.btn-outline-danger:hover, .btn-active-danger {
     background: var(--red);
     color: var(--light);
 }
@@ -50,7 +50,7 @@
     color: var(--blue);
 }
 
-.btn-outline-primary:hover {
+.btn-outline-primary:hover, .btn-active-primary {
     background: var(--blue);
     color: var(--light);
 }
@@ -60,11 +60,10 @@
     color: var(--green);
 }
 
-.btn-outline-success:hover {
+.btn-outline-success:hover, .btn-active-success {
     background: var(--green);
     color: var(--light);
 }
-
 
 .alert {
     border:1px;
