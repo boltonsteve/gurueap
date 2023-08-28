@@ -2,8 +2,7 @@
     <div>
         <img src="/img/gurueap.jpg" class="img-fluid rounded" alt="GuruEAP">
         <h2>Academic English not only for Indonesians</h2>
-        <p>These posts and pages were originally created as supplementary material for EAP classroom teaching (English for Academic Purposes).</p>
-        <p>However, since English often becomes 'lost in translation' from almost any other language, there is likely to be something for everybody.</p>
-        <p>If you're Indonesian and you're preparing for IELTS and/or study abroad, then you've come to the right place!</p>
+        <p>Originally created as supplementary material for EAP classroom teaching (English for Academic Purposes) in Indonesia, GuruEAP probably has something for everybody.</p>
+        <p>Certainly if you're Indonesian and you're preparing for IELTS and/or study abroad, then you've come to the right place!</p>
     </div>
 </div>

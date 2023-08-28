@@ -46,7 +46,7 @@
             let cols = next.map( next => {
                 let bulls = next.map( next => {
 
-                    let toReturn = next.replace(/(cohesive features|coherently|coherence|connectives|discourse markers)/g,`
+                    let toReturn = next.replace(/(cohesive features|cohesive devices|coherently|coherence|connectives|discourse markers)/g,`
                         <a href="../posts/coherence-cohesion" target="_blank">$1</a>
                     `);
                     toReturn = toReturn.replace(/(collocation)/g,`

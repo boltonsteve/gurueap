@@ -7,6 +7,8 @@
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/glue.png" class="form-control" alt="glue">
+
     <h1>Coherence and Cohesion (CC)</h1>
 
 <h2>Cohesion</h2>
