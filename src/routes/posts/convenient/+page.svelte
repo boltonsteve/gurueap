@@ -2,7 +2,7 @@
     import { flagIndo } from '$lib/flags.js'
 </script>
 <svelte:head>
-    <title>Ask (for)</title>
+    <title>Convenient</title>
 </svelte:head>
 
 <div class="mb-3 mw-500">

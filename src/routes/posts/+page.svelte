@@ -5,10 +5,11 @@
     import { links } from '$lib/links.js';
 
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
-
     let linksCount = links.length;
 
-    const menuDivs = links.map( next => {
+    let menu,menuDivs;
+
+    menuDivs = links.map( next => {
         let emoticons = '';
         if('keywords' in next) {
             if(next.keywords.includes('video')) {
@@ -24,11 +25,12 @@
         </div>`
     })
 
-    const menu = menuDivs.join('');
+    menu = menuDivs.join('');
 
 </script>
 
 <div class="mb-3 mw-500">
+    <input id="refine" type="text" class="form-control" autofocus>
     <h1 class="text-center">{linksCount} Posts</h1>
     {@html menu}
 </div>

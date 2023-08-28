@@ -485,9 +485,14 @@ body, textarea {
     margin:0px;
 }
 
+h2 {
+    margin-bottom: var(--1);
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family:arial;
-    color: #616161;
+    color: #292b2c;
+    /* color: #616161; */
 }
 
 .logo {

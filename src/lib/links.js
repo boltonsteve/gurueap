@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Coeherence and Cohesion (CC)",
+        href: "coherence-cohesion",
+        keywords: ['IELTS','criteria','CC']
+    },
+    {
         title: "Convenient",
         href: "convenient",
         keywords: ['vocabulary']
