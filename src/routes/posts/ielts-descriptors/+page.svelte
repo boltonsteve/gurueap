@@ -52,6 +52,12 @@
                     toReturn = toReturn.replace(/(collocation)/g,`
                         <a href="../posts/collocation" target="_blank">$1</a>
                     `);
+                    toReturn = toReturn.replace(/(idiomatic vocabulary|idiomatic language)/g,`
+                        <a href="../posts/idioms" target="_blank">$1</a>
+                    `);
+                    toReturn = toReturn.replace(/(less common|uncommon lexical items)/g,`
+                        <a href="../posts/less-common" target="_blank">$1</a>
+                    `);
 
                     return toReturn;
 

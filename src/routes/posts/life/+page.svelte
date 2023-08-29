@@ -1,6 +1,7 @@
 <script>
     import { flagIndo, flagUk } from '$lib/flags.js'
 </script>
+
 <svelte:head>
     <title>Impact</title>
 </svelte:head>

@@ -1,5 +1,15 @@
 export const links = [
     {
+        title: "Less common vocabulary",
+        href: "less-common",
+        keywords: ['vocabulary','LR','frequency']
+    },
+    {
+        title: "Idiomatic language",
+        href: "idioms",
+        keywords: ['vocabulary','LR','idioms']
+    },
+    {
         title: "People's lives",
         href: "life",
         keywords: ['vocabulary','culture','appropriacy']

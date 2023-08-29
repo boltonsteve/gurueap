@@ -8,9 +8,11 @@
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/price.jpg" class="img-fluid rounded" alt="price">
+
     <h1>The Price is not Expensive</h1>
 
-    <p>Because of the recent increase in fuel prices, the price of food is more expensive than before.</p>
+    <p class="font-italic ml-3">Because of the recent increase in fuel prices, the <span class="font-weight-bold text-danger">price</span> of food is <span class="font-weight-bold text-danger">more expensive</span> than before.</p>
 
     <p>{@html flagIndo} This is obviously a direct translation of <b><i>harganya lebih mahal</i></b>.</p>
 
@@ -18,9 +20,9 @@
 
     <p>More correct collocation is as follows:</p>
 
-    <p>Because of the recent increase in fuel prices, the <span class="font-weight-bold text-success">price</span> of food is <span class="font-weight-bold text-success">higher</span> than before.</p>
+    <p class="font-italic ml-3">Because of the recent increase in fuel prices, the <span class="font-weight-bold text-success">price</span> of food is <span class="font-weight-bold text-success">higher</span> than before.</p>
 
-    <p>Because of the recent increase in fuel prices, <span class="font-weight-bold text-success">food</span> is more <span class="font-weight-bold text-success">expensive</span> than before.</p>
+    <p class="font-italic ml-3">Because of the recent increase in fuel prices, <span class="font-weight-bold text-success">food</span> is more <span class="font-weight-bold text-success">expensive</span> than before.</p>
 
     <p>Hope that helps!</p>
 
