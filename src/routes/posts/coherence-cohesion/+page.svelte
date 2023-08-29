@@ -47,6 +47,8 @@
 <p class="mb-0 ml-3 font-italic">If I have an exam, I <b><i>look for</i></b> a quiet place to study, <b><i>switch off</i></b> my phone, and <b><i>leave</i></b> a 'do not disturb' sign on the door.</p>
 <p class="small mt-1 ml-3">(parallel clauses..)</p>
 
+<hr>
+
 <h2>Coherence</h2>
 
 <p><b><i>Coherence</i></b> means that the text is easy to read and understand because:</p>
