@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Despite",
+        href: "despite",
+        keywords: ['vocabulary']
+    },
+    {
         title: "Collocation",
         href: "collocation",
         keywords: ['IELTS','criteria','LR','collocation','vocabulary']
