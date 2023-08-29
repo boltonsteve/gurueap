@@ -1,8 +1,8 @@
 export const links = [
     {
-        title: "Spend time",
-        href: "spend-time",
-        keywords: ['vocabulary']
+        title: "People's lives",
+        href: "life",
+        keywords: ['vocabulary','culture','appropriacy']
     },
     {
         title: "Despite",
