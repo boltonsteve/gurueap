@@ -15,21 +15,6 @@
   --3: 30px;
 }
 
-#footer {
-    /* margin-top:auto; */
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position: fixed;
-    height: 50px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid #bbbbbb;
-    color: #313131;
-    background: #F7F7F7;
-}
-
 .w-100 {
     width: 100%;
 }
@@ -531,6 +516,13 @@ nav {
     align-items:center;
     padding-left:20px;
     padding-right:20px;
+
+    position: sticky;
+    top:0;
+    /* color: #313131; */
+    background: #F7F7F7;
+    /* border-top: 1px solid #bbbbbb; */
+
 }
 
 #wrapper {
