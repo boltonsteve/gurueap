@@ -8,7 +8,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/aliens-animals-robots.png" class="img-fluid rounded" alt="aliens animals robots">
+    <img src="/img/aliens-animals-robots.png" class="img-fluid rounded" alt="aliens animals robots" style="border:1px solid #7accf4;">
 
     <h1>People's lives</h1>
 
@@ -18,7 +18,7 @@
 
 <h3>1. People</h3>
 
-<p>Your reader always assumes that you're making statements about people, and not animals or aliens, <span class="uli">unless otherwise stated</span>:</p>
+<p>Your reader always assumes that you're making statements about people - NOT aliens, animals or robots - <span class="uli">unless otherwise stated</span>:</p>
 
 <ul>
     <li class="font-italic">Chocolate is delicious.</li>
@@ -29,11 +29,11 @@
     <li class="small mb-1 lst-none">(problems <b><i>for people</i></b>!)</li>
 </ul>
 
-<p>OK, so you might argue that urbanisation also causes problems for wildlife. However, if you don't mention wildlife then we assume you're talking about people.</p>
-
 <h3>2. People's lives</h3>
 
-In our opening example there is a grammatical error - <span class="font-weight-bold font-italic text-danger">people's life</span>. <b><i>People</i></b> is plural and <b><i>life</i></b> is singular - so it doesn't make sense to put those words together!
+<p>In our opening example there is a grammatical error - <span class="font-weight-bold font-italic text-danger">people's life</span>. <b><i>People</i></b> is plural and <b><i>life</i></b> is singular - so it doesn't make sense to put those words together!</p>
+
+<p>And again, it is always assumed you are talking about people (NOT aliens, etc) and the things that they expeience while they are alive (NOT after they are dead), <span class="uli">unless otherwise stated</span>.</p>
 
 <ul>
     <li class="font-italic">Chocolate is delicious.</li>
@@ -44,19 +44,21 @@ In our opening example there is a grammatical error - <span class="font-weight-
     <li class="small mb-1 lst-none">(at any stage of life, as long as you're alive and not dead!)</li>
 </ul>
 
-<p>Again, unless you state otherwise, it is always assumed you are talking about people and the things that they do while they are alive, and that these things affect their lives in some way.</p>
+<h3>3. When people - and their lives - <b><i>DO</i></b> matter</h3>
 
-<h3>3. When people and their lives <b><i>DO</i></b> matter</h3>
+<p>If you want to talk about dead people, or about animals, aliens and robots, then the following are possible:</p>
 
-<p class="font-italic ml-3">Chocolate is delicious unless you're dead.</p>
-<p>I don't know why anyone would want to write this, but if you're not alive then obviously you cannot enjoy chocolate!</p>
-<p class="font-italic ml-3">Driving too fast is dangerous for animals living in forests that have roads passing through them.</p>
-<p>It's a problem for animals, not people.</p>
-<p class="font-italic ml-3">Urbanisation causes many problems for aliens trying to land their spaceships.</p>
-<p>Again, I cannot imagine anybody needing to write this, but these are problems for aliens, not people.</p>
+<ul>
+    <li class="font-italic">Chocolate is delicious unless you're dead.</li>
+    <li class="small mb-1 lst-none">I don't know why anyone would want to write this, but if you're not alive then obviously you cannot enjoy chocolate!</li>
+    <li class="font-italic">Driving too fast is dangerous for animals living in forests that have roads passing through them.</li>
+    <li class="small mb-1 lst-none">It's a problem for animals, not people.</li>
+    <li class="font-italic">Urbanisation causes many problems for aliens trying to land their spaceships.</li>
+    <li class="small mb-1 lst-none">Again, I cannot imagine anybody needing to write this, but these are problems for aliens, not people.</li>
+</ul>
 
 <h3>4. Similar problem words</h3>
 
-<p>Students experience a similar problem with the word <b><i>human(s)</i></b>. Again, you only need to mention humans if you're contrasting them with other species or with aliens!</p>
+<p>Students experience a similar problem with the word <b><i>human(s)</i></b>. Again, you only need to mention humans if you're contrasting them with other species or with aliens or robots!</p>
 
 </div>
