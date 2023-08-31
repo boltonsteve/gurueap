@@ -8,6 +8,8 @@
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/aliens-animals-robots.png" class="img-fluid rounded" alt="aliens animals robots">
+
     <h1>People's lives</h1>
 
     <p class="font-italic ml-3">Technology is very useful <span class="font-weight-bold text-danger">for people's life</span>.</p>

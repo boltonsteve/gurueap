@@ -31,7 +31,8 @@
 
 <div class="mb-3 mw-500">
     <!--<input id="refine" type="text" class="form-control" autofocus>-->
-    <h1 class="text-center">{linksCount} Posts</h1>
+    <!--<h1 class="text-center">{linksCount} Posts</h1>-->
+    <img src="/img/lemon-squeezy-class.png" class="img-fluid rounded mb-3" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">
     {@html menu}
 </div>
 
