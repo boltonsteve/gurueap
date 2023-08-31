@@ -133,16 +133,19 @@
 
 {#if speaking}
     <div transition:slide={{duration:1000}}>
+        <h1>Speaking</h1>
         {@html sHtml}
     </div>
 {/if}
 {#if task1}
     <div transition:slide={{duration:1000}}>
+        <h1>Task 1</h1>
         {@html tHtml}
     </div>
 {/if}
 {#if task2}
     <div transition:slide={{duration:1000}}>
+        <h1>Task 2</h1>
         {@html ttHtml}
     </div>
 {/if}

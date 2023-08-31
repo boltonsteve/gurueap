@@ -18,7 +18,7 @@
 
     <p>This is really a collocation problem. The IELTS examiner will understand what you mean, but you will not receive a good score for vocabulary. A <i><b>product or service</b></i> can be <i><b>expensive</b></i>, but the <i><b>price</b></i> of the product or service is either <i><b>high</b></i> or <i><b>low</b></i>.</p>
 
-    <p>More correct collocation is as follows:</p>
+    <p>More correct <a href="../posts/collocation" target="_blank">collocation</a> is as follows:</p>
 
     <p class="font-italic ml-3">Because of the recent increase in fuel prices, the <span class="font-weight-bold text-success">price</span> of food is <span class="font-weight-bold text-success">higher</span> than before.</p>
 
