@@ -30,8 +30,7 @@
 </script>
 
 <div class="mb-3 mw-500">
-    <img src="/img/guru-eap.png" class="img-fluid mx-auto mb-3" style="width:200px;" alt="gurueap">
-    <h1 class="text-center">{songsCount} Songs</h1>
+    <img src="/img/guru-eap.png" class="img-fluid mx-auto mb-3" style="width:180px;" alt="gurueap">
     {@html menu}
 </div>
 
