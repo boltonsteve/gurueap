@@ -33,7 +33,7 @@
 
 <p>In our opening example there is a grammatical error - <span class="font-weight-bold font-italic text-danger">people's life</span>. <b><i>People</i></b> is plural and <b><i>life</i></b> is singular - so it doesn't make sense to put those words together!</p>
 
-<p>And again, it is always assumed you are talking about <b><i>people</i></b> (NOT aliens, etc) and the things that they expeience while they are alive (NOT after they are dead), <span class="uli">unless otherwise stated</span>.</p>
+<p>And again, it is always assumed you are talking about <b><i>people</i></b> (NOT aliens, etc) and the things that they experience while they are alive (NOT after they are dead), <span class="uli">unless otherwise stated</span>.</p>
 
 <ul>
     <li class="font-italic">Chocolate is delicious.</li>
