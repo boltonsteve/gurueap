@@ -30,7 +30,15 @@
 </script>
 
 <div class="mb-3 mw-500">
-    <img src="/img/guru-eap.png" class="img-fluid mx-auto mb-3" style="width:180px;" alt="gurueap">
+    <img src="/img/steve-baby.png" class="mx-auto mb-3 w-25" alt="gurueap">
     {@html menu}
 </div>
+
+<style>
+img {
+    border: 10px solid white; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    rotate: -5deg;
+}
+</style>
 

@@ -20,8 +20,8 @@
             }
         }
 
-        return `<div class="mb-2 menu text-center">
-            <a href="${base}/posts/${next.href}" class="link-menu">${next.title}</a> <span class="text-success">${emoticons}</span>
+        return `<div class="mb-2 text-center link-menu">
+            <a href="${base}/posts/${next.href}">${next.title}</a> <span class="text-success">${emoticons}</span>
         </div>`
     })
 
@@ -32,7 +32,6 @@
 <div class="mb-3 mw-500">
     <!--<input id="refine" type="text" class="form-control" autofocus>-->
     <!--<h1 class="text-center">{linksCount} Posts</h1>-->
-    <img src="/img/lemon-squeezy-class.png" class="img-fluid rounded mb-3" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">
+    <img src="/img/steve-whiteboard.png" class="img-fluid rounded mb-3" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">
     {@html menu}
 </div>
-
