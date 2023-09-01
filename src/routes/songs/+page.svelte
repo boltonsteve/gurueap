@@ -21,8 +21,8 @@
 
         return `<div class="mb-0 text-center">
             <a class="song-title" href="${base}/songs/${next.href}">${next.title}</a> <span class="text-success">${emoticons}</span>
-            </div>
-            <p class="mt-0 mb-2 song-desc text-center">${next.description}</p>`
+        </div>
+        <p class="mt-0 mb-2 song-desc text-center">${next.description}</p>`
     })
 
     const menu = menuDivs.join('');
@@ -36,7 +36,7 @@
 
 <style>
 img {
-    border: 10px solid white; 
+    border: 7px solid white; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     rotate: -5deg;
 }
