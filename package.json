@@ -18,6 +18,7 @@
 		"eslint-plugin-svelte": "^2.30.0",
 		"svelte": "^4.0.5",
 		"svelte-scrollto": "^0.2.0",
+		"svelte-seo": "^1.5.3",
 		"svelte-youtube-embed": "^0.2.1",
 		"vite": "^4.4.2"
 	},

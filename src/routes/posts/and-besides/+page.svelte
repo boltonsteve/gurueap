@@ -44,7 +44,7 @@
 
     <p class="ml-3">Weak claim(s) + <em><b>And besides</b></em> + very strong [and final!] claim</p>
 
-    <p>Here the meaning is more than just <i><b>as well as</b></i>.<br>
-Here <i><b>And besides</b></i> introduces a very powerful claim that makes all other preceding claims redundant.</p>
+    <p>Here the meaning is more than just <i><b>as well as</b></i>.</p>
+    <p><i><b>And besides</b></i> introduces a very powerful claim that makes all other preceding claims redundant.</p>
 
 </div>

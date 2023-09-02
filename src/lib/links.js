@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "When 'enough' is too much",
+        href: "enough",
+        keywords: ['vocabulary']
+    },
+    {
         title: "Less common vocabulary",
         href: "less-common",
         keywords: ['vocabulary','LR','frequency']
