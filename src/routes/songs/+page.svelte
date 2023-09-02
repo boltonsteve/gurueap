@@ -1,4 +1,5 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { songs } from '$lib/songs.js';
     import { video, music } from '$lib/emojis.js'
 
@@ -28,6 +29,11 @@
     const menu = menuDivs.join('');
 
 </script>
+
+<SvelteSeo
+  title="GuruEAP - Songs",
+  description="Songs that demonstrate various aspects of language, for example lexical and grammatical structures, that often become lost in translation from other languages into English."
+/>
 
 <div class="mb-3 mw-500">
     <img src="/img/steve-baby.png" class="mx-auto mb-3 w-25" alt="gurueap">

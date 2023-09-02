@@ -1,4 +1,5 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { base } from '$app/paths';
 
     import { video, music } from '$lib/emojis.js'
@@ -28,6 +29,15 @@
     menu = menuDivs.join('');
 
 </script>
+
+<SvelteSeo
+  title="GuruEAP - Posts",
+  description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - and more!"
+/>
+
+<svelte:head>
+    <title>GuruEAP - Posts</title>
+</svelte:head>
 
 <div class="mb-3 mw-500">
     <!--<input id="refine" type="text" class="form-control" autofocus>-->
