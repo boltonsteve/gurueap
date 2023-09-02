@@ -37,9 +37,9 @@
     <p>Now lets review the positives and negatives:</p>
 
     <ul>
-        <li>enough - positive</li>
-        <li>not enough - negative</li>
-        <li>too - negative</li>
+        <li><b><i>enough</i></b> - positive</li>
+        <li><b><i>not enough</i></b> - negative</li>
+        <li><b><i>too</i></b> - negative</li>
     </ul>
 
     <p>If I say that <i>car tax is expensive <b>enough</b> for middle income families</i> then I'm making a positive evaluation, and yet this situation is clearly negative!</p>
@@ -48,7 +48,7 @@
 
     <p>In the car tax example, <b><i>very</i></b> would create a more negative evaluation of the situation, and that's what we need:</p>
 
-    <p>Owners of LCGC cars spend additional money on car tax which is <i><b>very</b></i> expensive for middle income families.</p>
+    <p class="font-italic ml-3">Owners of LCGC cars spend additional money on car tax which is <span class="font-weight-bold text-success">very</span> expensive for middle income families.</p>
 
     <hr>
 
