@@ -16,7 +16,7 @@
 
     <img src="/img/lcgc.png" class="img-fluid rounded" alt="LCGC cars - enough expensive">
 
-    <h1>When enough is too much</h1>
+    <h1>When <b><i>enough</i></b> is too much</h1>
 
     <p class="font-italic ml-3">Owners of LCGC cars spend additional money on car tax which is expensive <span class="font-weight-bold text-danger">enough</span> for middle income families.</p>
 
@@ -44,11 +44,11 @@
 
     <p>If I say that <i>car tax is expensive <b>enough</b> for middle income families</i> then I'm making a positive evaluation, and yet this situation is clearly negative!</p>
 
-    <p>The problem is that in Bahasa Indonesia, <b><i>enough</i></b> can behave rather like <b><i>very</i></b> as a way to intensify an adjective.</p>
+    <p>{@html flagIndo} The problem is that in Bahasa Indonesia, <b><i>enough</i></b> can behave rather like <b><i>very</i></b> as a way to intensify an adjective.</p>
 
     <p>In the car tax example, <b><i>very</i></b> would create a more negative evaluation of the situation, and that's what we need:</p>
 
-    <p class="font-italic ml-3">Owners of LCGC cars spend additional money on car tax which is <span class="font-weight-bold text-success">very</span> expensive for middle income families.</p>
+    <p class="font-italic ml-3">Owners of LCGC cars spend additional money on car tax which is <span class="font-weight-bold text-success">very expensive</span> for middle income families.</p>
 
     <hr>
 
