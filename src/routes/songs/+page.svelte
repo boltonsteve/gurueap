@@ -32,7 +32,7 @@
 
 <SvelteSeo
   title="GuruEAP - Songs",
-  description="Songs that demonstrate various aspects of language, for example lexical and grammatical structures, that often become lost in translation from other languages into English."
+  description="Songs that demonstrate various aspects of language, for example lexical and grammatical structures, that often become lost in translation from other languages into English. Performed by EAP students, many of whom are preparing for IELTS."
 />
 
 <div class="mb-3 mw-500">
