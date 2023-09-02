@@ -142,6 +142,9 @@ ul.links {
 .cols-15 {
     grid-template-columns: 1fr 5fr;
 }
+.cols-61 {
+    grid-template-columns: 6fr 1fr;
+}
 .cols-16 {
     grid-template-columns: 1fr 6fr;
 }
@@ -548,7 +551,9 @@ nav {
 
 input {
     border-radius: 3px;
-    border: 1px solid var(--blue);
+    border: 2px solid var(--dark);
     height: 20px;
     padding: 5px 9px 5px 9px;
+    font-size:1.1rem;
+    width: calc(100% - 18px);
 }

@@ -119,6 +119,6 @@
 
     {@html activity}
 
-    <button class="btn my-1" on:click={checkAns}>Check answers</button>
+    <button class="btn my-1 d-block mx-auto" on:click={checkAns}>Check answers</button>
 
 </div>

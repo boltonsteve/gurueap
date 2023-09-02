@@ -5,28 +5,61 @@
     import { video, music } from '$lib/emojis.js'
     import { links } from '$lib/links.js';
 
+    let refineTitle = '';
+    let refineKeyword = '';
+
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
     let linksCount = links.length;
 
     let menu,menuDivs;
 
-    menuDivs = links.map( next => {
-        let emoticons = '';
-        if('keywords' in next) {
-            if(next.keywords.includes('video')) {
-                emoticons += `${video}&nbsp;`;
-            }
-            if(next.keywords.includes('song')) {
-                emoticons += `${music}&nbsp;`;
-            }
-        }
+    let setUp = () => {
 
-        return `<div class="mb-2 text-center link-menu">
-            <a href="${base}/posts/${next.href}">${next.title}</a> <span class="text-success">${emoticons}</span>
-        </div>`
-    })
+        menuDivs = links.map( next => {
 
-    menu = menuDivs.join('');
+            let emoticons = '';
+            if('keywords' in next) {
+                if(next.keywords.includes('video')) {
+                    emoticons += `${video}&nbsp;`;
+                }
+                if(next.keywords.includes('song')) {
+                    emoticons += `${music}&nbsp;`;
+                }
+            }
+
+            console.log("refineTitle: " + refineTitle);
+
+            if(refineTitle == '') {
+                return `<div class="mb-2 text-center link-menu">
+                    <a href="${base}/posts/${next.href}">${next.title}</a> <span class="text-success">${emoticons}</span>
+                </div>`
+            } else {
+                console.log('Refining..!');
+                if(next.title.toLowerCase().match(refineTitle)) {
+                    return `<div class="mb-2 text-center link-menu">
+                        <a href="${base}/posts/${next.href}">${next.title}</a> <span class="text-success">${emoticons}</span>
+                    </div>`
+                }
+            }
+
+        })
+
+        menu = menuDivs.join('');
+
+    }
+
+    setUp();
+
+
+    const handleTitleInput = (e) => {
+        refineTitle = e.target.value.toLowerCase();
+        setUp();
+    }
+
+    const handleKeywordInput = (e) => {
+        refineKeyword = e.target.value.toLowerCase();
+        /* setUp(); */
+    }
 
 </script>
 
@@ -40,8 +73,16 @@
 </svelte:head>
 
 <div class="mb-3 mw-500">
-    <!--<input id="refine" type="text" class="form-control" autofocus>-->
+
+    <img src="/img/steve-whiteboard.png" class="img-fluid rounded mb-1" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">
+
+        <!--<div class="row-col cols-11">-->
+        <input id="refine_title" type="text" class="mb-2" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
+        <!--<input id="refine_keyword" type="text" class="mb-2" placeholder="search keywords" on:input={handleKeywordInput} value={refineKeyword}>
+    </div>-->
+
     <!--<h1 class="text-center">{linksCount} Posts</h1>-->
-    <img src="/img/steve-whiteboard.png" class="img-fluid rounded mb-3" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">
+
     {@html menu}
+
 </div>
