@@ -18,11 +18,11 @@
 
     <h1>When <b><i>enough</i></b> is too much</h1>
 
-    <p class="font-italic ml-3">Owners of LCGC cars spend additional money on car tax which is expensive <span class="font-weight-bold text-danger">enough</span> for middle income families.</p>
+    <p class="font-italic ml-3">Owners of LCGC cars spend additional money on car tax which is <span class="font-weight-bold text-danger">expensive enough</span> for middle income families.</p>
 
     <p>{@html flagIndo} <b><i>Enough</i></b>, <b><i>not enough</i></b>, and <b><i>too</i></b> often get lost in translation from the Indonesian <b><i>cukup</i></b>, <b><i>tidak cukup</i></b>, and <b><i>terlalu</i></b>.</p>
 
-    <p>In English these words are used to evaluate situations that have either positive or negative outcomes.</p>
+    <p>In English these words are used to evaluate situations that have either positive or negative outcomes, as shown in the examples below.</p>
 
     <p>Let's look first at a negative outcome:</p>
 
@@ -42,7 +42,7 @@
         <li><b><i>too</i></b> - negative</li>
     </ul>
 
-    <p>If I say that <i>car tax is expensive <b>enough</b> for middle income families</i> then I'm making a positive evaluation, and yet this situation is clearly negative!</p>
+    <p>If I say that <i>car tax is <b>expensive enough</b> for middle income families</i> then I'm making a positive evaluation about a negative situation.</p>
 
     <p>{@html flagIndo} The problem is that in Bahasa Indonesia, <b><i>enough</i></b> can behave rather like <b><i>very</i></b> as a way to intensify an adjective.</p>
 
@@ -51,8 +51,6 @@
     <p class="font-italic ml-3">Owners of LCGC cars spend additional money on car tax which is <span class="font-weight-bold text-success">very expensive</span> for middle income families.</p>
 
     <hr>
-
-    <p>If an Indonesian woman says that you are <b><i>handsome enough</i></b> (cukup ganteng), they believe they are paying you a compliment. If you speak Bahasa Indonesia, then you will take this as a compliment. However, a man who does not speak Indonesian will appear confused, because <b><i>handsome enough</i></b> literally means that he meets some minimum requirement for handsomeness. It's not a negative evaluation, but its not particularly flattering either!</p>
 
 <p class="small">Many thanks to Desy and Ratih (photo) for agreeing to be photographed and for filling me in on the rules!</p>
 
