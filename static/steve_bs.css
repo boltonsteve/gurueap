@@ -132,6 +132,10 @@ ul.links {
     line-height:2em;
 }
 
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
 /* Grid-Template-Columns */
 .cols-11 {
     grid-template-columns: 1fr 1fr;
@@ -551,7 +555,7 @@ nav {
 
 input {
     border-radius: 3px;
-    border: 2px solid var(--dark);
+    border: 1px solid var(--dark);
     height: 20px;
     padding: 5px 9px 5px 9px;
     font-size:1.1rem;

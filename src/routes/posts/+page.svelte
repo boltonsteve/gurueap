@@ -77,7 +77,7 @@
     <img src="/img/steve-whiteboard.png" class="img-fluid rounded mb-1" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">
 
         <!--<div class="row-col cols-11">-->
-        <input id="refine_title" type="text" class="mb-2" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
+        <input id="refine_title" type="text" class="mb-2 text-center" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
         <!--<input id="refine_keyword" type="text" class="mb-2" placeholder="search keywords" on:input={handleKeywordInput} value={refineKeyword}>
     </div>-->
 
