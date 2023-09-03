@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Memorising and remembering memories",
+        href: "memorise-remember",
+        keywords: ['vocabulary','collocation']
+    },
+    {
         title: "Making people able with 'enable'",
         href: "enable",
         keywords: ['vocabulary','collocation']

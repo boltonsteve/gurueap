@@ -538,7 +538,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 nav {
-    /* background: #eeeeee; */
     display:flex;
     justify-content:space-between;
     height: 50px;
@@ -548,10 +547,7 @@ nav {
 
     position: sticky;
     top:0;
-    /* color: #313131; */
     background: #F7F7F7;
-    /* border-top: 1px solid #bbbbbb; */
-
 }
 
 #wrapper {
