@@ -34,7 +34,7 @@
 
     <p class="font-italic ml-3">I take photographs so that I can <span class="font-weight-bold text-success">remember</span> the occasion.</p>
 
-    <p>As for remind, this might also be part of the preparation for a test or an exam:</p>
+    <p>As for <b><i>remind</i></b>, this might also be part of the preparation for a test or an exam:</p>
 
     <p class="font-italic ml-3">I take photographs of my lecture notes to <span class="font-weight-bold text-success">remind myself</span> about the formulae used by Feldman.</p>
 
