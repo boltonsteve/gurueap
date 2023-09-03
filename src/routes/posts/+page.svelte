@@ -82,9 +82,9 @@
 
     <img src="/img/steve-whiteboard.png" class="img-fluid rounded mb-1" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">
 
-    <div class="row-col cols-61 mb-2" style="align-items:center;">
-        <input id="refine_title" type="text" class="text-center" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
-        <button class="btn btn-outline-dark form-control" style="height:100%;font-size:1rem;" on:click={resetTitle}>all</button>
+    <div class="flexbox-container mb-2" style="align-items:center;">
+            <input id="refine_title" type="text" class="flexbox-item-1 text-center" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
+            <button class="flexbox-item-2" on:click={resetTitle}>all</button>
     </div>
 
     <!--<h1 class="text-center">{linksCount} Posts</h1>-->
@@ -92,3 +92,33 @@
     {@html menu}
 
 </div>
+
+<style>
+    
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #bbbbbb;
+    border-radius:5px;
+    background: #bbbbbb;
+}
+.flexbox-item {
+    
+}
+.flexbox-item-1 {
+    flex-grow:1;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.flexbox-item-2 {
+    border: none;
+    background-color: #bbbbbb;
+    height:100%;
+    font-size: 1.1rem;
+    width:50px;
+    cursor:pointer;
+    
+}
+</style>

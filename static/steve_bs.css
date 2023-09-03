@@ -143,10 +143,6 @@ ul.links {
     line-height:2em;
 }
 
-input:focus, textarea:focus, select:focus{
-        outline: none;
-    }
-
 /* Grid-Template-Columns */
 .cols-11 {
     grid-template-columns: 1fr 1fr;
@@ -565,10 +561,13 @@ nav {
 }
 
 input {
-    border-radius: 3px;
+    border-radius: 0px;
     border: 1px solid var(--dark);
-    height: 20px;
     padding: 5px 9px 5px 9px;
     font-size:1.1rem;
-    width: calc(100% - 18px);
 }
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
