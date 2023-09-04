@@ -1,6 +1,6 @@
 export const links = [
     {
-        title: "Supergroups and Percentages",
+        title: "Supergroups and Percentages in IELTS Task 1",
         href: "supergroup",
         keywords: ['task1','percentages','TA','CC']
     },
