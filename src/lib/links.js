@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Supergroups and Percentages",
+        href: "supergroup",
+        keywords: ['task1','percentages','TA','CC']
+    },
+    {
         title: "Memorising and remembering memories",
         href: "memorise-remember",
         keywords: ['vocabulary','collocation']

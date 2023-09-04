@@ -122,7 +122,7 @@
     padding: var(--1);
 }
 .rounded {
-    border-radius: 4px;
+    border-radius: 5px;
 }
 .border-dark {
     /* border-color: #aaaaaa; */
@@ -557,7 +557,7 @@ nav {
 }
 
 input {
-    border-radius: 0px;
+    border-radius: 5px;
     border: 1px solid var(--dark);
     padding: 5px 9px 5px 9px;
     font-size:1.1rem;

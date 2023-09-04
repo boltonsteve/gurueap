@@ -82,7 +82,7 @@
 
     <img src="/img/steve-whiteboard.png" class="img-fluid rounded" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">
 
-    <div class="flexbox-container mb-2">
+    <div class="flexbox-container mb-3">
         <input id="refine_title" type="text" class="flexbox-item flexbox-item-1" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
         <button class="flexbox-item flexbox-item-2" on:click={resetTitle}>all</button>
     </div>
