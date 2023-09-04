@@ -33,12 +33,9 @@
 
     <p class="mb-0">Compare:</p>
 
-    <div class="row-col cols-11 mb-0">
+    <div class="grid1 mb-0">
         <p>Chunks that are difficult to join in order to complete the sentence mentally</p>
         <p>Chunks that are easy to join mentally - <i>even if there are longer silences in between</i></p>
-    </div>
-
-    <div class="row-col cols-11 my-0 font-italic">
         <ul class="my-0 pl-2">
             <li>I believe that (pause)</li>
             <li>it is very (pause)</li>
@@ -54,6 +51,7 @@
         </ul>
     </div>
 
+
     <h3 class="mb-0">2. Fillers</h3>
     <p class="mt-0">Instead of silence, native speakers often use <b><i>fillers</i></b> as a way to 'buy time' while they are thinking about how to answer a question or how to continue an idea.</p>
 
@@ -65,12 +63,9 @@
 
     <p>The following would <span class="uli">not</span> be <b><i>appropriate</i></b>:</p>
 
-    <div class="row-col cols-14 my-1">
+    <div class="grid2 my-1">
         <div class="font-weight-bold">Examiner</div>
         <div class="font-italic">Do you have any brothers or sisters?</div>
-    </div>
-
-    <div class="row-col cols-14 my-1">
         <div class="font-weight-bold">Candidate</div>
         <div class="font-italic">Hmm. That's an interesting question. Yes, I have a brother and eight sisters.</div>
     </div>
@@ -111,3 +106,17 @@
     <p class="mt-0 small">Remember that <i>too much</i> hesitation in IELTS speaking can bring down your score for <b><i><a href="../posts/ielts-descriptors" target="blank">Fluency and Coherence (FC)</a></i></b>.</p>
 
 </div>
+
+
+<style>
+.grid1 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 0px;
+}
+.grid2 {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 10px;
+}
+</style>
