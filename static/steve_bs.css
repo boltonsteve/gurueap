@@ -15,6 +15,18 @@
   --3: 30px;
 }
 
+.grid-post {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
 .w-25 {
     width: 25%;
 }

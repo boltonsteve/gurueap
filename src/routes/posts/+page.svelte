@@ -20,26 +20,15 @@
             let emoticons = '';
             if('keywords' in next) {
                 if(next.keywords.includes('video')) {
-                    emoticons += `${video}&nbsp;`;
+                    emoticons += `<span class="text-success mx-1">${video}</span>`;
                 }
                 if(next.keywords.includes('song')) {
-                    emoticons += `${music}&nbsp;`;
+                    emoticons += `<span class="text-success mx-1">${music}</span>`;
                 }
             }
 
-            console.log("refineTitle: " + refineTitle);
-
-            if(refineTitle == '') {
-                return `<div class="mb-2 text-center link-menu">
-                    <a href="${base}/posts/${next.href}">${next.title}</a> <span class="text-success">${emoticons}</span>
-                </div>`
-            } else {
-                console.log('Refining..!');
-                if(next.title.toLowerCase().match(refineTitle)) {
-                    return `<div class="mb-2 text-center link-menu">
-                        <a href="${base}/posts/${next.href}">${next.title}</a> <span class="text-success">${emoticons}</span>
-                    </div>`
-                }
+            if(refineTitle == '' || next.title.toLowerCase().match(refineTitle)) {
+                return `<a class="grid-post" href="${base}/posts/${next.href}">${next.title}${emoticons}</a>`
             }
 
         })
@@ -50,7 +39,6 @@
 
     setUp();
 
-
     const handleTitleInput = (e) => {
         refineTitle = e.target.value.toLowerCase();
         setUp();
@@ -58,7 +46,6 @@
 
     const handleKeywordInput = (e) => {
         refineKeyword = e.target.value.toLowerCase();
-        /* setUp(); */
     }
 
     const resetTitle = () => {
@@ -74,29 +61,28 @@
   description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - and more!"
 />
 
-<svelte:head>
-    <title>GuruEAP - Posts</title>
-</svelte:head>
-
-<div class="mb-3 mw-500">
-
-    <img src="/img/steve-whiteboard.png" class="img-fluid rounded" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">
-
-    <div class="flexbox-container mb-3">
-        <input id="refine_title" type="text" class="flexbox-item flexbox-item-1" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
-        <button class="flexbox-item flexbox-item-2" on:click={resetTitle}>all</button>
+<div class="mb-1 mw-500">
+    <!--<img src="/img/steve-whiteboard.png" class="img-fluid rounded" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">-->
+    <div class="input-container">
+        <input id="refine_title" type="text" class="input-item input-item-1" placeholder="search posts" autofocus on:input={handleTitleInput} value={refineTitle}>
+        <button class="input-item input-item-2" on:click={resetTitle}>all</button>
     </div>
-
-    <!--<h1 class="text-center">{linksCount} Posts</h1>-->
-
-    {@html menu}
 
 </div>
 
+<div class="container">{@html menu}</div>
+
 <style>
-    
-.flexbox-container {
-    margin: 10px auto;
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-auto-rows: 70px;
+    grid-gap: 10px;
+}
+
+.input-container {
     display: flex;
     justify-content: center;
     border: 1px solid #bbbbbb;
@@ -105,22 +91,28 @@
 
 }
 
-.flexbox-item {
+.input-item {
     border: none;
     font-size: 1.1rem;
 }
  
-.flexbox-item-1 {
+.input-item-1 {
     text-align: center;
     flex-grow: 1;
     background-color: #fff;
     border-radius: 5px 0px 0px 5px;
 }
 
-.flexbox-item-2 {
+.input-item-2 {
     background-color: #bbbbbb;
     width:70px;
     cursor:pointer;
 }
+
+    @media (max-width: 500px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
 
 </style>

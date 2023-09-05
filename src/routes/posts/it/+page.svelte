@@ -4,6 +4,8 @@
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/it.png" class="img-fluid rounded" alt="it">
+
     <h1>Use 'it' with care!</h1>
 
     <p class="ml-3 font-italic">People who live in remote areas sometimes have limited access to the things they want to buy. Since <span class="font-weight-bold text-danger">it</span> cannot be provided by retail shops, online shopping may be the solution.</p>
