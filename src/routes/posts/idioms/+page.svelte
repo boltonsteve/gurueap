@@ -9,6 +9,8 @@
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/rose-tinted-glasses.png" class="img-fluid rounded" alt="idiom: rose tinted glasses">
+
     <h1>Idiomatic language</h1>
 
     <p>The IELTS public band descriptors for speaking state that in order to achieve band 7 or above for Lexical Resource (LR - vocabulary), then you should use some <a href="../posts/ielts-descriptors" target="_blank">idiomatic language</a>.</p>
