@@ -1,4 +1,5 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js';
     import { slide } from "svelte/transition";
     import * as animateScroll from "svelte-scrollto";
@@ -11,9 +12,10 @@
     }
 </script>
 
-<svelte:head>
-    <title>Past Perfect</title>
-</svelte:head>
+<SvelteSeo
+    title="Beware of past perfect",
+  description="Explaining the structural usage of past perfect tense, together with examples - and a warning!"
+/>
 
 <div class="mb-3 mw-500">
     

@@ -1,9 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js'
 </script>
-<svelte:head>
-    <title>Ask (for)</title>
-</svelte:head>
+
+<SvelteSeo
+    title="Ask (for)",
+  description="Highlighting the difference in meaning between 'ask' and 'ask for'"
+/>
 
 <div class="mb-3 mw-500">
 

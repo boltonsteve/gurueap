@@ -1,8 +1,14 @@
-<svelte:head>
-    <title>Avoid or Prevent</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Avoid or Prevent?",
+  description="Highlighting the differences in meaning between 'avoid' and 'prevent'"
+/>
 
 <div class="mb-3 mw-500">
+
     <h1>Avoid or Prevent?</h1>
 
     <p class="ml-3 font-italic">Everybody knows that condoms can <span class="font-weight-bold text-danger">avoid</span> pregnancy.</p>

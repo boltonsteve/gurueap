@@ -26,9 +26,15 @@
     text-align: center;
     align-items: center;
 
+    font-size: 1.1rem;
     cursor: pointer;
     background: #fff;
 
+}
+
+.grid-post:hover {
+    background: var(--light);
+    text-decoration: none;
 }
 
 .w-25 {

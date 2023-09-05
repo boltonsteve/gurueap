@@ -161,7 +161,7 @@ export const links = [
         keywords: ['grammar','vocabulary']
     },
     {
-        title: "Make..",
+        title: "Make",
         href: "make",
         keywords: ['grammar','collocation']
     },
@@ -235,7 +235,7 @@ export const links = [
         href: "the-society"
     },
     {
-        title: "Have an impact on..",
+        title: "Have an impact on",
         href: "impact"
     },
     {

@@ -1,4 +1,5 @@
 <script>
+
     import SvelteSeo from "svelte-seo"
     import { base } from '$app/paths';
 
@@ -61,7 +62,7 @@
   description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - and more!"
 />
 
-<div class="mb-1 mw-500">
+<div class="mb-2 mw-500">
     <!--<img src="/img/steve-whiteboard.png" class="img-fluid rounded" alt="Lemon Squeezy Class" style="border:1px solid #bbbbbb;">-->
     <div class="input-container">
         <input id="refine_title" type="text" class="input-item input-item-1" placeholder="search posts" autofocus on:input={handleTitleInput} value={refineTitle}>
@@ -78,7 +79,7 @@
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-    grid-auto-rows: 70px;
+    grid-auto-rows: 80px;
     gap: 10px;
 }
 

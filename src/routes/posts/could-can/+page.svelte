@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Could/Can</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Could / Can",
+  description="Explaining the differences in meaning between 'could' and 'can', and advising against excessive use of 'could'"
+/>
 
 <div class="mb-3 mw-500">
     <img src="/img/could.jpeg" class="img-fluid rounded" alt="could can">

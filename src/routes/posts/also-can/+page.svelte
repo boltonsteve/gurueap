@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Also Can</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Cannot 'also can'",
+  description="Demonstrating a word-order difference between English and Bahasa Indonesia"
+/>
 
 <div class="mb-3 mw-500">
 
