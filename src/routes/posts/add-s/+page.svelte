@@ -1,11 +1,13 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import Youtube from "svelte-youtube-embed";
     import { flagIndo } from '$lib/flags.js';
 </script>
 
-<svelte:head>
-    <title>Each/Every</title>
-</svelte:head>
+<SvelteSeo
+    title="Each / Every",
+  description="Explaining usage with vocabulary items 'each' and 'every'"
+/>
 
 <div class="mb-3 mw-500">
 

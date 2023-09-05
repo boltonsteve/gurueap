@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Idiomatic language</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Idiomatic language",
+  description="Explaining the reference to idiomatic language as it appears in the IELTS public band dsecriptors, together with examples."
+/>
 
 <div class="mb-3 mw-500">
 
@@ -29,7 +34,7 @@
     <p>A blue moon occurs once every 2.5 years, so if you eat nasi padang no more than once every two years, then ok. Otherwise, if you eat nasi padang once every few months, then saying <b><i>once in a blue moon</i></b> would <span class="uli">not be appropriate</span>.</p>
 
     <h3 class="mb-0">Say what you mean</h3>
-    <p class="mt-0">If you <span class="font-weight-bold text-primary">use an idiom</span>, it's a good idea to <span class="font-weight-bold text-success">explain what you mean</span>. For example, if you use <b><i>think outside the box</i></b>, do it like this:</p>
+    <p class="mt-0">If you use <span class="font-weight-bold text-primary">an idiom</span>, it's a good idea to <span class="font-weight-bold text-success">explain what you mean</span>. For example, if you use <b><i>think outside the box</i></b>, do it like this:</p>
 
     <p class="font-italic ml-3">My colleague Budi likes to <span class="font-weight-bold text-primary">think outside the box</span>. <span class="font-weight-bold text-success">He always has many new and creative ideas</span>.</p>
 

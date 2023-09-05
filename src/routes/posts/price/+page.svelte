@@ -10,7 +10,7 @@
 
     <img src="/img/price.jpg" class="img-fluid rounded" alt="price">
 
-    <h1>The Price is not Expensive</h1>
+    <h1>The price is NOT expensive</h1>
 
     <p class="font-italic ml-3">Because of the recent increase in fuel prices, the <span class="font-weight-bold text-danger">price</span> of food is <span class="font-weight-bold text-danger">more expensive</span> than before.</p>
 

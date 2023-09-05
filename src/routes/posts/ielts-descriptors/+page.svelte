@@ -120,8 +120,8 @@
 </script>
 
 <SvelteSeo
-  title="When enough is too much",
-  description="Demonstration of first language interference affecting three vocabulary items - 'enough', 'not enough' and 'too much'"
+  title="IELTS Public Band Descriptors",
+  description="An interactive version of the IELTS public band descriptors for IELTS Speaking, Task 1 and Task 2 Writing."
 />
 
 
