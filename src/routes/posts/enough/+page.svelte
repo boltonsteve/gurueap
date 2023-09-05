@@ -8,10 +8,6 @@
   description="Demonstration of first language interference affecting three vocabulary items - 'enough', 'not enough' and 'too much'"
 />
 
-<svelte:head>
-    <title>When enough is too much</title>
-</svelte:head>
-
 <div class="mb-3 mw-500">
 
     <img src="/img/lcgc.png" class="img-fluid rounded" alt="LCGC cars - enough expensive">

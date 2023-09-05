@@ -1,5 +1,6 @@
 <script>
 
+    import SvelteSeo from "svelte-seo"
     import { slide, blur, scale } from 'svelte/transition';
     import { descriptors } from '$lib/descriptors.js';
 
@@ -118,17 +119,22 @@
 
 </script>
 
-<svelte:head>
-    <title>IELTS Band Descriptors</title>
-</svelte:head>
+<SvelteSeo
+  title="When enough is too much",
+  description="Demonstration of first language interference affecting three vocabulary items - 'enough', 'not enough' and 'too much'"
+/>
+
 
 <div class="mb-3">
 
     <div class="flex w-100 text-center">
+
         <h1 class="mb-1">IELTS Band Descriptors</h1>
-        <button id="btn_speaking" class="btn btn-outline-danger" class:btn-active-danger={speaking} on:click={showS}>Speaking</button>
-        <button class="btn btn-outline-primary" class:btn-active-primary={task1} on:click={showT}>Task 1</button>
-        <button class="btn btn-outline-success" class:btn-active-success={task2} on:click={showTT}>Task 2</button>
+
+        <div class="btn-group">
+            <button class="btn-group-item btn-group-item-dark btn-group-left" class:btn-group-item-active-dark={speaking} on:click={showS}>Speaking</button><button class="btn-group-item btn-group-item-dark" class:btn-group-item-active-dark={task1} on:click={showT}>Task 1</button><button class="btn-group-item btn-group-item-dark btn-group-right" class:btn-group-item-active-dark={task2} on:click={showTT}>Task 2</button>
+        </div>
+
     </div>
 
 {#if speaking}

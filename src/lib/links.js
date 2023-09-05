@@ -50,7 +50,7 @@ export const links = [
         keywords: ['IELTS','criteria','LR','collocation','vocabulary']
     },
     {
-        title: "Coeherence and Cohesion (CC)",
+        title: "Coherence and Cohesion (CC)",
         href: "coherence-cohesion",
         keywords: ['vocabulary','collocation','LR']
     },
@@ -85,7 +85,7 @@ export const links = [
         keywords: ['grammar','tenses']
     },
     {
-        title: "The Price is not Expensive",
+        title: "The price is NOT expensive",
         href: "price",
         keywords: ['vocabulary']
     },
@@ -110,17 +110,17 @@ export const links = [
         keywords: ['grammar','quantifiers']
     },
     {
-        title: "Present Tenses Explained",
+        title: "Present tenses explained",
         href: "present-tenses",
         keywords: ['grammar','tenses','present','video']
     },
     {
-        title: "Past Tenses Explained",
+        title: "Past tenses explained",
         href: "past-tenses",
         keywords: ['grammar','tenses','past','video']
     },
     {
-        title: "Perfect Tenses Explained",
+        title: "Perfect tenses explained",
         href: "perfect-tenses",
         keywords: ['grammar','tenses','perfect','video']
     },
@@ -128,7 +128,7 @@ export const links = [
         title: "Conjunction Sandwich",
         href: "conjunctions",
         keywords: ['vocabulary','video'],
-        "notes": ["https://www.youtube.com/watch?v=L-5CqSNhIAg"]
+        notes: ["https://www.youtube.com/watch?v=L-5CqSNhIAg"]
     },
     {
         title: "Can/Could Will/Would Probability/Ability",
@@ -141,7 +141,7 @@ export const links = [
         keywords: ['vocabulary']
     },
     {
-        title: "You are not a staff!",
+        title: "You are NOT a staff!",
         href: "staff",
         keywords: ['vocabulary']
     },
@@ -186,12 +186,12 @@ export const links = [
         keywords: ['vocabulary']
     },
     {
-        title: "Million or Millions?",
+        title: "Million or Millions",
         href: "millions",
         keywords: ['qualntifiers','vocabulary','numbers']
     },
     {
-        title: "Even is not Bahkan",
+        title: "Even is NOT bahkan",
         href: "even-bahkan",
         keywords: ['compare','contrast','vocabulary','signals']
     },
@@ -219,7 +219,7 @@ export const links = [
         href: "there-is-ada"
     },
     {
-        title: "When 'become' is not becoming",
+        title: "When 'become' is NOT becoming",
         href: "become"
     },
     {

@@ -10,17 +10,15 @@
 
     <h1>Some</h1>
 
-    <p class="ml-3 font-italic">Unemployment has increased in recent years for <span class="font-weight-bold text-danger">some</span> reasons.</p>
+    <p class="ml-3 font-italic">Unemployment has increased in recent years <span class="font-weight-bold text-danger">for some reasons</span>.</p>
 
     <p>{@html flagIndo} In this post, Indonesian students of English will discover more appropriate ways to say 'beberapa' or berbagai' in IELTS and in general academic writing.</p>
 
-    <h3>For some reason</h3>
-    
-    <p>First of all <b><i>for some reasons</i></b> appears odd because there is a very similar phrase - <b><i>for some reason</i></b> (reason without 's') - meaning that there <i>may</i> be a reason but the reason is presently unknown. Clearly this is not what the writer intended in the opening example!</p>
+    <h3 class="mb-0">For some reason</h3>
+    <p class="mt-0">First of all <b><i>for some reasons</i></b> appears odd because there is a very similar phrase - <b><i>for some reason</i></b> (reason without 's') - meaning that there <i>may</i> be a reason but the reason is presently unknown. Clearly this is not what the writer intended in the opening example!</p>
 
-    <h3>For several reasons</h3>
-
-    <p>Secondly, there is a slightly different phrase that is often used in this situation - <b><i>for several reasons</i></b> - meaning that there are several possible reasons. Surely this is what the writer meant to communicate? The reasons are known and the writer is going to share them with us.</p>
+    <h3 class="mb-0">For several reasons</h3>
+    <p class="mt-0">Secondly, there is a slightly different phrase that is often used in this situation - <b><i>for several reasons</i></b> - meaning that there are several possible reasons. Surely this is what the writer meant to communicate? The reasons are known and the writer is going to share them with us.</p>
     
     <h3>Alternatives to <i>some</i></h3>
 

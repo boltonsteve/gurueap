@@ -79,7 +79,7 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
     grid-auto-rows: 70px;
-    grid-gap: 10px;
+    gap: 10px;
 }
 
 .input-container {
