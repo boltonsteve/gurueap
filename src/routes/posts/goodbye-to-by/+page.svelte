@@ -1,6 +1,12 @@
-<svelte:head>
-    <title>Goodbye to 'by'</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+    import { flagIndo } from '$lib/flags.js';
+</script>
+
+<SvelteSeo
+    title="Goodbye to 'by'",
+  description="The grammar of 'by' when communicating a means to do or achieve something."
+/>
 
 <div class="mb-3 mw-500">
 
@@ -8,7 +14,7 @@
 
     <p class="ml-3 font-italic"><span class="font-weight-bold text-danger">By</span> paying more attention to corruption can improve the welfare of a country.</p>
 
-    <p>Yet another Indonesian structure that doesn't translate directly into English!</p>
+    <p>{@html flagIndo} Yet another Indonesian structure that doesn't translate directly into English!</p>
 
     <p>If you really must begin with 'by' then you need...</p>
 

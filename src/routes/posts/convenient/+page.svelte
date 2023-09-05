@@ -1,9 +1,11 @@
 <script>
-    import { flagIndo } from '$lib/flags.js'
+    import SvelteSeo from "svelte-seo"
 </script>
-<svelte:head>
-    <title>Convenient</title>
-</svelte:head>
+
+<SvelteSeo
+    title="Convenient",
+  description="Showing that when Indonesians use 'convenient' it doesn't always mean what they think it means."
+/>
 
 <div class="mb-3 mw-500">
 
@@ -27,7 +29,7 @@
 
 <p>These are all features that most people would consider <b><i>convenient</i></b>. In English if something saves you time and effort then it is <b><i>convenient</i></b>.</p>
 
-    <div class="alert">
+    <div class="alert mb-1">
         <p>The following are <span class="uli">NOT</span> <b><i>conveniences</i></b>:</p>
         <ul>
             <li>You can meet your friends in the shop.</li>

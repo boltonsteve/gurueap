@@ -1,6 +1,12 @@
-<svelte:head>
-    <title>Each/Every</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+    import { flagIndo, flagUk } from '$lib/flags.js'
+</script>
+
+<SvelteSeo
+    title="Each / Every",
+  description="Showing that 'each' and 'every' are always followed by a singular countable noun."
+/>
 
 <div class="mb-3 mw-500">
 

@@ -1,6 +1,12 @@
-<svelte:head>
-    <title>Famous or Popular</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+    import { flagIndo, flagUk } from '$lib/flags.js'
+</script>
+
+<SvelteSeo
+    title="Famous or Popular",
+  description="Showing the difference in meaning between 'famous' and 'popular' - often a point of confusion for Indonesian IELTS candidates"
+/>
 
 <div class="mb-3 mw-500">
 

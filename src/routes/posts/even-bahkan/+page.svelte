@@ -1,6 +1,12 @@
-<svelte:head>
-    <title>Even / Bahkan</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+    import { flagIndo, flagUk } from '$lib/flags.js'
+</script>
+
+<SvelteSeo
+    title="Even / Bahkan",
+  description="Demonstrating the structural placement of 'even' when it is used to introduce a surprising claim, and highlighting the structural difference with the Indonesian 'bahkan'."
+/>
 
 <div class="mb-3 mw-500">
 

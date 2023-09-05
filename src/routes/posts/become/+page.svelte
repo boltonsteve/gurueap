@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Become</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Become",
+  description="Showing that unlike Bahasa Indonesia, 'become' in English always implies a change over time."
+/>
 
 <div class="mb-3 mw-500">
     <h1>When 'become' is not becoming</h1>

@@ -1,9 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo, flagUk } from '$lib/flags.js'
 </script>
-<svelte:head>
-    <title>Despite / In spite of</title>
-</svelte:head>
+
+<SvelteSeo
+    title="Despite / In spite of",
+  description="Demonstrating the structural uses of the English 'despite' and 'in spite of'"
+/>
 
 <div class="mb-3 mw-500">
 

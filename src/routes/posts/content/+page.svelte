@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Content(s)</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Content(s)",
+  description="Contrasting the countable and uncountable meanings of the English 'content'"
+/>
 
 <div class="mb-3 mw-500">
 
