@@ -1,10 +1,13 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import Youtube from "svelte-youtube-embed";
+    import { flagIndo } from '$lib/flags.js';
 </script>
 
-<svelte:head>
-    <title>Conjunctions</title>
-</svelte:head>
+<SvelteSeo
+    title="Conjunctions",
+  description="Video demonstration of why it is not possible to join independent clauses in English without using conjunctions."
+/>
 
 <div class="mb-3 mw-500">
 

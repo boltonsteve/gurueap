@@ -1,9 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js'
 </script>
-<svelte:head>
-    <title>Coherence and Cohesion (CC)</title>
-</svelte:head>
+
+<SvelteSeo
+    title="Coherence and Cohesion (CC)",
+  description="Explaining what is meant by these important terms used by examiners - 'coherence' and 'cohesion'"
+/>
 
 <div class="mb-3 mw-500">
 

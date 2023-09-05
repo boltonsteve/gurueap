@@ -1,6 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo, flagUk } from '$lib/flags.js'
 </script>
+
+<SvelteSeo
+    title="Collocation",
+  description="Explaining what is meant by this important term used by examiners - 'collocation'"
+/>
 
 <svelte:head>
     <title>Collocation</title>
