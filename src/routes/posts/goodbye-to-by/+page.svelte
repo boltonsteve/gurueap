@@ -5,7 +5,7 @@
 
 <SvelteSeo
     title="Goodbye to 'by'",
-  description="The grammar of 'by' when communicating a means to do or achieve something."
+    description="The grammar of 'by' when communicating a means to do or achieve something."
 />
 
 <div class="mb-3 mw-500">

@@ -33,7 +33,9 @@
 }
 
 .grid-post:hover {
-    background: var(--light);
+    background: #bbbbbb;
+    color: var(--dark);
+    /* background: var(--light); */
     text-decoration: none;
 }
 
@@ -118,8 +120,6 @@
     border-radius:5px;
     border: 1px solid black;
     display: inline-block;
-    /* width: 200px; */
-
 }
 
 /* .btn-group-left { */
@@ -545,7 +545,7 @@ a:visited {
     color: var(--teal);
 }
 a:hover {
-    text-decoration:underline;
+    text-decoration:none;
 }
 a:active {
     color: var(--red);
