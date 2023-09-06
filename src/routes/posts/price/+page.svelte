@@ -1,10 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js';
 </script>
 
-<svelte:head>
-    <title>Price</title>
-</svelte:head>
+<SvelteSeo
+    title="Price",
+    description="Demonstrating collocation using the noun 'price'."
+/>
 
 <div class="mb-3 mw-500">
 

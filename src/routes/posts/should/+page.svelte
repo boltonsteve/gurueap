@@ -1,5 +1,6 @@
 <script>
 
+    import SvelteSeo from "svelte-seo"
     import { fade, scale } from "svelte/transition";
 
     const corrects = ['should','have to','should have','had to'];
@@ -48,9 +49,10 @@
 
 </script>
 
-<svelte:head>
-    <title>Should</title>
-</svelte:head>
+<SvelteSeo
+    title="Should or Have to",
+    description="Demonstrating the differences in meaning between 'should' and 'have to'."
+/>
 
 <div class="mb-3 mw-500">
 

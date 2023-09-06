@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Less common vocabulary</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Less common vocabulary",
+    description="The IELTS public band descriptors recommend using 'less common vocabulary' at band 7 and above. But what does this mean?"
+/>
 
 <div class="mb-3 mw-500">
 

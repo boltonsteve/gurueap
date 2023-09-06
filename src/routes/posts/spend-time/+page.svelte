@@ -1,6 +1,12 @@
-<svelte:head>
-    <title>Spend time</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+    import {flagIndo} from '$lib/flags.js'
+</script>
+
+<SvelteSeo
+    title="Spend time",
+    description="Demonstrating the collocation with 'spend time'"
+/>
 
 <div class="mb-3 mw-500">
 

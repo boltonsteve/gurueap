@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Parallel Structures</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Parallel Structures",
+    description="Demonstrating the use of parallel structures to achieve cohesion and coherence, as well as to show off structural sophistication."
+/>
 
 <div class="mb-3 mw-500">
 

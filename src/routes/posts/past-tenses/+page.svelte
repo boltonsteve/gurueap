@@ -1,10 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import Youtube from "svelte-youtube-embed";
 </script>
 
-<svelte:head>
-    <title>Past tenses</title>
-</svelte:head>
+<SvelteSeo
+    title="Past tenses",
+    description="Video demonstration of the various past tenses, together with examples of their various meanings."
+/>
 
 <div class="mb-3 mw-500">
 

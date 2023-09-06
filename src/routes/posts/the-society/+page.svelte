@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Society</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+  title="(the) Society",
+  description="Demonstrating the difference between 'society' (without 'the') and 'the society'."
+/>
 
 <div class="mb-3 mw-500">
 

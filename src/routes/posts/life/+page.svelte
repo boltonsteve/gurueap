@@ -1,10 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo, flagUk } from '$lib/flags.js'
 </script>
 
-<svelte:head>
-    <title>Impact</title>
-</svelte:head>
+<SvelteSeo
+    title="People's lives",
+    description="Demonstrating the redundant use of the phrase 'people's lives' speaking and writing."
+/>
 
 <div class="mb-3 mw-500">
 

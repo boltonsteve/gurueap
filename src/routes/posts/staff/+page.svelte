@@ -1,10 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import {flagIndo} from '$lib/flags.js'
 </script>
 
-<svelte:head>
-    <title>Staff</title>
-</svelte:head>
+<SvelteSeo
+    title="Staff",
+    description="Showing that 'staff' is rarely used as a countable noun."
+/>
 
 <div class="mw-500 mb-3">
 

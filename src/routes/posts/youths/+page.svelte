@@ -1,6 +1,12 @@
-<svelte:head>
-    <title>Youths</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Youths",
+    description="Highlighting the negative connotation associated with the word 'youths' and recommending alternatives."
+/>
+
 <div class="mb-3 mw-500">
 
     <img src="/img/youth-hoodies.png" class="img-fluid rounded" alt="youths">

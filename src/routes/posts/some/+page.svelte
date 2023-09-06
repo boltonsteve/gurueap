@@ -1,10 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import {flagIndo} from '$lib/flags.js'
 </script>
 
-<svelte:head>
-    <title>Some</title>
-</svelte:head>
+<SvelteSeo
+    title="Some",
+    description="Demonstrating different ways to say or write 'some'"
+/>
 
 <div class="mw-500 mb-3">
 

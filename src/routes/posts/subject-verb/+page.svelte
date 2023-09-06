@@ -1,4 +1,5 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js';
     import { fade, scale } from "svelte/transition";
 
@@ -84,9 +85,10 @@
 
 </script>
 
-<svelte:head>
-    <title>Subject/Verb</title>
-</svelte:head>
+<SvelteSeo
+    title="Subject/Verb",
+    description="Demonstrating the importance of subject/verb agreement in IELTS speaking and writing."
+/>
 
 <div class="mb-3 mw-500">
 

@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Hesitation</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Hesitation",
+    description="Strategies used to hesitate in IELTS Speaking"
+/>
 
 <div class="mb-3 mw-500">
 

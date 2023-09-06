@@ -1,10 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo, flagUk } from '$lib/flags.js'
 </script>
 
-<svelte:head>
-    <title>Collocation</title>
-</svelte:head>
+<SvelteSeo
+    title="Collocation",
+    description="What is collocation plus examples."
+/>
 
 <div class="mb-3 mw-500">
 

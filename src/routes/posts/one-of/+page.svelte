@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>One of</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="One of",
+    description="Demonstrating that the best way to communicate 'one of many' is using the indefinite article 'a'."
+/>
 
 <div class="mb-3 mw-500">
 

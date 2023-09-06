@@ -1,10 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js';
 </script>
 
-<svelte:head>
-    <title>Government</title>
-</svelte:head>
+<SvelteSeo
+    title="Government",
+    description="Are you talking about your own government, other governments, or the institution of government?"
+/>
 
 <div class="mb-3 mw-500">
 

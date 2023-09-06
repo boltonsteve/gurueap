@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Millions</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Millions",
+    description="Examining the mistaken use of 's' with 'million'"
+/>
 
 <div class="mb-3 mw-500">
 

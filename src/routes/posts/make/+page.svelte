@@ -1,10 +1,12 @@
 <script>
-    import { flagIndo, flagUk } from '$lib/flags.js';
+    import SvelteSeo from "svelte-seo"
+    import { flagIndo, flagUk } from '$lib/flags.js'
 </script>
 
-<svelte:head>
-    <title>Make</title>
-</svelte:head>
+<SvelteSeo
+    title="Make",
+    description="Demonstrating collocation using the verb 'make', which is actually the same in Bahasa Indonesia."
+/>
 
 <div class="mb-3 mw-500">
 

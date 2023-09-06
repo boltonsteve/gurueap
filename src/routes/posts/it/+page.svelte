@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>It</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="It",
+    description="Referencing and substitution using the pronouns 'it' and 'this'"
+/>
 
 <div class="mb-3 mw-500">
 

@@ -1,10 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { flagIndo, flagUk } from '$lib/flags.js'
 </script>
 
-<svelte:head>
-    <title>Use or Wear</title>
-</svelte:head>
+<SvelteSeo
+  title="Use or Wear",
+  description="Advising Indonesian IELTS candidate to say 'wear' isntead of 'use', which for them would be a direct translation, but weak collocation."
+/>
 
 <div class="mb-3 mw-500">
 

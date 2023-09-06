@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Most of</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Most of",
+    description="Contrasting the grammar of 'most' and 'most of'"
+/>
 
 <div class="mb-3 mw-500">
 

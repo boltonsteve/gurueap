@@ -1,10 +1,12 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import Youtube from "svelte-youtube-embed";
 </script>
 
-<svelte:head>
-    <title>Perfect tenses</title>
-</svelte:head>
+<SvelteSeo
+    title="Perfect tenses",
+    description="Video demonstration of the various perfect tenses, together with examples of their various meanings."
+/>
 
 <div class="mb-3 mw-500">
 

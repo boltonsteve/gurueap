@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Know (of)</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+    title="Know (of)",
+    description="Highlighting the difference in meaning between 'know' and 'know of'"
+/>
 
 <div class="mb-3 mw-500">
 

@@ -1,6 +1,11 @@
-<svelte:head>
-    <title>Usage / Use / Utilise</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+  title="Usage / Use / Utilise",
+  description="Warning Indonesian IELTS candidates not to use 'usage' or 'utilise' when they only mean 'use'."
+/>
 
 <div class="mb-3 mw-500">
 

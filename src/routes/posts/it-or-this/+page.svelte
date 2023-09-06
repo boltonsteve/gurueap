@@ -1,6 +1,12 @@
-<svelte:head>
-    <title>It or This</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+    import { flagIndo, flagUk } from '$lib/flags.js'
+</script>
+
+<SvelteSeo
+    title="It or This",
+    description="Referencing and substitution using the pronouns 'it' and 'this'"
+/>
 
 <div class="mb-3 mw-500">
 

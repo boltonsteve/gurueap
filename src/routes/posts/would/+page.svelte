@@ -1,6 +1,12 @@
-<svelte:head>
-    <title>Would</title>
-</svelte:head>
+<script>
+    import SvelteSeo from "svelte-seo"
+</script>
+
+<SvelteSeo
+  title="Would",
+  description="Showing Indonesian IELTS candidates that 'would' is NOT a more formal or sophisticated version of 'will'."
+/>
+
 <div class="mb-3 mw-500">
 
     <h1>Can/Could Will/Would Possibility/Abiltiy</h1>
