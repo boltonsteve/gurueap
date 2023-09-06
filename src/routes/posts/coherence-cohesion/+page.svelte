@@ -30,7 +30,7 @@
 
 <p class="font-italic ml-3">Astronauts are again struggling to land on <b><i>the surface of the moon</i></b>. <b><i>The lunar surface</i></b> is covered with rocks and craters.</p>
 
-<div class="alert text-center">
+<div class="alert alert-danger text-center">
     Only use a synonym if a suitable synonym is available!
 </div>
 

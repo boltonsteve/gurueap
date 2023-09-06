@@ -52,7 +52,7 @@
         <li>Our trained pool <span class="font-weight-bold text-success">staff</span> are always present.</li>
     </ul>
 
-    <div class="alert">
+    <div class="alert alert-danger">
         <p>Notice the subject verb/agreement:</p>
         <ul>
             <li><i>staff..receive</i> (<span class="uli">not</span> <i>receives</i>)</li>

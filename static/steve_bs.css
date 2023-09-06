@@ -141,12 +141,28 @@
     color: var(--light);
 }
 
-
+/* Alerts! */
 .alert {
-    border:1px;
     border-radius: 5px;
-    background: pink;
     padding: 5px 15px;
+    color: var(--light);
+}
+
+.alert-info {
+    background: var(--teal);
+}
+
+.alert-warning {
+    background: var(--orange);
+    color: var(--dark);
+}
+
+.alert-danger {
+    background: var(--red);
+}
+
+.alert-success {
+    background: var(--green);
 }
 
 .small {
@@ -187,7 +203,7 @@ ul.lst-none, .lst-none {
     list-style-type:none;
 }
 
-ul.lh-15 li {
+ul.lh-15 li, ol.lh-15 li {
     /* line-height: 1.5em; */
     margin-bottom: 5px;
 }

@@ -132,7 +132,7 @@
         <h1 class="mb-1">IELTS Band Descriptors</h1>
 
         <div class="btn-group">
-            <button class="btn-group-item btn-group-item-dark btn-group-left" class:btn-group-item-active-dark={speaking} on:click={showS}>Speaking</button><button class="btn-group-item btn-group-item-dark" class:btn-group-item-active-dark={task1} on:click={showT}>Task 1</button><button class="btn-group-item btn-group-item-dark btn-group-right" class:btn-group-item-active-dark={task2} on:click={showTT}>Task 2</button>
+            <button class="btn-group-item btn-group-item-dark btn-group-left" class:btn-group-item-active-dark={speaking} on:click={showS}>Speaking</button><button class="btn-group-item btn-group-item-dark btn-task1" class:btn-group-item-active-dark={task1} on:click={showT}>Task 1</button><button class="btn-group-item btn-group-item-dark btn-group-right" class:btn-group-item-active-dark={task2} on:click={showTT}>Task 2</button>
         </div>
 
     </div>
@@ -163,4 +163,8 @@
 h1 {
     text-align:center;
 }
+    .btn-task1 {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
 </style>

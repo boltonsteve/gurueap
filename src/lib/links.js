@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Articles - General rules",
+        href: "article-s",
+        keywords: ['grammar','articles','GRA']
+    },
+    {
         title: "Using fillers to avoid hesitation",
         href: "hesitation",
         keywords: ['speaking','fillers','hesitation','FC']

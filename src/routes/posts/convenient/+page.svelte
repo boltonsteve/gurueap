@@ -29,7 +29,7 @@
 
 <p>These are all features that most people would consider <b><i>convenient</i></b>. In English if something saves you time and effort then it is <b><i>convenient</i></b>.</p>
 
-    <div class="alert mb-1">
+    <div class="alert alert-danger mb-1">
         <p>The following are <span class="uli">NOT</span> <b><i>conveniences</i></b>:</p>
         <ul>
             <li>You can meet your friends in the shop.</li>

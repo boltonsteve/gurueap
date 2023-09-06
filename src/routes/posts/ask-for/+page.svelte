@@ -22,12 +22,12 @@
 <ul>
     <li class="font-italic">I'll ask the waiter.</li>
     <li class="small lst-none mb-1">ask someone</li>
-    <li class="font-italic">I'll ask the waiter to bring us the menu.</li>
-    <li class="small lst-none mb-1">ask someone to do something</li>
-    <li class="font-italic">I'll ask the waiter about the menu.</li>
-    <li class="small lst-none mb-1">ask someone about something / someone</li>
     <li class="font-italic">I'll ask the waiter for the menu.</li>
     <li class="small lst-none mb-1">ask someone for something</li>
+    <li class="font-italic">I'll ask the waiter about the menu.</li>
+    <li class="small lst-none mb-1">ask someone about something / someone</li>
+    <li class="font-italic">I'll ask the waiter to bring us the menu.</li>
+    <li class="small lst-none mb-1">ask someone to do something</li>
     <li class="font-italic">I'll ask for the menu.</li>
     <li class="small lst-none">ask for something / someone<br>(the structure most likely to be used by a native speaker)</li>
 </ul>

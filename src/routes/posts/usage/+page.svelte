@@ -15,7 +15,7 @@
 
     <p class="ml-3 font-italic">The <span class="font-weight-bold text-danger">usage</span> of technology is very important to learn effectively.</p>
 
-    <div class="alert text-center"><p><b>Usage</b> is quite different from <b>use!</b></p></div>
+    <div class="alert alert-danger text-center"><p><b><i>Usage</i></b> is quite different from <b><i>use!</i></b></p></div>
 
     <p>For example, when we refer to <i><b>word usage</b></i>, we mean the <i>conventions</i> for using words:</p>
     <p class="ml-3 font-italic">This text describes the principles of word <span class="font-weight-bold text-success">usage</span>.</p>
