@@ -35,7 +35,7 @@
 
 <p>Notice that <i><b>ask something</b></i> is <span class="uli">not</span> in this list. The picture below shows what might happen if you ask the menu!</p>
 
-    <img src="/img/excuse-me-menu.png" class="mx-auto rounded w-50" alt="menu talk">
+    <img src="/img/excuse-me-menu.png" class="mx-auto rounded w-75" alt="menu talk">
     <p class="small text-center">a woman 'asking the menu'</p>
 
 
