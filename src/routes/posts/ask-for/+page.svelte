@@ -18,25 +18,24 @@
 
     <p>When you're <span class="uli">making a request</span> using <b><i>ask</i></b>, the following are possible:</p>
 
-    <div class="flex row-col cols-11 px-1">
-            <div class="font-italic">I'll <span class="text-danger">ask</span> <span class="text-primary">the waiter</span>.</div>
-        <div><span class="text-danger">ask</span> <span class="text-primary">someone</span></div>
-        <div class="font-italic">I'll <span class="text-danger">ask</span> <span class="text-primary">the waiter</span> <b>to</b> <span class="text-success">bring us the menu</span>.</div>
-        <div><span class="text-danger">ask</span> <span class="text-primary">someone</span> <b><i>to</i></b> <span class="text-success">do something</span></div>
-        <div class="font-italic">I'll <span class="text-danger">ask</span> <span class="text-primary">the waiter</span> <b>about</b> <span class="text-success">the menu</span>.</div>
-        <div><span class="text-danger">ask</span> <span class="text-primary">someone</span> <b><i>about</i></b> <span class="text-success">something / someone</span></div>
-        <div class="font-italic">I'll <span class="text-danger">ask</span> <span class="text-primary">the waiter</span> <b>for</b> <span class="text-success">the menu</span>.</div>
-        <div><span class="text-danger">ask</span> <span class="text-primary">someone</span> <b><i>for</i></b> <span class="text-success">something</span></div>
-        <div class="font-italic">I'll <span class="text-danger">ask</span> <b>for</b> <span class="text-success">the menu</span>.</div>
-        <div><span class="text-danger">ask</span> <b><i>for</i></b> <span class="text-success">something / someone</span></div>
-    </div>
-
-<p>Most native speakers would probably use the last item in the list.</p>
+    
+<ul>
+    <li class="font-italic">I'll ask the waiter.</li>
+    <li class="small lst-none mb-1">ask someone</li>
+    <li class="font-italic">I'll ask the waiter to bring us the menu.</li>
+    <li class="small lst-none mb-1">ask someone to do something</li>
+    <li class="font-italic">I'll ask the waiter about the menu.</li>
+    <li class="small lst-none mb-1">ask someone about something / someone</li>
+    <li class="font-italic">I'll ask the waiter for the menu.</li>
+    <li class="small lst-none mb-1">ask someone for something</li>
+    <li class="font-italic">I'll ask for the menu.</li>
+    <li class="small lst-none">ask for something / someone<br>(the structure most likely to be used by a native speaker)</li>
+</ul>
 
 <p>Notice that <i><b>ask something</b></i> is <span class="uli">not</span> in this list. The picture below shows a woman <b><i>asking something</i></b> for information.</p>
 
     <img src="/img/excuse-me-menu.png" class="mx-auto rounded w-75" alt="menu talk">
-    <p class="small text-center">a woman 'asking the menu'</p>
+    <p class="small text-center mt-1">a woman 'asking the menu'</p>
 
 
 </div>
