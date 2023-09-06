@@ -33,7 +33,7 @@
 
 <p>Most native speakers would probably use the last item in the list.</p>
 
-<p>Notice that <i><b>ask something</b></i> is <span class="uli">not</span> in this list. The picture below shows what might happen if you ask the menu!</p>
+<p>Notice that <i><b>ask something</b></i> is <span class="uli">not</span> in this list. The picture below shows a woman <b><i>asking something</i></b> for information.</p>
 
     <img src="/img/excuse-me-menu.png" class="mx-auto rounded w-75" alt="menu talk">
     <p class="small text-center">a woman 'asking the menu'</p>
