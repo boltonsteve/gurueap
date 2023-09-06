@@ -10,6 +10,8 @@
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/government.png" class="img-fluid rounded" alt="government">
+
     <h1>Government</h1>
 
     <p class="ml-3 font-italic"><b><i>Government</i></b> must work hard to tackle the problem of inflation.</p>
@@ -39,6 +41,8 @@
 <p>Here you are usually talking about your own government, although you may be talking about a different but specific government that you have already mentioned elsewhere in your text:</p>
 
 <p class="ml-3 font-italic"><span class="font-weight-bold text-success">The government</span> must work hard to tackle the problem of inflation in Indonesia.</p>
+
+<img class="ml-1" src="/img/bhinneka-tunggal-ika.png" alt="Bhinneka Tunggal Ika" style="width:220px;float:right;">
 
 <p>{@html flagIndo} Note to Indonesians..</p>
 
