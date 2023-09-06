@@ -31,7 +31,7 @@
     </ul>
 
     <h3 class="mb-0">Know <b><i>of</i></b></h3>
-    <p class="my-0">If you <b><i>know of</i></b> someone, then they <span class="uli">do not</span> <b><i>know</i></b> you.</p>
+    <p class="my-0">If you <b><i>know of</i></b> someone, then they probably <span class="uli">do not</span> <b><i>know</i></b> you.</p>
     <ul class="lh-15 mt-1">
         <li><b><i>you</i></b> have never met <b><i>them</i></b></li>
         <li><b><i>they</i></b> have never met <b><i>you</i></b></li>
