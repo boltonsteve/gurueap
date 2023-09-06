@@ -78,9 +78,8 @@
 .container {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
     grid-auto-rows: 80px;
-    gap: 10px;
+    gap: 15px;
 }
 
 .input-container {
@@ -109,11 +108,5 @@
     width:70px;
     cursor:pointer;
 }
-
-    @media (max-width: 500px) {
-        .container {
-            grid-template-columns: 1fr;
-        }
-    }
 
 </style>
