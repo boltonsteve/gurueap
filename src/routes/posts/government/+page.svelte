@@ -16,7 +16,7 @@
 
     <p class="ml-3 font-italic"><b><i>Government</i></b> must work hard to tackle the problem of inflation.</p>
     
-    <p>There are several uses of the word government:</p>
+    <p>There are several uses of the word <b><i>government</i></b>:</p>
 
 <ul>
     <li><b><i>Government</i></b> (without 'the', without 's')</li>
