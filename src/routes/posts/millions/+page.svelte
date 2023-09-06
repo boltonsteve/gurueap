@@ -9,13 +9,15 @@
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/million-air.png" class="img-fluid rounded" alt="million air">
+
     <h1>Million or millions?</h1>
 
     <p class="ml-3 font-italic">According to a recent census, there are 265 <span class="font-weight-bold text-danger">millions</span> people living in Indonesia.</p>
 
     <p>Yes, I know it seems right. But it isn't. Only put an 's' on <b><i>million</i></b> when <b><i>million</i></b> is the main noun in a noun phrase.</p>
 
-    <p>Very often million is the main noun in a noun phrase when it is at the beginning of a sentence:</p>
+    <p>Very often <b><i>million</i></b> is the main noun in a noun phrase when it is at the beginning of a sentence:</p>
 
     <p class="ml-3 font-italic"><span class="font-weight-bold text-success">Millions</span> of people live in Indonesia, a huge archipelago in south-east Asia.</p>
 

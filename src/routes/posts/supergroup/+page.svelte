@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <div class="pie">
+    <div class="pie mb-3">
         <img src="/img/british-vegetarian.png" class="w-50" alt="vegetarian pie chart">
         <h3>British People</h3>
     </div>
@@ -31,7 +31,7 @@
     <h3 class="mb-0">What if there's more than one supergroup?</h3>
     <p class="mt-0">If there is more than one supergroup, just make sure you mention the name of the next supergroup when you introduce it:</p>
 
-    <div class="pie">
+    <div class="pie mb-3">
         <div class="row-col cols-11">
             <img src="/img/british-vegetarian.png" class="w-75 mx-auto" alt="vegetarian pie chart">
             <img src="/img/indonesian-vegetarian.png" class="w-75 mx-auto" alt="vegetarian pie chart">

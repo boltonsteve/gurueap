@@ -44,9 +44,30 @@
 
     <p class="font-italic ml-3">{@html flagUk} I have to <span class="font-weight-bold text-primary">do</span> my <span class="font-weight-bold text-success">homework</span>.</p>
 
-    <p>Low band IELTS candidates tend to translate directly to English from their first language, and the result is <b><i>weak collocation</i></b>.</p>
+    <p>Low band IELTS candidates tend to translate directly to English from their first language, and often the result is <b><i>weak collocation</i></b>.</p>
 
-    <p>High band candidates tend to <i>think</i> more <i>in English</i>, and as a result they have in their minds chunks of language that include <b><i>strong collocation</i></b>. Mostly these are acquired through reading. Indeed, regular reading is the best way to acquire <b><i>strong collocation</i></b>.</p>
+    <p>High band candidates tend to <i>think in English</i>, and as a result they have in their minds <b><i>chunks</i></b> of language that include <b><i>strong collocation</i></b>.</p>
+
+    <p>For example, in the sentence..</p>
+
+    <p class="font-italic ml-3">But some, such as pregnant people and those with weakened immune systems, are at greater risk of getting sick from animals.</p>
+
+    <p>..there are at least 6 <b><i>chunks</i></b>:</p>
+
+    <ul class="font-italic">
+        <li>But some</li>
+        <li class="lst-none small">collocation - synonym for 'but some people'</li>
+        <li>such as</li>
+        <li class="lst-none small">collocation - synonym for 'for example'</li>
+        <li>pregnant people</li>
+        <li>and those with weakened immune systems</li>
+        <li>are at greater risk of</li>
+        <li class="lst-none small">collocation 'at (greater) risk of'</li>
+        <li>getting sick from animals</li>
+        <li class="lst-none small">collocation 'get sick from'</li>
+    </ul>
+
+    <p>Mostly these <b><i>chunks</i></b> are acquired through reading. Indeed, regular reading is the best way to acquire <b><i>strong collocation</i></b>.</p>
 
     <p class="font-weight-bold">Go do some reading!</p>
     

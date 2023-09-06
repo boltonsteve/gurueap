@@ -10,6 +10,8 @@
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/by.png" class="img-fluid rounded" alt="by">
+
     <h1>Goodbye to 'By'</h1>
 
     <p class="ml-3 font-italic"><span class="font-weight-bold text-danger">By</span> paying more attention to corruption can improve the welfare of a country.</p>
