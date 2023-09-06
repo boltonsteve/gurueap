@@ -42,9 +42,9 @@
 
 <p class="ml-3 font-italic"><span class="font-weight-bold text-success">The government</span> must work hard to tackle the problem of inflation in Indonesia.</p>
 
-<p>{@html flagIndo} Note to Indonesians..</p>
+<p>{@html flagIndo}&nbsp;Note to Indonesians..</p>
 
-<img class="ml-1" src="/img/bhinneka-tunggal-ika.png" alt="Bhinneka Tunggal Ika" style="width:220px;float:right;">
+<img class="ml-1" src="/img/bhinneka-tunggal-ika.png" alt="Bhinneka Tunggal Ika" style="width:180px;float:right;">
 
 <p>Next time you want to translate <b><i>pemerintah</i></b>, consider which of these three meanings you want to communicate. If you choose the right one, your meaning will be clear and you will receive a high score for vocabulary (LR) and a high score for coherence and cohesion (CC) because it will be easier to understand what you are saying or writing.</p>
 
