@@ -51,6 +51,7 @@
             if(i%countGap == 0) {
                 mugshot = `<div class="grid-post"><img src="/img/students/${students[mugCount]}.png" class="img-fluid" alt="student photo"></div>`;
                 mugCount ++;
+                setCountGap();
             }
 
             let emoticons = '';
