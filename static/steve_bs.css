@@ -155,20 +155,24 @@
 }
 
 .alert-info {
-    background: var(--teal);
+    /* background: var(--teal); */
+    background: rgba(0, 153, 204, .5)
 }
 
 .alert-warning {
-    background: var(--orange);
     color: var(--dark);
+    /* background: var(--orange); */
+    background: rgba(255, 190, 0, .5)
 }
 
 .alert-danger {
-    background: var(--red);
+    /* background: var(--red); */
+    background: rgba(204, 51, 51, .5)
 }
 
 .alert-success {
-    background: var(--green);
+    /* background: var(--green); */
+    background: rgba(51, 153, 51, .5)
 }
 
 .small {
