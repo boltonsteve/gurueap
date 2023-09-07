@@ -58,3 +58,19 @@ export let students2 = [
     'yanti'
 ]
 
+export let students3 = [
+    'santri',
+    'nurul',
+    'rina',
+    'maria',
+    'benny',
+    'erni',
+    'roni',
+    'john',
+    'mira',
+    'kiki',
+    'sherly',
+    'enjel',
+    'apid'
+]
+
