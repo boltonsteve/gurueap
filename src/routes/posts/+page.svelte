@@ -1,32 +1,15 @@
 <script>
 
-    import SvelteSeo from "svelte-seo"
+    import SvelteSeo from "svelte-seo";
     import { base } from '$app/paths';
 
-    import { video, music } from '$lib/emojis.js'
+    import { video, music } from '$lib/emojis.js';
     import { links } from '$lib/links.js';
+
+    import { students } from '$lib/mugshots.js';
 
     let refineTitle = '';
     let refineKeyword = '';
-
-    let students = [
-        'anggi',
-        'aulia',
-        'baya',
-        'budhi',
-        'chandra',
-        'enny',
-        'faisal',
-        'hafidz',
-        'husnul',
-        'iin',
-        'johan',
-        'malik',
-        'ninik',
-        'sul',
-        'taufiq',
-        'yani'
-    ]
 
     // = Shuffle array
     students.sort(() => Math.random() - 0.5);

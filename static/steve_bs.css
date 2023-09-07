@@ -319,6 +319,11 @@ ul.links {
     width:100%;
 }
 
+.img-col img {
+    height:80px;
+    width:80px;
+}
+
 /* Positioning */
 .mw-500 {
     max-width: 500px;
@@ -648,3 +653,15 @@ input:focus, textarea:focus, select:focus{
     cursor: pointer;
     text-decoration: underline;
 }
+
+.img-col img {
+    border-radius: 5px;
+    opacity:0.3;
+}
+.img-col img:hover {
+    opacity:1;
+    cursor: pointer;
+}
+
+
+
