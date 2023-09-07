@@ -34,7 +34,7 @@ export let students1 = [
     'sul',
     'taufiq',
     'yani'
-]
+];
 
 export let students2 = [
     'andar',
@@ -56,7 +56,7 @@ export let students2 = [
     'vica',
     'winda',
     'yanti'
-]
+];
 
 export let students3 = [
     'santri',
@@ -72,5 +72,19 @@ export let students3 = [
     'sherly',
     'enjel',
     'apid'
+];
+
+export let students4 = [
+    'hans',
+    'aty',
+    'merlyn',
+    'darto',
+    'edwin',
+    'irma',
+    'roger',
+    'dewi',
+    'lucy',
+    'theo'
 ]
+
 
