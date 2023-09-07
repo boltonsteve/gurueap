@@ -43,12 +43,14 @@
     let setUp = () => {
 
         setCountGap();
+        let mugCount = 0;
 
         menuItems = links.map( (next,i) => {
 
             mugshot = '';
             if(i%countGap == 0) {
-                mugshot = `<div class="grid-post"><img src="/img/students/${students.pop()}.png" class="img-fluid" alt="steve"></div>`;
+                mugshot = `<div class="grid-post"><img src="/img/students/${students[mugCount]}.png" class="img-fluid" alt="student photo"></div>`;
+                mugCount ++;
             }
 
             let emoticons = '';
