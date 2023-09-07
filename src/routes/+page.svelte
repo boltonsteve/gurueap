@@ -4,11 +4,14 @@
     import { students1, students2, students3 } from '$lib/mugshots.js';
 
     let students = [...students1, ...students2, ...students3];
-    students.sort(() => Math.random() - 0.5);
 
-    let studentsHtmlArr = students.map( next => `<img class="mugshot" src="/img/students/${next}.png" alt="${next}">` );
-    console.log("studentsHtmlArr: ", studentsHtmlArr);
-    let studentsHtml = studentsHtmlArr.join('');
+    students.sort(() => Math.random() - 0.5);
+    let studentsLHtmlArr = students.map( next => `<img class="mugshot" src="/img/students/${next}.png" alt="${next}">` );
+    let studentsLHtml = studentsLHtmlArr.join('');
+
+    students.sort(() => Math.random() - 0.5);
+    let studentsRHtmlArr = students.map( next => `<img class="mugshot" src="/img/students/${next}.png" alt="${next}">` );
+    let studentsRHtml = studentsRHtmlArr.join('');
 </script>
 
 <SvelteSeo
@@ -18,7 +21,7 @@
 
 <div id="landing_grid">
 
-    <div class="img-col img-col-l">{@html studentsHtml}</div>
+    <div class="img-col img-col-l">{@html studentsLHtml}</div>
 
     <div id="center_column">
         <img src="/img/gurueap.jpg" class="img-fluid rounded" alt="GuruEAP">
@@ -30,7 +33,7 @@
         <p>If there are any special requests for additional content, or any questions about what you see here, please contact <a href="mailto:gurueap@gmail.com">gurueap@gmail.com</a>.</p>
     </div>
 
-    <div class="img-col img-col-r">{@html studentsHtml}</div>
+    <div class="img-col img-col-r">{@html studentsRHtml}</div>
 
 </div>
 
