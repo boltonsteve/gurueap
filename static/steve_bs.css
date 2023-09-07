@@ -32,6 +32,12 @@
 
 }
 
+.grid-post img {
+    height:80px;
+    width:80px;
+    border-radius:5px;
+}
+
 .grid-post:hover {
     background: var(--teal);
     color: var(--light);

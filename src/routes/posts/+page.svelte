@@ -9,16 +9,50 @@
     let refineTitle = '';
     let refineKeyword = '';
 
+    let students = [
+        'anggi',
+        'aulia',
+        'baya',
+        'budhi',
+        'chandra',
+        'enny',
+        'faisal',
+        'hafidz',
+        'husnul',
+        'iin',
+        'johan',
+        'malik',
+        'ninik',
+        'sul',
+        'taufiq',
+        'yani'
+    ]
+
+    // = Shuffle array
+    students.sort(() => Math.random() - 0.5);
+
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
     let linksCount = links.length;
 
-    let menu,menuDivs;
+    let menu,menuItems,countGap,mugshot;
+
+    let setCountGap = () => {
+        countGap = Math.floor(Math.random() * 7) + 3;
+    }
 
     let setUp = () => {
 
-        menuDivs = links.map( next => {
+        setCountGap();
+
+        menuItems = links.map( (next,i) => {
+
+            mugshot = '';
+            if(i%countGap == 0) {
+                mugshot = `<div class="grid-post"><img src="/img/students/${students.pop()}.png" class="img-fluid" alt="steve"></div>`;
+            }
 
             let emoticons = '';
+
             if('keywords' in next) {
                 if(next.keywords.includes('video')) {
                     emoticons += `<span class="text-success mx-1">${video}</span>`;
@@ -29,12 +63,12 @@
             }
 
             if(refineTitle == '' || next.title.toLowerCase().match(refineTitle)) {
-                return `<a class="grid-post" href="${base}/posts/${next.href}">${next.title}${emoticons}</a>`
+                return `<a class="grid-post" href="${base}/posts/${next.href}">${next.title}${emoticons}</a>${mugshot}`;
             }
 
         })
 
-        menu = menuDivs.join('');
+        menu = menuItems.join('');
 
     }
 
