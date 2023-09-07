@@ -3,7 +3,7 @@
     import { flagIndo } from '$lib/flags.js'
     import { students1, students2, students3, students4 } from '$lib/mugshots.js';
 
-    let students = [...students1, ...students2, ...students3, ...students4];
+    let students = [...students1, ...students2, ...students3];
 
     students.sort(() => Math.random() - 0.5);
     let studentsLHtmlArr = students.map( next => `<img class="mugshot" src="/img/students/${next}.png" alt="${next}">` );
