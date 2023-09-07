@@ -87,4 +87,33 @@ export let students4 = [
     'theo'
 ]
 
-
+export let students4 = [
+    'agus',
+    'andro',
+    'apid',
+    'aryo',
+    'aty',
+    'burhan',
+    'cendra',
+    'charles',
+    'dewi',
+    'dhimas',
+    'dila',
+    'dilam',
+    'dita',
+    'dji',
+    'edy',
+    'erman',
+    'erni',
+    'fatma',
+    'firda',
+    'hans2',
+    'henry',
+    'iin',
+    'irene',
+    'ita',
+    'kitty',
+    'lala',
+    'lucy',
+    'made'
+]
