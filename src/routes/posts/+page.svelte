@@ -37,7 +37,7 @@
     let menu,menuItems,countGap,mugshot;
 
     let setCountGap = () => {
-        countGap = Math.floor(Math.random() * 7) + 3;
+        countGap = Math.floor(Math.random() * 8) + 5;
     }
 
     let setUp = () => {
