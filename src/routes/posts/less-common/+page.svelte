@@ -11,7 +11,7 @@
 
     <h1>Less common vocabulary</h1>
 
-    <p>The IELTS public band descriptors for speaking state that in order to achieve band 7 or above for Lexical Resource (LR - vocabulary), then you should use some <a href="../posts/ielts-descriptors" target="_blank">less common vocabulary</a>.</p>
+    <p><a href="../posts/ielts-descriptors" target="_blank">The IELTS public band descriptors for speaking</a> state that in order to achieve band 7 or above for Lexical Resource (LR - vocabulary), then you should use some less common vocabulary.</p>
 
     <p class="font-italic ml-3">It's so hot today. I'm <b><i>parched!</i></b></p>
 

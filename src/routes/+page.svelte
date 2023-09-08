@@ -42,23 +42,23 @@
         display:grid;
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
         grid-auto-rows: 80px;
-        gap: 20px;
+        gap: 10px;
     }
 
     #landing_grid {
         display:grid;
         grid-template-columns: 1fr minmax(auto, 500px) 1fr;
-        gap:45px;
+        gap:50px;
         height:90vh;
     }
 
-@media(max-width:500px) {
-    #landing_grid {
-        grid-template-columns: 1fr;
+    @media(max-width:500px) {
+        #landing_grid {
+            grid-template-columns: 1fr;
+        }
+        .img-col-l {
+            display:none;
+        }
     }
-    .img-col-l {
-        display:none;
-    }
-}
 
 </style>
