@@ -1,4 +1,4 @@
-export let students = [
+export const students = [
     'anggi',
     'aulia',
     'baya',
@@ -14,29 +14,7 @@ export let students = [
     'ninik',
     'sul',
     'taufiq',
-    'yani'
-]
-
-export let students1 = [
-    'anggi',
-    'aulia',
-    'baya',
-    'budhi',
-    'chandra',
-    'enny',
-    'faisal',
-    'hafidz',
-    'husnul',
-    'iin',
-    'johan',
-    'malik',
-    'ninik',
-    'sul',
-    'taufiq',
-    'yani'
-];
-
-export let students2 = [
+    'yani',
     'andar',
     'ari',
     'boogie',
@@ -55,34 +33,47 @@ export let students2 = [
     'sos',
     'vica',
     'winda',
-    'yanti'
-];
-
-export let students3 = [
-    'santri',
+    'yanti',
+    'andar',
+    'ari',
+    'boogie',
+    'cendra',
+    'dilam',
+    'dita',
+    'erine',
+    'fendy',
+    'fiona',
+    'irfan',
+    'jasman',
+    'martha',
+    'moya',
+    'nia',
+    'putu',
+    'sos',
+    'vica',
+    'winda',
+    'yanti',
+    'apid',
+    'benny',
+    'enjel',
+    'erni',
+    'john',
+    'kiki',
+    'maria',
+    'mira',
     'nurul',
     'rina',
-    'maria',
-    'benny',
-    'erni',
     'roni',
-    'john',
-    'mira',
-    'kiki',
+    'santri',
     'sherly',
-    'enjel',
-    'apid'
-];
-
-export let students4 = [
-    'hans',
     'aty',
-    'merlyn',
     'darto',
-    'edwin',
-    'irma',
-    'roger',
     'dewi',
+    'edwin',
+    'hans',
+    'irma',
     'lucy',
+    'merlyn',
+    'roger',
     'theo'
 ]
