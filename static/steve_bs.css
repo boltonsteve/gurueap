@@ -151,7 +151,6 @@
 .alert {
     border-radius: 5px;
     padding: 5px 15px;
-    color: var(--light);
 }
 
 .alert-info {

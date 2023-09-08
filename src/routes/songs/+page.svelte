@@ -35,7 +35,7 @@
   description="Songs that demonstrate various aspects of language, for example lexical and grammatical structures, that often become lost in translation from other languages into English. Performed by EAP students, many of whom are preparing for IELTS."
 />
 
-<div class="mb-3 mw-500">
+<div class="mb-3 pt-2 mw-500">
     <img src="/img/steve-baby.png" class="mx-auto mb-3 w-25" alt="gurueap">
     {@html menu}
 </div>

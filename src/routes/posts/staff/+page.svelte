@@ -24,7 +24,7 @@
 
     <img src="/img/not-a-staff.png" class="pl-1" alt="not a staff" style="width:180px;float:right;">
 
-    <ul>
+    <ul class="lh-15">
         <li>often very long - longer than its user is tall</li>
         <li>usually made of wood</li>
         <li>usually quite ornate, possibly hand-crafted</li>
@@ -71,7 +71,7 @@
         <li>The financial services <span class="font-weight-bold text-success">staff</span> mainly handles payment postings.<br><span class="small">all workers belonging to a sub-category (financial services) of a larger group or component (all workers)</span></li>
     </ul>
 
-    <div class="alert">
+    <div class="alert alert-danger">
         <p>Notice the subject verb/agreement:</p>
         <ul>
             <li><i>the staff..is</i> (<span class="uli">not</span> <i>are</i>)</li>
