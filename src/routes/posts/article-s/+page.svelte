@@ -11,14 +11,14 @@
 
 <SvelteSeo
     title="Articles - General Rules",
-    description="A system for calculating whether or not an article is needed with a noun and which article (and/or 's') is needed."
+    description="A system for determining whether or not an article is needed with a noun and which article (and/or 's') is needed."
 />
 
 <div class="mb-3 mw-500">
 
     <h1>Article and/or 's'</h1>
 
-    <div class="alert alert-warning"><p>This post includes dangerous grammar rules! (There's also a writing practice task!)</p></div>
+    <div class="alert alert-danger"><p>This post includes grammar rules!<br>There's also a writing practice task.</p></div>
 
 <p style="padding-top:0px;">For every noun you speak or write, you need to use grammar to communicate one of the meanings in the ‘meaning’ column in the table below.</p>
 <p>When you’re trying to decide which article to use, and whether or not to add ‘s’, you must first of all decide:</p>
@@ -28,52 +28,51 @@
  	<li>Is the noun <b><i>countable</i></b> or <b><i>uncountable</i></b>?</li>
  	<li>If it’s countable is it <b><i>singular</i></b> or <b><i>plural</i></b>?</li>
 </ol>
-<p>Then you can choose an article and add ‘s’ accordingly.</p>
+<p>Then you can choose an article and/or add ‘s’ accordingly.</p>
 
-<table style="font-size:90%;" border="1" width="100%">
-<tbody>
-<tr>
-<td>&nbsp;</td>
-<td style="padding:3px;" valign="top"><b>meaning</b></td>
-<td style="padding:3px;" valign="top"><b>singular</b></td>
-<td style="padding:3px;" valign="top"><b>plural</b></td>
-</tr>
-<tr>
-<td style="padding:3px;" rowspan="3" valign="top"><b>countable</b></td>
-<td style="padding:3px;" valign="top">all of them everywhere</td>
-<td style="background-color:black;">&nbsp;</td>
-<td style="padding:3px;" valign="top">add ‘s’</td>
-</tr>
-<tr>
-<td style="padding:3px;" valign="top">one of many<sup>1</sup></td>
-<td style="padding:3px;" valign="top">a(n)</td>
-<td style="padding:3px;" valign="top">add ‘s’</td>
-</tr>
-<tr>
-<td style="padding:3px;" valign="top">this one exactly<sup>2</sup></td>
-<td style="padding:3px;" valign="top">the</td>
-<td style="padding:3px;" valign="top">the + add ‘s’</td>
-</tr>
-<tr>
-<td style="padding:3px;" rowspan="3" valign="top"><b>uncountable</b></td>
-<td style="padding:3px;" valign="top">all of it everywhere</td>
-<td style="padding:3px;" colspan="2"  valign="top">no article</td>
-</tr>
-<tr>
-<td style="padding:3px;" valign="top">some of much</td>
-<td style="padding:3px;" colspan="2" valign="top">no article<sup>3</sup></td>
-</tr>
-<tr>
-<td style="padding:3px;" valign="top">this exactly</td>
-<td style="padding:3px;" colspan="2"  valign="top">the</td>
-</tr>
-</tbody>
-</table>
+<div class="articles-grid">
 
-<ol class="lh-15" style="margin-top:15px;">
- 	<li>Plural: ‘some of many’ - often with a different determiner, for example ‘several’, ‘various’, ‘certain’, ‘a number of’</li>
- 	<li>Plural: ‘these exactly’</li>
- 	<li>A determiner other than an article might be appropriate, for example ‘some’.</li>
+    <div>&nbsp;</div>
+    <div class="font-weight-bold">meaning</div>
+    <div class="font-weight-bold">singular</div>
+    <div class="font-weight-bold">plural</div>
+
+    <div class="font-weight-bold">countable</div>
+    <div>all of them everywhere</div>
+    <div style="background:black;">&nbsp;</div>
+    <div>add 's'</div>
+
+    <div>&nbsp;</div>
+    <div>one of many<sup>1</sup></div>
+    <div>a(n)</div>
+    <div>add 's'</div>
+
+    <div>&nbsp;</div>
+    <div>this one exactly<sup>2</sup></div>
+    <div>the</div>
+    <div>the + add 's'</div>
+
+    <div class="font-weight-bold">uncountable</div>
+    <div>all of it everywhere</div>
+    <div>no article</div>
+    <div>&nbsp;</div>
+
+    <div>&nbsp;</div>
+    <div>some of much</div>
+    <div>no article<sup>3</sup></div>
+    <div>&nbsp;</div>
+
+    <div>&nbsp;</div>
+    <div>this exactly</div>
+    <div>the</div>
+    <div>&nbsp;</div>
+
+</div>
+
+<ol class="lh-15 small" style="margin-top:15px;">
+ 	<li>Plural: <b><i>some of many</i></b> - often with a different determiner, for example <i>several</i>, <i>various</i>, <i>certain</i>, <i>a number of</i></li>
+ 	<li>Plural: <b><i>these exactly</i></b></li>
+ 	<li>A determiner other than an article might be appropriate, for example <i>some</i>.</li>
 </ol>
 
 <h3 class="mb-0">Practice</h3>
@@ -90,3 +89,20 @@ Being found on social media is important to building career, establishing presen
 <button class="btn my-1 mx-auto" on:click={showOriginal}>Compare with original</button>
 
 </div>
+
+
+<style>
+.articles-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap:0px;
+}
+
+.articles-grid div {
+    border-bottom:1px solid #bbbbbb;
+    padding:5px;
+}
+sup {
+    font-weight: bold;
+}
+</style>

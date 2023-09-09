@@ -13,21 +13,23 @@
 
     <h1>Million or millions?</h1>
 
-    <p class="ml-3 font-italic">According to a recent census, there are 265 <span class="font-weight-bold text-danger">millions</span> people living in Indonesia.</p>
+    <p class="ml-3 font-italic">According to a recent census, there are 265 <span class="font-weight-bold text-danger">millions</span> <b>people</b> living in Indonesia.</p>
 
-    <p>Yes, I know it seems right. But it isn't. Only put an 's' on <b><i>million</i></b> when <b><i>million</i></b> is the main noun in a noun phrase.</p>
+    <p>Yes, I know it seems right. But it isn't.</p>
 
-    <p>Very often <b><i>million</i></b> is the main noun in a noun phrase when it is at the beginning of a sentence:</p>
+    <h3 class="mb-0">When <i>million</i> is the main noun</h3>
+    <p class="mt-0">Only put an 's' on <b><i>million</i></b> when <b><i>million</i></b> is the main noun in a noun phrase, for example when it is at the beginning of a sentence, like this:</p>
 
-    <p class="ml-3 font-italic"><span class="font-weight-bold text-success">Millions</span> of people live in Indonesia, a huge archipelago in south-east Asia.</p>
+    <p class="ml-3 font-italic"><span class="font-weight-bold text-success">Millions</span> <b>of people</b> live in Indonesia, a huge archipelago in south-east Asia.</p>
 
-    <p>..but not always. It might appear somewhere inside a sentence:</p>
+    <p>..or inside a sentence like this:</p>
 
-    <p class="ml-3 font-italic">Indonesia spends <span class="font-weight-bold text-success">millions</span> of dollars every year subsidising fuel.</p>
+    <p class="ml-3 font-italic">Indonesia spends <span class="font-weight-bold text-success">millions</span> <b>of dollars</b> every year subsidising fuel.</p>
 
     <p>In the noun phrase <i>millions of people</i>, <b><i>millions</i></b> is the main noun, modified by <b><i>of people</i></b>. We know exactly which <b><i>millions</i></b> you're talking about - not millions of bananas, for example! The same goes for <i>millions of dollars</i> (<span class="uli">not</span> <i>millions of rupiah</i>!).</p>
 
-    <p>When <b><i>million</i></b> is not the main noun, for example when it is modifying another noun, don't add an 's':</p>
+    <h3 class="mb-0">When <i>million</i> is NOT the main noun</h3>
+    <p class="mt-0">When <b><i>million</i></b> is modifying another noun, don't add an 's':</p>
 
     <p class="ml-3 font-italic">According to a recent census, there are 265 <span class="font-weight-bold text-success">million</span> people living in Indonesia.</p>
 
