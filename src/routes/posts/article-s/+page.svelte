@@ -82,9 +82,7 @@
     <div class="my-2 border rounded border-dark px-1 py-1" in:scale out:fade>Being found on social media is important to building a career, establishing a presence as an expert in your field, and keeping in touch. But sharing too much personal information online is always a mistake. Over-posting can be problematic, too, since it can make you appear unproductive. Having too little information in an online profile can be interpreted as trying to hide something or as a sign you aren’t well-established in a career or a community. The key, say experts, is striking the right balance.</div>
 {/if}
 
-<textarea class="form-control rounded p-1" rows="8">
-Being found on social media is important to building career, establishing presence as expert in your field and keeping in touch. But sharing too much personal information online is always mistake. Over-posting can be problematic, too, since it can make you appear unproductive. Having too little information in online profile can be interpreted as trying to hide something or as sign you aren’t well-established in career or community. Key, say experts, is striking right balance.
-</textarea>
+<textarea class="form-control rounded p-1" rows="8">Being found on social media is important to building career, establishing presence as expert in your field and keeping in touch. But sharing too much personal information online is always mistake. Over-posting can be problematic, too, since it can make you appear unproductive. Having too little information in online profile can be interpreted as trying to hide something or as sign you aren’t well-established in career or community. Key, say experts, is striking right balance.</textarea>
 
 <button class="btn my-1 mx-auto" on:click={showOriginal}>Compare with original</button>
 
@@ -92,17 +90,16 @@ Being found on social media is important to building career, establishing presen
 
 
 <style>
-.articles-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-    gap:0px;
-}
-
-.articles-grid div {
-    border-bottom:1px solid #bbbbbb;
-    padding:5px;
-}
-sup {
-    font-weight: bold;
-}
+    .articles-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        gap:0px;
+    }
+    .articles-grid div {
+        border-bottom:1px solid #bbbbbb;
+        padding:5px;
+    }
+    sup {
+        font-weight: bold;
+    }
 </style>

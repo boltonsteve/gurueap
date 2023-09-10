@@ -1,4 +1,29 @@
 export const links = [
+    // {
+    //     title: "Being economical with the economy",
+    //     href: "economy",
+    //     keywords: ['vocabulary','collocation','LR']
+    // },
+    {
+        title: "Easy can be difficult",
+        href: "easy-difficult",
+        keywords: ['vocabulary','collocation','LR']
+    },
+    {
+        title: "When usually is unusual",
+        href: "usually",
+        keywords: ['grammar','tenses','GRA','appropriacy']
+    },
+    {
+        title: "Every time / All the time",
+        href: "every-time",
+        keywords: ['vocabulary','collocation','LR']
+    },
+    {
+        title: "Use or Wear",
+        href: "use-wear",
+        keywords: ['vocabulary','collocation','LR']
+    },
     {
         title: "Articles - General rules",
         href: "article-s",

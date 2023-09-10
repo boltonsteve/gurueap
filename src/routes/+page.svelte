@@ -4,12 +4,16 @@
     import { students } from '$lib/mugshots.js';
 
     students.sort(() => Math.random() - 0.5);
-    let studentsLHtmlArr = students.map( next => `<img class="mugshot" src="/img/students/${next}.png" alt="${next}">` );
+    let studentsLHtmlArr = students.map( next => `<img class="mugshot mx-auto" src="/img/students/${next}.png" alt="${next}">` );
     let studentsLHtml = studentsLHtmlArr.join('');
 
     students.sort(() => Math.random() - 0.5);
-    let studentsRHtmlArr = students.map( next => `<img class="mugshot" src="/img/students/${next}.png" alt="${next}">` );
+    let studentsRHtmlArr = students.map( next => `<img class="mugshot mx-auto" src="/img/students/${next}.png" alt="${next}">` );
     let studentsRHtml = studentsRHtmlArr.join('');
+
+    students.sort(() => Math.random() - 0.5);
+    let studentsMHtmlArr = students.map( next => `<img class="mugshot mx-auto" src="/img/students/${next}.png" alt="${next}">` );
+    let studentsMHtml = studentsMHtmlArr.join('');
 </script>
 
 <SvelteSeo
@@ -40,9 +44,9 @@
 
     .img-col {
         display:grid;
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
         grid-auto-rows: 80px;
-        gap: 10px;
+        gap: 20px;
     }
 
     #landing_grid {
