@@ -660,4 +660,17 @@ input:focus, textarea:focus, select:focus{
 }
 
 
+.success {
+    color: white;
+    background-color: var(--green);
+}
 
+.warning {
+    color: white;
+    background-color: var(--orange);
+}
+
+.danger {
+    color: white;
+    background-color: var(--red);
+}
