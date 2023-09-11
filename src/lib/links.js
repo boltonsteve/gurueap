@@ -1,5 +1,15 @@
 export const links = [
     {
+        title: "How often in IELTS Speaking",
+        href: "how-often",
+        keywords: ['speaking','grammar','GRA']
+    },
+    {
+        title: "Have you used present perfect recently?",
+        href: "present-perfect",
+        keywords: ['grammar','tenses','GRA']
+    },
+    {
         title: "Being economical with the economy",
         href: "economy",
         keywords: ['vocabulary','collocation','LR']

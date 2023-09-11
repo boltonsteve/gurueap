@@ -5,7 +5,6 @@
     import { flagIndo } from '$lib/flags.js';
     import InputText from '../../components/inputText.svelte';
 
-    let feedback = false;
     let fb = '';
 
     const checkAnswers = () => {
@@ -17,17 +16,11 @@
 
         let score = 0;
         let guesses = document.getElementsByClassName("ans");
-        /* console.log(guesses); */
         for (var i = 0; i < guesses.length; i++) {
-
             let el = document.getElementById("A"+(i+1));
-
             el.classList.remove('warning')
-
-
             let guess = guesses.item(i).value;
             let correct = guesses.item(i).attributes.data.value;
-
             if(guess == '') {
                 el.classList.add('warning');
             } else {
@@ -38,13 +31,16 @@
                     el.classList.add('danger');
                 }
             }
-
         }
 
-        fb = `<h1 class="text-center">Score: ${score}/${guesses.length}</h1>`;
-        
+        fb = `<h1 class="text-center mb-0">Score: ${score}/${guesses.length}</h1>`;
+        if(score < guesses.length) {
+            fb += '<p class="text-center mt-0">Keep trying!</p>';
+        } else {
+            fb += '<p class="text-center mt-0">Excellent!</p>';
+        }
+
         animateScroll.scrollTo({element: '#feedback', duration: 1000, offset: -50})
-        feedback = true;
 
     }
 
