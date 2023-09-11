@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Crime or Crimes",
+        href: "crime-s",
+        keywords: ['vocabulary','LR']
+    },
+    {
         title: "How often in IELTS Speaking",
         href: "how-often",
         keywords: ['speaking','grammar','GRA']

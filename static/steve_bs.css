@@ -15,6 +15,10 @@
   --3: 30px;
 }
 
+.hide {
+    display:none;
+}
+
 .grid-post {
     padding-left: 7px;
     padding-right: 7px;
@@ -292,6 +296,7 @@ ul.links {
 
 .img-fluid {
     width:100%;
+    border-radius: 5px;
 }
 
 /* Positioning */
