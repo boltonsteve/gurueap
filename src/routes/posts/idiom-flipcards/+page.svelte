@@ -5,6 +5,14 @@
 
     let idioms = [
         {
+            front: "Yes I've been studying hard, and, well, <b><i>so far so good</i></b>!",
+            back: "Everything is going well, at least for now."
+        },
+        {
+            front: "My boss told me I was being demoted, but she was only <b><i>pulling my leg</i></b>. She gave me a promotion.",
+            back: "Give someone misinformation, as a joke."
+        },
+        {
             front: "I really hope I get a score this time. I don't want to <b><i>miss the boat</i></b> again!",
             back: "Miss an opportunity."
         },
