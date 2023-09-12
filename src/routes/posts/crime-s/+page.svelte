@@ -12,8 +12,8 @@
 </script>
 
 <SvelteSeo
-    title="Articles - General Rules",
-    description="A system for determining whether or not an article is needed with a noun and which article (and/or 's') is needed."
+    title="Crime or Crimes",
+    description="Contrasting the countable and uncountable versions of 'crime', which is often a topic in IELTS. Includes examples of usage."
 />
 
 <div class="mb-3 mw-500">
