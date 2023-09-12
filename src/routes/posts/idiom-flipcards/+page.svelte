@@ -1,5 +1,6 @@
 <script>
     import Flipcard from '../../components/flipcard.svelte';
+    import SvelteSeo from "svelte-seo"
 
     let idioms = [
         {
@@ -62,13 +63,22 @@
 
 </script>
 
+
+<SvelteSeo
+    title="Idiom Flipcards",
+  description="Some examples of English idioms. Using these occasionally helps to increase your IELTS score for vocabulary, or Lexical Resource (LR)"
+/>
+
 <h1 class="text-center">Idioms</h1>
+
 <p class="text-center">Mouse over (or click if mobile) cards to flip them over.</p>
+
 <div id="main">
 
 {#each idioms as idiom}
     <Flipcard front="{idiom.front}" back="{idiom.back}" />
 {/each}
+
 </div>
 
 <style>
