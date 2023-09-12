@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Idiom flipcards",
+        href: "idiom-flipcards",
+        keywords: ['vocabulary','idioms','LR']
+    },
+    {
         title: "Crime or Crimes",
         href: "crime-s",
         keywords: ['vocabulary','LR']
