@@ -5,7 +5,7 @@
     export let options = "";
     export let guess = "";
 
-    let oHtmlArr = ['<option value="select">select</option>'];
+    let oHtmlArr = [];
 
     let correct = "";
     let oArr = options.split(',');
@@ -17,12 +17,12 @@
         oHtmlArr.push(`<option value="${next}">${next}</option>`);
     });
     let oHtml = oHtmlArr.join('');
+    oHtml = oHtml + '<option value="select">select</option>';
 
 </script>
 
 <span>
-    <sup class="font-weight-bold">{count}</sup>
-    <select id="A{count}" data="{answer}" class="ans">
+    <sup class="font-weight-bold">{count}</sup><select id="A{count}" data="{answer}" class="ans">
         {@html oHtml}
     </select>
 </span>
@@ -32,6 +32,6 @@
         white-space: nowrap;
     }
     sup {
-        padding-right:0px;
+        padding-right:3px;
     }
 </style>

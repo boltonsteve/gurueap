@@ -625,6 +625,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 .tooltip {
+    color: var(--blue);
     cursor: pointer;
     text-decoration: underline;
 }
