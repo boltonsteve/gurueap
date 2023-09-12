@@ -1,5 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
+    import { flagIndo } from '$lib/flags.js'
 </script>
 
 <SvelteSeo
@@ -17,7 +18,7 @@
 
     <img src="/img/condoms.png" class="mx-auto" alt="condoms">
 
-    <p class="mt-1">Indonesians need to consider the difference between avoid (menghindar) and prevent (mencegah):</p>
+    <p class="mt-1">{@html flagIndo} Indonesians need to consider the difference between <b><i>avoid</i></b> (menghindar) and <b><i>prevent</i></b> (mencegah):</p>
 
     <p class="ml-3 font-italic">Everybody knows that condoms can <span class="font-weight-bold text-success">prevent</span> pregnancy.</p>
 

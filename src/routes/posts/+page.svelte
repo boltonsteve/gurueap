@@ -49,7 +49,7 @@
             }
 
             if(refineTitle == '' || next.title.toLowerCase().match(refineTitle)) {
-                return `<a class="grid-post" href="${base}/posts/${next.href}">${next.title}${emoticons}</a>${mugshot}`;
+                return `<a class="grid-post" href="${base}/posts/${next.href}">${next.title}${emoticons}</a>`;
             }
 
         })

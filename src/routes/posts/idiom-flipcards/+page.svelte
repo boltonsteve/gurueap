@@ -1,11 +1,34 @@
 <script>
     import Flipcard from '../../components/flipcard.svelte';
     import SvelteSeo from "svelte-seo";
-    import { shuffle } from '$lib/shuffle.js';
+    /* import { shuffle } from '$lib/shuffle.js'; */
+
+// define a function that can be reused
+const shuffle = (array) => {
+  // create a copy of the array so that the original array is not mutated
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+};
 
     let idioms = [
         {
-            front: "Yes I've been studying hard, and, well, <b><i>so far so good</i></b>!",
+            front: "My brother is very good at English. For him the IELTS test will be <b><i>a piece of cake</i></b>.",
+            back: "Very easy."
+        },
+        {
+            front: "iPhones are great, but they <b><i>cost an arm and a leg</i></b>!",
+            back: "They're very expensive!"
+        },
+        {
+            front: "I've actually been feeling <b><i>under the weather</i></b> for the past few days and I wasn't sure I'd be ble to attend the test.",
+            back: "Feeling ill."
+        },
+        {
+            front: "Yes I've been studying hard and, well, <b><i>so far so good</i></b>!",
             back: "Everything is going well, at least for now."
         },
         {
@@ -90,7 +113,7 @@
         }
     ]
 
-    /* shuffle(idioms); */
+    /* idioms = shuffle(idioms); */
 
 </script>
 
@@ -117,6 +140,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-
 }
 </style>
