@@ -1,8 +1,29 @@
 <script>
     import Flipcard from '../../components/flipcard.svelte';
-    import SvelteSeo from "svelte-seo"
+    import SvelteSeo from "svelte-seo";
+    import { shuffle } from '$lib/shuffle.js';
 
     let idioms = [
+        {
+            front: "I really hope I get a score this time. I don't want to <b><i>miss the boat</i></b> again!",
+            back: "Miss an opportunity."
+        },
+        {
+            front: "It was late and I was ready to <b><i>hit the sack</i></b>, but I decided to finish the assignment.",
+            back: "Go to bed."
+        },
+        {
+            front: "I know that if I want a good IELTS score I'll need to <b><i>get my act together</i></b>.",
+            back: "Stop being lazy, focus carefully and work hard."
+        },
+        {
+            front: "There's no <b><i>cutting corners</i></b> with IELTS preparation. Anything less than 100% effort is just not enough!",
+            back: "Avoiding effort or spending less in order to finish something quickly."
+        },
+        {
+            front: "I was about to <b><i>call it a day</i></b> with the scholarship applications, but then I got this offer from AAS!",
+            back: "Stop trying, or stop doing something that's not worth the effort."
+        },
         {
             front: "I disagreed, but since he's my boss I decided to <b><i>eat humble pie</i></b>.",
             back: "Pretend that you agree with someone so as to avoid negative consequences."
@@ -61,6 +82,8 @@
         }
     ]
 
+    shuffle(idioms);
+
 </script>
 
 
@@ -69,9 +92,9 @@
   description="Some examples of English idioms. Using these occasionally helps to increase your IELTS score for vocabulary, or Lexical Resource (LR)"
 />
 
-<h1 class="text-center">Idioms</h1>
+<h1 class="text-center mb-0">Idioms</h1>
 
-<p class="text-center">Mouse over (or click if mobile) cards to flip them over.</p>
+<p class="text-center mt-0">Mouse over (or tap) cards to flip them.</p>
 
 <div id="main">
 
