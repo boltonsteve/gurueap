@@ -90,7 +90,7 @@
         }
     ]
 
-    shuffle(idioms);
+    /* shuffle(idioms); */
 
 </script>
 
