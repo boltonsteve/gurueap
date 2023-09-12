@@ -38,7 +38,7 @@
         },
         {
             front: "Please <b><i>keep me in the loop</i></b>, John. I need to know all the latest developments!",
-            back: "You are aware of the latest details relating to an ongoing situation."
+            back: "If you are <i>in the loop</i>, you are aware of the latest details relating to an ongoing situation."
         },
         {
             front: "Banning hooliganism by banning football is like <b><i>throwing out the baby with the bath water</i></b>!",
