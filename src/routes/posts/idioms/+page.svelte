@@ -13,7 +13,7 @@
 
     <h1>Idiomatic language</h1>
 
-    <p>The IELTS public band descriptors for speaking state that in order to achieve band 7 or above for Lexical Resource (LR - vocabulary), then you should use some <a href="../posts/ielts-descriptors" target="_blank">idiomatic language</a>.</p>
+    <p>The <a href="../posts/ielts-descriptors" target="_blank">IELTS public band descriptors for speaking</a> state that in order to achieve band 7 or above for Lexical Resource (LR - vocabulary), then you should use some idiomatic language.</p>
 
     <h3 class="mb-0">Idioms and collocation</h3>
     <p class="mt-0"><b><i>Idiomatic language</i></b> gets you a high score for vocabulary because idiomatic phrases contain <b><i>strong collocation</i></b>. Take for example:</p>
@@ -42,6 +42,6 @@
 
     <p>If you cannot do this, then you probably don't know what the idiom means and you probably shouldn't be using it.</p>
 
-    <p>In a separate post you will find flashcards filled with <a href="../posts/idiom-flipcards">idioms suitable for use in IELTS Speaking</a>. Test yourself and your friends - How many of these could you already use with confidence? </p>
+    <p>In a separate post you will find flashcards filled with <a href="../posts/idiom-flipcards">idioms suitable for use in IELTS Speaking</a>, including the idiom featured in the image at the top of this page. Test yourself and your friends - How many of these could you already use with confidence? </p>
 
 </div>

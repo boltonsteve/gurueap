@@ -15,6 +15,7 @@
     let keywords = uniqueKw.filter(e => e !== undefined).sort();
 
     let kwOptionsArr = keywords.map( next => `<option value="${next}">${next}</option>` );
+    kwOptionsArr.push('<option id="select" value="select" selected>select category</option>')
 
     let kwOptions = kwOptionsArr.join('');
 
@@ -103,7 +104,7 @@
 
         <select id="refine_category" class="form-control input-item input-item-1" placeholder="search categories" on:input={handleKeywordInput}>
             {@html kwOptions}
-            <option value="select" selected>search categories</option>
+            
         </select>
     </div>
 

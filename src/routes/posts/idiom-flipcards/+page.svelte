@@ -1,20 +1,12 @@
 <script>
     import Flipcard from '../../components/flipcard.svelte';
     import SvelteSeo from "svelte-seo";
-    /* import { shuffle } from '$lib/shuffle.js'; */
-
-// define a function that can be reused
-const shuffle = (array) => {
-  // create a copy of the array so that the original array is not mutated
-  const newArray = [...array];
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-  }
-  return newArray;
-};
 
     let idioms = [
+        {
+            front: "He's such an idealist. He always <b><i>sees</i></b> the world <b><i>through rose-tinted glasses</i></b>.",
+            back: "To be excessively optimistic in a given situation."
+        },
         {
             front: "My brother is very good at English. For him the IELTS test will be <b><i>a piece of cake</i></b>.",
             back: "Very easy."
@@ -113,14 +105,12 @@ const shuffle = (array) => {
         }
     ]
 
-    /* idioms = shuffle(idioms); */
-
 </script>
 
 
 <SvelteSeo
     title="Idiom Flipcards",
-  description="Some examples of English idioms. Using these occasionally helps to increase your IELTS score for vocabulary, or Lexical Resource (LR)"
+  description="Some examples of English idioms. Using these occasionally helps to increase your IELTS score for vocabulary, or Lexical Resource (LR), especially in IELTS Speaking."
 />
 
 <h1 class="text-center mb-0">Idioms</h1>

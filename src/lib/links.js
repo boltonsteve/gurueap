@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Competition(s)",
+        href: "competition",
+        keywords: ['vocabulary','countable uncountable','LR']
+    },
+    {
         title: "Idiom flipcards",
         href: "idiom-flipcards",
         keywords: ['vocabulary','idioms','LR']
@@ -12,7 +17,7 @@ export const links = [
     {
         title: "How often in IELTS Speaking",
         href: "how-often",
-        keywords: ['speaking','grammar','GRA']
+        keywords: ['speaking','grammar','GRA','IELTS']
     },
     {
         title: "Have you used present perfect recently?",
@@ -57,7 +62,7 @@ export const links = [
     {
         title: "Supergroups and Percentages in IELTS Task 1",
         href: "supergroup",
-        keywords: ['task1','percentages','TA','CC']
+        keywords: ['task1','percentages','TA','CC','IELTS']
     },
     {
         title: "Memorising and remembering memories",
