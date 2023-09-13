@@ -17,7 +17,7 @@ export const links = [
     {
         title: "Have you used present perfect recently?",
         href: "present-perfect",
-        keywords: ['grammar','tenses','GRA']
+        keywords: ['grammar','GRA','present perfect tense','tenses']
     },
     {
         title: "Being economical with the economy",
@@ -47,7 +47,7 @@ export const links = [
     {
         title: "Articles - General rules",
         href: "article-s",
-        keywords: ['grammar','articles','GRA']
+        keywords: ['grammar','articles','GRA','s']
     },
     {
         title: "Using fillers to avoid hesitation",
@@ -87,7 +87,7 @@ export const links = [
     {
         title: "People's lives",
         href: "life",
-        keywords: ['vocabulary','culture','appropriacy']
+        keywords: ['vocabulary','L1 interference','appropriacy']
     },
     {
         title: "Despite",
@@ -102,7 +102,7 @@ export const links = [
     {
         title: "Coherence and Cohesion (CC)",
         href: "coherence-cohesion",
-        keywords: ['vocabulary','collocation','LR']
+        keywords: ['vocabulary','coherence and cohesion','CC']
     },
     {
         title: "Convenient",
@@ -117,7 +117,7 @@ export const links = [
     {
         title: "Add 's' by George",
         href: "add-s",
-        keywords: ['grammar','pronunciation','s','video']
+        keywords: ['grammar','pronunciation','s','video','articles']
     },
     {
         title: "IELTS Band Descriptors",
@@ -132,7 +132,7 @@ export const links = [
     {
         title: "Beware of Past Perfect",
         href: "past-perfect",
-        keywords: ['grammar','tenses']
+        keywords: ['grammar','past perfect tense','tenses']
     },
     {
         title: "The price is NOT expensive",
@@ -162,17 +162,17 @@ export const links = [
     {
         title: "Present tenses explained",
         href: "present-tenses",
-        keywords: ['grammar','tenses','present','video']
+        keywords: ['grammar','tenses','present tenses','video']
     },
     {
         title: "Past tenses explained",
         href: "past-tenses",
-        keywords: ['grammar','tenses','past','video']
+        keywords: ['grammar', 'past tenses','tenses','video']
     },
     {
         title: "Perfect tenses explained",
         href: "perfect-tenses",
-        keywords: ['grammar','tenses','perfect','video']
+        keywords: ['grammar','perfect tenses','tenses','video']
     },
     {
         title: "Conjunction Sandwich",
@@ -183,7 +183,7 @@ export const links = [
     {
         title: "Can/Could Will/Would Probability/Ability",
         href: "would",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','modals']
     },
     {
         title: "Research(es)",
@@ -218,7 +218,7 @@ export const links = [
     {
         title: "Parallel Structures",
         href: "parallel",
-        keywords: ['grammar','coherence','cohesion']
+        keywords: ['grammar','coherence and cohesion']
     },
     {
         title: "Could or Can",
@@ -238,7 +238,7 @@ export const links = [
     {
         title: "Million or Millions",
         href: "millions",
-        keywords: ['qualntifiers','vocabulary','numbers']
+        keywords: ['quantifiers','vocabulary','numbers']
     },
     {
         title: "Even is NOT bahkan",
@@ -248,7 +248,7 @@ export const links = [
     {
         title: "It",
         href: "it",
-        keywords: ['referencing','substitution','grammar']
+        keywords: ['referencing and substitution','grammar']
     },
     {
         title: "Most or Most of?",
@@ -258,38 +258,46 @@ export const links = [
     {
         title: "It or this? Theme or Rheme?",
         href: "it-or-this",
-        keywords: ['referencing','substitution','CC']
+        keywords: ['referencing and substitution','CC']
     },
     {
         title: "And besides",
-        href: "and-besides"
+        href: "and-besides",
+        keywords: ["signals","coherence and cohesion","L1 interference"]
     },
     {
         title: "There is Ada",
-        href: "there-is-ada"
+        href: "there-is-ada",
+        keywords: ["L1 interference","grammar","GRA"]
     },
     {
         title: "When 'become' is NOT becoming",
-        href: "become"
+        href: "become",
+        keywords: ["L1 interference","change(s) over time","vocabulary"]
     },
     {
         title: "Youths and young people",
-        href: "youths"
+        href: "youths",
+        keywords: ["vocabulary","LR","appropriacy"]
     },
     {
         title: "Goodbye to 'By'",
-        href: "goodbye-to-by"
+        href: "goodbye-to-by",
+        keywords: ["L1 interference","vocabulary","LR"]
     },
     {
         title: "The Society",
-        href: "the-society"
+        href: "the-society",
+        keywords: ["vocabulary","LR","appropriacy"]
     },
     {
         title: "Have an impact on",
-        href: "impact"
+        href: "impact",
+        keywords: ["vocabulary","collocation","LR"]
     },
     {
         title: "Cannot 'also can'",
-        href: "also-can"
+        href: "also-can",
+        keywords: ["vocabulary","L1 interference","LR"]
     }
 ];

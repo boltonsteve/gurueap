@@ -24,7 +24,7 @@
     
     <h3>Alternatives to <i>some</i></h3>
 
-    <p class="ml-3 font-italic">The workforce at DJ Computers has become smaller in recent years, <span class="font-weight-bold text-success">for several reasons</span>. First of all, the company has been forced to make staff redundant following financial recession. <span class="font-weight-bold text-success">Certain</span> staff will not lose their jobs because their work is essential to the company. <span class="font-weight-bold text-success">Various</span> other staff, however, are less essential, and management will consider <span class="font-weight-bold text-success">a number of</span> different criteria when deciding who will stay and who will go.</p>
+    <p class="font-italic">The workforce at DJ Computers has become smaller in recent years, <span class="font-weight-bold text-success">for several reasons</span>. First of all, the company has been forced to make staff redundant following financial recession. <span class="font-weight-bold text-success">Certain</span> staff will not lose their jobs because their work is essential to the company. <span class="font-weight-bold text-success">Various</span> other staff, however, are less essential, and management will consider <span class="font-weight-bold text-success">a number of</span> different criteria when deciding who will stay and who will go.</p>
 
     <ul>
         <li><b><i>several</i></b> (collocates strongly with 'reasons', extremely common inside the lexical phrase 'for several reasons' - examples)</li>

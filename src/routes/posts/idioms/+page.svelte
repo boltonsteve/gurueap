@@ -42,4 +42,6 @@
 
     <p>If you cannot do this, then you probably don't know what the idiom means and you probably shouldn't be using it.</p>
 
+    <p>In a separate post you will find flashcards filled with <a href="../posts/idiom-flipcards">idioms suitable for use in IELTS Speaking</a>. Test yourself and your friends - How many of these could you already use with confidence? </p>
+
 </div>
