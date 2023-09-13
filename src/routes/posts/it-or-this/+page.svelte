@@ -21,9 +21,10 @@
         <div class="font-italic">The government..</div>
         <div class="font-italic">..has just removed fuel subsidies.</div>
     </div>
-    <p>When you want to refer back to the <b>theme</b>, use a <span class="underline">pronoun</span>:</p>
+    <p>When you want to refer back to the <b>theme</b>, use a <span class="uli">pronoun</span>:</p>
     <p class="ml-3 font-italic">The government has just removed fuel subsidies. <span class="font-weight-bold text-success">They</span> felt that the fuel subsidies were not economically sustainable.</p>
-    <p>When you want to refer back to the <b>rheme</b>, use <span class="underline">this</span> or <span class="underline">these</span>:</p>
+    <p>When you want to refer back to the <b>rheme</b>, use <span class="uli">this</span> or <span class="uli">these</span>:</p>
+
     <p class="ml-3 font-italic">The government has just removed fuel subsidies. <span class="font-weight-bold text-success">This</span> means that the price of basic goods will surely go up.</p>
     <hr>
     <h3 class="text-info">Exam tip</h3>
