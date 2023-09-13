@@ -8,7 +8,11 @@
 />
 
 <div class="mb-3 mw-500">
+
+    <img src="/img/superman.png" class="img-fluid rounded" alt="Superman">
+
     <h1>When 'become' is not becoming</h1>
+
     <p class="ml-3 font-italic">Full-day school <span class="text-danger font-weight-bold">becomes</span> an important issue because it concerns a wide range of people, especially parents.</p>
     <p>This is the influence of Bahasa Indonesia. In English 'become' is always used to describe a change, rather than a constant:</p>
     <ul class="font-italic lh-15">
