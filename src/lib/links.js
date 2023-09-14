@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Labouring over 'labourers'",
+        href: "labour",
+        keywords: ['vocabulary','1st language interference','LR']
+    },
+    {
         title: "When 'existence' should not exist",
         href: "existence",
         keywords: ['vocabulary','1st language interference','LR']
