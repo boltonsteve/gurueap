@@ -2,12 +2,12 @@ export const links = [
     {
         title: "Labouring over 'labourers'",
         href: "labour",
-        keywords: ['vocabulary','1st language interference','LR']
+        keywords: ['vocabulary','Bhs Indonesia Interference','LR']
     },
     {
         title: "When 'existence' should not exist",
         href: "existence",
-        keywords: ['vocabulary','1st language interference','LR']
+        keywords: ['vocabulary','Bhs Indonesia Interference','LR']
     },
     {
         title: "Competition(s)",
@@ -102,7 +102,7 @@ export const links = [
     {
         title: "People's lives",
         href: "life",
-        keywords: ['vocabulary','L1 interference','appropriacy']
+        keywords: ['vocabulary','Bhs Indonesia Interference','appropriacy']
     },
     {
         title: "Despite",
@@ -278,17 +278,17 @@ export const links = [
     {
         title: "And besides",
         href: "and-besides",
-        keywords: ["signals","coherence and cohesion","L1 interference"]
+        keywords: ["signals","coherence and cohesion","Bhs Indonesia Interference"]
     },
     {
         title: "There is Ada",
         href: "there-is-ada",
-        keywords: ["L1 interference","grammar","GRA"]
+        keywords: ["Bhs Indonesia Interference","grammar","GRA"]
     },
     {
         title: "When 'become' is NOT becoming",
         href: "become",
-        keywords: ["L1 interference","change(s) over time","vocabulary"]
+        keywords: ["Bhs Indonesia Interference","change(s) over time","vocabulary"]
     },
     {
         title: "Youths and young people",
@@ -298,7 +298,7 @@ export const links = [
     {
         title: "Goodbye to 'By'",
         href: "goodbye-to-by",
-        keywords: ["L1 interference","vocabulary","LR"]
+        keywords: ["Bhs Indonesia Interference","vocabulary","LR"]
     },
     {
         title: "The Society",
@@ -313,6 +313,6 @@ export const links = [
     {
         title: "Cannot 'also can'",
         href: "also-can",
-        keywords: ["vocabulary","L1 interference","LR"]
+        keywords: ["vocabulary","Bhs Indonesia Interference","LR"]
     }
 ];

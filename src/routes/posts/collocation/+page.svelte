@@ -56,7 +56,7 @@
 
     <ul class="font-italic">
         <li>But some</li>
-        <li class="lst-none small">collocation - synonym for 'but some people'</li>
+        <li class="lst-none small">synonym for 'but some people'</li>
         <li>such as</li>
         <li class="lst-none small">collocation - synonym for 'for example'</li>
         <li>pregnant people</li>

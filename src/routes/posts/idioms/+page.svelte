@@ -25,9 +25,9 @@
     <p>We <span class="uli">never</span> say:</p>
 
     <ul class="font-italic text-danger">
-        <li>twice in a blue moon</li>
-        <li>once on a blue moon</li>
-        <li>blue once on a moon</li>
+        <li><b>twice</b> in a blue moon</li>
+        <li>once <b>on</b> a blue moon</li>
+        <li><b>blue once on a</b> moon</li>
     </ul>
 
     <h3 class="mb-0">Use idioms <i><b>appropriately</b></i></h3>
