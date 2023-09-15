@@ -60,7 +60,7 @@
             back: "To receive something that is not as attractive than the things other people receive."
         },
         {
-            front: "Please <b><i>keep me in the loop</i></b>, John. I need to know all the latest developments!",
+            front: "Please keep <b><i>me in the loop</i></b>, John. I need to know all the latest developments!",
             back: "If you are <i>in the loop</i>, you are aware of the latest details relating to an ongoing situation."
         },
         {

@@ -92,7 +92,7 @@
 
 <SvelteSeo
   title="GuruEAP - Posts",
-  description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - and more!"
+  description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - all of which aim to help students preparing for IELTS and for study abroad."
 />
 
 <div class="mb-2 mw-500 wrapper">
@@ -100,13 +100,11 @@
         <input id="refine_title" type="text" class="input-item input-item-1" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
         <button class="input-item input-item-2" on:click={resetTitle}>all</button>
     </div>
-    <div class="input-container">
 
-        <select id="refine_category" class="form-control input-item input-item-1" placeholder="search categories" on:input={handleKeywordInput}>
+        <select id="refine_category" class="form-control" placeholder="search categories" on:input={handleKeywordInput}>
             {@html kwOptions}
             
         </select>
-    </div>
 
 </div>
 
@@ -123,26 +121,30 @@ select {
     display:grid;
     grid-template-cols: 2fr 1fr;
     gap: 10px;
-    /* flex-wrap: wrap; */
 }
 
 .container {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* display:grid; */
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-    /* grid-auto-rows: 80px; */
-    /* gap: 15px; */
 }
 
 .input-container {
     display: flex;
     justify-content: center;
+    text-align: center;
     border: 1px solid #bbbbbb;
     border-radius:5px;
     background: #bbbbbb;
+}
 
+#refine_category {
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-align:center;
+    cursor: pointer;
+    height:32px;
 }
 
 .input-item {
