@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "The blah blah sector",
+        href: "sector",
+        keywords: ['vocabulary','Bhs Indonesia Interference','LR','grammar','articles']
+    },
+    {
         title: "Labouring over 'labourers'",
         href: "labour",
         keywords: ['vocabulary','Bhs Indonesia Interference','LR']

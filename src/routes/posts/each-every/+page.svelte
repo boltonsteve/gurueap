@@ -32,7 +32,7 @@
     <li><span class="font-weight-bold text-success">Each</span> drink contains 108 calories.</li>
 </ul>
 
-<p class="small"><b><i>Each</i></b> + answer, room, drink<br>
+<p><b><i>Each</i></b> + answer, room, drink<br>
     (singular, even though we're thinking about all answers, rooms, drinks!)</p>
 
     <h3>Summary</h3>

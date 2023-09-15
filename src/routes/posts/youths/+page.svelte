@@ -33,6 +33,10 @@
         <li><b>The youth of today</b> have no respect for others.</li>
     </ul>
 
+    <hr>
+
+    <h3>Positive about young people</h3>
+
     <img src="/img/young-people.png" class="img-fluid rounded" alt="young people">
 
     <p>Most of the time in IELTS Task 2 essays you want to maintain a more positive - or at least neutral - attitude to young people, and so it's probably best to refer to them as exactly that - <span class="font-weight-bold text-success">young people</span>!</p>
