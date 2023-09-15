@@ -270,6 +270,10 @@ ul.links {
     color: var(--blue);
 }
 
+.text-secondary {
+    color: var(--grey);
+}
+
 .text-success {
     color: var(--green);
 }

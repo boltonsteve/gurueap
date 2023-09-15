@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "In terms of",
+        href: "in-terms-of",
+        keywords: ['vocabulary','signals','CC','argument','Task 1','Task 2','changes over time']
+    },
+    {
         title: "The blah blah sector",
         href: "sector",
         keywords: ['vocabulary','Bhs Indonesia Interference','LR','grammar','articles']
@@ -77,7 +82,7 @@ export const links = [
     {
         title: "Supergroups and Percentages in IELTS Task 1",
         href: "supergroup",
-        keywords: ['task1','percentages','TA','CC','IELTS']
+        keywords: ['Task 1','percentages','TA','CC','IELTS']
     },
     {
         title: "Memorising and remembering memories",
