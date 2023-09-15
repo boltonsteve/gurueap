@@ -61,9 +61,7 @@
                 }
             }
 
-
         })
-
 
         menu = menuItems.join('');
 
@@ -79,6 +77,7 @@
     const handleKeywordInput = (e) => {
         refineKeyword = e.target.value;
         setUp('keyword');
+        document.getElementById('refine_title').focus();
     }
 
     const resetTitle = () => {
