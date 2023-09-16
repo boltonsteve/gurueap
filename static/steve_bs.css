@@ -555,7 +555,7 @@ a {
     text-decoration:none;
 }
 a:visited {
-    color: var(--teal);
+    color: var(--grey);
 }
 a:hover {
     text-decoration:none;

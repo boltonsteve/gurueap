@@ -144,6 +144,7 @@ select {
     text-align:center;
     cursor: pointer;
     height:32px;
+    background-color: #fff;
 }
 
 .input-item {
