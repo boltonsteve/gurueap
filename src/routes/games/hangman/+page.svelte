@@ -90,9 +90,13 @@
 </script>
 
 
-<h1 class="text-center my-1">Academic Wordlist Hangman</h1>
+<h1 class="text-center my-1">AWL Hangman</h1>
 
 <div class="gaps">{@html blanks}</div>
+
+{#if done}
+    <button class="btn btn-outline-dark" on:click={nextWord}>next</button>
+{/if}
 
 <div class="gallows">
     {#each cats as cat}
@@ -129,17 +133,13 @@
     <div class="letter" id="z" on:click={tryLetter}>z</div>
 </div>
 
-{#if done}
-<button class="btn btn-outline-dark" on:click={nextWord}>next</button>
-{/if}
-
-
 <style>
 
     .gaps {
         text-align:center;
-        padding-top: 0px;
-        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
         font-size: 2rem;
         height: 40px;
         /* border: 1px solid black; */
@@ -176,9 +176,9 @@
 
     button {
         display:block;
-        margin: 10px auto;
+        margin: auto;
         font-size: 1.2rem;
-        width:350px;
+        width:100px;
         height:50px;
     }
 
