@@ -12,7 +12,7 @@
 <div id="landing_grid">
 
     <div id="left_col">
-        <div class="mx-auto" style="max-width:400px;">
+        <div class="mx-auto" style="min-width:400px; max-width:500px;">
             <div class="text-center">
                 <img src="/img/steve.png" class="mx-auto" alt="Steve" style="max-width:300px;">
                 <h1>GuruEAP</h1>
