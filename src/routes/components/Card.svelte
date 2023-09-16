@@ -65,7 +65,7 @@
 
         max-width: 270px;
         min-width: 180px;
-        min-height: 210px;
+        min-height: 220px;
 
         padding: 10px 10px 20px 10px;
         border:1px solid black;
