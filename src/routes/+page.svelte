@@ -2,6 +2,12 @@
     import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js'
     import Card from './components/Card.svelte'
+    import { students } from '$lib/mugshots.js';
+
+    students.sort(() => Math.random() - 0.5);
+    let studentsHtmlArr = students.map( next => `<div class="mugshot"><img class="form-control mx-auto" src="/img/students/${next}.png" alt="${next}" style="width:50px;height:50px;margin:10px;opacity:.2;"></div>` );
+    let studentsHtml = studentsHtmlArr.join('');
+
 </script>
 
 <SvelteSeo
@@ -39,8 +45,31 @@
     </div>
 
 </div>
+<div id="students">{@html studentsHtml}</div>
+
 
 <style>
+
+    #students {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .mugshot {
+        width:30px;
+        height: 30px;
+    }
+
+    .mugshot > img {
+        width:40px;
+        height: 40px;
+
+    }
+
 
     #landing_grid {
         display: grid;
