@@ -24,16 +24,16 @@
     </div>
     <div id="right_col">
         <div>
-            <Card title="Posts" icon="posts" text="Posts deal with the various academic and linguistic challenges faced by all international students preparing for IELTS and for both graduate and postgraduate study abroad." />
+            <Card title="Posts" icon="posts" path="./posts" text="Posts deal with the various academic and linguistic challenges faced by all international students preparing for IELTS and for both graduate and postgraduate study abroad." />
         </div>
         <div>
-            <Card title="Songs" icon="songs" text= "Often featuring student voices, songs -written and performed by GuruEAP - focus on language challenges faced by Indonesian IELTS candidates. Accompanyied by lyrics, and often video." />
+            <Card title="Songs" icon="songs" path="./songs" text= "Often featuring student voices, songs -written and performed by GuruEAP - focus on language challenges faced by Indonesian IELTS candidates. Accompanyied by lyrics, and often video." />
         </div>
         <div>
-            <Card title="IELTS" icon="ielts" text="General IELTS issues are already addressed in the posts section. A separate IELTS page is under construction and will feature skills-based practice activities." />
+            <Card title="IELTS" icon="ielts" path="./ielts" text="General IELTS issues are already addressed in the posts section. A separate IELTS page is under construction and will feature skills-based practice activities." />
         </div>
         <div>
-            <Card title="Games" icon="games" text="Games are currently being transferred and re-coded from a former version of the site. Watch this space!" />
+            <Card title="Games" icon="games" path="./games" text="Games are currently being transferred and re-coded from a former version of the site. Watch this space!" />
         </div>
 
     </div>
@@ -41,10 +41,6 @@
 </div>
 
 <style>
-
-    div {
-        /* border:1px solid green; */
-    }
 
     #landing_grid {
         display: grid;
@@ -57,9 +53,6 @@
         margin: auto;
     }
 
-    /* #left_col { */
-    /*     min-width: 400px; */
-    /* } */
     #left_col h1 {
         font-size:5rem;
         margin:0px;
@@ -73,7 +66,7 @@
         display:grid;
         /* grid-template-columns: 1fr 1fr; */
         grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-        justify-content: center;
+        /* justify-content: start; */
         /* justify-content: space-around; */
         align-items: center;
         gap:20px;

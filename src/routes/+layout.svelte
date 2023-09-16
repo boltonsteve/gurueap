@@ -4,7 +4,8 @@
     </div>
     <div class="menu">
         <a href="/posts">posts</a> | 
-        <a href="/songs">songs</a>
+        <a href="/songs">songs</a> | 
+        <a href="/games">games</a>
     </div>
 </nav>
 

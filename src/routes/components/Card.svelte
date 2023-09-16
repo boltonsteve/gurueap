@@ -3,6 +3,7 @@
     export let title = "No title";
     export let text = "No text";
     export let icon = 'post';
+    export let path = './posts';
 
     let posts = false;
     let songs = false;
@@ -43,7 +44,7 @@
             {/if}
         </div>
         <div class="title">
-            <a href="./{icon}" class="btn btn-outline-dark">{title}</a>
+            <a href="{path}" class="btn btn-outline-dark">{title}</a>
         </div>
     </div>
 </div>
@@ -65,7 +66,7 @@
 
         max-width: 270px;
         min-width: 180px;
-        min-height: 220px;
+        /* min-height: 220px; */
 
         padding: 10px 10px 20px 10px;
         border:1px solid black;

@@ -90,7 +90,7 @@
 </script>
 
 
-<h1 class="text-center">Academic Wordlist Hangman</h1>
+<h1 class="text-center my-1">Academic Wordlist Hangman</h1>
 
 <div class="gaps">{@html blanks}</div>
 
@@ -136,26 +136,20 @@
 
 <style>
 
+    .gaps {
+        text-align:center;
+        padding-top: 0px;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        height: 40px;
+        /* border: 1px solid black; */
+    }
+
     .gallows {
         font-size: 1.2rem;
         text-align: center;
-        margin-bottom:30px;
-    }
-
-    button {
-        display:block;
-        margin: 30px auto;
-        font-size: 1.1rem;
-        width:60px;
-    }
-
-    .gaps {
-        text-align:center;
-        padding-top: 20px;
-        margin-bottom: 20px;
-        font-size: 2rem;
-        height: 50px;
-        /* border: 1px solid black; */
+        margin-top:20px;
+        margin-bottom:20px;
     }
 
     .letters {
@@ -178,6 +172,14 @@
         border:1px solid black;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    button {
+        display:block;
+        margin: 10px auto;
+        font-size: 1.2rem;
+        width:350px;
+        height:50px;
     }
 
 </style>

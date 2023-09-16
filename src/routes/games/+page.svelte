@@ -1,6 +1,7 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { games } from '$lib/games.js';
+    import Card from '../components/Card.svelte'
 
     /* games.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)); */
 
@@ -25,9 +26,16 @@
 />
 
 <div class="mb-3 pt-2 mw-500">
-    {@html menu}
+    <div class="card">
+        <Card title="Hangman" icon="posts" path="./games/hangman" text="A version of the classic game hangman, featuring vocabulary taken at random from the Academic Word List (AWL)" />
+    </div>
 </div>
 
 <style>
+    .card {
+        display: flex;
+        justify-content: center;
+    }
+
 </style>
 
