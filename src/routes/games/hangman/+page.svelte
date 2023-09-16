@@ -23,6 +23,7 @@
         });
         let gapsEl = document.querySelector('.gaps');
         gapsEl.classList.remove('success','danger');
+        gapsEl.textContent = '';
         setUp();
         done = false;
     }
@@ -44,9 +45,9 @@
         word = words.pop();
         wordArr = word.split('');
         gapsArr = wordArr.map( (next,i) => {
-            return `_`;
+            return `&bull;`;
         })
-        blanks = gapsArr.join(' ');
+        blanks = gapsArr.join('');
 
     }
 
@@ -60,7 +61,7 @@
             wordArr.forEach( (next,i) => {
                 if(next == letter) {
                     gapsArr[i] = letter;
-                    blanks = gapsArr.join(' ');
+                    blanks = gapsArr.join('');
                     found = true;
                 }
             })
@@ -81,6 +82,7 @@
                 if(cats.length == 0) {
                     let gapsEl = document.querySelector('.gaps');
                     gapsEl.classList.add('danger');
+                    gapsEl.textContent = word;
                     done = true;
                 }
             }
