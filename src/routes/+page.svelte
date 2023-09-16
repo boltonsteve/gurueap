@@ -7,7 +7,7 @@
 <SvelteSeo
     title="GuruEAP - Academic English not only for Indonesians"
     description="Academic English and IELTS preparation. Not only for Indonesians."
-    keywords="academic english,english for academic purposes,eap,IELTS,international students,pre-departure,Indonesia"
+    keywords="academic english,english for academic purposes,EAP,IELTS,international students,pre-departure,Indonesia"
 />
 <div id="landing_grid">
 
