@@ -14,7 +14,7 @@
     <div id="left_col">
         <div class="mx-auto" style="max-width:500px;">
             <div class="text-center">
-                <img src="/img/steve.png" class="mx-auto" alt="Steve" style="max-width:300px;">
+                <img src="/img/steve.png" class="mx-auto" alt="Steve" style="max-width:250px;">
                 <h1>GuruEAP</h1>
                 <h2 class="font-italic">Academic English not only for Indonesians</h2>
             </div>
