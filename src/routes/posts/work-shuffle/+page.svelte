@@ -226,12 +226,10 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
         display: flex;
         justify-content:center;
         margin:30px;
+        touch-action: manipulation;
     }
     #corrects {
         font-size:1.1rem;
     }
 
-    * {
-      touch-action: manipulation;
-  }
 </style>
