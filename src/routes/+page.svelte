@@ -51,8 +51,8 @@
 <style>
 
     img {
-        -webkit-filter: drop-shadow(-5px -5px 5px #222);
-        filter: drop-shadow(-5px -5px 5px #222); 
+        -webkit-filter: drop-shadow(-5px 5px 5px #222);
+        filter: drop-shadow(-5px 5px 5px #222); 
     }
 
     #students {
