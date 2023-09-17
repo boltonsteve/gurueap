@@ -156,15 +156,11 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
         }
 	}
 
-    window.addEventListener(
-  "touchmove",
-  function (event) {
-    if (event.scale !== 1) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-    }
-  },
-  { passive: false }
+    const button = document.querySelector('.btn');
+    button.addEventListener('dblclick', function(el) {
+        el.preventDefault();
+    });
+
 );
 
 </script>
@@ -222,12 +218,13 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
         width:60px;
         font-size: 1.2rem;
     }
+
     #buttons {
         display: flex;
         justify-content:center;
         margin:30px;
-        touch-action: manipulation;
     }
+
     #corrects {
         font-size:1.1rem;
     }
