@@ -331,7 +331,7 @@ export const links = [
         keywords: ["vocabulary","collocation","LR"]
     },
     {
-        title: "Cannot 'also can'",
+        title: "Cannot, also can",
         href: "also-can",
         keywords: ["vocabulary","Bhs Indonesia Interference","LR"]
     }

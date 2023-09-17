@@ -20,7 +20,7 @@
     <div id="left_col">
         <div class="mx-auto" style="max-width:500px;">
             <div class="text-center">
-                <img src="/img/steve.png" class="mx-auto" alt="Steve" style="max-width:250px;">
+                <img src="/img/steve.png" class="mx-auto pt-2" alt="Steve" style="max-width:250px;">
                 <h1>GuruEAP</h1>
                 <h2 class="font-italic">Academic English not only for Indonesians</h2>
             </div>
@@ -36,7 +36,7 @@
             <Card title="Songs" icon="songs" path="./songs" text= "Often featuring student voices, songs -written and performed by GuruEAP - focus on language challenges faced by Indonesian IELTS candidates. Accompanyied by lyrics, and often video." />
         </div>
         <div>
-            <Card title="IELTS" icon="ielts" path="./ielts" text="General IELTS issues are already addressed in the posts section. A separate IELTS page is under construction and will feature skills-based practice activities." />
+            <Card title="IELTS" icon="ielts" path="./posts" text="General IELTS issues are already addressed in the posts section. A separate IELTS page is under construction and will feature skills-based practice activities." />
         </div>
         <div>
             <Card title="Games" icon="games" path="./games" text="Games are currently being transferred and re-coded from a former version of the site. Watch this space!" />
@@ -50,11 +50,16 @@
 
 <style>
 
+    img {
+        -webkit-filter: drop-shadow(-5px -5px 5px #222);
+        filter: drop-shadow(-5px -5px 5px #222); 
+    }
+
     #students {
         display:flex;
         flex-wrap:wrap;
+        padding-top:60px;
         justify-content: space-between;
-        margin-top: 30px;
         max-width: 1100px;
         margin: auto;
     }
@@ -83,7 +88,7 @@
     }
 
     #left_col h1 {
-        font-size:5rem;
+        font-size:4rem;
         margin:0px;
     }
     #left_col h2 {
