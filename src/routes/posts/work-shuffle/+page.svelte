@@ -156,7 +156,7 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
         }
 	}
 
-    const button = document.querySelector('.btn');
+    const button = document.querySelector('#buttons');
     button.addEventListener('dblclick', function(el) {
         el.preventDefault();
     });
