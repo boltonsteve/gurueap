@@ -183,15 +183,15 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
                 <ShuffleSpan id="{index}" word="{word}" on:click={doWord} />
             {/each}
         </div>
-        <div id="buttons">
+        <div id="buttons" style="touch-action: manipulation;">
             {#if left_right}
-                <button id="left" class="btn btn-outline-dark" on:click={goLeft} transition:scale>left</button>
+                <button id="left" class="btn btn-outline-primary" on:click={goLeft} transition:scale>left</button>
             {/if}
             {#if next}
-                <button id="next" class="btn btn-outline-dark" on:click={doNext} transition:scale>next</button>
+                <button id="next" class="btn btn-outline-success" on:click={doNext} transition:scale>next</button>
             {/if}
             {#if left_right}
-                <button id="right" class="btn btn-outline-dark" on:click={goRight} transition:scale>right</button>
+                <button id="right" class="btn btn-outline-primary" on:click={goRight} transition:scale>right</button>
             {/if}
         </div>
         <div id="corrects"></div>
@@ -210,7 +210,7 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
 
     button {
         width:60px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     #buttons {

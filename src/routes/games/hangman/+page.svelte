@@ -1,5 +1,5 @@
 <script>
-    import { PersonArmsUp } from "svelte-bootstrap-icons";
+    import { PersonArmsUp, HeartFill } from "svelte-bootstrap-icons";
     import { sublists } from '$lib/sublists.js';
     import { shuffle } from '$lib/shuffle.js';
 
@@ -102,7 +102,7 @@
 
 <div class="gallows">
     {#each cats as cat}
-        <PersonArmsUp width={iconSize} height={iconSize} />
+        <HeartFill width={iconSize} height={iconSize} />
     {/each}
 </div>
 
@@ -149,9 +149,13 @@
 
     .gallows {
         font-size: 1.2rem;
+        width: 350px;
+        margin: 0px auto;
         text-align: center;
         margin-top:20px;
         margin-bottom:20px;
+        display:flex;
+        justify-content: space-around;
     }
 
     .letters {
