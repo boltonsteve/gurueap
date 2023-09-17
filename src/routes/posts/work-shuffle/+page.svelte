@@ -156,7 +156,6 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
         }
 	}
 
-);
 
 </script>
 
