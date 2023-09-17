@@ -1,9 +1,9 @@
 export const links = [
-    // {
-    //     title: "Work quotes - shuffled",
-    //     href: "work-shuffle",
-    //     keywords: ['vocabulary']
-    // },
+    {
+        title: "Work quotes - shuffled",
+        href: "work-shuffle",
+        keywords: ['vocabulary']
+    },
     {
         title: "Ethnic(ity)",
         href: "ethnicity",
