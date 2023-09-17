@@ -704,3 +704,21 @@ input:focus, textarea:focus, select:focus{
     background: rgba(51, 153, 51, .3)
 }
 
+
+.word {
+    font-size:1.5rem;
+    margin:3px;
+    padding:3px;
+    border:1px solid #bbbbbb;
+    border-radius:3px;
+    cursor:pointer;
+}
+
+.correct {
+    text-align: center;
+    font-size: 1.4rem;
+    color:green;
+    font-weight:bold;
+    font-style:italic;
+}
+

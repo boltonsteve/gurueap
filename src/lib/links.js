@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Work Sayings Shuffled",
+        href: "work-shuffle",
+        keywords: ['vocabulary']
+    },
+    {
         title: "Ethnic(ity)",
         href: "ethnicity",
         keywords: ['vocabulary','borrowed word']
