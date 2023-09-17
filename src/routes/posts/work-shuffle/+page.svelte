@@ -156,6 +156,17 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
         }
 	}
 
+    window.addEventListener(
+  "touchmove",
+  function (event) {
+    if (event.scale !== 1) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    }
+  },
+  { passive: false }
+);
+
 </script>
 
 <SvelteSeo
@@ -220,20 +231,7 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
         font-size:1.1rem;
     }
 
-    @media screen and (-webkit-min-device-pixel-ratio: 0) {
-
-.apex-item-select:focus, .apex-item-text:focus, .apex-item-textarea:focus {
-
-        font-size: 16px;
-
-    }
-
-    .apex-item-select, .apex-item-text, .apex-item-textarea {
-
-        font-size: 16px;
-
-    }
-
-}
-
+    * {
+      touch-action: manipulation;
+  }
 </style>
