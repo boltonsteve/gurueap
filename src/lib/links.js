@@ -1,6 +1,6 @@
 export const links = [
     {
-        title: "Work Sayings Shuffled",
+        title: "Work quotes - shuffled",
         href: "work-shuffle",
         keywords: ['vocabulary']
     },
