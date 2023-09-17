@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Ethnic(ity)",
+        href: "ethnicity",
+        keywords: ['vocabulary','borrowed word']
+    },
+    {
         title: "In terms of",
         href: "in-terms-of",
         keywords: ['vocabulary','signals','CC','argument','Task 1','Task 2','changes over time']

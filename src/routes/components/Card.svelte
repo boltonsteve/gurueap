@@ -1,5 +1,5 @@
 <script>
-    import { FilePost, FileMusic, Globe, Controller } from "svelte-bootstrap-icons";
+    import { MusicNoteBeamed, FilePost, FileMusic, Globe, Controller } from "svelte-bootstrap-icons";
     export let title = "No title";
     export let text = "No text";
     export let icon = 'post';
@@ -34,7 +34,7 @@
                 <FilePost width={iconSize} height={iconSize} />
             {/if}
             {#if songs}
-                <FileMusic width={iconSize} height={iconSize} />
+                <MusicNoteBeamed width={iconSize} height={iconSize} />
             {/if}
             {#if ielts}
                 <Globe width={iconSize} height={iconSize} />
@@ -71,6 +71,8 @@
         padding: 10px 10px 20px 10px;
         border:1px solid black;
         border-radius:5px;
+
+        background: #eeeeee;
     }
 
     .card .title {
