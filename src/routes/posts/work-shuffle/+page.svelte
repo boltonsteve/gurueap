@@ -167,10 +167,14 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/work.png" class="img-fluid rounded border" alt="work">
+
     <h1>Work Quotes</h1>
 
-    <p>Here we have 5 work quotes from famous people. See if you can reconstruct them!</p>
-    <p>Click on a word to select it. Click left-right to move it around.</p>
+    <p>Here we have 5 work quotes from famous people.<br>
+    See if you can reconstruct them!</p>
+    <p>Click on a word to select it.<br>
+        Click left-right (or type &larr; &rarr;) to move it around.</p>
 
     <div id="container">
         <div id="words">
@@ -213,7 +217,7 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
         margin:30px;
     }
     #corrects {
-        font-size:1.2rem;
+        font-size:1.1rem;
     }
 
 </style>
