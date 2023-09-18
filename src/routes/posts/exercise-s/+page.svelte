@@ -44,8 +44,8 @@
         The obesity problem can be resolved through <span class="font-weight-bold text-success">exercise</span> and calorie limitation.
     </div>
 
-    <img src="/img/exercise-physical.png" class="rounded w-75 mx-auto" alt="maths exercise">
-        <div class="text-center small mt-1">physical exercise (uncountable)</div>
+    <img src="/img/jogging.png" class="rounded w-75 mx-auto" alt="maths exercise">
+        <div class="text-center small mt-1">jogging is good exercise (uncountable) for losing weight and keeping fit</div>
 
     <h3 class="mb-0">Exercises to improve ability (including physical ability!)</h3>
     <p class="mt-0">Here you need the <span class="uli">countable</span> form of <b><i>exercise</i></b> (don't forget to <b><i>add s</i></b> if plural!):</p>
