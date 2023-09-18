@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { flagIndo } from '$lib/flags.js'
+    import IconRight from '../../components/IconRight.svelte'
 </script>
 
 <SvelteSeo
@@ -30,9 +30,9 @@
 
 <p class="font-italic ml-3">Astronauts are again struggling to land on <b><i>the surface of the moon</i></b>. <b><i>The lunar surface</i></b> is covered with rocks and craters.</p>
 
-<div class="alert alert-danger text-center">
-    Only use a synonym if a suitable synonym is available!
-</div>
+<IconRight icon="warning">
+    <div slot="html">Only use a synonym if a suitable synonym is available!</div>
+</IconRight>
 
 <h3>Antonymy</h3>
 <p class="strategy">Using the opposite word, an antonym, can also create sentence cohesion.</p>

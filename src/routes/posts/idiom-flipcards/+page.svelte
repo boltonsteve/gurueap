@@ -4,6 +4,10 @@
 
     let idioms = [
         {
+            front: "She recreated the recommended essay structure <b><i>to a tee</i></b>.",
+            back: "Faithfully and accurately."
+        },
+        {
             front: "He's such an idealist. He always <b><i>sees</i></b> the world <b><i>through rose-tinted glasses</i></b>.",
             back: "To be excessively optimistic in a given situation."
         },

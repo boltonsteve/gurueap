@@ -12,16 +12,17 @@
 
     <h1>Despite / In spite of</h1>
 
-    <p class="font-italic ml-3"><span class="font-weight-bold text-danger">Despite of</span> its advantages, technology has caused a wide range of social problems.</p>
+    <div class="alert alert-danger font-italic"><span class="font-weight-bold text-danger">Despite of</span> its advantages, technology has caused a wide range of social problems.</div>
 
     <p>This error is understandable. Both items serve the same purpose, but you need to be careful with the preposition:</p>
 
-    <p class="font-italic ml-3"><span class="font-weight-bold text-success">Despite</span> its advantages, technology has caused a wide range of social problems.</p>
+    <div class="alert alert-success font-italic">
+        <p class="my-0"><span class="font-weight-bold text-success">Despite</span> its advantages, technology has caused a wide range of social problems.</p>
+        <p class="my-0"><span class="font-weight-bold text-success">In spite of</span> its advantages, technology has caused a wide range of social problems.</p>
+    </div>
 
-    <p class="font-italic ml-3"><span class="font-weight-bold text-success">In spite of</span> its advantages, technology has caused a wide range of social problems.</p>
+    <p>A safer, but slightly less sophisticated way to say this would be:</p>
 
-    A safer, but slightly less sophisticated way to say this would be:
-
-    <p class="font-italic ml-3"><span class="font-weight-bold text-success">Although</span> it has advantages, technology has caused a wide range of social problems.<br><span class="small">{@html flagIndo} Indonesian students notice there is no 'akan tetapi' after the comma.</span></p>
+    <div class="alert alert-success font-italic"><span class="font-weight-bold text-success">Although</span> it has advantages, technology has caused a wide range of social problems.<br><span class="small">{@html flagIndo} Indonesian students notice there is no 'akan tetapi' after the comma.</span></div>
 
 </div>

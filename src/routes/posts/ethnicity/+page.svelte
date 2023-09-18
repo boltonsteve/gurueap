@@ -26,12 +26,11 @@
     </ul>
 
     <div class="alert alert-success font-italic">
-        <p>Different <span class="font-weight-bold text-success">ethnic groups</span> have different ways to communicate.</p>
-        <p>People with different <span class="font-weight-bold text-success">ethnicity</span> have different ways to communicate.</p>
+        <p class="mt-0">Different <span class="font-weight-bold text-success">ethnic groups</span> have different ways to communicate.</p>
+        <p class="mb-0">People with different <span class="font-weight-bold text-success">ethnicity</span> have different ways to communicate.</p>
     </div>
 
-    <hr>
-    
-    <p>How do you describe your own ethnicity?</p>
+    <h3 class="mb-0">A question..</h3>
+    <p class="mt-0">How do you describe your own ethnicity?</p>
 
 </div>

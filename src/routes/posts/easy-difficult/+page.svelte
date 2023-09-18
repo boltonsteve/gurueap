@@ -14,7 +14,7 @@
 
     <h1>Easy can be difficult</h1>
 
-    <p class="font-italic ml-3">Animals that perform in circuses <span class="font-weight-bold text-danger">are easy to</span> get tired.</p>
+    <div class="alert alert-danger font-italic">Animals that perform in circuses <span class="font-weight-bold text-danger">are easy to</span> get tired.</div>
 
     <p>If we reduce this to its most basic grammar, we get:</p>
 
@@ -44,22 +44,20 @@
 
     <p>Returning to our previous example, we can fix it (easily!) if we begin with <b><i>It is easy for..</i></b>:</p>
 
- 	<p class="font-italic ml-3"><span class="font-weight-bold text-success">It is easy for</span> animals that perform in circuses to become tired.</p>
+ 	<div class="alert alert-success font-italic"><span class="font-weight-bold text-success">It is easy for</span> animals that perform in circuses to become tired.
+        <p class="font-weight-bold small mb-0">it is easy/difficult for + noun + to + V1</p>
+    <p class="small my-0">..featured in the song by GuruEAP <a href="../songs/lemon-squeezy" target="_blank">Lemon Squeezy</a>. Check it out!</p>
+    </div>
 
-    <p class="font-weight-bold ml-3">it is easy/difficult for + noun + to + V1</p>
-
-    <p>This structure is also featured in the song by GuruEAP <a href="../songs/lemon-squeezy" target="_blank">Lemon Squeezy</a>. Check it out!</p>
 
     <p>An alternative improvement would be to use an adverb:</p>
 
-    <p class="font-italic ml-3">Animals that are used to perform become tired <span class="font-weight-bold text-success">easily</span>.</p>
+    <div class="alert alert-success font-italic">Animals that are used to perform become tired <span class="font-weight-bold text-success">easily</span>.</div>
 
     <p>..and for an even higher IELTS score, avoid 'become' by using the verb form of 'tired':</p>
 
-    <p class="font-italic ml-3">Animals that are used to perform <span class="font-weight-bold text-success">tire easily</span>.</p>
+    <div class="alert alert-success font-italic">Animals that are used to perform <span class="font-weight-bold text-success">tire easily</span>.</div>
     
-    <hr>
-
 <h3 class="mb-0">Animal rights</h3>
 <p class="mt-0">If you're studying in Australia you should make an effort to see the amazing Circus OZ - an animal-free circus!</p>
 

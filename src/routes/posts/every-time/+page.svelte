@@ -14,13 +14,13 @@
 
     <h1>Every time / All the time</h1>
 
-    <p class="font-italic ml-3">Doctor, what's wrong with me? I feel tired <span class="font-weight-bold text-danger">every time</span>!</p>
+    <div class="alert alert-danger font-italic">Doctor, what's wrong with me? I feel tired <span class="font-weight-bold text-danger">every time</span>!</div>
 
     <p>If you say this to a doctor then the doctor will think to himself "Every time you do what?" He will begin to imagine frequent scenarios in your life when you might feel tired, for example every time you plough a rice field, or every time you do an IELTS practice test, or every time you lift 200kg above your head.</p>
 
     <p><b><i>Every time</i></b> in English is more like the Indonesian <b><i>setiap kali</i></b>. What you mean to say is <b><i>all the time</i></b>:</p>
 
-    <p class="font-italic ml-3">Doctor, what's wrong with me? I feel tired <span class="font-weight-bold text-success">all the time</span>!</p>
+    <div class="alert alert-success font-italic">Doctor, what's wrong with me? I feel tired <span class="font-weight-bold text-success">all the time</span>!</div>
 
     <p>And so, <b><i>every time</i></b> you say <b><i>every time</i></b>, you should stop and think: Do you actually mean <b><i>all the time</i></b>?!</p>
 

@@ -13,7 +13,7 @@
 
     <h1>Convenient</h1>
 
-    <p class="font-italic ml-3">Physical shops are more <span class="font-weight-bold text-danger">convenient</span> than online stores. Firstly, in physical shops you pay less money because you can bargain with the seller. Secondly, shopping in physical shops can be a social activity.</p>
+    <div class="alert alert-danger font-italic">Physical shops are more <span class="font-weight-bold text-danger">convenient</span> than online stores. Firstly, in physical shops you pay less money because you can bargain with the seller. Secondly, shopping in physical shops can be a social activity.</div>
 
 <p>There is a category of physical store aptly named <b><i>convenience stores</i></b>. Many countries have 7 Elevens. In Indonesia we have Indomaret, Alfamart and Circle K.</p>
 

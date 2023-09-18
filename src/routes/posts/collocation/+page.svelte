@@ -1,5 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
+    import IconRight from '../../components/IconRight.svelte'
     import { flagIndo, flagUk } from '$lib/flags.js'
 </script>
 
@@ -36,13 +37,17 @@
 
     <p>Another example would be <span class="font-weight-bold text-primary">verbs</span> that go together with <span class="font-weight-bold text-success">nouns</span>. Here is an example from Bahasa Indonesia.</p>
 
-    <p class="font-italic ml-3">{@html flagIndo} I have to <span class="font-weight-bold text-primary">make</span> my <span class="font-weight-bold text-success">homework</span>.</p>
+    <IconRight icon="flag">
+        <div slot="html">I have to <span class="font-weight-bold text-primary">make</span> my <span class="font-weight-bold text-success">homework</span>.</div>
+    </IconRight>
 
     <p>In Bahasa Indonesia, the <span class="font-weight-bold text-primary">verb</span> <b><i>make</i></b> collocates strongly with the <span class="font-weight-bold text-success">noun</span> <b><i>homework</i></b>.</p>
 
     <p>In English the verb-noun <b><i>collocation</i></b> is different:</p>
 
-    <p class="font-italic ml-3">{@html flagUk} I have to <span class="font-weight-bold text-primary">do</span> my <span class="font-weight-bold text-success">homework</span>.</p>
+    <IconRight icon="flag" flag="uk">
+        <div slot="html">I have to <span class="font-weight-bold text-primary">do</span> my <span class="font-weight-bold text-success">homework</span>.</div>
+    </IconRight>
 
     <p>Low band IELTS candidates tend to translate directly to English from their first language, and often the result is <b><i>weak collocation</i></b>.</p>
 

@@ -18,7 +18,7 @@
 
     <h1>Article and/or 's'</h1>
 
-    <div class="alert alert-danger"><p>This post includes grammar rules!<br>There's also a writing practice task.</p></div>
+    <div class="alert alert-danger">This post includes grammar rules!<br>There's also a writing practice task.</div>
 
 <p style="padding-top:0px;">For every noun you speak or write, you need to use grammar to communicate one of the meanings in the ‘meaning’ column in the table below.</p>
 <p>When you’re trying to decide which article to use, and whether or not to add ‘s’, you must first of all decide:</p>

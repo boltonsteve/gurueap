@@ -12,7 +12,7 @@
 
     <h1>Each and every ONE of them</h1>
 
-    <p class="ml-3 font-italic"><span class="font-weight-bold text-danger">Every people</span> can access their own social media account with the touch of a finger.</p>
+    <div class="alert alert-danger font-italic"><span class="font-weight-bold text-danger">Every people</span> can access their own social media account with the touch of a finger.</div>
 
     <p>This is partly forgivable. We know that millions of people (= millions of fingers) use social media, and this writer is making a statement that applies to all of these people. However, there is some faulty grammar:</p>
 
@@ -39,16 +39,15 @@
 
     <p>Returning to our opening example we at least need:</p>
 
-    <p class="ml-3 font-italic"><span class="font-weight-bold text-success">Every person</span> can access their own social media account with the touch of a finger.</p>
+    <div class="alert alert-success font-italic"><span class="font-weight-bold text-success">Every person</span> can access their own social media account with the touch of a finger.</div>
 
     <p>However, when we're talking about people it is much more common to use words like <i>everyone</i> or <i>anybody</i>:</p>
 
-    <p class="ml-3 font-italic"><span class="font-weight-bold text-success">Everybody</span> can access their own social media account with the touch of a finger.</p>
+    <div class="alert alert-success font-italic"><span class="font-weight-bold text-success">Everybody</span> can access their own social media account with the touch of a finger.</div>
 
     <p>Finally, a common expression used to emphasise all of them is:</p>
 
-    <p class="ml-3 font-italic"><span class="font-weight-bold text-success">Each</span> and <span class="font-weight-bold text-success">every</span> one of them.</p>
-
-    <p class="ml-3 small"><b><i>Each</i></b> + one; <b><i>Every</i></b> + one!</p>
-	
+    <div class="alert alert-success font-italic"><span class="font-weight-bold text-success">Each</span> and <span class="font-weight-bold text-success">every</span> one of them.
+    <p class="small my-0"><b><i>Each</i></b> + one; <b><i>Every</i></b> + one!</p>
+	</div>
 </div>

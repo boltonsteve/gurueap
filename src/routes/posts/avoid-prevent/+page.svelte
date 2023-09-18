@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { flagIndo } from '$lib/flags.js'
+    import IconRight from '../../components/IconRight.svelte'
 </script>
 
 <SvelteSeo
@@ -12,20 +12,23 @@
 
     <h1>Avoid or Prevent?</h1>
 
-    <p class="ml-3 font-italic">Everybody knows that condoms can <span class="font-weight-bold text-danger">avoid</span> pregnancy.</p>
+    <div class="alert alert-danger font-italic">Everybody knows that condoms can <span class="font-weight-bold text-danger">avoid</span> pregnancy.</div>
 
     <p class="mb-1">Why is the IELTS examiner confused by this? Because it creates in the mind of the examiner a kind of impossible cartoon image showing two condoms having sex in such a way that the female condom will not become pregnant.</p>
 
     <img src="/img/condoms.png" class="mx-auto" alt="condoms">
 
-    <p class="mt-1">{@html flagIndo} Indonesians need to consider the difference between <b><i>avoid</i></b> (menghindar) and <b><i>prevent</i></b> (mencegah):</p>
+    <IconRight icon="flag">
+        <div slot="html">Indonesians need to consider the difference between <b><i>avoid</i></b> (menghindar) and <b><i>prevent</i></b> (mencegah)!</div>
+    </IconRight>
 
-    <p class="ml-3 font-italic">Everybody knows that condoms can <span class="font-weight-bold text-success">prevent</span> pregnancy.</p>
+    <div class="alert alert-success font-italic">Everybody knows that condoms can <span class="font-weight-bold text-success">prevent</span> pregnancy.</div>
 
     <p>Think of the condom as the agent that does the preventing. Humans can avoid pregnancy through the use of condoms, where the condom is the agent of prevention. So..</p>
 
-    <p class="ml-3 font-italic">Condoms can <span class="font-weight-bold text-success">prevent</span> pregnancy.</p>
-
-    <p class="ml-3 font-italic">Women can <span class="font-weight-bold text-success">avoid</span> pregnancy.</p>
+    <div class="alert alert-success font-italic">
+        <p class="ml-3 mt-0">Condoms can <span class="font-weight-bold text-success">prevent</span> pregnancy.</p>
+        <p class="ml-3 mb-0">Women can <span class="font-weight-bold text-success">avoid</span> pregnancy.</p>
+    </div>
 
 </div>

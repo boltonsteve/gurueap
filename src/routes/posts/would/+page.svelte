@@ -11,20 +11,20 @@
 
     <h1>Can/Could Will/Would Possibility/Abiltiy</h1>
 
-    <p class="ml-3 font-italic">I enjoy using Facebook because I <span class="font-weight-bold text-danger">could</span> see photos of my friends there.</p>
+    <div class="alert alert-danger font-italic">I enjoy using Facebook because I <span class="font-weight-bold text-danger">could</span> see photos of my friends there.</div>
 
     <p>There is often confusion about <b><i>can/could</i></b>, <b><i>will/would</i></b>. Sometimes students learn in school that <b><i>could</i></b> and <b><i>would</i></b> are more formal or more polite than <b><i>can</i></b> and <b><i>will</i></b>.<p>
     <p class="small">Note: This may be true when you are requesting something, but in IELTS speaking and writing you're usually using <b><i>can</i></b> and <b><i>will</i></b> to communicate possibility or ability rather than to make a request.</p>
 
 <h3>Possibility</h3>
 
-<p class="ml-3 font-italic">I enjoy using Facebook because I <span class="font-weight-bold text-success">can</span> see photos of my friends there.</p>
+<div class="alert alert-success font-italic">I enjoy using Facebook because I <span class="font-weight-bold text-success">can</span> see photos of my friends there.</div>
 
 <p>In this case there is a strong possibility (almost 100%) that I will see my friend's photos on Facebook, and so it is more appropriate to use <b><i>can</i></b>.</p>
 
 <p>Let's imagine a similar situation where there is no possibility:</p>
 
-<p class="ml-3 font-italic">If I <span class="font-weight-bold text-success">had</span> an Internet connection, I <span class="font-weight-bold text-success">could</span> see photos of my friends on Facebook.</p>
+<div class="alert alert-success font-italic">If I <span class="font-weight-bold text-success">had</span> an Internet connection, I <span class="font-weight-bold text-success">could</span> see photos of my friends on Facebook.</div>
 
 <p>Here the writer clearly does not have an Internet connection and so there is no possibility of him seeing his friend's photos on Facebook. Notice that in this example <span class="font-weight-bold text-success">could</span> is part of a structure called <i>second conditional</i>:</p>
 
@@ -32,7 +32,7 @@
 
 <p>In the <i>second conditional</i> the situation you are describing is <span class="uli">unlikely</span>:</p>
 
-<p class="ml-3 font-italic">If I <span class="font-weight-bold text-success">found</span> a million dollars in the street I <span class="font-weight-bold text-success">would</span> buy a new house.</p>
+<div class="alert alert-success font-italic">If I <span class="font-weight-bold text-success">found</span> a million dollars in the street I <span class="font-weight-bold text-success">would</span> buy a new house.</div>
 
 <p><i>Second conditional</i> - an unlikely situation - is by far the most common context for <span class="font-weight-bold text-success">could</span> and <span class="font-weight-bold text-success">would</span>.</p>
 
@@ -80,15 +80,15 @@
 
 <p>It's unusual to talk about past abilities, because once you acquire an ability, for example the ability to swim, you rarely lose that ability. It would be ridiculous, for example, to write:</p>
 
-<p class="ml-3 font-italic">When I was younger I could swim, but then I forgot how to swim so now I can't.</p>
+<div class="alert alert-success font-italic">When I was younger I <span class="font-weight-bold text-success">could</span> swim, but then I forgot how to swim so now I can't.</div>
 
 <p>We generally only lose this kind of ability when something terrible happens to us:</p>
 
-<p class="ml-3 font-italic">When I was younger I <span class="font-weight-bold text-success">could</span> swim, but then I lost my arms and legs in an accident and so now I can't swim.</p>
+<div class="alert alert-success font-italic">When I was younger I <span class="font-weight-bold text-success">could</span> swim, but then I lost my arms and legs in an accident and so now I can't swim.</div>
 
 <p>On the other hand ability can sometimes be a matter of degree. For example we can talk about partial ability, and about changes in our level of ability:</p>
 
-<p class="ml-3 font-italic">When I was younger I <span class="font-weight-bold text-success">could</span> swim 20km, but now that I'm old I <span class="font-weight-bold text-success">can</span> only swim 20 metres!</p>
+<div class="alert alert-success font-italic">When I was younger I <span class="font-weight-bold text-success">could</span> swim 20km, but now that I'm old I <span class="font-weight-bold text-success">can</span> only swim 20 metres!</div>
 
 <p>Most of the time when we talk about ability we use <b><i>can</i></b> - present tense - because, most of the time, we're making a claim that is true now.</p>
 
