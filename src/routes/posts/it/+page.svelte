@@ -19,10 +19,10 @@
 
     <p>When you use <b><i>it</i></b> then the subject will be either singular countable or uncountable:</p>
 
-    <ul class="lh-15 font-italic">
-        <li>My watch was expensive. <span class="font-weight-bold text-success">It</span> is a gold watch. I love <span class="font-weight-bold text-success">it</span>.</li>
-        <li>Beer is delicious. <span class="font-weight-bold text-success">It</span> is also expensive. I love <span class="font-weight-bold text-success">it</span>.</li>
-    </ul>
+    <div class="alert alert-success font-italic">
+        <p class="mt-0">My watch was expensive. <span class="font-weight-bold text-success">It</span> is a gold watch. I love <span class="font-weight-bold text-success">it</span>.</p>
+        <p class="mb-0">Beer is delicious. <span class="font-weight-bold text-success">It</span> is also expensive. I love <span class="font-weight-bold text-success">it</span>.</p>
+    </div>
 
     <p>In the opening example (below heading), the reader searches for but cannot find a subject to match <b><i>it</i></b>. For a start, all of the nouns are plural!</p>
 
@@ -32,11 +32,11 @@
 
     <p>In order to maintain 'flow' in the online shopping example, you need to do this:</p>
 
-    <p class="ml-3 font-italic">People who live in remote areas sometimes have limited access to the things they want to buy. Since <b><i>the things that people who live in remote areas want to buy</i></b> cannot be provided by retail shops, online shopping may be the solution.</p>
+    <div class="alert alert-success font-italic">People who live in remote areas sometimes have limited access to the things they want to buy. Since <b><i>the things that people who live in remote areas want to buy</i></b> cannot be provided by retail shops, online shopping may be the solution.</div>
 
     <p>And for even better flow you can remind your reader about <b><i>the context of those retail shops</i></b>. After all, you're not talking about retail shops in the middle of a large city, are you?</p>
 
-    <p class="ml-3 font-italic">People who live in remote areas sometimes have limited access to the things they want to buy. Since the things that people who live in remote areas want to buy cannot be provided by <b><i>retail shops in those areas</i></b>, online shopping may be the solution.</p>
+    <div class="alert alert-success font-italic">People who live in remote areas sometimes have limited access to the things they want to buy. Since the things that people who live in remote areas want to buy cannot be provided by <b><i>retail shops in those areas</i></b>, online shopping may be the solution.</div>
 
     <p>Students often complain, <i>"..but now there's a lot of repetition!"</i></p>
 

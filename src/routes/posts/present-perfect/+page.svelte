@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { flagIndo } from '$lib/flags.js';
+    import IconRight from '../../components/IconRight.svelte'
 </script>
 
 <SvelteSeo
@@ -12,7 +12,7 @@
 
     <h1>Have you used present perfect <i>recently?</i></h1>
 
-    <div class="alert alert-danger font-italic pl-3">Social media are the most common media used to share information <span class="font-weight-bold text-danger">recently</span>.</div>
+        <div class="alert alert-danger font-italic">Social media <span class="font-weight-bold text-danger">are</span> the most common media used to share information <span class="font-weight-bold text-danger">recently</span>.</div>
 
     <p>This looks like as though it might function as the opening sentence of an IELTS Task 2 essay. Let's first of all remind ourselves about some ideal features for the IELTS Task 2 opening sentence:</p>
 
@@ -51,13 +51,12 @@
 
 <p>Notice also that <b><i>to be</i></b> cannot be continuous. In this case it is easy to use 'become' in the continuous, <i>but only if you feel the situation is changing over time</i>.</p>
 
-<div class="alert alert-danger row-col cols-17 py-1">
-    <div>{@html flagIndo}</div>
-    <div>Indonesians need to be careful with <b><i>become</i></b>. Only use <b><i>become</i></b> when there is a change over time.</div>
-    <div>&nbsp;</div>
-    <div><a href="../posts/become" target="_blank">Learn more about become here.</a></div>
-</div>
-
+<IconRight icon="flag">
+    <div slot="html">Indonesians need to be careful with <b><i>become</i></b>. Only use <b><i>become</i></b> when there is a change over time.
+        <p><a href="../posts/become" target="_blank">Learn more about become here.</a></p>
+    </div>
+</IconRight>
+    
 <h3>Current = <i><b>up to and including now</b></i></h3>
 
 <ul class="lh-15">
@@ -66,7 +65,7 @@
  	<li><i>Social media <b><span class="text-success">have recently become</span></b> the most common media to be used to share information.</i></li>
 </ul>
 
-<p>All present perfect tense!</p>
+<p>All <b><i>present perfect</i></b> tense!</p>
 
 <p>Notice that present perfect tense means 'up to and including now', and so you don't have to use a time expression.</p>
 
@@ -80,8 +79,12 @@
  	<li><i>Social media <b><span class="text-success">are today</span></b> the most common media used to share information.</i></li>
 </ul>
 
-<div class="alert alert-info">
-    Elsewhere on GuruEAP you will find video examples of <a href="../posts/present-tenses" target="_blank">present</a> and <a href="../posts/perfect-tenses" target="_blank">perfect tenses</a>.
-</div>
+<hr>
+
+<IconRight icon="sign">
+    <div slot="html">
+        Elsewhere on GuruEAP you will find video examples of <a href="../posts/present-tenses" target="_blank">present</a> and <a href="../posts/perfect-tenses" target="_blank">perfect tenses</a>.
+    </div>
+</IconRight>
 
 </div>

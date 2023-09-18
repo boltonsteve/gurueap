@@ -58,7 +58,7 @@
 
     <h1><i>Should</i> or <i>Have to</i></h1>
     
-    <p class="ml-3 font-italic">I'm going to bed early because I <span class="font-weight-bold text-danger">should</span> get up early tomorrow.</p>
+    <div class="alert alert-danger font-italic">I'm going to bed early because I <span class="font-weight-bold text-danger">should</span> get up early tomorrow.</div>
 
     <p><b>Consider the following examples:</b></p>
 

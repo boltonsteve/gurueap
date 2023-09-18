@@ -1,7 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import Youtube from "svelte-youtube-embed";
-    import { flagIndo } from '$lib/flags.js';
+    import IconRight from '../../components/IconRight.svelte';
 </script>
 
 <SvelteSeo
@@ -13,15 +12,20 @@
 
     <h1>Have an impact on..</h1>
 
-    <p class="ml-3 font-italic">Passive smoking <span class="text-danger font-weight-bold">brings negative impact for</span> people who do not smoke.</p>
+    <div class="alert alert-danger font-italic">Passive smoking <span class="text-danger font-weight-bold">brings negative impact for</span> people who do not smoke.</div>
     
-    <p>{@html flagIndo} This is a collocation problem for Indonesians translating "..membawa dampak negatif untuk.."</p>
+    <IconRight icon="flag">
+        <div slot="html">This is a collocation problem for Indonesians translating <b><i>membawa dampak negatif untuk</i></b></div>
+    </IconRight>
 
     <p>In English the collocation is:</p>
 
-    <p class="ml-3 font-italic">Passive smoking <span class="text-success font-weight-bold">has a negative impact on</span> people who do not smoke.</p>
+    <div class="alert alert-success">
+        <p class="font-italic my-0">Passive smoking <span class="text-success font-weight-bold">has a negative impact on</span> people who do not smoke.</p>
+        <p class="font-weight-bold mb-0">s.th./s.o. + has + an impact + on + s.th./s.o.</p>
+    </div>
 
-    <p class="font-weight-bold ml-3">s.th./s.o. + has + an impact + on + s.th./s.o.</p>
+    
 
     <p>Using the correct collocation will <span class="text-success font-weight-bold">have a very positive impact on</span> your IELTS score for vocabulary in both speaking and writing!</p>
 

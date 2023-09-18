@@ -13,7 +13,7 @@
 
     <h1>Parallel Structures</h1>
 
-    <p class="ml-3 font-italic">Modern art and music can cause conflicts in existing cultural values and can cause misinterpretation or even losing their originality in cultural identity.</p>
+    <div class="alert alert-danger font-italic">Modern art and music can cause conflicts in existing cultural values and can cause misinterpretation or even losing their originality in cultural identity.</div>
 
     <p>If you want to pack a list of <b><i>items</i></b> into a single sentence, then these <b><i>items</i></b> need to be <i><b>parallel</b></i>. What do we mean by <b><i>items</i></b> and what do I mean by <b><i>parallel</i></b>?</p>
 
@@ -30,9 +30,10 @@
 
 <p>Our opening example could be written using noun phrases only:</p>
 
-<p class="ml-3 font-italic">Modern art and music can <b><i>cause</i></b> <span class="uli">conflicts in existing cultural values</span>, <span class="uli">misinterpretation</span>, or even <span class="uli">loss of originality in cultural identity</span>.</p>
-
-<p class="small ml-3">(Notice that the final noun is preceded by <b><i>or even</i></b> as a substitute for <b><i>and</i></b>.)</p>
+<div class="alert alert-success">
+    <p class="font-italic my-0">Modern art and music can <b><i>cause</i></b> <span class="uli">conflicts in existing cultural values</span>, <span class="uli">misinterpretation</span>, or even <span class="uli">loss of originality in cultural identity.</span></p>
+    <p class="small mb-0">(Notice that the final noun is preceded by <b><i>or even</i></b> as a substitute for <b><i>and</i></b>.)</p>
+</div>
 
 <p>..in which we have one verb - <b><i>cause</i></b> - and three noun phrases separated by commas:</p>
 
@@ -46,7 +47,7 @@
 
 <p>Alternatively the sentence could be written using verb phrases only, again separated by commas:</p>
 
-<p class="ml-3 font-italic">Modern art and music can <span class="uli">cause</span> conflicts in existing cultural values, <span class="uli">lead to</span> misinterpretation, or even <span class="uli">result in</span> loss of originality in cultural identity.</p>
+<div class="alert alert-success font-italic">Modern art and music can <span class="uli">cause</span> conflicts in existing cultural values, <span class="uli">lead to</span> misinterpretation, or even <span class="uli">result in</span> loss of originality in cultural identity.</div>
 
 <h3>Parallelism and IELTS</h3>
 

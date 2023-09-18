@@ -90,7 +90,7 @@
 </script>
 
 <SvelteSeo
-  title="GuruEAP - Posts",
+  title="GuruEAP - Posts"
   description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - all of which aim to help students preparing for IELTS and for study abroad."
 />
 

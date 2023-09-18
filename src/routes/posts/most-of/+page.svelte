@@ -11,7 +11,7 @@
 
     <h1><i>Most</i> or <i>Most of</i>..?</h1>
 
-    <p class="ml-3 font-italic"><span class="font-weight-bold text-danger">Most of</span> older teachers and <span class="font-weight-bold text-success">some</span> younger teachers are not technology literate.</p>
+    <div class="alert alert-danger font-italic"><span class="font-weight-bold text-danger">Most of</span> older teachers and <span class="font-weight-bold text-success">some</span> younger teachers are not technology literate.</div>
 
     <p>Today I'm going to give you a task!</p>
 

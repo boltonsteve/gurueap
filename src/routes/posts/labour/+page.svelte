@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import {flagIndo} from '$lib/flags.js'
+    import IconRight from '../../components/IconRight.svelte'
 </script>
 
 <SvelteSeo
@@ -16,7 +16,9 @@
 
     <p class="font-italic alert alert-danger">Some people claim that working hours for <span class="font-weight-bold text-danger">labours</span> in factories are too long.</p>
 
-    <p>{@html flagIndo} Here an Indonesian IELTS candidate is trying to find a synonym for <b><i>worker</i></b>, but has ended up using the wrong word form, and possibly even an inappropriate word.</p>
+    <IconRight icon="flag">
+        <div slot="html">Here an Indonesian IELTS candidate is trying to find a synonym for <b><i>worker</i></b>, but has ended up using the wrong word form, and possibly even an inappropriate word.</div>
+    </IconRight>
 
     <p>In English a <b><i>labourer</i></b> ('labour' + 'er') does work that distinguish him or her from other kinds of worker:</p>
 

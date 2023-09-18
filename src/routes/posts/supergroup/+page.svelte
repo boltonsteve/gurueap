@@ -15,15 +15,15 @@
         <h3>British People</h3>
     </div>
 
-    <p class="font-italic ml-3">As we can see from the chart, vegetarians <span class="font-weight-bold text-danger">have</span> 7%.</p>
+    <div class="alert alert-danger font-italic">As we can see from the chart, vegetarians <span class="font-weight-bold text-danger">have</span> 7%.</div>
 
     <p>The first time you mention a percentage in IELTS Task 1 writing, make sure that you include <span class="uli">both</span> the <span class="font-weight-bold text-primary">subgroup</span> <span class="uli">and</span> the <span class="font-weight-bold text-success">supergroup</span>:</p>
 
-    <p class="font-italic ml-3">As we can see from the chart, <span class="font-weight-bold text-primary">vegetarians</span> account for 7% of <span class="font-weight-bold text-success">British people</span>.</p>
+    <div class="alert alert-success font-italic">As we can see from the chart, <span class="font-weight-bold text-primary">vegetarians</span> account for 7% of <span class="font-weight-bold text-success">British people</span>.</div>
 
     <p>Or..</p>
 
-    <p class="font-italic ml-3">As we can see from the chart, 7% of <span class="font-weight-bold text-success">British people</span> are <span class="font-weight-bold text-primary">vegetarian</span>.</p>
+    <div class="alert alert-success font-italic">As we can see from the chart, 7% of <span class="font-weight-bold text-success">British people</span> are <span class="font-weight-bold text-primary">vegetarian</span>.</div>
 
     <h3 class="mb-0">How to identify the supergroup</h3>
     <p class="mt-0">If the Task 1 question is a pie chart, the supergroup will be given as a label above or below the chart. The pie chart at the top of the page is labelled <b><i>British people</i></b>, and so <b><i>British people</i></b> are the supergroup.</p>
@@ -43,19 +43,19 @@
         </div>
     </div>
 
-    <p class="font-italic ml-3">7% of <span class="font-weight-bold text-success">British people</span> are <span class="font-weight-bold text-primary">vegetarian</span>, whereas only 1% of <span class="font-weight-bold text-success">Indonesians</span> are <span class="font-weight-bold text-primary">vegetarian</span>.</p>
+    <div class="alert alert-success font-italic">7% of <span class="font-weight-bold text-success">British people</span> are <span class="font-weight-bold text-primary">vegetarian</span>, whereas only 1% of <span class="font-weight-bold text-success">Indonesians</span> are <span class="font-weight-bold text-primary">vegetarian</span>.</div>
 
     <p>If you want to avoid repetition, you can do this:</p>
 
-    <p class="font-italic ml-3">7% of <span class="font-weight-bold text-success">British people</span> are <span class="font-weight-bold text-primary">vegetarian</span>, whereas <span class="uli">the figure</span> for <span class="font-weight-bold text-success">Indonesians</span> is only 1%.</p>
+    <div class="alert alert-success font-italic">7% of <span class="font-weight-bold text-success">British people</span> are <span class="font-weight-bold text-primary">vegetarian</span>, whereas <span class="uli">the figure</span> for <span class="font-weight-bold text-success">Indonesians</span> is only 1%.</div>
 
     <p>Or this:</p>
 
-    <p class="font-italic ml-3"><span class="font-weight-bold text-primary">Vegetarians</span> account for 7% of <span class="font-weight-bold text-success">people in Britain</span> and only 1% <span class="font-weight-bold text-success">in Indonesia</span>.</p>
+    <div class="alert alert-success font-italic"><span class="font-weight-bold text-primary">Vegetarians</span> account for 7% of <span class="font-weight-bold text-success">people in Britain</span> and only 1% <span class="font-weight-bold text-success">in Indonesia</span>.</div>
 
     <p>If there are 3 or more supergroups, it can be convenient to put numbers in brackets:</p>
 
-    <p class="font-italic ml-3">7% of <span class="font-weight-bold text-success">British people</span> are <span class="font-weight-bold text-primary">vegetarian</span>. This is much higher than the figure in <span class="font-weight-bold text-success">Indonesia</span> (1%), <span class="font-weight-bold text-success">Malaysia</span> (1.5%), and <span class="font-weight-bold text-success">Thailand</span> (1.2%).</p>
+    <div class="alert alert-success font-italic">7% of <span class="font-weight-bold text-success">British people</span> are <span class="font-weight-bold text-primary">vegetarian</span>. This is much higher than the figure in <span class="font-weight-bold text-success">Indonesia</span> (1%), <span class="font-weight-bold text-success">Malaysia</span> (1.5%), and <span class="font-weight-bold text-success">Thailand</span> (1.2%).</div>
 
     <p>Notice that all of these examples include <span class="uli">both</span> the <span class="font-weight-bold text-primary">subgroup</span> <span class="uli">and</span> the <span class="font-weight-bold text-success">supergroup(s)</span>!</p>
 

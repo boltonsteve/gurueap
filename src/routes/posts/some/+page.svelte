@@ -1,6 +1,7 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import {flagIndo} from '$lib/flags.js'
+    import IconRight from '../../components/IconRight.svelte'
 </script>
 
 <SvelteSeo
@@ -12,9 +13,11 @@
 
     <h1>Some</h1>
 
-    <p class="ml-3 font-italic">Unemployment has increased in recent years <span class="font-weight-bold text-danger">for some reasons</span>.</p>
+    <div class="alert alert-danger font-italic">Unemployment has increased in recent years <span class="font-weight-bold text-danger">for some reasons</span>.</div>
 
-    <p>{@html flagIndo} In this post, Indonesian students of English will discover more appropriate ways to say 'beberapa' or berbagai' in IELTS and in general academic writing.</p>
+    <IconRight icon="flag">
+        <div slot="html">In this post, Indonesian students of English will discover more appropriate ways to say <b><i>beberapa</i></b> or <b><i>berbagai</i></b> in IELTS and in general academic writing.</div>
+    </IconRight>
 
     <h3 class="mb-0">For some reason</h3>
     <p class="mt-0">First of all <b><i>for some reasons</i></b> appears odd because there is a very similar phrase - <b><i>for some reason</i></b> (reason without 's') - meaning that there <i>may</i> be a reason but the reason is presently unknown. Clearly this is not what the writer intended in the opening example!</p>

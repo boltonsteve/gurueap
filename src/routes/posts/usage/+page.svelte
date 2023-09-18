@@ -13,12 +13,15 @@
 
     <h1><i>Use</i> or <i>Usage</i></h1>
 
-    <p class="ml-3 font-italic">The <span class="font-weight-bold text-danger">usage</span> of technology is very important to learn effectively.</p>
+    <div class="alert alert-danger font-italic">
+        The <span class="font-weight-bold text-danger">usage</span> of technology is very important to learn effectively.
+    </div>
 
-    <div class="alert alert-danger text-center"><p><b><i>Usage</i></b> is quite different from <b><i>use!</i></b></p></div>
+    <p><b><i>Usage</i></b> is quite different from <b><i>use!</i></b></p>
 
     <p>For example, when we refer to <i><b>word usage</b></i>, we mean the <i>conventions</i> for using words:</p>
-    <p class="ml-3 font-italic">This text describes the principles of word <span class="font-weight-bold text-success">usage</span>.</p>
+
+    <div class="alert alert-success font-italic">This text describes the principles of word <span class="font-weight-bold text-success">usage</span>.</div>
 
     <p>With <i>word</i> <b><i>usage</i></b>, we are interested in:</p>
 
@@ -30,27 +33,32 @@
     </ul>
 
     <p>On the other hand when we refer to the <i><b>use of words</b></i>, we mean only the <i>employment</i> of words:</p>
-    <p class="ml-3 font-italic">He is noted for his frequent <span class="font-weight-bold text-success">use</span> of wrong words.</p>
+
+    <div class="alert alert-success font-italic">He is noted for his frequent <span class="font-weight-bold text-success">use</span> of wrong words.</div>
 
     <p>People frequently use <i><b>usage</b></i> when they should use <i><b>use</b></i>. The noun <i><b>usage</b></i> should <span class="uli">not</span> be substituted for <i><b>use</b></i> when the meaning is 'the employment of' – even if you think it sounds more sophisticated.</p>
 
     <p>Neither of the following is correct:</p>
 
-    <ul class="lh-15 font-italic">
-        <li>The wise <span class="font-weight-bold text-danger">usage</span> of computers saved the company money.</li>
-        <li><span class="font-weight-bold text-danger">Usage</span> of insulation can save fuel.</li>
-    </ul>
+    <div class="alert alert-danger">
+        <ul class="lh-15 font-italic my-0">
+            <li>The wise <span class="font-weight-bold text-danger">usage</span> of computers saved the company money.</li>
+            <li><span class="font-weight-bold text-danger">Usage</span> of insulation can save fuel.</li>
+        </ul>
+    </div>
 
     <p>In both of the previous two examples, <i><b>use</b></i> is the appropriate word.</p>
 
     <p>Returning to our opening example, we need:</p>
 
-    <p class="ml-3 font-italic">The <span class="font-weight-bold text-success">use</span> of technology is very important to learn effectively.</p>
+    <div class="alert alert-success font-italic">The <span class="font-weight-bold text-success">use</span> of technology is very important to learn effectively.</div>
 
     <p>Even better, avoid <i><b>use</b></i> altogether and begin with a more coherent theme:</p>
 
-    <p class="ml-3 mb-1 font-italic">Technology plays an important role in effective learning.</p>
-    <p class="ml-3 mt-0 font-italic">Learning is more effective with the help of technology.</p>
+    <div class="alert alert-success font-italic">
+        <p class="mt-0">Technology plays an important role in effective learning.</p>
+        <p class="my-0">Learning is more effective with the help of technology.</p>
+    </div>
 
     <p>Incidentally people also write <i><b>utilisation</b></i> when they mean <i><b>use</b></i>. That's another one likely to get you into trouble, so just avoid it. <i><b>Use</b></i> is all you need!</p>
 

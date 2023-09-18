@@ -2,6 +2,7 @@
     import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js';
     import { fade, scale } from "svelte/transition";
+    import IconRight from '../../components/IconRight.svelte'
 
     let activity = '';
 
@@ -94,7 +95,7 @@
 
     <h1>Subject-Verb Agreement</h1>
 
-    <p class="ml-3 font-italic">It could also be argued that <i><b>removing</b></i> individual animals from the wild <span class="font-weight-bold text-danger">are</span> potentially threatening the population of wild species.</p>
+    <div class="alert alert-danger font-italic">It could also be argued that <i><b>removing</b></i> individual animals from the wild <span class="font-weight-bold text-danger">are</span> potentially threatening the population of wild species.</div>
     
     <p>In this sentence, the subject <i><b>removing individual animals from the wild</b></i> does not 'agree' with the verb <i><b>are</b></i>.</p>
 
@@ -107,9 +108,11 @@
 
     <p>It's possible that the writer was trying to make <i><b>animals</b></i> (plural) agree with the verb, and that's why he or she chose <i><b>are</b></i> (also plural). However, the main noun in the subject is <i><b>removing</b></i> (singular), and so the sentence should read:</p>
 
-    <p class="ml-3 font-italic">..<span class="font-weight-bold text-success">removing</span> individual animals from the wild <span class="font-weight-bold text-success">is</span> potentially threatening..</p>
+    <div class="alert alert-success font-italic">..<span class="font-weight-bold text-success">removing</span> individual animals from the wild <span class="font-weight-bold text-success">is</span> potentially threatening..</div>
 
-    <p>{@html flagIndo} I've noticed that - at least among Indonesians - this error is extremely common when the main noun of a noun phrase is constructed using <i><b>__ing</b></i>, which is quite common in much academic writing.</p>
+    <IconRight icon="flag">
+        <div slot="html">I've noticed that - at least among Indonesians - this error is extremely common when the main noun of a noun phrase is constructed using <i><b>__ing</b></i>, which is quite common in much academic writing.</div>
+    </IconRight>
 
     <p>When you're deciding how to make verbs agree with nouns, first of all identify which noun in the subject is the main noun. Then select your verb accordingly.</p>
 

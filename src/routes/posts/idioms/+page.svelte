@@ -24,11 +24,15 @@
 
     <p>We <span class="uli">never</span> say:</p>
 
-    <ul class="font-italic text-danger">
-        <li><b>twice</b> in a blue moon</li>
-        <li>once <b>on</b> a blue moon</li>
-        <li><b>blue once on a</b> moon</li>
-    </ul>
+    <div class="alert alert-danger">
+        <ul class="font-italic my-0">
+
+            <li><span class="font-weight-bold text-danger">twice</span> in a blue moon</li>
+            <li>once <span class="font-weight-bold text-danger">on</span> a blue moon</li>
+            <li><span class="font-weight-bold text-danger">blue once on a</span> moon</li>
+
+        </ul>
+    </div>
 
     <h3 class="mb-0">Use idioms <i><b>appropriately</b></i></h3>
     <p class="mt-0">There is a lot of teaching material available online dealing with idioms, but there are very few opportunities to use the commonly taught idioms in IELTS speaking and writing.</p>
@@ -38,7 +42,7 @@
     <h3 class="mb-0">Say what you mean</h3>
     <p class="mt-0">If you use <span class="font-weight-bold text-primary">an idiom</span>, it's a good idea to <span class="font-weight-bold text-success">explain what you mean</span>. For example, if you use <b><i>think outside the box</i></b>, do it like this:</p>
 
-    <p class="font-italic ml-3">My colleague Budi likes to <span class="font-weight-bold text-primary">think outside the box</span>. <span class="font-weight-bold text-success">He always has many new and creative ideas</span>.</p>
+    <div class="alert alert-success font-italic">My colleague Budi likes to <span class="font-weight-bold text-primary">think outside the box</span>. <span class="font-weight-bold text-success">He always has many new and creative ideas</span>.</div>
 
     <p>If you cannot do this, then you probably don't know what the idiom means and you probably shouldn't be using it.</p>
 

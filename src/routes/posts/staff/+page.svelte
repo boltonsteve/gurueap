@@ -4,15 +4,15 @@
 </script>
 
 <SvelteSeo
-    title="Staff",
+    title="Staff"
     description="Showing that 'staff' is rarely used as a countable noun."
 />
 
 <div class="mw-500 mb-3">
 
-    <h1>you are not a <b><i>staff!</i></b></h1>
+    <h1>You are not a <b><i>staff!</i></b></h1>
 
-    <p class="ml-3 font-italic">I am <span class="font-weight-bold text-danger">a staff</span> at the Ministry of Religious Affairs.</p>
+    <div class="alert alert-danger font-italic">I am <span class="font-weight-bold text-danger">a staff</span> at the Ministry of Religious Affairs.</div>
 
     <p><b><i>Staff</i></b> is a complicated word in English. This post demonstrates the various uses of <b><i>staff</i></b>, and indicates which uses are best for IELTS and also which uses are best avoided.</p>
 
@@ -33,13 +33,13 @@
         <li>otherwise used to assist in walking (elderly people, etc)</li>
     </ul>
 
-    <p class="ml-3 font-italic">He used his <span class="font-weight-bold text-success">staff</span> to scare away evil spirits and then used it to turn my horse into a brand new Ferrari. I noticed <span class="font-weight-bold text-success">the staff</span> also helped him to walk!</p>
+    <div class="alert alert-success font-italic">He used his <span class="font-weight-bold text-success">staff</span> to scare away evil spirits and then used it to turn my horse into a brand new Ferrari. I noticed <span class="font-weight-bold text-success">the staff</span> also helped him to walk!</div>
 
     <h3><b><i>Staffs</i></b> - plural countable with 's'</h3>
 
     <p>Used as a plural countable noun with 's', <b><i>staffs</i></b> means more than one staff (= more than one wooden stick!):</p>
 
-    <p class="ml-3 font-italic">Our company manufactures <span class="font-weight-bold text-success">staffs</span> for wizards.</p>
+    <div class="alert alert-success font-italic">Our company manufactures <span class="font-weight-bold text-success">staffs</span> for wizards.</div>
 
     <p>You are <span class="uli">extremely unlikely</span> to need this meaning in the IELTS test!</p>
 
@@ -47,18 +47,18 @@
 
     <p>Used as a plural countable noun <span class="uli">without</span> 's', <b><i>staff</i></b> refers to people who work for a particular organisation, or within a particular department:</p>
 
-    <ul class="font-italic lh-15">
-        <li><span class="font-weight-bold text-success">Staff</span> at the Ministry of Religious Affairs receive a competitive salary.</li>
-        <li>Our trained pool <span class="font-weight-bold text-success">staff</span> are always present.</li>
-    </ul>
-
-    <div class="alert alert-danger">
-        <p>Notice the subject verb/agreement:</p>
-        <ul>
-            <li><i>staff..receive</i> (<span class="uli">not</span> <i>receives</i>)</li>
-            <li><i>staff..are present</i> (<span class="uli">not</span> <i>is present</i>)</li>
+    <div class="alert alert-success mb-2">
+        <ul class="font-italic lh-15 my-0">
+            <li><span class="font-weight-bold text-success">Staff</span> at the Ministry of Religious Affairs receive a competitive salary.</li>
+            <li>Our trained pool <span class="font-weight-bold text-success">staff</span> are always present.</li>
         </ul>
     </div>
+
+    <p class="mt-0">Notice the subject verb/agreement:</p>
+    <ul class="my-0">
+        <li><i>staff..receive</i> (<span class="uli">not</span> <i>receives</i>)</li>
+        <li><i>staff..are present</i> (<span class="uli">not</span> <i>is present</i>)</li>
+    </ul>
 
     <p>In the context of IELTS writing, you will probably be talking about people working for a particular company or organisation, and so you will probably never need to write 'a staff' or 'staffs'.</p>
 
@@ -66,14 +66,18 @@
 
     <p>This is <span class="uli">extremely uncommon</span>. It refers to a <i>component</i> of a company or organisation, just as you might refer to other components: accommodation, infrastructure, production, shipping, etc.</p>
 
-    <ul class="font-italic lh-15">
-        <li>The <span class="font-weight-bold text-success">staff</span> is spread across four campuses.<br><span class="small">all workers as a single group or 'component'</span></li>
-        <li>The financial services <span class="font-weight-bold text-success">staff</span> mainly handles payment postings.<br><span class="small">all workers belonging to a sub-category (financial services) of a larger group or component (all workers)</span></li>
-    </ul>
+    <div class="alert alert-success mb-2">
+        <ul class="lh-15 my-0">
+            <li class="font-italic mb-0">The <span class="font-weight-bold text-success">staff</span> is spread across four campuses.</li>
+            <li class="lst-none mt-0"><span class="small">all workers as a single group or 'component'</span></li>
+            <li class="font-italic">The financial services <span class="font-weight-bold text-success">staff</span> mainly handles payment postings.</li>
+            <li class="lst-none"><span class="small">all workers belonging to a sub-category (financial services) of a larger group or component (all workers)</span></li>
+        </ul>
+    </div>
 
     <div class="alert alert-danger">
-        <p>Notice the subject verb/agreement:</p>
-        <ul>
+        <p class="mt-0">Notice the subject verb/agreement:</p>
+        <ul class="my-0">
             <li><i>the staff..is</i> (<span class="uli">not</span> <i>are</i>)</li>
             <li><i>the staff..handles</i> (<span class="uli">not</span> <i>handle</i>)</li>
         </ul>
@@ -83,10 +87,10 @@
 
     <p>In IELTS speaking and writing use <span class="uli"><b><i>staff</i></b> plural countable without 's'</span>:</p>
 
-    <p class="ml-3 font-italic"><span class="font-weight-bold text-success">Staff</span> at the Ministry of Religious Affairs receive a competitive salary.</p>
+    <div class="alert alert-success font-italic"><span class="font-weight-bold text-success">Staff</span> at the Ministry of Religious Affairs receive a competitive salary.</div>
 
     <p>If you really must use a plural countable noun with 's', you can do this:</p>
 
-    <p class="ml-3 font-italic">I am <span class="font-weight-bold text-success">a member of staff</span> at the Ministry of Religious Affairs.</p>
+    <div class="alert alert-success font-italic">I am <span class="font-weight-bold text-success">a member of staff</span> at the Ministry of Religious Affairs.</div>
 
 </div>

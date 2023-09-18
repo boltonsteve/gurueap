@@ -16,10 +16,11 @@
 
     <h1>Making people able with 'enable'</h1>
 
-    <p class="font-italic ml-3">Easy access to shops online <span class="font-weight-bold text-danger">makes buyers can</span> visit many stores without leaving their homes.</p>
+    <div class="alert alert-danger font-italic">Easy access to shops online <span class="font-weight-bold text-danger">makes buyers can</span> visit many stores without leaving their homes.</div>
 
     <p>This collocation - <b><i>make</i></b> (v) <b><i>/</i></b> <b><i>can</i></b> (modal) - is possible in Bahasa Indonesia, but not in English. These are your options in English:</p>
 
+<div class="alert alert-success">
 <ul>
     <li class="font-italic">Easy access to shops online <span class="font-weight-bold text-success">enables buyers to visit</span> many stores without leaving their homes.</li>
     <li class="font-weight-bold mb-2 lst-none">enable + s.o./s.th. + to + V1</li>
@@ -28,6 +29,7 @@
     <li class="font-italic">Online shops are easy to access, and so buyers <span class="font-weight-bold text-success">are able to visit</span> many stores without leaving their homes.</li>
     <li class="font-weight-bold mb-2 lst-none">to be + able + to + V1</li>
 </ul>
+</div>
 
 <h3 class="mb-0">Practice!</h3>
 <p class="mt-0">Use the examples above to make sentences about the equipment shown in the image below.</p>

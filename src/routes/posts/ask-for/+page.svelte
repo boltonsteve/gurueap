@@ -4,8 +4,8 @@
 </script>
 
 <SvelteSeo
-    title="Ask (for)",
-  description="Highlighting the difference in meaning between 'ask' and 'ask for'"
+    title="Ask (for)"
+    description="Highlighting the difference in meaning between 'ask' and 'ask for'"
 />
 
 <div class="mb-3 mw-500">

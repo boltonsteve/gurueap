@@ -16,7 +16,7 @@
 
     <h1>How often in IELTS speaking</h1>
 
-    <div class="alert alert-warning row-col cols-15">
+    <div class="alert alert-danger row-col cols-15">
         <div class="font-weight-bold">Examiner</div>
         <div class="font-italic">How often do you go to the cinema?</div>
         <div class="font-weight-bold">Candidate</div>

@@ -1,6 +1,7 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { flagIndo, flagUk } from '$lib/flags.js'
+    import IconRight from '../../components/IconRight.svelte'
 </script>
 
 <SvelteSeo
@@ -14,9 +15,12 @@
 
     <h1>People's lives</h1>
 
-    <p class="font-italic ml-3">Technology is very useful <span class="font-weight-bold text-danger">for people's life</span>.</p>
+    <div class="alert alert-danger font-italic">Technology is very useful <span class="font-weight-bold text-danger">for people's life</span>.</div>
 
-    <p>{@html flagIndo} Here the influence of Bahasa Indonesia, and of Indonesian culture, is strong.</p>
+    <IconRight icon="flag">
+        <div slot="html">Here the influence of Bahasa Indonesia, and of Indonesian culture, is strong.</div>
+    </IconRight>
+    
 
 <h3>1. People</h3>
 
