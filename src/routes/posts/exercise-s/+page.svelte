@@ -44,7 +44,7 @@
         The obesity problem can be resolved through <span class="font-weight-bold text-success">exercise</span> and calorie limitation.
     </div>
 
-    <img src="/img/exercise-physical.png" class="rounded w-50 mx-auto" alt="maths exercise">
+    <img src="/img/exercise-physical.png" class="rounded w-75 mx-auto" alt="maths exercise">
         <div class="text-center small mt-1">physical exercise (uncountable)</div>
 
     <h3 class="mb-0">Exercises to improve ability</h3>
@@ -54,7 +54,7 @@
         Polynom is an app that helps students to get higher scores by solving and explaining math <span class="font-weight-bold text-success">exercises</span>.
     </div>
 
-    <img src="/img/exercise-maths.png" class="rounded w-50 mx-auto" alt="maths exercise">
+    <img src="/img/exercise-maths.png" class="rounded w-75 mx-auto" alt="maths exercise">
         <div class="text-center small mt-1">doing maths exercises (countable)</div>
 
 </div>
