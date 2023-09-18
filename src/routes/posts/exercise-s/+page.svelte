@@ -78,6 +78,7 @@
 
 .soal {
     width: 100px;
+    font-size:1.4rem;
 }
 
 #math_grid span {
