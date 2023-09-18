@@ -47,7 +47,7 @@
     <img src="/img/exercise-physical.png" class="rounded w-75 mx-auto" alt="maths exercise">
         <div class="text-center small mt-1">physical exercise (uncountable)</div>
 
-    <h3 class="mb-0">Exercises to improve ability</h3>
+    <h3 class="mb-0">Exercises to improve ability (including physical ability!)</h3>
     <p class="mt-0">Here you need the <span class="uli">countable</span> form of <b><i>exercise</i></b> (don't forget to <b><i>add s</i></b> if plural!):</p>
 
     <div class="alert alert-success font-italic">
@@ -55,7 +55,14 @@
     </div>
 
     <img src="/img/exercise-maths.png" class="rounded w-75 mx-auto" alt="maths exercise">
-        <div class="text-center small mt-1">doing maths exercises (countable)</div>
+    <div class="text-center small mt-1">doing maths exercises (countable)</div>
+
+    <div class="alert alert-success font-italic">
+        Stretching <span class="font-weight-bold text-success">exercises</span> help to strengthen muscles and improve overall strength and agility.
+    </div>
+
+    <img src="/img/stretching-exercises.png" class="rounded w-50 mx-auto" alt="maths exercise">
+    <div class="text-center small mt-1">stretching exercises (countable)</div>
 
 </div>
 
