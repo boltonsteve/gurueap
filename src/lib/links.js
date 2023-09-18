@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "When risk is risky",
+        href: "risk",
+        keywords: ['vocabulary','collocation']
+    },
+    {
         title: "All of them everywhere",
         href: "all-of-them-everywhere",
         keywords: ['grammar','articles','s','all of them everywhere']
