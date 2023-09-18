@@ -168,9 +168,9 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/work.png" class="img-fluid rounded border" alt="work">
+    <img src="/img/work-png.png" class="mx-auto" style="width:200px;" alt="work">
 
-    <h1>Work Quotes</h1>
+    <h1 class="text-center mt-0">Work Quotes</h1>
 
     <p>Here we have 5 work quotes from famous people.<br>
     See if you can reconstruct them!</p>

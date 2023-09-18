@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { flagIndo } from '$lib/flags.js';
+    import IconRight from '../../components/IconRight.svelte'
 </script>
 
 <SvelteSeo
@@ -10,12 +10,14 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/government.png" class="img-fluid rounded" alt="government">
+    <img class="mx-auto" src="/img/bhinneka-tunggal-ika.png" alt="Bhinneka Tunggal Ika" style="max-width:200px;">
 
-    <h1>Government</h1>
+    <h1 class="text-center">Government</h1>
 
-    <p class="ml-3 font-italic"><b><i>Government</i></b> must work hard to tackle the problem of inflation.</p>
-    
+    <IconRight icon="warning">
+        <div slot="html"><b><i>Government</i></b> must work hard to tackle the problem of inflation.</div>
+    </IconRight>
+
     <p>There are several uses of the word <b><i>government</i></b>:</p>
 
 <ul>
@@ -28,24 +30,24 @@
 
 <p>Here you are talking about the abstract concept of government. This is the social system in which an elected minority govern the majority:</p>
 
-<p class="ml-3 font-italic"><span class="font-weight-bold text-success">Government</span> is a potentially effective tool to tackle the problem of unemployment.</p>
+<div class="alert alert-success font-italic"><span class="font-weight-bold text-success">Government</span> is a potentially effective tool to tackle the problem of unemployment.</div>
 
 <h3>2. Governments (without 'the', with 's')</h3>
 
 <p>Here you are talking about all governments, in all countries, everywhere:</p>
 
-<p class="ml-3 font-italic"><span class="font-weight-bold text-success">Governments</span> must work hard to tackle the problem of inflation if they want to be competitive in the global market.</p>
+<div class="alert alert-success font-italic"><span class="font-weight-bold text-success">Governments</span> must work hard to tackle the problem of inflation if they want to be competitive in the global market.</div>
 
 <h3>3. The government (with 'the', without 's')</h3>
 
 <p>Here you are usually talking about your own government, although you may be talking about a different but specific government that you have already mentioned elsewhere in your text:</p>
 
-<p class="ml-3 font-italic"><span class="font-weight-bold text-success">The government</span> must work hard to tackle the problem of inflation in Indonesia.</p>
+<div class="alert alert-success font-italic"><span class="font-weight-bold text-success">The government</span> must work hard to tackle the problem of inflation in Indonesia.</div>
 
-<p>{@html flagIndo}&nbsp;Note to Indonesians..</p>
+<hr class="my-2">
 
-<img class="ml-1" src="/img/bhinneka-tunggal-ika.png" alt="Bhinneka Tunggal Ika" style="width:180px;float:right;">
-
-<p>Next time you want to translate <b><i>pemerintah</i></b>, consider which of these three meanings you want to communicate. If you choose the right one, your meaning will be clear and you will receive a high score for vocabulary (LR) and a high score for coherence and cohesion (CC) because it will be easier to understand what you are saying or writing.</p>
+    <IconRight icon="flag">
+        <div slot="html">Next time you want to translate <b><i>pemerintah</i></b>, consider which of these three meanings you want to communicate. If you choose the right one, your meaning will be clear and you will receive a high score for vocabulary (LR) and a high score for coherence and cohesion (CC) because it will be easier to understand what you are saying or writing.</div>
+    </IconRight>
 
 </div>

@@ -22,7 +22,7 @@
 
 </script>
 
-<div id="item" class="mb-1">
+<div id="item" class="my-1">
     <div id="icon">
         {#if cone}
             <ConeStriped fill="#dc3545" height={54} width={54} />
@@ -49,7 +49,7 @@
     #icon {
         display:flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
 
     #html {
