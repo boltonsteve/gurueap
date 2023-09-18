@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Exercise(s)",
+        href: "exercise-s",
+        keywords: ['vocabulary','countable uncountable']
+    },
+    {
         title: "When risk is risky",
         href: "risk",
         keywords: ['vocabulary','collocation']
