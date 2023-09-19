@@ -18,7 +18,7 @@
 
 </script>
 
-<a class="grid-post item" href="../posts/{href}">
+<a class="menu-item" href="../posts/{href}">
     {#if showBadge}
         <div class="badge">{@html video}</div>
     {/if}
@@ -28,7 +28,7 @@
 
 <style>
 
-.item {
+.menu-item {
     font-size:1.1rem;
     display:flex;
     justify-content:center;
@@ -37,11 +37,18 @@
     min-width:230px;
     width:250px;
     height: 100px;
-    /* padding-top:30px; */
-    border:1px solid #bbbbbb;
+    border:1px solid var(--teal);
+    /* border:1px solid #bbbbbb; */
     border-radius: 5px;
     margin:10px;
     text-align:center;
+    background: white;
+}
+
+.menu-item:hover {
+    background: var(--teal);
+    color: var(--light);
+    text-decoration: none;
 }
 
 .badge{
@@ -51,14 +58,11 @@
     justify-content:center;
     align-items:center;
     position: absolute;
-    background: var(--teal);
+    background:var(--teal);
     color:var(--light);
     right:-10px;
     top:-10px;
-    text-align: center;
     border-radius: 30px 30px 30px 30px;
-    padding:3px 3px;
-    font-size:20px;
 }
 
 </style>
