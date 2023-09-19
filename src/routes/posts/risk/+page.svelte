@@ -49,6 +49,7 @@
 <SvelteSeo
   title="When risk is risky"
   description="Demonstrating that 'risk' can be a risky word, at least in terms of collocation."
+  keywords="EAP,IELTS,English for Academic Purposes,vocabulary,collocation,academic english,Indonesia"
 />
 
 <div class="mb-3 mw-500">
