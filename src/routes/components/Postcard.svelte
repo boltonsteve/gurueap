@@ -18,7 +18,7 @@
 
 </script>
 
-<a class="menu-item" href="../posts/{href}">
+<a class="menu-item" href="../posts/{href}" style="padding:0px 10px 0px 10px;">
     {#if showBadge}
         <div class="badge">{@html video}</div>
     {/if}
