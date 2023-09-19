@@ -614,6 +614,8 @@ nav {
     position: sticky;
     top:0;
     background: #F7F7F7;
+
+    z-index:2;
 }
 
 #wrapper {

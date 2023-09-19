@@ -67,6 +67,8 @@
 
         menu = menuItems.join('');
 
+        postcards = [...postcards];
+
         console.log('postcards: ', postcards);
 
     }

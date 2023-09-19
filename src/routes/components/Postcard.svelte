@@ -18,7 +18,7 @@
 
 </script>
 
-<a class="grid-post item" href="../posts/{href}" style="display:block;">
+<a class="grid-post item" href="../posts/{href}">
     {#if showBadge}
         <div class="badge">{@html video}</div>
     {/if}
@@ -36,13 +36,12 @@
     position:relative;
     min-width:230px;
     width:250px;
-    height: 60px;
-    padding-top:30px;
+    height: 100px;
+    /* padding-top:30px; */
     border:1px solid #bbbbbb;
     border-radius: 5px;
     margin:10px;
     text-align:center;
-    z-index:-1;
 }
 
 .badge{
