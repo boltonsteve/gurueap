@@ -23,7 +23,7 @@
 
     <p>If your claim applies to <b><i>all of them</i></b> everywhere, add an <b><i>s</i></b> to your noun!</p>
 
-    <WithIcon icon="flag"> 
+    <WithIcon icon="sign"> 
         <div slot="html">Learn more about <a href="../posts/article-s">articles and <b><i>s</i></b></a> and the meanings that they enable you to communicate.</div>
     </WithIcon>
 

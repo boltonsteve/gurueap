@@ -4,6 +4,9 @@
     import { base } from '$app/paths';
     import { video, music } from '$lib/emojis.js';
     import { links } from '$lib/links.js';
+    import Postcard from '../components/Postcard.svelte';
+
+    let postcards = [];
 
     let all_kw = [];
     links.forEach( next => {
@@ -29,6 +32,8 @@
 
     let setUp = (mode) => {
 
+        postcards = [];
+
         menuItems = links.map( (next,i) => {
 
             let emoticons = '';
@@ -41,29 +46,28 @@
                 if(next.keywords.includes('song')) {
                     emoticons += `<span class="text-success mx-1">${music}</span>`;
                 }
-
                 if(next.keywords.includes(refineKeyword)) {
                     includesKeyword = true;
                 }
-
             }
 
             if(mode == 'keyword') {
-
                 if(includesKeyword) {
-                    console.log("refineKeyword: " + refineKeyword);
+                    postcards.push(next);
                     return `<a class="grid-post" href="${base}/posts/${next.href}">${next.title}${emoticons}</a>`;
                 }
-
             } else {
                 if(refineTitle == '' || next.title.toLowerCase().match(refineTitle)) {
-                    return `<a class="grid-post" href="${base}/posts/${next.href}">${next.title}${emoticons}</a>`;
+                    postcards.push(next);
+                    return `<a class="grid-post" href="${base}/posts/${next.href}"><div>${next.title}${emoticons}</div></a>`;
                 }
             }
 
         })
 
         menu = menuItems.join('');
+
+        console.log('postcards: ', postcards);
 
     }
 
@@ -107,7 +111,11 @@
 
 </div>
 
-<div class="container">{@html menu}</div>
+<div class="container">
+    {#each postcards as postcard}
+        <Postcard href="{postcard.href}" title="{postcard.title}" badge="{postcard.badge}" />
+    {/each}
+</div>
 
 <style>
 

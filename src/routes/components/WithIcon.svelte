@@ -39,13 +39,13 @@
     {/if}
     <div id="icon">
         {#if showBook}
-            <Book fill="#0d6efd" height={54} width={54} />
+            <Book fill="#17a2b8" height={54} width={54} />
         {/if}
         {#if showCone}
             <ConeStriped fill="#dc3545" height={54} width={54} />
         {/if}
         {#if showSign}
-            <SignpostSplit fill="#0d6efd" height={54} width={54} />
+            <SignpostSplit fill="#17a2b8" height={54} width={54} />
         {/if}
         {#if showWarning}
             <ExclamationTriangle fill="#dc3545" height={54} width={54} />

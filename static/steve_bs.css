@@ -20,30 +20,24 @@
 }
 
 .grid-post {
-    padding-left: 7px;
-    padding-right: 7px;
-    margin:7px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid #bbbbbb;
-    border-radius: 5px;
+    /* padding-left: 7px; */
+    /* padding-right: 7px; */
+    /* margin:7px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 1px solid #bbbbbb; */
+    /* border-radius: 5px; */
 
-    height: 100px;
-    width:200px;
+    /* height: 100px; */
+    /* width:200px; */
 
-    text-align: center;
-    align-items: center;
+    /* text-align: center; */
 
-    font-size: 1.1rem;
-    cursor: pointer;
-    background: #fff;
+    /* font-size: 1.1rem; */
+    /* cursor: pointer; */
+    /* background: #fff; */
 
-}
-
-.grid-post img {
-    height:80px;
-    width:80px;
-    border-radius:5px;
 }
 
 .grid-post:hover {
