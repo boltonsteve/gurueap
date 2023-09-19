@@ -2,9 +2,15 @@
     import SvelteSeo from "svelte-seo"
     import { tooltip } from '$lib/tooltip';
     import { scale } from 'svelte/transition'
+    import Modal from '../../components/Modal.svelte'
 
     let showKey = false;
+    let showModal = false;
     let allTried = true;
+
+    const toggleModal = () => {
+        showModal = !showModal;
+    }
 
     const checkAllTried = (tries) => {
         tries.forEach( (e) => {
@@ -39,7 +45,10 @@
             showKey = true;
 
         } else {
-            alert('Please attempt all questions.');
+            /* alert('Please attempt all questions.'); */
+            console.log('attempting to open modal..');
+            toggleModal();
+            showModal = true;
             allTried = true;
         }
 
@@ -51,6 +60,8 @@
   description="Demonstrating that 'risk' can be a risky word, at least in terms of collocation."
   keywords="EAP,IELTS,English for Academic Purposes,vocabulary,collocation,academic english,Indonesia"
 />
+
+<Modal {showModal} on:click={toggleModal} />
 
 <div class="mb-3 mw-500">
 
@@ -110,11 +121,10 @@
 <h3 class="mb-0">Practice</h3>
 <p class="mt-0">Now try this short practice activity (inspired by my nephew - see featured image!).</p>
 
-<div id="wrapper">
 {#if showKey}
-    <div id="key" in:scale>
-        <p class="mt-0">Mouse over (or tap) highlighted items for tooltips:</p>
-People who go skydiving are <span class="tooltip" title="The 'bad thing' is not mentioned" use:tooltip>taking a risk</span>. Skydiving is <span class="tooltip" title="adjective after 'to be'" use:tooltip>risky</span>. It's a <span class="tooltip" title="modifying the noun 'sport'" use:tooltip>high risk</span> sport. If your parachute fails to open you are <span class="tooltip" title="after 'to be'" use:tooltip>at risk of</span> death as your body will hit the ground at very high speed.
+    <div id="key" class="wrapper" in:scale>
+        <p class="mt-0 small">Mouse over (or tap) highlighted items for tooltips:</p>
+People who go skydiving are <span class="tooltip" title="The 'bad thing' is not mentioned" use:tooltip>taking a risk</span>. Skydiving is <span class="tooltip" title="adjective after 'to be'" use:tooltip>risky</span>. It's a <span class="tooltip" title="modifying the noun 'sport'" use:tooltip>high risk</span> sport. If your parachute fails to open you <span class="tooltip" title="Collocation: 'to be' + 'at risk of'" use:tooltip>are at risk of</span> death as your body will hit the ground at very high speed.
     </div>
 {/if}
 
@@ -152,21 +162,23 @@ People who go skydiving are <span class="tooltip" title="The 'bad thing' is not 
     <button class="btn btn-outline-primary mx-auto my-1" on:click={doCheck} out:scale>check</button>
 {/if}
 
-    </div>
 
 </div>
 
 <style>
-    #wrapper {
+
+    .wrapper {
         border:1px solid #bbbbbb;
         border-radius:5px;
         padding:5px 10px 5px 10px;
     }
+
     #activity {
-    line-height: 1.5rem;
-        
+        line-height: 1.5rem;
     }
-#key {
-    margin: 10px auto;
-}
+
+    #key {
+        margin: 10px auto;
+    }
+
 </style>
