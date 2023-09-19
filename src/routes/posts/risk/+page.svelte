@@ -45,10 +45,7 @@
             showKey = true;
 
         } else {
-            /* alert('Please attempt all questions.'); */
-            console.log('attempting to open modal..');
             toggleModal();
-            showModal = true;
             allTried = true;
         }
 
@@ -73,7 +70,7 @@
 
     <p><b><i>Risk</i></b> can be a <b><i>risky</i></b> word in English!</p>
 
-    <p>If there's a <b><i>risk</i></b>, then there is some kind of situation where a <b><i>bad or unpleasant thing</i></b> might happen, as in the example above - HIV and tuberculosis.</p>
+    <p>If there's a <b><i>risk</i></b>, then there is some kind of situation where a <b><i>bad or undesirable thing</i></b> might happen, as in the example above - HIV and tuberculosis.</p>
 
     <h3 class="mb-0">Risk - verb phrase</h3>
     <p class="mt-0">Here there are basically three options.</p>

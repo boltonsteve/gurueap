@@ -1,7 +1,7 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { ConeStriped } from "svelte-bootstrap-icons";
-    import IconRight from '../../components/IconRight.svelte';
+    import WithIcon from '../../components/WithIcon.svelte';
 </script>
 
 <SvelteSeo
@@ -23,8 +23,8 @@
 
     <p>If your claim applies to <b><i>all of them</i></b> everywhere, add an <b><i>s</i></b> to your noun!</p>
 
-    <IconRight icon="flag"> 
+    <WithIcon icon="flag"> 
         <div slot="html">Learn more about <a href="../posts/article-s">articles and <b><i>s</i></b></a> and the meanings that they enable you to communicate.</div>
-    </IconRight>
+    </WithIcon>
 
 </div>

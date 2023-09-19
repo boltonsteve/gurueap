@@ -2,7 +2,7 @@
     import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js';
     import { fade, scale } from "svelte/transition";
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 
     let activity = '';
 
@@ -110,9 +110,9 @@
 
     <div class="alert alert-success font-italic">..<span class="font-weight-bold text-success">removing</span> individual animals from the wild <span class="font-weight-bold text-success">is</span> potentially threatening..</div>
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">I've noticed that - at least among Indonesians - this error is extremely common when the main noun of a noun phrase is constructed using <i><b>__ing</b></i>, which is quite common in much academic writing.</div>
-    </IconRight>
+    </WithIcon>
 
     <p>When you're deciding how to make verbs agree with nouns, first of all identify which noun in the subject is the main noun. Then select your verb accordingly.</p>
 

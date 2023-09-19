@@ -1,7 +1,7 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js'
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -17,9 +17,9 @@
 
     <div class="alert alert-danger font-italic">Owners of LCGC cars spend additional money on car tax which is <span class="font-weight-bold text-danger">expensive enough</span> for middle income families.</div>
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html"><b><i>Enough</i></b>, <b><i>not enough</i></b>, and <b><i>too</i></b> often get lost in translation from the Indonesian <b><i>cukup</i></b>, <b><i>tidak cukup</i></b>, and <b><i>terlalu</i></b>.</div>
-    </IconRight>
+    </WithIcon>
 
     <p>In English these words are used to evaluate situations that have either <b><i>positive</i></b> or <b><i>negative</i></b> outcomes, as shown in the examples below.</p>
 
@@ -43,9 +43,9 @@
 
     <p>If I say that <i>car tax is <b>expensive enough</b> for middle income families</i> then I'm making a positive evaluation about a negative situation.</p>
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">The problem is that in Bahasa Indonesia, <b><i>enough</i></b> can behave rather like <b><i>very</i></b> as a way to intensify an adjective.</div>
-    </IconRight>
+    </WithIcon>
 
     <p>In the car tax example, <b><i>very</i></b> would create a more negative evaluation of the situation, and that's what we need:</p>
 

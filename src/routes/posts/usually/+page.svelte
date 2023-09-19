@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -20,9 +20,9 @@
 
     <div class="alert alert-success font-italic">In my spare time I <span class="font-weight-bold text-success">go out with</span> my friends.</div>
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">Indonesians will feel a need to translate <b><i>biasanya</i></b>, but present simple tense already carries the meaning of <i><b>usually</b></i>, and so <i><b>usually</b></i> is redundant in a sentence like this.<br><br>Only use <i><b>usually</b></i> when you want to make a contrast between something you do habitually, and something <b><i>unusual</i></b> that you have to do because of exceptional or <b><i>unusual</i></b> circumstances.</div>
-    </IconRight>
+    </WithIcon>
 
     <div class="alert alert-success">
         <p class="font-italic mt-0">In my spare time I <span class="font-weight-bold text-success">usually go out with</span> my friends, but today I have my IELTS interview.</p>

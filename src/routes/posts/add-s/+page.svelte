@@ -2,7 +2,7 @@
     import SvelteSeo from "svelte-seo"
     import Youtube from "svelte-youtube-embed";
     import { flagIndo } from '$lib/flags.js';
-    import IconRight from '../../components/IconRight.svelte';
+    import WithIcon from '../../components/WithIcon.svelte';
 </script>
 
 <SvelteSeo
@@ -16,13 +16,13 @@
 
     <h1>Add 's' - by George</h1>
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">Indonesians hate to add 's' to <b><i>plurals</i></b>, <b><i>possessives</i></b> and <b><i>third person verbs</i></b>. In Bahasa Indonesia these grammatical features are produced in other ways.</div>
-    </IconRight>
+    </WithIcon>
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">It's also extremely unusual in Bahasa Indonesia to see <b><i>two or more consonants together</i></b>, which is often what happens when you add 's' to the end of a word.</div>
-    </IconRight>
+    </WithIcon>
 
     <ul>
         <li><i><b>Mike's </b></i>(possessive, 2 consonants together)</li>

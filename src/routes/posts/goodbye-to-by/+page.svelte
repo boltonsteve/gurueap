@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -16,9 +16,9 @@
 
     <div class="alert alert-danger font-italic"><span class="font-weight-bold text-danger">By</span> paying more attention to corruption can improve the welfare of a country.</div>
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">Yet another Indonesian structure that doesn't translate directly into English!</div>
-    </IconRight>
+    </WithIcon>
 
     <p>If you really must begin with 'by' then you need...</p>
 

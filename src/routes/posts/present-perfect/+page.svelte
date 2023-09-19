@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -51,11 +51,11 @@
 
 <p>Notice also that <b><i>to be</i></b> cannot be continuous. In this case it is easy to use 'become' in the continuous, <i>but only if you feel the situation is changing over time</i>.</p>
 
-<IconRight icon="flag">
+<WithIcon icon="flag">
     <div slot="html">Indonesians need to be careful with <b><i>become</i></b>. Only use <b><i>become</i></b> when there is a change over time.
         <p><a href="../posts/become" target="_blank">Learn more about become here.</a></p>
     </div>
-</IconRight>
+</WithIcon>
     
 <h3>Current = <i><b>up to and including now</b></i></h3>
 
@@ -81,10 +81,10 @@
 
 <hr>
 
-<IconRight icon="sign">
+<WithIcon icon="sign">
     <div slot="html">
         Elsewhere on GuruEAP you will find video examples of <a href="../posts/present-tenses" target="_blank">present</a> and <a href="../posts/perfect-tenses" target="_blank">perfect tenses</a>.
     </div>
-</IconRight>
+</WithIcon>
 
 </div>

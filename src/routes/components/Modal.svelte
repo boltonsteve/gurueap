@@ -1,5 +1,5 @@
 <script>
-    import { scale } from 'svelte/transition'
+    import { scale, fade } from 'svelte/transition'
     export let msg = 'Please attempt all questions.';
     export let btn_txt = 'OK';
     export let showModal = false;
@@ -7,7 +7,7 @@
 
 
 {#if showModal}
-<div class="backdrop" transition:scale on:click|self>
+<div class="backdrop" transition:fade on:click|self>
     <div class="modal">
         <div>{msg}</div>
         <button class="mt-2" on:click|self>{btn_txt}</button>
@@ -29,8 +29,8 @@
     .modal {
         padding:20px;
         border-radius:10px;
-        max-width:400px;
-        margin:10% auto;
+        max-width:300px;
+        margin:30% auto;
         text-align:center;
         background:white;
     }

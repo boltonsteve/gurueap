@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import IconRight from '../../components/IconRight.svelte';
+    import WithIcon from '../../components/WithIcon.svelte';
 </script>
 
 <SvelteSeo
@@ -14,9 +14,9 @@
 
     <div class="alert alert-danger font-italic">Passive smoking <span class="text-danger font-weight-bold">brings negative impact for</span> people who do not smoke.</div>
     
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">This is a collocation problem for Indonesians translating <b><i>membawa dampak negatif untuk</i></b></div>
-    </IconRight>
+    </WithIcon>
 
     <p>In English the collocation is:</p>
 

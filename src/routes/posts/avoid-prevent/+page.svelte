@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -18,9 +18,9 @@
 
     <img src="/img/condoms.png" class="mx-auto" alt="condoms">
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">Indonesians need to consider the difference between <b><i>avoid</i></b> (menghindar) and <b><i>prevent</i></b> (mencegah)!</div>
-    </IconRight>
+    </WithIcon>
 
     <div class="alert alert-success font-italic">Everybody knows that condoms can <span class="font-weight-bold text-success">prevent</span> pregnancy.</div>
 

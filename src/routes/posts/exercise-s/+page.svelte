@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -31,11 +31,11 @@
         The obesity problem can be resolved through <span class="font-weight-bold text-danger">exercises</span> and calorie limitation.
     </div>
 
-    <IconRight icon="warning">
+    <WithIcon icon="warning">
         <div slot="html">
             <b><i>Exercise</i></b> is one of those words that can be countable or uncountable, depending on what you mean!
         </div>
-    </IconRight>
+    </WithIcon>
 
     <h3 class="mb-0">Exercise to stay healthy</h3>
     <p class="mt-0">Here you need the <span class="uli">uncountable</span> form of <b><i>exercise</i></b>:</p>

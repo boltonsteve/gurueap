@@ -1,5 +1,10 @@
 export const links = [
     {
+        title: "Consumptive consumers",
+        href: "consumerism",
+        keywords: ['vocabulary','borrowed word']
+    },
+    {
         title: "Exercise(s)",
         href: "exercise-s",
         keywords: ['vocabulary','countable uncountable']

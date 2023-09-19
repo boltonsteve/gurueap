@@ -561,7 +561,8 @@ a {
     text-decoration:none;
 }
 a:visited {
-    color: var(--blue);
+    /* color: var(--grey); */
+    color: var(--teal);
 }
 a:hover {
     text-decoration:underline;

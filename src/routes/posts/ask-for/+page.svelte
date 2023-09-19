@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import IconRight from '../../components/IconRight.svelte';
+    import WithIcon from '../../components/WithIcon.svelte';
 </script>
 
 <SvelteSeo
@@ -14,10 +14,10 @@
 
     <h1>Ask (for)</h1>
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">Indonesian IELTS candidates are sometimes confused about how to translate <b><i>tanya</i></b> and <b><i>minta</i></b>.</div>
 
-    </IconRight>
+    </WithIcon>
 
     <p>When you're <span class="uli">making a request</span> using <b><i>ask</i></b>, the following are possible:</p>
 

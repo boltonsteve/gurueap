@@ -1,7 +1,7 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { flagIndo } from '$lib/flags.js'
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -21,7 +21,7 @@
 
     <p>I'm going to need to check with an Indonesian native speaker, but I'm pretty sure this is right:</p>
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">
             <ul class="my-0">
                 <li><b><i>ingat</i></b> > remember (something)</li>
@@ -29,7 +29,7 @@
                 <li><b><i>hafal</i></b> > memorise (something)</li>
             </ul>
         </div>
-    </IconRight>
+    </WithIcon>
 
     <p>When we <b><i>memorise</i></b> something, we devote a great deal of cognitive effort to it. We often do this when we are preparing for an exam:</p>
 

@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -39,8 +39,8 @@
 
     <p>Choosing the right referencing word (<b><i>it</i></b> or <b><i>this</i></b>) will make your writing more coherent (easier to understand).</p>
 
-    <IconRight icon="sign">
+    <WithIcon icon="sign">
         <div slot="html">If you are preparing for IELTS, the right choice of referencing word will give you a higher score for coherence and cohesion (see IELTS public band descriptors for <a href="https://takeielts.britishcouncil.org/sites/default/files/ielts_writing_band_descriptors.pdf" target="_blank" rel="noopener">writing</a>  and <a href="https://takeielts.britishcouncil.org/sites/default/files/IELTS_Speaking_band_descriptors.pdf" target="_blank" rel="noopener">speaking</a>).</div>
-    </IconRight>
+    </WithIcon>
 
 </div>

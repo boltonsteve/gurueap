@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import IconRight from '../../components/IconRight.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -14,9 +14,9 @@
 
     <h1 class="text-center">Government</h1>
 
-    <IconRight icon="warning">
+    <WithIcon icon="warning">
         <div slot="html"><b><i>Government</i></b> must work hard to tackle the problem of inflation.</div>
-    </IconRight>
+    </WithIcon>
 
     <p>There are several uses of the word <b><i>government</i></b>:</p>
 
@@ -46,8 +46,8 @@
 
 <hr class="my-2">
 
-    <IconRight icon="flag">
+    <WithIcon icon="flag">
         <div slot="html">Next time you want to translate <b><i>pemerintah</i></b>, consider which of these three meanings you want to communicate. If you choose the right one, your meaning will be clear and you will receive a high score for vocabulary (LR) and a high score for coherence and cohesion (CC) because it will be easier to understand what you are saying or writing.</div>
-    </IconRight>
+    </WithIcon>
 
 </div>
