@@ -61,6 +61,7 @@
     const handleKeywordInput = (e) => {
         refineKeyword = e.target.value;
         setUp('keyword');
+        document.getElementById('refine_title').value = '';
         document.getElementById('refine_title').focus();
     }
 

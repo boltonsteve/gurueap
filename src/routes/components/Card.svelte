@@ -74,7 +74,7 @@
         /* min-height: 220px; */
 
         padding: 10px 10px 10px 10px;
-        border:1px solid var(--grey);
+        border:1px solid var(--teal);
         border-radius:5px;
 
         background: var(--light);

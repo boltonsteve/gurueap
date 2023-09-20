@@ -1,8 +1,9 @@
 <script>
-    import SvelteSeo from "svelte-seo"
+    import SvelteSeo from "svelte-seo";
     import { flagIndo } from '$lib/flags.js';
     import { fade, scale } from "svelte/transition";
-    import WithIcon from '../../components/WithIcon.svelte'
+    import WithIcon from '../../components/WithIcon.svelte';
+    import Modal from '../../components/Modal.svelte';
 
     let activity = '';
 
@@ -24,6 +25,11 @@
     let feedbacks = [];
     let numbering = 1;
     let fb = '';
+
+    let feedback = false;
+    let allAttempted = true;
+    let showModal = false;
+
 
     let menuedArr = items.map( (next) => {
         if(next.match(/:/)) {
@@ -67,29 +73,49 @@
       return array;
     }
 
-    let feedback = false;
     const checkAns = () => {
+
         let answers = document.querySelectorAll('.ans');
+
         answers.forEach( (next,i) => {
-            let menu = document.getElementById('s'+i);
-            if(next.value == corrects[i]) {
-                menu.classList.add('bg-success','text-white');
-            } else {
-                menu.classList.add('bg-danger','text-white');
+            if(next.value == 'select') {
+                allAttempted = false;
             }
         });
 
-        fb = `<div class="mb-2"><ol><li>${feedbacks.join('</li><li>')}</li></ul></div>`;
 
-        feedback = true;
+        if(!allAttempted) {
+            toggleModal();
+        } else {
+
+            answers.forEach( (next,i) => {
+                let menu = document.getElementById('s'+i);
+                if(next.value == corrects[i]) {
+                    menu.classList.add('bg-success','text-white');
+                } else {
+                    menu.classList.add('bg-danger','text-white');
+                }
+            });
+
+            fb = `<div class="mb-2"><ol><li>${feedbacks.join('</li><li>')}</li></ul></div>`;
+
+            feedback = true;
+        }
     }
+
+    const toggleModal = () => {
+        showModal = !showModal;
+    }
+
 
 </script>
 
 <SvelteSeo
-    title="Subject/Verb",
+    title="Subject/Verb"
     description="Demonstrating the importance of subject/verb agreement in IELTS speaking and writing."
 />
+
+<Modal {showModal} on:click={toggleModal} />
 
 <div class="mb-3 mw-500">
 
@@ -124,6 +150,6 @@
 
     {@html activity}
 
-    <button class="btn my-1 d-block mx-auto" on:click={checkAns}>Check answers</button>
+    <button class="btn btn-outline-primary my-1 d-block mx-auto" on:click={checkAns}>Check answers</button>
 
 </div>
