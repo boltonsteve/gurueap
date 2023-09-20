@@ -172,8 +172,7 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
 
     <h1 class="text-center mt-0">Work Quotes</h1>
 
-    <p>Here we have 5 work quotes from famous people.<br>
-    See if you can reconstruct them!</p>
+    <p>See if you can reconstruct 5 quotes about work written by famous people!</p>
     <p>Click on a word to select it.<br>
         Click left-right (or type &larr; &rarr;) to move it around.</p>
 
