@@ -215,7 +215,8 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
 
     #buttons {
         display: flex;
-        justify-content:center;
+        justify-content:space-around;
+
         margin:30px;
     }
 

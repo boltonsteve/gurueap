@@ -18,7 +18,7 @@
 
     <img src="/img/condoms.png" class="mx-auto" alt="condoms">
 
-    <WithIcon icon="flag">
+    <WithIcon icon="flag" position="right">
         <div slot="html">Indonesians need to consider the difference between <b><i>avoid</i></b> (menghindar) and <b><i>prevent</i></b> (mencegah)!</div>
     </WithIcon>
 

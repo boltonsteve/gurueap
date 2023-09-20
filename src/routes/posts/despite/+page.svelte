@@ -1,10 +1,11 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { flagIndo, flagUk } from '$lib/flags.js'
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
-    title="Despite / In spite of",
+    title="Despite / In spite of"
   description="Demonstrating the structural uses of the English 'despite' and 'in spite of'"
 />
 
@@ -23,6 +24,9 @@
 
     <p>A safer, but slightly less sophisticated way to say this would be:</p>
 
-    <div class="alert alert-success font-italic"><span class="font-weight-bold text-success">Although</span> it has advantages, technology has caused a wide range of social problems.<br><span class="small">{@html flagIndo} Indonesian students notice there is no 'akan tetapi' after the comma.</span></div>
+    <div class="alert alert-success font-italic">
+        <span class="font-weight-bold text-success">Although it has advantages, technology has caused a wide range of social problems.</span>
+        <WithIcon icon="flag" position="right" msg="Indonesian students notice there is no 'akan tetapi' after the comma." />
+    </div>
 
 </div>

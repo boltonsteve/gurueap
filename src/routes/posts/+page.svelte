@@ -1,19 +1,20 @@
 <script>
 
     import SvelteSeo from "svelte-seo";
-    import { base } from '$app/paths';
-    import { video, music } from '$lib/emojis.js';
     import { links } from '$lib/links.js';
-    import Postcard from '../components/Postcard.svelte';
+    import { Film, MusicNoteBeamed } from "svelte-bootstrap-icons";
 
-    let postcards = [];
+    links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
+    let showBadge = false;
+    let cards = [];
+
+    // Unique array of keywords (I know this could be tidier..!)
     let all_kw = [];
     links.forEach( next => {
         let the_keywords = next.keywords;
         all_kw = all_kw.concat(the_keywords);
     });
-
     var uniqueKw = [...new Set(all_kw)]
     let keywords = uniqueKw.filter(e => e !== undefined).sort();
 
@@ -24,52 +25,29 @@
 
     let refineTitle = '';
     let refineKeyword = '';
-
-    links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
-    let linksCount = links.length;
-
-    let menu,menuItems;
+    let menu,inclKeyword;
 
     let setUp = (mode) => {
 
-        postcards = [];
-
-        menuItems = links.map( (next,i) => {
-
-            let emoticons = '';
-            let includesKeyword = false;
-
-            if('keywords' in next) {
-                if(next.keywords.includes('video')) {
-                    emoticons += `<span class="text-success mx-1">${video}</span>`;
-                }
-                if(next.keywords.includes('song')) {
-                    emoticons += `<span class="text-success mx-1">${music}</span>`;
-                }
-                if(next.keywords.includes(refineKeyword)) {
-                    includesKeyword = true;
-                }
-            }
-
+        cards = links.map( next => {
+            inclKeyword = next.keywords.includes(refineKeyword) ? true : false;
             if(mode == 'keyword') {
-                if(includesKeyword) {
-                    postcards.push(next);
-                    return `<a class="grid-post" href="${base}/posts/${next.href}">${next.title}${emoticons}</a>`;
+                if(inclKeyword) {
+                    return next;
+                } else {
+                    return;
                 }
             } else {
+                // mode = 'title'
                 if(refineTitle == '' || next.title.toLowerCase().match(refineTitle)) {
-                    postcards.push(next);
-                    return `<a class="grid-post" href="${base}/posts/${next.href}"><div>${next.title}${emoticons}</div></a>`;
+                    return next;
+                } else {
+                    return;
                 }
             }
-
         })
 
-        menu = menuItems.join('');
-
-        postcards = [...postcards];
-
-        console.log('postcards: ', postcards);
+        cards = cards.filter(e => e !== undefined).sort();
 
     }
 
@@ -86,7 +64,7 @@
         document.getElementById('refine_title').focus();
     }
 
-    const resetTitle = () => {
+    const resetTitle = (e) => {
         refineTitle = '';
         setUp('title');
         document.getElementById('refine_title').focus();
@@ -101,21 +79,29 @@
 />
 
 <div class="mb-2 mw-500 wrapper">
+
     <div class="input-container">
         <input id="refine_title" type="text" class="input-item input-item-1" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
         <button class="input-item input-item-2" on:click={resetTitle}>all</button>
     </div>
 
-        <select id="refine_category" class="form-control" placeholder="search categories" on:input={handleKeywordInput}>
-            {@html kwOptions}
-            
-        </select>
+    <select id="refine_category" class="form-control" placeholder="search categories" on:input={handleKeywordInput}>
+        {@html kwOptions}
+    </select>
 
 </div>
 
 <div class="container">
-    {#each postcards as postcard}
-        <Postcard href="{postcard.href}" title="{postcard.title}" badge="{postcard.badge}" />
+    {#each cards as card}
+        <a class="menu-item" href="../{card.href}" style="padding:0px 10px 0px 10px;">
+            {#if card.keywords.includes('video')}
+                <div class="badge badge-video"><Film /></div>
+            {/if}
+            {#if card.keywords.includes('song')}
+                <div class="badge badge-song"><MusicNoteBeamed /></div>
+            {/if}
+            {card.title}
+        </a>
     {/each}
 </div>
 
@@ -182,4 +168,50 @@ select {
     border-radius: 5px;
 }
 
+.menu-item {
+    font-size:1.1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    min-width:230px;
+    width:250px;
+    height: 100px;
+    border:1px solid var(--teal);
+    /* border:1px solid #bbbbbb; */
+    border-radius: 5px;
+    margin:10px;
+    text-align:center;
+    background: white;
+}
+
+.menu-item:hover {
+    background: var(--teal);
+    color: var(--light);
+    text-decoration: none;
+}
+
+.badge{
+    display:flex;
+    height:30px;
+    width:30px;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.badge-video {
+    background:var(--green);
+    color:var(--light);
+    right:-10px;
+    top:-10px;
+}
+
+.badge-song {
+    background:var(--blue);
+    color:var(--light);
+    left:-10px;
+    top:-10px;
+}
 </style>

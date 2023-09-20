@@ -14,7 +14,7 @@
 
     <h1 class="text-center">Government</h1>
 
-    <WithIcon icon="warning">
+    <WithIcon icon="warning" position="right">
         <div slot="html"><b><i>Government</i></b> must work hard to tackle the problem of inflation.</div>
     </WithIcon>
 

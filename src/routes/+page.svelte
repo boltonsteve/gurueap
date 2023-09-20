@@ -5,8 +5,6 @@
     import { students } from '$lib/mugshots.js';
 
     students.sort(() => Math.random() - 0.5);
-    let studentsHtmlArr = students.map( next => `<div class="mugshot"><img class="form-control mx-auto" src="/img/students/${next}.png" alt="${next}" style="width:50px;height:50px;margin:10px;opacity:.2;"></div>` );
-    let studentsHtml = studentsHtmlArr.join('');
 
 </script>
 
@@ -45,7 +43,11 @@
     </div>
 
 </div>
-<div id="students">{@html studentsHtml}</div>
+<div id="students">
+    {#each students as student}
+        <img src="/img/students/{student}.png">  
+    {/each}
+</div>
 
 
 <style>
@@ -58,23 +60,23 @@
     #students {
         display:flex;
         flex-wrap:wrap;
-        padding-top:60px;
+        padding-top:30px;
         justify-content: space-between;
         max-width: 1100px;
         margin: auto;
     }
 
-    .mugshot {
-        width:30px;
-        height: 30px;
+    #students img {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        opacity: 0.2;
     }
 
-    .mugshot > img {
-        width:40px;
-        height: 40px;
-
+    #students img:hover {
+        opacity:1;
+        cursor: pointer;
     }
-
 
     #landing_grid {
         display: grid;

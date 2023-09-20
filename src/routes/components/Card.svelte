@@ -44,7 +44,7 @@
             {/if}
         </div>
         <div class="title">
-            <a href="{path}" class="btn btn-outline-dark">{title}</a>
+            <a href="{path}"><button class="btn btn-outline-primary">{title}</button></a>
         </div>
     </div>
 </div>
@@ -58,6 +58,11 @@
         font-size: 1.1rem;
     }
 
+    button {
+        font-size:1.1rem;
+        margin-bottom:5px;
+    }
+
     .card {
         display:grid;
         grid-template-columns: 1fr;
@@ -68,11 +73,12 @@
         min-width: 180px;
         /* min-height: 220px; */
 
-        padding: 10px 10px 20px 10px;
-        border:1px solid black;
+        padding: 10px 10px 10px 10px;
+        border:1px solid var(--grey);
         border-radius:5px;
 
-        background: #eeeeee;
+        background: var(--light);
+        /* background: #eeeeee; */
     }
 
     .card .title {

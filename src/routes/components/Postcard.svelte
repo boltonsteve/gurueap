@@ -1,26 +1,24 @@
 <script>
 
-    import { video, music } from '$lib/emojis.js';
-    export let href;
-    export let title;
-    export let badge = '';
+    import { Film } from "svelte-bootstrap-icons";
+    /* export let title = ''; */
+    /* export let href = ''; */
+    /* export let badge = ''; */
+    export let postcard;
+    let title = postcard.title;
+    let href = postcard.href;
+    let badge = postcard.badge;
+    /* export let {title, href, keywords, badge} = postcard; */
 
-    let icon = '';
-    let showBadge = false;
+    /* console.log('postcard: ', postcard); */
 
-    if(badge == 'song') {
-        icon = music;
-        showBadge = true;
-    } else if(badge == 'video') {
-        icon = video;
-        showBadge = true;
-    }
+    let showBadge = badge !== '' ? true : false;
 
 </script>
 
 <a class="menu-item" href="../posts/{href}" style="padding:0px 10px 0px 10px;">
     {#if showBadge}
-        <div class="badge">{@html video}</div>
+        <div class="badge"><Film /></div>
     {/if}
     {title}
 </a>
