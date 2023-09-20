@@ -85,6 +85,16 @@
     color: var(--light);
 }
 
+.btn-outline-info {
+    border: 1px solid var(--teal);
+    color: var(--teal);
+}
+
+.btn-outline-info:hover, .btn-active-info {
+    background: var(--teal);
+    color: var(--light);
+}
+
 .btn-outline-dark {
     background: white;
     border: 1px solid var(--dark);

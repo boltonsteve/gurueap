@@ -44,7 +44,7 @@
             {/if}
         </div>
         <div class="title">
-            <a href="{path}"><button class="btn btn-outline-primary">{title}</button></a>
+            <a href="{path}"><button class="btn btn-outline-info">{title}</button></a>
         </div>
     </div>
 </div>
