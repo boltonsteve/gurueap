@@ -2,11 +2,13 @@
     import SvelteSeo from "svelte-seo"
     import { scale, slide } from 'svelte/transition'
     import WithIcon from '../../components/WithIcon.svelte'
+    import * as animateScroll from "svelte-scrollto"
 
     let showFeedback = false;
 
     let check = () => {
         showFeedback = true;
+        /* animateScroll.scrollTo({element: '#feedback', duration: 1000, offset: -50}) */
     }
 </script>
 
@@ -37,22 +39,24 @@
 Notice also that <i><b>appearance</b></i> and <i><b>performance </b></i>have different meanings in their countable and uncountable forms:
 <ol style="list-style-type:lower-alpha;" class="lh-15">
  	<li><b>appearance uncountable</b>: clothing, makeup, grooming, etc.</li>
- 	<li><b>appearance countable</b>: Let's say the clown goes on stage in London tonight, and in Jakarta tomorrow night. That's two appearances.</li>
- 	<li><b>performance uncountable</b>: This is usually for machines, in particular cars. A high-performance car, for example a Ferrari, can move very fast.</li>
- 	<li><b>performance countable</b>: Let's say the clown goes on stage in London tonight, and in Jakarta tomorrow night. That's two performances.</li>
+ 	<li><b>appearance countable</b>: If he's famous, the clown might make <b><i>an appearance</i></b> in London tonight, and in Jakarta tomorrow night. That's two <b><i>appearances</i></b>.</li>
+ 	<li><b>performance uncountable</b>: This is usually for machines, in particular cars. If we say a Ferrari can accelerate very quickly and has a top speed of 300kmh, we're talking about its <b><i>performance</i></b>.</li>
+ 	<li><b>performance countable</b>: Let's say the clown goes on stage in London tonight, and in Jakarta tomorrow night. That's two <b><i>performances</i></b>.</li>
 </ol>
 
-You can see that in their countable forms, <i><b>appearance</b></i> and <i><b>performance</b></i> generally have the same meaning. However, you need to be careful with the uncountable forms of <i><b>appearance </b></i>and <i><b>performance</b></i>!
+<p>You can see that in their countable forms, <i><b>appearance</b></i> and <i><b>performance</b></i> generally have the same meaning. However, you need to be careful with the uncountable forms of <i><b>appearance</b></i> and <i><b>performance</b></i>!</p>
 
 <WithIcon icon="flag">
     <div slot="html">Indonesians usually write <b><i>performance</i></b> when they mean <b><i>appearance</i></b>.</div>
 </WithIcon>
 
+<img src="/img/clown-unicycle.png" alt="clown on unicycle" style="width:160px;float:right;padding:10px;">
 <p>I'll give you a text that features these different meanings. For each example, can you guess which meaning I'm using? (a-d)</p>
 
-<div id="activity">
+<p>Clowns are not usually interested in the <b><i>performance</i></b> (1) of cars because that's not funny. Instead they ride unicycles as part of their on-stage <b><i>performances</i></b> (2). They also change their physical <b><i>appearance</i></b> (3) before they go on stage to make sure they look funny. A travelling clown makes up to 100 <b><i>appearances</i></b> (4) a year in different locations.</p>
+
 {#if showFeedback}
-<div id="feedback" in:scale>
+<div id="feedback">
     <div>1.</div>
     <div>c</div>
     <div>performance uncountable (cars are machines)</div>
@@ -68,20 +72,11 @@ You can see that in their countable forms, <i><b>appearance</b></i> and <i><b>pe
 </div>
 {/if}
 
-<p>Clowns are not usually interested in the <b><i>performance</i></b> (1) of cars because that's not funny. Instead they ride unicycles as part of their on-stage <b><i>performances</i></b> (2). They also change their physical <b><i>appearance</i></b> (3) before they go on stage to make sure they look funny. A travelling clown makes up to 100 <b><i>appearances</i></b> (4) a year in different locations.</p>
-
 <button class="btn btn-outline-primary mx-auto" on:click={check}>check</button>
 
-    </div>
 </div>
 
 <style>
-    #activity {
-        padding:10px;
-        border-radius:10px;
-        border: 1px solid var(--dark);
-        line-height:1.5rem;
-    }
 #feedback {
     display:grid;
     grid-template-columns: 1fr 1fr 6fr;

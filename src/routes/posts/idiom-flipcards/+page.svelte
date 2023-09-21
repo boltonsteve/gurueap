@@ -4,6 +4,10 @@
 
     let idioms = [
         {
+            front: "The design <b><i>ticks the right boxes</i></b>. It's elegant, cheap to make, and doesn't harm the environment!",
+            back: "Satisfies important criteria."
+        },
+        {
             front: "She recreated the recommended essay structure <b><i>to a tee</i></b>.",
             back: "Faithfully and accurately."
         },

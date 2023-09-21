@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Task 2 Introductions - Sentence #1",
+        href: "posts/task2-intro-1",
+        keywords: ['writing','IELTS','Task 2'],
+        description: "How to write an effective opening sentence to a Task 2 introduction - and how NOT to write it!"
+    },
+    {
         title: "Opinion in topic sentences",
         href: "posts/topic-sentences",
         keywords: ['writing','argument'],
