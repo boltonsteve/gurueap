@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Lazy to read",
+        href: "posts/lazy-to-read",
+        keywords: ['reading','vocabulary','collocation'],
+        description: "A favourite phrase of Indonesian students. Here we look at the English - I can't be bothered!"
+    },
+    {
         title: "Is it worth it?",
         href: "posts/worth",
         keywords: ['vocabulary'],
