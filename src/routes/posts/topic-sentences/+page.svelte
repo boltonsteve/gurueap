@@ -14,14 +14,14 @@
 
     <h1>Opinion in topic sentences</h1>
 
-    <p>Many students have read about 'topic sentences' and believe that it's essential to make a separate sentence to introduce the topic before making any kind of argumentative claim:</p>
+    <p>Many students have read about <b><i>topic sentences</i></b> and believe that it's essential to make a separate sentence to introduce the topic before making any kind of argumentative claim:</p>
 
     <div class="box">
         <p>(sample body paragraph #1)</p>
-        <p>The first issue to discuss relates to the use of police time in the enforcement of marijuana laws.If marijuana is legalised then valuable police time will be saved. First of all, supporting idea one blah blah blah blah blah. In addition, supporting idea two blah blah blah blah blah. Furthermore, supporting idea three blah blah blah blah blah. Finally, supporting idea four blah blah blah blah blah.</p>
+        <p>The first issue to discuss relates to the use of police time in the enforcement of marijuana laws. If marijuana is legalised then valuable police time will be saved. First of all, supporting idea one blah blah blah blah blah. In addition, supporting idea two blah blah blah blah blah. Furthermore, supporting idea three blah blah blah blah blah. Finally, supporting idea four blah blah blah blah blah.</p>
     </div>
 
-    <ul>
+    <ul class="lh-15">
         <li>sentence 1: topic only (<i><b>saving police time)</b></i>, no opinion</li>
         <li>sentence 2: topic (<i><b>saving police time) </b></i>plus opinion (<i><b>valuable police time will be saved)</b></i></li>
     </ul>
