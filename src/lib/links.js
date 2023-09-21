@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Opinion in topic sentences",
+        href: "posts/topic-sentences",
+        keywords: ['writing','argument'],
+        description: "Demonstrating an alternative to topic sentences in argument body paragraphs."
+    },
+    {
         title: "Performance and Appearance",
         href: "posts/performance-appearance",
         keywords: ['vocabulary','countable uncountable','borrowed word'],

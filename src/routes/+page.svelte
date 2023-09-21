@@ -28,10 +28,10 @@
     </div>
     <div id="right_col">
         <div>
-            <Card title="Posts" icon="posts" path="./posts" text="Posts deal with the various academic and linguistic challenges faced by all international students preparing for IELTS and for both graduate and postgraduate study abroad." />
+            <Card title="Posts" icon="posts" path="./posts" text="Posts deal with the various academic and linguistic challenges faced by international students preparing for IELTS and study abroad." />
         </div>
         <div>
-            <Card title="Songs" icon="songs" path="./songs" text= "Often featuring student voices, songs -written and performed by GuruEAP - focus on language challenges faced by Indonesian IELTS candidates. Accompanyied by lyrics, and often video." />
+            <Card title="Songs" icon="songs" path="./songs" text= "Often featuring student voices, songs focus on language challenges faced by Indonesian IELTS candidates. Accompanyied by lyrics, and often video." />
         </div>
         <div>
             <Card title="IELTS" icon="ielts" path="./posts" text="General IELTS issues are already addressed in the posts section. A separate IELTS page is under construction and will feature skills-based practice activities." />
