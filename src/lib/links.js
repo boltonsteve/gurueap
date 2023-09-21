@@ -1,8 +1,14 @@
 export const links = [
     {
+        title: "The past of can",
+        href: "posts/past-of-can",
+        keywords: ['vocabulary','grammar','ability'],
+        description: "A minor collocation problem caused by first language interference. Same with instead of same as."
+    },
+    {
         title: "Same as or Same with?",
         href: "posts/same-as-with",
-        keywords: ['cocabulary','compare contrast','Bhs Indonesia interference'],
+        keywords: ['vocabulary','compare contrast','Bhs Indonesia interference'],
         description: "A minor collocation problem caused by first language interference. Same with instead of same as."
     },
     {
