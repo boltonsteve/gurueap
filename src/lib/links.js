@@ -1,5 +1,17 @@
 export const links = [
     {
+        title: "Performance and Appearance",
+        href: "posts/performance-appearance",
+        keywords: ['vocabulary','countable uncountable','borrowed word'],
+        description: "Demonstrating the differences in meaning between performance and appearance in their countable and uncountable forms."
+    },
+    {
+        title: "Production(s)",
+        href: "posts/production",
+        keywords: ['countable uncountable','vocabulary'],
+        description: "Examining the different meanings of procuction countable and production uncountable"
+    },
+    {
         title: "Some People",
         href: "songs/some-people",
         keywords: ['song','collocation','vocabulary','video'],

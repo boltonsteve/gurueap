@@ -52,6 +52,11 @@
 
 <style>
 
+    .card {
+        min-height: 230px;
+        
+    }
+
     img {
         -webkit-filter: drop-shadow(-5px 5px 5px #222);
         filter: drop-shadow(-5px 5px 5px #222); 
