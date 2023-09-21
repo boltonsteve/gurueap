@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Is it worth it?",
+        href: "posts/worth",
+        keywords: ['vocabulary'],
+        description: "Investigating the collocation and structural peculiarities of the word 'worth'."
+    },
+    {
         title: "The past of can",
         href: "posts/past-of-can",
         keywords: ['vocabulary','grammar','ability'],
