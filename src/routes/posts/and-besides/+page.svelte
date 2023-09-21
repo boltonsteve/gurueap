@@ -13,9 +13,8 @@
 
     <p>These are often used inaccurately as they don’t translate well from other languages.</p>
 
-    <h2>Besides</h2>
-
-    <p>Let’s use <em><b>besides</b></em> to modify the following argument:</p>
+    <h2 class="mb-0">Besides</h2>
+    <p class="mt-0">Let’s use <em><b>besides</b></em> to modify the following argument:</p>
 
     <p class="ml-3 font-italic"><em>I don’t think we should go to the cinema tonight. First of all I don’t like the film. Secondly, there is an unusual amount of traffic in town. Finally, we don’t have any money.</em></p>
 
@@ -37,9 +36,8 @@
 
     <p>In this case <i><b>besides</b></i> simply means <i><b>as well as</b></i>.</p>
 
-    <h2>And besides</h2>
-
-    <p>Here the meaning is a little different:</p>
+    <h2 class="mb-0">And besides</h2>
+    <p class="mt-0">Here the meaning is a little different:</p>
 
     <p class="ml-3 font-italic">I don’t think we should go to the cinema tonight. First of all I don’t like the film. Secondly, there is an unusual amount of traffic in town. <b>And besides</b>, we don’t have any money.</p>
 
