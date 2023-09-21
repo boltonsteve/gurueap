@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Same as or Same with?",
+        href: "posts/same-as-with",
+        keywords: ['cocabulary','compare contrast','Bhs Indonesia interference'],
+        description: "A minor collocation problem caused by first language interference. Same with instead of same as."
+    },
+    {
         title: "Task 2 Introductions - Sentence #1",
         href: "posts/task2-intro-1",
         keywords: ['writing','IELTS','Task 2'],
