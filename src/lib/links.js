@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "IELTS Speaking Recount",
+        href: "posts/recount",
+        keywords: ['speaking','IELTS','recount'],
+        description: "A common text genre in IELTS Speaking - Recount."
+    },
+    {
         title: "Lazy to read",
         href: "posts/lazy-to-read",
         keywords: ['reading','vocabulary','collocation'],

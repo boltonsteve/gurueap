@@ -8,22 +8,20 @@
     let oHtmlArr = [];
 
     let correct = "";
-    let oArr = options.split(',');
-    let answer = oArr[0];
+    let optionsArr = options.split(',');
 
-    shuffle(oArr);
+    let answer = optionsArr[0];
 
-    oArr.forEach( next => {
-        oHtmlArr.push(`<option value="${next}">${next}</option>`);
-    });
-    let oHtml = oHtmlArr.join('');
-    oHtml = oHtml + '<option value="select">select</option>';
+    shuffle(optionsArr);
 
 </script>
 
 <span>
     <sup class="font-weight-bold">{count}</sup><select id="A{count}" data="{answer}" class="ans">
-        {@html oHtml}
+        <option value="select">select</option>
+        {#each optionsArr as option}
+            <option value="{option}">{option}</option>;
+        {/each}
     </select>
 </span>
 
