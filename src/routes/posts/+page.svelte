@@ -18,11 +18,6 @@
     var uniqueKw = [...new Set(all_kw)]
     let keywords = uniqueKw.filter(e => e !== undefined).sort();
 
-    let kwOptionsArr = keywords.map( next => `<option value="${next}">${next}</option>` );
-    kwOptionsArr.push('<option id="select" value="select" selected>select category</option>')
-
-    let kwOptions = kwOptionsArr.join('');
-
     let refineTitle = '';
     let refineKeyword = '';
     let menu,inclKeyword;
@@ -87,7 +82,10 @@
     </div>
 
     <select id="refine_category" class="form-control" placeholder="search categories" on:input={handleKeywordInput}>
-        {@html kwOptions}
+        <option value="select">select keyword</option>
+        {#each keywords as keyword}
+            <option value="{keyword}">{keyword}</option>
+        {/each}
     </select>
 
 </div>

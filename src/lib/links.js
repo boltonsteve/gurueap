@@ -26,7 +26,7 @@ export const links = [
     {
         title: "Same as or Same with?",
         href: "posts/same-as-with",
-        keywords: ['vocabulary','compare contrast','Bhs Indonesia interference'],
+        keywords: ['vocabulary','compare contrast','Bhs Indonesia Interference'],
         description: "A minor collocation problem caused by first language interference. Same with instead of same as."
     },
     {
