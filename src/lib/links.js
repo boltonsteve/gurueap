@@ -1,9 +1,9 @@
 export const links = [
     {
-        title: "IELTS Speaking Recount",
-        href: "posts/recount",
-        keywords: ['speaking','IELTS','recount'],
-        description: "A common text genre in IELTS Speaking - Recount."
+        title: "Concerning 'concern'",
+        href: "posts/concern",
+        keywords: ['vocabulary','collocation'],
+        description: "Demonstrating various uses of 'concern', with and without 'about'."
     },
     {
         title: "Lazy to read",
