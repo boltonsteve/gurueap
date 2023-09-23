@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Ways that have to be done",
+        href: "posts/ways",
+        keywords: ['vocabulary','Bhs Indonesia Interference'],
+        description: "Discouraging the direct translation of the Indonesian 'cara' as 'way(s)'."
+    },
+    {
         title: "'Other' in Task 1",
         href: "posts/other",
         keywords: ['vocabulary','categorising','Task 1'],

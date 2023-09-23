@@ -1,5 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -13,7 +14,9 @@
 
     <div class="alert alert-danger font-italic">In Australia <span class="text-danger font-weight-bold">there are</span> many women receive the same salary as men.</div>
 
-    <p>A common mistake made by Indonesian native speakers is to include the 'introductory subject' <b><i>there is/there are</i></b> as well as another subject - next to each other before the verb in a sentence.</p>
+    <WithIcon icon="flag">
+        <div slot="html">A common mistake made by Indonesian native speakers is to include the 'introductory subject' <b><i>there is/there are</i></b> as well as another subject - next to each other before the verb in a sentence.</div>
+    </WithIcon>
 
     <p>This is ok in Bahasa Indonesia, but in English you must choose <b><i>either</i></b> this:</p>
 
@@ -25,6 +28,6 @@
 
     <p>Next time your head is telling you <b><i>ada..</i></b>, stop and ask yourself whether you really need to use <b><i>there is/there are</i></b>.</p>
 
-    <p>If you already have a subject, do not use <b><i>there is/there are</i></b>!</p>
+    <p>If you already have a subject, <span class="uli">do not use</span> <b><i>there is/there are</i></b>!</p>
 
 </div>
