@@ -1,5 +1,23 @@
 export const links = [
     {
+        title: "People and persons",
+        href: "posts/persons",
+        keywords: ['vocabulary','appropriacy'],
+        description: "Demonstrating the situational use of 'persons' and advocating for the use of 'people'."
+    },
+    {
+        title: "No comparison",
+        href: "posts/no-comparison",
+        keywords: ['grammar','compare contrast','Bhs Indonesia Interference'],
+        description: "Demonstrating incomplete comparisons in Indonesian IELTS candidate writing."
+    },
+    {
+        title: "Present continuous and scheduled events",
+        href: "posts/present-continuous-schedules",
+        keywords: ['grammar','tenses'],
+        description: "Demonstrating the use of present continuous tense for future events."
+    },
+    {
         title: "Concerning 'concern'",
         href: "posts/concern",
         keywords: ['vocabulary','collocation'],
