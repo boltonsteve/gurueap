@@ -17,17 +17,17 @@
 
     <div class="alert alert-danger font-italic">The government does not <span class="font-weight-bold text-danger">concern about</span> the crime rate in cities.</div>
 
-    <WithIcon icon="warning">
+    <WithIcon icon="warning" position="right">
         <div slot="html">Here <b><i>concern</i></b> is used in the form of a verb, but the preposition <b><i>about</i></b> does not belong with the verb.</div>
     </WithIcon>
     
 
     <h3>Concern - Adjective</h3>
-    <p>On the one hand you can (not) <b><i>be concerned</i></b> about nothing in particular:</p>
+    <p>You can (not) <b><i>be concerned</i></b> about <span class="uli">nothing in particular</span>:</p>
 
 <div class="alert alert-success font-italic">The government <span class="font-weight-bold text-success">is</span> not <span class="font-weight-bold text-success">concerned</span>.</div>
 
-<p>And on the other hand you can (not) <b><i>be concerned</i></b> about <span class="uli">a particular thing</span>:</p>
+<p>And you can (not) <b><i>be concerned</i></b> about <span class="uli">a particular thing</span>:</p>
 
 <div class="alert alert-success font-italic">The government <span class="font-weight-bold text-success">is</span> not <span class="font-weight-bold text-success">concerned about</span> <span class="uli">the crime rate in cities</span>.</div>
 
