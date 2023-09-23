@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "'Other' in Task 1",
+        href: "posts/other",
+        keywords: ['vocabulary','categorising','Task 1'],
+        description: "How to handle the category 'other' in IELTS Task 1 writing."
+    },
+    {
         title: "Audience(s)",
         href: "posts/audience",
         keywords: ['vocabulary'],
