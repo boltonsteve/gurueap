@@ -3,6 +3,11 @@
     import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
+<SvelteSeo
+title="No comparison",
+description="Demonstrating incomplete comparisons in Indonesian IELTS candidate writing."
+/> 
+
 <div class="mw-500 mb-3">
 
     <h1>No comparison</h1>

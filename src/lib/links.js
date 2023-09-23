@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Subjects in Task 1",
+        href: "posts/subjects-in-task1",
+        keywords: ['grammar','Task 1'],
+        description: "Highlighting common pitfalls when stating subjects in IELTS Task 1 essays."
+    },
+    {
         title: "People and persons",
         href: "posts/persons",
         keywords: ['vocabulary','appropriacy'],
