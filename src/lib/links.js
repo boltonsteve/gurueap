@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "When 's' is not enough",
+        href: "posts/s-iz",
+        keywords: ['grammar','pronunciation'],
+        description: "Words that need more than 's' in their plural and third person forms."
+    },
+    {
         title: "Subjects in Task 1",
         href: "posts/subjects-in-task1",
         keywords: ['grammar','Task 1'],
