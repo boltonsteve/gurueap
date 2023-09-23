@@ -5,6 +5,12 @@
     import Youtube from 'svelte-youtube-embed'
 </script>
 
+<SvelteSeo
+title="When 's' is not enough"
+description="Words that need more than 's' in their plural and third person forms."
+keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,grammar,pronunciation" 
+/> 
+
 <div class="mb-3 mw-500">
 
     <h1>When 's' is not enough</h1>

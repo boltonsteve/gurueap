@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Audience(s)",
+        href: "posts/audience",
+        keywords: ['vocabulary'],
+        description: "Contrasting the use of audience, singular, and audience, plural."
+    },
+    {
         title: "When 's' is not enough",
         href: "posts/s-iz",
         keywords: ['grammar','pronunciation'],
