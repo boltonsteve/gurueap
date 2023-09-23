@@ -6,17 +6,25 @@
     let images = ['/img/persons1.jpg','/img/persons2.jpg','/img/persons5.jpg','/img/persons6.png','/img/persons9.jpg','/img/persons11.jpg','/img/persons12.jpg'];
 </script>
 
+<SvelteSeo
+title="People and persons"
+    description="Demonstrating the situational use of 'persons' and advocating for the use of 'people'."
+    keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary,appropriacy"
+/> 
+
 <div class="mw-500 mb-3">
 
     <h1>People or Persons</h1>
 
     <div class="alert alert-danger font-italic">The event was extremely successful. It was attended by more than a thousand <span class="font-weight-bold text-danger">persons</span>.</div>
 
-    <p>The only time I ever use this word ('persons') is in the classroom. Outside the classroom - 99.9% of the time - the plural of <b><i>person</i></b> is <b><i>people</i></b>:</p>
+    <WithIcon icon="warning" position="right">
+        <div slot="html">The only time I ever use this word ('persons') is in the classroom. Outside the classroom - 99.9% of the time - the plural of <b><i>person</i></b> is <b><i>people</i></b>:</div>
+    </WithIcon>
 
     <div class="alert alert-success font-italic">The event was extremely successful. It was attended by more than a thousand <span class="font-weight-bold text-success">people</span>.</div>
 
-    <p>Only use 'persons' in extremely formal, especially legal situations:</p>
+    <p>Only use <b><i>persons</i></b> in extremely formal, especially legal situations:</p>
 
     <Carousel
   let:loaded
