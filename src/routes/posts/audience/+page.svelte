@@ -1,8 +1,13 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { flagIndo } from '$lib/flags.js'
     import WithIcon from '../../components/WithIcon.svelte'
 </script>
+
+<SvelteSeo
+    title="Audience(s)"
+    description="Contrasting the use of audience, singular, and audience, plural."
+    keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary" 
+/> 
 
 <div class="mb-3 mw-500">
 
