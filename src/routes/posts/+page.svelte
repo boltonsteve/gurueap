@@ -3,6 +3,7 @@
     import SvelteSeo from "svelte-seo";
     import { links } from '$lib/links.js';
     import { Film, MusicNoteBeamed } from "svelte-bootstrap-icons";
+    import { flagIndo } from '$lib/flags.js';
 
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
@@ -70,8 +71,8 @@
 </script>
 
 <SvelteSeo
-  title="GuruEAP - Posts"
-  description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - all of which aim to help students preparing for IELTS and for study abroad."
+    title="GuruEAP - Posts"
+    description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - all of which aim to help students preparing for IELTS and for study abroad."
 />
 
 <div class="mb-2 mw-500 wrapper">
@@ -98,6 +99,11 @@
             {/if}
             {#if card.keywords.includes('song')}
                 <div class="badge badge-song"><MusicNoteBeamed /></div>
+            {/if}
+            {#if card.keywords.includes('Bhs Indonesia Interference')}
+                <div class="badge badge-indo">
+                    <img src="/img/indo-round.png" class="img-fluid" alt="Indonesian Flag - Round">
+                </div>
             {/if}
             {card.title}
         </a>
@@ -203,14 +209,24 @@ select {
 .badge-video {
     background:var(--green);
     color:var(--light);
-    right:-10px;
+    left:-10px;
     top:-10px;
 }
 
 .badge-song {
     background:var(--blue);
     color:var(--light);
-    left:-10px;
+    right:-10px;
+    bottom:-10px;
+}
+
+.badge-indo {
+    /* display: flex; */
+    /* flex-direction:vertical; */
+    background:var(--light);
+    border:1px solid var(--teal);
+    right:-10px;
     top:-10px;
 }
+
 </style>
