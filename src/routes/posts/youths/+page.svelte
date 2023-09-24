@@ -19,9 +19,8 @@
 
     <p>The countable noun <b>youth </b>tends to have negative connotations, especially when it's plural:</p>
 
-    <ul class="lh-15 font-italic">
-        <li><b>Youths</b> at football matches often cause trouble.</li>
-    </ul>
+    
+    <div class="alert alert-success font-italic"><span class="font-weight-bold text-success">Youths</span> at football matches often cause trouble.</div>
 
     <p><b>Youths</b> are troublemakers, at that awkward age between childhood and adulthood when they rebel against authority and indulge in sex, drugs and rock and roll, often with negative consequences.</p>
 
@@ -29,9 +28,8 @@
 
     <p>The lexical phrase <b>the youth of today</b> is also usually negative:</p>
 
-    <ul class="lh-15 font-italic">
-        <li><b>The youth of today</b> have no respect for others.</li>
-    </ul>
+    
+    <div class="alert alert-success font-italic"><span class="font-weight-bold text-success">The youth of today</span> have no respect for others.</div>
 
     <hr>
 
