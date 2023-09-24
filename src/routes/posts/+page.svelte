@@ -2,8 +2,7 @@
 
     import SvelteSeo from "svelte-seo";
     import { links } from '$lib/links.js';
-    import { Film, MusicNoteBeamed } from "svelte-bootstrap-icons";
-    import { flagIndo } from '$lib/flags.js';
+    import { Film, MusicNoteBeamed, CircleHalf } from "svelte-bootstrap-icons";
 
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
@@ -101,9 +100,7 @@
                 <div class="badge badge-song"><MusicNoteBeamed /></div>
             {/if}
             {#if card.keywords.includes('Bhs Indonesia Interference')}
-                <div class="badge badge-indo">
-                    <img src="/img/indo-round.png" class="img-fluid" alt="Indonesian Flag - Round">
-                </div>
+                <div class="badge badge-indo"><CircleHalf /></div>
             {/if}
             {card.title}
         </a>
@@ -114,7 +111,6 @@
 
 select {
     height:30px;
-    /* border-radius: 5px; */
 }
 
 .wrapper {
@@ -223,9 +219,9 @@ select {
 }
 
 .badge-indo {
-    /* display: flex; */
-    /* flex-direction:vertical; */
     background:var(--light);
+    color:red;
+    transform: rotate(90deg);
     border:1px solid var(--teal);
     right:-10px;
     top:-10px;
