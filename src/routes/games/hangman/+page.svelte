@@ -155,7 +155,7 @@
         margin-top:20px;
         margin-bottom:20px;
         display:flex;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .letters {

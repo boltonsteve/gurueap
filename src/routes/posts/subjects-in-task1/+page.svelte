@@ -39,7 +39,9 @@
 
     <p>Actually in this example repetition can be avoided:</p>
 
-    <div class="alert alert-success font-italic"><span class="uli">The divorce rate in America</span> rose steadily, while <span class="uli">that in Indonesia</span> fell dramatically.</div>
+    <div class="alert alert-success font-italic mb-2"><span class="uli">The divorce rate in America</span> rose steadily, while <span class="uli">that in Indonesia</span> fell dramatically.</div>
+
+    <img src="/img/fall_down_subject.jpg" class="img-fluid border" alt="fall down Indonesians">
 
     <p class="small">* Many thanks to Diro, Nando and Ari for the 'falling Indonesians' photo - You guys rock! :)</p>
 

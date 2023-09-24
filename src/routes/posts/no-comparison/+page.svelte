@@ -21,12 +21,12 @@ description="Demonstrating incomplete comparisons in Indonesian IELTS candidate 
     <p class="mt-0">Non-Indonesian readers will begin to ask themselves:</p>
 
     <ul class="lh-15">
+        <li>What is he comparing?!</li>
         <li>Is he comparing Asians with some other group of people?</li>
         <li class="lst-none">Which people?</li>
         <li>Is he comparing difficulty in intercultural communication with some other kind of difficulty?</li>
         <li class="lst-none">Which kind?</li>
         <li>Is he comparing Asians and intercutural communication today with Asians and intercultural communication in the past?</li>
-        <li>What is he comparing?!</li>
     </ul>
 
     <p>If you're an Indonesian translating <b><i>kurang</i></b> then you're probably not comparing anything. You're simply saying:</p>
