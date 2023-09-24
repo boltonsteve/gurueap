@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Nouns modifying nouns",
+        href: "posts/nouns-modifying-nouns",
+        keywords: ['nouns','grammar','nominalisation'],
+        description: "Showing that countable nouns that modify other nouns are always singular."
+    },
+    {
         title: "Opinion in Task 2 Introductions",
         href: "posts/opinion-task2-introductions",
         keywords: ['writing','Task 2','opinion','argument'],
