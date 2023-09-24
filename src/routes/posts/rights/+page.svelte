@@ -11,6 +11,8 @@ description="Demonstrating the right way to write about 'rights'."
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/freadom.png" class="img-fluid rounded" alt="Freadom">
+
     <h1>Writing 'rights' right!</h1>
 
     <div class="alert alert-danger font-italic">The principle of the social services is that people <span class="font-weight-bold text-danger">have rights to</span> live happily and without discrimination.</div>
