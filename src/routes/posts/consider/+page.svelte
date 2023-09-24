@@ -1,16 +1,27 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import {flagIndo} from '$lib/flags.js'
+    import WithIcon from '../../components/WithIcon.svelte'  
 </script>
 
 <div class="mb-3 mw-500">
 
-    <blockquote>:( First of all it is necessary to <em><strong>consider</strong></em> about unemployment. Unemployment is <em><strong>considered</strong></em> as a serious problem.</blockquote>
-<img class="alignnone size-full wp-image-1433" src="http://localhost/gurueap/wp-content/uploads/2016/04/flag-of-indonesia-e1459490538411.png" alt="flag-of-indonesia" width="25" height="17" /> This one is a quickie for Indonesians who feel a strong urge to insert 'tentang' after <em><strong>consider </strong></em>and 'sebagai' after the passive <em><strong>considered.</strong></em>
-<p style="padding-left:30px;">:) First of all it is necessary to <em><strong>consider</strong></em> unemployment.</p>
-<p style="padding-left:30px;">:) Unemployment is <em><strong>considered</strong></em> (to be) a serious problem.</p>
-Next time you use <em><strong>consider/considered, consider</strong></em> <span style="text-decoration:underline;">not</span> using 'tentang'/'sebagai'!
+    <img src="/img/consider.jpg" class="img-fluid rounded" alt="consider">
 
-<a href="http://twitter.com/eapguru" target="_blank" rel="noopener">@eapguru</a>
+    <h1>Considering 'consider'</h1>
+
+    <div class="alert alert-danger font-italic">First of all it is necessary to <span class="font-weight-bold text-danger">consider about</span> unemployment. Unemployment is considered as a serious problem.</div>
+
+    <WithIcon icon="flag">
+        <div slot="html">This one is a quickie for Indonesians who feel a strong urge to insert <b><i>tentang</i></b> after <b><i>consider</i></b> and <b><i>sebagai</i></b> after the passive <b><i>considered</i></b>.</div>
+    </WithIcon>
+
+    <div class="alert alert-success font-italic">
+        <p class="mt-0">First of all <span class="font-weight-bold text-success">it is necessary to consider</span> unemployment.</p>
+        <p class="mb-0">Unemployment <span class="font-weight-bold text-success">is considered (to be)</span> a serious problem.</p>
+    </div>
+
+    <WithIcon icon="flag">
+        <div slot="html">Next time you use <b><i>consider/considered</i></b>, consider <span class="uli">not using</span> <b><i>tentang/sebagai!</i></b></div>
+    </WithIcon>
 
 </div>

@@ -68,14 +68,12 @@
 
     .item-left {
         display:grid;
-        /* grid-template-columns: 1fr 70px; */
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 3fr 1fr;
     }
 
     .item-right {
         display:grid;
-        /* grid-template-columns: 70px 1fr; */
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 3fr;
     }
 
     #icon {

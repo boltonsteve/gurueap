@@ -1,12 +1,12 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import {flagIndo} from '$lib/flags.js'
     import WithIcon from '../../components/WithIcon.svelte'  
 </script>
 
 <SvelteSeo
 title="Writing 'rights' right!"
 description="Demonstrating the right way to write about 'rights'."
+keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary,collocation" 
 /> 
 
 <div class="mb-3 mw-500">

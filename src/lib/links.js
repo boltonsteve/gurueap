@@ -7,15 +7,15 @@ export const links = [
     },
     {
         title: "Considering 'consider'",
-        href: "posts/yin-yang",
-        keywords: ['nominalisation','Bhs Indonesia Interference'],
-        description: "Advising Indonesian candidates to avoid relative clauses as a means to postmodify a noun, and thereby avoid error."
+        href: "posts/consider",
+        keywords: ['vocabulary','collocation'],
+        description: "Considering the correct ways to use 'consider'."
     },
     {
         title: "Budget",
-        href: "posts/yin-yang",
-        keywords: ['nominalisation','Bhs Indonesia Interference'],
-        description: "Advising Indonesian candidates to avoid relative clauses as a means to postmodify a noun, and thereby avoid error."
+        href: "posts/budget",
+        keywords: ['vocabulary','borrowed word'],
+        description: "Showing that 'budget' is not always something to be 'spent'."
     },
     {
         title: "Nominalisation Yin and 'Yang'",
