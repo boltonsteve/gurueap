@@ -39,24 +39,24 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 Try reading the following sentences aloud!
 
 <ul class="lh-15">
-	<li>Bosses sit in offices filling pages with percentages.</li>
-	<li>Boxes, faxes and packages are all sent by businesses.</li>
-	<li>Nurses apply bandages and cure viruses.</li>
-	<li>Sausages and sauces stay fresh in fridges.</li>
-	<li>Witches make sandwiches from leeches and eyelashes.</li>
-	<li>An artist mixes paint and brushes it onto canvases.</li>
-	<li>Oranges grow on branches in the gardens of cottages.</li>
-	<li>Men who repair watches wear glasses with thick lenses.</li>
-	<li>People enter races to win prizes.</li>
-	<li>Foxes hide in bushes to avoid surprises.</li>
-	<li>People of both sexes sunbathe on beaches.</li>
-	<li>Birds in cages face disadvantages.</li>
-	<li>Noses of all shapes and sizes detect gases emerging from ashes.</li>
-	<li>When he’s away, he misses her kisses.</li>
-	<li>Students in colleges follow classes in the sciences. They write sentences using tenses in different languages.</li>
-	<li>People buy cars from garages, then drive inches from the edges of bridges.</li>
-	<li>Musicians of all ages appear on stages.</li>
-	<li>My friend washes dishes to earn wages and pay taxes.</li>
+	<li>Boss<b><i>es</i></b> sit in offic<b><i>es</i></b> filling pag<b><i>es</i></b> with percentag<b><i>es</i></b>.</li>
+	<li>Box<b><i>es</i></b>, fax<b><i>es</i></b> and packag<b><i>es</i></b> are all sent by business<b><i>es</i></b>.</li>
+	<li>Nurs<b><i>es</i></b> apply bandag<b><i>es</i></b> and cure virus<b><i>es</i></b>.</li>
+	<li>Sausag<b><i>es</i></b> and sauc<b><i>es</i></b> stay fresh in fridg<b><i>es</i></b>.</li>
+	<li>Witch<b><i>es</i></b> make sandwich<b><i>es</i></b> from leech<b><i>es</i></b> and eyelash<b><i>es</i></b>.</li>
+	<li>An artist mix<b><i>es</i></b> paint and brush<b><i>es</i></b> it onto canvas<b><i>es</i></b>.</li>
+	<li>Orang<b><i>es</i></b> grow on branch<b><i>es</i></b> in the gardens of cottag<b><i>es</i></b>.</li>
+	<li>Men who repair watch<b><i>es</i></b> wear glass<b><i>es</i></b> with thick lens<b><i>es</i></b>.</li>
+	<li>People enter rac<b><i>es</i></b> to win priz<b><i>es</i></b>.</li>
+	<li>Fox<b><i>es</i></b> hide in bush<b><i>es</i></b> to avoid surpris<b><i>es</i></b>.</li>
+	<li>People of both sex<b><i>es</i></b> sunbathe on beach<b><i>es</i></b>.</li>
+	<li>Birds in cag<b><i>es</i></b> face disadvantag<b><i>es</i></b>.</li>
+	<li>Nos<b><i>es</i></b> of all shapes and siz<b><i>es</i></b> detect gas<b><i>es</i></b> emerging from ash<b><i>es</i></b>.</li>
+	<li>When he’s away, he miss<b><i>es</i></b> her kiss<b><i>es</i></b>.</li>
+	<li>Students in colleg<b><i>es</i></b> follow class<b><i>es</i></b> in the scienc<b><i>es</i></b>. They write sentenc<b><i>es</i></b> using tens<b><i>es</i></b> in different languag<b><i>es</i></b>.</li>
+	<li>People buy cars from garag<b><i>es</i></b>, then drive inch<b><i>es</i></b> from the edg<b><i>es</i></b> of bridg<b><i>es</i></b>.</li>
+	<li>Musicians of all ag<b><i>es</i></b> appear on stag<b><i>es</i></b>.</li>
+	<li>My friend wash<b><i>es</i></b> dish<b><i>es</i></b> to earn wag<b><i>es</i></b> and pay tax<b><i>es</i></b>.</li>
 </ul>
 
 <p>Below is a recording of these statements made by a native English speaker.</p>

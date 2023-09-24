@@ -77,17 +77,17 @@
 
 <div class="alert alert-success mb-2">
     <p class="font-italic my-0">40% of people living with HIV <span class="font-weight-bold text-success">are at risk of</span> developing tuberculosis.</p>
-<p class="mb-0 mt-1 small font-weight-bold">subject + to be + at risk of + of bad thing</p>
+<p class="mb-0 mt-1 font-weight-bold">subject + to be + at risk of + of bad thing</p>
 </div>
 
 <div class="alert alert-success mb-2">
     <p class="font-italic my-0">A weak immune system can make it easier to contract tuberculosis, and people living with HIV <span class="font-weight-bold text-success">are</span> <b><i>particularly</i></b> <span class="font-weight-bold text-success">at risk</span>.</p>
-<p class="mb-0 mt-1 small font-weight-bold">clause mentioning the bad thing + people who might experience the bad thing + to be + (adverb) + at risk</p>
+<p class="mb-0 mt-1 font-weight-bold">clause mentioning the bad thing + people who might experience the bad thing + to be + (adverb) + at risk</p>
 </div>
 
 <div class="alert alert-success">
     <p class="font-italic my-0">40% of people living with HIV <span class="font-weight-bold text-success">risk</span> <b><i>develop</i></b><span class="font-weight-bold text-success">ing</span> tuberculosis.</p>
-<p class="mb-0 mt-1 small font-weight-bold">people who might experience the bad thing + risk + name of bad thing</p>
+<p class="mb-0 mt-1 font-weight-bold">people who might experience the bad thing + risk + name of bad thing</p>
 </div>
 
 <h3 class="mb-0">Risk - noun</h3>
@@ -95,15 +95,15 @@
 
 <div class="alert alert-success mb-2">
     <p class="font-italic my-0">People who have unprotected sex are taking a risk.</p>
-    <p class="small font-weight-bold mb-0 mt-1">subject + take + a risk/risks</p>
-    <p class="small mb-0">Notice the <a href="../posts/collocation">collocation</a>: <b><i>take a risk!</i></b></p>
+    <p class="font-weight-bold mb-0 mt-1">subject + take + a risk/risks</p>
+    <p class="mb-0">Notice the <a href="../posts/collocation">collocation</a>: <b><i>take a risk!</i></b></p>
 </div>
 
 <p>Risk as noun is also often used as a noun modifier:</p>
 
 <div class="alert alert-success">
     <p class="font-italic my-0">Unprotected sex is a high risk activity.</p>
-    <p class="small font-weight-bold mb-0 mt-1">subject + to be + a + high risk + noun</p>
+    <p class="font-weight-bold mb-0 mt-1">subject + to be + a + high risk + noun</p>
 </div>
 
 <h3 class="mb-0">Risky - adjective</h3>
@@ -111,7 +111,7 @@
 
 <div class="alert alert-success">
     <p class="font-italic my-0">Unprotected sex is risky.</p>
-    <p class="small mb-0 mt-1 font-weight-bold">subject + to be + risky</p>
+    <p class="mb-0 mt-1 font-weight-bold">subject + to be + risky</p>
 </div>
 
 
