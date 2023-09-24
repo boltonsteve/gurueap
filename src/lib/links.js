@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Opinion in Task 2 Introductions",
+        href: "posts/opinion-task2-introductions",
+        keywords: ['writing','Task 2','opinion','argument'],
+        description: "How and where to state your opinion in IELTS Task 2 Introductions."
+    },
+    {
         title: "Ways that have to be done",
         href: "posts/ways",
         keywords: ['vocabulary','Bhs Indonesia Interference'],
