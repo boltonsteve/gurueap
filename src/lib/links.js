@@ -1,5 +1,23 @@
 export const links = [
     {
+        title: "Rights",
+        href: "posts/rights",
+        keywords: ['vocabulary','collocation'],
+        description: "Demonstrating the right way to write about 'rights'."
+    },
+    {
+        title: "Considering 'consider'",
+        href: "posts/yin-yang",
+        keywords: ['nominalisation','Bhs Indonesia Interference'],
+        description: "Advising Indonesian candidates to avoid relative clauses as a means to postmodify a noun, and thereby avoid error."
+    },
+    {
+        title: "Budget",
+        href: "posts/yin-yang",
+        keywords: ['nominalisation','Bhs Indonesia Interference'],
+        description: "Advising Indonesian candidates to avoid relative clauses as a means to postmodify a noun, and thereby avoid error."
+    },
+    {
         title: "Nominalisation Yin and 'Yang'",
         href: "posts/yin-yang",
         keywords: ['nominalisation','Bhs Indonesia Interference'],
