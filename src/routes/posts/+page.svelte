@@ -209,6 +209,7 @@ select {
 .badge-video {
     background:var(--green);
     color:var(--light);
+    border:1px solid var(--teal);
     left:-10px;
     top:-10px;
 }
@@ -216,6 +217,7 @@ select {
 .badge-song {
     background:var(--blue);
     color:var(--light);
+    border:1px solid var(--teal);
     right:-10px;
     bottom:-10px;
 }
