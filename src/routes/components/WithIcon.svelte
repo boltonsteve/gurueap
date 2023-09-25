@@ -1,6 +1,6 @@
 <script>
     import { flagIndo, flagUk } from '$lib/flags.js';
-    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle } from "svelte-bootstrap-icons";
+    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle, CircleHalf } from "svelte-bootstrap-icons";
     export let html = '';
     export let icon = 'cone';
     export let flag = 'indo';

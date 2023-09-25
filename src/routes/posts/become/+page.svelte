@@ -17,7 +17,7 @@
 
     <p>This is the influence of Bahasa Indonesia. In English 'become' is always used to describe a change, rather than a constant:</p>
 
-    <ul class="font-italic lh-15">
+    <ul class="font-italic lh-15 lst-none alert alert-success">
         <li>People <span class="font-weight-bold text-success">become</span> sleepy when they drink a lot of beer.</li>
         <li>Most knives <span class="font-weight-bold text-success">become</span> dull after a while and need to be sharpened.</li>
         <li>When there's a problem, Clark Kent <span class="font-weight-bold text-success">becomes</span> Superman.</li>

@@ -179,6 +179,12 @@ ul.lh-15 li, ol.lh-15 li {
     margin-bottom: 5px;
 }
 
+ul.lh-2 li, ol.lh-2 li {
+    /* line-height: 1.5em; */
+    margin-bottom: 15px;
+}
+
+
 ul.links {
     list-style-type:none;
     line-height:2em;

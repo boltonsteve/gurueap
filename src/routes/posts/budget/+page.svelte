@@ -35,8 +35,8 @@
 
     <ul class="lh-15">
         <li><i><b>budget</b></i> is a singular countable noun</li>
-        <li>'large' collocates with <i><b>budget</b></i></li>
-        <li>'item(s)' collocates with <i><b>budget </b></i>(don't forget the preposition 'on')</li>
+        <li><b><i>large</i></b> collocates with <i><b>budget</b></i></li>
+        <li><b><i>item(s)</i></b> collocates with <i><b>budget </b></i>(don't forget the preposition <b><i>on</i></b>)</li>
         <li>as a singular countable noun, <i><b>budget</b></i> requires some kind of determiner (article, possessive, etc.)</li>
     </ul>
 

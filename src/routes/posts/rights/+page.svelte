@@ -22,7 +22,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
     <div class="alert alert-success font-italic">The principle of the social services is that people <span class="font-weight-bold text-success">have the right to</span> live happily and without discrimination.</div>
 
     <WithIcon icon="flag" position="right">
-        <div slot="html">You can think of it as a phrasal verb (Indonesians will be translating berhak untuk..). Sometimes it's have the right to + V1. Sometimes have a right to + V1.</div>
+        <div slot="html">You can think of it as a phrasal verb (Indonesians will be translating <b><i>berhak untuk</i></b>..). Sometimes it's <b><i>have the right to + V1</i></b>, and sometimes <b><i>have a right to + V1</i></b>.</div>
     </WithIcon>
 
     <p>To see the relative frequency of <b><i>have the right to</i></b> and <b><i>have rights to</i></b>, we can consult Google NGRAM viewer:</p>
