@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "'Like with like' in Task 1",
+        href: "posts/like-with-like",
+        keywords: ['grammar','parallelism','compare contrast','Task 1'],
+        description: "Demonstrating the importance of - and how to - compare like with like in IELTS Task 1 writing."
+    },
+    {
         title: "Missing nouns",
         href: "posts/missing-nouns",
         keywords: ['grammar','Bahasa Indonesia','borrowed word'],
