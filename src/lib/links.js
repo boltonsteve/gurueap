@@ -3,7 +3,7 @@ export const links = [
         title: "Spend, spend, spend!",
         href: "posts/spend",
         keywords: ['vocabulary','collocation'],
-        description: "Collocation with 'spend' as it refers to money"
+        description: "Collocation with 'spend' as it refers to time and money"
     },
     {
         title: "Rights",
@@ -26,7 +26,7 @@ export const links = [
     {
         title: "Nominalisation Yin and 'Yang'",
         href: "posts/yin-yang",
-        keywords: ['nominalisation','Bhs Indonesia Interference'],
+        keywords: ['nominalisation','Bahasa Indonesia'],
         description: "Advising Indonesian candidates to avoid relative clauses as a means to postmodify a noun, and thereby avoid error."
     },
     {
@@ -50,7 +50,7 @@ export const links = [
     {
         title: "Ways that have to be done",
         href: "posts/ways",
-        keywords: ['vocabulary','Bhs Indonesia Interference'],
+        keywords: ['vocabulary','Bahasa Indonesia'],
         description: "Discouraging the direct translation of the Indonesian 'cara' as 'way(s)'."
     },
     {
@@ -74,7 +74,7 @@ export const links = [
     {
         title: "Subjects in Task 1",
         href: "posts/subjects-in-task1",
-        keywords: ['grammar','Task 1'],
+        keywords: ['grammar','Task 1','coherence and cohesion'],
         description: "Highlighting common pitfalls when stating subjects in IELTS Task 1 essays."
     },
     {
@@ -86,13 +86,13 @@ export const links = [
     {
         title: "No comparison",
         href: "posts/no-comparison",
-        keywords: ['grammar','compare contrast','Bhs Indonesia Interference'],
+        keywords: ['grammar','compare contrast','Bahasa Indonesia'],
         description: "Demonstrating incomplete comparisons in Indonesian IELTS candidate writing."
     },
     {
         title: "Present continuous and scheduled events",
         href: "posts/present-continuous-schedules",
-        keywords: ['grammar','tenses'],
+        keywords: ['grammar','tenses','future'],
         description: "Demonstrating the use of present continuous tense for future events."
     },
     {
@@ -104,7 +104,7 @@ export const links = [
     {
         title: "Lazy to read",
         href: "posts/lazy-to-read",
-        keywords: ['reading','vocabulary','collocation'],
+        keywords: ['reading','vocabulary','collocation','Bahasa Indonesia'],
         description: "A favourite phrase of Indonesian students. Here we look at the English - I can't be bothered!"
     },
     {
@@ -122,7 +122,7 @@ export const links = [
     {
         title: "Same as or Same with?",
         href: "posts/same-as-with",
-        keywords: ['vocabulary','compare contrast','Bhs Indonesia Interference'],
+        keywords: ['vocabulary','compare contrast','Bahasa Indonesia'],
         description: "A minor collocation problem caused by first language interference. Same with instead of same as."
     },
     {
@@ -140,7 +140,7 @@ export const links = [
     {
         title: "Performance and Appearance",
         href: "posts/performance-appearance",
-        keywords: ['vocabulary','countable uncountable','borrowed word'],
+        keywords: ['vocabulary','countable uncountable','Bahasa Indonesia','borrowed word'],
         description: "Demonstrating the differences in meaning between performance and appearance in their countable and uncountable forms."
     },
     {
@@ -170,7 +170,7 @@ export const links = [
     {
         title: "The Impact Song",
         href: "songs/impact-song",
-        keywords: ['song','collocation','vocabulary','video'],
+        keywords: ['song','collocation','vocabulary','video','Bahasa Indonesia'],
         description: "Collocation when using the word 'impact'."
     },
     {
@@ -212,92 +212,92 @@ export const links = [
     {
         title: "In terms of",
         href: "posts/in-terms-of",
-        keywords: ['vocabulary','signals','CC','argument','Task 1','Task 2','changes over time']
+        keywords: ['vocabulary','signals','coherence and cohesion','argument','Task 1','Task 2','changes over time']
     },
     {
         title: "The blah blah sector",
         href: "posts/sector",
-        keywords: ['vocabulary','Bhs Indonesia Interference','LR','grammar','articles']
+        keywords: ['vocabulary','Bahasa Indonesia','grammar','articles']
     },
     {
         title: "Labouring over 'labourers'",
         href: "posts/labour",
-        keywords: ['vocabulary','Bhs Indonesia Interference','LR']
+        keywords: ['vocabulary','Bahasa Indonesia']
     },
     {
         title: "When 'existence' should not exist",
         href: "posts/existence",
-        keywords: ['vocabulary','Bhs Indonesia Interference','LR']
+        keywords: ['vocabulary','Bahasa Indonesia']
     },
     {
         title: "Competition(s)",
         href: "posts/competition",
-        keywords: ['vocabulary','countable uncountable','LR']
+        keywords: ['vocabulary','countable uncountable']
     },
     {
         title: "Idiom flipcards",
         href: "posts/idiom-flipcards",
-        keywords: ['vocabulary','idioms','LR']
+        keywords: ['vocabulary','idioms']
     },
     {
         title: "Crime or Crimes",
         href: "posts/crime-s",
-        keywords: ['vocabulary','LR']
+        keywords: ['vocabulary']
     },
     {
         title: "How often in IELTS Speaking",
         href: "posts/how-often",
-        keywords: ['speaking','grammar','GRA','IELTS']
+        keywords: ['speaking','grammar','IELTS']
     },
     {
         title: "Have you used present perfect recently?",
         href: "posts/present-perfect",
-        keywords: ['grammar','GRA','present perfect tense','tenses']
+        keywords: ['grammar','present perfect tense','tenses']
     },
     {
         title: "Being economical with the economy",
         href: "posts/economy",
-        keywords: ['vocabulary','collocation','LR']
+        keywords: ['vocabulary','collocation','borrowed word']
     },
     {
         title: "Easy can be difficult",
         href: "posts/easy-difficult",
-        keywords: ['vocabulary','collocation','LR']
+        keywords: ['vocabulary','collocation','Bahasa Indonesia']
     },
     {
         title: "When usually is unusual",
         href: "posts/usually",
-        keywords: ['grammar','tenses','GRA','appropriacy']
+        keywords: ['grammar','tenses','appropriacy','Bahasa Indonesia']
     },
     {
         title: "Every time / All the time",
         href: "posts/every-time",
-        keywords: ['vocabulary','collocation','LR']
+        keywords: ['vocabulary','collocation','Bahasa Indonesia']
     },
     {
         title: "Use or Wear",
         href: "posts/use-wear",
-        keywords: ['vocabulary','collocation','LR']
+        keywords: ['vocabulary','collocation','Bahasa Indonesia']
     },
     {
         title: "Articles - General rules",
         href: "posts/article-s",
-        keywords: ['grammar','articles','GRA','s']
+        keywords: ['grammar','articles','s']
     },
     {
         title: "Using fillers to avoid hesitation",
         href: "posts/hesitation",
-        keywords: ['speaking','fillers','hesitation','FC']
+        keywords: ['speaking','fillers','hesitation','fluency']
     },
     {
         title: "Supergroups and Percentages in IELTS Task 1",
         href: "posts/supergroup",
-        keywords: ['Task 1','percentages','TA','CC','IELTS']
+        keywords: ['Task 1','percentages','coherence and cohesion','IELTS']
     },
     {
         title: "Memorising and remembering memories",
         href: "posts/memorise-remember",
-        keywords: ['vocabulary','collocation']
+        keywords: ['vocabulary','collocation','Bahasa Indonesia']
     },
     {
         title: "Making people able with 'enable'",
@@ -307,22 +307,22 @@ export const links = [
     {
         title: "When 'enough' is too much",
         href: "posts/enough",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','Bahasa Indonesia']
     },
     {
         title: "Less common vocabulary",
         href: "posts/less-common",
-        keywords: ['vocabulary','LR','frequency']
+        keywords: ['vocabulary','frequency']
     },
     {
         title: "Idiomatic language",
         href: "posts/idioms",
-        keywords: ['vocabulary','LR','idioms']
+        keywords: ['vocabulary','idioms']
     },
     {
         title: "People's lives",
         href: "posts/life",
-        keywords: ['vocabulary','Bhs Indonesia Interference','appropriacy']
+        keywords: ['vocabulary','Bahasa Indonesia','appropriacy']
     },
     {
         title: "Despite",
@@ -332,22 +332,22 @@ export const links = [
     {
         title: "Collocation",
         href: "posts/collocation",
-        keywords: ['IELTS','criteria','LR','collocation','vocabulary']
+        keywords: ['IELTS','criteria','vocabulary','collocation','vocabulary']
     },
     {
         title: "Coherence and Cohesion (CC)",
         href: "posts/coherence-cohesion",
-        keywords: ['vocabulary','coherence and cohesion','CC']
+        keywords: ['vocabulary','coherence and cohesion']
     },
     {
         title: "Convenient",
         href: "posts/convenient",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','Bahasa Indonesia']
     },
     {
         title: "Ask (for)",
         href: "posts/ask-for",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','Bahasa Indonesia']
     },
     {
         title: "Add 's' by George",
@@ -362,7 +362,7 @@ export const links = [
     {
         title: "Know (of)",
         href: "posts/know-of",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','Bahasa Indonesia']
     },
     {
         title: "Beware of Past Perfect",
@@ -372,7 +372,7 @@ export const links = [
     {
         title: "The price is NOT expensive",
         href: "posts/price",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','Bahasa Indonesia']
     },
     {
         title: "Government",
@@ -387,12 +387,12 @@ export const links = [
     {
         title: "Content(s)",
         href: "posts/content",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','borrowed word']
     },
     {
         title: "One of",
         href: "posts/one-of",
-        keywords: ['grammar','quantifiers']
+        keywords: ['grammar','quantifiers','Bahasa Indonesia']
     },
     {
         title: "Present tenses explained",
@@ -423,12 +423,12 @@ export const links = [
     {
         title: "Research(es)",
         href: "posts/research",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','borrowed word']
     },
     {
         title: "You are NOT a staff!",
         href: "posts/staff",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','borrowed word']
     },
     {
         title: "Some",
@@ -448,7 +448,7 @@ export const links = [
     {
         title: "Make",
         href: "posts/make",
-        keywords: ['grammar','collocation']
+        keywords: ['grammar','collocation','Bahasa Indonesia']
     },
     {
         title: "Parallel Structures",
@@ -478,12 +478,12 @@ export const links = [
     {
         title: "Even is NOT bahkan",
         href: "posts/even-bahkan",
-        keywords: ['compare','contrast','vocabulary','signals']
+        keywords: ['compare','contrast','vocabulary','signals','Bahasa Indonesia']
     },
     {
         title: "It",
         href: "posts/it",
-        keywords: ['referencing and substitution','grammar']
+        keywords: ['referencing and substitution','grammar','Bahasa Indonesia']
     },
     {
         title: "Most or Most of?",
@@ -493,46 +493,46 @@ export const links = [
     {
         title: "It or this? Theme or Rheme?",
         href: "posts/it-or-this",
-        keywords: ['referencing and substitution','CC']
+        keywords: ['referencing and substitution','coherence and cohesion']
     },
     {
         title: "And besides",
         href: "posts/and-besides",
-        keywords: ["signals","coherence and cohesion","Bhs Indonesia Interference"]
+        keywords: ["signals","coherence and cohesion"]
     },
     {
         title: "There is Ada",
         href: "posts/there-is-ada",
-        keywords: ["Bhs Indonesia Interference","grammar","GRA"]
+        keywords: ["Bahasa Indonesia","grammar"]
     },
     {
         title: "When 'become' is NOT becoming",
         href: "posts/become",
-        keywords: ["Bhs Indonesia Interference","change(s) over time","vocabulary"]
+        keywords: ["Bahasa Indonesia","change(s) over time","vocabulary"]
     },
     {
         title: "Youths and young people",
         href: "posts/youths",
-        keywords: ["vocabulary","LR","appropriacy"]
+        keywords: ["vocabulary","appropriacy"]
     },
     {
         title: "Goodbye to 'By'",
         href: "posts/goodbye-to-by",
-        keywords: ["Bhs Indonesia Interference","vocabulary","LR"]
+        keywords: ["Bahasa Indonesia","vocabulary"]
     },
     {
         title: "The Society",
         href: "posts/the-society",
-        keywords: ["vocabulary","LR","appropriacy"]
+        keywords: ["vocabulary","appropriacy"]
     },
     {
         title: "Have an impact on",
         href: "posts/impact",
-        keywords: ["vocabulary","collocation","LR"]
+        keywords: ["vocabulary","collocation","Bahasa Indonesia"]
     },
     {
         title: "Cannot also can",
         href: "posts/also-can",
-        keywords: ["vocabulary","Bhs Indonesia Interference","LR"]
+        keywords: ["vocabulary","Bahasa Indonesia"]
     }
 ]

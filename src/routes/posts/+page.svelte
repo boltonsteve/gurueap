@@ -99,7 +99,7 @@
             {#if card.keywords.includes('song')}
                 <div class="badge badge-song"><MusicNoteBeamed /></div>
             {/if}
-            {#if card.keywords.includes('Bhs Indonesia Interference')}
+            {#if card.keywords.includes('Bahasa Indonesia') || card.keywords.includes('borrowed word')}
                 <div class="badge-indo badge-indo-outer">
                     <div class="badge-indo-top"></div>
                     <div class="badge-indo-bottom"></div>
