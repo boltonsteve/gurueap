@@ -25,8 +25,8 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
         <div slot="html">You can think of it as a phrasal verb (Indonesians will be translating <b><i>berhak untuk</i></b>..). Sometimes it's <b><i>have the right to + V1</i></b>, and sometimes <b><i>have a right to + V1</i></b>.</div>
     </WithIcon>
 
-    <p>To see the relative frequency of <b><i>have the right to</i></b> and <b><i>have rights to</i></b>, we can consult Google NGRAM viewer:</p>
+    <p>To see relative frequencies we can consult Google NGRAM viewer:</p>
 
-    <img src="/img/ngram-rights.png" class="img-fluid border rounded" alt="NGRAM Rights">
+    <img src="/img/ngram-rights.png" class="mb-3 mx-auto" alt="NGRAM Rights">
 
 </div>

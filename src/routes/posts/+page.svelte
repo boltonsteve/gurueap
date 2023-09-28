@@ -100,7 +100,10 @@
                 <div class="badge badge-song"><MusicNoteBeamed /></div>
             {/if}
             {#if card.keywords.includes('Bhs Indonesia Interference')}
-                <div class="badge badge-indo"><CircleHalf /></div>
+                <div class="badge-indo badge-indo-outer">
+                    <div class="badge-indo-top"></div>
+                    <div class="badge-indo-bottom"></div>
+                </div>
             {/if}
             {card.title}
         </a>
@@ -221,10 +224,41 @@ select {
 .badge-indo {
     background:var(--light);
     color:red;
-    transform: rotate(90deg);
     border:1px solid var(--teal);
     right:-10px;
     top:-10px;
+}
+
+.badge-indo-outer {
+    height:30px;
+    width:30px;
+    border-radius: 15px 15px 15px 15px;
+    border:1px solid var(--teal);
+    right:-10px;
+    top:-10px;
+}
+
+.badge-indo{
+    height:30px;
+    width:30px;
+    position: absolute;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.badge-indo-top {
+    display:block;
+    background:red;
+    height:15px;
+    width:30px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.badge-indo-bottom {
+    display:block;
+    background:white;
+    height:15px;
+    width:30px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 </style>
