@@ -4,6 +4,10 @@
 
     let idioms = [
         {
+            front: "Living in a large city can be expensive and so sometimes students struggle to <b><i>make ends meet</i></b>.",
+            back: "Pay for food, pay the bills, etc."
+        },
+        {
             front: "The design <b><i>ticks the right boxes</i></b>. It's elegant, cheap to make, and doesn't harm the environment!",
             back: "Satisfies important criteria."
         },

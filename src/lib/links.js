@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Spend, spend, spend!",
+        href: "posts/spend",
+        keywords: ['vocabulary','collocation'],
+        description: "Collocation with 'spend' as it refers to money"
+    },
+    {
         title: "Rights",
         href: "posts/rights",
         keywords: ['vocabulary','collocation'],
