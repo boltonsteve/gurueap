@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Missing nouns",
+        href: "posts/missing-nouns",
+        keywords: ['grammar','Bahasa Indonesia','borrowed word'],
+        description: "Warning Indonesian candidates that they cannot leave adjectives hanging without nouns."
+    },
+    {
         title: "Spend, spend, spend!",
         href: "posts/spend",
         keywords: ['vocabulary','collocation'],

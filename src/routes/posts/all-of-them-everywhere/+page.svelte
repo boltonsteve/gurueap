@@ -21,7 +21,7 @@
 
     <p class="alert alert-success font-italic">Domestic work is made easier with the use of <span class="font-weight-bold text-success">dishwasher<i>s</i></span>, <span class="font-weight-bold text-success">vacuum cleaner<i>s</i></span>, and <span class="font-weight-bold text-success">washing machine<i>s</i></span>.</p>
 
-    <p>If your claim applies to <b><i>all of them</i></b> everywhere, add an <b><i>s</i></b> to your noun!</p>
+    <p>If your claim applies to <b><i>all of them everywhere</i></b>, add an <b><i>s</i></b> to your noun!</p>
 
     <WithIcon icon="sign"> 
         <div slot="html">Learn more about <a href="../posts/article-s">articles and <b><i>s</i></b></a> and the meanings that they enable you to communicate.</div>
