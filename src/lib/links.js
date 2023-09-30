@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Processes and stages",
+        href: "posts/processes-stages",
+        keywords: ['vocabulary','Task 1'],
+        description: "Referring to stages of a process, items on a menu, etc."
+    },
+    {
         title: "'Like with like' in Task 1",
         href: "posts/like-with-like",
         keywords: ['grammar','parallelism','compare contrast','Task 1'],
