@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Stress caused by 'stress'",
+        href: "posts/stress",
+        keywords: ['vocabulary','borrowed word'],
+        description: "Demonstrating collocation with the word 'stress'"
+    },
+    {
         title: "Processes and stages",
         href: "posts/processes-stages",
         keywords: ['vocabulary','Task 1'],

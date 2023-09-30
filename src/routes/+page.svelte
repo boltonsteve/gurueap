@@ -3,6 +3,9 @@
     import { flagIndo } from '$lib/flags.js'
     import Card from './components/Card.svelte'
     import { students } from '$lib/mugshots.js';
+    import { links } from '$lib/links.js';
+
+    let totalLinks = links.length;
 
     students.sort(() => Math.random() - 0.5);
 
@@ -28,7 +31,7 @@
     </div>
     <div id="right_col">
         <div>
-            <Card title="Posts" icon="posts" path="./posts" text="Posts deal with the various academic and linguistic challenges faced by international students preparing for IELTS and study abroad." />
+            <Card title="{totalLinks} Posts" icon="posts" path="./posts" text="Posts deal with the various academic and linguistic challenges faced by international students preparing for IELTS and study abroad." />
         </div>
         <div>
             <Card title="Songs" icon="songs" path="./songs" text= "Often featuring student voices, songs focus on language challenges faced by Indonesian IELTS candidates. Accompanyied by lyrics, and often video." />
