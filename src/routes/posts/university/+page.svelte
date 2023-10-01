@@ -123,9 +123,9 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     <img src="/img/university-caps.png" class="img-fluid" alt="university">
 
-    <h1 class="my-3">At (the) university/universities</h1>
+    <h1 class="my-1">At (the) universit(y/ies)</h1>
 
-    <p class="lead my-3">Select the correct meaning from the menus on the right.<br>Then click 'check'.</p>
+    <p class="lead mb-3">Select the correct meaning from the menus on the right.<br>Then click 'check'.</p>
     
     <div id="activity" class="my-3">
         {#each lines as next, index}
