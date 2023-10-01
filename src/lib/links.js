@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "(At) (the) universit(y/ies)",
+        href: "posts/university",
+        keywords: ['vocabulary'],
+        description: "Different meanings of 'university' - buuldings, level of education, etc."
+    },
+    {
         title: "Countries",
         href: "posts/countries",
         keywords: ['vocabulary'],

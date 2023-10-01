@@ -706,3 +706,7 @@ input:focus, textarea:focus, select:focus{
     font-style:italic;
 }
 
+select {
+    min-height: 30px;
+    font-size:1rem;
+}
