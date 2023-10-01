@@ -531,10 +531,10 @@ export const countries = [
         name: 'South Africa',
         nationality: 'South African',
         person: 'South African',
-        language: 'Afrikaans<br>English<br>+ 9 more'
+        language: 'Afrikaans<br>English<br>+ 9 more!'
     },
     {
-        name: 'South Korea',
+        name: 'Korea',
         nationality: 'Korean',
         person: 'Korean',
         language: 'Korean'

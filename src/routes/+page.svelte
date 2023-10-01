@@ -16,12 +16,13 @@
     description="Academic English and IELTS preparation. Not only for Indonesians."
     keywords="academic english,english for academic purposes,EAP,IELTS,international students,pre-departure,Indonesia"
 />
+
 <div id="landing_grid">
 
     <div id="left_col">
-        <div class="mx-auto" style="max-width:500px;">
+        <div id="about">
             <div class="text-center">
-                <img src="/img/steve.png" class="mx-auto pt-2" alt="Steve" style="max-width:250px;">
+                <img src="/img/steve.png" class="mx-auto" alt="Steve" style="max-width:250px;">
                 <h1>GuruEAP</h1>
                 <h2 class="font-italic">Academic English not only for Indonesians</h2>
             </div>
@@ -56,7 +57,7 @@
 <style>
 
     .card {
-        min-height: 230px;
+        min-height: 240px;
         
     }
 
@@ -88,13 +89,18 @@
 
     #landing_grid {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         /* align-items: center; */
         /* height: 90vh; */
         column-gap: 20px;
         max-width: 1100px;
-        margin: auto;
+        margin: 30px auto;
+        
+    }
+
+    #left_col {
+        display: grid;
     }
 
     #left_col h1 {
@@ -106,23 +112,28 @@
         margin-top:0px;
     }
 
-    #right_col {
-        display:grid;
-        /* grid-template-columns: 1fr 1fr; */
-        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-        /* justify-content: start; */
-        /* justify-content: space-around; */
-        align-items: center;
-        gap:20px;
+    #about {
+        max-width:400px;
+        justify-self: center;
     }
 
-    #right_col div {
-        margin: auto;
+    #right_col {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap:20px;
     }
 
     @media(max-width:1000px) {
         #right_col {
+            display: grid;
             grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #right_col div {
+            justify-self: center;
         }
     }
 
