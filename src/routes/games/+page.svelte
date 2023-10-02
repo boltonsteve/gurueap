@@ -26,9 +26,16 @@
 />
 
 <div class="mb-3 pt-2 mw-500">
-    <div class="card">
+
+    <div class="card mb-3">
         <Card title="Hangman" icon="games" path="./games/hangman" text="A version of the classic game hangman, featuring vocabulary taken at random from the Academic Word List (AWL)" />
     </div>
+
+    <div class="card">
+        <Card title="Guess the word!" icon="games" path="./games/guess-the-word" text="Read the definitions and examples and guess the word - also featuring vocabulary taken at random from the Academic Word List (AWL)" />
+    </div>
+
+
 </div>
 
 <style>

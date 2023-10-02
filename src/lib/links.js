@@ -1,9 +1,21 @@
 export const links = [
     {
+        title: "Guess the word!",
+        href: "games/guess-the-word",
+        keywords: ['games','vocabulary','Academic Word List'],
+        description: "Read definitions and examples and guess the word!"
+    },
+    {
+        title: "AWL Hangman",
+        href: "games/hangman",
+        keywords: ['games','vocabulary','Academic Word List'],
+        description: "A version of the classic game - hangman. Featuring vocabulary from the Academic Word List (AWL)."
+    },
+    {
         title: "(At) (the) universit(y/ies)",
         href: "posts/university",
         keywords: ['vocabulary'],
-        description: "Different meanings of 'university' - buuldings, level of education, etc."
+        description: "Different meanings of 'university' - buildings, level of education, etc."
     },
     {
         title: "Countries",

@@ -2,6 +2,9 @@
 
     import { onMount } from 'svelte';
     export let word = "";
+    export let mode = "dictionary"
+
+    let showGiveUpButton = true;
 
     onMount(() => {
 		/* console.log('the component has mounted'); */
@@ -10,10 +13,11 @@
 
     let iHtml1 = '';
     let iHtml2 = '';
-    let item,phonetic,phonemic,audio,filtered;
+    let item,phonetic,phonemic,audio,filtered,definition;
     let hasAudio = false;
     let noEntry = false;
     let src = '';
+    let example = '';
 
     const playAudio = () => {
         audio.src = src;
@@ -58,12 +62,20 @@
 
                 // Part of speech
                 item.meanings.forEach( meaning => {
-                    iHtml2 += `<div class="font-weight-bold mt-1">${meaning.partOfSpeech}</div>`;
+                    iHtml2 = `<div class="font-weight-bold mt-1">${meaning.partOfSpeech}</div>`;
                     iHtml2 += '<ol>';
-                    meaning.definitions.forEach( definition => {
-                        iHtml2 += `<li class="mb-1">${definition.definition}</li>`;
-                        if('example' in definition) {
-                            iHtml2 += `<ul><li class="mb-1 font-italic">${definition.example}</li></ul>`;
+                    meaning.definitions.forEach( nextDefinition => {
+                        definition = nextDefinition.definition;
+                        if(mode == 'guess') {
+                            definition = definition.replace(word,'________');
+                        }
+                        iHtml2 += `<li class="mb-1">${definition}</li>`;
+                        if('example' in nextDefinition) {
+                            example = nextDefinition.example;
+                            if(mode == 'guess') {
+                                example = example.replace(word,'________');
+                            }
+                            iHtml2 += `<ul><li class="mb-1 font-italic">${example}</li></ul>`;
                         }
                     });
                     iHtml2 += '</ol>';
@@ -80,6 +92,12 @@
 
     getData();
 
+    const doGiveUp = () => {
+        console.log('doing give up');
+        mode = 'dictionary';
+        showGiveUpButton = false;
+    }
+
 </script>
 
 <audio id="myAudio">
@@ -87,9 +105,15 @@
     Your browser does not support the audio element.
 </audio>
 
-{@html iHtml1}
-{#if hasAudio}
-    <sup id="phonemic" on:click={playAudio}>listen</sup>
+    {#if showGiveUpButton && mode=="guess"}
+        <button class="btn btn-outline-primary" on:click={doGiveUp}>show word</button>
+    {/if}
+
+{#if mode == 'dictionary'}
+    {@html iHtml1}
+    {#if hasAudio}
+        <sup id="phonemic" on:click={playAudio}>listen</sup>
+    {/if}
 {/if}
 {@html iHtml2}
 
