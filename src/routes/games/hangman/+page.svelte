@@ -2,6 +2,7 @@
     import { PersonArmsUp, HeartFill } from "svelte-bootstrap-icons";
     import { sublists } from '$lib/sublists.js';
     import { shuffle } from '$lib/shuffle.js';
+    import Dictionary from '../../components/Dictionary.svelte';
 
     let joinedArrs = sublists.map( next => next.join(' ') );
     let fullJoined = joinedArrs.join(' ');
@@ -15,8 +16,10 @@
     let word;
     let wordArr;
     let gapsArr;
+    let showDictionary = false;
 
     const nextWord = () => {
+        showDictionary = false;
         let letters = document.querySelectorAll('.letter');
         letters.forEach((element) => {
             element.classList.remove('danger','success');
@@ -73,6 +76,7 @@
                     let gapsEl = document.querySelector('.gaps');
                     gapsEl.classList.add('success');
                     done = true;
+                    showDictionary = true;
                 }
             } else {
                 document.getElementById(letter).classList.add('danger');
@@ -91,6 +95,7 @@
 
 </script>
 
+<div class="container">
 
 <h1 class="text-center my-1">AWL Hangman</h1>
 
@@ -100,9 +105,15 @@
     <button class="btn btn-outline-dark" on:click={nextWord}>next</button>
 {/if}
 
+    {#if showDictionary}
+        <Dictionary bind:word="{word}" />
+    {/if}
+
 <div class="gallows">
     {#each cats as cat}
-        <HeartFill width={iconSize} height={iconSize} />
+        <div style="margin:0px 2px;">
+            <HeartFill fill="var(--red)" width={iconSize} height={iconSize} />
+        </div>
     {/each}
 </div>
 
@@ -135,7 +146,14 @@
     <div class="letter" id="z" on:click={tryLetter}>z</div>
 </div>
 
+</div>
+
 <style>
+
+    .container {
+        max-width:500px;
+        margin: 30px auto;
+    }
 
     .gaps {
         text-align:center;
