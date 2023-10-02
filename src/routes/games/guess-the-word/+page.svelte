@@ -73,5 +73,6 @@
 <style>
     button {
         width:100px;
+        font-size:1rem;
     }
 </style>
