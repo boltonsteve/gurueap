@@ -47,7 +47,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/guess.png" alt="guess" style="height:200px;float:right;">
+    <img src="/img/guess.png" alt="guess" style="height:250px;float:right;">
     <h1>Guess the word!</h1>
     <p>Read the definitions and examples and..<br><b><i>Guess the word!</i></b></p>
 
@@ -56,11 +56,11 @@
     {/if}
 
     {#if showClearButton}
-        <button class="btn btn-outline-danger" on:click={doClear}>clear</button>
+        <button class="btn btn-outline-info" on:click={doClear}>clear</button>
     {/if}
 
     {#if showWordButton && mode=="guess"}
-        <button class="btn btn-outline-primary" on:click={doShowWord}>show word</button>
+        <button class="btn btn-outline-danger" on:click={doShowWord}>show word</button>
     {/if}
 
     {#if showDictionary}
