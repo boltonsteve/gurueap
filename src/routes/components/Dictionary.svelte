@@ -92,22 +92,12 @@
 
     getData();
 
-    const doGiveUp = () => {
-        console.log('doing give up');
-        mode = 'dictionary';
-        showGiveUpButton = false;
-    }
-
 </script>
 
 <audio id="myAudio">
     <source src="{src}" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-
-    {#if showGiveUpButton && mode=="guess"}
-        <button class="btn btn-outline-primary" on:click={doGiveUp}>show word</button>
-    {/if}
 
 {#if mode == 'dictionary'}
     {@html iHtml1}
