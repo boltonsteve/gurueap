@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Look it up!",
+        href: "games/look-it-up",
+        keywords: ['games','vocabulary','Academic Word List'],
+        description: "The app selects a random word from the Academic Word List (AWL). You guess the word based on feedback from the app."
+    },
+    {
         title: "Guess the word!",
         href: "games/guess-the-word",
         keywords: ['games','vocabulary','Academic Word List'],

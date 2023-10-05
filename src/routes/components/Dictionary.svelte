@@ -4,8 +4,6 @@
     export let word = "";
     export let mode = "dictionary"
 
-    let showGiveUpButton = true;
-
     onMount(() => {
 		/* console.log('the component has mounted'); */
 		audio = document.getElementById('myAudio');

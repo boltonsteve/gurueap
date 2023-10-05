@@ -1,4 +1,5 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { PersonArmsUp, HeartFill } from "svelte-bootstrap-icons";
     import { sublists } from '$lib/sublists.js';
     import { shuffle } from '$lib/shuffle.js';
@@ -94,6 +95,12 @@
     }
 
 </script>
+
+<SvelteSeo
+title="AWL Hangman"
+description="A version of the classic game - hangman. Featuring vocabulary from the Academic Word List (AWL)."
+keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary,games,Academic Word List"
+ />
 
 <div class="container">
 

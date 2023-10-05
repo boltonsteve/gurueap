@@ -1,4 +1,5 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { sublists } from '$lib/sublists.js';
     import Dictionary from '../../components/Dictionary.svelte';
 
@@ -44,6 +45,12 @@
     }
 
 </script>
+
+<SvelteSeo
+title="Guess the word!"
+description="Read definitions and examples and guess the word!"
+keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary,games,Academic Word List"
+ />
 
 <div class="mb-3 mw-500">
 

@@ -1,4 +1,5 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import { onMount } from 'svelte';
     import { sublists } from '$lib/sublists.js';
     import Dictionary from '../../components/Dictionary.svelte';
@@ -197,6 +198,12 @@
 	});
 
 </script>
+
+<SvelteSeo
+title="Look it up!"
+description="The app selects a random word from the Academic Word List (AWL). You guess the word based on feedback from the app."
+keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary,Academic Word List,games"
+ /> 
 
 <div class="mb-3 mw-500">
 
