@@ -209,7 +209,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     <h1>Look it up!</h1>
 
-    <img src="/img/dictionary.png" class="mx-auto" alt="dictionary" style="max-width:500px;">
+    <img src="/img/dictionary.png" class="img-fluid mx-auto" alt="dictionary">
         
     <p>Try to guess the word chosen from the dictionary by the app.<br>Type a guess then press 'enter' or click (or tap) 'check'.</p>
 
