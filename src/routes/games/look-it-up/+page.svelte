@@ -86,14 +86,10 @@
     }
     
     const handleInput = (e) => {
-        /* console.log(e); */
         guess = e.target.value;
-        /* if(e.key == 'Enter') { */
-        /* } */
     }
     
     const getCloser = (wL,gL) => {
-        console.log('wL: ' + wL + ' gl: ' + gL);
         return wL > gL ? "It's closer to the back of the dictionary." : "It's closer to the front of the dictionary.";
     }
 
@@ -128,9 +124,9 @@
                     }
                 })
 
-                console.log('word: ' + word + ' guess: ' + guess);
-                console.log('wordArr',wordArr);
-                console.log('guessArr',guessArr);
+                /* console.log('word: ' + word + ' guess: ' + guess); */
+                /* console.log('wordArr',wordArr); */
+                /* console.log('guessArr',guessArr); */
 
                 if(corrCount == 0) {
                     wL = word.charCodeAt(0);
@@ -189,7 +185,7 @@
 
         }
 
-        console.log(msg);
+        /* console.log(msg); */
 
         document.getElementById('input').focus();
 
