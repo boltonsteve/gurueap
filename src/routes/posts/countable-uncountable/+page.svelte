@@ -28,7 +28,7 @@
     <div class="alert alert-success font-italic">Moreover, <span class="font-weight-bold text-success">failure</span> can be caused by a lack of practical <span class="font-weight-bold text-success">experience</span>.</div>
 
     <WithIcon icon="sign" position="right">
-        <div slot="html">Other posts on GuruEAP examine similar words - <b><i>words that can be either countable or uncountable</i></b>: <a href="../posts/performance-appearance" target="_blank">performance</a>, <a href="../posts/performance-appearance" target="_blank">appearance</a>, <a href="../posts/production">production</a>, <a href="../posts/exercise-s">exercise</a>, <a href="../posts/competition">competition</a></div>
+        <div slot="html">Other posts on GuruEAP examine similar words - <b><i>words that can be either countable or uncountable</i></b>: <a href="../posts/performance-appearance" target="_blank">performance</a>, <a href="../posts/performance-appearance" target="_blank">appearance</a>, <a href="../posts/production">production</a>, <a href="../posts/exercise-s">exercise</a>, <a href="../posts/competition">competition</a>, <a href="../posts/content">content</a>.</div>
     </WithIcon>
 
 </div>

@@ -453,7 +453,7 @@ export const links = [
     {
         title: "Content(s)",
         href: "posts/content",
-        keywords: ['vocabulary','borrowed word']
+        keywords: ['vocabulary','borrowed word','countable uncountable']
     },
     {
         title: "One of",
