@@ -27,7 +27,7 @@
 
     <div class="alert alert-success font-italic">Moreover, <span class="font-weight-bold text-success">failure</span> can be caused by a lack of practical <span class="font-weight-bold text-success">experience</span>.</div>
 
-    <p class="mb-0">Other posts on GuruEAP examine similar words - <b><i>words that can be either countable or uncountable</i></b>:</p>
+    <p class="mb-0">Other posts on GuruEAP examine other <b><i>words that can be either countable or uncountable</i></b>:</p>
 
     <WithIcon icon="sign" position="right">
         <div slot="html">
