@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Countable AND Uncountable(?!)",
+        href: "posts/countable-uncountable",
+        keywords: ['vocabulary','countable uncountable'],
+        description: "More words that can be both countable and uncountable, together with tips for how to deal with similar words."
+    },
+    {
         title: "Look it up!",
         href: "games/look-it-up",
         keywords: ['games','vocabulary','Academic Word List'],
