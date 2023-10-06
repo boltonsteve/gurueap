@@ -62,6 +62,9 @@
         guess = '';
         corrCount = 0;
         msg = '';
+        wordArr = [];
+        guessArr = [];
+        guessesArr = [];
 
         showDictionary = false;
         showGetWordButton = true;
