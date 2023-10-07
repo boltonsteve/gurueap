@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { Book, ArrowLeft, ArrowRight } from "svelte-bootstrap-icons";
+    import { Book, ArrowReturnLeft, ArrowReturnRight } from "svelte-bootstrap-icons";
     import { onMount } from 'svelte';
     import { sublists } from '$lib/sublists.js';
     import Dictionary from '../../components/Dictionary.svelte';
@@ -111,13 +111,13 @@
 
         if(guess == '') {
 
-            msg = 'Please enter some text!';
+            msg = '<div>Please enter some text!</div>';
 
         } else {
 
             if(guess == word) {
 
-                msg = 'Correct!';
+                msg = '<div>Correct!</div>';
                 showDictionary = true;
                 showCheckButton = false;
                 showWordButton = false;
@@ -151,7 +151,7 @@
                 } else if(corrCount == 1) {
                     wL = word.charCodeAt(1);
                     gL = guess.charCodeAt(1);
-                    msg = 'The first letter is correct.';
+                    msg = '<div>The first letter is correct.</div>';
 
                     if(guess.length > 1) {
                         getCloser(wL,gL);
@@ -163,7 +163,7 @@
                     wL = word.charCodeAt(corrCount);
                     gL = guess.charCodeAt(corrCount);
 
-                    msg = 'The first ' + corrCount + ' letters are correct.';
+                    msg = '<div>The first ' + corrCount + ' letters are correct.</div>';
 
                     if(word.length > guess.length) {
                         if(guess.length > corrCount) {
@@ -231,13 +231,13 @@
         <p class="mb-0">Hints will guide you:</p>
 
         <div class="my-grid mb-0">
-            <div class="icons mb-0" style="justify-self:end;"><ArrowLeft height={iconSize} width={iconSize} /><Book height={iconSize} width={iconSize} /></div>
+            <div class="icons mb-0" style="justify-self:end;"><ArrowReturnLeft height={iconSize} width={iconSize} /><Book height={iconSize} width={iconSize} /></div>
             <div class="mb-0">It's closer to the front of the dictionary.</div>
         </div>
 
         <div class="my-grid mb-1 mt-0">
             <div class="mt-0" style="justify-self:end;">It's closer to the back.</div>
-            <div class="icons mt-0"><Book height={iconSize} width={iconSize} /><ArrowRight height={iconSize} width={iconSize} /></div>
+            <div class="icons mt-0"><Book height={iconSize} width={iconSize} /><ArrowReturnRight height={iconSize} width={iconSize} /></div>
         </div>
 
     <div id="buttons" class="my-grid-11 mb-0">
@@ -259,15 +259,15 @@
 
     <div id="msg">
         {#if correct}
-            <div>{@html msg}</div>
+            {@html msg}
         {/if}
         {#if back}
-            <div>{msg}</div>
-            <div><Book height={iconSize} width={iconSize} /><ArrowRight height={iconSize} width={iconSize} /></div>
+            {@html msg}
+            <div><Book height={iconSize} width={iconSize} /><ArrowReturnRight height={iconSize} width={iconSize} /></div>
         {/if}
         {#if front}
-            <div><ArrowLeft height={iconSize} width={iconSize} /><Book height={iconSize} width={iconSize} /></div>
-            <div>{msg}</div>
+            <div><ArrowReturnLeft height={iconSize} width={iconSize} /><Book height={iconSize} width={iconSize} /></div>
+            {@html msg}
         {/if}
     </div>
 
@@ -284,7 +284,9 @@
     #msg, #buttons {
         display:flex;
         flex-wrap:wrap;
-        justify-content:space-around;
+        justify-content:center;
+        column-gap: 10px;
+        /* justify-content:space-around; */
     }
     .my-grid {
         display:grid;
