@@ -32,20 +32,23 @@
     const showWord = () => {
         showWordButton = false;
         showClearButton = false;
+        showCheckButton = false;
         showDictionary = true;
+        showGetWordButton = true;
     }
 
     const getWord = () => {
+
+        showDictionary = false;
+        showGetWordButton = false;
+        showWordButton = true;
+        showCheckButton = true;
 
         rand = Math.floor(Math.random() * 10);
         sublist = sublists[rand];
         rand = Math.floor(Math.random() * sublist.length);
         wordForms = sublist[rand].split(' ');
         word = wordForms[0];
-
-        showGetWordButton = false;
-        showWordButton = true;
-        showCheckButton = true;
 
         wordArr = word.split('');
 
@@ -62,6 +65,10 @@
         wordArr = [];
         guessArr = [];
         guessesArr = [];
+
+        front = false;
+        back = false;
+        correct = false;
 
         showDictionary = false;
         showGetWordButton = true;
@@ -235,7 +242,7 @@
 
     <div id="buttons" class="my-grid-11 mb-0">
         {#if showGetWordButton}
-            <div><button class="btn btn-outline-success" on:click={getWord}>get word</button></div>
+            <div><button class="btn btn-outline-success" on:click={clearWord}>get word</button></div>
         {/if}
         {#if showClearButton}
             <div><button class="btn btn-outline-info" on:click={clearWord}>next word</button></div>
