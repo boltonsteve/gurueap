@@ -6,6 +6,7 @@
     import Dictionary from '../../components/Dictionary.svelte';
 
     let myInput = '';
+    let iconSize = 24;
 
     let rand,sublist,wordForms,word,wL,gL;
 
@@ -19,13 +20,9 @@
     let correct = false;
     
     let showClearButton = false;
-
     let showDictionary = false;
-
     let showGetWordButton = false;
-
     let showWordButton = true;
-
     let showCheckButton = true;
 
     let wordArr = [];
@@ -34,10 +31,8 @@
 
     const showWord = () => {
         showWordButton = false;
-        showClearButton = true;
+        showClearButton = false;
         showDictionary = true;
-        /* document.getElementById('input').value = ''; */
-        /* document.getElementById('input').focus(); */
     }
 
     const getWord = () => {
@@ -48,7 +43,6 @@
         wordForms = sublist[rand].split(' ');
         word = wordForms[0];
 
-        /* showDictionary = false; */
         showGetWordButton = false;
         showWordButton = true;
         showCheckButton = true;
@@ -56,8 +50,6 @@
         wordArr = word.split('');
 
     }
-
-    getWord();
 
     const clearWord = () => {
 
@@ -100,7 +92,6 @@
         } else {
             front = true;
         }
-        /* return wL > gL ? "It's closer to the back of the dictionary." : "It's closer to the front of the dictionary."; */
     }
 
     const checkWord = () => {
@@ -212,7 +203,7 @@
 		myInput = document.getElementById('input').focus();
 	});
 
-    let iconSize = 24;
+    getWord();
 
 </script>
 
@@ -243,23 +234,18 @@
         </div>
 
     <div id="buttons" class="my-grid-11 mb-0">
-
         {#if showGetWordButton}
             <div><button class="btn btn-outline-success" on:click={getWord}>get word</button></div>
         {/if}
-
         {#if showClearButton}
             <div><button class="btn btn-outline-info" on:click={clearWord}>next word</button></div>
         {/if}
-
         {#if showWordButton}
             <div><button class="btn btn-outline-danger" on:click={showWord}>show word</button></div>
         {/if}
-
         {#if showCheckButton}
             <div><button class="btn btn-outline-primary" on:click={checkWord}>check</button></div>
         {/if}
-
     </div>
 
     <input id="input" class="form-control mt-1 text-center" on:input={handleInput} on:keyup={getKey}>
