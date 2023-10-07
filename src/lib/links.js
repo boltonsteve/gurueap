@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Pronoun substitution and an alternative",
+        href: "posts/pronoun-substitution",
+        keywords: ['coherence and cohesion','referencing and substitution','cohesive devices'],
+        description: "Highlighting pitfalls with pronoun substitution and recommending a safer approach."
+    },
+    {
         title: "Countable AND Uncountable(?!)",
         href: "posts/countable-uncountable",
         keywords: ['vocabulary','countable uncountable'],

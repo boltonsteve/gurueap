@@ -1,5 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
+    import { Book, ArrowLeft, ArrowRight } from "svelte-bootstrap-icons";
     import { onMount } from 'svelte';
     import { sublists } from '$lib/sublists.js';
     import Dictionary from '../../components/Dictionary.svelte';
@@ -12,6 +13,10 @@
     let guesses = '';
     let guess = '';
     let corrCount = 0;
+
+    let back = false;
+    let front = false;
+    let correct = false;
     
     let showClearButton = false;
 
@@ -90,10 +95,19 @@
     }
     
     const getCloser = (wL,gL) => {
-        return wL > gL ? "It's closer to the back of the dictionary." : "It's closer to the front of the dictionary.";
+        if(wL > gL) {
+            back = true;
+        } else {
+            front = true;
+        }
+        /* return wL > gL ? "It's closer to the back of the dictionary." : "It's closer to the front of the dictionary."; */
     }
 
     const checkWord = () => {
+
+        front = false;
+        back = false;
+        correct = false;
 
         msg = '';
 
@@ -111,6 +125,8 @@
                 showWordButton = false;
                 showClearButton = true;
 
+                correct = true;
+
             } else {
 
                 guessArr = guess.split('');
@@ -124,23 +140,23 @@
                     }
                 })
 
-                /* console.log('word: ' + word + ' guess: ' + guess); */
+                console.log('word: ' + word + ' guess: ' + guess);
                 /* console.log('wordArr',wordArr); */
                 /* console.log('guessArr',guessArr); */
 
                 if(corrCount == 0) {
                     wL = word.charCodeAt(0);
                     gL = guess.charCodeAt(0);
-                    msg = getCloser(wL,gL);
+                    getCloser(wL,gL);
                     document.getElementById('input').value = '';
                     document.getElementById('input').focus();
                 } else if(corrCount == 1) {
                     wL = word.charCodeAt(1);
                     gL = guess.charCodeAt(1);
-                    msg = 'The first letter is correct.<br>';
+                    msg = 'The first letter is correct.';
 
                     if(guess.length > 1) {
-                        msg += getCloser(wL,gL);
+                        getCloser(wL,gL);
                     }
 
                     document.getElementById('input').value = word[0];
@@ -149,20 +165,20 @@
                     wL = word.charCodeAt(corrCount);
                     gL = guess.charCodeAt(corrCount);
 
-                    msg = 'The first ' + corrCount + ' letters are correct.<br>';
+                    msg = 'The first ' + corrCount + ' letters are correct.';
 
                     if(word.length > guess.length) {
                         if(guess.length > corrCount) {
-                            msg += getCloser(wL,gL);
+                            getCloser(wL,gL);
                         } else {
-                            msg += "It's closer to the back of the dictionary.";
+                            back = true;
                         }
 
                     } else {
                         if(guess.length > corrCount) {
-                            msg += getCloser(wL,gL);
+                            getCloser(wL,gL);
                         } else {
-                            msg += "It's closer to the front of the dictionary.";
+                            front = true;
                         }
                     }
 
@@ -196,40 +212,72 @@
 		myInput = document.getElementById('input').focus();
 	});
 
+    let iconSize = 24;
+
 </script>
 
 <SvelteSeo
-title="Look it up!"
-description="The app selects a random word from the Academic Word List (AWL). You guess the word based on feedback from the app."
-keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary,Academic Word List,games"
+    title="Look it up!"
+    description="The app selects a random word from the Academic Word List (AWL). You guess the word based on feedback from the app."
+    keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary,Academic Word List,games"
  /> 
 
 <div class="mb-3 mw-500">
 
-    <h1>Look it up!</h1>
+    <h1 class="mt-0">Look it up!</h1>
 
-    <img src="/img/dictionary.png" class="img-fluid mx-auto" alt="dictionary">
-        
-    <p>Try to guess the word chosen from the dictionary by the app.<br>Type a guess then press 'enter' or click (or tap) 'check'.</p>
+        <p class="mb-0">Try to guess the word chosen from the dictionary by the app.</p>
 
-    {#if showGetWordButton}
-        <button class="btn btn-outline-success" on:click={getWord}>get word</button>
-    {/if}
+        <p class="mt-0">Type a guess then press 'enter' or click (or tap) 'check'.</p>
 
-    {#if showClearButton}
-        <button class="btn btn-outline-info" on:click={clearWord}>next word</button>
-    {/if}
+        <p class="mb-0">Hints will guide you:</p>
 
-    {#if showWordButton}
-        <button class="btn btn-outline-danger" on:click={showWord}>show word</button>
-    {/if}
+        <div class="my-grid mb-0">
+            <div class="icons mb-0" style="justify-self:end;"><ArrowLeft height={iconSize} width={iconSize} /><Book height={iconSize} width={iconSize} /></div>
+            <div class="mb-0">It's closer to the front of the dictionary.</div>
+        </div>
 
-    {#if showCheckButton}
-        <button class="btn btn-outline-primary" on:click={checkWord}>check</button>
-    {/if}
+        <div class="my-grid mb-1 mt-0">
+            <div class="mt-0" style="justify-self:end;">It's closer to the back.</div>
+            <div class="icons mt-0"><Book height={iconSize} width={iconSize} /><ArrowRight height={iconSize} width={iconSize} /></div>
+        </div>
 
-    <input id="input" class="form-control mt-2 text-center" on:input={handleInput} on:keyup={getKey}>
-    <div id="msg">{@html msg}</div>
+    <div id="buttons" class="my-grid-11 mb-0">
+
+        {#if showGetWordButton}
+            <div><button class="btn btn-outline-success" on:click={getWord}>get word</button></div>
+        {/if}
+
+        {#if showClearButton}
+            <div><button class="btn btn-outline-info" on:click={clearWord}>next word</button></div>
+        {/if}
+
+        {#if showWordButton}
+            <div><button class="btn btn-outline-danger" on:click={showWord}>show word</button></div>
+        {/if}
+
+        {#if showCheckButton}
+            <div><button class="btn btn-outline-primary" on:click={checkWord}>check</button></div>
+        {/if}
+
+    </div>
+
+    <input id="input" class="form-control mt-1 text-center" on:input={handleInput} on:keyup={getKey}>
+
+    <div id="msg">
+        {#if correct}
+            <div>{@html msg}</div>
+        {/if}
+        {#if back}
+            <div>{msg}</div>
+            <div><Book height={iconSize} width={iconSize} /><ArrowRight height={iconSize} width={iconSize} /></div>
+        {/if}
+        {#if front}
+            <div><ArrowLeft height={iconSize} width={iconSize} /><Book height={iconSize} width={iconSize} /></div>
+            <div>{msg}</div>
+        {/if}
+    </div>
+
     <div id="guesses">{guesses}</div>
 
     {#if showDictionary}
@@ -240,7 +288,21 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 
 <style>
-    button {
+    #msg, #buttons {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+    .my-grid {
+        display:grid;
+        grid-template-columns: 2fr 3fr;
+        column-gap: 10px;
+        align-items:center;
+    }
+    .my-grid button {
+        margin-bottom:0px;   
+    }
+    #buttons button {
         width:100px;
         font-size:1rem;
     }
@@ -252,6 +314,6 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
         color: var(--red);
     }
     /* * { */
-    /*     border:1px solid green; */
+        /* border:1px solid green; */
     /* } */
 </style>
