@@ -54,8 +54,6 @@
         wordForms = sublist[rand].split(' ');
         word = wordForms[0];
 
-        word = 'uniform';
-
         wordArr = word.split('');
 
     }
