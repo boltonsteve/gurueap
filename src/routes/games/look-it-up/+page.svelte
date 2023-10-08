@@ -1,5 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
+    import { tooltip } from '$lib/tooltip';
     import { ArrowReturnLeft, ArrowReturnRight } from "svelte-bootstrap-icons";
     import { onMount } from 'svelte';
     import { sublists } from '$lib/sublists.js';
@@ -56,9 +57,6 @@
         word = 'uniform';
 
         wordArr = word.split('');
-
-        /* myInput = document.getElementById('input').focus(); */
-        /* console.log("myInput: " + myInput); */
 
     }
 
@@ -148,7 +146,7 @@
                     }
                 })
 
-                console.log('word: ' + word + ' guess: ' + guess);
+                /* console.log('word: ' + word + ' guess: ' + guess); */
                 /* console.log('wordArr',wordArr); */
                 /* console.log('guessArr',guessArr); */
 
@@ -209,19 +207,14 @@
 
         }
 
-        /* console.log(msg); */
-
-        document.getElementById('input').focus();
+        /* document.getElementById('input').focus(); */
 
     }
 
     getWord();
 
     onMount(() => {
-		/* console.log('the component has mounted'); */
 		document.getElementById('input').focus();
-		/* myInput = document.getElementById('input').focus(); */
-		/* myInput = document.getElementById('input').focus(); */
 	});
 
 
@@ -237,7 +230,7 @@
 
     <h1 class="mt-0">Look it up!</h1>
 
-    <p class="mb-0">Try to guess the word chosen at random from the AWL.</p>
+    <p class="mb-0">Try to guess the word chosen at random from the <span class="tooltip" title="Academic Word List" use:tooltip>AWL</span>.</p>
     <p class="mt-0">Type a guess then press 'enter' or click (or tap) 'check'.</p>
     <p class="mb-1">Hints will guide you:</p>
 
