@@ -317,10 +317,12 @@
     button {
         width:100%;
         font-size:1rem;
+        padding: 7px 1px;
     }
     #msg,#guesses {
         margin:15px auto;
         text-align: center;
+        font-size:1.1rem;
     }
     #guesses {
         color: var(--red);

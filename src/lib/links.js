@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Costumer Customers",
+        href: "posts/customers",
+        keywords: ['vocabulary','Bahasa Indonesia','borrowed word'],
+        description: "Showing Indonesian IELTS candidates that where they've been saying 'costumer', they should have been saying 'customer'!"
+    },
+    {
         title: "Pronoun substitution and an alternative",
         href: "posts/pronoun-substitution",
         keywords: ['coherence and cohesion','referencing and substitution','cohesive devices'],
