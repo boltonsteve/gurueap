@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Know (of)",
+    title="Know (of)"
     description="Highlighting the difference in meaning between 'know' and 'know of'"
 />
 

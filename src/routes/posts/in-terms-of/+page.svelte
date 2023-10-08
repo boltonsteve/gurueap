@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-    title="In terms of",
+    title="In terms of"
     description="Use of 'in terms of' to indicate exactly what it is that is changing over time and/or how it is changing."
 />
 

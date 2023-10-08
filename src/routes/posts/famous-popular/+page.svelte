@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Famous or Popular",
+    title="Famous or Popular"
   description="Showing the difference in meaning between 'famous' and 'popular' - often a point of confusion for Indonesian IELTS candidates"
 />
 

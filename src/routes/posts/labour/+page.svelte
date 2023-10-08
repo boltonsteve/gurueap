@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Labouring over 'labourers'",
+    title="Labouring over 'labourers'"
     description="Demonstrating various forms of the word 'labour', with examples of usage."
 />
 

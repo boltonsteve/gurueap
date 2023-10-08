@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-    title="Price",
+    title="Price"
     description="Demonstrating collocation using the noun 'price'."
 />
 

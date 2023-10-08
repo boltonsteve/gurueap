@@ -5,8 +5,8 @@
 </script>
 
 <SvelteSeo
-  title="When enough is too much",
-  description="Demonstration of first language interference affecting three vocabulary items - 'enough', 'not enough' and 'too much'"
+    title="When enough is too much"
+    description="Demonstration of first language interference affecting three vocabulary items - 'enough', 'not enough' and 'too much'"
 />
 
 <div class="mb-3 mw-500">

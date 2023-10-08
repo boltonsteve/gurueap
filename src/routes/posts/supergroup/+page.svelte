@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-  title="Supergroups and Percentages",
+  title="Supergroups and Percentages"
   description="Stating subgroups and supergroups when describing percentages in IELTS Task 1 Writing"
 />
 

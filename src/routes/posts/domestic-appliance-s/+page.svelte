@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-  title="Make people able with 'enable'",
+  title="Make people able with 'enable'"
   description="Demonstrating that there is no need for this verb noun collocation. 'Enable' means 'make able'. One word is all you need!"
 />
 

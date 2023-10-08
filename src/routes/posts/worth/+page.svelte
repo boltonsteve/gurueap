@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Is it worth it?",
+    title="Is it worth it?"
     description="Investigating the collocation and structural peculiarities of the word 'worth'."
 /> 
 

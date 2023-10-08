@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Make",
+    title="Make"
     description="Demonstrating collocation using the verb 'make', which is actually the same in Bahasa Indonesia."
 />
 

@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Past tenses",
+    title="Past tenses"
     description="Video demonstration of the various past tenses, together with examples of their various meanings."
 />
 

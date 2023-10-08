@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Convenient",
+    title="Convenient"
   description="Showing that when Indonesians use 'convenient' it doesn't always mean what they think it means."
 />
 

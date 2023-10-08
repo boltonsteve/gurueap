@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="It or This",
+    title="It or This"
     description="Referencing and substitution using the pronouns 'it' and 'this'"
 />
 

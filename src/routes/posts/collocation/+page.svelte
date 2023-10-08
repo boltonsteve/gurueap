@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-    title="Collocation",
+    title="Collocation"
   description="Explaining what is meant by this important term used by examiners - 'collocation'"
 />
 

@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-    title="People's lives",
+    title="People's lives"
     description="Demonstrating the redundant use of the phrase 'people's lives' speaking and writing."
 />
 

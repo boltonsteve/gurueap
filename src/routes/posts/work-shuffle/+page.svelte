@@ -160,8 +160,9 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
 </script>
 
 <SvelteSeo
-    title=""
-    description=""
+    title="Work quotes - shuffled"
+    description="Quotes by famous people regarding the subject of work."
+    keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary" 
 />
 
 <svelte:window on:keydown={handleKeydown} />

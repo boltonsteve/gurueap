@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { Book, ArrowReturnLeft, ArrowReturnRight } from "svelte-bootstrap-icons";
+    import { ArrowReturnLeft, ArrowReturnRight } from "svelte-bootstrap-icons";
     import { onMount } from 'svelte';
     import { sublists } from '$lib/sublists.js';
     import Dictionary from '../../components/Dictionary.svelte';
@@ -21,9 +21,10 @@
     
     let showClearButton = false;
     let showDictionary = false;
-    let showGetWordButton = false;
+    let showNextButton = false;
     let showWordButton = true;
     let showCheckButton = true;
+    let showInput = true;
 
     let wordArr = [];
     let guessArr = [];
@@ -34,15 +35,17 @@
         showClearButton = false;
         showCheckButton = false;
         showDictionary = true;
-        showGetWordButton = true;
+        showNextButton = true;
+        showInput = false;
     }
 
     const getWord = () => {
 
         showDictionary = false;
-        showGetWordButton = false;
+        showNextButton = false;
         showWordButton = true;
         showCheckButton = true;
+        showInput = true;
 
         rand = Math.floor(Math.random() * 10);
         sublist = sublists[rand];
@@ -50,7 +53,12 @@
         wordForms = sublist[rand].split(' ');
         word = wordForms[0];
 
+        word = 'uniform';
+
         wordArr = word.split('');
+
+        /* myInput = document.getElementById('input').focus(); */
+        /* console.log("myInput: " + myInput); */
 
     }
 
@@ -71,12 +79,12 @@
         correct = false;
 
         showDictionary = false;
-        showGetWordButton = true;
+        showNextButton = true;
         showClearButton = false;
         /* showWordButton = false; */
 
-        document.getElementById('input').value = '';
-        document.getElementById('input').focus();
+        /* document.getElementById('input').value = ''; */
+        /* document.getElementById('input').focus(); */
 
         getWord();
     }
@@ -124,6 +132,8 @@
                 showClearButton = true;
 
                 correct = true;
+                showInput = false;
+                showNextButton = true;
 
             } else {
 
@@ -205,12 +215,15 @@
 
     }
 
+    getWord();
+
     onMount(() => {
 		/* console.log('the component has mounted'); */
-		myInput = document.getElementById('input').focus();
+		document.getElementById('input').focus();
+		/* myInput = document.getElementById('input').focus(); */
+		/* myInput = document.getElementById('input').focus(); */
 	});
 
-    getWord();
 
 </script>
 
@@ -224,38 +237,40 @@
 
     <h1 class="mt-0">Look it up!</h1>
 
-        <p class="mb-0">Try to guess the word chosen from the dictionary by the app.</p>
+    <p class="mb-0">Try to guess the word chosen at random from the AWL.</p>
+    <p class="mt-0">Type a guess then press 'enter' or click (or tap) 'check'.</p>
+    <p class="mb-1">Hints will guide you:</p>
 
-        <p class="mt-0">Type a guess then press 'enter' or click (or tap) 'check'.</p>
-
-        <p class="mb-0">Hints will guide you:</p>
-
-        <div class="my-grid mb-0">
-            <div class="icons mb-0" style="justify-self:end;"><ArrowReturnLeft height={iconSize} width={iconSize} /><Book height={iconSize} width={iconSize} /></div>
-            <div class="mb-0">It's closer to the front of the dictionary.</div>
-        </div>
-
-        <div class="my-grid mb-1 mt-0">
-            <div class="mt-0" style="justify-self:end;">It's closer to the back.</div>
-            <div class="icons mt-0"><Book height={iconSize} width={iconSize} /><ArrowReturnRight height={iconSize} width={iconSize} /></div>
-        </div>
-
-    <div id="buttons" class="my-grid-11 mb-0">
-        {#if showGetWordButton}
-            <div><button class="btn btn-outline-success" on:click={clearWord}>get word</button></div>
-        {/if}
-        {#if showClearButton}
-            <div><button class="btn btn-outline-info" on:click={clearWord}>next word</button></div>
-        {/if}
-        {#if showWordButton}
-            <div><button class="btn btn-outline-danger" on:click={showWord}>show word</button></div>
-        {/if}
-        {#if showCheckButton}
-            <div><button class="btn btn-outline-primary" on:click={checkWord}>check</button></div>
-        {/if}
+    <div class="my-grid mb-0">
+        <div class="icons mb-0"><ArrowReturnLeft height={iconSize} width={iconSize} /></div>
+        <div class="mb-0">Closer to the front of the dictionary.</div>
     </div>
 
-    <input id="input" class="form-control mt-1 text-center" on:input={handleInput} on:keyup={getKey}>
+    <div class="my-grid mb-1 mt-0">
+        <div class="icons mt-0"><ArrowReturnRight height={iconSize} width={iconSize} /></div>
+        <div class="mt-0">Closer to the back.</div>
+    </div>
+
+    <div id="buts">
+        <div>
+            {#if showWordButton}
+                <div><button class="btn btn-outline-danger" on:click={showWord}>show word</button></div>
+            {/if}
+        </div>
+        <div>
+            {#if showInput}
+                <input id="input" class="form-control text-center" autofocus on:input={handleInput} on:keyup={getKey}>
+            {/if}
+            {#if showNextButton}
+                <div><button class="btn btn-outline-success" on:click={clearWord}>next word</button></div>
+            {/if}
+        </div>
+        <div>
+            {#if showCheckButton}
+                <div><button class="btn btn-outline-primary" on:click={checkWord}>check</button></div>
+            {/if}
+        </div>
+    </div>
 
     <div id="msg">
         {#if correct}
@@ -263,10 +278,10 @@
         {/if}
         {#if back}
             {@html msg}
-            <div><Book height={iconSize} width={iconSize} /><ArrowReturnRight height={iconSize} width={iconSize} /></div>
+            <div><ArrowReturnRight height={iconSize} width={iconSize} /></div>
         {/if}
         {#if front}
-            <div><ArrowReturnLeft height={iconSize} width={iconSize} /><Book height={iconSize} width={iconSize} /></div>
+            <div><ArrowReturnLeft height={iconSize} width={iconSize} /></div>
             {@html msg}
         {/if}
     </div>
@@ -281,24 +296,35 @@
 
 
 <style>
+    .icons {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
     #msg, #buttons {
         display:flex;
         flex-wrap:wrap;
         justify-content:center;
-        column-gap: 10px;
         /* justify-content:space-around; */
+        column-gap: 10px;
+    }
+    #buts {
+        display:grid;
+        grid-template-columns: 2fr 3fr 2fr;
+        column-gap: 10px;
+        align-items:center;
     }
     .my-grid {
         display:grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 1fr 4fr;
         column-gap: 10px;
         align-items:center;
     }
     .my-grid button {
         margin-bottom:0px;   
     }
-    #buttons button {
-        width:100px;
+    button {
+        width:100%;
         font-size:1rem;
     }
     #msg,#guesses {

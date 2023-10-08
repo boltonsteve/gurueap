@@ -6,8 +6,8 @@
 </script>
 
 <SvelteSeo
-    title="Each / Every",
-  description="Explaining usage with vocabulary items 'each' and 'every'"
+    title="Add 's' by George"
+  description="A video of George describing Yuana, and trying his best to put 's' on the end of words that require it."
 />
 
 <div class="mb-3 mw-500">

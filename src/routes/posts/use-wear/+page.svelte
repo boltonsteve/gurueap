@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-  title="Use or Wear",
+  title="Use or Wear"
   description="Advising Indonesian IELTS candidate to say 'wear' isntead of 'use', which for them would be a direct translation, but weak collocation."
 />
 

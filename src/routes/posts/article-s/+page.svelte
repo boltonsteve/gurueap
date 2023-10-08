@@ -10,7 +10,7 @@
 </script>
 
 <SvelteSeo
-    title="Articles - General Rules",
+    title="Articles - General Rules"
     description="A system for determining whether or not an article is needed with a noun and which article (and/or 's') is needed."
 />
 

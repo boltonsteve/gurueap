@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Parallel Structures",
+    title="Parallel Structures"
     description="Demonstrating the use of parallel structures to achieve cohesion and coherence, as well as to show off structural sophistication."
 />
 

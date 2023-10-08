@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Coherence and Cohesion (CC)",
+    title="Coherence and Cohesion (CC)"
   description="Explaining what is meant by these important terms used by examiners - 'coherence' and 'cohesion'"
 />
 

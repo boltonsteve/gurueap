@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="One of",
+    title="One of"
     description="Demonstrating that the best way to communicate 'one of many' is using the indefinite article 'a'."
 />
 

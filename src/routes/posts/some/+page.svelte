@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-    title="Some",
+    title="Some"
     description="Demonstrating different ways to say or write 'some'"
 />
 

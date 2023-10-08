@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Impact",
+    title="Impact"
   description="Contrasting the English collocation with 'impact' with the Indonesian."
 />
 

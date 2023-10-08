@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Idiomatic language",
+    title="Idiomatic language"
   description="Explaining the reference to idiomatic language as it appears in the IELTS public band dsecriptors, together with examples."
 />
 

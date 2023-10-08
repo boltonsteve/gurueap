@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Each / Every",
+    title="Each / Every"
   description="Showing that 'each' and 'every' are always followed by a singular countable noun."
 />
 

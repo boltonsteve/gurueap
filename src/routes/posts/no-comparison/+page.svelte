@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-title="No comparison",
+title="No comparison"
 description="Demonstrating incomplete comparisons in Indonesian IELTS candidate writing."
 /> 
 

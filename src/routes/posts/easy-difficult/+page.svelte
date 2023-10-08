@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-  title="Easy can be difficult",
+  title="Easy can be difficult"
   description="Demonstrating some of the difficulties associated with the word 'easy'."
 />
 

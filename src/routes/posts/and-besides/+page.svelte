@@ -3,8 +3,8 @@
 </script>
 
 <SvelteSeo
-    title="And besides..",
-  description="Showing how to use 'and besides' as a overriding claim in IELTS Task 2."
+    title="And besides.."
+    description="Showing how to use 'and besides' as a overriding claim in IELTS Task 2."
 />
 
 <div class="mb-3 mw-500">

@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Every time / All the time",
+    title="Every time / All the time"
   description="Showing the difference between 'every time' and 'all the time' - often a point of confusion for Indonesian IELTS candidates."
 />
 

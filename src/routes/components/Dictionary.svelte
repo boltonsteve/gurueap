@@ -17,6 +17,16 @@
     let src = '';
     let example = '';
 
+    // Make a tCase version
+    let tCase = '';
+    for(let i=0;i<word.length;i++) {
+        if(i==0) {
+            tCase += word[i].toUpperCase();
+        } else {
+            tCase += word[i];
+        }
+    }
+
     const playAudio = () => {
         audio.src = src;
         audio.play();
@@ -39,7 +49,7 @@
             .then(response => response.json())
             .then(data => {
                 item = data[0];
-                iHtml1 = `<h2 class="mb-0">${item.word}</h2>`;
+                iHtml1 += `<h2 class="mb-0">${item.word}</h2>`;
 
                 // Phonemic spelling
                 if('phonetic' in item) {
@@ -58,25 +68,38 @@
                     }
                 }
 
-                // Part of speech
+                // meanings
                 item.meanings.forEach( meaning => {
-                    iHtml2 = `<div class="font-weight-bold mt-1">${meaning.partOfSpeech}</div>`;
+
+                    // partOfSpeech
+                    iHtml2 += `<div class="font-weight-bold mt-1">${meaning.partOfSpeech}</div>`;
+
+                    // definitions
                     iHtml2 += '<ol>';
                     meaning.definitions.forEach( nextDefinition => {
                         definition = nextDefinition.definition;
+
                         if(mode == 'guess') {
+
                             definition = definition.replace(word,'________');
+                            definition = definition.replace(tCase,'________');
                         }
+
                         iHtml2 += `<li class="mb-1">${definition}</li>`;
                         if('example' in nextDefinition) {
                             example = nextDefinition.example;
+
                             if(mode == 'guess') {
                                 example = example.replace(word,'________');
+                                example = example.replace(tCase,'________');
                             }
+
                             iHtml2 += `<ul><li class="mb-1 font-italic">${example}</li></ul>`;
+
                         }
                     });
                     iHtml2 += '</ol>';
+
                 })
 
             }).catch(error => {

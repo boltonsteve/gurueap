@@ -12,7 +12,7 @@
 </script>
 
 <SvelteSeo
-    title="Crime or Crimes",
+    title="Crime or Crimes"
     description="Contrasting the countable and uncountable versions of 'crime', which is often a topic in IELTS. Includes examples of usage."
 />
 

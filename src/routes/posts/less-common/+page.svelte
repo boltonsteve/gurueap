@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Less common vocabulary",
+    title="Less common vocabulary"
     description="The IELTS public band descriptors recommend using 'less common vocabulary' at band 7 and above. But what does this mean?"
 />
 

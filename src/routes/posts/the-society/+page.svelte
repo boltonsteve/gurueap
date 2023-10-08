@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-  title="(the) Society",
+  title="(the) Society"
   description="Demonstrating the difference between 'society' (without 'the') and 'the society'."
 />
 

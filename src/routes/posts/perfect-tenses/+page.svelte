@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Perfect tenses",
+    title="Perfect tenses"
     description="Video demonstration of the various perfect tenses, together with examples of their various meanings."
 />
 

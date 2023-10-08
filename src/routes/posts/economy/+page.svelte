@@ -47,7 +47,7 @@
 </script>
 
 <SvelteSeo
-    title="Being economical with the economy",
+    title="Being economical with the economy"
     description="Demonstrating various collocations with the word 'economy' and its different forms."
 />
 

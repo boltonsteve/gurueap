@@ -121,7 +121,7 @@
 
 
 <SvelteSeo
-    title="Idiom Flipcards",
+    title="Idiom Flipcards"
   description="Some examples of English idioms. Using these occasionally helps to increase your IELTS score for vocabulary, or Lexical Resource (LR), especially in IELTS Speaking."
 />
 

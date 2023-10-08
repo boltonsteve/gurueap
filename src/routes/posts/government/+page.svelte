@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Government",
+    title="Government"
     description="Are you talking about your own government, other governments, or the institution of government?"
 />
 

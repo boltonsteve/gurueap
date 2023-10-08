@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Present tenses",
+    title="Present tenses"
     description="Video demonstration of the various present tenses, together with examples of their various meanings."
 />
 

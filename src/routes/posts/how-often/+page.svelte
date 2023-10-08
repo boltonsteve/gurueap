@@ -6,7 +6,7 @@
 </script>
 
 <SvelteSeo
-    title="How often in IELTS Speaking",
+    title="How often in IELTS Speaking"
     description="When to use vague adverbs of frequency, and when to be more specific."
 />
 

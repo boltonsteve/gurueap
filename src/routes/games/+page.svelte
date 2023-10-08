@@ -21,8 +21,8 @@
 </script>
 
 <SvelteSeo
-  title="GuruEAP - Games",
-  description=""
+  title="GuruEAP - Games"
+  description="Interactive games mostly practicing vocabulary items taken from the Academic Word List (AWL)"
 />
 
 <div class="mb-3 pt-2 mw-500">

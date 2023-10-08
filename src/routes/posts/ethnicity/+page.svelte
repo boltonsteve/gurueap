@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Ethnic(ity)",
+    title="Ethnic(ity)"
   description="A borrowed word that has only one form in Bahasa Indonesia, but more than one in English - ethnic."
 />
 

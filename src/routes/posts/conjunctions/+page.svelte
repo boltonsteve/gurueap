@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-    title="Conjunctions",
+    title="Conjunctions"
   description="Video demonstration of why it is not possible to join independent clauses in English without using conjunctions."
 />
 

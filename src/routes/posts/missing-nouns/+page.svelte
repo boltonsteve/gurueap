@@ -4,6 +4,12 @@
     import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
+<SvelteSeo
+title="Missing Nouns"
+description="Warning Indonesian candidates that they cannot leave adjectives hanging without nouns."
+keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,grammar,Bahasa Indonesia,borrowed word"
+ />
+
 <div class="mw-500 mb-3">
 
     <img src="/img/police-search.jpg" class="img-fluid rounded" alt="police noun search">

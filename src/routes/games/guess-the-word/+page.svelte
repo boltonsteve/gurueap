@@ -47,9 +47,9 @@
 </script>
 
 <SvelteSeo
-title="Guess the word!"
-description="Read definitions and examples and guess the word!"
-keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary,games,Academic Word List"
+    title="Guess the word!"
+    description="Read definitions and examples and guess the word!"
+    keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary,games,Academic Word List"
  />
 
 <div class="mb-3 mw-500">

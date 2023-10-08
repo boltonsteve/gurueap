@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Avoid or Prevent?",
+    title="Avoid or Prevent?"
   description="Highlighting the differences in meaning between 'avoid' and 'prevent'"
 />
 

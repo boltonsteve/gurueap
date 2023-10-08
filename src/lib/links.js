@@ -424,6 +424,7 @@ export const links = [
     {
         title: "Add 's' by George",
         href: "posts/add-s",
+        description: "A video of George describing Yuana, and trying his best to put 's' on the end of words that require it.",
         keywords: ['grammar','pronunciation','s','video','articles']
     },
     {

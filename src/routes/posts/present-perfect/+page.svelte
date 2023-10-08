@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Have you used present perfect recently?",
+    title="Have you used present perfect recently?"
     description="Examples of present perfect and related time expressions, contrasted with other tenses."
 />
 

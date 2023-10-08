@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-  title="When usually is unusual",
+  title="When usually is unusual"
   description="Demonstrating that present simple tense often means 'usually', making 'usually' redundant"
 />
 

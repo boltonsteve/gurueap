@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="It",
+    title="It"
     description="Referencing and substitution using the pronouns 'it' and 'this'"
 />
 

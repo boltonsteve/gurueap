@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Millions",
+    title="Millions"
     description="Examining the mistaken use of 's' with 'million'"
 />
 

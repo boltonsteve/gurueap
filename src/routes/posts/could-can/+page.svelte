@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Could / Can",
+    title="Could / Can"
   description="Explaining the differences in meaning between 'could' and 'can', and advising against excessive use of 'could'"
 />
 

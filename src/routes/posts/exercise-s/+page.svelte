@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-  title="Exercise(s)",
+  title="Exercise(s)"
   description="Examples of the countable and uncountable forms of the noun 'exercise'."
 />
 

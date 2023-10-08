@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-    title="Competition(s)",
+    title="Competition(s)"
   description="Explaining the countable and uncountable usage of 'competition'"
 />
 

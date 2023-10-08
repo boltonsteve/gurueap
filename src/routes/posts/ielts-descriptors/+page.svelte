@@ -120,7 +120,7 @@
 </script>
 
 <SvelteSeo
-  title="IELTS Public Band Descriptors",
+  title="IELTS Public Band Descriptors"
   description="An interactive version of the IELTS public band descriptors for IELTS Speaking, Task 1 and Task 2 Writing."
 />
 

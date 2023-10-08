@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Content(s)",
+    title="Content(s)"
   description="Contrasting the countable and uncountable meanings of the English 'content'"
 />
 

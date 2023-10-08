@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-  title="Memorising and remembering memories",
+  title="Memorising and remembering memories"
   description="Demonstration of first language interference affecting three vocabulary items - 'memorise', 'remember' and 'recall'"
 />
 

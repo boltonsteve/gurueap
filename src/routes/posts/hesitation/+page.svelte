@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Hesitation",
+    title="Hesitation"
     description="Strategies used to hesitate in IELTS Speaking"
 />
 

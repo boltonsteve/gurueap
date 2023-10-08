@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-    title="Same as or Same with?",
+    title="Same as or Same with?"
     description="A minor collocation problem caused by first language interference. Same with instead of same as."
 /> 
 

@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="The blah blah sector",
+    title="The blah blah sector"
   description="Demonstrating the need for the definite article in front of the word 'sector', plus use cases."
 />
 

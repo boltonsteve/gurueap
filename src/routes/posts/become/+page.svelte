@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Become",
+    title="Become"
   description="Showing that unlike Bahasa Indonesia, 'become' in English always implies a change over time."
 />
 

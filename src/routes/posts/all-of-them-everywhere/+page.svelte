@@ -5,7 +5,7 @@
 </script>
 
 <SvelteSeo
-    title="All of them everywhere",
+    title="All of them everywhere"
     description="Demonstrating the function of the plural 's' to communicate 'all of them everywhere'."
 />
 

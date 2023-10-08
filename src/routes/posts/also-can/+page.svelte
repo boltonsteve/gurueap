@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Cannot, also can",
+    title="Cannot, also can"
   description="Demonstrating a word-order difference between English and Bahasa Indonesia"
 />
 

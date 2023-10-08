@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-  title="There is ada",
+  title="There is ada"
   description="Demonstrating the redundance of 'there is/there are' when a sentence or clause already includes a subject."
 />
 

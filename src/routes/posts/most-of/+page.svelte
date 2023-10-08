@@ -3,7 +3,7 @@
 </script>
 
 <SvelteSeo
-    title="Most of",
+    title="Most of"
     description="Contrasting the grammar of 'most' and 'most of'"
 />
 

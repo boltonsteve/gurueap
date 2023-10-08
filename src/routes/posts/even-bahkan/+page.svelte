@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Even / Bahkan",
+    title="Even / Bahkan"
   description="Demonstrating the structural placement of 'even' when it is used to introduce a surprising claim, and highlighting the structural difference with the Indonesian 'bahkan'."
 />
 

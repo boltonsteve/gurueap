@@ -13,8 +13,8 @@
 </script>
 
 <SvelteSeo
-    title="Beware of past perfect",
-  description="Explaining the structural usage of past perfect tense, together with examples - and a warning!"
+    title="Beware of past perfect"
+    description="Explaining the structural usage of past perfect tense, together with examples - and a warning!"
 />
 
 <div class="mb-3 mw-500">

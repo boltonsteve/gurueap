@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Lazy to read",
+    title="Lazy to read"
     description="A favourite phrase of Indonesian students. Here we look at the English - I can't be bothered!"
 /> 
 
