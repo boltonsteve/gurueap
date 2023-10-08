@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Raise or Rise",
+        href: "posts/raise-rise",
+        keywords: ['vocabulary','transitive intransitive'],
+        description: "Highlighting the difference in meaning and structure between raise and rise."
+    },
+    {
         title: "Costumer Customers",
         href: "posts/customers",
         keywords: ['vocabulary','Bahasa Indonesia','borrowed word'],
