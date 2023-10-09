@@ -51,7 +51,7 @@
         <div class="container diphthongs">
             <div id="S13" class="sound" on:click={doSound}>&#618;&#601;</div>
             <div id="S14" class="sound" on:click={doSound}>&#101;&#618;</div>
-            <div class="col sound border-dark">&nbsp;</div>
+            <div class="rounded">&nbsp;</div>
             <div id="S15" class="sound" on:click={doSound}>&#650;&#601;</div>
             <div id="S16" class="sound" on:click={doSound}>&#596;&#618;</div>
             <div id="S17" class="sound" on:click={doSound}>&#601;&#650;</div>
@@ -104,6 +104,10 @@
         align-items:center;
         border-radius:5px;
         height:50px;
+        cursor:pointer;
+        font-family:Times New Roman;
+        font-size:2rem;
+
     }
     .row-top {
         display:grid;
@@ -127,35 +131,32 @@
         gap:10px;
     }
 
-    .sound, .line, #pronunciation {
-        cursor:pointer;
-        font-family:Times New Roman;
-        font-size:2rem;
-    }
-    #output, #pronunciation {
-        font-size:1.8em;
-    }
-
-    .vowels div {
+    .vowels .sound {
         border:1px solid red;
     }
-    .vowels div:hover {
+
+    .vowels .sound:hover {
         background:red;
         color:white;
     }
-    .diphthongs div {
+
+    .diphthongs .sound {
         border:1px solid blue;
     }
-    .diphthongs div:hover {
+
+    .diphthongs .sound:hover {
         background:blue;
         color:white;
     }
-    .consonants div {
+
+    .consonants .sound {
         border:1px solid green;
     }
-    .consonants div:hover {
+
+    .consonants .sound:hover {
         background:green;
         color:white;
     }
+
 </style>
 
