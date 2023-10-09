@@ -226,7 +226,7 @@
 
 <div class="mb-3 mw-500">
 
-    <h1 class="mt-0">Look it up!</h1>
+    <h1>Look it up!</h1>
 
     <p class="mb-0">Try to guess the word chosen at random from the <span class="tooltip" title="Academic Word List" use:tooltip>AWL</span>.</p>
     <p class="mt-0">Type a guess then press 'enter' or click (or tap) 'check'.</p>
