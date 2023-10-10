@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Prepare (for)",
+        href: "posts/prepare-for",
+        keywords: ['vocabulary'],
+        description: "Highlighting the difference in meaning and structure between 'prepare' and 'prepare for'."
+    },
+    {
         title: "Raise or Rise",
         href: "posts/raise-rise",
         keywords: ['vocabulary','transitive intransitive'],
