@@ -22,7 +22,7 @@
     <h3 class="mb-0">Production (countable)</h3>
     <p class="mt-0">In its countable form, <a href="https://skell.sketchengine.eu/#result?lpos=&query=productions&lang=en&f=concordance" target="_blank" rel="noopener"><em><strong>production</strong></em></a> has strong associations with music and theatre:</p>
 
- 	<ul>
+ 	<ul class="lh-15">
  	    <li>Medieval theatre <b><i>productions</i></b> are still performed today.</li>
  	    <li>300 performances were given of 33 different opera <b><i>productions</i></b>.</li>
  	    <li>The earliest sound effects were strictly studio <b><i>productions</i></b>.</li>
@@ -33,7 +33,7 @@
     <h3 class="mb-0">Production (uncountable)</h3>
     <p class="mt-0">It is only when it is in its <b><i>uncountable</i></b> form that production means <b><i>manufacturing</i></b>:</p>
 
- 	<ul>
+ 	<ul class="lh-15">
  	    <li>The highest <b><i>production</i></b> recorded was fifty thousand annually.</li>
  	    <li>The company has 15 <b><i>production</i></b> plants worldwide.</li>
  	    <li>By 1900 daily <b><i>production</i></b> was 2 thousand tons.</li>
@@ -43,7 +43,7 @@
 
     <p>And so returning to our opening example, we need:</p>
 
-    <div class="alert alert-success font-italic">Automation in industry means increased productivity and better <span class="font-weight-bold text-success">production</span>.</div>
+    <div class="alert alert-success font-italic">Automation in industry means increased <span class="font-weight-bold text-success">productivity</span> and better <span class="font-weight-bold text-success">production</span>.</div>
 
     <WithIcon icon="sign" position="right">
         <div slot="html">Elsewhere on GuruEAP you will find <a href="../posts/countable-uncountable">further discussion and examples of countable and uncountable nouns</a>.</div>

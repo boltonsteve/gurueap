@@ -3,6 +3,11 @@
     import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
+<SvelteSeo
+title="Demand(s) (for)"
+description="Highlighting the difference in meaning between 'demand for' and demand 'of'."
+ />
+
 <div class="mb-3 mw-500">
 
     <img src="/img/demand.png" class="mx-auto" alt="dmand">

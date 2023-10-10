@@ -24,11 +24,17 @@
 
 </script>
 
+<SvelteSeo
+title="Phonemic Alphabet"
+description="The phonemic alphabet - with sound!"
+keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,phonology,pronunciation,phonemic script,phonemic alphabet",
+ /> 
+
 <audio controls="" id="myAudio" style="display:none;">
     <source src="#">
 </audio>
 
-<div class="container mx-auto" style="max-width:700px;">
+<div class="container mx-auto mb-3" style="max-width:500px;">
 
     <h1 class="mb-1"><Headphones height={34} width={34} fill="var(--teal)" /> Phonemic Alphabet</h1>
     <p class="mt-0 mb-3">Click (or tap) <b><i>phonemes</i></b> to hear what they sound like.</p>
@@ -61,7 +67,7 @@
         </div>
     </div>
 
-    <div class="row-bottom consonants">
+    <div class="row-bottom consonants mb-3">
         <div id="S21" class="sound" on:click={doSound}>&#112;</div>
         <div id="S22" class="sound" on:click={doSound}>&#98;</div>
         <div id="S23" class="sound" on:click={doSound}>&#116;</div>

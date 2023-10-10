@@ -1,9 +1,15 @@
 export const links = [
     {
-        title: "Demand (for) demanding",
+        title: "Phonemic Alphabet",
+        href: "posts/phonemic-alphabet",
+        keywords: ['pronunciation','phonology'],
+        description: "The phonemic alphabet - with sound!"
+    },
+    {
+        title: "Demand(s) (for)",
         href: "posts/demand",
         keywords: ['vocabulary'],
-        description: ""
+        description: "Highlighting the difference in meaning between 'demand for' and demand 'of'."
     },
     {
         title: "Prepare (for)",

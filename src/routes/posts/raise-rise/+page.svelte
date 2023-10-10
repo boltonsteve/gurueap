@@ -16,7 +16,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     <p>This is an easy mistake to make. There are 2 verbs with similar meanings. One is transitive (must have an object), the other intransitive (no object).</p>
 
-    <img src="/img/titanic.jpg" class="mx-auto rounded w-50" alt="titanic">
+    <img src="/img/titanic.jpg" class="mx-auto rounded w-75" alt="titanic">
     <p class="small mt-1 text-center">The Titanic</p>
 
     <p>In your example you use <a href="https://skell.sketchengine.eu/#result?lpos=&query=raise&lang=en&f=concordance" target="_blank" rel="noopener">raise</a>', as in <b><i>raise the titanic</i></b> (V2: raised). However, you have no object, and so what you need is <a href="https://skell.sketchengine.eu/#result?lpos=&query=rise&lang=en&f=concordance" target="_blank" rel="noopener">rise</a> (V2: rose):</p>
