@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Demand (for) demanding",
+        href: "posts/demand",
+        keywords: ['vocabulary'],
+        description: ""
+    },
+    {
         title: "Prepare (for)",
         href: "posts/prepare-for",
         keywords: ['vocabulary'],
