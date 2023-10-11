@@ -11,6 +11,7 @@
     let feedback = false;
     let showScore = false;
     let showCheckButton = true;
+    let showKeyButton = false;
     let score = 0;
     let scoreMsg = '';
 
@@ -36,6 +37,7 @@
         showScore = true;
         animateScroll.scrollTo({element: '#scoreDiv', duration: 1000});
         showCheckButton = false;
+        showKeyButton = true;
 
     }
 
@@ -192,7 +194,9 @@
         {#if showCheckButton}
             <button class="btn btn-outline-primary" on:click={checkAnswers}>Check answers</button>
         {/if}
-        <button class="btn btn-outline-primary" on:click={showFeedback}>Key</button>
+        {#if showKeyButton}
+            <button class="btn btn-outline-primary" on:click={showFeedback}>Key</button>
+        {/if}
     </div>
 
 
