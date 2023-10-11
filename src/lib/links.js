@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Big cows, big horse, because",
+        href: "posts/because",
+        keywords: ['pronunciation'],
+        description: "Showing that words in English are not always pronounced the way they are spelled!"
+    },
+    {
         title: "(A) few, (a) little",
         href: "posts/few-little",
         keywords: ['vocabulary','quantifiers'],
