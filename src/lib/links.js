@@ -2,7 +2,7 @@ export const links = [
     {
         title: "Big cows, big horse, because",
         href: "posts/because",
-        keywords: ['pronunciation'],
+        keywords: ['pronunciation','Bahasa Indonesia'],
         description: "Showing that words in English are not always pronounced the way they are spelled!"
     },
     {
