@@ -14,13 +14,13 @@
 
     <p>If we say <b><i>because</i></b> <span class="uli">as it is spelled</span>, then it sounds like:</p>
 
-<img src="/img/big-cows.png" class="w-75 mx-auto rounded" alt="big cows">
+<img src="/img/big-cows.png" class="img-fluid rounded" alt="big cows">
 <h2 class="text-center mt-1">big cows</h2>
 
 
 <p>However, <span class="uli">when a native speaker says <b><i>because</i></b></span>, it sounds like:</p>
 
-<img src="/img/big-horse.png" class="w-75 mx-auto rounded" alt="big cows">
+<img src="/img/big-horse.png" class="img-fluid rounded" alt="big cows">
 <h2 class="text-center mt-1">big horse</h2>
 
 
