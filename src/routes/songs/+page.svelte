@@ -15,8 +15,8 @@
   description="Songs that demonstrate various aspects of language, for example lexical and grammatical structures, that often become lost in translation from other languages into English. Performed by EAP students, many of whom are preparing for IELTS."
 />
 
-<div class="mb-3 pt-2 mw-500 container">
-    <div><img src="/img/steve-baby.png" class="mx-auto mb-3" alt="gurueap" style="width:180px;"></div>
+    <div><img src="/img/steve-baby.png" class="mx-auto my-1" alt="gurueap" style="width:150px;"></div>
+<div class="mb-3 pt-2 container">
     {#each songs as song}
         <div class="card">
             <Card title="{song.title}" icon="songs" path="./songs/{song.href}" text="{song.description}" />
