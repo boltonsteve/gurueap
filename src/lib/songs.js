@@ -1,5 +1,11 @@
 export const songs = [
     {
+        title: "The this, the that",
+        href: "the-this-the-that",
+        keywords: ['song','collocation','vocabulary','grammar','articles','Bahasa Indonesia'],
+        description: "Encouraging the memorisation of nouns that are always preceded by 'the'."
+    },
+    {
         title: "Some People",
         href: "some-people",
         keywords: ['song','collocation','vocabulary'],
