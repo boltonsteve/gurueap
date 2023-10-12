@@ -31,7 +31,7 @@
 
     <p>
         The <b><i>definite article</i></b> - ‘the'<br>
-        Is a common cause of error<br>
+        Is a common source of error<br>
         The <b><i>media</i></b> the <b><i>Internet</i></b> Learners tend to forget<br>
         Some words always have ‘the’
     </p>
