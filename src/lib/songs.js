@@ -1,5 +1,11 @@
 export const songs = [
     {
+        title: "Lack of 'lack'",
+        href: "lack-of-lack",
+        keywords: ['song','collocation','vocabulary','grammar'],
+        description: "Encouraging the use of 'lack' as a verb and 'lack of' as a noun."
+    },
+    {
         title: "The this, the that",
         href: "the-this-the-that",
         keywords: ['song','collocation','vocabulary','grammar','articles','Bahasa Indonesia'],

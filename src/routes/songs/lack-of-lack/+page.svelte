@@ -73,7 +73,7 @@
     <p>
         Whenever <span class="font-weight-bold text-success">lack</span> is a <span class="font-weight-bold text-success">verb</span>, you need only one word<br>
         Whenever <span class="font-weight-bold text-success">lack</span> is a <span class="font-weight-bold text-success">verb</span>, you need only one word<br>
-        But if lack is a noun you need lack of, lack of, lack of (<span class="font-weight-bold text-primary">lack of</span> <span class="font-weight-bold text-success">lack</span>)
+        But if <span class="font-weight-bold text-primary">lack</span> is a <span class="font-weight-bold text-primary">noun</span> you need <span class="font-weight-bold text-primary">lack of</span>, <span class="font-weight-bold text-primary">lack of</span>, <span class="font-weight-bold text-primary">lack of</span> (<span class="font-weight-bold text-primary">lack of</span> <span class="font-weight-bold text-success">lack</span>)
     </p>
 
 </div>
