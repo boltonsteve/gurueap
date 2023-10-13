@@ -66,7 +66,7 @@
     <p>
         The <b><i>same</i></b>, the only, without ‘the’ are lonely<br>
         If you don’t use ‘the’ you can sound like a phony<br>
-        The <b><i>poor</i></b>, the <b><i>rich</i></b>, the beginning and the end<br>
+        The <b><i>poor</i></b>, the <b><i>rich</i></b>, the <b><i>beginning</i></b> and the <b><i>end</i></b><br>
         The <b><i>sun</i></b> and the <b><i>moon</i></b>.. ‘the’ is their friend!
     </p>
 

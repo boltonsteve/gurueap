@@ -115,7 +115,7 @@
 
 <SvelteSeo
     title="(At) (the) universit(y/ies)"
-description="Different meanings of 'university' - buuldings, level of education, etc."
+description="Different meanings of 'university' - buildings, level of education, etc."
 keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary"
  />
 
