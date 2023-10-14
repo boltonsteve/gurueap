@@ -8,6 +8,18 @@
 
     let showBadge = false;
     let cards = [];
+    let right = 10;
+    console.log(right);
+    /* console.log(right); */
+
+    const increment = () => {
+        right = right + 30;
+        console.log("right: " + right);
+    }
+    const reset = () => {
+        right = 10;
+        console.log("right: " + right);
+    }
 
     // Unique array of keywords (I know this could be tidier..!)
     let all_kw = [];
@@ -93,24 +105,49 @@
 <div class="container">
     {#each cards as card}
         <a class="menu-item" href="../{card.href}" style="padding:0px 10px 0px 10px;">
-            {#if card.keywords.includes('video')}
-                <div class="badge badge-video"><Film /></div>
-            {/if}
-            {#if card.keywords.includes('song')}
-                <div class="badge badge-song"><MusicNoteBeamed /></div>
-            {/if}
-            {#if card.keywords.includes('Bahasa Indonesia') || card.keywords.includes('borrowed word')}
-                <div class="badge-indo badge-indo-outer">
-                    <div class="badge-indo-top"></div>
-                    <div class="badge-indo-bottom"></div>
-                </div>
-            {/if}
-            {card.title}
+
+            <div class="icons">
+
+                {#if card.keywords.includes('Bahasa Indonesia') || card.keywords.includes('borrowed word')}
+                    <div>
+                        <div class=" badge badge-indo-outer">
+                            <div class="badge-indo-top"></div>
+                            <div class="badge-indo-bottom"></div>
+                        </div>
+                    </div>
+                {/if}
+
+                {#if card.keywords.includes('video')}
+                    <div>
+                        <div class="badge badge-video"><Film /></div>
+                    </div>
+                {/if}
+
+                {#if card.keywords.includes('song')}
+                    <div>
+                        <div class="badge badge-song"><MusicNoteBeamed /></div>
+                    </div>
+                {/if}
+
+            </div>
+
+            <div use:reset>{card.title}</div>
         </a>
     {/each}
 </div>
 
 <style>
+
+    .icons {
+        display:flex;
+        flex-direction:row-reverse;
+        height:30px;
+        width:90%;
+        justify-content:end;
+        /* align-items:center; */
+        position: absolute;
+        top:-10px
+    }
 
 select {
     height:30px;
@@ -195,20 +232,22 @@ select {
     text-decoration: none;
 }
 
+/* .badge, .badge-indo { */
+/*     top:-10px; */
+/* } */
+
 .badge{
     display:flex;
     height:30px;
     width:30px;
     justify-content:center;
     align-items:center;
-    position: absolute;
+    /* position: absolute; */
     border-radius: 30px 30px 30px 30px;
 }
 
 .badge-indo{
-    height:30px;
-    width:30px;
-    position: absolute;
+    /* position: absolute; */
     border-radius: 30px 30px 30px 30px;
 }
 
@@ -216,25 +255,21 @@ select {
     background:var(--green);
     color:var(--light);
     border:1px solid var(--teal);
-    right:20px;
-    top:-10px;
 }
 
 .badge-song {
     background:var(--blue);
     color:var(--light);
     border:1px solid var(--teal);
-    right:50px;
-    top:-10px;
 }
 
 .badge-indo-outer {
+    display:grid;
+    grid-template-columns: 1fr;
     height:30px;
     width:30px;
     border-radius: 15px 15px 15px 15px;
     border:1px solid var(--teal);
-    right:-10px;
-    top:-10px;
 }
 
 .badge-indo-top {
@@ -252,5 +287,9 @@ select {
     width:30px;
     border-radius: 0px 0px 15px 15px;
 }
+
+    /* * { */
+    /*     border:1px solid green; */
+    /* } */
 
 </style>
