@@ -109,14 +109,15 @@
         })
 
         animateScroll.scrollToTop({duration: 1000});
+
     }
 
 </script>
 
 <SvelteSeo
     title="(At) (the) universit(y/ies)"
-description="Different meanings of 'university' - buildings, level of education, etc."
-keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary"
+    description="Different meanings of 'university' - buildings, level of education, etc."
+    keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary"
  />
 
 <div class="mb-3 mw-500">

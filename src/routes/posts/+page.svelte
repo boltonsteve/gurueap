@@ -205,11 +205,18 @@ select {
     border-radius: 30px 30px 30px 30px;
 }
 
+.badge-indo{
+    height:30px;
+    width:30px;
+    position: absolute;
+    border-radius: 30px 30px 30px 30px;
+}
+
 .badge-video {
     background:var(--green);
     color:var(--light);
     border:1px solid var(--teal);
-    left:-10px;
+    right:20px;
     top:-10px;
 }
 
@@ -217,15 +224,7 @@ select {
     background:var(--blue);
     color:var(--light);
     border:1px solid var(--teal);
-    right:-10px;
-    bottom:-10px;
-}
-
-.badge-indo {
-    background:var(--light);
-    color:red;
-    border:1px solid var(--teal);
-    right:-10px;
+    right:50px;
     top:-10px;
 }
 
@@ -236,13 +235,6 @@ select {
     border:1px solid var(--teal);
     right:-10px;
     top:-10px;
-}
-
-.badge-indo{
-    height:30px;
-    width:30px;
-    position: absolute;
-    border-radius: 30px 30px 30px 30px;
 }
 
 .badge-indo-top {
