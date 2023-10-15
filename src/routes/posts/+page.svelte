@@ -2,7 +2,7 @@
 
     import SvelteSeo from "svelte-seo";
     import { links } from '$lib/links.js';
-    import { Film, MusicNoteBeamed, CircleHalf, Youtube, Pencil, Ear, Hammer } from "svelte-bootstrap-icons";
+    import { Film, PersonArmsUp, SquareHalf, MusicNoteBeamed, CircleHalf, Youtube, Pencil, Ear, Hammer } from "svelte-bootstrap-icons";
 
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
@@ -94,38 +94,28 @@
     {#each cards as card}
         <a class="menu-item" href="../{card.href}" style="padding:0px 10px 0px 10px;">
 
-            <div class="icons">
+            <div class="badges">
 
                 {#if card.keywords.includes('Bahasa Indonesia') || card.keywords.includes('borrowed word')}
-                    <div>
-                        <div class="badge-indo"><CircleHalf height={20} width={20} /></div>
+                    <div class="badge badge-indo">
+                        <div class="flag">
+                            <div class="red">&nbsp;</div>
+                            <div class="white">&nbsp;</div>
+                        </div>
                     </div>
                 {/if}
-
                 {#if card.keywords.includes('video')}
-                    <div>
-                        <div class="badge badge-video"><Youtube /></div>
-                    </div>
+                    <div class="badge badge-video"><Youtube height={25} width={25} /></div>
                 {/if}
-
                 {#if card.keywords.includes('song')}
-                    <div>
-                        <div class="badge badge-song"><MusicNoteBeamed /></div>
-                    </div>
+                    <div class="badge badge-song"><MusicNoteBeamed height={20} width={20} /></div>
                 {/if}
-
                 {#if card.keywords.includes('listening')}
-                    <div>
-                        <div class="badge badge-listening"><Ear /></div>
-                    </div>
+                    <div class="badge badge-listening"><Ear height={20} width={20} /></div>
                 {/if}
-
                 {#if card.keywords.includes('activity')}
-                    <div>
-                        <div class="badge badge-activity"><Hammer /></div>
-                    </div>
+                    <div class="badge badge-activity"><PersonArmsUp height={30} width={20} /></div>
                 {/if}
-
 
             </div>
 
@@ -136,16 +126,36 @@
 
 <style>
 
-.icons {
+
+.flag {
+    height:16px;
+    width:20px;
+    border: 1px solid var(--red);
+}
+
+.flag .red, .flag .white {
+    height:8px;
+    width:20px;
+}
+
+.flag .red {
+    background: var(--red);
+}
+
+.flag .white {
+    background: var(--light);
+}
+
+.badges {
     display:flex;
     flex-direction:row-reverse;
     height:30px;
-    width:95%;
-    gap:3px;
+    width:98%;
+    gap:0px;
     justify-content:end;
     /* align-items:center; */
     position: absolute;
-    top:-10px
+    top:2px
 }
 
 select {
@@ -233,11 +243,14 @@ select {
 
 .badge{
     display:flex;
-    height:30px;
-    width:30px;
+    margin:auto 2px;
+    /* height:30px; */
+    /* width:30px; */
     justify-content:center;
     align-items:center;
     border-radius: 30px 30px 30px 30px;
+    /* border:1px solid var(--teal); */
+    /* background:var(--light); */
 }
 
 .badge-indo{
@@ -245,39 +258,30 @@ select {
     display:flex;
     justify-content:center;
     align-items:center;
-    background:var(--light);
     color:var(--red);
     border-radius: 30px 30px 30px 30px;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
 
     height:30px;
     width:30px;
-    border:1px solid var(--teal);
 }
 
 .badge-video {
-    background:var(--light);
-    color:var(--red);
-    border:1px solid var(--teal);
+    color:var(--teal);
 }
 
 .badge-song {
-    background:var(--light);
-    color:var(--dark);
-    border:1px solid var(--teal);
+    color:var(--teal);
 }
 
 .badge-listening {
-    background:var(--light);
-    color:var(--dark);
-    border:1px solid var(--teal);
+    color:var(--teal);
 }
 
 .badge-activity {
-    background:var(--light);
-    color:var(--dark);
-    border:1px solid var(--teal);
+    color:var(--teal);
 }
+
 
 .badge-indo-outer {
     display:grid;
@@ -304,8 +308,8 @@ select {
     border-radius: 0px 0px 15px 15px;
 }
 
-    /* * { */
-    /*     border:1px solid green; */
-    /* } */
+/* * { */
+/*     border:1px solid green; */
+/* } */
 
 </style>
