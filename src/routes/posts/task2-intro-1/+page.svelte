@@ -18,35 +18,39 @@
 
     <p>Let's analyse this and see if it ticks the right boxes in terms of the desirable features of an opening sentence in IELTS Task 2 writing.</p>
 
-    <ul>
+    <ol>
         <li class="mb-1">It tells the reader the topic of the essay contained in the question paper.</li>
         <li class="lst-none mb-3">
-            <WithIcon icon="thumbUp" msg="Well, assuming that the essay is about social media, here we get some examples of social media platforms. So far so good!" />
+            <WithIcon icon="thumbUp" msg="Well, assuming that the essay is about social media, here we get some examples of social media platforms. So far so good!" position="right" />
         </li>
+    </ol>
+    <ol start="2">
         <li class="mb-1">It refers to a current aspect of the topic.</li>
         <li class="lst-none mb-3">
-            <WithIcon icon="thumbUp" msg="The time expression 'in recent years' suggests that we're going to read about some recent issue relating to social media. We're doing well." />
+            <WithIcon icon="thumbUp" msg="The time expression 'in recent years' suggests that we're going to read about some recent issue relating to social media. We're doing well." position="right" />
         </li>
+    </ol>
+    <ol start="3">
         <li class="mb-1">It says something about the topic that is interesting enough to make our reader want to read the rest of the essay.</li>
         <li class="lst-none mb-3">
-            <WithIcon icon="thumbDown" msg="I don't think our reader will find this interesting. The writer doesn't say anything interesting about this recent issue, except that it '..has become widely discussed in society.' The problem here is that just about any topic can be said to be widely discussed. This is not specific enough!" />
+            <WithIcon icon="thumbDown" msg="I don't think our reader will find this interesting. The writer doesn't say anything interesting about this recent issue, except that it '..has become widely discussed in society.' The problem here is that just about any topic can be said to be widely discussed. This is not specific enough!" position="right" />
         </li>
-    </ul>
+    </ol>
 
         <p>To satisfy criterion 3 (above), we need to say something interesting (and therefore unique) about this topic. For example:</p>
 
     <ul>
         <li class="mb-1 font-italic">In recent years, social media platforms like Instagram, Facebook, and Twitter have become alternative sources of news for many people.</li>
         <li class="lst-none mb-3">
-            <WithIcon icon="thumbUp" msg="This will be interesting for the reader. It will make the reader consider his own use of social media for news access." />
+            <WithIcon icon="thumbUp" msg="This will be interesting for the reader. It will make the reader consider his own use of social media for news access." position="right" />
         </li>
         <li class="mb-1 font-italic">In recent years, social media platforms like Instagram, Facebook, and Twitter have become increasingly popular, especially among younger people.</li>
         <li class="lst-none mb-3">
-            <WithIcon icon="thumbUp" msg="This will also be interesting for the reader. The reader will think: 'Hmm. It may be popular among younger people, but do I like it?'" />
+            <WithIcon icon="thumbUp" msg="This will also be interesting for the reader. The reader will think: 'Hmm. It may be popular among younger people, but do I like it?'" position="right" />
         </li>
         <li class="mb-1 font-italic">In recent years, social media platforms like Instagram, Facebook, and Twitter have given us new and interesting ways to communicate with each other.</li>
         <li class="lst-none">
-            <WithIcon icon="thumbUp" msg="Interesting. The reader consider these new and interesting ways to communicate, including the ability to communicate news." />
+            <WithIcon icon="thumbUp" msg="Interesting. The reader consider these new and interesting ways to communicate, including the ability to communicate news." position="right" />
         </li>
     </ul>
 
