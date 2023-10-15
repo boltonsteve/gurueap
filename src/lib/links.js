@@ -257,12 +257,12 @@ export const links = [
         keywords: ['vocabulary','compare contrast','Bahasa Indonesia'],
         description: "A minor collocation problem caused by first language interference. Same with instead of same as."
     },
-    // {
-    //     title: "Task 2 Introductions - Sentence #1",
-    //     href: "posts/task2-intro-1",
-    //     keywords: ['writing','IELTS','Task 2'],
-    //     description: "How to write an effective opening sentence to a Task 2 introduction - and how NOT to write it!"
-    // },
+    {
+        title: "Task 2 Introductions - Sentence #1",
+        href: "posts/task2-intro-1",
+        keywords: ['writing','IELTS','Task 2'],
+        description: "How to write an effective opening sentence to a Task 2 introduction - and how NOT to write it!"
+    },
     {
         title: "Opinion in topic sentences",
         href: "posts/topic-sentences",

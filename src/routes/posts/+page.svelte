@@ -98,7 +98,7 @@
 
                 {#if card.keywords.includes('Bahasa Indonesia') || card.keywords.includes('borrowed word')}
                     <div>
-                        <div class="badge-indo"><CircleHalf height={32} width={32} /></div>
+                        <div class="badge-indo"><CircleHalf height={20} width={20} /></div>
                     </div>
                 {/if}
 
@@ -249,6 +249,10 @@ select {
     color:var(--red);
     border-radius: 30px 30px 30px 30px;
     transform: rotate(90deg);
+
+    height:30px;
+    width:30px;
+    border:1px solid var(--teal);
 }
 
 .badge-video {
