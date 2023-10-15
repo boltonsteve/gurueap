@@ -8,18 +8,6 @@
 
     let showBadge = false;
     let cards = [];
-    let right = 10;
-    console.log(right);
-    /* console.log(right); */
-
-    const increment = () => {
-        right = right + 30;
-        console.log("right: " + right);
-    }
-    const reset = () => {
-        right = 10;
-        console.log("right: " + right);
-    }
 
     // Unique array of keywords (I know this could be tidier..!)
     let all_kw = [];
@@ -110,10 +98,7 @@
 
                 {#if card.keywords.includes('Bahasa Indonesia') || card.keywords.includes('borrowed word')}
                     <div>
-                        <div class=" badge badge-indo-outer">
-                            <div class="badge-indo-top"></div>
-                            <div class="badge-indo-bottom"></div>
-                        </div>
+                        <div class="badge-indo"><CircleHalf height={32} width={32} /></div>
                     </div>
                 {/if}
 
@@ -131,23 +116,24 @@
 
             </div>
 
-            <div use:reset>{card.title}</div>
+            {card.title}
         </a>
     {/each}
 </div>
 
 <style>
 
-    .icons {
-        display:flex;
-        flex-direction:row-reverse;
-        height:30px;
-        width:90%;
-        justify-content:end;
-        /* align-items:center; */
-        position: absolute;
-        top:-10px
-    }
+.icons {
+    display:flex;
+    flex-direction:row-reverse;
+    height:30px;
+    width:95%;
+    gap:3px;
+    justify-content:end;
+    /* align-items:center; */
+    position: absolute;
+    top:-10px
+}
 
 select {
     height:30px;
@@ -232,34 +218,35 @@ select {
     text-decoration: none;
 }
 
-/* .badge, .badge-indo { */
-/*     top:-10px; */
-/* } */
-
 .badge{
     display:flex;
     height:30px;
     width:30px;
     justify-content:center;
     align-items:center;
-    /* position: absolute; */
     border-radius: 30px 30px 30px 30px;
 }
 
 .badge-indo{
     /* position: absolute; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--light);
+    color:var(--red);
     border-radius: 30px 30px 30px 30px;
+    transform: rotate(90deg);
 }
 
 .badge-video {
-    background:var(--green);
-    color:var(--light);
+    background:var(--light);
+    color:var(--green);
     border:1px solid var(--teal);
 }
 
 .badge-song {
-    background:var(--blue);
-    color:var(--light);
+    background:var(--light);
+    color:var(--orange);
     border:1px solid var(--teal);
 }
 

@@ -14,20 +14,38 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     <div class="alert alert-danger font-italic">Sorry, I can't join you for lunch. I <span class="font-weight-bold text-danger">will meet</span> my writing supervisor to discuss my dissertation.</div>
 
-    <p>For events in the future that are..</p>
+    <div class="my-grid">
+        <div>
+            <p>For events in the future that are..</p>
+            <ul>
+                <li>fixed</li>
+                <li>difficult to re-schedule</li>
+                <li>circled on a calendar</li>
+            </ul>
+            <p>..you need:</p>
+        </div>
 
-<ul>
-    <li>fixed</li>
-    <li>difficult to re-schedule</li>
-    <li>written in a diary</li>
-</ul>
+        <div><img src="/img/calendar.png" class="img-fluid" alt="calendar"></div>
 
-<p>..you need:</p>
+    </div>
 
-<div class="alert alert-success font-italic">Sorry, I can't join you for lunch. I<span class="font-weight-bold text-success">'m meeting</span> my writing supervisor to discuss my dissertation.</div>
+    <div class="alert alert-success font-italic">Sorry, I can't join you for lunch. I<span class="font-weight-bold text-success">'m meeting</span> my writing supervisor to discuss my dissertation.</div>
 
-<p>I know, the meeting is due to take place in the future, but when an arrangement has been made with someone else and is difficult to change, use present continuous tense, especially when you're excusing yourself from some other offer.</p>
+    <p>I know, the meeting is due to take place in the future, but when an arrangement has been made with someone else and is difficult to change, use present continuous tense, especially when you're excusing yourself from some other offer.</p>
 
-<div class="alert alert-success font-italic">Sorry but I have to go now. I<span class="font-weight-bold text-success">'m teaching</span> a class in 10 minutes!</div>
+    <div class="alert alert-success font-italic">Sorry but I have to go now. I<span class="font-weight-bold text-success">'m teaching</span> a class in 10 minutes!</div>
 
 </div>
+
+<style>
+img {
+    transform:rotate(10deg);
+    /* margin-left: 5px; */
+}
+    .my-grid {
+        display:grid;
+        grid-template-columns: 3fr 2fr;
+        gap:10px;
+        align-items:center;
+    }
+</style>
