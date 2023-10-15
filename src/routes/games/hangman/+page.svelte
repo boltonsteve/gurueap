@@ -1,6 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { PersonArmsUp, HeartFill } from "svelte-bootstrap-icons";
+    import { PersonArmsUp, HeartFill, EmojiSmile, EmojiFrown, EmojiNeutral, EmojiGrimace } from "svelte-bootstrap-icons";
     import { sublists } from '$lib/sublists.js';
     import { shuffle } from '$lib/shuffle.js';
     import Dictionary from '../../components/Dictionary.svelte';
@@ -117,9 +117,17 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
     {/if}
 
 <div class="gallows">
-    {#each cats as cat}
+    {#each cats as cat, index}
         <div style="margin:0px 2px;">
-            <HeartFill fill="var(--red)" width={iconSize} height={iconSize} />
+            {#if cats.length < 2}
+                <EmojiGrimace width={iconSize} height={iconSize} />
+            {:else if cats.length < 4}
+                <EmojiFrown width={iconSize} height={iconSize} />
+            {:else if cats.length < 6}
+                <EmojiNeutral width={iconSize} height={iconSize} />
+            {:else}
+                <EmojiSmile width={iconSize} height={iconSize} />
+            {/if}
         </div>
     {/each}
 </div>
