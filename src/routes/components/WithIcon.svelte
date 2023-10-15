@@ -1,6 +1,6 @@
 <script>
     import { flagIndo, flagUk } from '$lib/flags.js';
-    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle, CircleHalf, HandThumbsUpFill, HandThumbsDownFill, Link45deg, Key } from "svelte-bootstrap-icons";
+    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle, CircleHalf, HandThumbsUp, HandThumbsDown, Link45deg, Key } from "svelte-bootstrap-icons";
     export let html = '';
     export let icon = 'cone';
     export let flag = 'indo';
@@ -65,10 +65,10 @@
             <ExclamationTriangle fill="#dc3545" height={54} width={54} />
         {/if}
         {#if showThumbUp}
-            <HandThumbsUpFill fill="var(--green)" height={54} width={54} />
+            <HandThumbsUp fill="var(--green)" height={54} width={54} />
         {/if}
         {#if showThumbDown}
-            <HandThumbsDownFill fill="#dc3545" height={54} width={54} />
+            <HandThumbsDown fill="var(--red)" height={54} width={54} />
         {/if}
         {#if showFlag}
             <div style="font-size:2.5rem;">{@html theFlag}</div>
