@@ -3,6 +3,7 @@
     import { tooltip } from '$lib/tooltip';
     import { scale } from 'svelte/transition'
     import Modal from '../../components/Modal.svelte'
+    import WithIcon from '../../components/WithIcon.svelte'
 
     let showKey = false;
     let showModal = false;
@@ -120,8 +121,12 @@
 
 {#if showKey}
     <div id="key" class="wrapper" in:scale>
-        <p class="mt-0 small">Mouse over (or tap) highlighted items for tooltips:</p>
-People who go skydiving are <span class="tooltip" title="The 'bad thing' is not mentioned" use:tooltip>taking a risk</span>. Skydiving is <span class="tooltip" title="adjective after 'to be'" use:tooltip>risky</span>. It's a <span class="tooltip" title="modifying the noun 'sport'" use:tooltip>high risk</span> sport. If your parachute fails to open you <span class="tooltip" title="Collocation: 'to be' + 'at risk of'" use:tooltip>are at risk of</span> death as your body will hit the ground at very high speed.
+        <WithIcon icon="key">
+            <div slot="html">
+                <p class="mt-0 small">Mouse over (or tap) highlighted items for tooltips:</p>
+                People who go skydiving are <span class="tooltip" title="The 'bad thing' is not mentioned" use:tooltip>taking a risk</span>. Skydiving is <span class="tooltip" title="adjective after 'to be'" use:tooltip>risky</span>. It's a <span class="tooltip" title="modifying the noun 'sport'" use:tooltip>high risk</span> sport. If your parachute fails to open you <span class="tooltip" title="Collocation: 'to be' + 'at risk of'" use:tooltip>are at risk of</span> death as your body will hit the ground at very high speed.
+            </div>
+        </WithIcon>
     </div>
 {/if}
 

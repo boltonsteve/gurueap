@@ -29,7 +29,7 @@
 
     <p class="mb-0">Other posts on GuruEAP examine other <b><i>words that can be either countable or uncountable</i></b>:</p>
 
-    <WithIcon icon="sign" position="right">
+    <WithIcon icon="sign">
         <div slot="html">
             <ul class="mt-0">
                 <li>

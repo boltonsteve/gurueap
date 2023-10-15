@@ -1,6 +1,6 @@
 <script>
     import { flagIndo, flagUk } from '$lib/flags.js';
-    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle, CircleHalf, HandThumbsUpFill, HandThumbsDownFill } from "svelte-bootstrap-icons";
+    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle, CircleHalf, HandThumbsUpFill, HandThumbsDownFill, Link45deg, Key } from "svelte-bootstrap-icons";
     export let html = '';
     export let icon = 'cone';
     export let flag = 'indo';
@@ -9,7 +9,7 @@
 
     let theFlag = flag == 'indo' ? flagIndo : flagUk;
 
-    let showCone,showSign,showWarning,showFlag,showInfo,showBook,left,right,showThumbUp,showThumbDown;
+    let showCone,showSign,showWarning,showFlag,showInfo,showBook,left,right,showThumbUp,showThumbDown, showKey;
 
     if(icon == 'flag') {
         showFlag = true;
@@ -19,6 +19,8 @@
         showBook = true;
     } else if(icon == 'sign') {
         showSign = true;
+    } else if(icon == 'key') {
+        showKey = true;
     } else if(icon == 'warning') {
         showWarning = true;
     } else if(icon == 'thumbUp') {
@@ -46,6 +48,9 @@
     <div id="icon">
         {#if showBook}
             <Book fill="#17a2b8" height={54} width={54} />
+        {/if}
+        {#if showKey}
+            <Key fill="var(--dark)" height={54} width={54} />
         {/if}
         {#if showCone}
             <ConeStriped fill="#dc3545" height={54} width={54} />
