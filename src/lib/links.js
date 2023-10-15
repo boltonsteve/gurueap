@@ -331,11 +331,11 @@ export const links = [
         href: "posts/all-of-them-everywhere",
         keywords: ['grammar','articles','s','all of them everywhere']
     },
-    // {
-    //     title: "Work quotes - shuffled",
-    //     href: "posts/work-shuffle",
-    //     keywords: ['vocabulary','activity']
-    // },
+    {
+        title: "Work quotes - shuffled",
+        href: "posts/work-shuffle",
+        keywords: ['vocabulary','activity']
+    },
     {
         title: "Ethnic(ity)",
         href: "posts/ethnicity",
