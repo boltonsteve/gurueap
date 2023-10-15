@@ -59,12 +59,12 @@ export const links = [
         keywords: ['vocabulary','Bahasa Indonesia','borrowed word'],
         description: "Showing Indonesian IELTS candidates that where they've been saying 'costumer', they should have been saying 'customer'!"
     },
-    // {
-    //     title: "Pronoun substitution and an alternative",
-    //     href: "posts/pronoun-substitution",
-    //     keywords: ['coherence and cohesion','referencing and substitution','cohesive devices'],
-    //     description: "Highlighting pitfalls with pronoun substitution and recommending a safer approach."
-    // },
+    {
+        title: "Pronoun substitution and an alternative",
+        href: "posts/pronoun-substitution",
+        keywords: ['coherence and cohesion','referencing and substitution','cohesive devices'],
+        description: "Highlighting pitfalls with pronoun substitution and recommending a safer approach."
+    },
     {
         title: "Countable AND Uncountable(?!)",
         href: "posts/countable-uncountable",

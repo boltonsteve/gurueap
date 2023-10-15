@@ -182,5 +182,8 @@
     #key {
         margin: 10px auto;
     }
+     select {
+         margin-bottom: 5px;
+     }
 
 </style>
