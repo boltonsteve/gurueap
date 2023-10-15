@@ -1,4 +1,5 @@
 <script>
+
     import SvelteSeo from "svelte-seo"
     import WithIcon from '../../components/WithIcon.svelte'
     import Carousel from 'svelte-carousel'
@@ -26,7 +27,7 @@ title="People and persons"
 
     <p>Only use <b><i>persons</i></b> in extremely formal, especially legal situations:</p>
 
-    <Carousel
+<Carousel
   let:loaded
 >
   {#each images as src, imageIndex (src)}

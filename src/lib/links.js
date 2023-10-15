@@ -26,13 +26,13 @@ export const links = [
     {
         title: "(A) few, (a) little",
         href: "posts/few-little",
-        keywords: ['vocabulary','quantifiers'],
+        keywords: ['vocabulary','quantifiers','activity'],
         description: "Highlighting the difference in meaning between 'few', 'a few', 'little', 'a little'."
     },
     {
         title: "Phonemic Alphabet",
         href: "posts/phonemic-alphabet",
-        keywords: ['pronunciation','phonology'],
+        keywords: ['pronunciation','phonology','activity','listening'],
         description: "The phonemic alphabet - with sound!"
     },
     {
@@ -59,12 +59,12 @@ export const links = [
         keywords: ['vocabulary','Bahasa Indonesia','borrowed word'],
         description: "Showing Indonesian IELTS candidates that where they've been saying 'costumer', they should have been saying 'customer'!"
     },
-    {
-        title: "Pronoun substitution and an alternative",
-        href: "posts/pronoun-substitution",
-        keywords: ['coherence and cohesion','referencing and substitution','cohesive devices'],
-        description: "Highlighting pitfalls with pronoun substitution and recommending a safer approach."
-    },
+    // {
+    //     title: "Pronoun substitution and an alternative",
+    //     href: "posts/pronoun-substitution",
+    //     keywords: ['coherence and cohesion','referencing and substitution','cohesive devices'],
+    //     description: "Highlighting pitfalls with pronoun substitution and recommending a safer approach."
+    // },
     {
         title: "Countable AND Uncountable(?!)",
         href: "posts/countable-uncountable",
@@ -74,31 +74,31 @@ export const links = [
     {
         title: "Look it up!",
         href: "games/look-it-up",
-        keywords: ['games','vocabulary','Academic Word List'],
+        keywords: ['games','vocabulary','Academic Word List','activity'],
         description: "The app selects a random word from the Academic Word List (AWL). You guess the word based on feedback from the app."
     },
     {
         title: "Guess the word!",
         href: "games/guess-the-word",
-        keywords: ['games','vocabulary','Academic Word List'],
+        keywords: ['games','vocabulary','Academic Word List','activity'],
         description: "Read definitions and examples and guess the word!"
     },
     {
         title: "AWL Hangman",
         href: "games/hangman",
-        keywords: ['games','vocabulary','Academic Word List'],
+        keywords: ['games','vocabulary','Academic Word List','activity'],
         description: "A version of the classic game - hangman. Featuring vocabulary from the Academic Word List (AWL)."
     },
     {
         title: "(At) (the) universit(y/ies)",
         href: "posts/university",
-        keywords: ['vocabulary'],
+        keywords: ['vocabulary','activity'],
         description: "Different meanings of 'university' - buildings, level of education, etc."
     },
     {
         title: "Countries",
         href: "posts/countries",
-        keywords: ['vocabulary'],
+        keywords: ['vocabulary','activity'],
         description: "Country names, nationalities, people and languages."
     },
     {
@@ -194,13 +194,13 @@ export const links = [
     {
         title: "Audience(s)",
         href: "posts/audience",
-        keywords: ['vocabulary'],
+        keywords: ['vocabulary','borrowed word','Bahasa Indonesia'],
         description: "Contrasting the use of audience, singular, and audience, plural."
     },
     {
         title: "When 's' is not enough",
         href: "posts/s-iz",
-        keywords: ['grammar','pronunciation'],
+        keywords: ['grammar','pronunciation','activity'],
         description: "Words that need more than 's' in their plural and third person forms."
     },
     {
@@ -257,12 +257,12 @@ export const links = [
         keywords: ['vocabulary','compare contrast','Bahasa Indonesia'],
         description: "A minor collocation problem caused by first language interference. Same with instead of same as."
     },
-    {
-        title: "Task 2 Introductions - Sentence #1",
-        href: "posts/task2-intro-1",
-        keywords: ['writing','IELTS','Task 2'],
-        description: "How to write an effective opening sentence to a Task 2 introduction - and how NOT to write it!"
-    },
+    // {
+    //     title: "Task 2 Introductions - Sentence #1",
+    //     href: "posts/task2-intro-1",
+    //     keywords: ['writing','IELTS','Task 2'],
+    //     description: "How to write an effective opening sentence to a Task 2 introduction - and how NOT to write it!"
+    // },
     {
         title: "Opinion in topic sentences",
         href: "posts/topic-sentences",
@@ -272,7 +272,7 @@ export const links = [
     {
         title: "Performance and Appearance",
         href: "posts/performance-appearance",
-        keywords: ['vocabulary','countable uncountable','Bahasa Indonesia','borrowed word'],
+        keywords: ['vocabulary','countable uncountable','Bahasa Indonesia','borrowed word','activity'],
         description: "Demonstrating the differences in meaning between performance and appearance in their countable and uncountable forms."
     },
     {
@@ -324,18 +324,18 @@ export const links = [
     {
         title: "When risk is risky",
         href: "posts/risk",
-        keywords: ['vocabulary','collocation']
+        keywords: ['vocabulary','collocation','activity']
     },
     {
         title: "All of them everywhere",
         href: "posts/all-of-them-everywhere",
         keywords: ['grammar','articles','s','all of them everywhere']
     },
-    {
-        title: "Work quotes - shuffled",
-        href: "posts/work-shuffle",
-        keywords: ['vocabulary']
-    },
+    // {
+    //     title: "Work quotes - shuffled",
+    //     href: "posts/work-shuffle",
+    //     keywords: ['vocabulary','activity']
+    // },
     {
         title: "Ethnic(ity)",
         href: "posts/ethnicity",
@@ -359,7 +359,7 @@ export const links = [
     {
         title: "When 'existence' should not exist",
         href: "posts/existence",
-        keywords: ['vocabulary','Bahasa Indonesia']
+        keywords: ['vocabulary','Bahasa Indonesia','activity']
     },
     {
         title: "Competition(s)",
@@ -374,12 +374,12 @@ export const links = [
     {
         title: "Crime or Crimes",
         href: "posts/crime-s",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','activity']
     },
     {
         title: "How often in IELTS Speaking",
         href: "posts/how-often",
-        keywords: ['speaking','grammar','IELTS']
+        keywords: ['speaking','grammar','IELTS','activityactivity']
     },
     {
         title: "Have you used present perfect recently?",
@@ -389,7 +389,7 @@ export const links = [
     {
         title: "Being economical with the economy",
         href: "posts/economy",
-        keywords: ['vocabulary','collocation','borrowed word']
+        keywords: ['vocabulary','collocation','borrowed word','activity']
     },
     {
         title: "Easy can be difficult",
@@ -414,7 +414,7 @@ export const links = [
     {
         title: "Articles - General rules",
         href: "posts/article-s",
-        keywords: ['grammar','articles','s']
+        keywords: ['grammar','articles','s','activity']
     },
     {
         title: "Using fillers to avoid hesitation",
@@ -449,7 +449,7 @@ export const links = [
     {
         title: "Idiomatic language",
         href: "posts/idioms",
-        keywords: ['vocabulary','idioms']
+        keywords: ['vocabulary','idioms','activity']
     },
     {
         title: "People's lives",
@@ -500,7 +500,7 @@ export const links = [
     {
         title: "Beware of Past Perfect",
         href: "posts/past-perfect",
-        keywords: ['grammar','past perfect tense','tenses']
+        keywords: ['grammar','past perfect tense','tenses','activity']
     },
     {
         title: "The price is NOT expensive",
@@ -571,7 +571,7 @@ export const links = [
     {
         title: "Subject-Verb Agreement",
         href: "posts/subject-verb",
-        keywords: ['grammar']
+        keywords: ['grammar','activity']
     },
     {
         title: "Each and every ONE of them",
@@ -596,7 +596,7 @@ export const links = [
     {
         title: "Should or Have to",
         href: "posts/should",
-        keywords: ['vocabulary']
+        keywords: ['vocabulary','activity']
     },
     {
         title: "Use or Usage",

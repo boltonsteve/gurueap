@@ -3,9 +3,9 @@
 </script>
 
 <SvelteSeo
-title="Present continuous and scheduled events"
-description="Demonstrating the use of present continuous tense for future events."
-keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,grammar,tenses,present continuous" 
+    title="Present continuous and scheduled events"
+    description="Demonstrating the use of present continuous tense for future events."
+    keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,grammar,tenses,present continuous" 
 /> 
 
 <div class="mb-3 mw-500">

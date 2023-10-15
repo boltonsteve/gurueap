@@ -2,7 +2,7 @@
 
     import SvelteSeo from "svelte-seo";
     import { links } from '$lib/links.js';
-    import { Film, MusicNoteBeamed, CircleHalf } from "svelte-bootstrap-icons";
+    import { Film, MusicNoteBeamed, CircleHalf, Youtube, Pencil, Ear } from "svelte-bootstrap-icons";
 
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
@@ -104,7 +104,7 @@
 
                 {#if card.keywords.includes('video')}
                     <div>
-                        <div class="badge badge-video"><Film /></div>
+                        <div class="badge badge-video"><Youtube /></div>
                     </div>
                 {/if}
 
@@ -113,6 +113,19 @@
                         <div class="badge badge-song"><MusicNoteBeamed /></div>
                     </div>
                 {/if}
+
+                {#if card.keywords.includes('listening')}
+                    <div>
+                        <div class="badge badge-listening"><Ear /></div>
+                    </div>
+                {/if}
+
+                {#if card.keywords.includes('activity')}
+                    <div>
+                        <div class="badge badge-activity"><Pencil /></div>
+                    </div>
+                {/if}
+
 
             </div>
 
@@ -240,13 +253,25 @@ select {
 
 .badge-video {
     background:var(--light);
-    color:var(--green);
+    color:var(--red);
     border:1px solid var(--teal);
 }
 
 .badge-song {
     background:var(--light);
-    color:var(--orange);
+    color:var(--dark);
+    border:1px solid var(--teal);
+}
+
+.badge-listening {
+    background:var(--light);
+    color:var(--dark);
+    border:1px solid var(--teal);
+}
+
+.badge-activity {
+    background:var(--light);
+    color:var(--dark);
     border:1px solid var(--teal);
 }
 
