@@ -20,7 +20,7 @@
         <div slot="html">Here an Indonesian IELTS candidate is trying to find a synonym for <b><i>worker</i></b>, but has ended up using the wrong word form, and possibly even an inappropriate word.</div>
     </WithIcon>
 
-    <p>In English a <b><i>labourer</i></b> ('labour' + 'er') does work that distinguish him or her from other kinds of worker:</p>
+    <p>In English a <b><i>labourer</i></b> ('labour' + 'er') does work that distinguishes him or her from other kinds of worker:</p>
 
 <ul>
 	<li>Labourers are usually unskilled.</li>

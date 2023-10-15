@@ -1,6 +1,6 @@
 <script>
     import { flagIndo, flagUk } from '$lib/flags.js';
-    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle, CircleHalf } from "svelte-bootstrap-icons";
+    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle, CircleHalf, HandThumbsUpFill, HandThumbsDownFill } from "svelte-bootstrap-icons";
     export let html = '';
     export let icon = 'cone';
     export let flag = 'indo';
@@ -9,7 +9,7 @@
 
     let theFlag = flag == 'indo' ? flagIndo : flagUk;
 
-    let showCone,showSign,showWarning,showFlag,showInfo,showBook,left,right;
+    let showCone,showSign,showWarning,showFlag,showInfo,showBook,left,right,showThumbUp,showThumbDown;
 
     if(icon == 'flag') {
         showFlag = true;
@@ -21,6 +21,10 @@
         showSign = true;
     } else if(icon == 'warning') {
         showWarning = true;
+    } else if(icon == 'thumbUp') {
+        showThumbUp = true;
+    } else if(icon == 'thumbDown') {
+        showThumbDown = true;
     } else {
         showCone = true;
     }
@@ -54,6 +58,12 @@
         {/if}
         {#if showWarning}
             <ExclamationTriangle fill="#dc3545" height={54} width={54} />
+        {/if}
+        {#if showThumbUp}
+            <HandThumbsUpFill fill="var(--green)" height={54} width={54} />
+        {/if}
+        {#if showThumbDown}
+            <HandThumbsDownFill fill="#dc3545" height={54} width={54} />
         {/if}
         {#if showFlag}
             <div style="font-size:2.5rem;">{@html theFlag}</div>
