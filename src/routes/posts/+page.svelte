@@ -2,7 +2,7 @@
 
     import SvelteSeo from "svelte-seo";
     import { links } from '$lib/links.js';
-    import { Film, MusicNoteBeamed, CircleHalf, Youtube, Pencil, Ear } from "svelte-bootstrap-icons";
+    import { Film, MusicNoteBeamed, CircleHalf, Youtube, Pencil, Ear, Hammer } from "svelte-bootstrap-icons";
 
     links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
@@ -122,7 +122,7 @@
 
                 {#if card.keywords.includes('activity')}
                     <div>
-                        <div class="badge badge-activity"><Pencil /></div>
+                        <div class="badge badge-activity"><Hammer /></div>
                     </div>
                 {/if}
 
