@@ -57,7 +57,7 @@
 <Modal {showModal} on:click={toggleModal} />
 <div class="mb-3 mw-500">
 
-    <img src="/img/alexander-technique.jpg" class="img-fluid rounded" alt="Alexander Technique">
+    <img src="/img/alexander-technique.png" class="img-fluid" alt="Alexander Technique">
 
     <h1>it and this / theme and rheme</h1>
 
@@ -81,6 +81,6 @@
 
     <p>Another important feature of Alexander Technique is inhibition. <Select count="7" options="This,It" /> is the attempt to 'forget' bad use of the body before exercising 'correct' use. <Select count="8" options="It,This" /> involves, for example, telling yourself to ‘not stand’ before standing. Not surprisingly, <Select count="9" options="this,it" /> is usually quite confusing for Alexander Technique beginners!</p>
 
-    <button class="btn btn-outline-primary mx-auto my-1" on:click={doCheck} out:scale>check</button>
+    <button class="btn btn-outline-primary mx-auto my-1" on:click={doCheck} out:scale>check answers</button>
 
 </div>
