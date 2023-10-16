@@ -161,7 +161,7 @@
 </div>
 
 {#if !showKey}
-    <button class="btn btn-outline-primary mx-auto my-1" on:click={doCheck} out:scale>check</button>
+    <button class="btn btn-outline-primary mx-auto my-1" on:click={doCheck}>check</button>
 {/if}
 
 

@@ -32,4 +32,7 @@
     sup {
         padding-right:3px;
     }
+    select {
+        margin: 3px auto;
+    }
 </style>
