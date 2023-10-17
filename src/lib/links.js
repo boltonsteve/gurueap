@@ -1,8 +1,14 @@
 export const links = [
     {
+        title: "These or Those",
+        href: "posts/those",
+        keywords: ['vocabulary','cohesion and coherence','referencing and substitution','activity'],
+        description: "Demonstrating prepositions in time expressions."
+    },
+    {
         title: "It This Theme Rheme",
         href: "posts/theme-rheme-rule",
-        keywords: ['theme andrheme','cohesion and coherence','activity'],
+        keywords: ['theme and rheme','cohesion and coherence','activity'],
         description: "Demonstrating prepositions in time expressions."
     },
     {
