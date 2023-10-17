@@ -185,13 +185,13 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
         </div>
         <div id="buttons" style="touch-action: manipulation;">
             {#if left_right}
-                <button id="left" class="btn btn-outline-primary" on:click={goLeft} transition:scale>left</button>
+                <button id="left" class="btn btn-outline-primary" on:click={goLeft} transition:scale>&larr;</button>
             {/if}
             {#if next}
                 <button id="next" class="btn btn-outline-success" on:click={doNext} transition:scale>next</button>
             {/if}
             {#if left_right}
-                <button id="right" class="btn btn-outline-primary" on:click={goRight} transition:scale>right</button>
+                <button id="right" class="btn btn-outline-primary" on:click={goRight} transition:scale>&rarr;</button>
             {/if}
         </div>
         <div id="corrects"></div>

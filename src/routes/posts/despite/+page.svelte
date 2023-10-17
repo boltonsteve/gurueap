@@ -26,7 +26,7 @@
 
     <div class="alert alert-success font-italic">
         <span class="font-weight-bold text-success">Although it has advantages, technology has caused a wide range of social problems.</span>
-        <WithIcon icon="flag" position="right" msg="Indonesian students notice there is no 'akan tetapi' after the comma." />
     </div>
+        <WithIcon icon="flag" position="right" msg="Indonesian students notice there is no 'akan tetapi' after the comma." />
 
 </div>
