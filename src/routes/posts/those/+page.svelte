@@ -6,9 +6,11 @@
 
 <div class="mb-3 mw-500">
     
-    <img src="/img/those.jpg" class="img-fluid" alt="those">
+    <img src="/img/those.jpg" class="img-fluid border" alt="those">
 
-        <div class="alert alert-danger font-italic">Teenagers these days can't wait to buy the latest handphones and the latest laptops. <span class="font-weight-bold text-danger">Those</span> consumer products are generally expensive.</div>
+    <h1>Those!</h1>
+
+    <div class="alert alert-danger font-italic">Teenagers these days can't wait to buy the latest handphones and the latest laptops. <span class="font-weight-bold text-danger">Those</span> consumer products are generally expensive.</div>
 
     <p>Ok let's start with the example given in the picture above. Although they are not mentioned separately, we can see that the writer is implicitly referring to two groups of people:</p>
 
