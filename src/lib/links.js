@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Collocations Quiz",
+        href: "posts/collocations-quiz",
+        keywords: ['vocabulary','collocation','activity'],
+        description: "A quiz looking at various common - and less-so-common - collocations."
+    },
+    {
         title: "These or Those",
         href: "posts/those",
         keywords: ['vocabulary','cohesion and coherence','referencing and substitution','activity'],

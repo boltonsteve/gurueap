@@ -1,0 +1,903 @@
+export const collocations = [
+
+    {
+        gap: "The __________ majority of Australians live near the coast.",
+        colls: [
+            'vast',
+            'big',
+            'most',
+            'far'
+        ]
+    },
+    {
+        gap: "Aren’t you concerned about the __________ gap between rich and poor?",
+        colls: [
+            'widening',
+            'climbing',
+            'lengthening',
+            'soaring'
+        ]
+    },
+    {
+        gap: "In __________ years we have experienced rapid development.",
+        colls: [
+            'recent	'
+            'latest',
+            'past',
+            'new',
+        ]
+    },
+    {
+        gap: "She was __________ disappointed with her defeat.",
+        colls: [
+            'bitterly',
+            'strongly',
+            'sweetly',
+            'heavily'
+        ]
+    },
+    {
+        gap: "The protection of __________ species is our first priority.",
+        colls: [
+            'endangered',
+            'risky',
+            'imperiled',
+            'dangerous	'
+        ]
+    },
+    {
+        gap: "The Internet added a __________to the problem of plagiarism.",
+        colls: [
+            'new dimension ',
+            'new direction',
+            'new discussion',
+            'new respect'
+        ]
+    },
+    {
+        gap: "Graham  __________ a hypothesis that was later proved to be valid.",
+        colls: [
+            'put forward',
+            'predicted',
+            'pulled out',
+            'pressed'
+        ]
+    },
+    {
+        gap: "The __________ details of the bomb plot are still not clear.",
+        colls: [
+            'precise',
+            'really',
+            'just',
+            'absolute'
+        ]
+    },
+    {
+        gap: "Rewriting the whole proposal is just a __________ of time.",
+        colls: [
+            'waste',
+            'lack',
+            'disposition',
+            'weight	'
+        ]
+    },
+    {
+        gap: "Careful management of __________ resources is absolutely vital.",
+        colls: [
+            'scarce',
+            'spare',
+            'staple',
+            'scared'
+        ]
+    },
+    {
+        gap: "The pressure should be checked at __________ intervals.",
+        colls: [
+            'regular',
+            'consistent',
+            'long',
+            'quiet	'
+        ]
+    },
+    {
+        gap: "Supply and demand are the key __________ forces.",
+        colls: [
+            'market',
+            'economy',
+            'financial',
+            'consumptive'
+        ]
+    },
+    {
+        gap: "Those who __________ crimes should pay the penalty.",
+        colls: [
+            'commit',
+            'make',
+            'conduct',
+            'do	'
+        ]
+    },
+    {
+        gap: "Knox was __________ guilty of murder.",
+        colls: [
+            'found',
+            'discovered',
+            'convicted',
+            'decided'
+        ]
+    },
+    {
+        gap: "If you __________ the requirements, you will be considered.",
+        colls: [
+            'get',
+            'have',
+            'meet',
+            'see	'
+        ]
+    },
+    {
+        gap: "Renata needs a loan to __________ a business.",
+        colls: [
+            'begin',
+            'set up',
+            'invest',
+            'get up'
+        ]
+    },
+    {
+        gap: "We are __________ progress with the construction of the new road.",
+        colls: [
+            'doing',
+            'having',
+            'taking',
+            'making	'
+        ]
+    },
+    {
+        gap: "I can’t __________ the difference between Monet and Manet.",
+        colls: [
+            'make',
+            'tell',
+            'find',
+            'look'
+        ]
+    },
+    {
+        gap: "There was __________ traffic on the expressway.",
+        colls: [
+            'hard',
+            'deep',
+            'heavy',
+            'broad	'
+        ]
+    },
+    {
+        gap: "We were not __________ aware of the extent of the damage at that point. ",
+        colls: [
+            'consciously',
+            'fully',
+            'absolutely',
+            'virtually'
+        ]
+    },
+    {
+        gap: "David __________ an appointment to see the dentist.",
+        colls: [
+            'did',
+            'took',
+            'made',
+            'paid	'
+        ]
+    },
+    {
+        gap: "We are unlikely to __________ our goal of complete independence.",
+        colls: [
+            'achieve',
+            'succeed',
+            'get',
+            'receive'
+        ]
+    },
+    {
+        gap: "The new CEO has __________ targets for annual sales.",
+        colls: [
+            'put',
+            'brought',
+            'caught',
+            'set	'
+        ]
+    },
+    {
+        gap: "General Motors __________ a profit in the third quarter.",
+        colls: [
+            'made',
+            'set',
+            'got',
+            'did'
+        ]
+    },
+    {
+        gap: "In the last recession a lot of our suppliers __________ out of business.",
+        colls: [
+            'fell',
+            'came',
+            'threw',
+            'went	'
+        ]
+    },
+    {
+        gap: "Jeff outlined a __________ argument against tax cuts.",
+        colls: [
+            'powerful ',
+            'heavy',
+            'hard',
+            'dear'
+        ]
+    },
+    {
+        gap: "Your research seeks to __________ a connection between diet and intelligence.",
+        colls: [
+            'refer',
+            'establish',
+            'draw',
+            'consider	'
+        ]
+    },
+    {
+        gap: "You need to offer __________ for your main contention.",
+        colls: [
+            'second claim',
+            'proof factors',
+            'sensible reference ',
+            'supporting evidence'
+        ]
+    },
+    {
+        gap: "I can only offer a __________ explanation for the survey results.",
+        colls: [
+            'tendency',
+            'tentative',
+            'substantial',
+            'rhetorical	'
+        ]
+    },
+    {
+        gap: "Some languages do not __________ a distinction between blue and green.",
+        colls: [
+            'see',
+            'set',
+            'draw',
+            'wear'
+        ]
+    },
+    {
+        gap: "Mammals__________ into two main categories: herbivores and carnivores.",
+        colls: [
+            'come',
+            'fall',
+            'lie',
+            'appear	'
+        ]
+    },
+    {
+        gap: "My presentation will __________ issues such as doping and match-fixing.",
+        colls: [
+            'look after',
+            'touch on',
+            'arrive at',
+            'involve in'
+        ]
+    },
+    {
+        gap: "Richie __________ denied the accusation.",
+        colls: [
+            'tediously',
+            'hideously',
+            'obnoxiously',
+            'strenuously	'
+        ]
+    },
+    {
+        gap: "Dawkins drew __________ between Darwinism and capitalism.",
+        colls: [
+            'mirrors',
+            'parallels',
+            'curtains',
+            'metaphors'
+        ]
+    },
+    {
+        gap: "Allow me to __________ summarize the gist of my proposal.",
+        colls: [
+            'shortly',
+            'economically',
+            'momentarily',
+            'briefly	'
+        ]
+    },
+    {
+        gap: "In this paper, Heinz __________ the case for regional autonomy.",
+        colls: [
+            'sets',
+            'draws',
+            'makes',
+            'gets'
+        ]
+    },
+    {
+        gap: "Simpson was charged and later went __________ for murder.",
+        colls: [
+            'on trial',
+            'for trial',
+            'to trial',
+            'in trial	'
+        ]
+    },
+    {
+        gap: "You can do what you want as long as you __________ the law.",
+        colls: [
+            'run along',
+            'hold',
+            'keep',
+            'obey'
+        ]
+    },
+    {
+        gap: "The bank was fined for failing to __________ with the regulations.",
+        colls: [
+            'comply',
+            'work',
+            'follow',
+            'comprise	'
+        ]
+    },
+    {
+        gap: "Police __________ an investigation into alleged corruption. ",
+        colls: [
+            'made',
+            'carried out',
+            'committed',
+            'took out'
+        ]
+    },
+    {
+        gap: "The jury failed to __________ a verdict so Neill went free.",
+        colls: [
+            'do',
+            'make',
+            'reach',
+            'grant	'
+        ]
+    },
+    {
+        gap: "Polluters face a __________ if they do not clean up their act.",
+        colls: [
+            'big punishment',
+            'strict authority',
+            'complex sentence',
+            'heavy fine'
+        ]
+    },
+    {
+        gap: "Mobile technology allows users to keep __________ while on the move.",
+        colls: [
+            'up with the latest news',
+            'onto the recent news',
+            'in touch of the news',
+            'down on the news	'
+        ]
+    },
+    {
+        gap: "These days, steady jobs are in __________ supply.",
+        colls: [
+            'scarce',
+            'lack',
+            'short',
+            'long'
+        ]
+    },
+    {
+        gap: "War broke __________ at the end of the year.",
+        colls: [
+            'out',
+            'through',
+            'in',
+            'up	'
+        ]
+    },
+    {
+        gap: "The preservation of fish __________ is a major priority.",
+        colls: [
+            'herds',
+            'stocks',
+            'fingers',
+            'cones'
+        ]
+    },
+    {
+        gap: "Climate change may well lead to rising __________.",
+        colls: [
+            'coasts',
+            'sea levels',
+            'shores',
+            'ocean liners	'
+        ]
+    },
+    {
+        gap: "This case is just the __________ the iceberg. More arrests will follow.",
+        colls: [
+            'edge of',
+            'morning of',
+            'tip of',
+            'bottom of'
+        ]
+    },
+    {
+        gap: "Geo-engineering could lead to _________ famines in equatorial regions.",
+        colls: [
+            'magnificent',
+            'cantankerous',
+            'outstanding',
+            'devastating	'
+        ]
+    },
+    {
+        gap: "Nuclear war could cause__________ to the environment.",
+        colls: [
+            'irreparable damage',
+            'significant boom',
+            'atomic take-off',
+            'never-ending winter'
+        ]
+    },
+    {
+        gap: "Loss of a single species can disturb the __________ of a region.",
+        colls: [
+            'environmental harm',
+            'zoological field',
+            'ecological balance',
+            'deforestation	'
+        ]
+    },
+    {
+        gap: "NGOs have made great efforts to __________ poverty in the slums.",
+        colls: [
+            'allocate',
+            'alleviate',
+            'accommodate',
+            'elucidate'
+        ]
+    },
+    {
+        gap: "Every year thousands of refugees __________ political asylum in Australia.",
+        colls: [
+            'search',
+            'apply',
+            'seek',
+            'try	'
+        ]
+    },
+    {
+        gap: "The death __________ from the earthquake has risen to more than a hundred.",
+        colls: [
+            'toll',
+            'number',
+            'rate',
+            'amount'
+        ]
+    },
+    {
+        gap: "In the __________ future a cure may be found for malaria.",
+        colls: [
+            'far',
+            'not too distant',
+            'coming',
+            'predictable	'
+        ]
+    },
+    {
+        gap: "An oversupply of raw materials inevitably leads to __________ prices. ",
+        colls: [
+            'cheap',
+            'economic',
+            'low',
+            'downward'
+        ]
+    },
+    {
+        gap: "__________ amounts of mercury were released into the bay..",
+        colls: [
+            'big',
+            'a lot',
+            'wide',
+            'large	'
+        ]
+    },
+    {
+        gap: "The patient had lost a __________ deal of blood.",
+        colls: [
+            'big',
+            'large',
+            'great',
+            'little'
+        ]
+    },
+    {
+        gap: "There was __________ support for the proposal.",
+        colls: [
+            'widespread',
+            'altogether',
+            'generally',
+            'whatever	'
+        ]
+    },
+    {
+        gap: "There was a __________ fall in cases of drug abuse among the young. ",
+        colls: [
+            'dramatically',
+            'quick',
+            'big',
+            'sharp'
+        ]
+    },
+    {
+        gap: "In __________ contrast, the south of the country is flat and green.",
+        colls: [
+            'stark',
+            'hot',
+            'keen',
+            'harsh	'
+        ]
+    },
+    {
+        gap: "We __________ an effort to repair the damage, but in vain.",
+        colls: [
+            'did',
+            'took',
+            'made',
+            'paid'
+        ]
+    },
+    {
+        gap: "Even the elderly __________ benefit from regular exercise.",
+        colls: [
+            'nurture',
+            'derive',
+            'rouse',
+            'enlighten	'
+        ]
+    },
+    {
+        gap: "Campbell __________ an accident on the way home.",
+        colls: [
+            'was',
+            'got',
+            'did',
+            'had'
+        ]
+    },
+    {
+        gap: "It is __________ people to understand the need for higher taxes.",
+        colls: [
+            'hard for',
+            'hard that',
+            'easy as',
+            'easy when	'
+        ]
+    },
+    {
+        gap: "Meanwhile, Sally went on __________ the housework oblivious.",
+        colls: [
+            'working',
+            'having',
+            'making',
+            'doing'
+        ]
+    },
+    {
+        gap: "Branwell found himself in difficult __________.",
+        colls: [
+            'circumstances',
+            'conditions',
+            'status',
+            'state of affairs	'
+        ]
+    },
+    {
+        gap: "Those who live in urban __________ are not used to such silence.",
+        colls: [
+            'regions',
+            'areas',
+            'places',
+            'cities'
+        ]
+    },
+    {
+        gap: "Mr Dell is _________ a bad mood today.",
+        colls: [
+            'into',
+            'upon',
+            'at',
+            'in	'
+        ]
+    },
+    {
+        gap: "Your sister looks __________ wonderful.",
+        colls: [
+            'very',
+            'completely',
+            'absolutely',
+            'obviously'
+        ]
+    },
+    {
+        gap: "We __________ recommend an increase in duty.",
+        colls: [
+            'utterly',
+            'deeply',
+            'heavily',
+            'strongly	'
+        ]
+    },
+    {
+        gap: "A __________ feature of the landscape is the active volcano.",
+        colls: [
+            'meticulous',
+            'striking',
+            'despicable',
+            'noting'
+        ]
+    },
+    {
+        gap: "WW1 __________ in 1914.",
+        colls: [
+            'broke out',
+            'initiated',
+            'set up',
+            'came on	'
+        ]
+    },
+    {
+        gap: "I would be __________ if you could send me a cheque.",
+        colls: [
+            'forward',
+            'grateful',
+            'gratifying',
+            'pleasant'
+        ]
+    },
+    {
+        gap: "In my __________ there is no need to conduct such security measures.",
+        colls: [
+            'mind',
+            'viewpoint',
+            'view',
+            'observation	'
+        ]
+    },
+    {
+        gap: "The most important thing is to earn a __________ salary. ",
+        colls: [
+            'lovely',
+            'striking',
+            'straight',
+            'decent'
+        ]
+    },
+    {
+        gap: "There is a __________ possibility that the expedition will fail.",
+        colls: [
+            'strong',
+            'large',
+            'heavy',
+            'hard	'
+        ]
+    },
+    {
+        gap: "He bought a __________ quantity of illegal drugs.",
+        colls: [
+            'big',
+            'large',
+            'high',
+            'bulky'
+        ]
+    },
+    {
+        gap: "Their __________ to the problem was considered insufficient.",
+        colls: [
+            'answer',
+            'reply',
+            'effect',
+            'response	'
+        ]
+    },
+    {
+        gap: "We waited years for the government to __________ action. ",
+        colls: [
+            'do',
+            'have',
+            'take',
+            'make'
+        ]
+    },
+    {
+        gap: "You are __________ advised to book tickets in advance.",
+        colls: [
+            'deeply',
+            'strongly',
+            'sincerely',
+            'greatly	'
+        ]
+    },
+    {
+        gap: "She is  __________ considering handing in her resignation.",
+        colls: [
+            'fully',
+            'strongly',
+            'seriously',
+            'badly'
+        ]
+    },
+    {
+        gap: "Cinta __________ remembers locking the front door..",
+        colls: [
+            'distinctly',
+            'fully',
+            'completely',
+            'totally	'
+        ]
+    },
+    {
+        gap: "The reasons for his absence are not __________ understood.",
+        colls: [
+            'greatly',
+            'seriously',
+            'fully',
+            'convincingly'
+        ]
+    },
+    {
+        gap: "That is a very __________ question.",
+        colls: [
+            'amazing',
+            'tough',
+            'awful',
+            'right	'
+        ]
+    },
+    {
+        gap: "His name __________ familiar..",
+        colls: [
+            'sounds',
+            'feels',
+            'writes',
+            'says'
+        ]
+    },
+    {
+        gap: "They were __________ married for over forty years.",
+        colls: [
+            'absolutely',
+            'cheerfully',
+            'gladly',
+            'happily	'
+        ]
+    },
+    {
+        gap: "It is projected life __________ will rise to over 80 years.",
+        colls: [
+            'expectation',
+            'length',
+            'expectancy',
+            'anticipation'
+        ]
+    },
+    {
+        gap: "The new government has promised to focus on law and _________ .",
+        colls: [
+            'justice',
+            'police',
+            'crime',
+            'order	'
+        ]
+    },
+    {
+        gap: "The doctor says a holiday at the seaside will __________ you good.",
+        colls: [
+            'make',
+            'get',
+            'do',
+            'have'
+        ]
+    },
+    {
+        gap: "I don’t have any hobbies but I used to __________ fishing.",
+        colls: [
+            'play',
+            'go',
+            'do',
+            'kill	'
+        ]
+    },
+    {
+        gap: "George has been told to __________ a diet.",
+        colls: [
+            'get on',
+            'go on',
+            'put on',
+            'fall on'
+        ]
+    },
+    {
+        gap: "This is a clear __________ of human rights.",
+        colls: [
+            'violation',
+            'offense',
+            'misdemeanor',
+            'disobedience	'
+        ]
+    },
+    {
+        gap: "The  __________ and famous often become targets of celebrity hunters. ",
+        colls: [
+            'big',
+            'beautiful',
+            'rich',
+            'stars'
+        ]
+    },
+    {
+        gap: "In the __________ future a cure may be found for malaria.",
+        colls: [
+            'far',
+            'not too distant',
+            'coming',
+            'predictable	'
+        ]
+    },
+    {
+        gap: "An oversupply of raw materials inevitably leads to __________ prices. ",
+        colls: [
+            'cheap',
+            'economic',
+            'low',
+            'downward'
+        ]
+    },
+    {
+        gap: "__________ amounts of mercury were released into the bay..",
+        colls: [
+            'big',
+            'a lot',
+            'wide',
+            'large	'
+        ]
+    },
+    {
+        gap: "The patient had lost a __________ deal of blood.",
+        colls: [
+            'big',
+            'large',
+            'great',
+            'little'
+        ]
+    },
+    {
+        gap: "There was __________ support for the proposal.",
+        colls: [
+            'widespread',
+            'altogether',
+            'generally',
+            'whatever	'
+        ]
+    },
+    {
+        gap: "There was a __________ fall in cases of drug abuse among the young. ",
+        colls: [
+            'dramatically',
+            'quick',
+            'big',
+            'sharp'
+        ]
+    }
+]
