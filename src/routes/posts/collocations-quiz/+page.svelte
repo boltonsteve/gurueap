@@ -8,6 +8,7 @@
     shuffle(collocations);
 
     let elements,nextColl,words,correct,sentence,guess,btnId;
+    let isGreen = false;
     let score = 0;
     let outof = 0;
 
@@ -21,29 +22,41 @@
 
     let showNext = false;
 
+    const incrementScore = () => {
+        outof++;
+        document.getElementById('score').innerText = 'Score ' + score + '/' + outof;
+    }
+
     const check = (e) => {
 
         guess = e.target.textContent;
         btnId = e.target.id.replace(/b/,'');
         if(guess == correct) {
-            document.getElementById('b'+btnId).classList.add('bg-success','text-light');
-            showNext = true;
-            score ++;
+            if(isGreen !== true) {
+                document.getElementById('b'+btnId).classList.add('bg-success','text-light');
+                showNext = true;
+                score ++;
+                isGreen = true;
+                incrementScore();
+            }
         } else {
             document.getElementById('b'+btnId).classList.add('bg-danger','text-light');
         }
 
-        outof++;
+        if(isGreen !== true) {
+            incrementScore();
+        }
 
-        document.getElementById('score').innerText = 'Score ' + score + '/' + outof;
     }
 
     const getNext = () => {
+
         for(var i=0; i<4; i++) {
             document.getElementById('b'+i).classList.remove('bg-success','bg-danger','text-light');
         }
         getColl();
         showNext = false;
+        isGreen = false;
     }
 
     onMount(() => {
