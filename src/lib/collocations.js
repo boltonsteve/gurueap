@@ -388,7 +388,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "These days, steady jobs are in __________ <b><i>supply</i></b>.",
+        sentence: "These days, steady jobs are <b><i>in</i></b> __________ <b><i>supply</i></b>.",
         words: [
             'short',
             'scarce',
