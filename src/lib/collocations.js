@@ -1,8 +1,8 @@
 export const collocations = [
 
     {
-        gap: "The __________ <b><i>majority</i></b> of Australians live near the coast.",
-        colls: [
+        sentence: "The __________ <b><i>majority</i></b> of Australians live near the coast.",
+        words: [
             'vast',
             'big',
             'most',
@@ -10,8 +10,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Aren’t you concerned about the __________ <b><i>gap</i></b> between rich and poor?",
-        colls: [
+        sentence: "Aren’t you concerned about the __________ <b><i>gap</i></b> between rich and poor?",
+        words: [
             'widening',
             'climbing',
             'lengthening',
@@ -19,8 +19,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "In __________ <b><i>years</i></b> we have experienced rapid development.",
-        colls: [
+        sentence: "In __________ <b><i>years</i></b> we have experienced rapid development.",
+        words: [
             'recent',
             'latest',
             'past',
@@ -28,8 +28,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "She was __________ <b><i>disappointed</i></b> with her defeat.",
-        colls: [
+        sentence: "She was __________ <b><i>disappointed</i></b> with her defeat.",
+        words: [
             'bitterly',
             'strongly',
             'sweetly',
@@ -37,8 +37,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The protection of __________ <b><i>species</i></b> is our first priority.",
-        colls: [
+        sentence: "The protection of __________ <b><i>species</i></b> is our first priority.",
+        words: [
             'endangered',
             'risky',
             'imperiled',
@@ -46,8 +46,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The Internet <b><i>added a</i></b> __________ to the problem of plagiarism.",
-        colls: [
+        sentence: "The Internet <b><i>added a</i></b> __________ to the problem of plagiarism.",
+        words: [
             'new dimension ',
             'new direction',
             'new discussion',
@@ -55,8 +55,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Graham  __________ <b><i>a hypothesis</i></b> that was later proved to be valid.",
-        colls: [
+        sentence: "Graham  __________ <b><i>a hypothesis</i></b> that was later proved to be valid.",
+        words: [
             'put forward',
             'predicted',
             'pulled out',
@@ -64,8 +64,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The __________ <b><i>details</i></b> of the bomb plot are still not clear.",
-        colls: [
+        sentence: "The __________ <b><i>details</i></b> of the bomb plot are still not clear.",
+        words: [
             'precise',
             'really',
             'just',
@@ -73,8 +73,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Rewriting the whole proposal is just <b><i>a</i></b> __________ <b><i>of time</i></b>.",
-        colls: [
+        sentence: "Rewriting the whole proposal is just <b><i>a</i></b> __________ <b><i>of time</i></b>.",
+        words: [
             'waste',
             'lack',
             'disposition',
@@ -82,8 +82,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Careful management of __________ <b><i>resources</i></b> is absolutely vital.",
-        colls: [
+        sentence: "Careful management of __________ <b><i>resources</i></b> is absolutely vital.",
+        words: [
             'scarce',
             'spare',
             'staple',
@@ -91,8 +91,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The pressure should be checked at __________ <b><i>intervals</i></b>.",
-        colls: [
+        sentence: "The pressure should be checked at __________ <b><i>intervals</i></b>.",
+        words: [
             'regular',
             'consistent',
             'long',
@@ -100,8 +100,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Supply and demand are the key __________ <b><i>forces</i></b>.",
-        colls: [
+        sentence: "Supply and demand are the key __________ <b><i>forces</i></b>.",
+        words: [
             'market',
             'economy',
             'financial',
@@ -109,8 +109,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Those who __________ <b><i>crimes</i></b> should pay the penalty.",
-        colls: [
+        sentence: "Those who __________ <b><i>crimes</i></b> should pay the penalty.",
+        words: [
             'commit',
             'make',
             'conduct',
@@ -118,8 +118,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Knox was __________ <b><i>guilty</i></b> of murder.",
-        colls: [
+        sentence: "Knox was __________ <b><i>guilty</i></b> of murder.",
+        words: [
             'found',
             'discovered',
             'convicted',
@@ -127,8 +127,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "If you __________ <b><i>the requirements</i></b>, you will be considered.",
-        colls: [
+        sentence: "If you __________ <b><i>the requirements</i></b>, you will be considered.",
+        words: [
             'meet',
             'get',
             'have',
@@ -136,8 +136,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Renata needs a loan to __________ <b><i>a business</i></b>.",
-        colls: [
+        sentence: "Renata needs a loan to __________ <b><i>a business</i></b>.",
+        words: [
             'set up',
             'begin',
             'invest',
@@ -145,8 +145,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "We are __________ <b><i>progress</i></b> with the construction of the new road.",
-        colls: [
+        sentence: "We are __________ <b><i>progress</i></b> with the construction of the new road.",
+        words: [
             'making',
             'doing',
             'having',
@@ -154,8 +154,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "I can’t __________ <b><i>the difference between</i></b> Monet and Manet.",
-        colls: [
+        sentence: "I can’t __________ <b><i>the difference between</i></b> Monet and Manet.",
+        words: [
             'tell',
             'make',
             'find',
@@ -163,8 +163,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "There was __________ <b><i>traffic</i></b> on the expressway.",
-        colls: [
+        sentence: "There was __________ <b><i>traffic</i></b> on the expressway.",
+        words: [
             'heavy',
             'hard',
             'deep',
@@ -172,8 +172,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "We were not __________ <b><i>aware</i></b> of the extent of the damage at that point. ",
-        colls: [
+        sentence: "We were not __________ <b><i>aware</i></b> of the extent of the damage at that point. ",
+        words: [
             'fully',
             'consciously',
             'absolutely',
@@ -181,8 +181,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "David __________ <b><i>an appointment</i></b> to see the dentist.",
-        colls: [
+        sentence: "David __________ <b><i>an appointment</i></b> to see the dentist.",
+        words: [
             'made',
             'did',
             'took',
@@ -190,8 +190,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "We are unlikely to __________ <b><i>our goal</i></b> of complete independence.",
-        colls: [
+        sentence: "We are unlikely to __________ <b><i>our goal</i></b> of complete independence.",
+        words: [
             'achieve',
             'succeed',
             'get',
@@ -199,8 +199,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The new CEO has __________ <b><i>targets</i></b> for annual sales.",
-        colls: [
+        sentence: "The new CEO has __________ <b><i>targets</i></b> for annual sales.",
+        words: [
             'set',
             'put',
             'brought',
@@ -208,8 +208,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "General Motors __________ <b><i>a profit</i></b> in the third quarter.",
-        colls: [
+        sentence: "General Motors __________ <b><i>a profit</i></b> in the third quarter.",
+        words: [
             'made',
             'set',
             'got',
@@ -217,8 +217,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "In the last recession a lot of our suppliers __________ <b><i>out of business</i></b>.",
-        colls: [
+        sentence: "In the last recession a lot of our suppliers __________ <b><i>out of business</i></b>.",
+        words: [
             'went',
             'fell',
             'came',
@@ -226,8 +226,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Jeff outlined a __________ <b><i>argument</i></b> against tax cuts.",
-        colls: [
+        sentence: "Jeff outlined a __________ <b><i>argument</i></b> against tax cuts.",
+        words: [
             'powerful ',
             'heavy',
             'hard',
@@ -235,8 +235,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Your research seeks to __________ <b><i>a connection</i></b> between diet and intelligence.",
-        colls: [
+        sentence: "Your research seeks to __________ <b><i>a connection</i></b> between diet and intelligence.",
+        words: [
             'establish',
             'refer',
             'draw',
@@ -244,8 +244,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "You need to <b><i>offer</i></b> __________ for your main contention.",
-        colls: [
+        sentence: "You need to <b><i>offer</i></b> __________ for your main contention.",
+        words: [
             'supporting evidence',
             'second claim',
             'proof factors',
@@ -253,8 +253,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "I can only offer a __________ <b><i>explanation</i></b> for the survey results.",
-        colls: [
+        sentence: "I can only offer a __________ <b><i>explanation</i></b> for the survey results.",
+        words: [
             'tentative',
             'tendency',
             'substantial',
@@ -262,8 +262,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Some languages do not __________ <b><i>a distinction between</i></b> blue and green.",
-        colls: [
+        sentence: "Some languages do not __________ <b><i>a distinction between</i></b> blue and green.",
+        words: [
             'draw',
             'see',
             'set',
@@ -271,8 +271,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Mammals__________ <b><i>into</i></b> two main <b><i>categories</i></b>: herbivores and carnivores.",
-        colls: [
+        sentence: "Mammals__________ <b><i>into</i></b> two main <b><i>categories</i></b>: herbivores and carnivores.",
+        words: [
             'fall',
             'come',
             'lie',
@@ -280,8 +280,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "My presentation will __________ <b><i>issues</i></b> such as doping and match-fixing.",
-        colls: [
+        sentence: "My presentation will __________ <b><i>issues</i></b> such as doping and match-fixing.",
+        words: [
             'touch on',
             'look after',
             'arrive at',
@@ -289,8 +289,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Richie __________ <b><i>denied</i></b> the accusation.",
-        colls: [
+        sentence: "Richie __________ <b><i>denied</i></b> the accusation.",
+        words: [
             'strenuously',
             'tediously',
             'hideously',
@@ -298,8 +298,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Dawkins <b><i>drew</i></b> __________ between Darwinism and capitalism.",
-        colls: [
+        sentence: "Dawkins <b><i>drew</i></b> __________ between Darwinism and capitalism.",
+        words: [
             'parallels',
             'mirrors',
             'curtains',
@@ -307,8 +307,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Allow me to __________ <b><i>summarize</i></b> the gist of my proposal.",
-        colls: [
+        sentence: "Allow me to __________ <b><i>summarize</i></b> the gist of my proposal.",
+        words: [
             'briefly',
             'shortly',
             'economically',
@@ -316,17 +316,17 @@ export const collocations = [
         ]
     },
     {
-        gap: "In this paper, Heinz __________ <b><i>the case</i></b> for regional autonomy.",
-        colls: [
+        sentence: "In this paper, Heinz __________ <b><i>the case</i></b> for regional autonomy.",
+        words: [
+            'makes',
             'sets',
             'draws',
-            'makes',
             'gets'
         ]
     },
     {
-        gap: "Simpson was charged and later <b><i>went</i></b> __________ for murder.",
-        colls: [
+        sentence: "Simpson was charged and later <b><i>went</i></b> __________ for murder.",
+        words: [
             'on trial',
             'for trial',
             'to trial',
@@ -334,8 +334,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "You can do what you want as long as you __________ <b><i>the law</i></b>.",
-        colls: [
+        sentence: "You can do what you want as long as you __________ <b><i>the law</i></b>.",
+        words: [
             'obey',
             'run along',
             'hold',
@@ -343,8 +343,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The bank was fined for failing to __________ with <b><i>the regulations</i></b>.",
-        colls: [
+        sentence: "The bank was fined for failing to __________ with <b><i>the regulations</i></b>.",
+        words: [
             'comply',
             'work',
             'follow',
@@ -352,8 +352,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Police __________ <b><i>an investigation</i></b> into alleged corruption. ",
-        colls: [
+        sentence: "Police __________ <b><i>an investigation</i></b> into alleged corruption. ",
+        words: [
             'carried out',
             'made',
             'committed',
@@ -361,8 +361,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The jury failed to __________ <b><i>a verdict</i></b> so Neill went free.",
-        colls: [
+        sentence: "The jury failed to __________ <b><i>a verdict</i></b> so Neill went free.",
+        words: [
             'reach',
             'do',
             'make',
@@ -370,8 +370,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Polluters <b><i>face a</i></b> __________ if they do not clean up their act.",
-        colls: [
+        sentence: "Polluters <b><i>face a</i></b> __________ if they do not clean up their act.",
+        words: [
             'heavy fine',
             'big punishment',
             'strict authority',
@@ -379,8 +379,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Mobile technology allows users to <b><i>keep</i></b> __________ while on the move.",
-        colls: [
+        sentence: "Mobile technology allows users to <b><i>keep</i></b> __________ while on the move.",
+        words: [
             'up with the latest news',
             'onto the recent news',
             'in touch of the news',
@@ -388,8 +388,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "These days, steady jobs are in __________ <b><i>supply</i></b>.",
-        colls: [
+        sentence: "These days, steady jobs are in __________ <b><i>supply</i></b>.",
+        words: [
             'short',
             'scarce',
             'lack',
@@ -397,8 +397,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "War <b><i>broke</i></b> __________ at the end of the year.",
-        colls: [
+        sentence: "War <b><i>broke</i></b> __________ at the end of the year.",
+        words: [
             'out',
             'through',
             'in',
@@ -406,8 +406,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The preservation of <b><i>fish</i></b> __________ is a major priority.",
-        colls: [
+        sentence: "The preservation of <b><i>fish</i></b> __________ is a major priority.",
+        words: [
             'stocks',
             'herds',
             'fingers',
@@ -415,8 +415,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Climate change may well lead to <b><i>rising</i></b> __________.",
-        colls: [
+        sentence: "Climate change may well lead to <b><i>rising</i></b> __________.",
+        words: [
             'sea levels',
             'coasts',
             'shores',
@@ -424,8 +424,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "This case is just the __________ <b><i>the iceberg</i></b>. More arrests will follow.",
-        colls: [
+        sentence: "This case is just the __________ <b><i>the iceberg</i></b>. More arrests will follow.",
+        words: [
             'tip of',
             'edge of',
             'morning of',
@@ -433,8 +433,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Geo-engineering could lead to _________ <b><i>famines</i></b> in equatorial regions.",
-        colls: [
+        sentence: "Geo-engineering could lead to _________ <b><i>famines</i></b> in equatorial regions.",
+        words: [
             'devastating',
             'magnificent',
             'cantankerous',
@@ -442,8 +442,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Nuclear war could cause __________ <b><i>to the environment</i></b>.",
-        colls: [
+        sentence: "Nuclear war could cause __________ <b><i>to the environment</i></b>.",
+        words: [
             'irreparable damage',
             'significant boom',
             'atomic take-off',
@@ -451,8 +451,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Loss of a single species can <b><i>disturb the</i></b> __________ of a region.",
-        colls: [
+        sentence: "Loss of a single species can <b><i>disturb the</i></b> __________ of a region.",
+        words: [
             'ecological balance',
             'environmental harm',
             'zoological field',
@@ -460,8 +460,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "NGOs have made great efforts to __________ <b><i>poverty</i></b> in the slums.",
-        colls: [
+        sentence: "NGOs have made great efforts to __________ <b><i>poverty</i></b> in the slums.",
+        words: [
             'alleviate',
             'allocate',
             'accommodate',
@@ -469,8 +469,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Every year thousands of refugees __________ <b><i>political asylum</i></b> in Australia.",
-        colls: [
+        sentence: "Every year thousands of refugees __________ <b><i>political asylum</i></b> in Australia.",
+        words: [
             'seek',
             'search',
             'apply',
@@ -478,8 +478,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The <b><i>death</i></b> __________ from the earthquake has risen to more than a hundred.",
-        colls: [
+        sentence: "The <b><i>death</i></b> __________ from the earthquake has risen to more than a hundred.",
+        words: [
             'toll',
             'number',
             'rate',
@@ -487,8 +487,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "In the __________ <b><i>future</i></b> a cure may be found for malaria.",
-        colls: [
+        sentence: "In the __________ <b><i>future</i></b> a cure may be found for malaria.",
+        words: [
             'not too distant',
             'far',
             'coming',
@@ -496,8 +496,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "An oversupply of raw materials inevitably leads to __________ <b><i>prices</i></b>. ",
-        colls: [
+        sentence: "An oversupply of raw materials inevitably leads to __________ <b><i>prices</i></b>. ",
+        words: [
             'low',
             'cheap',
             'economic',
@@ -505,8 +505,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "__________ <b><i>amounts of</i></b> mercury were released into the bay..",
-        colls: [
+        sentence: "__________ <b><i>amounts of</i></b> mercury were released into the bay..",
+        words: [
             'large',
             'big',
             'a lot',
@@ -514,8 +514,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The patient had lost <b><i>a</i></b> __________ <b><i>deal of</i></b> blood.",
-        colls: [
+        sentence: "The patient had lost <b><i>a</i></b> __________ <b><i>deal of</i></b> blood.",
+        words: [
             'great',
             'big',
             'large',
@@ -523,8 +523,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "There was __________ <b><i>support</i></b> for the proposal.",
-        colls: [
+        sentence: "There was __________ <b><i>support</i></b> for the proposal.",
+        words: [
             'widespread',
             'altogether',
             'generally',
@@ -532,8 +532,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "There was a __________ <b><i>fall</i></b> in cases of drug abuse among the young. ",
-        colls: [
+        sentence: "There was a __________ <b><i>fall</i></b> in cases of drug abuse among the young. ",
+        words: [
             'sharp',
             'dramatically',
             'quick',
@@ -541,8 +541,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "<b><i>In</i></b> __________ <b><i>contrast</i></b>, the south of the country is flat and green.",
-        colls: [
+        sentence: "<b><i>In</i></b> __________ <b><i>contrast</i></b>, the south of the country is flat and green.",
+        words: [
             'stark',
             'hot',
             'keen',
@@ -550,8 +550,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "We __________ <b><i>an effort</i></b> to repair the damage, but in vain.",
-        colls: [
+        sentence: "We __________ <b><i>an effort</i></b> to repair the damage, but in vain.",
+        words: [
             'made',
             'did',
             'took',
@@ -559,8 +559,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Even the elderly __________ <b><i>benefit</i></b> from regular exercise.",
-        colls: [
+        sentence: "Even the elderly __________ <b><i>benefit</i></b> from regular exercise.",
+        words: [
             'derive',
             'nurture',
             'rouse',
@@ -568,8 +568,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Campbell __________ <b><i>an accident</i></b> on the way home.",
-        colls: [
+        sentence: "Campbell __________ <b><i>an accident</i></b> on the way home.",
+        words: [
             'had',
             'was',
             'got',
@@ -577,8 +577,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "<b><i>It is</i></b> __________ people to understand the need for higher taxes.",
-        colls: [
+        sentence: "<b><i>It is</i></b> __________ people to understand the need for higher taxes.",
+        words: [
             'hard for',
             'hard that',
             'easy as',
@@ -586,8 +586,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Meanwhile, Sally went on __________ <b><i>the housework</i></b> oblivious.",
-        colls: [
+        sentence: "Meanwhile, Sally went on __________ <b><i>the housework</i></b> oblivious.",
+        words: [
             'doing',
             'working',
             'having',
@@ -595,8 +595,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Branwell found himself <b><i>in difficult</i></b> __________.",
-        colls: [
+        sentence: "Branwell found himself <b><i>in difficult</i></b> __________.",
+        words: [
             'circumstances',
             'conditions',
             'status',
@@ -604,8 +604,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Those who live in <b><i>urban</i></b> __________ are not used to such silence.",
-        colls: [
+        sentence: "Those who live in <b><i>urban</i></b> __________ are not used to such silence.",
+        words: [
             'areas',
             'regions',
             'places',
@@ -613,8 +613,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Mr Dell is _________ <b><i>a bad mood</i></b> today.",
-        colls: [
+        sentence: "Mr Dell is _________ <b><i>a bad mood</i></b> today.",
+        words: [
             'in',
             'into',
             'upon',
@@ -622,8 +622,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Your sister looks __________ <b><i>wonderful</i></b>.",
-        colls: [
+        sentence: "Your sister looks __________ <b><i>wonderful</i></b>.",
+        words: [
             'absolutely',
             'very',
             'completely',
@@ -631,8 +631,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "We __________ <b><i>recommend</i></b> an increase in duty.",
-        colls: [
+        sentence: "We __________ <b><i>recommend</i></b> an increase in duty.",
+        words: [
             'strongly',
             'utterly',
             'deeply',
@@ -640,8 +640,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "A __________ <b><i>feature</i></b> of the landscape is the active volcano.",
-        colls: [
+        sentence: "A __________ <b><i>feature</i></b> of the landscape is the active volcano.",
+        words: [
             'striking',
             'meticulous',
             'despicable',
@@ -649,8 +649,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "WW1 __________ in 1914.",
-        colls: [
+        sentence: "WW1 __________ in 1914.",
+        words: [
             'broke out',
             'initiated',
             'set up',
@@ -658,8 +658,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "<b><i>I would be</i></b> __________ if you could send me a cheque.",
-        colls: [
+        sentence: "<b><i>I would be</i></b> __________ if you could send me a cheque.",
+        words: [
             'grateful',
             'forward',
             'gratifying',
@@ -667,8 +667,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "<b><i>In my</i></b> __________ there is no need to conduct such security measures.",
-        colls: [
+        sentence: "<b><i>In my</i></b> __________ there is no need to conduct such security measures.",
+        words: [
             'view',
             'viewpoint',
             'mind',
@@ -676,8 +676,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The most important thing is to earn a __________ <b><i>salary</i></b>. ",
-        colls: [
+        sentence: "The most important thing is to earn a __________ <b><i>salary</i></b>. ",
+        words: [
             'decent',
             'lovely',
             'striking',
@@ -685,8 +685,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "There is a __________ <b><i>possibility</i></b> that the expedition will fail.",
-        colls: [
+        sentence: "There is a __________ <b><i>possibility</i></b> that the expedition will fail.",
+        words: [
             'strong',
             'large',
             'heavy',
@@ -694,8 +694,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "He bought a __________ <b><i>quantity</i></b> of illegal drugs.",
-        colls: [
+        sentence: "He bought a __________ <b><i>quantity</i></b> of illegal drugs.",
+        words: [
             'large',
             'big',
             'high',
@@ -703,8 +703,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Their __________ <b><i>to the problem</i></b> was considered insufficient.",
-        colls: [
+        sentence: "Their __________ <b><i>to the problem</i></b> was considered insufficient.",
+        words: [
             'response',
             'answer',
             'reply',
@@ -712,8 +712,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "We waited years for the government to __________ <b><i>action</i></b>. ",
-        colls: [
+        sentence: "We waited years for the government to __________ <b><i>action</i></b>. ",
+        words: [
             'take',
             'do',
             'have',
@@ -721,8 +721,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "You are __________ <b><i>advised</i></b> to book tickets in advance.",
-        colls: [
+        sentence: "You are __________ <b><i>advised</i></b> to book tickets in advance.",
+        words: [
             'strongly',
             'deeply',
             'sincerely',
@@ -730,8 +730,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "She is  __________ <b><i>considering</i></b> handing in her resignation.",
-        colls: [
+        sentence: "She is  __________ <b><i>considering</i></b> handing in her resignation.",
+        words: [
             'seriously',
             'fully',
             'strongly',
@@ -739,8 +739,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "Cinta __________ <b><i>remembers</i></b> locking the front door..",
-        colls: [
+        sentence: "Cinta __________ <b><i>remembers</i></b> locking the front door..",
+        words: [
             'distinctly',
             'fully',
             'completely',
@@ -748,8 +748,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The reasons for his absence are not __________ <b><i>understood</i></b>.",
-        colls: [
+        sentence: "The reasons for his absence are not __________ <b><i>understood</i></b>.",
+        words: [
             'fully',
             'greatly',
             'seriously',
@@ -757,8 +757,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "That is a very __________ <b><i>question</i></b>.",
-        colls: [
+        sentence: "That is a very __________ <b><i>question</i></b>.",
+        words: [
             'tough',
             'amazing',
             'awful',
@@ -766,8 +766,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "His name __________ <b><i>familiar</i></b>..",
-        colls: [
+        sentence: "His name __________ <b><i>familiar</i></b>..",
+        words: [
             'sounds',
             'feels',
             'writes',
@@ -775,8 +775,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "They were __________ <b><i>married</i></b> for over forty years.",
-        colls: [
+        sentence: "They were __________ <b><i>married</i></b> for over forty years.",
+        words: [
             'happily',
             'absolutely',
             'cheerfully',
@@ -784,8 +784,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "It is projected <b><i>life</i></b> __________ will rise to over 80 years.",
-        colls: [
+        sentence: "It is projected <b><i>life</i></b> __________ will rise to over 80 years.",
+        words: [
             'expectancy',
             'expectation',
             'length',
@@ -793,8 +793,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The new government has promised to focus on <b><i>law and</i></b> _________ .",
-        colls: [
+        sentence: "The new government has promised to focus on <b><i>law and</i></b> _________ .",
+        words: [
             'order',
             'justice',
             'police',
@@ -802,8 +802,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "The doctor says a holiday at the seaside will __________ <b><i>you good</i></b>.",
-        colls: [
+        sentence: "The doctor says a holiday at the seaside will __________ <b><i>you good</i></b>.",
+        words: [
             'do',
             'make',
             'get',
@@ -811,8 +811,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "I don’t have any hobbies but I used to __________ <b><i>fishing</i></b>.",
-        colls: [
+        sentence: "I don’t have any hobbies but I used to __________ <b><i>fishing</i></b>.",
+        words: [
             'go',
             'play',
             'do',
@@ -820,8 +820,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "George has been told to __________ <b><i>a diet</i></b>.",
-        colls: [
+        sentence: "George has been told to __________ <b><i>a diet</i></b>.",
+        words: [
             'go on',
             'get on',
             'put on',
@@ -829,8 +829,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "This is a clear __________ <b><i>of human rights</i></b>.",
-        colls: [
+        sentence: "This is a clear __________ <b><i>of human rights</i></b>.",
+        words: [
             'violation',
             'offense',
             'misdemeanor',
@@ -838,8 +838,8 @@ export const collocations = [
         ]
     },
     {
-        gap: "<b><i>The</i></b>  __________ <b><i>and famous</i></b> often become targets of celebrity hunters. ",
-        colls: [
+        sentence: "<b><i>The</i></b>  __________ <b><i>and famous</i></b> often become targets of celebrity hunters. ",
+        words: [
             'rich',
             'big',
             'beautiful',

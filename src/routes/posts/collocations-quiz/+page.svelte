@@ -1,27 +1,31 @@
 <script>
+
     import SvelteSeo from "svelte-seo"
     import { collocations } from '$lib/collocations.js'
     import { shuffle } from '$lib/shuffle.js'
+    import { onMount } from 'svelte';
 
     shuffle(collocations);
 
-    let elements,coll,colls,corr;
+    let elements,nextColl,words,correct,sentence,guess,btnId;
     let score = 0;
     let outof = 0;
 
     const getColl = () => {
-        coll = collocations.shift();
-        colls = coll.colls;
-        corr = colls[0];
-        shuffle(colls);
+        nextColl = collocations.shift();
+        sentence = nextColl.sentence;
+        words = nextColl.words;
+        correct = words[0];
+        shuffle(words);
     }
 
     let showNext = false;
 
     const check = (e) => {
-        let guess = e.target.textContent;
-        let btnId = e.target.id.replace(/b/,'');
-        if(guess == corr) {
+
+        guess = e.target.textContent;
+        btnId = e.target.id.replace(/b/,'');
+        if(guess == correct) {
             document.getElementById('b'+btnId).classList.add('bg-success','text-light');
             showNext = true;
             score ++;
@@ -34,17 +38,18 @@
         document.getElementById('score').innerText = 'Score ' + score + '/' + outof;
     }
 
-    let getNext = () => {
-
+    const getNext = () => {
         for(var i=0; i<4; i++) {
             document.getElementById('b'+i).classList.remove('bg-success','bg-danger','text-light');
         }
-
         getColl();
-
         showNext = false;
-
     }
+
+    onMount(() => {
+        elements = document.querySelectorAll('btnDiv');
+        getNext();
+	});
 
     getColl();
 
@@ -62,13 +67,13 @@
 
     <div id="score">Score 0/0</div>
 
-    <div id="coll">{@html coll.gap}</div>
+    <div id="coll">{@html sentence}</div>
 
     <div class="my-grid">
-        <div id="b0" class="btnDiv" on:click={check}>{coll.colls[0]}</div>
-        <div id="b1" class="btnDiv" on:click={check}>{coll.colls[1]}</div>
-        <div id="b2" class="btnDiv" on:click={check}>{coll.colls[2]}</div>
-        <div id="b3" class="btnDiv" on:click={check}>{coll.colls[3]}</div>
+        <div id="b0" class="btnDiv" on:click={check}>{words[0]}</div>
+        <div id="b1" class="btnDiv" on:click={check}>{words[1]}</div>
+        <div id="b2" class="btnDiv" on:click={check}>{words[2]}</div>
+        <div id="b3" class="btnDiv" on:click={check}>{words[3]}</div>
     </div>
 
     {#if showNext}
