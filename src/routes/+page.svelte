@@ -27,7 +27,7 @@
                 <h2 class="font-italic">Academic English not only for Indonesians</h2>
             </div>
             <p>GuruEAP was originally conceived as supplementary material for EAP classroom teaching (English for Academic Purposes) in Indonesia.</p>
-            <p>There's something for everybody here, but certainly if you're Indonesian and you're preparing for IELTS and/or study in an English-speaking university, then you've come to the right place!</p>
+            <p>There's something for everybody, but certainly if you're Indonesian and you're preparing for IELTS and/or study in an English-speaking university, then you've come to the right place!</p>
         </div>
     </div>
     <div id="right_col">
@@ -35,13 +35,13 @@
             <Card title="{totalLinks} Posts" icon="posts" path="./posts" text="Posts deal with the various academic and linguistic challenges faced by international students preparing for IELTS and study abroad." />
         </div>
         <div>
-            <Card title="Songs" icon="songs" path="./songs" text= "Often featuring student voices, songs focus on language challenges faced by Indonesian IELTS candidates. Accompanyied by lyrics, and often video." />
+            <Card title="Songs" icon="songs" path="./songs" text= "Often featuring student voices, songs focus on language challenges faced by Indonesian IELTS candidates. Accompanied by lyrics, and often video." />
         </div>
         <div>
             <Card title="IELTS" icon="ielts" path="./posts" text="General IELTS issues are already addressed in the posts section. A separate IELTS page is under construction and will feature skills-based practice activities." />
         </div>
         <div>
-            <Card title="Games" icon="games" path="./games" text="Games are currently being transferred and re-coded from a former version of the site. Watch this space!" />
+            <Card title="Games" icon="games" path="./games" text="Games are currently being transferred and re-coded from an earlier version of the site. Watch this space!" />
         </div>
 
     </div>
