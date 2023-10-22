@@ -34,6 +34,7 @@
         if(guess == correct) {
             if(isGreen !== true) {
                 document.getElementById('b'+btnId).classList.add('bg-success','text-light');
+                sentence = sentence.replace(/_+/,`<span class="text-success font-weight-bold font-italic">${correct}</span>`);
                 showNext = true;
                 score ++;
                 isGreen = true;

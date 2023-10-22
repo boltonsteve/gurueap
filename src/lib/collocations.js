@@ -1,7 +1,7 @@
 export const collocations = [
 
     {
-        sentence: "The __________ <b><i>majority</i></b> of Australians live near the coast.",
+        sentence: "The __________ <span class=\"text-primary font-weight-bold font-italic\">majority</span> of Australians live near the coast.",
         words: [
             'vast',
             'big',
@@ -10,7 +10,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Aren’t you concerned about the __________ <b><i>gap</i></b> between rich and poor?",
+        sentence: "Aren’t you concerned about the __________ <span class=\"text-primary font-weight-bold font-italic\">gap</span> between rich and poor?",
         words: [
             'widening',
             'climbing',
@@ -19,7 +19,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "In __________ <b><i>years</i></b> we have experienced rapid development.",
+        sentence: "In __________ <span class=\"text-primary font-weight-bold font-italic\">years</span> we have experienced rapid development.",
         words: [
             'recent',
             'latest',
@@ -28,7 +28,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "She was __________ <b><i>disappointed</i></b> with her defeat.",
+        sentence: "She was __________ <span class=\"text-primary font-weight-bold font-italic\">disappointed</span> with her defeat.",
         words: [
             'bitterly',
             'strongly',
@@ -37,7 +37,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The protection of __________ <b><i>species</i></b> is our first priority.",
+        sentence: "The protection of __________ <span class=\"text-primary font-weight-bold font-italic\">species</span> is our first priority.",
         words: [
             'endangered',
             'risky',
@@ -46,7 +46,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The Internet <b><i>added a</i></b> __________ to the problem of plagiarism.",
+        sentence: "The Internet <span class=\"text-primary font-weight-bold font-italic\">added a</span> __________ to the problem of plagiarism.",
         words: [
             'new dimension ',
             'new direction',
@@ -55,7 +55,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Graham  __________ <b><i>a hypothesis</i></b> that was later proved to be valid.",
+        sentence: "Graham  __________ <span class=\"text-primary font-weight-bold font-italic\">a hypothesis</span> that was later proved to be valid.",
         words: [
             'put forward',
             'predicted',
@@ -64,7 +64,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The __________ <b><i>details</i></b> of the bomb plot are still not clear.",
+        sentence: "The __________ <span class=\"text-primary font-weight-bold font-italic\">details</span> of the bomb plot are still not clear.",
         words: [
             'precise',
             'really',
@@ -73,7 +73,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Rewriting the whole proposal is just <b><i>a</i></b> __________ <b><i>of time</i></b>.",
+        sentence: "Rewriting the whole proposal is just <span class=\"text-primary font-weight-bold font-italic\">a</span> __________ <span class=\"text-primary font-weight-bold font-italic\">of time</span>.",
         words: [
             'waste',
             'lack',
@@ -82,7 +82,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Careful management of __________ <b><i>resources</i></b> is absolutely vital.",
+        sentence: "Careful management of __________ <span class=\"text-primary font-weight-bold font-italic\">resources</span> is absolutely vital.",
         words: [
             'scarce',
             'spare',
@@ -91,7 +91,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The pressure should be checked at __________ <b><i>intervals</i></b>.",
+        sentence: "The pressure should be checked at __________ <span class=\"text-primary font-weight-bold font-italic\">intervals</span>.",
         words: [
             'regular',
             'consistent',
@@ -100,7 +100,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Supply and demand are the key __________ <b><i>forces</i></b>.",
+        sentence: "Supply and demand are the key __________ <span class=\"text-primary font-weight-bold font-italic\">forces</span>.",
         words: [
             'market',
             'economy',
@@ -109,7 +109,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Those who __________ <b><i>crimes</i></b> should pay the penalty.",
+        sentence: "Those who __________ <span class=\"text-primary font-weight-bold font-italic\">crimes</span> should pay the penalty.",
         words: [
             'commit',
             'make',
@@ -118,7 +118,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Knox was __________ <b><i>guilty</i></b> of murder.",
+        sentence: "Knox was __________ <span class=\"text-primary font-weight-bold font-italic\">guilty</span> of murder.",
         words: [
             'found',
             'discovered',
@@ -127,7 +127,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "If you __________ <b><i>the requirements</i></b>, you will be considered.",
+        sentence: "If you __________ <span class=\"text-primary font-weight-bold font-italic\">the requirements</span>, you will be considered.",
         words: [
             'meet',
             'get',
@@ -136,7 +136,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Renata needs a loan to __________ <b><i>a business</i></b>.",
+        sentence: "Renata needs a loan to __________ <span class=\"text-primary font-weight-bold font-italic\">a business</span>.",
         words: [
             'set up',
             'begin',
@@ -145,7 +145,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "We are __________ <b><i>progress</i></b> with the construction of the new road.",
+        sentence: "We are __________ <span class=\"text-primary font-weight-bold font-italic\">progress</span> with the construction of the new road.",
         words: [
             'making',
             'doing',
@@ -154,7 +154,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "I can’t __________ <b><i>the difference between</i></b> Monet and Manet.",
+        sentence: "I can’t __________ <span class=\"text-primary font-weight-bold font-italic\">the difference between</span> Monet and Manet.",
         words: [
             'tell',
             'make',
@@ -163,7 +163,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "There was __________ <b><i>traffic</i></b> on the expressway.",
+        sentence: "There was __________ <span class=\"text-primary font-weight-bold font-italic\">traffic</span> on the expressway.",
         words: [
             'heavy',
             'hard',
@@ -172,7 +172,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "We were not __________ <b><i>aware</i></b> of the extent of the damage at that point. ",
+        sentence: "We were not __________ <span class=\"text-primary font-weight-bold font-italic\">aware</span> of the extent of the damage at that point. ",
         words: [
             'fully',
             'consciously',
@@ -181,7 +181,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "David __________ <b><i>an appointment</i></b> to see the dentist.",
+        sentence: "David __________ <span class=\"text-primary font-weight-bold font-italic\">an appointment</span> to see the dentist.",
         words: [
             'made',
             'did',
@@ -190,7 +190,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "We are unlikely to __________ <b><i>our goal</i></b> of complete independence.",
+        sentence: "We are unlikely to __________ <span class=\"text-primary font-weight-bold font-italic\">our goal</span> of complete independence.",
         words: [
             'achieve',
             'succeed',
@@ -199,7 +199,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The new CEO has __________ <b><i>targets</i></b> for annual sales.",
+        sentence: "The new CEO has __________ <span class=\"text-primary font-weight-bold font-italic\">targets</span> for annual sales.",
         words: [
             'set',
             'put',
@@ -208,7 +208,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "General Motors __________ <b><i>a profit</i></b> in the third quarter.",
+        sentence: "General Motors __________ <span class=\"text-primary font-weight-bold font-italic\">a profit</span> in the third quarter.",
         words: [
             'made',
             'set',
@@ -217,7 +217,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "In the last recession a lot of our suppliers __________ <b><i>out of business</i></b>.",
+        sentence: "In the last recession a lot of our suppliers __________ <span class=\"text-primary font-weight-bold font-italic\">out of business</span>.",
         words: [
             'went',
             'fell',
@@ -226,7 +226,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Jeff outlined a __________ <b><i>argument</i></b> against tax cuts.",
+        sentence: "Jeff outlined a __________ <span class=\"text-primary font-weight-bold font-italic\">argument</span> against tax cuts.",
         words: [
             'powerful ',
             'heavy',
@@ -235,7 +235,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Your research seeks to __________ <b><i>a connection</i></b> between diet and intelligence.",
+        sentence: "Your research seeks to __________ <span class=\"text-primary font-weight-bold font-italic\">a connection</span> between diet and intelligence.",
         words: [
             'establish',
             'refer',
@@ -244,7 +244,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "You need to <b><i>offer</i></b> __________ for your main contention.",
+        sentence: "You need to <span class=\"text-primary font-weight-bold font-italic\">offer</span> __________ for your main contention.",
         words: [
             'supporting evidence',
             'second claim',
@@ -253,7 +253,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "I can only offer a __________ <b><i>explanation</i></b> for the survey results.",
+        sentence: "I can only offer a __________ <span class=\"text-primary font-weight-bold font-italic\">explanation</span> for the survey results.",
         words: [
             'tentative',
             'tendency',
@@ -262,7 +262,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Some languages do not __________ <b><i>a distinction between</i></b> blue and green.",
+        sentence: "Some languages do not __________ <span class=\"text-primary font-weight-bold font-italic\">a distinction between</span> blue and green.",
         words: [
             'draw',
             'see',
@@ -271,7 +271,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Mammals__________ <b><i>into</i></b> two main <b><i>categories</i></b>: herbivores and carnivores.",
+        sentence: "Mammals__________ <span class=\"text-primary font-weight-bold font-italic\">into</span> two main <span class=\"text-primary font-weight-bold font-italic\">categories</span>: herbivores and carnivores.",
         words: [
             'fall',
             'come',
@@ -280,7 +280,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "My presentation will __________ <b><i>issues</i></b> such as doping and match-fixing.",
+        sentence: "My presentation will __________ <span class=\"text-primary font-weight-bold font-italic\">issues</span> such as doping and match-fixing.",
         words: [
             'touch on',
             'look after',
@@ -289,7 +289,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Richie __________ <b><i>denied</i></b> the accusation.",
+        sentence: "Richie __________ <span class=\"text-primary font-weight-bold font-italic\">denied</span> the accusation.",
         words: [
             'strenuously',
             'tediously',
@@ -298,7 +298,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Dawkins <b><i>drew</i></b> __________ between Darwinism and capitalism.",
+        sentence: "Dawkins <span class=\"text-primary font-weight-bold font-italic\">drew</span> __________ between Darwinism and capitalism.",
         words: [
             'parallels',
             'mirrors',
@@ -307,7 +307,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Allow me to __________ <b><i>summarize</i></b> the gist of my proposal.",
+        sentence: "Allow me to __________ <span class=\"text-primary font-weight-bold font-italic\">summarize</span> the gist of my proposal.",
         words: [
             'briefly',
             'shortly',
@@ -316,7 +316,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "In this paper, Heinz __________ <b><i>the case</i></b> for regional autonomy.",
+        sentence: "In this paper, Heinz __________ <span class=\"text-primary font-weight-bold font-italic\">the case</span> for regional autonomy.",
         words: [
             'makes',
             'sets',
@@ -325,7 +325,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Simpson was charged and later <b><i>went</i></b> __________ for murder.",
+        sentence: "Simpson was charged and later <span class=\"text-primary font-weight-bold font-italic\">went</span> __________ for murder.",
         words: [
             'on trial',
             'for trial',
@@ -334,7 +334,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "You can do what you want as long as you __________ <b><i>the law</i></b>.",
+        sentence: "You can do what you want as long as you __________ <span class=\"text-primary font-weight-bold font-italic\">the law</span>.",
         words: [
             'obey',
             'run along',
@@ -343,7 +343,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The bank was fined for failing to __________ with <b><i>the regulations</i></b>.",
+        sentence: "The bank was fined for failing to __________ with <span class=\"text-primary font-weight-bold font-italic\">the regulations</span>.",
         words: [
             'comply',
             'work',
@@ -352,7 +352,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Police __________ <b><i>an investigation</i></b> into alleged corruption. ",
+        sentence: "Police __________ <span class=\"text-primary font-weight-bold font-italic\">an investigation</span> into alleged corruption. ",
         words: [
             'carried out',
             'made',
@@ -361,7 +361,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The jury failed to __________ <b><i>a verdict</i></b> so Neill went free.",
+        sentence: "The jury failed to __________ <span class=\"text-primary font-weight-bold font-italic\">a verdict</span> so Neill went free.",
         words: [
             'reach',
             'do',
@@ -370,7 +370,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Polluters <b><i>face a</i></b> __________ if they do not clean up their act.",
+        sentence: "Polluters <span class=\"text-primary font-weight-bold font-italic\">face a</span> __________ if they do not clean up their act.",
         words: [
             'heavy fine',
             'big punishment',
@@ -379,7 +379,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Mobile technology allows users to <b><i>keep</i></b> __________ while on the move.",
+        sentence: "Mobile technology allows users to <span class=\"text-primary font-weight-bold font-italic\">keep</span> __________ while on the move.",
         words: [
             'up with the latest news',
             'onto the recent news',
@@ -388,7 +388,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "These days, steady jobs are <b><i>in</i></b> __________ <b><i>supply</i></b>.",
+        sentence: "These days, steady jobs are <span class=\"text-primary font-weight-bold font-italic\">in</span> __________ <span class=\"text-primary font-weight-bold font-italic\">supply</span>.",
         words: [
             'short',
             'scarce',
@@ -397,7 +397,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "War <b><i>broke</i></b> __________ at the end of the year.",
+        sentence: "War <span class=\"text-primary font-weight-bold font-italic\">broke</span> __________ at the end of the year.",
         words: [
             'out',
             'through',
@@ -406,7 +406,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The preservation of <b><i>fish</i></b> __________ is a major priority.",
+        sentence: "The preservation of <span class=\"text-primary font-weight-bold font-italic\">fish</span> __________ is a major priority.",
         words: [
             'stocks',
             'herds',
@@ -415,7 +415,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Climate change may well lead to <b><i>rising</i></b> __________.",
+        sentence: "Climate change may well lead to <span class=\"text-primary font-weight-bold font-italic\">rising</span> __________.",
         words: [
             'sea levels',
             'coasts',
@@ -424,7 +424,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "This case is just the __________ <b><i>the iceberg</i></b>. More arrests will follow.",
+        sentence: "This case is just the __________ <span class=\"text-primary font-weight-bold font-italic\">the iceberg</span>. More arrests will follow.",
         words: [
             'tip of',
             'edge of',
@@ -433,7 +433,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Geo-engineering could lead to _________ <b><i>famines</i></b> in equatorial regions.",
+        sentence: "Geo-engineering could lead to _________ <span class=\"text-primary font-weight-bold font-italic\">famines</span> in equatorial regions.",
         words: [
             'devastating',
             'magnificent',
@@ -442,7 +442,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Nuclear war could cause __________ <b><i>to the environment</i></b>.",
+        sentence: "Nuclear war could cause __________ <span class=\"text-primary font-weight-bold font-italic\">to the environment</span>.",
         words: [
             'irreparable damage',
             'significant boom',
@@ -451,7 +451,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Loss of a single species can <b><i>disturb the</i></b> __________ of a region.",
+        sentence: "Loss of a single species can <span class=\"text-primary font-weight-bold font-italic\">disturb the</span> __________ of a region.",
         words: [
             'ecological balance',
             'environmental harm',
@@ -460,7 +460,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "NGOs have made great efforts to __________ <b><i>poverty</i></b> in the slums.",
+        sentence: "NGOs have made great efforts to __________ <span class=\"text-primary font-weight-bold font-italic\">poverty</span> in the slums.",
         words: [
             'alleviate',
             'allocate',
@@ -469,7 +469,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Every year thousands of refugees __________ <b><i>political asylum</i></b> in Australia.",
+        sentence: "Every year thousands of refugees __________ <span class=\"text-primary font-weight-bold font-italic\">political asylum</span> in Australia.",
         words: [
             'seek',
             'search',
@@ -478,7 +478,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The <b><i>death</i></b> __________ from the earthquake has risen to more than a hundred.",
+        sentence: "The <span class=\"text-primary font-weight-bold font-italic\">death</span> __________ from the earthquake has risen to more than a hundred.",
         words: [
             'toll',
             'number',
@@ -487,7 +487,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "In the __________ <b><i>future</i></b> a cure may be found for malaria.",
+        sentence: "In the __________ <span class=\"text-primary font-weight-bold font-italic\">future</span> a cure may be found for malaria.",
         words: [
             'not too distant',
             'far',
@@ -496,7 +496,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "An oversupply of raw materials inevitably leads to __________ <b><i>prices</i></b>. ",
+        sentence: "An oversupply of raw materials inevitably leads to __________ <span class=\"text-primary font-weight-bold font-italic\">prices</span>. ",
         words: [
             'low',
             'cheap',
@@ -505,7 +505,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "__________ <b><i>amounts of</i></b> mercury were released into the bay..",
+        sentence: "__________ <span class=\"text-primary font-weight-bold font-italic\">amounts of</span> mercury were released into the bay..",
         words: [
             'large',
             'big',
@@ -514,7 +514,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The patient had lost <b><i>a</i></b> __________ <b><i>deal of</i></b> blood.",
+        sentence: "The patient had lost <span class=\"text-primary font-weight-bold font-italic\">a</span> __________ <span class=\"text-primary font-weight-bold font-italic\">deal of</span> blood.",
         words: [
             'great',
             'big',
@@ -523,7 +523,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "There was __________ <b><i>support</i></b> for the proposal.",
+        sentence: "There was __________ <span class=\"text-primary font-weight-bold font-italic\">support</span> for the proposal.",
         words: [
             'widespread',
             'altogether',
@@ -532,7 +532,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "There was a __________ <b><i>fall</i></b> in cases of drug abuse among the young. ",
+        sentence: "There was a __________ <span class=\"text-primary font-weight-bold font-italic\">fall</span> in cases of drug abuse among the young. ",
         words: [
             'sharp',
             'dramatically',
@@ -541,7 +541,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "<b><i>In</i></b> __________ <b><i>contrast</i></b>, the south of the country is flat and green.",
+        sentence: "<span class=\"text-primary font-weight-bold font-italic\">In</span> __________ <span class=\"text-primary font-weight-bold font-italic\">contrast</span>, the south of the country is flat and green.",
         words: [
             'stark',
             'hot',
@@ -550,7 +550,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "We __________ <b><i>an effort</i></b> to repair the damage, but in vain.",
+        sentence: "We __________ <span class=\"text-primary font-weight-bold font-italic\">an effort</span> to repair the damage, but in vain.",
         words: [
             'made',
             'did',
@@ -559,7 +559,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Even the elderly __________ <b><i>benefit</i></b> from regular exercise.",
+        sentence: "Even the elderly __________ <span class=\"text-primary font-weight-bold font-italic\">benefit</span> from regular exercise.",
         words: [
             'derive',
             'nurture',
@@ -568,7 +568,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Campbell __________ <b><i>an accident</i></b> on the way home.",
+        sentence: "Campbell __________ <span class=\"text-primary font-weight-bold font-italic\">an accident</span> on the way home.",
         words: [
             'had',
             'was',
@@ -577,7 +577,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "<b><i>It is</i></b> __________ people to understand the need for higher taxes.",
+        sentence: "<span class=\"text-primary font-weight-bold font-italic\">It is</span> __________ people to understand the need for higher taxes.",
         words: [
             'hard for',
             'hard that',
@@ -586,7 +586,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Meanwhile, Sally went on __________ <b><i>the housework</i></b> oblivious.",
+        sentence: "Meanwhile, Sally went on __________ <span class=\"text-primary font-weight-bold font-italic\">the housework</span> oblivious.",
         words: [
             'doing',
             'working',
@@ -595,7 +595,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Branwell found himself <b><i>in difficult</i></b> __________.",
+        sentence: "Branwell found himself <span class=\"text-primary font-weight-bold font-italic\">in difficult</span> __________.",
         words: [
             'circumstances',
             'conditions',
@@ -604,7 +604,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Those who live in <b><i>urban</i></b> __________ are not used to such silence.",
+        sentence: "Those who live in <span class=\"text-primary font-weight-bold font-italic\">urban</span> __________ are not used to such silence.",
         words: [
             'areas',
             'regions',
@@ -613,7 +613,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Mr Dell is _________ <b><i>a bad mood</i></b> today.",
+        sentence: "Mr Dell is _________ <span class=\"text-primary font-weight-bold font-italic\">a bad mood</span> today.",
         words: [
             'in',
             'into',
@@ -622,7 +622,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Your sister looks __________ <b><i>wonderful</i></b>.",
+        sentence: "Your sister looks __________ <span class=\"text-primary font-weight-bold font-italic\">wonderful</span>.",
         words: [
             'absolutely',
             'very',
@@ -631,7 +631,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "We __________ <b><i>recommend</i></b> an increase in duty.",
+        sentence: "We __________ <span class=\"text-primary font-weight-bold font-italic\">recommend</span> an increase in duty.",
         words: [
             'strongly',
             'utterly',
@@ -640,7 +640,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "A __________ <b><i>feature</i></b> of the landscape is the active volcano.",
+        sentence: "A __________ <span class=\"text-primary font-weight-bold font-italic\">feature</span> of the landscape is the active volcano.",
         words: [
             'striking',
             'meticulous',
@@ -658,7 +658,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "<b><i>I would be</i></b> __________ if you could send me a cheque.",
+        sentence: "<span class=\"text-primary font-weight-bold font-italic\">I would be</span> __________ if you could send me a cheque.",
         words: [
             'grateful',
             'forward',
@@ -667,7 +667,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "<b><i>In my</i></b> __________ there is no need to conduct such security measures.",
+        sentence: "<span class=\"text-primary font-weight-bold font-italic\">In my</span> __________ there is no need to conduct such security measures.",
         words: [
             'view',
             'viewpoint',
@@ -676,7 +676,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The most important thing is to earn a __________ <b><i>salary</i></b>. ",
+        sentence: "The most important thing is to earn a __________ <span class=\"text-primary font-weight-bold font-italic\">salary</span>. ",
         words: [
             'decent',
             'lovely',
@@ -685,7 +685,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "There is a __________ <b><i>possibility</i></b> that the expedition will fail.",
+        sentence: "There is a __________ <span class=\"text-primary font-weight-bold font-italic\">possibility</span> that the expedition will fail.",
         words: [
             'strong',
             'large',
@@ -694,7 +694,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "He bought a __________ <b><i>quantity</i></b> of illegal drugs.",
+        sentence: "He bought a __________ <span class=\"text-primary font-weight-bold font-italic\">quantity</span> of illegal drugs.",
         words: [
             'large',
             'big',
@@ -703,7 +703,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Their __________ <b><i>to the problem</i></b> was considered insufficient.",
+        sentence: "Their __________ <span class=\"text-primary font-weight-bold font-italic\">to the problem</span> was considered insufficient.",
         words: [
             'response',
             'answer',
@@ -712,7 +712,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "We waited years for the government to __________ <b><i>action</i></b>. ",
+        sentence: "We waited years for the government to __________ <span class=\"text-primary font-weight-bold font-italic\">action</span>. ",
         words: [
             'take',
             'do',
@@ -721,7 +721,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "You are __________ <b><i>advised</i></b> to book tickets in advance.",
+        sentence: "You are __________ <span class=\"text-primary font-weight-bold font-italic\">advised</span> to book tickets in advance.",
         words: [
             'strongly',
             'deeply',
@@ -730,7 +730,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "She is  __________ <b><i>considering</i></b> handing in her resignation.",
+        sentence: "She is  __________ <span class=\"text-primary font-weight-bold font-italic\">considering</span> handing in her resignation.",
         words: [
             'seriously',
             'fully',
@@ -739,7 +739,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Cinta __________ <b><i>remembers</i></b> locking the front door..",
+        sentence: "Cinta __________ <span class=\"text-primary font-weight-bold font-italic\">remembers</span> locking the front door..",
         words: [
             'distinctly',
             'fully',
@@ -748,7 +748,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The reasons for his absence are not __________ <b><i>understood</i></b>.",
+        sentence: "The reasons for his absence are not __________ <span class=\"text-primary font-weight-bold font-italic\">understood</span>.",
         words: [
             'fully',
             'greatly',
@@ -757,7 +757,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "That is a very __________ <b><i>question</i></b>.",
+        sentence: "That is a very __________ <span class=\"text-primary font-weight-bold font-italic\">question</span>.",
         words: [
             'tough',
             'amazing',
@@ -766,7 +766,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "His name __________ <b><i>familiar</i></b>..",
+        sentence: "His name __________ <span class=\"text-primary font-weight-bold font-italic\">familiar</span>..",
         words: [
             'sounds',
             'feels',
@@ -775,7 +775,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "They were __________ <b><i>married</i></b> for over forty years.",
+        sentence: "They were __________ <span class=\"text-primary font-weight-bold font-italic\">married</span> for over forty years.",
         words: [
             'happily',
             'absolutely',
@@ -784,7 +784,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "It is projected <b><i>life</i></b> __________ will rise to over 80 years.",
+        sentence: "It is projected <span class=\"text-primary font-weight-bold font-italic\">life</span> __________ will rise to over 80 years.",
         words: [
             'expectancy',
             'expectation',
@@ -793,7 +793,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The new government has promised to focus on <b><i>law and</i></b> _________ .",
+        sentence: "The new government has promised to focus on <span class=\"text-primary font-weight-bold font-italic\">law and</span> _________ .",
         words: [
             'order',
             'justice',
@@ -802,7 +802,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "The doctor says a holiday at the seaside will __________ <b><i>you good</i></b>.",
+        sentence: "The doctor says a holiday at the seaside will __________ <span class=\"text-primary font-weight-bold font-italic\">you good</span>.",
         words: [
             'do',
             'make',
@@ -811,7 +811,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "I don’t have any hobbies but I used to __________ <b><i>fishing</i></b>.",
+        sentence: "I don’t have any hobbies but I used to __________ <span class=\"text-primary font-weight-bold font-italic\">fishing</span>.",
         words: [
             'go',
             'play',
@@ -820,7 +820,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "George has been told to __________ <b><i>a diet</i></b>.",
+        sentence: "George has been told to __________ <span class=\"text-primary font-weight-bold font-italic\">a diet</span>.",
         words: [
             'go on',
             'get on',
@@ -829,7 +829,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "This is a clear __________ <b><i>of human rights</i></b>.",
+        sentence: "This is a clear __________ <span class=\"text-primary font-weight-bold font-italic\">of human rights</span>.",
         words: [
             'violation',
             'offense',
@@ -838,7 +838,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "<b><i>The</i></b>  __________ <b><i>and famous</i></b> often become targets of celebrity hunters. ",
+        sentence: "<span class=\"text-primary font-weight-bold font-italic\">The</span>  __________ <span class=\"text-primary font-weight-bold font-italic\">and famous</span> often become targets of celebrity hunters. ",
         words: [
             'rich',
             'big',
