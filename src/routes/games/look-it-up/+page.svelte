@@ -1,7 +1,7 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { tooltip } from '$lib/tooltip';
-    import { ArrowReturnLeft, ArrowReturnRight } from "svelte-bootstrap-icons";
+    import { ArrowReturnLeft, ArrowReturnRight, BookHalf } from "svelte-bootstrap-icons";
     import { onMount } from 'svelte';
     import { sublists } from '$lib/sublists.js';
     import Dictionary from '../../components/Dictionary.svelte';
@@ -230,8 +230,12 @@
 
     <p class="mb-0">Try to guess the word chosen at random from the <span class="tooltip" title="Academic Word List" use:tooltip>AWL</span>.</p>
     <p class="mt-0">Type a guess then press 'enter' or click (or tap) 'check'.</p>
-    <p class="mb-1">Hints will guide you:</p>
 
+    <div id="book">
+        <BookHalf height={80} width={80} fill="var(--grey)" />
+    </div>
+
+    <p class="mb-1">Hints will guide you:</p>
     <div class="my-grid mb-0">
         <div class="icons mb-0"><ArrowReturnLeft height={iconSize} width={iconSize} /></div>
         <div class="mb-0">Closer to the front of the dictionary.</div>
@@ -287,6 +291,11 @@
 
 
 <style>
+    #book {
+        float:right;
+        padding-left:10px;
+        transform:rotate(10deg);
+    }
     .icons {
         display:flex;
         justify-content:center;
