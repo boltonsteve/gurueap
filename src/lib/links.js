@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Random Academic Collocations",
+        href: "posts/collocations-random",
+        keywords: ['vocabulary','collocation','activity'],
+        description: "Reload the page to load a new random acadmic collocation."
+    },
+    {
         title: "Collocations Quiz",
         href: "posts/collocations-quiz",
         keywords: ['vocabulary','collocation','activity'],
