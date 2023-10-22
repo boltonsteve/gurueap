@@ -2,27 +2,20 @@
 
     import SvelteSeo from "svelte-seo"
     import { collocations } from '$lib/collocations.js'
-    import { shuffle } from '$lib/shuffle.js'
-    import { onMount } from 'svelte';
-
     import { acl } from '$lib/acl.js';
-
-    /* console.log(acl[0].sample); */
 
     let filtered = acl.filter( next => next.sample.match(/\w/) );
 
-    let html,left,right,lefts,rights,left_msg,right_msg,and,i_bullets,left_main,right_main;
+    let html,left,right,lefts,rights,left_msg,right_msg,and,i_bullets,left_main,right_main,collocates;
 
     let total_collocations = filtered.length;
     let ran = Math.floor(Math.random() * total_collocations);
     let next = filtered[ran];
     let {before,first,first_pos,second,second_pos,after,sample} = next;
-    html = `<h3>${before} <b><i>${first}</i></b> ${first_pos}, <b><i>${second}</i></b> ${second_pos} ${after}</h3>`;
+    collocates = `<div id="collocates">${before} <b><i>${first}</i></b> ${first_pos}, <b><i>${second}</i></b> ${second_pos} ${after}</div>`;
 
     lefts = [];
     rights = [];
-
-    console.log(acl);
 
     acl.forEach(function(next,i) {
         left = next.first;
@@ -39,13 +32,7 @@
     if(sample.length > 0) {
         sample = sample.replace(first, `<b>${first}</b>`);
         sample = sample.replace(second, `<b>${second}</b>`);
-        html += `<p class="font-italic" style="font-size:1.1rem;">${sample}</p>`;
-    }
-
-    if(lefts.length > 1) {
-        right_msg = ` preceding <i><b>${second}</b></i> `;        
-    } else {
-        right_msg = '';
+        html = `<p class="font-italic" style="font-size:1.1rem;">${sample}</p>`;
     }
 
     if(rights.length > 1) {
@@ -54,7 +41,13 @@
         left_msg = '';
     }
 
-    if(left_msg.length > 0 && right_msg.length > 0) {
+    if(lefts.length > 1) {
+        right_msg = ` preceding <i><b>${second}</b></i> `;        
+    } else {
+        right_msg = '';
+    }
+
+    if(left_msg.length > 0 || right_msg.length > 0) {
         and = ' and ';
     } else {
         and = '';
@@ -76,7 +69,7 @@
         ${i_bullets}
       </ul>`;
 
-    if(rights.length > 1) {
+    if(rights.length > 0) {
         left_main = `<div class="font-weight-bold text-right">${first}</div><div>`;
             rights.forEach(function(next,i) {
                 if(next !== second) {
@@ -101,27 +94,25 @@
 
 <div class="mb-3 mw-500">
 
-    <h1>Random Academic Collocation</h1>
+    <h1>Random Academic Collocations</h1>
 
     <img src="/img/dice.png" alt="dice" style="float:right;width:90px;height:90px;">
+    <div id="collocates">{@html collocates}</div>
     <div id="output">{@html html}</div>
 
-    <div id="left">{@html left_main}</div>
-    <div id="right">{@html right_main}</div>
+    <div class="my-grid">{@html left_main}</div>
+    <div class="my-grid">{@html right_main}</div>
 
 </div>
 
 
 <style>
 
-    #left {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom:15px;
-        gap:10px;
+    #collocates {
+        font-size: 1.4rem;
     }
 
-    #right {
+    .my-grid {
         display:grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom:15px;
