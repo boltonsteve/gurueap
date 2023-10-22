@@ -271,7 +271,7 @@ export const collocations = [
         ]
     },
     {
-        sentence: "Mammals__________ <span class=\"text-primary font-weight-bold font-italic\">into</span> two main <span class=\"text-primary font-weight-bold font-italic\">categories</span>: herbivores and carnivores.",
+        sentence: "Mammals __________ <span class=\"text-primary font-weight-bold font-italic\">into</span> two main <span class=\"text-primary font-weight-bold font-italic\">categories</span>: herbivores and carnivores.",
         words: [
             'fall',
             'come',
