@@ -7,6 +7,8 @@
 
     shuffle(collocations);
 
+    console.log(collocations.length + ' collocations');
+
     let elements,nextColl,words,correct,sentence,guess,btnId;
     let isGreen = false;
     let score = 0;
@@ -61,7 +63,7 @@
     }
 
     onMount(() => {
-        elements = document.querySelectorAll('btnDiv');
+        /* elements = document.querySelectorAll('btnDiv'); */
         getNext();
 	});
 
@@ -118,12 +120,15 @@
 }
 
 .my-grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #bbbbbb;
     border-radius: 5px;
     padding: 3px;
-    text-align:center;
     cursor:pointer;
     font-size:1.1rem;
+    min-height: 30px;
 
 }
 
@@ -131,4 +136,5 @@
     width:100px;
     font-size:1.2rem;
 }
+
 </style>
