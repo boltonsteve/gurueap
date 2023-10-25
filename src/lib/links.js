@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Articleator",
+        href: "posts/articleator",
+        keywords: ['grammar','activity','articles'],
+        description: "Use the 'articleator' to calculate what article to use with a noun!"
+    },
+    {
         title: "Cause effect structures",
         href: "posts/cause-effect-shuffle",
         keywords: ['grammar','activity','cause effect'],
