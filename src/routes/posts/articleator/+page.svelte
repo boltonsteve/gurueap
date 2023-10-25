@@ -9,16 +9,16 @@
 
     // Svelte
     let countability = false;
-    let singular = true;
+    let countable = true;
+    let singular = false;
     let plural = true;
     let definite = false;
     let indefinite = false;
-    let all = false;
+    let all = true;
 
-    let labelCountable = 'countable';
-    let labelSingular = 'uncountable';
-    let labelPlural = 'uncountable';
-    let countable = false;
+    let labelCountable = 'uncountable';
+    let labelSingular = 'singular';
+    let labelPlural = 'plural';
 
     const doCountUncount = () => {
 
@@ -180,7 +180,7 @@
         <div class="btn" class:all on:click={doAll}>all</div>
     </div>
 
-    <div id="calculation" class="alert alert-secondary text-center">{calculation}</div>
+    <div id="calculation" class="alert alert-info text-center rounded my-2">{calculation}</div>
 
     <div id="msg">{@html msg}</div>
 
