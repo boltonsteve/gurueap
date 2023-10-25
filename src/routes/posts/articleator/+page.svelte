@@ -95,58 +95,62 @@
         if(!countable && definite) {
 
             calculation = 'the, don\'t pluralise';
-            msg = 'Both reader and writer are referring to <span class="text-primary">exactly the same</span> <span class="text-success">uncountable stuff</span>.';
-            example = '<span class="text-primary">The</span> <span class="text-success">rice</span> <span class="text-primary">sold in America</span> is imported from Thailand.';
-            explanation = '<span class="text-primary">Sold in America</span> restricts the meaning of <span class="text-success">rice</span> to <span class="text-primary">this</span> <span class="text-success">rice</span> <span class="text-primary">exactly</span>.';
+            msg = 'Both reader and writer are referring to <span class="text-primary font-weight-bold">exactly the same</span> <span class="text-success font-weight-bold">uncountable stuff</span>.';
+            example = '<span class="text-primary font-weight-bold">The</span> <span class="text-success font-weight-bold">rice</span> <span class="text-primary font-weight-bold">sold in America</span> is imported from Thailand.';
+            explanation = '<span class="text-primary font-weight-bold">Sold in America</span> restricts the meaning of <span class="text-success font-weight-bold">rice</span> to <span class="text-primary font-weight-bold">this</span> <span class="text-success font-weight-bold">rice</span> <span class="text-primary font-weight-bold">exactly</span>.';
 
         } else if(!countable && indefinite) {
 
             calculation = 'no article, don\'t pluralise';
-            msg = 'Reader and writer are referring <span class="text-primary">generic</span> <span class="text-success">uncountable stuff</span>.';
-            example = '<span class="text-success">Rice</span> is <span class="text-primary">a</span> rich source of carbohydrate.';
-            explanation = 'We <span class="text-primary">don\'t know exactly</span> what kind of <span class="text-success">rice</span>, or where it comes from.';
+
+            msg = 'Reader and writer are referring to a <span class="text-primary font-weight-bold">generic</span> subset of <span class="text-success font-weight-bold">uncountable stuff</span>.';
+
+            example = '<span class="font-weight-bold text-success">Rice</span> is the main ingredient in nasi goreng.';
+
+            explanation = '<span class="font-weight-bold text-primary">We don\'t know exactly..</span><ul><li>what kind of rice</li><li>where it comes from</li><li>how much is being used</li></ul>';
+
 
         } else if(!countable && all) {
 
             calculation = 'no article, don\'t pluralise';
-            msg = 'Reader and writer are referring to <span class="text-primary">all</span> of this <span class="text-success">uncountable stuff</span>, <span class="text-primary">everywhere</span>.';
-            example = '<span class="text-success">Water</span> is essential for survival!';
-            explanation = '<span class="text-primary">All</span> <span class="text-success">water</span>. There is no <span class="text-success">water</span> that doesn\'t help us to survive.';
+            msg = 'Reader and writer are referring to <span class="text-primary font-weight-bold">all</span> of this <span class="text-success font-weight-bold">uncountable stuff</span>, <span class="text-primary font-weight-bold">everywhere</span>.';
+            example = '<span class="text-success font-weight-bold">Water</span> is comprised of one hydrogen atom and two oxygen atoms.';
+            explanation = '<span class="text-primary font-weight-bold">All</span> <span class="text-success font-weight-bold">water</span>, <span class="font-weight-bold text-primary">everywhere</span>.';
 
         } else if(countable && singular && definite) {
 
             calculation = 'the, don\'t pluralise';
-            msg = 'Both reader and writer are referring to <span class="text-primary">exactly the same</span> <span class="text-success">countable thing</span>';
-            example = 'Bill works in <span class="text-success">the</span> <span class="text-danger">education</span> <span class="text-success">sector</span>.';
-            explanation = '<span class="text-danger">Education</span> restricts the meaning of <span class="text-success">sector</span> to <span class="text-primary">this</span> sector <span class="text-primary">exactly</span> (= definite).';
+            msg = 'Both reader and writer are referring to <span class="text-primary font-weight-bold">exactly the same</span> <span class="text-success font-weight-bold">countable thing</span>';
+            example = 'Bill works in <span class="text-success font-weight-bold">the</span> <span class="text-danger font-weight-bold">education</span> <span class="text-success font-weight-bold">sector</span>.';
+            explanation = '<span class="text-danger font-weight-bold">Education</span> restricts the meaning of <span class="text-success font-weight-bold">sector</span> to <span class="text-primary font-weight-bold">this</span> sector <span class="text-primary font-weight-bold">exactly</span> (= definite).';
     
         } else if(countable && singular && indefinite) {
 
             calculation = 'a/an, don\'t pluralise';
-            msg = 'Reader and writer are referring to a <span class="text-primary">generic</span> thing';
-            example = 'Let\'s have <span class="text-primary">a</span> cup of tea!';
-            explanation = '<span class="text-primary">We don\'t know what kind</span> of tea, or <span class="text-primary">what kind</span> of cup, etc.';
+            msg = 'Reader and writer are referring to <span class="text-primary font-weight-bold">a generic thing</span>.';
+            example = 'Would you like <span class="font-weight-bold text-primary">a</span> <span class="font-weight-bold text-success">cup</span> of <span class="font-weight-bold text-danger">tea</span>?'
+            explanation = 'We don\'t know <span class="font-weight-bold text-primary">what kind</span> of <span class="font-weight-bold text-success">cup</span>, or <span class="font-weight-bold text-primary">what kind</span> of <span class="font-weight-bold text-danger">tea</span>.';
 
         } else if(countable && plural && definite) {
 
             calculation = 'the, pluralise';
-            msg = 'Reader and writer are referring to <span class="text-success">exactly the same</span> <span class="text-danger">things</span>';
-            example = '<span class="text-success">The</span> <span class="text-danger">trees</span> <span class="text-primary">in Bill\'s garden</span> look lovely.';
-            explanation = '<span class="text-primary">In Bill\'s garden</span> tells us <span class="text-success">these</span> <span class="text-danger">trees</span> <span class="text-success">exactly</span>.';
+            msg = 'Reader and writer are referring to <span class="text-success font-weight-bold">exactly the same</span> <span class="text-danger font-weight-bold">things</span>';
+            example = '<span class="text-success font-weight-bold">The</span> <span class="text-danger font-weight-bold">trees</span> <span class="text-primary font-weight-bold">in Bill\'s garden</span> look lovely.';
+            explanation = '<span class="text-primary font-weight-bold">In Bill\'s garden</span> tells us <span class="text-success font-weight-bold">these</span> <span class="text-danger font-weight-bold">trees</span> <span class="text-success font-weight-bold">exactly</span>.';
 
         } else if(countable && plural && indefinite) {
 
             calculation = 'no article, pluralise';
-            msg = 'Reader and writer are referring to <span class="font-italic">generic</span> things';
-            example = '<span class="text-primary">Motorcycles</span> are dangerous, although <span class="text-success">Harley Davidson motorcycles</span> are equipped with special safety features.';
-            explanation = 'We might be talking about <span class="text-primary">all motorcycles everywhere</span>, or <span class="text-success">some motorcycles</span>.';
+            msg = 'Reader and writer are referring to a subset of <span class="font-italic">generic</span> things';
+            example = '<span class="font-weight-bold text-primary">Harley Davidson</span> <span class="font-weight-bold text-success font-weight-bold">motorcycles</span> are very expensive.';
+            explanation = '= <span class="font-weight-bold text-primary">some of many</span> <span class="font-weight-bold text-success font-weight-bold">motorcycles</span>.';
 
         } else if(countable && plural && all) {
 
             calculation = 'no article, pluralise';
             msg = 'Reader and writer are referring to all examples of the same countable thing';
-            example = '<span class="hj">Cow</span><span class="text-primary">s</span> eat grass.';
-            explanation = '<span class="text-primary">All cows everywhere</span> eat grass!';
+            example = '<span class="hj">Cow</span><span class="text-primary font-weight-bold">s</span> eat grass.';
+            explanation = '<span class="text-primary font-weight-bold">All cows everywhere</span> eat grass!';
 
         }
 
