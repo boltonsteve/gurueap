@@ -160,7 +160,7 @@
 <div id="output" class="container" style="max-width:600px;">
 
     <h1 class="text-center">Articleator</h1>
-    <p class="lead my-3">Locate a noun in some text and click the buttons to check if it needs an article and/or needs to be plural.</p>  
+    <p class="lead mb-3">Locate a noun in some text and click the buttons to check if it needs an article and/or needs to be plural.</p>  
 
     <div class="grid-container">
         <div class="btn" class:countability on:click={doCountUncount}>{labelCountable}</div>
@@ -172,8 +172,6 @@
     </div>
 
     <div id="calculation" class="alert alert-secondary text-center">{calculation}</div>
-
-    <img src="/img/terminator.png" alt="terminator" style="height:200px;float:right;margin:10px;">
 
     <div id="msg">{@html msg}</div>
 
