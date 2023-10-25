@@ -165,7 +165,12 @@
     <div class="grid-container">
         <div class="btn" class:countability on:click={doCountUncount}>{labelCountable}</div>
         <div class="btn" class:singular on:click={doSingular}>{labelSingular}</div>
-        <div class="btn" class:plural on:click={doPlural}>{labelPlural}</div>
+        {#if countable}
+            <div class="btn" class:plural on:click={doPlural}>{labelPlural}</div>
+        {/if}
+        {#if !countable}
+            <div>&nbsp;</div>
+        {/if}
         <div class="btn" class:definite on:click={doDefinite}>definite</div>
         <div class="btn" class:indefinite on:click={doIndefinite}>indefinite</div>
         <div class="btn" class:all on:click={doAll}>all</div>
