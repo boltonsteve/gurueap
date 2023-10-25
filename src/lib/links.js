@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Cause effect structures",
+        href: "posts/cause-effect-shuffle",
+        keywords: ['grammar','activity','cause effect'],
+        description: "Reconstructing cause effect structures."
+    },
+    {
         title: "Random Academic Collocations",
         href: "posts/collocations-random",
         keywords: ['vocabulary','collocation','activity'],
@@ -358,7 +364,7 @@ export const links = [
     {
         title: "Work quotes - shuffled",
         href: "posts/work-shuffle",
-        keywords: ['vocabulary','activity']
+        keywords: ['vocabulary','activity','jumble']
     },
     {
         title: "Ethnic(ity)",
@@ -403,7 +409,7 @@ export const links = [
     {
         title: "How often in IELTS Speaking",
         href: "posts/how-often",
-        keywords: ['speaking','grammar','IELTS','activityactivity']
+        keywords: ['speaking','grammar','IELTS','activity']
     },
     {
         title: "Have you used present perfect recently?",
