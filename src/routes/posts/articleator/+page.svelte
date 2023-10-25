@@ -19,10 +19,12 @@
     let labelCountable = 'uncountable';
     let labelSingular = 'singular';
     let labelPlural = 'plural';
+    let labelAll = 'all of them';
 
     const doCountUncount = () => {
 
         labelCountable = countable ? 'countable' : 'uncountable';
+        labelAll = countable ? 'all of it' : 'all of them';
         countable = !countable;
 
         if(countable) {
@@ -177,7 +179,7 @@
         {/if}
         <div class="btn" class:definite on:click={doDefinite}>definite</div>
         <div class="btn" class:indefinite on:click={doIndefinite}>indefinite</div>
-        <div class="btn" class:all on:click={doAll}>all</div>
+        <div class="btn" class:all on:click={doAll}>{labelAll}</div>
     </div>
 
     <div id="calculation" class="alert alert-info text-center rounded my-2">{calculation}</div>
