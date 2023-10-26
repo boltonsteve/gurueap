@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "as...as",
+        href: "posts/as-as",
+        keywords: ['grammar','compare contrast','Bahasa Indonesia'],
+        description: "Highlighting some first language interference when comparing using as..as."
+    },
+    {
         title: "Articleator",
         href: "posts/articleator",
         keywords: ['grammar','activity','articles'],
