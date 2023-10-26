@@ -9,7 +9,9 @@
 
     <h1>as...as</h1>
 
-    <WithIcon msg="Sometimes comparing with as leads to some first language interference, at least for Indonesians!" icon="flag" position="right" />
+    <WithIcon icon="flag" position="right">
+        <div slot="html">Sometimes comparing with <span class="font-weight-bold font-italic text-danger">as</span> leads to some first language interference, at least for Indonesians!</div>
+    </WithIcon>
 
     <h3>as...as + verbs</h3>
 

@@ -32,13 +32,13 @@ export const links = [
     {
         title: "These or Those",
         href: "posts/those",
-        keywords: ['vocabulary','cohesion and coherence','referencing and substitution','activity'],
+        keywords: ['vocabulary','coherence and cohesion','referencing and substitution','activity'],
         description: "Demonstrating prepositions in time expressions."
     },
     {
         title: "It This Theme Rheme",
         href: "posts/theme-rheme-rule",
-        keywords: ['theme and rheme','cohesion and coherence','activity'],
+        keywords: ['theme and rheme','coherence and cohesion','activity'],
         description: "Demonstrating prepositions in time expressions."
     },
     {
@@ -206,7 +206,7 @@ export const links = [
     {
         title: "In (the) first place",
         href: "posts/first-place",
-        keywords: ['signals','coherence cohesion','vocabulary'],
+        keywords: ['signals','coherence and cohesion','vocabulary'],
         description: "Demonstrating the difference between 'in first place' and 'in the first place'."
     },
     {
