@@ -59,12 +59,6 @@
 
 <style>
 
-    /* @media(max-width:780px) { */
-    /*     #landing_grid { */
-    /*         grid-template-columns: 1fr; */
-    /*     } */
-    /* } */
-
     #title {
         font-size:3rem;
         text-align:center;
@@ -129,6 +123,13 @@
 
     a {
         text-decoration:none;
+    }
+
+    @media(max-width:650px) {
+        #div_middle {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 
     /* * { */
