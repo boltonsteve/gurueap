@@ -22,8 +22,8 @@
 <div id="landing_grid">
 
     <div id="div_top">
-        <div id="title">GuruEAP</div>
-        <div id="tag">Academic English not only for Indonesians</div>
+        <div id="title" class="mb-0">GuruEAP</div>
+        <div id="tag" class="mt-0">Academic English not only for Indonesians</div>
     </div>
 
     <div id="div_middle">
@@ -60,8 +60,10 @@
 <style>
 
     #title {
-        font-size:3rem;
+        font-size:4rem;
         text-align:center;
+        font-weight:bold;
+        color: #aaaaaa;
     }
 
     #tag {
@@ -90,7 +92,7 @@
         /* grid-template-columns: 1fr; */
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
 
     #div_middle {
