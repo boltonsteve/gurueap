@@ -227,7 +227,7 @@ select {
     min-width:230px;
     width:250px;
     height: 100px;
-    border:1px solid var(--teal);
+    border:1px solid var(--blue);
     /* border:1px solid #bbbbbb; */
     border-radius: 5px;
     margin:10px;
@@ -236,7 +236,7 @@ select {
 }
 
 .menu-item:hover {
-    background: var(--teal);
+    background: var(--blue);
     color: var(--light);
     text-decoration: none;
 }
