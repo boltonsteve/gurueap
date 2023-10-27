@@ -681,7 +681,7 @@ input:focus, textarea:focus, select:focus{
 .alert-danger {
     /* background: var(--red); */
     /* background: rgba(204, 51, 51, .3) */
-    border-left: 5px dashed var(--red);
+    border-left: 5px dotted var(--red);
 }
 
 .alert-success {
