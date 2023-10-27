@@ -25,28 +25,54 @@
   description="Interactive games mostly practicing vocabulary items taken from the Academic Word List (AWL)"
 />
 
-<div class="mb-3 pt-2 mw-500">
+<div class="wrapper">
 
-    <div class="card mb-3">
-        <Card title="Hangman" icon="games" path="./games/hangman" text="A version of the classic game hangman, featuring vocabulary taken at random from the Academic Word List (AWL)" />
+    <div id="img-div"><img src="/img/minecraft.png" alt="minecraft"></div>
+
+    <div class="cards">
+
+        <div class="card">
+            <Card title="Hangman" icon="games" path="./games/hangman" text="A version of the classic game hangman, featuring vocabulary taken at random from the Academic Word List (AWL)" />
+        </div>
+
+        <div class="card">
+            <Card title="Guess the word!" icon="games" path="./games/guess-the-word" text="Read the definitions and examples and guess the word - also featuring vocabulary taken at random from the Academic Word List (AWL)" />
+        </div>
+
+        <div class="card">
+            <Card title="Look it up!" icon="games" path="./games/look-it-up" text="A dictionary game. Guess words selected from the Academic Word List (AWL). Follow feedback from the app and keep guessing!" />
+        </div>
+
     </div>
-
-    <div class="card mb-3">
-        <Card title="Guess the word!" icon="games" path="./games/guess-the-word" text="Read the definitions and examples and guess the word - also featuring vocabulary taken at random from the Academic Word List (AWL)" />
-    </div>
-
-    <div class="card">
-        <Card title="Look it up!" icon="games" path="./games/look-it-up" text="A dictionary game. Guess words selected from the Academic Word List (AWL). Follow feedback from the app and keep guessing!" />
-    </div>
-
-
-
 </div>
 
+
 <style>
-    .card {
-        display: flex;
+
+    .wrapper {
+        display:grid;
         justify-content: center;
+        align-items: center;
+        height:72vh;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:20px;
+    }
+
+    .card {
+        min-width:200px;
+    }
+
+    img {
+        width:300px;
+    }
+
+    #img-div {
+        text-align:center;
     }
 
 </style>
