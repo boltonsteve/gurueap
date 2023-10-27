@@ -59,7 +59,7 @@
     /* } */
 
     #wrapper {
-        height: 70vh;
+        height: 75vh;
         display: grid;
         max-width: 700px
     }
