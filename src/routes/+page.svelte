@@ -59,16 +59,16 @@
     /* } */
 
     #wrapper {
-        height:64vh;
+        height: 70vh;
         display: grid;
-        max-width:700px
+        max-width: 700px
     }
 
     #landing_grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
-        margin-bottom:30px;
+        margin-bottom:20px;
     }
 
     #div_top {
