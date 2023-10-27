@@ -135,9 +135,6 @@
 
     <p>Can you make sentences comparing John and Linda? (See photo top of page)</p>
 
-
-    <div class="alert alert-success font-italic">Blah blah</div>
-
 </div>
 
 <style>
