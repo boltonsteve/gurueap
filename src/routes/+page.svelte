@@ -19,11 +19,11 @@
     keywords="academic english,english for academic purposes,EAP,IELTS,international students,pre-departure,Indonesia"
 />
 
-<div id="landing_grid">
+<div id="landing_grid" class="mx-auto">
 
     <div id="div_top">
-        <div id="title">GuruEAP</div>
-        <div id="tag">Academic English not only for Indonesians</div>
+        <div id="title" class="my-0 py-0">GuruEAP</div>
+        <div id="tag" class="my-0 py-0">Academic English not only for Indonesians</div>
     </div>
 
     <div id="div_bottom" class="my-3">
@@ -57,49 +57,52 @@
 
 <style>
 
+    /* * { */
+    /*     border: 1px solid green; */
+    /* } */
+
+    #div_top {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        gap: 10px;
+        /* grid-auto-flow: row; */
+    }
+
     #title {
         font-size:4rem;
         text-align:center;
         font-weight:bold;
         color: #aaaaaa;
+        margin-bottom:0px;
+        padding-bottom:0px;
     }
 
     #tag {
-        font-size:1.6rem;
+        font-size:0.9rem;
         text-align:center;
         font-style:italic;
     }
 
     #landing_grid {
-        display: flex;
-        /* grid-template-columns: 1fr; */
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
         justify-content: center;
         align-items: center;
         column-gap: 20px;
-        max-width: 700px;
+        max-width: 600px;
         margin: 30px auto;
-    }
-
-    #div_top {
-        text-align:center;
-        display: flex;
-        flex-wrap: wrap;
-        /* grid-template-columns: 1fr; */
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    #div_middle div {
-        max-width:300px;
     }
 
     #div_middle {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-content: center;
         gap: 20px;
-        padding: 0px 20px 0px 20px;
     }
 
     .card {
@@ -114,8 +117,6 @@
     #div_bottom {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
-        width:100%;
-        /* max-width:500px; */
         /* display: flex; */
         justify-content: space-around;
         align-items: center;
@@ -132,9 +133,5 @@
             grid-template-columns: 1fr;
         }
     }
-
-    /* * { */
-    /*     border: 1px solid green; */
-    /* } */
 
 </style>
