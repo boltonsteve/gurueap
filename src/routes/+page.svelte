@@ -59,7 +59,7 @@
     /* } */
 
     #wrapper {
-        height:80vh;
+        height:60vh;
         display: grid;
         max-width:700px
     }
@@ -68,6 +68,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
+        margin-bottom:30px;
     }
 
     #div_top {
