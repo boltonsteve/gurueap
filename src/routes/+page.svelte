@@ -14,7 +14,7 @@
     keywords="academic english,english for academic purposes,EAP,IELTS,international students,pre-departure,Indonesia"
 />
 
-<div id="wrapper">
+    <div id="wrapper"><div>
 <div id="landing_grid" class="mx-auto">
 
     <div id="div_top">
@@ -50,7 +50,7 @@
 
 </div>
 
-</div>
+    </div></div>
 
 <style>
 
@@ -59,8 +59,11 @@
     /* } */
 
     #wrapper {
-        height: 75vh;
-        display: grid;
+        height: 80vh;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
         max-width: 700px
     }
 
@@ -68,7 +71,6 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
-        margin-bottom:20px;
     }
 
     #div_top {
