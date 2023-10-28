@@ -74,19 +74,21 @@
     description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - all of which aim to help students preparing for IELTS and for study abroad."
 />
 
-<div class="mb-2 mw-500 wrapper">
+<div class="mb-1 wrapper">
 
     <div class="input-container">
         <input id="refine_title" type="text" class="input-item input-item-1" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
         <button class="input-item input-item-2" on:click={resetTitle}>all</button>
     </div>
 
-    <select id="refine_category" class="form-control" placeholder="search categories" on:input={handleKeywordInput}>
-        <option value="select">select keyword</option>
-        {#each keywords as keyword}
-            <option value="{keyword}">{keyword}</option>
-        {/each}
-    </select>
+    <div>
+        <select id="refine_category" class="form-control" placeholder="search categories" on:input={handleKeywordInput}>
+            <option value="select">select keyword</option>
+            {#each keywords as keyword}
+                <option value="{keyword}">{keyword}</option>
+            {/each}
+        </select>
+    </div>
 
 </div>
 
@@ -95,7 +97,6 @@
         <a class="menu-item" href="../{card.href}" style="padding:0px 10px 0px 10px;">
 
             <div class="badges">
-
                 {#if card.keywords.includes('Bahasa Indonesia') || card.keywords.includes('borrowed word')}
                     <div class="badge badge-indo">
                         <div class="flag">
@@ -116,7 +117,6 @@
                 {#if card.keywords.includes('activity')}
                     <div class="badge badge-activity"><PersonArmsUp height={30} width={20} /></div>
                 {/if}
-
             </div>
 
             {card.title}
@@ -126,6 +126,9 @@
 
 <style>
 
+/* * { */
+/*     border:1px solid red; */
+/* } */
 
 .flag {
     height:16px;
@@ -162,10 +165,16 @@ select {
     height:30px;
 }
 
+.wrapper div {
+    width: 270px;
+}
+
 .wrapper {
-    display:grid;
-    grid-template-cols: 2fr 1fr;
-    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
 }
 
 .container {
@@ -307,9 +316,5 @@ select {
     width:30px;
     border-radius: 0px 0px 15px 15px;
 }
-
-/* * { */
-/*     border:1px solid green; */
-/* } */
 
 </style>
