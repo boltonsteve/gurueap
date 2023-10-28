@@ -54,21 +54,28 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/guess.png" alt="guess" style="height:250px;float:right;">
-    <h1>Guess the word!</h1>
-    <p>Read the definitions and examples and..<br><b><i>Guess the word!</i></b></p>
+    <div class="my-grid">
+        <div>
+            <h1>Guess the word!</h1>
+            <p>Read the definitions and examples and..<br><b><i>Guess the word!</i></b></p>
 
-    {#if showGetNextButton}
-        <button class="btn btn-outline-success" on:click={getNext}>get word</button>
-    {/if}
+            {#if showGetNextButton}
+                <button class="btn btn-outline-success" on:click={getNext}>get word</button>
+            {/if}
 
-    {#if showClearButton}
-        <button class="btn btn-outline-info" on:click={doClear}>clear</button>
-    {/if}
+            {#if showClearButton}
+                <button class="btn btn-outline-info" on:click={doClear}>clear</button>
+            {/if}
 
-    {#if showWordButton && mode=="guess"}
-        <button class="btn btn-outline-danger" on:click={doShowWord}>show word</button>
-    {/if}
+            {#if showWordButton && mode=="guess"}
+                <button class="btn btn-outline-danger" on:click={doShowWord}>show word</button>
+            {/if}
+
+        </div>
+        <div>
+            <img src="/img/guess.png" alt="guess" style="height:200px;float:right;">
+        </div>
+    </div>
 
     {#if showDictionary}
         <Dictionary bind:word="{word}" bind:mode="{mode}" />
@@ -78,6 +85,11 @@
 
 
 <style>
+    .my-grid {
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
     button {
         width:100px;
         font-size:1rem;

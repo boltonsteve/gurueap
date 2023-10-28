@@ -15,6 +15,17 @@
     let outof = 0;
 
     const getColl = () => {
+
+        if(collocations.length < 1) {
+            console.log(collocations.length);
+            sentence = 'No more collocations!';
+            words[0] = 'reload';
+            words[1] = 'page';
+            words[2] = 'reload';
+            words[3] = 'page';
+            showNext = false;
+        }
+
         nextColl = collocations.shift();
         sentence = nextColl.sentence;
         words = nextColl.words;

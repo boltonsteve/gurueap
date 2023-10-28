@@ -36,7 +36,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 <div class="container mx-auto mb-3" style="max-width:500px;">
 
-    <h1 class="mb-1"><Headphones height={34} width={34} fill="var(--teal)" /> Phonemic Alphabet</h1>
+    <h1 class="mb-1">Phonemic Alphabet <Headphones height={34} width={34} fill="var(--dark)" /></h1>
     <p class="mt-0 mb-3">Click (or tap) <b><i>phonemes</i></b> to hear what they sound like.</p>
 
     <div class="row-top">

@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Sentence Fragment",
+        href: "posts/sentence-fragment",
+        keywords: ['grammar','sentence structure'],
+        description: "A common trap for Indonesian writers - a sentence without a verb."
+    },
+    {
         title: "as...as",
         href: "posts/as-as",
         keywords: ['grammar','compare contrast','Bahasa Indonesia'],

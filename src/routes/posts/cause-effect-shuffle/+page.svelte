@@ -5,9 +5,6 @@
     import ShuffleSpan from '../../components/ShuffleSpan.svelte'
     import { scale } from 'svelte/transition'
 
-    let next = false;
-    let left_right = true;
-
     const raw = `The cause of higher prices was an increase in demand.
 The result of an increase in demand was higher prices.
 The demand has increased, and as a result the prices are higher.
@@ -16,6 +13,9 @@ An increase in demand leads to higher prices.
 Higher prices are caused by an increase in demand.
 The prices are higher because of an increase in demand.
 When/If there is an increase in demand, prices rise.`;
+
+    let next = false;
+    let left_right = true;
 
     let sentences = raw.split(/\n/);
     let sentence = '';
@@ -85,6 +85,7 @@ When/If there is an increase in demand, prices rise.`;
         let elWords = document.getElementById('words');
         if(sentences.length == 0) {
             let msg = 'No more sentences!';
+            next = false;
             elWords.innerHTML = msg;
             elWords.classList.add('correct');
         } else {
@@ -123,39 +124,43 @@ When/If there is an increase in demand, prices rise.`;
 
     function handleKeydown(event) {
 
-		let key = event.key;
+        if(!next) {
 
-        if(key == 'ArrowLeft') {
-            goLeft()
-        } else if(key == 'ArrowRight') {
-            goRight()
-        } else if(key == 'ArrowDown') {
+            let key = event.key;
 
-            if(selected == 1000) {
-                selected = words.length-1;
-                document.getElementById(selected).classList.add('danger');
-            } else {
-                if(selected > 0) {
-                    selected--;
-                } else {
+            if(key == 'ArrowLeft') {
+                goLeft()
+            } else if(key == 'ArrowRight') {
+                goRight()
+            } else if(key == 'ArrowDown') {
+
+                if(selected == 1000) {
                     selected = words.length-1;
-                }
-                clearDanger();
-                document.getElementById(selected).classList.add('danger');
-            }
-        } else if(key == 'ArrowUp') {
-            if(selected == 1000) {
-                selected = 0;
-                document.getElementById(selected).classList.add('danger');
-            } else {
-                if(selected < words.length-1) {
-                    selected ++;
+                    document.getElementById(selected).classList.add('danger');
                 } else {
-                    selected = 0;
+                    if(selected > 0) {
+                        selected--;
+                    } else {
+                        selected = words.length-1;
+                    }
+                    clearDanger();
+                    document.getElementById(selected).classList.add('danger');
                 }
-                clearDanger();
-                document.getElementById(selected).classList.add('danger');
+            } else if(key == 'ArrowUp') {
+                if(selected == 1000) {
+                    selected = 0;
+                    document.getElementById(selected).classList.add('danger');
+                } else {
+                    if(selected < words.length-1) {
+                        selected ++;
+                    } else {
+                        selected = 0;
+                    }
+                    clearDanger();
+                    document.getElementById(selected).classList.add('danger');
+                }
             }
+
         }
 	}
 

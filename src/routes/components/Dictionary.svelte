@@ -11,7 +11,8 @@
 
     let iHtml1 = '';
     let iHtml2 = '';
-    let item,phonetic,phonemic,audio,filtered,definition;
+    let item,phonetic,audio,filtered,definition;
+    let phonemic = '';
     let hasAudio = false;
     let noEntry = false;
     let src = '';
@@ -77,12 +78,15 @@
                     // definitions
                     iHtml2 += '<ol>';
                     meaning.definitions.forEach( nextDefinition => {
+
                         definition = nextDefinition.definition;
 
                         if(mode == 'guess') {
-
                             definition = definition.replace(word,'________');
                             definition = definition.replace(tCase,'________');
+                        } else if(mode == 'hangman' || mode == 'dictionary') {
+                            definition = definition.replace(word, `<b>${word}</b>`);
+                            definition = definition.replace(tCase, `<b>${tCase}</b>`);
                         }
 
                         iHtml2 += `<li class="mb-1">${definition}</li>`;
@@ -92,6 +96,9 @@
                             if(mode == 'guess') {
                                 example = example.replace(word,'________');
                                 example = example.replace(tCase,'________');
+                            } else if(mode == 'hangman' || mode == 'dictionary') {
+                                example = example.replace(word, `<b>${word}</b>`);
+                                example = example.replace(tCase, `<b>${tCase}</b>`);
                             }
 
                             iHtml2 += `<ul><li class="mb-1 font-italic">${example}</li></ul>`;
@@ -120,22 +127,44 @@
     Your browser does not support the audio element.
 </audio>
 
-{#if mode == 'dictionary'}
-    {@html iHtml1}
-    {#if hasAudio}
-        <sup id="phonemic" on:click={playAudio}>listen</sup>
-    {/if}
-{/if}
-{@html iHtml2}
-
 {#if noEntry}
     <p>No dictionary entry</p>
 {/if}
 
+{#if mode == 'dictionary' || mode == 'hangman'}
+    <div id="word">{word}</div>
+    {#if phonemic == ''}
+        <div id="phonemic">{phonemic}</div>
+    {:else}
+        <div id="listen" on:click={playAudio}>{phonemic}</div>
+    {/if}
+{/if}
+<div id="iHtml2">{@html iHtml2}</div>
+
 <style>
-#phonemic {
-    color:blue;
-    text-decoration:underline;
-    cursor:pointer;
-}
+
+    #word {
+        font-size:2rem;
+        text-align: center;
+        font-weight:bold;
+        color: var(--green);
+    }
+
+    #phonemic {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    #listen {
+        text-align: center;
+        color:blue;
+        text-decoration:underline;
+        cursor:pointer;
+        font-size: 1.2rem;
+    }
+
+    /* div { */
+    /*     border: 1px solid red; */
+    /* } */
+
 </style>

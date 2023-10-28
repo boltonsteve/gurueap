@@ -113,7 +113,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 {/if}
 
     {#if showDictionary}
-        <Dictionary bind:word="{word}" />
+        <Dictionary bind:word="{word}" mode="hangman" />
     {/if}
 
 <div class="gallows">
