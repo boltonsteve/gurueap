@@ -659,7 +659,7 @@ export const links = [
     {
         title: "Even is NOT bahkan",
         href: "posts/even-bahkan",
-        keywords: ['compare','contrast','vocabulary','signals','Bahasa Indonesia']
+        keywords: ['compare contrast','vocabulary','signals','Bahasa Indonesia']
     },
     {
         title: "It",
