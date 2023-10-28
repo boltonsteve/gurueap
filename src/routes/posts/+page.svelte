@@ -78,7 +78,7 @@
 
     <div class="input-container">
         <input id="refine_title" type="text" class="input-item input-item-1" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
-        <button class="input-item input-item-2" on:click={resetTitle}>all</button>
+        <!--<button class="input-item input-item-2" on:click={resetTitle}>all</button>-->
     </div>
 
     <div>
@@ -185,12 +185,12 @@ select {
 }
 
 .input-container {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     text-align: center;
     border: 1px solid #bbbbbb;
     border-radius:5px;
-    background: #bbbbbb;
+    /* background: #bbbbbb; */
 }
 
 #refine_category {
