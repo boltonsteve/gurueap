@@ -199,7 +199,7 @@ select {
     font-size: 1.1rem;
     text-align:center;
     cursor: pointer;
-    height:32px;
+    height:33px;
     background-color: #fff;
 }
 
