@@ -166,7 +166,8 @@ select {
 }
 
 .wrapper div {
-    width: 270px;
+    min-width: 270px;
+    max-width: 500px;
 }
 
 .wrapper {
