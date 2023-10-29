@@ -5,9 +5,18 @@
     import { shuffle } from '$lib/shuffle.js';
     import Dictionary from '../../components/Dictionary.svelte';
 
-    let joinedArrs = sublists.map( next => next.join(' ') );
-    let fullJoined = joinedArrs.join(' ');
-    let words = fullJoined.split(' ');
+    /* let joinedArrs = sublists.map( next => next.join(' ') ); */
+    let words = [];
+    sublists.forEach( next => {
+        next.forEach( next => {
+            let wArr = next.split(' ');
+            words.push(wArr[0]);
+        });
+    });
+    console.log(words);
+
+    /* let fullJoined = joinedArrs.join(' '); */
+    /* let words = fullJoined.split(' '); */
     shuffle(words);
 
     let blanks = '';

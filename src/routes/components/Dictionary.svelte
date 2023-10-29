@@ -9,10 +9,11 @@
 		audio = document.getElementById('myAudio');
 	});
 
+    let item,phonetic,audio,filtered,definition;
     let iHtml1 = '';
     let iHtml2 = '';
-    let item,phonetic,audio,filtered,definition;
     let phonemic = '';
+
     let hasAudio = false;
     let noEntry = false;
     let src = '';
@@ -50,12 +51,12 @@
             .then(response => response.json())
             .then(data => {
                 item = data[0];
-                iHtml1 += `<h2 class="mb-0">${item.word}</h2>`;
+                /* word = item.word; */
 
                 // Phonemic spelling
                 if('phonetic' in item) {
-                    phonemic = item.phonetics[0].text;
-                    iHtml1 += `<span onclick="playAudio()">${phonemic}</span>`;
+                    phonemic = item.phonetic;
+                    console.log("phonemic: " + phonemic);
                 }
 
                 // Phonemic audio
@@ -64,6 +65,21 @@
                         return next.audio !== "";
                     })
                     if(filtered.length > 0) {
+                        src = filtered[0].audio;
+                        hasAudio = true;
+                    }
+                }
+
+                // Alternative phonetic spelling source
+                if('phonetics' in item && phonemic == '') {
+                    console.log('Looking again for phonemic spelling');
+                    filtered = item.phonetics.map( (next) => {
+                        if('text' in next) {
+                            return next.text;
+                        }
+                    })
+                    if(filtered.length > 0) {
+                        phonemic = filtered[0].text;
                         src = filtered[0].audio;
                         hasAudio = true;
                     }
@@ -110,7 +126,7 @@
                 })
 
             }).catch(error => {
-                console.log(error);
+                console.log('ERROR!');
                 return [];
             });
 
@@ -133,7 +149,9 @@
 
 {#if mode == 'dictionary' || mode == 'hangman'}
     <div id="word">{word}</div>
-    {#if phonemic == ''}
+    {#if phonemic == '' && src == ''}
+        <div>-</div>
+    {:else if src == ''}
         <div id="phonemic">{phonemic}</div>
     {:else}
         <div id="listen" on:click={playAudio}>{phonemic}</div>
