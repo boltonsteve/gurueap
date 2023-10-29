@@ -13,7 +13,6 @@
             words.push(wArr[0]);
         });
     });
-    console.log(words);
 
     /* let fullJoined = joinedArrs.join(' '); */
     /* let words = fullJoined.split(' '); */
@@ -82,7 +81,6 @@
             if(found) {
                 document.getElementById(letter).classList.add('success');
                 if(gapsArr.join('') == word) {
-                    console.log('Solved!');
                     let gapsEl = document.querySelector('.gaps');
                     gapsEl.classList.add('success');
                     done = true;

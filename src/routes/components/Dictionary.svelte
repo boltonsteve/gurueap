@@ -19,6 +19,9 @@
     let src = '';
     let example = '';
 
+    let hasError = false;
+    let isFetching = false;
+
     // Make a tCase version
     let tCase = '';
     for(let i=0;i<word.length;i++) {
@@ -44,6 +47,8 @@
 
             // Reset stuff
             hasAudio = false;
+            hasError = false;
+            isFetching = true;
             src = '';
 
             // Make the API Call here
@@ -56,12 +61,11 @@
                 // Phonemic spelling
                 if('phonetic' in item) {
                     phonemic = item.phonetic;
-                    console.log("phonemic: " + phonemic);
                 }
 
                 // Phonemic audio
                 if('phonetics' in item) {
-                    filtered = item.phonetics.filter( (next) => {
+                    let filtered = item.phonetics.filter( (next) => {
                         return next.audio !== "";
                     })
                     if(filtered.length > 0) {
@@ -72,8 +76,7 @@
 
                 // Alternative phonetic spelling source
                 if('phonetics' in item && phonemic == '') {
-                    console.log('Looking again for phonemic spelling');
-                    filtered = item.phonetics.map( (next) => {
+                    let filtered = item.phonetics.map( (next) => {
                         if('text' in next) {
                             return next.text;
                         }
@@ -126,9 +129,10 @@
                 })
 
             }).catch(error => {
-                console.log('ERROR!');
+                hasError = true;
                 return [];
-            });
+            })
+            .finally( () => { isFetching = false; });
 
         }
 
@@ -143,21 +147,21 @@
     Your browser does not support the audio element.
 </audio>
 
-{#if noEntry}
-    <p>No dictionary entry</p>
-{/if}
-
-{#if mode == 'dictionary' || mode == 'hangman'}
-    <div id="word">{word}</div>
-    {#if phonemic == '' && src == ''}
-        <div>-</div>
-    {:else if src == ''}
-        <div id="phonemic">{phonemic}</div>
-    {:else}
-        <div id="listen" on:click={playAudio}>{phonemic}</div>
+{#if hasError}
+    <div class="loading-msg">Sorry, error loading dictionary!</div>
+{:else if isFetching}
+    <div class="loading-msg">Loading dictionary..</div>
+{:else}
+    {#if mode == 'dictionary' || mode == 'hangman'}
+        <div id="word">{word}</div>
+        {#if phonemic !== '' && src == ''}
+            <div id="phonemic">{phonemic}</div>
+        {:else}
+            <div id="listen" on:click={playAudio}>{phonemic}</div>
+        {/if}
     {/if}
+    <div id="iHtml2">{@html iHtml2}</div>
 {/if}
-<div id="iHtml2">{@html iHtml2}</div>
 
 <style>
 
@@ -179,6 +183,11 @@
         text-decoration:underline;
         cursor:pointer;
         font-size: 1.2rem;
+    }
+
+    .loading-msg {
+        text-align:center;
+        margin-top: 15px;
     }
 
     /* div { */
