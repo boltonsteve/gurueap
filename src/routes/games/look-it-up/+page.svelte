@@ -1,7 +1,7 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { tooltip } from '$lib/tooltip';
-    import { ArrowReturnLeft, ArrowReturnRight, BookHalf } from "svelte-bootstrap-icons";
+    import { ArrowReturnLeft, ArrowReturnRight, Book } from "svelte-bootstrap-icons";
     import { onMount } from 'svelte';
     import { sublists } from '$lib/sublists.js';
     import Dictionary from '../../components/Dictionary.svelte';
@@ -232,7 +232,7 @@
     <p class="mt-0">Type a guess then press 'enter' or click (or tap) 'check'.</p>
 
     <div id="book">
-        <BookHalf height={80} width={80} fill="var(--grey)" />
+        <Book height={80} width={80} fill="var(--dark)" />
     </div>
 
     <p class="mb-1">Hints will guide you:</p>

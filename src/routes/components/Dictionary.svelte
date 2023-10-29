@@ -33,7 +33,7 @@
     }
 
     const playAudio = () => {
-        audio.src = src;
+        /* audio.src = src; */
         audio.play();
     }
 
@@ -70,6 +70,7 @@
                     })
                     if(filtered.length > 0) {
                         src = filtered[0].audio;
+                        audio.src = src;
                         hasAudio = true;
                     }
                 }
@@ -84,6 +85,7 @@
                     if(filtered.length > 0) {
                         phonemic = filtered[0].text;
                         src = filtered[0].audio;
+                        audio.src = src;
                         hasAudio = true;
                     }
                 }

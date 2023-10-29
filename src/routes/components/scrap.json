@@ -1,11 +1,36 @@
 [
   {
-    "word": "identical",
-    "phonetic": "/aɪˈdɛntɪkl̩/",
+    "word": "community",
     "phonetics": [
       {
-        "text": "/aɪˈdɛntɪkl̩/",
+        "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/community-au.mp3",
+        "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=75729539",
+        "license": {
+          "name": "BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      },
+      {
+        "text": "/k(ə)ˈmjunəti/",
+        "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/community-ca.mp3",
+        "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=189580",
+        "license": {
+          "name": "BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0"
+        }
+      },
+      {
+        "text": "/kəˈmjuːnɪti/",
         "audio": ""
+      },
+      {
+        "text": "/k(ə)ˈmjunəti/",
+        "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/community-us.mp3",
+        "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=189572",
+        "license": {
+          "name": "BY-SA 3.0",
+          "url": "https://creativecommons.org/licenses/by-sa/3.0"
+        }
       }
     ],
     "meanings": [
@@ -13,58 +38,51 @@
         "partOfSpeech": "noun",
         "definitions": [
           {
-            "definition": "(usually pluralized) Something which has exactly the same properties as something else.",
+            "definition": "A group sharing a common understanding, and often the same language, law, manners, and/or tradition.",
             "synonyms": [],
             "antonyms": []
           },
           {
-            "definition": "An identical twin.",
+            "definition": "A residential or religious collective; a commune.",
+            "synonyms": [],
+            "antonyms": []
+          },
+          {
+            "definition": "A group of interdependent organisms inhabiting the same region and interacting with each other.",
+            "synonyms": [],
+            "antonyms": []
+          },
+          {
+            "definition": "A group of people interacting by electronic means for educational, professional, social, or other purposes; a virtual community.",
+            "synonyms": [],
+            "antonyms": []
+          },
+          {
+            "definition": "The condition of having certain attitudes and interests in common.",
+            "synonyms": [],
+            "antonyms": []
+          },
+          {
+            "definition": "Common enjoyment or possession; participation.",
+            "synonyms": [],
+            "antonyms": [],
+            "example": "a community of goods"
+          },
+          {
+            "definition": "Common character; likeness.",
+            "synonyms": [],
+            "antonyms": []
+          },
+          {
+            "definition": "Commonness; frequency.",
             "synonyms": [],
             "antonyms": []
           }
         ],
         "synonyms": [],
-        "antonyms": []
-      },
-      {
-        "partOfSpeech": "adjective",
-        "definitions": [
-          {
-            "definition": "Bearing full likeness by having precisely the same set of characteristics; indistinguishable.",
-            "synonyms": [],
-            "antonyms": []
-          },
-          {
-            "definition": "Not different or other; not another or others; not different as regards self; selfsame; numerically identical.",
-            "synonyms": [],
-            "antonyms": []
-          },
-          {
-            "definition": "Of twins, sharing the same genetic code.",
-            "synonyms": [],
-            "antonyms": []
-          },
-          {
-            "definition": "Exactly equivalent.",
-            "synonyms": [],
-            "antonyms": []
-          },
-          {
-            "definition": "Approximating or approaching exact equivalence.",
-            "synonyms": [],
-            "antonyms": []
-          }
-        ],
-        "synonyms": [
-          "same",
-          "same",
-          "selfsame"
-        ],
         "antonyms": [
-          "contrasting",
-          "different",
-          "distinct",
-          "non-identical"
+          "anticommunity",
+          "noncommunity"
         ]
       }
     ],
@@ -73,7 +91,7 @@
       "url": "https://creativecommons.org/licenses/by-sa/3.0"
     },
     "sourceUrls": [
-      "https://en.wiktionary.org/wiki/identical"
+      "https://en.wiktionary.org/wiki/community"
     ]
   }
 ]
