@@ -79,7 +79,7 @@
 
         justify-content: center;
         align-items: center;
-        max-width: 700px
+        max-width: 600px
     }
 
     #landing_grid {

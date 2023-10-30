@@ -74,7 +74,7 @@
     description="Posts covering various categories from language - vocabulary and grammar - to text coherence and cohesion, fluency in speaking and writing, pronunciation - all of which aim to help students preparing for IELTS and for study abroad."
 />
 
-<div class="mb-1 wrapper">
+<div class="my-2 wrapper">
 
     <div class="input-container">
         <input id="refine_title" type="text" class="input-item input-item-1" placeholder="search titles" autofocus on:input={handleTitleInput} value={refineTitle}>
@@ -162,7 +162,7 @@
 }
 
 select {
-    height:30px;
+    height:33px;
 }
 
 .wrapper div {
@@ -199,7 +199,6 @@ select {
     font-size: 1.1rem;
     text-align:center;
     cursor: pointer;
-    height:33px;
     background-color: #fff;
 }
 
