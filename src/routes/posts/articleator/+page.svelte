@@ -192,6 +192,9 @@
 
     <div id="explanation">{@html explanation}</div>
 
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
 </div>
 
 <style>
