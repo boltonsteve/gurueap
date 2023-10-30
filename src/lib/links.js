@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "WH Questions",
+        href: "posts/wh-questions",
+        keywords: ['grammar','sentence structure','questions','Bahasa Indonesia'],
+        description: "Reviewing sentence structure in WH questions."
+    },
+    {
         title: "Sentence Fragment",
         href: "posts/sentence-fragment",
         keywords: ['grammar','sentence structure'],
