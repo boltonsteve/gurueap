@@ -165,7 +165,7 @@
 
 <div id="output" class="container" style="max-width:600px;">
 
-    <img src="/img/steve-terminator-500.png" class="mx-auto border rounded" alt="Steve Terminator" style="width:180px;">
+    <img src="/img/steve-terminator-500.png" class="mx-auto border rounded" alt="Steve Terminator" style="width:160px;">
 
     <h1 class="text-center">Articleator</h1>
     <p class="lead mb-3">Locate a noun in some text and click the buttons to check if it needs an article and/or needs to be plural.</p>  
