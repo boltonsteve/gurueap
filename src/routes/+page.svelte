@@ -3,7 +3,22 @@
     import SvelteSeo from "svelte-seo"
     import { links } from '$lib/links.js';
 
-    let totalLinks = links.length;
+    let totalPosts = 0;
+    let totalGames = 0;
+    let totalSongs = 0;
+
+    console.log(links);
+
+    links.forEach( next => {
+        totalPosts ++;
+        if(next.keywords.includes('song')) {
+            totalSongs ++;
+        }
+        if(next.keywords.includes('games')) {
+            totalGames ++;
+        }
+    })
+
     let hw = 50;
 
 </script>
@@ -29,21 +44,21 @@
 
     <div id="div_bottom">
         <div class="card">
-            <a href="./posts">
+        <a href="./posts">
                 <div><FilePost height={hw} width={hw} /></div>
-                Posts
+                {totalPosts} Posts
             </a>
         </div>
         <div class="card">
             <a href="./games">
                 <div><Controller  height={hw} width={hw} /></div>
-                Games
+                {totalGames} Games
             </a>
         </div>
         <div class="card">
             <a href="./songs">
                 <div><FileMusic  height={hw} width={hw} /></div>
-                Songs
+                {totalSongs} Songs
             </a>
         </div>
     </div>
