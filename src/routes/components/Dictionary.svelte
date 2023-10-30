@@ -3,6 +3,7 @@
     import { onMount } from 'svelte';
     export let word = "";
     export let mode = "dictionary"
+    import { Circle, SyncLoader } from 'svelte-loading-spinners';
 
     onMount(() => {
 		/* console.log('the component has mounted'); */
@@ -152,7 +153,7 @@
 {#if hasError}
     <div class="loading-msg">Sorry, error loading dictionary!</div>
 {:else if isFetching}
-    <div class="loading-msg">Loading dictionary..</div>
+    <div class="spinner-div">loading dictionary&nbsp;<SyncLoader size="20" color="var(--dark)" /></div>
 {:else}
     {#if mode == 'dictionary' || mode == 'hangman'}
         <div id="word">{word}</div>
@@ -191,6 +192,11 @@
         text-align:center;
         margin-top: 15px;
     }
+
+    .spinner-div {
+        display:flex;
+        justify-content: center;
+    } 
 
     /* div { */
     /*     border: 1px solid red; */
