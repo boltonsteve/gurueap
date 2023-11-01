@@ -35,11 +35,17 @@
 
     <ul class="lh-15">
         <li><i><b>budget</b></i> is a singular countable noun</li>
-        <li><b><i>large</i></b> collocates with <i><b>budget</b></i></li>
+        <li><b><i>large</i></b> collocates with<span class="small"><sup>1</sup></span> <i><b>budget</b></i></li>
         <li><b><i>item(s)</i></b> collocates with <i><b>budget</b></i></li>
         <li>as a singular countable noun, <i><b>budget</b></i> requires some kind of determiner (article, possessive, etc.)</li>
     </ul>
 
     <p>Often students who are preparing for IELTS feel they have to do everything to avoid repetition, and so they use <b><i>budget</i></b> instead of <b><i>money</i></b>. However, <b><i>budget</i></b> is <span class="uli">not</span> synonymous with <b><i>money</i></b>. When you're talking about money and comparing how much things cost, it's safer to use words like <b><i>money</i></b>, <b><i>cheap</i></b>, <b><i>expensive</i></b>, etc.</p>
+
+    <hr>
+
+    <p class="small"><sup>1</sup><a href="../posts/collocation">Collocation is explained in a separate post</a>.</p>
+<a name="footnote"></a>
+
 
 </div>

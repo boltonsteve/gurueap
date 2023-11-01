@@ -59,7 +59,7 @@
 
     <p>..there are at least 6 <b><i>chunks</i></b>:</p>
 
-    <ul class="font-italic">
+    <ul class="font-italic lh-15">
         <li>But some</li>
         <li class="lst-none small">synonym for 'but some people'</li>
         <li>such as</li>

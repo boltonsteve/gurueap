@@ -151,9 +151,9 @@
 </audio>
 
 {#if hasError}
-    <div class="loading-msg">Sorry, error loading dictionary!</div>
+    <div class="loading-msg mt-2">Sorry, error loading dictionary!</div>
 {:else if isFetching}
-    <div class="spinner-div">loading dictionary&nbsp;<SyncLoader size="20" color="var(--dark)" /></div>
+    <div class="spinner-div mt-2">loading dictionary&nbsp;<SyncLoader size="20" color="var(--dark)" /></div>
 {:else}
     {#if mode == 'dictionary' || mode == 'hangman'}
         <div id="word">{word}</div>
