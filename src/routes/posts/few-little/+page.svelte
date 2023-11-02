@@ -66,9 +66,11 @@
         <div slot="html">Elsewhere on GuruEAP we've looked at <a href="../posts/some" target="_blank" rel="noopener">alternatives to <b><i>some</i></b></a>, which tends to be overused by Indonesians translating from <b><i>beberapa</i></b>, or, in the example above - <b><i>hanya beberapa</i></b>.</div>
     </WithIcon>
 
-    <p>In this post we look at other alternatives to some that are also problematic for Indonesians because they are awkward to translate: <b><i>few</i></b>, <b><i>a few</i></b>, <b><i>little</i></b>, <b><i>a little</i></b>. And as with all quantifiers, we need to begin by deciding whether the noun we're quantifying is countable or uncountable.</p>
+    <p>In this post we look at other alternatives to <b><i>some</i></b> that are also problematic for Indonesians because they are awkward to translate: <b><i>few</i></b>, <b><i>a few</i></b>, <b><i>little</i></b>, <b><i>a little</i></b>.</p>
 
-    <h3>(a) few</h3>
+    <p>And as with all quantifiers, we need to begin by deciding whether the noun we're quantifying is countable or uncountable.</p>
+
+    <h3>(a) few + countable noun</h3>
 
     <p>Look at these two statements made by a teacher featuring the <i><b>countable</b></i> noun 'student':</p>
 
@@ -123,7 +125,7 @@
         </ol>
     {/if}
 
-    <h3>(a) little</h3>
+    <h3>(a) little + uncountable noun</h3>
 
     <p>Now look at these two statements made by a student featuring the <i><b>uncountable</b></i> noun 'time':</p>
     
