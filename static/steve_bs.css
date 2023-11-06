@@ -15,6 +15,10 @@
   --3: 30px;
 }
 
+.lead {
+    font-size:1.2rem;
+}
+
 .hide {
     display:none;
 }
@@ -103,6 +107,17 @@
 
 .btn-outline-dark:hover, .btn-active-dark {
     background: var(--dark);
+    color: var(--light);
+}
+
+.btn-outline-warning {
+    background: white;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+}
+
+.btn-outline-warning:hover, .btn-active-warning {
+    background: var(--orange);
     color: var(--light);
 }
 

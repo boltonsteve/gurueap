@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Linkin' Text",
+        href: "posts/linking",
+        keywords: ['pronunciation','linking','activity'],
+        description: "App that highlights four types of linking in spoken English."
+    },
+    {
         title: "WH Questions",
         href: "posts/wh-questions",
         keywords: ['grammar','sentence structure','questions','Bahasa Indonesia'],

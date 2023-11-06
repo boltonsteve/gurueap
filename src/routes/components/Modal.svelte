@@ -9,8 +9,10 @@
 {#if showModal}
 <div class="backdrop" transition:fade on:click|self>
     <div class="modal">
-        <div>{msg}</div>
-        <button class="mt-2" on:click|self>{btn_txt}</button>
+        <div>{@html msg}</div>
+        <div class="btn-div">
+            <button class="mt-2" on:click|self>{btn_txt}</button>
+        </div>
     </div>
 </div>
 {/if}
@@ -30,8 +32,11 @@
         padding:20px;
         border-radius:10px;
         max-width:300px;
-        margin:30% auto;
-        text-align:center;
+        margin:10% auto;
         background:white;
+    }
+    .btn-div {
+        text-align: right;
+        margin-left: auto;
     }
 </style>
