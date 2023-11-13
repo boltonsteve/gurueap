@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Equipment(s)",
+        href: "posts/equipment",
+        keywords: ['vocabulary','countable uncountable'],
+        description: "Highlighting the often incirrect use of 'equipment' as a countable noun."
+    },
+    {
         title: "Linkin' Text",
         href: "posts/linking",
         keywords: ['pronunciation','linking','activity'],
