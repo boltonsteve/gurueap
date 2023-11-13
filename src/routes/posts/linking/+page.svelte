@@ -1,8 +1,7 @@
 <script>
-
+import { onMount } from 'svelte';
 import SvelteSeo from "svelte-seo"
 import Modal from '../../components/Modal.svelte'
-import { onMount } from 'svelte';
 
 let oc,ct,ot;
 //let type = 'Elision',
@@ -167,8 +166,6 @@ const clearInput = () => {
 const updateOutput = () => {
     update_output();
 }
-
-document.title = 'Linking Sounds';
 
 </script>
 

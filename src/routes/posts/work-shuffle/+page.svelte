@@ -1,9 +1,14 @@
 <script>
+    import { onMount } from 'svelte';
     import SvelteSeo from "svelte-seo"
-    import { flagIndo } from '$lib/flags.js'
     import { shuffle } from '$lib/shuffle.js'
     import ShuffleSpan from '../../components/ShuffleSpan.svelte'
     import { scale } from 'svelte/transition'
+
+    let elWords;
+    onMount(() => {
+        elWords = document.getElementById('words');
+    });
 
     let next = false;
     let left_right = true;
@@ -23,8 +28,6 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
     let msg = 'Select a word before continuing..'
 
     let selected = 1000;
-
-    let elWords = document.getElementById('words');
 
     const setUp = () => {
         selected = 0;

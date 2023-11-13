@@ -1,12 +1,12 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { songs } from '$lib/songs.js'
+    import { SongStore } from '$lib/stores.js'
     import { video, music } from '$lib/emojis.js'
     import Card from '../components/Card.svelte'
 
-    songs.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
+    $SongStore.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 
-    let songsCount = songs.length;
+    let songsCount = $SongStore.length;
 
 </script>
 
@@ -17,7 +17,7 @@
 
     <div><img src="/img/steve-baby.png" class="mx-auto my-2" alt="gurueap" style="width:150px;"></div>
 <div class="mb-3 pt-2 container">
-    {#each songs as song}
+    {#each $SongStore as song}
         <div class="card">
             <Card title="{song.title}" icon="songs" path="./songs/{song.href}" text="{song.description}" />
         </div>
@@ -26,21 +26,21 @@
 
 <style>
 
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .card {
-        margin:10px;
-    }
+.card {
+    margin:10px;
+}
 
-    img {
-        border: 7px solid white; 
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        rotate: -5deg;
-    }
+img {
+    border: 7px solid white; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    rotate: -5deg;
+}
 
 </style>
 

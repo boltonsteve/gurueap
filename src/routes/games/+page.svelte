@@ -1,7 +1,11 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import { games } from '$lib/games.js';
+    import { links } from '$lib/links.js';
     import Card from '../components/Card.svelte'
+
+    let games = links.filter( next => {
+        return next.keywords.includes('games');
+    });
 
     /* games.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)); */
 

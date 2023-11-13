@@ -3,6 +3,7 @@
     import SvelteSeo from "svelte-seo"
     import { shuffle } from '$lib/shuffle.js'
     import ShuffleSpan from '../../components/ShuffleSpan.svelte'
+    import Shuffle from '../../components/Shuffle.svelte'
     import { scale } from 'svelte/transition'
 
     let elWords;
@@ -10,27 +11,22 @@
         elWords = document.getElementById('words');
     });
 
-    const raw = `The cause of higher prices was an increase in demand.
-The result of an increase in demand was higher prices.
-The demand has increased, and as a result the prices are higher.
-Because the demand has increased, the prices are higher.
-An increase in demand leads to higher prices.
-Higher prices are caused by an increase in demand.
-The prices are higher because of an increase in demand.
-When/If there is an increase in demand, prices rise.`;
-
     let next = false;
     let left_right = true;
+
+    const raw = `A man should never neglect his family for business.
+A professional is someone who can do his best work when he doesn't feel like it.
+The problem with the rat race is that even if you win, you’re still a rat.
+Far and away the best prize that life offers is the chance to work hard at work worth doing.
+Instead of wondering when your next vacation is, you ought to set up a life you don't need to escape from.`;
 
     let sentences = raw.split(/\n/);
     let sentence = '';
     let words = [];
     let corrects = [];
-    let corrects_html = '';
     let moving = '';
     let element,elements;
     let msg = 'Select a word before continuing..'
-
     let selected = 1000;
 
     const setUp = () => {
@@ -42,7 +38,7 @@ When/If there is an increase in demand, prices rise.`;
     setUp();
 
     const clearDanger = () => {
-        elements = document.getElementsByClassName('span')
+        elements=document.getElementsByClassName('span')
         for(element of elements){
             if(element.classList.contains("danger")) {
                 element.classList.remove('danger')
@@ -62,13 +58,17 @@ When/If there is an increase in demand, prices rise.`;
         let joined = words.join(' ');
 
         if(joined == sentence) {
+            document.getElementById('words').innerHTML = sentence;
+            document.getElementById('words').classList.add('correct');
+
             corrects.push(`<li>${sentence}</li>`);
-            corrects_html = `<ol>${corrects.join('')}</ol>`;
+            document.getElementById('corrects').innerHTML = `<ol>${corrects.join('')}</ol>`;
+
             words = [];
             next = true;
             left_right = false;
-        }
 
+        }
     }
 
     const resetWords = () => {
@@ -82,12 +82,9 @@ When/If there is an increase in demand, prices rise.`;
     }
 
     const doNext = () => {
-
         let elWords = document.getElementById('words');
-
         if(sentences.length == 0) {
             let msg = 'No more sentences!';
-            next = false;
             elWords.innerHTML = msg;
             elWords.classList.add('correct');
         } else {
@@ -97,7 +94,6 @@ When/If there is an increase in demand, prices rise.`;
             next = false;
             left_right = true;
         }
-
     }
 
     const goLeft = () => {
@@ -127,43 +123,39 @@ When/If there is an increase in demand, prices rise.`;
 
     function handleKeydown(event) {
 
-        if(!next) {
+		let key = event.key;
 
-            let key = event.key;
+        if(key == 'ArrowLeft') {
+            goLeft()
+        } else if(key == 'ArrowRight') {
+            goRight()
+        } else if(key == 'ArrowDown') {
 
-            if(key == 'ArrowLeft') {
-                goLeft()
-            } else if(key == 'ArrowRight') {
-                goRight()
-            } else if(key == 'ArrowDown') {
-
-                if(selected == 1000) {
+            if(selected == 1000) {
+                selected = words.length-1;
+                document.getElementById(selected).classList.add('danger');
+            } else {
+                if(selected > 0) {
+                    selected--;
+                } else {
                     selected = words.length-1;
-                    document.getElementById(selected).classList.add('danger');
-                } else {
-                    if(selected > 0) {
-                        selected--;
-                    } else {
-                        selected = words.length-1;
-                    }
-                    clearDanger();
-                    document.getElementById(selected).classList.add('danger');
                 }
-            } else if(key == 'ArrowUp') {
-                if(selected == 1000) {
-                    selected = 0;
-                    document.getElementById(selected).classList.add('danger');
-                } else {
-                    if(selected < words.length-1) {
-                        selected ++;
-                    } else {
-                        selected = 0;
-                    }
-                    clearDanger();
-                    document.getElementById(selected).classList.add('danger');
-                }
+                clearDanger();
+                document.getElementById(selected).classList.add('danger');
             }
-
+        } else if(key == 'ArrowUp') {
+            if(selected == 1000) {
+                selected = 0;
+                document.getElementById(selected).classList.add('danger');
+            } else {
+                if(selected < words.length-1) {
+                    selected ++;
+                } else {
+                    selected = 0;
+                }
+                clearDanger();
+                document.getElementById(selected).classList.add('danger');
+            }
         }
 	}
 
@@ -171,31 +163,31 @@ When/If there is an increase in demand, prices rise.`;
 </script>
 
 <SvelteSeo
-    title="Cause/Effect - shuffled"
-    description="A range of cause effect structures."
-    keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,grammar,cause effect" 
+    title="Work quotes - shuffled"
+    description="Quotes by famous people regarding the subject of work."
+    keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic purposes,pre-departure training,vocabulary" 
 />
 
 <svelte:window on:keydown={handleKeydown} />
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/cause-effect.png" class="mx-auto" style="width:200px;" alt="work">
+    <Shuffle raw={raw} />
 
-    <h1 class="text-center mt-2">Cause effect structures</h1>
+    <img src="/img/work-png.png" class="mx-auto" style="width:200px;" alt="work">
 
-    <p>See if you can reconstruct 5 cause effect structures!</p>
+    <h1 class="text-center mt-0">Work Quotes</h1>
+
+    <p>See if you can reconstruct 5 quotes about work written by famous people!</p>
     <p>Click on a word to select it.<br>
         Click left-right (or type &larr; &rarr;) to move it around.</p>
 
     <div id="container">
-
         <div id="words">
             {#each words as word, index}
                 <ShuffleSpan id="{index}" word="{word}" on:click={doWord} />
             {/each}
         </div>
-
         <div id="buttons" style="touch-action: manipulation;">
             {#if left_right}
                 <button id="left" class="btn btn-outline-primary" on:click={goLeft} transition:scale>&larr;</button>
@@ -207,9 +199,7 @@ When/If there is an increase in demand, prices rise.`;
                 <button id="right" class="btn btn-outline-primary" on:click={goRight} transition:scale>&rarr;</button>
             {/if}
         </div>
-
-        <div id="corrects">{@html corrects_html}</div>
-
+        <div id="corrects"></div>
     </div>
 
 </div>

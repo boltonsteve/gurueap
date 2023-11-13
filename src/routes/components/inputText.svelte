@@ -6,7 +6,7 @@
 
 </script>
 
-<span><sup class="font-weight-bold">{count}</sup><input id="A{count}" type="text" class="ans" size="{size}" data="{answer}" placeholder="{count}" bind:value={guess} on:input={console.log(guess)} /></span>
+<span><sup class="font-weight-bold">{count}</sup><input id="A{count}" type="text" class="ans" size="{size}" data="{answer}" placeholder="{count}" bind:value={guess} on:input={console.log(guess)} autocomplete="off" /></span>
 
 <style>
     span {
