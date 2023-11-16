@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Awlizer",
+        href: "posts/awlizer",
+        keywords: ['vocabulary','AWL','Academic Word List'],
+        description: "An app that highlights words in a text that are also in the Academic Word List (AWL)."
+    },
+    {
         title: "Equipment(s)",
         href: "posts/equipment",
         keywords: ['vocabulary','countable uncountable'],

@@ -17,7 +17,7 @@
 
     <div class="alert alert-success font-italic">
         I need to <b><i>study</i></b> as <b><i>much</i></b> as possible. I have an exam next week.
-        <p class="small my-0">(<b>much</b> affects the meaning of the verb <b>study</b>)</p>
+        <p class="small mb-0">(<b>much</b> affects the meaning of the verb <b>study</b>)</p>
     </div>
 
     <p>So far, so good. In Bahasa Indonesia we have the same grammar structure!</p>
@@ -54,13 +54,13 @@
         </div>
     </WithIcon>
 
-    <p class="mb-0">Indonesians need to be careful here because in Bahasa Indonesia the uncountable noun <b><i>air kelapa</i></b> (coconut water) is positioned <span class="uli">before</span> <b><i>as much as</i></b></p>
+    <p class="mb-0">Indonesians need to be careful here because in Bahasa Indonesia the uncountable noun <b><i>air kelapa</i></b> (coconut water) is positioned <span class="uli">before</span> <b><i>as much as</i></b>.</p>
 
-    <p>With <b><i>plural and uncountable nouns</i></b>, you need this:</p>
+    <p>In English, with <b><i>plural and uncountable nouns</i></b>, you need this:</p>
 
     <div class="alert alert-success font-italic">
         <p class="my-0">If someone poisons your dog, give your dog as much coconut water as possible!</p>
-        <p class="small my-0">(<b>much</b> affects the meaning of the noun <b><i>coconut water</i></b>)</p>
+        <p class="small mb-0">(<b>much</b> affects the meaning of the noun <b><i>coconut water</i></b>)</p>
     </div>
 
     <p>Compare:</p>
@@ -100,11 +100,11 @@
 
     <p class="mb-0">Again, Indonesians need to be careful because in Bahasa Indonesia the singular count noun <b><i>rumah</i></b> (house) is positioned <span class="uli">before</span> <b><i>as much as</i></b>.</p>
 
-    <p>With <b><i>singular countable nouns</i></b> you need this:</p>
+    <p>In English, with <b><i>singular countable nouns</i></b> you need this:</p>
 
     <div class="alert alert-success font-italic">
         <p class="my-0">Later if I have enough money I will build as large a house as possible.</p>
-        <p class="my-0 small">(<b>large</b> affects the <span class="uli">singular countable noun</span> <b>house</b>)</p>
+        <p class="mb-0 small">(<b>large</b> affects the <span class="uli">singular countable noun</span> <b>house</b>)</p>
     </div>
 
     <p>Compare:</p>
@@ -133,7 +133,8 @@
 
     <h3>Challenge</h3>
 
-    <p>Can you make sentences comparing John and Linda? (See photo top of page)</p>
+    <p>Can you make sentences comparing John and Linda? (See photo top of page).</p>
+    <p>Try to use <b><i>as...as</i></b>!</p>
 
 </div>
 
