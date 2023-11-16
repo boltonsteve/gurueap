@@ -1,6 +1,7 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { sublists } from '$lib/sublists.js'
+    import { scale } from 'svelte/transition'
 
     // From original
     let incoming = '';
@@ -10,11 +11,13 @@
     let slFeedbacks = [];
 
     let challengeOn = false;
-    let showing = false;
+    let showingOn = false;
 
     let total_selectable = 0;
     let total_selected = 0;
-    let highlight_classes = 'border border-info border-2 px-1 rounded';
+    let highlight_classes = 'border border-info px-1 rounded';
+    // (Multiple classes can be added using spread operator..)
+    let highlightClassesArr = ['border','border-info','px-1','rounded'];
 
     const showInstruction = `Words from the AWL are highlighted - <span class="text-success"><i><b>headwords</b></i> green</span>; <span class="text-primary"><i><b>non-headwords</b></i> blue</span>.`;
 
@@ -37,31 +40,24 @@
         if(input == '') {
             alert(remember);
         } else {
-
-            console.log('Challenge!');
-
-            // Are there any 'academic' words in #incoming?
+            // Are there any 'academic' words in input?
             total_selectable = get_total_awl();
-
             if(total_selectable == 0) {
                 alert('No AWL words found. Try entering some more text!');
             } else {
-                let challengeInstruction = '';
-                if(total_selectable == 1) {
-                    challengeInstruction = `Your text contains ${total_selectable} AWL word.<br>Click (or tap) ${total_selectable} word that you think is in the AWL. Then click 'Show me'`;
-                } else {
-                    challengeInstruction = `Your text contains ${total_selectable} AWL words.<br>Click (or tap) up to ${total_selectable} words that you think are in the AWL. Then click 'Show me'`;
-                }
-                midInstruction = challengeInstruction;
+                let noun = total_selectable == 1 ? 'word' : 'words';
+                let verb = total_selectable == 1 ? 'is' : 'are';
+                midInstruction = `<div class="alert alert-info rounded">
+                    Your text contains <b>${total_selectable}</b> AWL ${noun}.
+                    <ul>
+                        <li>Click (or tap) <b>${total_selectable}</b> ${noun} that you think ${verb} in the AWL.</li>
+                        <li>Then click 'Show me'</li>
+                    </ul>
+                </div>`;
                 showMidInstruction = true;
-                /* $("#challenge").attr('disabled','disabled'); */
                 challengeOn = true;
-                /* showButtons = false; */
                 challengeBtnDisabled = true;
             }
-
-
-
         }
     }
 
@@ -72,14 +68,10 @@
             if(input == '') {
                 alert(remember);
             } else {
-                
                 midInstruction = showInstruction;
                 showMidInstruction = true;
-                /* showButtons = false; */
-
+                showingOn = true;
                 show_stats();
-
-                showing = true;
             }
             challengeOn = false;
             challengeBtnDisabled = true;
@@ -136,7 +128,7 @@
 
         });
 
-        if(showing == true) {
+        if(showingOn == true) {
             show_stats();
         } else {
             show_basic();
@@ -176,9 +168,6 @@
         slFeedbacks = [ [],[],[],[],[],[],[],[],[],[] ];
         let id = 0;
 
-        let correctly_selected = 0;
-        let inAwl = 0;
-
         // Output based on sublists (?!)
         wordObjs.forEach(function(next,i) {
 
@@ -186,7 +175,7 @@
             let nextWithPunct = next.before + next.word + next.after;
             let spanHtml = '';
             let nextFamilyArr = [];
-            let hl_classes = '';
+            let hl_classes = 'font-weight-bold font-italic';
             let selected_classes = '';
 
             if(next.selected == true) {
@@ -202,11 +191,11 @@
                     if(nextFamilyArr.includes(nextWord)) {
                         // Is HEADWORD?
                         if(nextWord == nextFamilyArr[0]) {
-                            hl_classes = 'text-success font-weight-bold font-italic';
+                            hl_classes += ' text-success';
                             heads.push(nextWord);
                             wordObjs[id].headword = true;
                         } else {
-                            hl_classes = 'text-primary font-weight-bold font-italic';
+                            hl_classes += ' text-primary';
                             nonHeads.push(nextWord);
                             wordObjs[id].nonHeadword = true;
                         }
@@ -228,30 +217,33 @@
                 }
             }
 
-            if(challengeOn == true) {
+            // Optional scoring system...
+            /* if(challengeOn == true) { */
 
-                if(next.selected == true) {
-                    // = correctly selected
-                    if(next.headword == true || next.nonHeadword == true) {
-                        inAwl ++;
-                        correctly_selected ++;
-                    }
-                } else {
-                    if(next.headword == true || next.nonHeadword == true) {
-                        inAwl ++;
-                    }
-                }
+            /*     let correctly_selected = 0; */
+            /*     let inAwl = 0; */
 
-                let score = 0;
+            /*     if(next.selected == true) { */
+            /*         // = correctly selected */
+            /*         if(next.headword == true || next.nonHeadword == true) { */
+            /*             inAwl ++; */
+            /*             correctly_selected ++; */
+            /*         } */
+            /*     } else { */
+            /*         if(next.headword == true || next.nonHeadword == true) { */
+            /*             inAwl ++; */
+            /*         } */
+            /*     } */
 
-                if(total_selected > 0) {
-                    score = Math.round( (correctly_selected / total_selected) * 100 );
-                }
+            /*     let score = 0; */
+            /*     if(total_selected > 0) { */
+            /*         score = Math.round( (correctly_selected / total_selected) * 100 ); */
+            /*     } */
 
-                /* feedback = 'Score: ' + score + '%'; */
-                /* showFeedback = true; */
+            /*     feedback = 'Score: ' + score + '%'; */
+            /*     showFeedback = true; */
 
-            }
+            /* } */
 
             id++;
 
@@ -273,10 +265,8 @@
 
             if(next.length > 0) {
 
-                // For svelte
-                sublist = i+1;
                 stat = {
-                    sublist: sublist,
+                    sublist: i+1,
                     listItems: []
                 };
 
@@ -288,7 +278,6 @@
                     }
                 });
 
-                // For svelte
                 stat.listItems = [...new Set(mapped)]
                 statsArr.push(stat);
 
@@ -332,33 +321,33 @@
     }
 
     const handleSpan = (e) => {
-        /* console.log(e.target.id); */
+
         let id = e.target.id;
         let selected = wordObjs[id].selected;
-        console.log("selected: " + selected);
+
         if(challengeOn == true) {
-            console.log("total_selected: " + total_selected);
-            console.log("total_selectable: " + total_selectable);
             if(total_selected == total_selectable && selected == false) {
                 alert(`You have already made ${total_selectable} selections.\nDeselect items before continuing.`);
             } else {
                 if(selected == false) {
                     selected = true;
-                    document.getElementById(id).classList.add('border','border-info','border-2','px-1','rounded');
-
+                    document.getElementById(id).classList.add(...highlightClassesArr);
+                    /* document.getElementById(id).classList.add('border','border-info','border-2','px-1','rounded'); */
                     total_selected ++;
                 } else {
                     selected = false;
-                    document.getElementById(id).classList.remove('border','border-info','border-2','px-1','rounded');
+                    document.getElementById(id).classList.remove(...highlightClassesArr);
+                    /* document.getElementById(id).classList.remove('border','border-info','border-2','px-1','rounded'); */
                     total_selected --;
                 }
                 wordObjs[id].selected = selected;
             }
         } else {
-            if(showing == false) {
+            if(showingOn == false) {
                 alert('Click one of the buttons to get started!');
             }
         }
+
     }
 
 </script>
@@ -385,7 +374,7 @@
     {/if}
 
     {#if showMidInstruction}
-        <div id="mid_instruction" class="mt-2">{@html midInstruction}</div>
+        <div id="mid_instruction" transition:scale>{@html midInstruction}</div>
     {/if}
 
     <div id="stats">
