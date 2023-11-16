@@ -2,7 +2,7 @@ export const links = [
     {
         title: "Awlizer",
         href: "posts/awlizer",
-        keywords: ['vocabulary','AWL','Academic Word List'],
+        keywords: ['vocabulary','AWL','Academic Word List','activity'],
         description: "An app that highlights words in a text that are also in the Academic Word List (AWL)."
     },
     {
