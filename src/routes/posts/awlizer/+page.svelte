@@ -20,7 +20,7 @@
     // (Multiple classes can be added using spread operator..)
     let highlightClassesArr = ['border','border-info','px-1','rounded'];
 
-    const showInstruction = `<p class="text-center">Words from the AWL are highlighted - <span class="text-success"><i><b>headwords</b></i> green</span>; <span class="text-primary"><i><b>non-headwords</b></i> blue</span>.</p>`;
+    const showInstruction = `<div class="text-center">Words from the AWL are highlighted - <span class="text-success"><i><b>headwords</b></i> green</span>; <span class="text-primary"><i><b>non-headwords</b></i> blue</span>.</div>`;
 
     const remember = 'Type or paste some text into the box before continuing.';
 
@@ -63,19 +63,24 @@
     }
 
     const showMe = () => {
-        if(challengeOn == true && total_selected == 0) {
-            alert('You wanted a challenge, right? So select words that you think might be in the AWL before clicking "Show me".');
+        total_selectable = get_total_awl();
+        if(total_selectable == 0) {
+            alert('No AWL words found. Try entering some more text!');
         } else {
-            if(input == '') {
-                alert(remember);
+            if(challengeOn == true && total_selected == 0) {
+                alert('You wanted a challenge, right? So select words that you think might be in the AWL before clicking "Show me".');
             } else {
-                midInstruction = showInstruction;
-                showMidInstruction = true;
-                showingOn = true;
-                show_stats();
+                if(input == '') {
+                    alert(remember);
+                } else {
+                    midInstruction = showInstruction;
+                    showMidInstruction = true;
+                    showingOn = true;
+                    show_stats();
+                }
+                challengeOn = false;
+                challengeBtnDisabled = true;
             }
-            challengeOn = false;
-            challengeBtnDisabled = true;
         }
     }
 
@@ -368,18 +373,18 @@
     <textarea id="incoming" rows="4" class="form-control border rounded p-1" bind:value={input} on:input={handleInput} placeholder="input here.."></textarea>
 
     {#if showButtons}
-        <div id="buttons" class="my-grid my-2">
+        <div id="buttons" class="my-grid my-1">
             <button id="btn_challenge" class="btn w-100 btn-outline-info" on:click={challengeMe} disabled={challengeBtnDisabled}>Challenge me</button>
             <button id="btn_show" class="btn w-100 btn-outline-info" on:click={showMe} disabled={showBtnDisabled}>Show me</button>
         </div>
     {/if}
 
-    <div id="stats" class="mb-1">
+    <div id="stats">
         {#if showMidInstruction}
             <div id="mid_instruction" transition:scale={{ duration: 1500, easing: elasticOut }}>{@html midInstruction}</div>
         {/if}
         {#each statsArr as stat}
-            <div>
+            <div class="my-0">
                 <h4 style="margin:0px;">Sublist {stat.sublist}</h4>
                 <div id="list">{@html stat.listItems.join('<br>')}</div>
             </div>
@@ -417,12 +422,13 @@
         display:flex;
         flex-wrap:wrap;
         justify-content:center;
-        gap: 20px;
+        gap: 10px;
+        margin-bottom:10px;
     }
 
     #feedback {
         font-size: 1.5rem;
-        padding:10px;
+        /* padding:10px; */
         text-align:center;
     }
 
