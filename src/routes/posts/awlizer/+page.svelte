@@ -2,6 +2,7 @@
     import SvelteSeo from "svelte-seo"
     import { sublists } from '$lib/sublists.js'
     import { scale } from 'svelte/transition'
+    import { quintOut, elasticOut } from "svelte/easing"
 
     // From original
     let incoming = '';
@@ -373,11 +374,10 @@
         </div>
     {/if}
 
-    {#if showMidInstruction}
-        <div id="mid_instruction" transition:scale>{@html midInstruction}</div>
-    {/if}
-
     <div id="stats" class="mb-1">
+        {#if showMidInstruction}
+            <div id="mid_instruction" transition:scale={{ duration: 1500, easing: elasticOut }}>{@html midInstruction}</div>
+        {/if}
         {#each statsArr as stat}
             <div>
                 <h4 style="margin:0px;">Sublist {stat.sublist}</h4>
@@ -400,6 +400,9 @@
     /*     border:1px solid red; */
     /* } */
 
+    #mid_instruction {
+        width:100%;
+    }
     ul {
         margin:0px;
         padding-left:0px;
