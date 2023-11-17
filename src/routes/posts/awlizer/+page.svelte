@@ -19,7 +19,7 @@
     // (Multiple classes can be added using spread operator..)
     let highlightClassesArr = ['border','border-info','px-1','rounded'];
 
-    const showInstruction = `Words from the AWL are highlighted - <span class="text-success"><i><b>headwords</b></i> green</span>; <span class="text-primary"><i><b>non-headwords</b></i> blue</span>.`;
+    const showInstruction = `<p class="text-center">Words from the AWL are highlighted - <span class="text-success"><i><b>headwords</b></i> green</span>; <span class="text-primary"><i><b>non-headwords</b></i> blue</span>.</p>`;
 
     const remember = 'Type or paste some text into the box before continuing.';
 
@@ -364,7 +364,7 @@
 
     <p class="lead">Type or paste some text into the box below.</p>
 
-    <textarea id="incoming" rows="4" class="form-control border border-info rounded" bind:value={input} on:input={handleInput} placeholder="input here.."></textarea>
+    <textarea id="incoming" rows="4" class="form-control border rounded p-1" bind:value={input} on:input={handleInput} placeholder="input here.."></textarea>
 
     {#if showButtons}
         <div id="buttons" class="my-grid my-2">
@@ -377,7 +377,7 @@
         <div id="mid_instruction" transition:scale>{@html midInstruction}</div>
     {/if}
 
-    <div id="stats">
+    <div id="stats" class="my-2">
         {#each statsArr as stat}
             <div>
                 <h4 style="margin:0px;">Sublist {stat.sublist}</h4>
@@ -415,7 +415,6 @@
         flex-wrap:wrap;
         justify-content:center;
         gap: 20px;
-        margin: 10px 0px;
     }
 
     #feedback {
