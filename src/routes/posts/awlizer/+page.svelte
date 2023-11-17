@@ -377,7 +377,7 @@
         <div id="mid_instruction" transition:scale>{@html midInstruction}</div>
     {/if}
 
-    <div id="stats" class="my-2">
+    <div id="stats" class="mb-1">
         {#each statsArr as stat}
             <div>
                 <h4 style="margin:0px;">Sublist {stat.sublist}</h4>
