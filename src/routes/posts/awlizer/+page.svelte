@@ -211,7 +211,7 @@
 
             if(spanHtml == '') {
                 if(wordObjs[i].selected == true) {
-                    htmlArr.push(`<span id="${id}" class="${selected_classes} text-danger">${nextWithPunct}</span>`);
+                    htmlArr.push(`<span id="${id}" class="${selected_classes} text-danger font-weight-bold font-italic">${nextWithPunct}</span>`);
                 } else {
                     htmlArr.push(`<span id="${id}" class="${selected_classes}">${nextWithPunct}</span>`);
                 }
