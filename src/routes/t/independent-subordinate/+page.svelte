@@ -280,7 +280,7 @@
     padding:10px;
     font-size:3.5rem;
     font-weight:bold;
-    border-bottom:1px solid black;
+    border-bottom:1px dashed black;
 }
 
 #left,#right,#bottom {
@@ -294,7 +294,7 @@
     align-items: center;
     gap:20px;
     padding:10px;
-    border-bottom:1px solid black;
+    border-bottom:1px dashed black;
 }
 
 #left,#right {
@@ -318,12 +318,15 @@
 
     text-align:center;
     justify-content:center;
-    align-items:space-between;
+    align-items:center;
 }
 
 #bottom > div {
-    display:grid;
-    grid-template-columns: 1fr;
+    /* display:grid; */
+    /* grid-template-columns: 1fr; */
+    display:flex;
+    flex-direction:column;
+    gap:20px;
     align-items:center;
     /* padding:10px; */
 }
