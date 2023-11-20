@@ -1,263 +1,298 @@
 <script>
     import SvelteSeo from "svelte-seo"
     import { fade } from 'svelte/transition'
-    import { onMount } from 'svelte';
+    import { onMount } from 'svelte'
 
     let items = [
         {
+            "top":"Because",
+            "middle": [
+                "My coffee was too cold",
+                "I heated my coffee in the microwave"
+            ],
             "bottom":[
                 "Because my coffee was too cold, I heated it in the microwave.",
                 "I heated my coffee in the microwave because it was too cold."
-                ],
-            "top":"Because",
-            "left":"My coffee was too cold",
-            "right":"I heated my coffee in the microwave"
+            ]
         },
         {
-            "bottom":["Though he was very rich, he was still very unhappy."],
             "top":"Though",
-            "left":"He was very rich",
-            "right":"He was still very unhappy"
+            "middle": [
+                "He was very rich",
+                "He was still very unhappy"
+            ],
+            "bottom":["Though he was very rich, he was still very unhappy."]
         },
         {
+            "top":"After",
+            "middle": [
+                "She returned the computer",
+                "She noticed the computer was damaged"
+            ],
             "bottom":[
                 "She returned the computer after she noticed it was damaged.",
                 "After she returned the computer, she noticed it was damaged."
-                ],
-            "top":"After",
-            "left":"She returned the computer",
-            "right":"She noticed the computer was damaged"
+            ]
         },
         {
+            "top":"When",
+            "middle": [
+                "The cost goes up",
+                "Customers buy less clothing"
+            ],
             "bottom":[
                 "When the cost goes up, customers buy less clothing.",
                 "The cost goes up when customers buy less clothing."
-                ],
-            "top":"When",
-            "left":"The cost goes up",
-            "right":"Customers buy less clothing"
+            ]
         },
         {
+            "top":"As",
+            "middle": [
+                "She was bright and ambitious",
+                "She became manager in no time"
+            ],
             "bottom":[
                 "As she was bright and ambitious, she became manager in no time.",
                 "She became manager in no time as she was bright and ambitious."
-                ],
-            "top":"As",
-            "left":"She was bright and ambitious",
-            "right":"She became manager in no time"
+            ]
         },
         {
+            "top":"Wherever",
+            "middle": [
+                "You go",
+                "You can always find beauty"
+            ],
             "bottom":[
                 "Wherever you go, you can always find beauty.",
                 "You can always find beauty wherever you go."
-                ],
-            "top":"Wherever",
-            "left":"You go",
-            "right":"You can always find beauty"
+            ]
         },
         {
+            "top":"Though",
+            "middle": [
+                "The movie was very long",
+                "The movie was still very enjoyable"
+            ],
             "bottom":[
                 "The movie, though very long, was still very enjoyable.",
                 "Though very long, the movie was still very enjoyable."
-                ],
-            "top":"Though",
-            "left":"The movie was very long",
-            "right":"The movie was still very enjoyable"
+            ]
         },
         {
+            "top":"Because",
+            "middle": [
+                "Evergreen trees are a symbol of fertility",
+                "Evergreen trees do not die in the winter"
+            ],
             "bottom":[
                 "Evergreen trees are a symbol of fertility because they do not die in the winter.",
                 "Because they do not die in the winter, evergreen trees are a symbol of fertility."
-                ],
-            "top":"Because",
-            "left":"Evergreen trees are a symbol of fertility",
-            "right":"Evergreen trees do not die in the winter"
+            ]
         },
         {
+            "top":"Although",
+            "middle": [
+                "The actor was happy he got a part in a movie",
+                "The part in the movie was a small one"
+            ],
             "bottom":[
                 "The actor was happy he got a part in a movie although the part was a small one.",
                 "Although the part was a small one, the actor was happy he got a part."
-                ],
-            "top":"Although",
-            "left":"The actor was happy he got a part in a movie",
-            "right":"The part in the movie was a small one"
+            ]
         },
         {
+            "top":"As",
+            "middle": [
+                "The museum was very interesting",
+                "I expected"
+            ],
             "bottom":[
                 "The museum was very interesting, as I expected.",
                 "As i expected, the museum was very interesting."
-                ],
-            "top":"As",
-            "left":"The museum was very interesting",
-            "right":"I expected"
+            ]
         },
         {
+            "top":"Because",
+            "middle": [
+                "He is rich",
+                "People make allowance for his idiosyncrasies"
+            ],
             "bottom":[
                 "Because he is rich, people make allowance for his idiosyncrasies.",
                 "People make allowances for his idiosyncracies because he is rich."
-                ],
-            "top":"Because",
-            "left":"He is rich",
-            "right":"People make allowance for his idiosyncrasies"
+            ]
         },
         {
-            "bottom":["The professional, who had been thoroughly trained, was at a loss to explain."],
             "top":"Who",
-            "left":"The professional had been thoroughly trained",
-            "right":"The professional was at a loss to explain"
+            "middle": [
+                "The professional had been thoroughly trained",
+                "The professional was at a loss to explain"
+            ],
+        "bottom":["The professional, who had been thoroughly trained, was at a loss to explain."]
         },
         {
+            "top":"When",
+            "middle": [
+                "She was younger",
+                "She believed in fairy tales"
+            ],
             "bottom":[
                 "When she was younger, she believed in fairy tales.",
                 "She believed in fairy tales when she was younger."
-                ],
-            "top":"When",
-            "left":"She was younger",
-            "right":"She believed in fairy tales"
+            ]
         },
         {
+            "top":"After",
+            "middle": [
+                "The tornado hit the town",
+                "There was little left standing"
+            ],
             "bottom":[
                 "After the tornado hit the town, there was little left standing.",
                 "There was little left standing after the tornado hit the town."
-                ],
-            "top":"After",
-            "left":"The tornado hit the town",
-            "right":"There was little left standing"
+            ]
         },
         {
+            "top":"Because",
+            "middle": [
+                "I have to save this coupon",
+                "I don’t have time to shop right now"
+            ],
             "bottom":[
                 "Because I don't have time to shop right now, I have to save this coupon.",
                 "I have to save this coupon because I don’t have time to shop right now."
-                ],
-            "top":"Because",
-            "left":"I have to save this coupon",
-            "right":"I don’t have time to shop right now"
+            ]
         },
         {
+            "top":"Where",
+            "middle": [
+                "Let's go back to the restaurant",
+                "We had our first date"
+            ],
             "bottom":[
                 "Let's go back to the restaurant where we had our first date."
-                ],
-            "top":"Where",
-            "left":"Let's go back to the restaurant",
-            "right":"We had our first date"
+            ]
         },
         {
+            "top":"Although",
+            "middle": [
+                "My cousin invited me",
+                "I chose not to go to the reunion"
+            ],
             "bottom":[
                 "I chose not to go to the reunion although my cousin invited me.",
                 "Although my cousin invited me, I chose not to go to the reunion."
-                ],
-            "top":"Although",
-            "left":"My cousin invited me",
-            "right":"I chose not to go to the reunion"
+            ]
         },
         {
+            "top":"As",
+            "middle": [
+                "Genes change over time",
+                "Evolution progresses"
+            ],
             "bottom":[
                 "As genes change over time, evolution progresses.",
                 "Evolution progresses as genes change over time."
-                ],
-            "top":"As",
-            "left":"Genes change over time",
-            "right":"Evolution progresses"
+            ]
         },
         {
+            "top":"Although",
+            "middle": [
+                "I really didn't like the play",
+                "The acting was very good"
+            ],
             "bottom":[
                 "I really didn't like the play although the acting was very good.",
                 "Although the acting was very good, I really didn't like the play."
-                ],
-            "top":"Although",
-            "left":"I really didn't like the play",
-            "right":"The acting was very good"
+            ]
         },
         {
+            "top":"When",
+            "middle": [
+                "Everyone laughed",
+                "He got a cream pie smashed in his face"
+            ],
             "bottom":[
                 "Everyone laughed when he got a cream pie smashed in his face.",
                 "When he got a cream pie smashed in his face everyone laughed."
-                ],
-            "top":"When",
-            "left":"Everyone laughed",
-            "right":"He got a cream pie smashed in his face"
+            ]
         }
-    ];
+    ]
 
-    // 3 rows
-    // Central row items load first
-    // 't' shows top row (e.g. 'conjunction')
-    // 'b' shows bottom row - answer
-
-    let showTop, showLeft, showRight, showBottom = false;
-    let top,left,right,bottomStr = '';
-    let item = {};
-    let ansArr = [];
-    let bottom = [];
+    let item = {}
+    let top = ''
+    let middle = []
+    let bottom = []
+    let showTop, showMiddle, showBottom
 
     let onKeyUp = (e) => {
-        top = item.top;
-        bottom = item.bottom;
-        ansArr = bottom.map( (next) => {
-            let lc = top.toLowerCase();
-            next = next.replace(top, '<b><i>'+top+'</i></b>').replace(lc, '<b><i>'+lc+'</i></b>');
-            return `<div>${next}</div>`;
-        })
         if (e.key == 't') {
-            showTop = true;
+            showTop = true
+        } else if (e.key == 'm') {
+            showMiddle = true
         } else if (e.key == 'b') {
-            bottomStr = ansArr.join('');
-            showBottom = true;
+            showBottom = true
         } else if (e.key == 'n') {
-            next();
+            next()
         }
+    }
+
+    function doHighlight(arr) {
+        let arrArr = arr.map( next => {
+            let lc = top.toLowerCase()
+            return next
+                .replace(top, '<b><i>'+top+'</i></b>')
+                .replace(lc, '<b><i>'+lc+'</i></b>')
+        })
+        return arrArr;
     }
 
     function next() {
 
-        showTop = false;
-        showLeft = false;
-        showRight = false;
-        showBottom = false;
+        showTop = false
+        showMiddle = false
+        showBottom = false
 
         if(items.length) {
             item = items.shift()
-            top = item.top;
-            left = item.left;
-            right = item.right;
-            bottom = item.bottom;
+            top = item.top // str
+            middle = doHighlight(item.middle) // arr
+            bottom = doHighlight(item.bottom) // arr
         } else {
-            left = 'empty';
-            right = 'empty';
-            top = ":'(";
+            top = "empty"
+            middle = ['empty']
+            bottom = ['empty']
         }
-
-        showLeft = true;
-        showRight = true;
 
     }
 
     onMount(() => {
-        console.log('Mounting..');
-        next();
-    });
+        console.log('Mounting..')
+        next()
+    })
 
 </script>
 
-<div id="frame">
+<div id="rows">
     <div id="top">
         {#if showTop}
             <div transition:fade>{top}</div>
         {/if}
     </div>
     <div id="middle">
-        {#if showLeft}
-            <div id="left" transition:fade>{left}</div>
-        {/if}
-        {#if showRight}
-            <div id="right" transition:fade>{right}</div>
+        {#if showMiddle}
+            <div transition:fade>
+                {#each middle as next}
+                    <div class="text-center">{@html next}</div>
+                {/each}
+            </div>
         {/if}
     </div>
     <div id="bottom">
         {#if showBottom}
             <div transition:fade>
-                {#each ansArr as next}
-                    {@html next}
+                {#each bottom as next}
+                    <div class="text-center">{@html next}</div>
                 {/each}
             </div>
         {/if}
@@ -283,31 +318,35 @@
     border-bottom:1px dashed black;
 }
 
-#left,#right,#bottom {
+#middle,#bottom {
     font-size:1.3rem;
 }
 
 #middle {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content:space-around;
+    display:flex;
+    justify-content:center;
     align-items: center;
-    gap:20px;
-    padding:10px;
     border-bottom:1px dashed black;
+}
+
+#middle > div {
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
 }
 
 #left,#right {
     text-align:center;
 }
 
-#frame {
+#rows {
     height:100vh;
     display:flex;
     flex-direction: column;
 }
 
-#frame > div {
+#rows > div {
     height: 33.3vh;
 }
 
