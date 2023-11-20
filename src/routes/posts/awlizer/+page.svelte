@@ -422,9 +422,14 @@
         display:flex;
         flex-wrap:wrap;
         justify-content:center;
-        gap: 10px;
-        margin-bottom:10px;
+        gap:10px;
+        padding-bottom:10px;
+        margin:0px;
     }
+
+    /* #stats > div { */
+    /*     margin:10px; */
+    /* } */
 
     #feedback {
         font-size: 1.5rem;
