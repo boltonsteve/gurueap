@@ -73,9 +73,14 @@
     function doNext() {
         showQuestion = false;
         showAnswer = false;
-        qna = qa.shift();
-        question = qna.q;
-        answer = qna.a;
+        if(qa.length) {
+            qna = qa.shift();
+            question = qna.q;
+            answer = qna.a;
+        } else {
+            question = 'no more items';
+            answer = 'reload page to start again';
+        }
         showQuestion = true;
     }
 
