@@ -1,4 +1,5 @@
 <script>
+    import SvelteSeo from "svelte-seo"
     import ThreeRows from '../../components/ThreeRows.svelte'
 
     let items = [
@@ -218,5 +219,10 @@
     ]
 
 </script>
+
+<SvelteSeo
+title="independent subordinate"
+description="Using subordinating conjunctions to join independent clauses."
+ />
 
 <ThreeRows {items} />

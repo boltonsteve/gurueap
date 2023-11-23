@@ -8,6 +8,17 @@
   description="Classroom activities for use by teachers."
 />
 
+<nav>
+    <div class="logo">
+        <a href="/">GuruEAP</a>
+    </div>
+    <div class="menu">
+        <a href="/posts">posts</a> | 
+        <a href="/songs">songs</a> | 
+        <a href="/games">games</a>
+    </div>
+</nav>
+
 <div class="container">
 
     <div id="content">
@@ -55,29 +66,27 @@ h1,h3 {
 }
 
 .container {
-    height:100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-    .penjelasan {
-        list-style-type:none;
-        font-style: italic;
-        font-size:0.9rem;
-    }
+.penjelasan {
+    list-style-type:none;
+    font-style: italic;
+    font-size:0.9rem;
+}
     
 .cols {
     display: flex;
     flex-wrap: wrap;
     gap:20px;
-    /* justify-content: center; */
-    /* align-items:center; */
 }
 
-    .cols div {
-        max-width:300px;
-    }
+.cols div {
+    max-width:300px;
+}
 
 </style>
 
