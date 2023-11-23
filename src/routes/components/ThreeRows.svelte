@@ -9,6 +9,31 @@
     let middle = []
     let bottom = []
     let showTop, showMiddle, showBottom
+    let current = -1
+
+    function redraw() {
+        showTop = false
+        showMiddle = false
+        showBottom = false
+        item = items[current]
+        top = item.top // str
+        middle = doHighlight(item.middle) // arr
+        bottom = doHighlight(item.bottom) // arr
+    }
+
+    function previous() {
+        if(current > 0) {
+            current --
+            redraw();
+        }
+    }
+
+    function next() {
+        if(current < items.length-1) {
+            current ++
+            redraw()
+        }
+    }
 
     let onKeyUp = (e) => {
         if (e.key == 't') {
@@ -17,6 +42,8 @@
             showMiddle = true
         } else if (e.key == 'b') {
             showBottom = true
+        } else if (e.key == 'N') {
+            previous()
         } else if (e.key == 'n') {
             next()
         }
@@ -32,38 +59,21 @@
         return arrArr;
     }
 
-    function next() {
-
-        showTop = false
-        showMiddle = false
-        showBottom = false
-
-        if(items.length) {
-            item = items.shift()
-            top = item.top // str
-            middle = doHighlight(item.middle) // arr
-            bottom = doHighlight(item.bottom) // arr
-        } else {
-            top = "empty"
-            middle = ['empty']
-            bottom = ['empty']
-        }
-
-    }
-
-    onMount(() => {
-        next()
-    })
+    /* onMount(() => { */
+    /*     next() */
+    /* }) */
 
 </script>
 
 
 <div id="rows">
+
     <div id="top">
         {#if showTop}
             <div transition:fade>{top}</div>
         {/if}
     </div>
+
     <div id="middle">
         {#if showMiddle}
             <div transition:fade>
@@ -73,6 +83,7 @@
             </div>
         {/if}
     </div>
+
     <div id="bottom">
         {#if showBottom}
             <div transition:fade>
@@ -82,6 +93,12 @@
             </div>
         {/if}
     </div>
+
+    <div id="footer">
+        <div><b><i>t</i></b>op/<b><i>m</i></b>iddle/<b><i>b</i></b>ottom; n:next/N:previous</div>
+        <div>{(items.length-current)-1}</div>
+    </div>
+
 </div>
 
 <svelte:window on:keyup|preventDefault={onKeyUp} />
@@ -127,12 +144,9 @@
 
 #rows {
     height:100vh;
-    display:flex;
-    flex-direction: column;
-}
-
-#rows > div {
-    height: 33.3vh;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr 20px;
+    grid-auto-flow:column;
 }
 
 #bottom {
@@ -146,13 +160,17 @@
 }
 
 #bottom > div {
-    /* display:grid; */
-    /* grid-template-columns: 1fr; */
     display:flex;
     flex-direction:column;
     gap:20px;
     align-items:center;
-    /* padding:10px; */
+}
+
+#footer {
+    display:flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color:#cccccc;
 }
 
 </style>

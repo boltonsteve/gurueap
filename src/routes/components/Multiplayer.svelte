@@ -4,36 +4,34 @@
     import { onMount } from 'svelte'
 
     export let qa;
-    export let players;
+    export let players = 2;
+    export let title;
 
     // Declare stuff
     let peopleSize = 50;
-    let title = "the art of 'which'"
     let showQuestion = false;
     let showAnswer = false;
     let qna = {};
-    let question = ''
-    let answer = ''
+    let question = []
+    let answer = []
+    let current = 0
+    let remaining = qa.length
 
     let men = [
         {
-            id: 0,
-            color:'green',
+            color:'var(--green)',
             score: 0
         },
         {
-            id: 1,
-            color:'blue',
+            color:'var(--blue)',
             score: 0
         },
         {
-            id: 2,
-            color:'red',
+            color:'var(--red)',
             score: 0
         },
         {
-            id: 3,
-            color:'orange',
+            color:'var(--orange)',
             score: 0
         }
     ]
@@ -55,10 +53,14 @@
             men[3].score ++
         } else if (e.key == 'O') {
             men[3].score --
+        } else if (e.key == 'q') {
+            showQuestion = true;
         } else if (e.key == 'a') {
             showAnswer = true;
         } else if (e.key == 'n') {
             doNext();
+        } else if (e.key == 'N') {
+            doPrevious();
         } else if (e.key == '1') {
             players = 1;
         } else if (e.key == '2') {
@@ -70,19 +72,32 @@
         }
     }
 
-    function doNext() {
+    function doPrevious() {
         showQuestion = false;
         showAnswer = false;
-        if(qa.length) {
-            qna = qa.shift();
-            question = qna.q;
-            answer = qna.a;
-        } else {
-            question = 'no more items';
-            answer = 'reload page to start again';
+        if(current > 0) {
+            current --;
+            redraw();
         }
         showQuestion = true;
     }
+
+    function doNext() {
+        showQuestion = false;
+        showAnswer = false;
+        if(current < qa.length-1) {
+            current ++;
+            redraw();
+        }
+        showQuestion = true;
+    }
+
+    function redraw() {
+        question = qa[current].q;
+        answer = qa[current].a;
+    }
+
+    redraw();
 
 </script>
 
@@ -101,14 +116,27 @@
 
     <div id="question">
         {#if showQuestion}
-            <div transition:scale>{question}</div>
+            <div transition:scale>
+                {#each question as next}
+                    <div>{@html next}</div>
+                {/each}
+            </div>
         {/if}
     </div>
 
     <div id="answer">
         {#if showAnswer}
-            <div transition:scale>{answer}</div>
+            <div transition:scale>
+                {#each answer as next}
+                    <div>{@html next}</div>
+                {/each}
+            </div>
         {/if}
+    </div>
+
+    <div id="footer">
+        <div>n/N; q/a; 1234 players; rgboRGBO points;</div>
+        <div>{current+1}/{qa.length}</div>
     </div>
 
 </div>
@@ -125,12 +153,13 @@
     height:100vh;
     display:grid;
     grid-auto-flow: column;
-    grid-template-rows: 90px 40px 1fr 1fr;
+    grid-template-rows: 100px 50px 1fr 1fr 25px;
 }
 
 #header {
     display:flex;
     justify-content:space-around;
+    padding-top:10px;
 }
 
 #header > div {
@@ -147,10 +176,41 @@
     background: var(--grey);
 }
 
-#question, #answer {
-    font-size:1.5rem;
+#question {
+    display:flex;
+    justify-content:space-around;
+}
+
+#question div {
+    width:100%;
     display:flex;
     justify-content:center;
+    gap:20px;
+}
+
+#answer {
+    display:flex;
+    justify-content:center;
+}
+
+#answer div {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+#question, #answer {
+    text-align:center;
+    font-size:1.5rem;
+    align-items:center;
+    gap:20px;
+}
+
+#footer {
+    color: #aaaaaa;
+    font-size:1rem;
+    display:flex;
+    justify-content:space-between;
     align-items:center;
 }
 
