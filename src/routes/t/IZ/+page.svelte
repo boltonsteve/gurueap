@@ -104,7 +104,7 @@ title="IZ Plurals"
 <div class="container">
     <div>
         {#if showName}
-            <div id="name" transition:scale>{name}</div>
+            <div id="name" transition:scale>{@html name}</div>
         {/if}
     </div>
     <div>
