@@ -61,7 +61,8 @@ Try reading the following sentences aloud!
 
 <p>Below is a recording of these statements made by a native English speaker.</p>
 
-<p>Listen, pause, repeat. Try to sound like the speaker in the recording, especially at word endings - /Iz/!</p>
+<div class="alert alert-info text-center rounded">Listen, pause, say out loud.</div>
+<p>Try to sound like the speaker in the recording, especially at word endings - /Iz/!</p>
 
 <Youtube id="qlLAh_HfsIQ" />
 

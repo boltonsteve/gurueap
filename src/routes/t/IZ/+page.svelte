@@ -117,9 +117,10 @@ title="IZ Plurals"
 <svelte:window on:keyup|preventDefault={onKeyUp} />
 
 <style>
-:global(body){
-    background:#eeeeee;
-}
+
+/* :global(body){ */
+/*     background:#eeeeee; */
+/* } */
 
 .container {
     background:#eeeeee;
