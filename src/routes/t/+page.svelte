@@ -37,7 +37,7 @@
                 </ul>
                 <h3>Pronunciation</h3>
                 <ul>
-                    <li><a href="../tIZ">IZ</a></li>
+                    <li><a href="../t/IZ">IZ</a></li>
                     <li class="penjelasan">Plurals that end in 'IZ'</li>
                 </ul>
             </div>
