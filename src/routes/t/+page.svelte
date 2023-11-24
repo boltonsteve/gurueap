@@ -35,6 +35,11 @@
                     <li><a href="../t/independent-subordinate" target="_blank">independent subordinate</a></li>
                     <li class="penjelasan">using subordinating conjunctions to join independent clauses</li>
                 </ul>
+                <h3>Pronunciation</h3>
+                <ul>
+                    <li><a href="../tIZ">IZ</a></li>
+                    <li class="penjelasan">Plurals that end in 'IZ'</li>
+                </ul>
             </div>
 
             <div>
