@@ -59,10 +59,11 @@ Try reading the following sentences aloud!
 	<li>My friend wash<b><i>es</i></b> dish<b><i>es</i></b> to earn wag<b><i>es</i></b> and pay tax<b><i>es</i></b>.</li>
 </ul>
 
-<p>Below is a recording of these statements made by a native English speaker.</p>
-
-<div class="alert alert-info text-center rounded">Listen, pause, say out loud.</div>
-<p>Try to sound like the speaker in the recording, especially at word endings - /Iz/!</p>
+<div class="alert alert-info text-center rounded mb-1">
+    <p>Below is a recording of these statements made by a native English speaker.</p>
+    <p class="dont-weight-bold">Listen, pause, say out loud.</p>
+    <p>Try to sound like the speaker in the recording, especially at word endings - /Iz/!</p>
+</div>
 
 <Youtube id="qlLAh_HfsIQ" />
 
