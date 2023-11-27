@@ -1,20 +1,5 @@
 <script>
-
-    function doSpans(t) {
-        let words = t.split(' ');
-        let spanArr = words.map( next => `<span>${next}</span>` );
-        let spanStr = spanArr.join(' ');
-        return spanStr;
-    }
-
-    let started = false;
-    let words = []
-    let spanArr = [];
-    let paraHls = [];
-    let oriSpanned = '';
-    let paraSpanned = '';
-
-    let current = 0;
+    import Highlighter from '../../components/Highlighter.svelte'
 
     // ********** Set up ITEMS **********
     let items = [
@@ -116,135 +101,10 @@
         ]
     ]
 
-    function redrawItems() {
-        let itemsArr = items.map( (next,i) => {
-            let toReturn = '';
-            if(i == current) {
-                toReturn = `<div id="i${i}" class="text-light bg-dark item">${next}</div>`;
-            } else {
-                toReturn = `<div id="i${i}" class="item">${next}</div>`;
-            }
-            return toReturn;
-        })
-        return itemsArr.join(' ');
-    }
-    let itemsSpanned = redrawItems();
-
-    // ********** Set up ORI **********
     let ori = 'Vitamin C in large doses not only protects against the common cold but also offers considerable protection against other infectious diseases, both viral and bacterial. I believe that Vitamin C in adequate amounts could considerably decrease the incidence and severity of the flu. (Pauling and Robinson, 1992, p.9)';
-    redrawOri();
 
-    // ********** Set up PARA **********
     let para = 'Large amounts of Vitamin C provide protection from the common cold as well as some immunity from other viral and bacterial infectious diseases. Pauling and Robinson (1992) believe that sufficient quantities of Vitamin C can reduce the frequency and severity of the flu.';
-    redrawPara();
-
-    function doItem(e) {
-        // Reset current
-        current = e.target.id.replace(/i/,'');
-        // Highlight current in ORI
-        redrawOri();
-        // Highlight current in PARA
-        redrawPara();
-        itemsSpanned = redrawItems();
-        // To be taken and used stand-alone
-        console.log(highlighted);
-    }
-
-    function doOri(e) {
-        let id = Number(e.target.id.replace(/o/,''));
-        if(highlighted[current].includes(id)) {
-            highlighted[current] = highlighted[current].filter((next) => next !== id)
-        } else {
-            highlighted[current].push(id);
-        }
-        redrawOri();
-    }
-
-    function redrawOri() {
-        words = ori.split(' ');
-        let toReturn = [];
-        words.forEach( (next,i) => {
-            if(highlighted[current].includes(i)) {
-                toReturn.push(`<span id="o${i}" class="text-success font-weight-bold">${next}</span>`);
-            } else {
-                toReturn.push(`<span id="o${i}">${next}</span>`);
-            }
-        })
-        oriSpanned = toReturn.join(' ');
-    }
-
-    function doPara(e) {
-        let id = Number(e.target.id.replace(/p/,''));
-        if(highlighted[current].includes(id)) {
-            highlighted[current] = highlighted[current].filter((next) => next !== id)
-        } else {
-            highlighted[current].push(id);
-        }
-        redrawPara();
-    }
-
-    function redrawPara() {
-        words = para.split(' ');
-        let toReturn = [];
-        let countPlus = 100;
-        words.forEach( (next,i) => {
-            if(highlighted[current].includes(i+countPlus)) {
-                toReturn.push(`<span id="p${i+countPlus}" class="text-success font-weight-bold">${next}</span>`);
-            } else {
-                toReturn.push(`<span id="p${i+countPlus}">${next}</span>`);
-            }
-        })
-        paraSpanned = toReturn.join(' ');
-    }
 
 </script>
 
-
-<div class="container">
-
-    <div>
-        <h1 class="text-center">Paraphrasing Strategies 1</h1>
-        <div id="cols">
-            <div id="ori">
-                <h3 class="text-center">Original</h3>
-                {@html oriSpanned}
-            </div>
-            <div id="para">
-                <h3 class="text-center">Paraphrase</h3>
-                {@html paraSpanned}
-            </div>
-        </div>
-        <div id="items" on:click={doItem}>{@html itemsSpanned}</div>
-    </div>
-
-</div>
-
-
-
-<style>
-
-    .container {
-        height:100vh;
-        max-width:700px;
-        margin:0px auto;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-
-    #items {
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-around;
-        gap:10px;
-        font-size:0.8rem;
-    }
-
-    #cols {
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:20px;
-        margin-bottom:30px;
-    }
-
-</style>
+<Highlighter title="Paraphrasing - 1" items={items} highlighted={highlighted} ori={ori} para={para} />
