@@ -52,6 +52,23 @@
                     <li><a href="../t/two-verbs" target="_blank">nominalising verbs</a></li>
                     <li class="penjelasan">modifying sentences containing multiple verbs</li>
                 </ul>
+                <ul>
+                    <li><a href="../t/dependent-prepositions" target="_blank">dependent prepositions</a></li>
+                </ul>
+
+                <h3>Guided Paraphrasing - Analysis</h3>
+                <ul>
+                    <li>
+                        <a href="../t/paraphrasing-1" target="_blank">1</a>
+                        <a href="../t/paraphrasing-2" target="_blank">2</a>
+                        <a href="../t/paraphrasing-3" target="_blank">3</a>
+                        <a href="../t/paraphrasing-4" target="_blank">4</a>
+                        <a href="../t/paraphrasing-5" target="_blank">5</a>
+                        <a href="../t/paraphrasing-6" target="_blank">6</a>
+                        <a href="../t/paraphrasing-7" target="_blank">7</a>
+                        <a href="../t/paraphrasing-8" target="_blank">8</a>
+                    </li>
+                </ul>
             </div>
 
         </div>

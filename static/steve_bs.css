@@ -749,3 +749,7 @@ select {
     /* min-height: 30px; */
     font-size:1rem;
 }
+
+.hl {
+    font-size:1.1rem;
+}

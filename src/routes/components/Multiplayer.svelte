@@ -117,9 +117,13 @@
     <div id="question">
         {#if showQuestion}
             <div transition:scale>
-                {#each question as next}
-                    <div>{@html next}</div>
-                {/each}
+                {#if question.length == 1}
+                    <div>{@html question[0]}</div>
+                {:else}
+                    {#each question as next}
+                        <div>{@html next}</div>
+                    {/each}
+                {/if}
             </div>
         {/if}
     </div>

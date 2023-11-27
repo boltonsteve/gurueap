@@ -13,6 +13,7 @@
     let paraSpanned = '';
 
     let current = 0;
+    let hl = 'font-weight-bold font-italic text-primary';
 
     // ********** Set up ORI **********
     redrawOri();
@@ -49,7 +50,7 @@
         let toReturn = [];
         words.forEach( (next,i) => {
             if(highlighted[current].includes(i)) {
-                toReturn.push(`<span id="o${i}" class="text-success font-weight-bold">${next}</span>`);
+                toReturn.push(`<span id="o${i}" class="${hl}">${next}</span>`);
             } else {
                 toReturn.push(`<span id="o${i}">${next}</span>`);
             }
@@ -63,7 +64,7 @@
         let countPlus = 100;
         words.forEach( (next,i) => {
             if(highlighted[current].includes(i+countPlus)) {
-                toReturn.push(`<span id="p${i+countPlus}" class="text-success font-weight-bold">${next}</span>`);
+                toReturn.push(`<span id="p${i+countPlus}" class="${hl}">${next}</span>`);
             } else {
                 toReturn.push(`<span id="p${i+countPlus}">${next}</span>`);
             }
