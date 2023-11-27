@@ -19,6 +19,13 @@ span {
     cursor: pointer;
 }
 
+.item {
+    border:1px solid var(--dark);
+    padding:5px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
 .lead {
     font-size:1.2rem;
 }
@@ -174,6 +181,9 @@ span {
 }
 .bg-white {
     background: #fff;
+}
+.bg-dark {
+    background: var(--dark);
 }
 
 /* Borders */
