@@ -96,6 +96,11 @@
 
 <style>
 
+    h3 {
+        margin:5px;
+        padding:0px;
+    }
+
     .container {
         height:100vh;
         max-width:700px;
@@ -114,10 +119,14 @@
     }
 
     #cols {
-        display:grid;
-        grid-template-columns:1fr 1fr;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
         gap:20px;
         margin-bottom:30px;
     }
 
+    #cols > div {
+        max-width:340px;
+    }
 </style>
