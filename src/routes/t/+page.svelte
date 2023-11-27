@@ -30,30 +30,17 @@
         <div class="cols">
 
             <div>
+
                 <h3>Boardwork</h3>
                 <ul>
                     <li><a href="../t/independent-subordinate" target="_blank">independent subordinate</a></li>
                     <li class="penjelasan">using subordinating conjunctions to join independent clauses</li>
                 </ul>
+
                 <h3>Pronunciation</h3>
                 <ul>
                     <li><a href="../t/IZ">IZ</a></li>
                     <li class="penjelasan">Plurals that end in 'IZ'</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Multiplayer games</h3>
-                <ul>
-                    <li><a href="../t/art-of-which" target="_blank">art of 'which'</a></li>
-                    <li class="penjelasan">joining independent clauses using 'yang'</li>
-                </ul>
-                <ul>
-                    <li><a href="../t/two-verbs" target="_blank">nominalising verbs</a></li>
-                    <li class="penjelasan">modifying sentences containing multiple verbs</li>
-                </ul>
-                <ul>
-                    <li><a href="../t/dependent-prepositions" target="_blank">dependent prepositions</a></li>
                 </ul>
 
                 <h3>Guided Paraphrasing - Analysis</h3>
@@ -69,6 +56,24 @@
                         <a href="../t/paraphrasing-8" target="_blank">8</a>
                     </li>
                 </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Multiplayer games</h3>
+                <ul>
+                    <li><a href="../t/art-of-which" target="_blank">art of 'which'</a></li>
+                    <li class="penjelasan">joining independent clauses using 'yang'</li>
+                </ul>
+                <ul>
+                    <li><a href="../t/two-verbs" target="_blank">nominalising verbs</a></li>
+                    <li class="penjelasan">modifying sentences containing multiple verbs</li>
+                </ul>
+                <ul>
+                    <li><a href="../t/dependent-prepositions" target="_blank">dependent prepositions</a></li>
+                </ul>
+
             </div>
 
         </div>
