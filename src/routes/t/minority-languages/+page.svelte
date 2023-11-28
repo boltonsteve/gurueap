@@ -19,7 +19,7 @@
     let spanned = spanArr.map( (next,i) => {
         let toReturn = '';
         if(next.match(/[a-zA-Z0-9]/)) {
-            toReturn = `<span id="s${i}" class="span-text-completion">&nbsp;&nbsp;&nbsp;${count}&nbsp;&nbsp;&nbsp;</span>`;
+            toReturn = `<span id="s${i}" class="uli">&nbsp;&nbsp;&nbsp;${count}&nbsp;&nbsp;&nbsp;</span>`;
             count ++;
         } else {
             toReturn = `<span id="s${i}">${next}</span>`;
