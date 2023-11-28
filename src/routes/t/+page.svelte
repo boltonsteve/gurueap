@@ -56,6 +56,12 @@
                         <a href="../t/paraphrasing-8" target="_blank">8</a>
                     </li>
                 </ul>
+                <h3>Text Reconstruction</h3>
+                <ul>
+                    <li>
+                        <a href="../t/minority-languages" target="_blank">minority languages</a>
+                    </li>
+                </ul>
 
             </div>
 
