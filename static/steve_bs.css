@@ -750,6 +750,6 @@ select {
     font-size:1rem;
 }
 
-.hl {
-    font-size:1.1rem;
+.span-text-completion {
+    text-decoration:underline;
 }
