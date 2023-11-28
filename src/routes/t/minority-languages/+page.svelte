@@ -6,7 +6,7 @@
     import { onMount } from 'svelte'
 
     let players = 2;
-    let title = 'Text Completion';
+    let title = 'minority languages';
 
     let peopleSize = 50;
 
@@ -28,9 +28,6 @@
     })
 
     let activity = spanned.join(' ');
-
-    /* console.log(spanned); */
-
 
     let men = [
         {
@@ -85,6 +82,7 @@
         spanned[id] = `<span id="s${id}">${spanArr[id]}</span>`;
         activity = spanned.join(' ');
     }
+
 </script>
 
 <div id="container">
@@ -105,7 +103,8 @@
     </div>
 
     <div id="footer">
-        <div>1234 players; rgboRGBO points;</div>
+        <div>1234 players</div>
+        <div>rgboRGBO points</div>
     </div>
 
 </div>
