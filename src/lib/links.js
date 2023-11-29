@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Contrasting with 'while'",
+        href: "posts/while",
+        keywords: ['vocabulary','grammar','compare contrast'],
+        description: "Explaining the structural use of 'while'."
+    },
+    {
         title: "Awlizer",
         href: "posts/awlizer",
         keywords: ['vocabulary','AWL','Academic Word List','activity'],
