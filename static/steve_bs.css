@@ -753,3 +753,10 @@ select {
 .span-text-completion {
     text-decoration:underline;
 }
+
+.flex-cc {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+

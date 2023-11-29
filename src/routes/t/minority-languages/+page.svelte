@@ -1,6 +1,5 @@
 <script>
 
-
     import { PeopleFill } from "svelte-bootstrap-icons"
     import { scale, fade } from 'svelte/transition'
     import { onMount } from 'svelte'

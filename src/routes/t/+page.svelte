@@ -57,6 +57,13 @@
                     </li>
                 </ul>
 
+                <h3>Writing Scaffolds</h3>
+                <ul>
+                    <li>
+                        <a href="../t/consumerism" target="_blank">consumerism</a>
+                    </li>
+                </ul>
+
             </div>
 
             <div>
