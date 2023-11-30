@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "In terms of #2",
+        href: "posts/in-terms-of-2",
+        keywords: ['vocabulary','coeherence cohesion'],
+        description: "Taking care to avoid repetition when using 'in terms of'."
+    },
+    {
         title: "Contrasting with 'while'",
         href: "posts/while",
         keywords: ['vocabulary','grammar','compare contrast'],
