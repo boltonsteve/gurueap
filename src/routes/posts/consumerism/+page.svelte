@@ -1,6 +1,5 @@
 <script>
     import SvelteSeo from "svelte-seo"
-    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
