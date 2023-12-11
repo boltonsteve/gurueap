@@ -173,6 +173,12 @@ span {
 .bg-danger {
     background: var(--red);
 }
+.bg-primary {
+    background: var(--blue);
+}
+.bg-secondary {
+    background: var(--grey);
+}
 .bg-warning {
     background: var(--orange);
 }
@@ -184,6 +190,9 @@ span {
 }
 .bg-dark {
     background: var(--dark);
+}
+.bg-yellow {
+    background: yellow;
 }
 
 /* Borders */

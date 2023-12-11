@@ -1,31 +1,36 @@
 <script>
-
+    import { createEventDispatcher } from 'svelte';
     import { fade, slide } from 'svelte/transition';
     import * as animateScroll from "svelte-scrollto";
+    import { shuffle } from '$lib/shuffle.js'
+    import { onMount } from 'svelte';
 
     export let incoming;
     export let title;
+    export let count = 0;
+
+    let answers = [];
+    let guesses = [];
+
+    const dispatch = createEventDispatcher();
 
     let inStr = incoming.replace(/\n/g,'<br>');
     let inArr = inStr.split(/(\[|\])/).filter( next => !next.match(/[\[\]]/) );
-    let inObjs = inArr.map( next => {
-        let toReturn = '';
-        let items;
+    let inObjs = inArr.map( (next,i) => {
+
+        // Fill out guesses array with NULL values
+        guesses.push(null);
+
         if(next.match(/\|/)) {
             let items = next.split(/\|/);
-            toReturn = {
-                ori: items[0],
-                q: items[1],
-                user: ''
-            }
+            answers.push(items[0]);
+            shuffle(items);
+            return items;
         } else {
-            toReturn = {
-                ori: '',
-                q: '',
-                user: ''
-            }
+            answers.push('');
+            return next;
         }
-        return toReturn;
+
     });
 
     let finished = false;
@@ -41,12 +46,12 @@
         }
     };
 
-    const doUser = (e) => {
-        let id = e.target.attributes.data.nodeValue;
-        let edit = prompt(inObjs[id].q);
-        inObjs[id].user = edit;
-
-    }
+        const doUser = (e) => {
+            let value = e.target.value;
+            let id = Number(e.target.id.replace(/s/,''));
+            guesses[id] = value;
+            dispatch("updateGuesses", guesses);
+        }
 
     const finish = () => {
         let empty = 0;
@@ -64,6 +69,10 @@
             },500);
         }
     }
+
+    onMount(() => {
+        dispatch("updateAnswers", answers);
+    });
 
 </script>
 
@@ -86,13 +95,17 @@
     <div id="activity">
 
         <div>
+
             {#each inObjs as next,i}
-                {#if next.ori == ''}
-                    {@html inArr[i]}
-                {:else if next.user == ''}
-                    <span class="text-danger" data={i} on:click={doUser}>{next.q}</span>
+                {#if typeof next === 'string'}
+                    {next}
                 {:else}
-                    <span class="text-danger" data={i} on:click={doUser}>{next.user}</span>
+                    <select id="s{i}" on:change={doUser}>
+                        <option value="select">select</option>
+                        {#each next as option}
+                            <option value="{option}">{option}</option>
+                        {/each} 
+                    </select>
                 {/if} 
             {/each} 
 
@@ -103,11 +116,6 @@
         {#if finished}
             <div id="finished" transition:fade>
                 {#each inObjs as next,i}
-                    {#if next.ori == ''}
-                        {@html inArr[i]}
-                    {:else}
-                        <span class="text-success">{next.ori}</span>
-                    {/if} 
                 {/each} 
             </div>
         {/if} 

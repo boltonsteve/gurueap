@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>test.html</title>
 </head>
 <body>
+
+    <div id="output"></div>
     
 </body>
 </html>
+
+<script>
+
+let input = `	Blah
+		Blah`;
+
+document.getElementById('output').textContent = input.replace(/\t/g,'xxx');
+
+</script>
+
