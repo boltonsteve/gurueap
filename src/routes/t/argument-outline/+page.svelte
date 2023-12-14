@@ -57,6 +57,9 @@
     let info = false;
     let editing = false;
     let outline = false;
+    let label = '';
+    let showLabels = true;
+    let toSave = '';
 
     const toggleType = () => {
         outline = !outline;
@@ -93,6 +96,9 @@
     const handleInput = (e) => {
         if(editing) {
             input = e.target.value;
+
+            input = input.replace(/\[(\w+)\]/,'<b>$1</b>');
+
             claims[current].text = input;
             claims = [...claims];
         }
@@ -230,6 +236,29 @@
                 claims[i].lst = 'circle';
             }
 
+
+            if(showLabels) {
+                if(claims[i].borderColor == 'black') {
+                    label = '';
+                } else if(claims[i].borderColor == 'green') {
+                    label = '<b>[because]</b> ';
+                } else if(claims[i].borderColor == 'red') {
+                    label = '<b>[but]</b> ';
+                } else if(claims[i].borderColor == 'orange') {
+                    label = '<b>[however]</b> ';
+                } else if(claims[i].borderColor == 'blue') {
+                    label = '<b>[in fact]</b> ';
+                } else if(claims[i].borderColor == 'grey') {
+                    label = '<b>[for example]</b> ';
+                } else {
+                    label = '<b>[because]</b> ';
+                }
+            } else {
+                label = '';
+            }
+            claims[i].label = label;
+
+
             let str = next.text.replace(/\n/,'');
             str = str.replace(/\t/g,'');
 
@@ -247,9 +276,9 @@
         claims = [...claims];
         input = claims[current].text;
 
-        str = arr.join('\r\n');
+        toSave = arr.join('\r\n');
 
-        navigator.clipboard.writeText(str);
+        /* navigator.clipboard.writeText(str); */
 
     }
 
@@ -294,6 +323,7 @@
                 active:true
             }
         ]
+        redraw();
     }
 
     const loadMap = () => {
@@ -367,10 +397,83 @@
         info = !info;
     }
 
+    const toggleLabels = () => {
+        showLabels = !showLabels;
+        redraw();
+    }
+
+    const saveMap = () => {
+
+        let str = ''
+        let arr = [];
+
+        claims.forEach( (next,i) => {
+            next.active = false;
+
+            // Set list style types
+            let ind = claims[i].indent;
+            if(ind % 3 == 1) {
+                claims[i].lst = 'disc';
+            } else if(ind % 2 == 1) {
+                claims[i].lst = 'square';
+            } else {
+                claims[i].lst = 'circle';
+            }
+
+
+            if(showLabels) {
+                if(claims[i].borderColor == 'black') {
+                    label = '';
+                } else if(claims[i].borderColor == 'green') {
+                    label = '<b>[because]</b> ';
+                } else if(claims[i].borderColor == 'red') {
+                    label = '<b>[but]</b> ';
+                } else if(claims[i].borderColor == 'orange') {
+                    label = '<b>[however]</b> ';
+                } else if(claims[i].borderColor == 'blue') {
+                    label = '<b>[in fact]</b> ';
+                } else if(claims[i].borderColor == 'grey') {
+                    label = '<b>[for example]</b> ';
+                } else {
+                    label = '<b>[because]</b> ';
+                }
+            } else {
+                label = '';
+            }
+            claims[i].label = label;
+
+
+            let str = next.text.replace(/\n/,'');
+            str = str.replace(/\t/g,'');
+
+            let tabs = '';
+            for(let i=0;i<next.indent;i++) {
+                tabs += '\t';
+            }
+            let bulletBH = next.bullet ? 'B' : 'H';
+
+            arr.push(tabs + next.borderColor+'|'+bulletBH+'|' + str)
+
+        })
+
+        claims[current].active = true;
+        claims = [...claims];
+        input = claims[current].text;
+
+        /* let filtered = arr.filter( next !== undefined ); */
+        /* toSave = filtered.join('\r\n'); */
+        toSave = arr.join('\r');
+
+        console.log(toSave);
+        navigator.clipboard.writeText(toSave);
+
+    }
+
     const countTabs = (str) => {
         const re = /\t/g
         return ((str || '').match(re) || []).length
     }
+
 
 </script>
 
@@ -379,7 +482,7 @@
 /> 
 
 <div id="text_edit">
-    <textarea id="editing" rows="5" on:input={handleInput}>{input}</textarea>
+    <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);">{input}</textarea>
 </div>
 
 <div id="cols">
@@ -422,26 +525,24 @@
                                     <div id="c{i}" class="outline-item claim-active">
                                         {#if claim.bullet}
                                             <ul style="list-style-type:{claim.lst}">
-                                                <li>{claim.text}</li>
+                                                <li>{@html claim.text}</li>
                                             </ul>
                                         {:else}
                                             {#if claim.indent == 0}
-                                                <h1>{claim.text}</h1>
+                                                <h1>{@html claim.text}</h1>
                                             {:else if claim.indent == 1}
-                                                <h2>{claim.text}</h2>
+                                                <h2>{@html claim.text}</h2>
                                             {:else if claim.indent == 2}
-                                                <h3>{claim.text}</h3>
+                                                <h3>{@html claim.text}</h3>
                                             {:else if claim.indent == 3}
-                                                <h4>{claim.text}</h4>
-                                            {:else if claim.indent == 4}
-                                                <h5>{claim.text}</h5>
+                                                <h4>{@html claim.text}</h4>
                                             {:else}
-                                                <p>{claim.text}</p>
+                                                <p>{@html claim.text}</p>
                                             {/if} 
                                         {/if} 
                                     </div>
                                 {:else}
-                                    <div class="claim map-item claim-active" style="border-color:{claim.borderColor}">{claim.text}</div>
+                                    <div class="claim map-item claim-active" style="border-color:{claim.borderColor}">{@html claim.label}{@html claim.text}</div>
                                 {/if} 
                             </div>
 
@@ -451,32 +552,29 @@
                                     <div class="outline-item">
                                         {#if claim.bullet}
                                             <ul style="list-style-type:{claim.lst}">
-                                                <li id="c{i}">{claim.text}</li>
+                                                <li id="c{i}">{@html claim.text}</li>
                                             </ul>
                                         {:else}
                                             <div>
                                                 {#if claim.indent == 0}
-                                                    <h1 id="c{i}">{claim.text}</h1>
+                                                    <h1 id="c{i}">{@html claim.text}</h1>
                                                 {:else if claim.indent == 1}
-                                                    <h2 id="c{i}">{claim.text}</h2>
+                                                    <h2 id="c{i}">{@html claim.text}</h2>
                                                 {:else if claim.indent == 2}
-                                                    <h3 id="c{i}">{claim.text}</h3>
+                                                    <h3 id="c{i}">{@html claim.text}</h3>
                                                 {:else if claim.indent == 3}
-                                                    <h4 id="c{i}">{claim.text}</h4>
-                                                {:else if claim.indent == 4}
-                                                    <h5 id="c{i}">{claim.text}</h5>
+                                                    <h4 id="c{i}">{@html claim.text}</h4>
                                                 {:else}
-                                                    <p id="c{i}">{claim.text}</p>
+                                                    <p id="c{i}">{@html claim.text}</p>
                                                 {/if} 
                                             </div>
                                         {/if} 
                                     </div>
                                 {:else}
-                                    <div id="c{i}" class="claim map-item" style="border-color:{claim.borderColor}">{claim.text}</div>
+                                    <div id="c{i}" class="claim map-item" style="border-color:{claim.borderColor}">{@html claim.label}{@html claim.text}</div>
                                 {/if} 
                             </div>
                         {/if} 
-
                     </div>
                 {/each} 
             </div>
@@ -489,7 +587,9 @@
             <div title="click for instructions" on:click={toggleInfo}><QuestionCircle width={size} height={size} /></div>
             <button title="toggle argument / outline" id="type" class="btn btn-outline-dark" on:click={toggleType}>type</button>
             <button title="new activity" class="btn btn-outline-dark" on:click={newMap}>new</button>
+            <button title="save activity" class="btn btn-outline-dark" on:click={saveMap}>save</button>
             <button title="load from clipboard" class="btn btn-outline-dark" on:click={loadMap}>load</button>
+            <button title="toggle labels" class="btn btn-outline-dark" on:click={toggleLabels}>labels</button>
         </div>
         <div id="colors" on:click={changeColor}>
             <div id="green" class="bg-success" title="type 'G'">&nbsp;</div>
@@ -524,10 +624,6 @@
         margin-top: 10px;
     }
 
-    .claim-active {
-        background:yellow;
-    }
-
     .claim {
         border:2px solid;
         padding:5px;
@@ -535,6 +631,12 @@
         margin-top: 10px;
         margin-bottom: 10px;
         cursor:pointer;
+    }
+
+    .claim-active {
+        background:yellow;
+        /* box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.7); */
+        /* margin-bottom: 20px; */
     }
 
     .outline-item {
