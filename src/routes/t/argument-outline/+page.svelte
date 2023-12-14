@@ -460,8 +460,6 @@
         claims = [...claims];
         input = claims[current].text;
 
-        /* let filtered = arr.filter( next !== undefined ); */
-        /* toSave = filtered.join('\r\n'); */
         toSave = arr.join('\r');
 
         console.log(toSave);
@@ -474,6 +472,7 @@
         return ((str || '').match(re) || []).length
     }
 
+    toggleLabels();
 
 </script>
 
