@@ -3,6 +3,7 @@
     import SvelteSeo from "svelte-seo";
     import { ArrowUpCircle, ArrowDownCircle, ArrowUpCircleFill, ArrowDownCircleFill, ArrowLeftCircle, ArrowRightCircle, PlusCircle, DashCircle, QuestionCircle } from "svelte-bootstrap-icons";
     import { slide, scale } from 'svelte/transition';
+    import { onMount } from 'svelte';
 
     let claims = [
         {
@@ -13,78 +14,85 @@
             active:true
         },
         {
-            text:"Using this tool it is easy to make a standard outline (press 't' to toggle between argument and outline mode).",
+            text:"This tool makes it is easy to make a standard outline (press 't' to toggle between <b><i>argument</i></b> and <b><i>outline</i></b> mode).",
             indent:1,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"This tool allows you to edit selected items.",
+            text:"With this tool you can edit selected items.",
             indent:2,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"This tool allows you to move items up and down.",
-            indent:2,
+            text:"With this tool you can move items up and down.",
+            indent:3,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"This tool allows you to indent items left and right.",
-            indent:2,
+            text:"With this tool you can indent items left and right.",
+            indent:3,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"Using this tool it is easy to visualise an 'argument' (press 't' to toggle between argument and outline mode).",
+            text:"With this tool you can visualise an argument (press 't' to toggle between <b><i>argument</i></b> and <b><i>outline</i></b> mode).",
             indent:1,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"This tool allows you to edit selected claims.",
+            text:"With this tool you can edit selected claims.",
             indent:2,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"This tool allows you to visualise the logical relationships between claims.",
+            text:"With this tool you can visualise the logical relationships between claims.",
             indent:2,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"This tool allows you to move claims up and down.",
+            text:"With this tool you can move claims up and down.",
             indent:3,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"This tool allows you to indent claims left and right to highlight their logical function.",
+            text:"With this tool you can indent claims left and right to highlight their logical function.",
             indent:3,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"This tool allows you to set the colour outlines of claims to highlight their logical function.",
+            text:"With this tool you can set the colour outlines of claims to highlight their logical function.",
             indent:3,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"This tool allows you to include labels with claims that signal their logical function.",
+            text:"With this tool you can include labels with claims that indicate their logical function.",
             indent:3,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"With this tool you can easily save and load <b><i>outlines</i></b> and <b><i>arguments</i></b> in plain text format.",
+            indent:1,
             borderColor:'green',
             bullet:true,
             active:false
@@ -102,6 +110,11 @@
     let label = '';
     let showLabels = true;
     let toSave = '';
+
+    onMount(() => {
+        toggleMode();
+        toggleMode();
+    });
 
     const toggleType = () => {
         outline = !outline;
@@ -265,6 +278,7 @@
         let str = ''
         let arr = [];
 
+        let bigHorses = [false,false,false,false,false,false,false,false,false,false,false];
         claims.forEach( (next,i) => {
             next.active = false;
 
@@ -278,22 +292,21 @@
                 claims[i].lst = 'circle';
             }
 
-
             if(showLabels) {
                 if(claims[i].borderColor == 'black') {
                     label = '';
                 } else if(claims[i].borderColor == 'green') {
-                    label = '<b>[because]</b> ';
+                    label = '<b><i>(and) because..</i></b> ';
                 } else if(claims[i].borderColor == 'red') {
-                    label = '<b>[but]</b> ';
+                    label = '<b><i>but..</i></b> ';
                 } else if(claims[i].borderColor == 'orange') {
-                    label = '<b>[however]</b> ';
+                    label = '<b><i>however..</i></b> ';
                 } else if(claims[i].borderColor == 'blue') {
-                    label = '<b>[in fact]</b> ';
+                    label = '<b><i>in fact..</i></b> ';
                 } else if(claims[i].borderColor == 'grey') {
-                    label = '<b>[for example]</b> ';
+                    label = '<b><i>for example..</i></b> ';
                 } else {
-                    label = '<b>[because]</b> ';
+                    label = '<b><i>because..</i></b> ';
                 }
             } else {
                 label = '';
