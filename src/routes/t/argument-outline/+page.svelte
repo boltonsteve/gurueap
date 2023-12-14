@@ -6,44 +6,86 @@
 
     let claims = [
         {
-            text:"Students are very aware of the limitations of generative AI.",
+            text:"This is a good tool for outlining texts and visualising arguments (press '?' for instructions).",
             indent:0,
             borderColor:'black',
             bullet:true,
             active:true
         },
         {
-            text:"Students consistently note issues with accuracy.",
+            text:"Using this tool it is easy to make a standard outline (press 't' to toggle between argument and outline mode).",
             indent:1,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"Generative AI produces 'AI hallucinations' (when a tool generates nonsense or something false or misleading).",
+            text:"This tool allows you to edit selected items.",
             indent:2,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"Students consistently note biases.",
-            indent:1,
-            borderColor:'green',
-            bullet:true,
-            active:false
-        },
-        {
-            text:"Students consistently note specific limitations.",
-            indent:1,
-            borderColor:'green',
-            bullet:true,
-            active:false
-        },
-        {
-            text:"AI technology is still developing capabilities when it comes to solving and checking complex maths and coding problems.",
+            text:"This tool allows you to move items up and down.",
             indent:2,
-            borderColor:'grey',
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"This tool allows you to indent items left and right.",
+            indent:2,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"Using this tool it is easy to visualise an 'argument' (press 't' to toggle between argument and outline mode).",
+            indent:1,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"This tool allows you to edit selected claims.",
+            indent:2,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"This tool allows you to visualise the logical relationships between claims.",
+            indent:2,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"This tool allows you to move claims up and down.",
+            indent:3,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"This tool allows you to indent claims left and right to highlight their logical function.",
+            indent:3,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"This tool allows you to set the colour outlines of claims to highlight their logical function.",
+            indent:3,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"This tool allows you to include labels with claims that signal their logical function.",
+            indent:3,
+            borderColor:'green',
             bullet:true,
             active:false
         }
