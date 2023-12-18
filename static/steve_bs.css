@@ -132,6 +132,12 @@ span {
     color: var(--light);
 }
 
+.btn-outline-secondary {
+    background: white;
+    border: 1px solid var(--grey);
+    color: var(--grey);
+}
+
 .btn-group {
     display: flex;
     justify-content: space-around;

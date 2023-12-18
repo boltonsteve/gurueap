@@ -1,9 +1,89 @@
 <script>
 
     import SvelteSeo from "svelte-seo";
-    import { ArrowUpCircle, ArrowDownCircle, ArrowUpCircleFill, ArrowDownCircleFill, ArrowLeftCircle, ArrowRightCircle, PlusCircle, DashCircle, QuestionCircle } from "svelte-bootstrap-icons";
+    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, PlusCircle, DashCircle, Plus, Dash, QuestionCircle } from "svelte-bootstrap-icons";
     import { slide, scale } from 'svelte/transition';
     import { onMount } from 'svelte';
+
+    /* let claims = [ */
+    /*     { */
+    /*         text:"a", */
+    /*         indent:0, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:true */
+    /*     }, */
+    /*     { */
+    /*         text:"b", */
+    /*         indent:1, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     }, */
+    /*     { */
+    /*         text:"c", */
+    /*         indent:2, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     }, */
+    /*     { */
+    /*         text:"d", */
+    /*         indent:3, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     }, */
+    /*     { */
+    /*         text:"e", */
+    /*         indent:3, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     }, */
+    /*     { */
+    /*         text:"f", */
+    /*         indent:2, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     }, */
+    /*     { */
+    /*         text:"g", */
+    /*         indent:3, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     }, */
+    /*     { */
+    /*         text:"h", */
+    /*         indent:3, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     }, */
+    /*     { */
+    /*         text:"i", */
+    /*         indent:3, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     }, */
+    /*     { */
+    /*         text:"j", */
+    /*         indent:2, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     }, */
+    /*     { */
+    /*         text:"k", */
+    /*         indent:1, */
+    /*         borderColor:'green', */
+    /*         bullet:true, */
+    /*         active:false */
+    /*     } */
+    /* ] */
 
     let claims = [
         {
@@ -103,6 +183,9 @@
     const borderThickness = 2;
     const size = 30;
     let current = 0;
+
+    let currIndent = 0;
+
     let input = claims[0].text;
     let info = false;
     let editing = false;
@@ -160,13 +243,97 @@
     }
 
 // Movement
-    const up = () => {
+    const upBlock = () => {
+
+        let currIndent = 0;
+
         if(current > 0) {
-            let temp = claims[current-1];
-            claims[current-1] = claims[current];
-            claims[current] = temp;
-            current --;
+
+            currIndent = claims[current].indent;
+
+            // Find out how many UP we need to go to find the next node with the same indent
+            let upCount = 1;
+            let upArr = [];
+            /* while(claims[currentupCount) { */
+            while(current - upCount > 0 && claims[current-upCount].indent > currIndent) {
+                upCount ++;
+                /* console.log("upCount: " + upCount); */
+            }
+
+            // Find out how many DOWN we need to go to find the next node with the same indent
+            let downCount = 1;
+            while(current + downCount < claims.length && claims[current+downCount].indent > currIndent) {
+                downCount ++;
+                /* console.log("downCount: " + downCount); */
+            }
+
+            let beingMoved = claims.splice(current,downCount);
+            /* console.log("beingMoved: " , beingMoved); */
+
+            let newPos = current - upCount;
+            // Reset current
+            current = newPos;
+
+            for(let i=0; i<downCount;i++) {
+                /* console.log("newPos: " + newPos); */
+                claims.splice(newPos,0,beingMoved[i]);
+                newPos ++;
+            }
+
+
         }
+
+        redraw();
+
+    }
+
+    const downBlock = () => {
+
+        if(current < claims.length-1) {
+
+            currIndent = claims[current].indent;
+
+            // Find out how many DOWN we need to go to find the next node with the same indent
+            let downCount = 1;
+            while(current + downCount < claims.length && claims[current+downCount].indent > currIndent) {
+                downCount ++;
+            }
+
+            if(current + downCount < claims.length) {
+
+                // Remove BLOCK from claims array and store in memory
+                let beingMoved = claims.splice(current,downCount);
+
+                if(claims[current].indent < currIndent) {
+                    current ++; // Increment current to next position
+                    let nextPos = current;
+                    beingMoved.forEach( (next,i) => {
+                        claims.splice(nextPos,0,next);
+                        nextPos ++;
+                    })
+                } else {
+
+                    let downCount = 1;
+                    while(current + downCount < claims.length && claims[current+downCount].indent > currIndent) {
+                        downCount ++;
+                    }
+
+                    current = current + downCount;
+
+                    let nextPos = current;
+                    beingMoved.forEach( (next,i) => {
+                        claims.splice(nextPos,0,next);
+                        nextPos ++;
+                    })
+
+                }
+
+            }
+
+        }
+
+        redraw();
+
     }
 
     const upFocus = () => {
@@ -176,15 +343,6 @@
         redraw();
     }
 
-    const down = () => {
-        if(current < claims.length-1) {
-            let temp = claims[current+1];
-            claims[current+1] = claims[current];
-            claims[current] = temp;
-            current ++;
-        }
-    }
-
     const downFocus = () => {
         if(current < claims.length-1) {
             current ++;
@@ -192,14 +350,40 @@
         redraw()
     }
 
-    const left = () => {
+    const leftFocus = () => {
         if(claims[current].indent > 0) {
             claims[current].indent = claims[current].indent - 1;
         }
     }
 
-    const right = () => {
+    const rightFocus = () => {
         claims[current].indent = claims[current].indent + 1;
+    }
+
+    const leftBlock = () => {
+        let currIndent = claims[current].indent;
+        if(currIndent > 0) { // (Block is already at hard left!)
+            let downCount = 1;
+            while(claims[current+downCount].indent > currIndent && downCount < claims.length -1) {
+                downCount ++;
+            }
+            for(let i=0; i<downCount; i++) {
+                claims[current + i].indent --;
+            }
+        }
+    }
+
+    const rightBlock = () => {
+        let currIndent = claims[current].indent;
+        if(current > 0) { // (DO NOT move contention block > right!)
+            let downCount = 1;
+            while(claims[current+downCount].indent > currIndent) {
+                downCount ++;
+            }
+            for(let i=0; i<downCount; i++) {
+                claims[current + i].indent ++;
+            }
+        }
     }
 
     let onKeyUp = (e) => {
@@ -211,28 +395,36 @@
             document.getElementById('editing').value = str;
         } else if(e.key == 'ArrowUp' && editing == false) {
             if(e.shiftKey) {
-                up();
+                upBlock();
             } else {
                 upFocus();
             }
         } else if(e.key == 'ArrowDown' && editing == false) {
             if(e.shiftKey) {
-                down();
+                downBlock();
             } else {
                 downFocus();
             }
         } else if(e.key == 'ArrowLeft' && editing == false) {
-            let thisIndent = claims[current].indent;
-            if(thisIndent > 0) {
-                thisIndent --;
-                claims[current].indent = thisIndent;
+            if(e.shiftKey) {
+                leftBlock();
+            } else {
+                let thisIndent = claims[current].indent;
+                if(thisIndent > 0) {
+                    thisIndent --;
+                    claims[current].indent = thisIndent;
+                }
+                redraw();
             }
-            redraw();
         } else if(e.key == 'ArrowRight' && editing == false) {
-            let thisIndent = claims[current].indent;
-            thisIndent ++;
-            claims[current].indent = thisIndent;
-            redraw();
+            if(e.shiftKey) {
+                rightBlock();
+            } else {
+                let thisIndent = claims[current].indent;
+                thisIndent ++;
+                claims[current].indent = thisIndent;
+                redraw();
+            }
         } else if(e.key == 'b' && editing == false) {
             claims[current].bullet = true;
         } else if(e.key == 'h' && editing == false) {
@@ -278,7 +470,7 @@
         let str = ''
         let arr = [];
 
-        let bigHorses = [false,false,false,false,false,false,false,false,false,false,false];
+        let bigHorses = ['because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because' ];
         claims.forEach( (next,i) => {
             next.active = false;
 
@@ -296,7 +488,22 @@
                 if(claims[i].borderColor == 'black') {
                     label = '';
                 } else if(claims[i].borderColor == 'green') {
-                    label = '<b><i>(and) because..</i></b> ';
+
+                    let thisIndent = claims[i].indent;
+                    let lastIndent = claims[i-1].indent;
+
+                    /* if(thisIndent = lastIndent) { */
+                    /*     label = '<b><i>and..</i></b> '; */
+                    /* } else { */
+                    /*     label = '<b><i>because..</i></b> '; */
+                    /* } */
+                    
+                    if(claims[i-1].borderColor == 'green' && thisIndent == lastIndent) {
+                        label = '<b><i>and..</i></b> ';
+                    } else {
+                        label = '<b><i>because..</i></b> ';
+                    }
+
                 } else if(claims[i].borderColor == 'red') {
                     label = '<b><i>but..</i></b> ';
                 } else if(claims[i].borderColor == 'orange') {
@@ -561,10 +768,16 @@
                         <p><code>click</code> <b><i>new</i></b> (or <code>type n</code>) for new map/outline.</p>
                         <p><code>click</code> <b><i>load</i></b> (or <code>type l</code>) to load map/outline from clipboard.</p>
                         <p><code>click</code> colours to change border colour.</p>
-                        <p><code>click</code> or <code>type <PlusCircle /></code> to add an item, <code><DashCircle /></code> to remove an item.</p>
-                        <p><code>click</code> or <code>type <ArrowUpCircle /></code> to select next claim up, <code><ArrowDownCircle /></code> to select next claim down.</p>
-                        <p><code>click</code> or <code>type shift + <ArrowUpCircle /></code> to move claim up, <code>shift + <ArrowDownCircle /></code> to move claim down.</p>
-                        <p><code>click</code> or <code>type <ArrowLeftCircle /></code> to move indent left, <code><ArrowRightCircle /></code> to move indent right.</p>
+                        <p><code>click</code> or <code>type <Plus /></code> to add an item, <code><Dash /></code> to remove an item.</p>
+
+                        <p><code>type &uarr;</code> or <code>click <ChevronUp /></code> to select next claim up, <code>&darr;</code> or <code><ChevronDown /></code> to select next claim down.</p>
+
+                        <p><code>type shift + &uarr;</code> or <code>click <ChevronDoubleUp /></code> to move block up, <code>shift + &darr;</code> or <code><ChevronDoubleDown /></code> to move block down.</p>
+
+                        <p><code>type &larr;</code> or <code>click <ChevronLeft /></code> to indent left, <code>&rarr;</code> or <code><ChevronRight /></code> to indent right.</p>
+
+                        <p><code>type shift + &larr;</code> or <code>click <ChevronDoubleLeft /></code> to move block left, <code>shift + &rarr;</code> or <code><ChevronDoubleRight /></code> to move block right.</p>
+
                     </div>
                 </div>
             {/if}
@@ -638,7 +851,7 @@
 
     <div id="col_right">
         <div id="buttons">
-            <div title="click for instructions" on:click={toggleInfo}><QuestionCircle width={size} height={size} /></div>
+            <button title="toggle help" id="type" class="btn btn-outline-dark" on:click={toggleInfo}>help</button>
             <button title="toggle argument / outline" id="type" class="btn btn-outline-dark" on:click={toggleType}>type</button>
             <button title="new activity" class="btn btn-outline-dark" on:click={newMap}>new</button>
             <button title="save activity" class="btn btn-outline-dark" on:click={saveMap}>save</button>
@@ -646,21 +859,25 @@
             <button title="toggle labels" class="btn btn-outline-dark" on:click={toggleLabels}>labels</button>
         </div>
         <div id="colors" on:click={changeColor}>
-            <div id="green" class="bg-success" title="type 'G'">&nbsp;</div>
-            <div id="red" class="bg-danger" title="type 'R'">&nbsp;</div>
-            <div id="orange" class="bg-warning" title="type 'O'">&nbsp;</div>
-            <div id="blue" class="bg-primary" title="type 'B'">&nbsp;</div>
-            <div id="black" class="bg-dark" title="type 'H' (Hitam)">&nbsp;</div>
-            <div id="grey" class="bg-secondary" title="type 'A' (Abu2)">&nbsp;</div>
+            <button id="green" title="" class="btn btn-outline-success bg-success">&nbsp;</button>
+            <button id="red" title="" class="btn btn-outline-danger bg-danger">&nbsp;</button>
+            <button id="orange" title="" class="btn btn-outline-warning bg-warning">&nbsp;</button>
+            <button id="blue" title="" class="btn btn-outline-primary bg-primary">&nbsp;</button>
+            <button id="black" title="" class="btn btn-outline-dark bg-dark">&nbsp;</button>
+            <button id="grey" title="" class="btn btn-outline-secondary bg-secondary">&nbsp;</button>
         </div>
         {#if editing == false}
             <div id="controls" transition:slide>
-                <div title="add item" on:click={addClaim}><PlusCircle width={size} height={size} /></div>
-                <div title="remove selected item" on:click={deleteClaim}><DashCircle width={size} height={size} /></div>
-                <div title="select item above (move +Shift)" on:click={up}><ArrowUpCircle width={size} height={size} /></div>
-                <div title="select item below (move +Shift)" on:click={down}><ArrowDownCircle width={size} height={size} /></div>
-                <div title="tab <" on:click={left}><ArrowLeftCircle width={size} height={size} /></div>
-                <div title="tab >" on:click={right}><ArrowRightCircle width={size} height={size} /></div>
+                <div title="add item" on:click={addClaim}><Plus width={size} height={size} /></div>
+                <div title="remove selected item" on:click={deleteClaim}><Dash width={size} height={size} /></div>
+                <div title="tab <" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
+                <div title="tab <" on:click={leftBlock}><ChevronDoubleLeft width={size} height={size} /></div>
+                <div title="tab >" on:click={rightFocus}><ChevronRight width={size} height={size} /></div>
+                <div title="tab >" on:click={rightBlock}><ChevronDoubleRight width={size} height={size} /></div>
+                <div title="select item above (move +Shift)" on:click={upFocus}><ChevronUp width={size} height={size} /></div>
+                <div title="select item above (move +Shift)" on:click={upBlock}><ChevronDoubleUp width={size} height={size} /></div>
+                <div title="select item below (move +Shift)" on:click={downFocus}><ChevronDown width={size} height={size} /></div>
+                <div title="select item below (move +Shift)" on:click={downBlock}><ChevronDoubleDown width={size} height={size} /></div>
             </div>
         {/if} 
     </div>
@@ -670,6 +887,15 @@
 <svelte:window on:keyup|preventDefault={onKeyUp} />
 
 <style>
+
+    #colorss {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:5px;
+    }
+    #colorss > div {
+        border-radius:5px;
+    }
 
     #info {
         border-radius:5px;
@@ -720,7 +946,7 @@
 
     #cols {
         display:grid;
-        grid-template-columns: 1fr 50px;
+        grid-template-columns: 1fr 100px;
         gap:10px;
     }
 
@@ -732,34 +958,50 @@
     }
 
     #col_right {
+        height:100dvh;
         /* padding-top:10px; */
         display: flex;
         flex-direction:column;
         align-items: center;
-        gap:20px;
+        gap:5px;
+        overflow:auto;
+        padding-top:120px;
     }
 
     #controls {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
         text-align:center;
         cursor:pointer;
     }
 
     #buttons {
-        display:flex;
-        flex-direction:column;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
         align-items:center;
-        gap:10px;
+        gap:5px;
+        margin-top: 10px;
+        cursor:pointer;
+    }
+
+    #buttons > div {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        align-items:center;
+        gap:5px;
         margin-top: 10px;
         cursor:pointer;
     }
 
     button {
-        width:100%;
+        width:45px;
+        /* width:100%; */
     }
     
     #colors {
-        display:flex;
-        flex-direction:column;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
         align-items:center;
         gap:5px;
         cursor:pointer;
@@ -781,9 +1023,13 @@
     #text_edit {
         position:fixed;
         top:10px;
-        right:92px;
+        right:20px;
         width:350px;
         z-index:2;
     }
+
+    /* * { */
+    /*     border:1px solid pink; */
+    /* } */
 
 </style>
