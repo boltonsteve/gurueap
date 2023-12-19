@@ -1,11 +1,11 @@
 <script>
 
     import SvelteSeo from "svelte-seo";
-    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, PlusCircle, DashCircle, Plus, Dash, QuestionCircle } from "svelte-bootstrap-icons";
+    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise } from "svelte-bootstrap-icons";
     import { slide, scale } from 'svelte/transition';
     import { onMount } from 'svelte';
 
-    /* let claims = [ */
+    /* let claims_dev = [ */
     /*     { */
     /*         text:"a", */
     /*         indent:0, */
@@ -336,7 +336,7 @@
 
     }
 
-    const upFocus = () => {
+    const upFocus = (e) => {
         if(current > 0) {
             current --;
         }
@@ -472,6 +472,8 @@
         } else if(e.key == 'A' && editing == false) {
             claims[current].borderColor = 'grey';
             redraw();
+        } else if(e.key == 'c' && editing == false) {
+            loadMap();
         } else if(e.key == 'n' && editing == false) {
             newMap();
         }
@@ -597,13 +599,14 @@
     const newMap = () => {
         claims = [
             {
-                text:"next item..",
+                text:"",
                 indent:0,
                 borderColor:'black',
                 bullet:true,
                 active:true
             }
         ]
+        toggleEditArrange()
         redraw();
     }
 
@@ -732,6 +735,14 @@
         return ((str || '').match(re) || []).length
     }
 
+    const undo = () => {
+        console.log('undoing');
+    }
+
+    const redo = () => {
+        console.log('redoing');
+    }
+
     /* toggleLabels(); */
 
 </script>
@@ -741,7 +752,7 @@
 /> 
 
 <div id="text_edit">
-    <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);">{input}</textarea>
+    <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);" placeholder="start typing..">{input}</textarea>
 </div>
 
 <div id="cols">
@@ -752,8 +763,7 @@
             {#if info}
                 <div id="info" transition:slide>
                     <div class="mb-1">
-                        <p>Activity saves to clipboard automatically after each edit.</p>
-                        <p>Press <code>enter</code> to toggle between 'Insert' and 'Arrange' mode.</p>
+                        <p>Press <code>enter</code> to toggle between 'Insert' and 'Arrange'.</p>
                     </div>
                     <h3 style="margin-left:30px;">In 'Insert' mode</h3>
                     <div style="margin-left:60px;">
@@ -764,6 +774,7 @@
                         <p><code>click</code> <b><i>help</i></b> or <code>type ?</code> to toggle instructions.</p>
                         <p><code>click</code> <b><i>mode</i></b> (or <code>type t</code>) to toggle between outline and argument mode.</p>
                         <p><code>click</code> <b><i>new</i></b> (or <code>type n</code>) for new map/outline.</p>
+                        <p><code>click</code> <b><i>save</i></b> (or <code>type s</code>) to save map/outline to clipboard.</p>
                         <p><code>click</code> <b><i>load</i></b> (or <code>type l</code>) to load map/outline from clipboard.</p>
                         <p><code>click</code> colours to change border colour.</p>
                         <p><code>click</code> or <code>type <Plus /></code> to add an item, <code><Dash /></code> to remove an item.</p>
@@ -778,8 +789,8 @@
             <div id="map" style="overflow:auto;">
                 {#each claims as claim, i}
                     <div style="margin-left:{50 * claim.indent}px;" on:click={handleClick}>
-
                         {#if claim.active}
+
                             <div id="c{i}" style="border-color:{claim.borderColor}">
                                 {#if outline}
                                     <div id="c{i}" class="outline-item claim-active">
@@ -807,6 +818,7 @@
                             </div>
 
                         {:else}
+
                             <div style="border-color:{claim.borderColor}">
                                 {#if outline}
                                     <div class="outline-item">
@@ -834,8 +846,10 @@
                                     <div id="c{i}" class="claim map-item" style="border-color:{claim.borderColor}">{@html claim.label}{@html claim.text}</div>
                                 {/if} 
                             </div>
+
                         {/if} 
                     </div>
+
                 {/each} 
             </div>
 
@@ -862,6 +876,8 @@
         </div>
         {#if editing == false}
             <div id="controls" transition:slide>
+                <div title="undo" on:click={undo}><ArrowCounterclockwise width={size} height={size} /></div>
+                <div title="redo" on:click={redo}><ArrowClockwise width={size} height={size} /></div>
                 <div title="add item" on:click={addClaim}><Plus width={size} height={size} /></div>
                 <div title="remove selected item" on:click={deleteClaim}><Dash width={size} height={size} /></div>
                 <div title="tab <" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
@@ -964,6 +980,7 @@
         gap: 5px;
         text-align:center;
         cursor:pointer;
+        margin-top:5px;
     }
 
     #buttons {
