@@ -108,14 +108,14 @@
             active:false
         },
         {
-            text:"With this tool you can move items up and down.",
+            text:"With this tool you can move selected items up and down.",
             indent:3,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"With this tool you can indent items left and right.",
+            text:"With this tool you can indent selected items left and right.",
             indent:3,
             borderColor:'green',
             bullet:true,
@@ -143,14 +143,14 @@
             active:false
         },
         {
-            text:"With this tool you can move claims up and down.",
+            text:"With this tool you can move selected claims up and down.",
             indent:3,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"With this tool you can indent claims left and right to highlight their logical function.",
+            text:"With this tool you can indent claims (nodes) left and right to highlight their logical function.",
             indent:3,
             borderColor:'green',
             bullet:true,
@@ -195,17 +195,17 @@
     let toSave = '';
 
     onMount(() => {
-        toggleMode();
-        toggleMode();
+        toggleEditArrange();
+        toggleEditArrange();
     });
 
-    const toggleType = () => {
+    const toggleMode = () => {
         outline = !outline;
         document.getElementById('type').blur();
         redraw();
     }
 
-    const toggleMode = () => {
+    const toggleEditArrange = () => {
         if(editing) {
             editing = false;
             document.getElementById('editing').blur();
@@ -351,31 +351,43 @@
     }
 
     const leftFocus = () => {
-        if(claims[current].indent > 0) {
+        if(claims[current].indent > 1 && current !== 0) {
             claims[current].indent = claims[current].indent - 1;
         }
+        redraw();
     }
 
     const rightFocus = () => {
-        claims[current].indent = claims[current].indent + 1;
+        if(current > 0) {
+            claims[current].indent = claims[current].indent + 1;
+        }
+        redraw();
     }
 
     const leftBlock = () => {
         let currIndent = claims[current].indent;
-        if(currIndent > 0) { // (Block is already at hard left!)
-            let downCount = 1;
-            while(claims[current+downCount].indent > currIndent && downCount < claims.length -1) {
-                downCount ++;
-            }
-            for(let i=0; i<downCount; i++) {
-                claims[current + i].indent --;
+        // STOP lefts if indent same as previous
+        if(claims[current-1].indent !== currIndent) {
+            if(currIndent > 0 && (currIndent-1) > 0 && current < claims.length-1) { // (Block is already at hard left!)
+                let downCount = 1;
+                while(claims[current+downCount].indent > currIndent && downCount < claims.length -1) {
+                    downCount ++;
+                }
+                for(let i=0; i<downCount; i++) {
+                    claims[current + i].indent --;
+                }
+            } else {
+                if(currIndent > 1) {
+                    claims[current].indent --;
+                }
             }
         }
+        redraw();
     }
 
     const rightBlock = () => {
         let currIndent = claims[current].indent;
-        if(current > 0) { // (DO NOT move contention block > right!)
+        if(current > 0 && current < claims.length-1) { // (DO NOT move contention block > right!)
             let downCount = 1;
             while(claims[current+downCount].indent > currIndent) {
                 downCount ++;
@@ -383,54 +395,57 @@
             for(let i=0; i<downCount; i++) {
                 claims[current + i].indent ++;
             }
+        } else {
+            claims[current].indent ++;
         }
+        redraw();
     }
 
     let onKeyUp = (e) => {
 
         if (e.key == 'Enter') {
-            toggleMode();
+            toggleEditArrange();
             let str = document.getElementById('editing').value;
             str = str.replace(/\n/g,'');
             document.getElementById('editing').value = str;
-        } else if(e.key == 'ArrowUp' && editing == false) {
+        } else if(e.key == 'ArrowUp' || e.key == 'k' && editing == false) {
             if(e.shiftKey) {
                 upBlock();
             } else {
                 upFocus();
             }
-        } else if(e.key == 'ArrowDown' && editing == false) {
+        } else if(e.key == 'K' && editing == false) {
+            upBlock();
+        } else if(e.key == 'ArrowDown' || e.key == 'j' && editing == false) {
             if(e.shiftKey) {
                 downBlock();
             } else {
                 downFocus();
             }
-        } else if(e.key == 'ArrowLeft' && editing == false) {
+        } else if(e.key == 'J' && editing == false) {
+            downBlock();
+        } else if(e.key == 'ArrowLeft' || e.key == 'h' && editing == false) {
             if(e.shiftKey) {
                 leftBlock();
             } else {
-                let thisIndent = claims[current].indent;
-                if(thisIndent > 0) {
-                    thisIndent --;
-                    claims[current].indent = thisIndent;
-                }
-                redraw();
+                leftFocus();
             }
-        } else if(e.key == 'ArrowRight' && editing == false) {
+        } else if(e.key == 'H' && editing == false) {
+            leftBlock();
+        } else if(e.key == 'ArrowRight' || e.key == 'l' && editing == false) {
             if(e.shiftKey) {
                 rightBlock();
             } else {
-                let thisIndent = claims[current].indent;
-                thisIndent ++;
-                claims[current].indent = thisIndent;
-                redraw();
+                rightFocus();
             }
+        } else if(e.key == 'L' && editing == false) {
+            rightBlock();
         } else if(e.key == 'b' && editing == false) {
             claims[current].bullet = true;
         } else if(e.key == 'h' && editing == false) {
             claims[current].bullet = false;
         } else if(e.key == 't' && editing == false) {
-            toggleType();
+            toggleMode();
         } else if(e.key == '?' && editing == false) {
             toggleInfo();
         } else if(e.key == 'n' && editing == false) {
@@ -457,11 +472,51 @@
         } else if(e.key == 'A' && editing == false) {
             claims[current].borderColor = 'grey';
             redraw();
-        } else if(e.key == 'l' && editing == false) {
-            loadMap();
         } else if(e.key == 'n' && editing == false) {
             newMap();
         }
+
+    }
+
+    const getLabel = (i) => {
+
+        if(showLabels) {
+
+            if(claims[i].borderColor == 'black') {
+                label = '';
+            } else if(claims[i].borderColor == 'green') {
+
+                let thisIndent = claims[i].indent;
+                let lastIndent = claims[i-1].indent;
+
+
+                if(claims[i-1].borderColor == 'green' && thisIndent == lastIndent) {
+                    label = '<b><i>and..</i></b> ';
+                } else if(claims[i-1].borderColor == 'blue' || claims[i-1].borderColor == 'grey') {
+                    label = '<b><i>and..</i></b> ';
+                } else {
+                    label = '<b><i>because..</i></b> ';
+                }
+
+
+            } else if(claims[i].borderColor == 'red') {
+                label = '<b><i>but..</i></b> ';
+            } else if(claims[i].borderColor == 'orange') {
+                label = '<b><i>however..</i></b> ';
+            } else if(claims[i].borderColor == 'blue') {
+                label = '<b><i>in fact..</i></b> ';
+            } else if(claims[i].borderColor == 'grey') {
+                label = '<b><i>for example..</i></b> ';
+            } else {
+                label = '<b><i>because..</i></b> ';
+            }
+
+        } else {
+            label = '';
+        }
+
+
+        return label;
 
     }
 
@@ -470,7 +525,6 @@
         let str = ''
         let arr = [];
 
-        let bigHorses = ['because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because', 'because' ];
         claims.forEach( (next,i) => {
             next.active = false;
 
@@ -484,42 +538,7 @@
                 claims[i].lst = 'circle';
             }
 
-            if(showLabels) {
-                if(claims[i].borderColor == 'black') {
-                    label = '';
-                } else if(claims[i].borderColor == 'green') {
-
-                    let thisIndent = claims[i].indent;
-                    let lastIndent = claims[i-1].indent;
-
-                    /* if(thisIndent = lastIndent) { */
-                    /*     label = '<b><i>and..</i></b> '; */
-                    /* } else { */
-                    /*     label = '<b><i>because..</i></b> '; */
-                    /* } */
-                    
-                    if(claims[i-1].borderColor == 'green' && thisIndent == lastIndent) {
-                        label = '<b><i>and..</i></b> ';
-                    } else {
-                        label = '<b><i>because..</i></b> ';
-                    }
-
-                } else if(claims[i].borderColor == 'red') {
-                    label = '<b><i>but..</i></b> ';
-                } else if(claims[i].borderColor == 'orange') {
-                    label = '<b><i>however..</i></b> ';
-                } else if(claims[i].borderColor == 'blue') {
-                    label = '<b><i>in fact..</i></b> ';
-                } else if(claims[i].borderColor == 'grey') {
-                    label = '<b><i>for example..</i></b> ';
-                } else {
-                    label = '<b><i>because..</i></b> ';
-                }
-            } else {
-                label = '';
-            }
-            claims[i].label = label;
-
+            claims[i].label = getLabel(i);
 
             let str = next.text.replace(/\n/,'');
             str = str.replace(/\t/g,'');
@@ -546,7 +565,7 @@
 
     const addClaim = () => {
         let newClaim = {
-            text: "new item..",
+            text: "",
             indent: claims[current].indent,
             borderColor: 'green',
             active: false
@@ -560,12 +579,12 @@
         claims[current].active = true;
         claims = [...claims];
         input = claims[current].text;
-        toggleMode();
+        toggleEditArrange();
     }
 
     const deleteClaim = () => {
         claims.splice(current, 1);
-        current = 0;
+        current --;
         redraw();
     }
 
@@ -597,7 +616,7 @@
 
         setTimeout(function() {
 
-            let lines = str.split(/\n/);
+            let lines = str.split(/[\r\n]/);
             let newClaims = lines.map( next => {
 
                 if(next !== '') {
@@ -682,28 +701,7 @@
                 claims[i].lst = 'circle';
             }
 
-
-            if(showLabels) {
-                if(claims[i].borderColor == 'black') {
-                    label = '';
-                } else if(claims[i].borderColor == 'green') {
-                    label = '<b>[because]</b> ';
-                } else if(claims[i].borderColor == 'red') {
-                    label = '<b>[but]</b> ';
-                } else if(claims[i].borderColor == 'orange') {
-                    label = '<b>[however]</b> ';
-                } else if(claims[i].borderColor == 'blue') {
-                    label = '<b>[in fact]</b> ';
-                } else if(claims[i].borderColor == 'grey') {
-                    label = '<b>[for example]</b> ';
-                } else {
-                    label = '<b>[because]</b> ';
-                }
-            } else {
-                label = '';
-            }
-            claims[i].label = label;
-
+            claims[i].label = getLabel(i);
 
             let str = next.text.replace(/\n/,'');
             str = str.replace(/\t/g,'');
@@ -734,7 +732,7 @@
         return ((str || '').match(re) || []).length
     }
 
-    toggleLabels();
+    /* toggleLabels(); */
 
 </script>
 
@@ -763,21 +761,16 @@
                     </div>
                     <h3 style="margin-left:30px;">In 'Arrange' mode</h3>
                     <div style="margin-left:60px;">
-                        <p><code>click</code> or <code>type ?</code> to toggle instructions.</p>
-                        <p><code>click</code> <b><i>type</i></b> (or <code>type t</code>) to toggle between outline and argument format.</p>
+                        <p><code>click</code> <b><i>help</i></b> or <code>type ?</code> to toggle instructions.</p>
+                        <p><code>click</code> <b><i>mode</i></b> (or <code>type t</code>) to toggle between outline and argument mode.</p>
                         <p><code>click</code> <b><i>new</i></b> (or <code>type n</code>) for new map/outline.</p>
                         <p><code>click</code> <b><i>load</i></b> (or <code>type l</code>) to load map/outline from clipboard.</p>
                         <p><code>click</code> colours to change border colour.</p>
                         <p><code>click</code> or <code>type <Plus /></code> to add an item, <code><Dash /></code> to remove an item.</p>
-
                         <p><code>type &uarr;</code> or <code>click <ChevronUp /></code> to select next claim up, <code>&darr;</code> or <code><ChevronDown /></code> to select next claim down.</p>
-
-                        <p><code>type shift + &uarr;</code> or <code>click <ChevronDoubleUp /></code> to move block up, <code>shift + &darr;</code> or <code><ChevronDoubleDown /></code> to move block down.</p>
-
+                        <p><code>type shift &uarr;</code> or <code>click <ChevronDoubleUp /></code> to move block up, <code>shift &darr;</code> or <code><ChevronDoubleDown /></code> to move block down.</p>
                         <p><code>type &larr;</code> or <code>click <ChevronLeft /></code> to indent left, <code>&rarr;</code> or <code><ChevronRight /></code> to indent right.</p>
-
-                        <p><code>type shift + &larr;</code> or <code>click <ChevronDoubleLeft /></code> to move block left, <code>shift + &rarr;</code> or <code><ChevronDoubleRight /></code> to move block right.</p>
-
+                        <p><code>type shift &larr;</code> or <code>click <ChevronDoubleLeft /></code> to move block left, <code>shift &rarr;</code> or <code><ChevronDoubleRight /></code> to move block right.</p>
                     </div>
                 </div>
             {/if}
@@ -850,9 +843,10 @@
     </div>
 
     <div id="col_right">
+
         <div id="buttons">
-            <button title="toggle help" id="type" class="btn btn-outline-dark" on:click={toggleInfo}>help</button>
-            <button title="toggle argument / outline" id="type" class="btn btn-outline-dark" on:click={toggleType}>type</button>
+            <button title="toggle help" class="btn btn-outline-dark" on:click={toggleInfo}>help</button>
+            <button title="toggle argument / outline" class="btn btn-outline-dark" on:click={toggleMode}>mode</button>
             <button title="new activity" class="btn btn-outline-dark" on:click={newMap}>new</button>
             <button title="save activity" class="btn btn-outline-dark" on:click={saveMap}>save</button>
             <button title="load from clipboard" class="btn btn-outline-dark" on:click={loadMap}>load</button>
@@ -948,23 +942,19 @@
         display:grid;
         grid-template-columns: 1fr 100px;
         gap:10px;
+
     }
 
     #col_left {
         height:100dvh;
-        display: grid;
-        grid-template-rows: 1fr 70px;
         overflow:auto;
     }
 
     #col_right {
-        height:100dvh;
-        /* padding-top:10px; */
         display: flex;
         flex-direction:column;
         align-items: center;
         gap:5px;
-        overflow:auto;
         padding-top:120px;
     }
 
@@ -1017,7 +1007,8 @@
     textarea {
         border-radius: 5px;
         padding:5px;
-        width:100%;
+        width:350px;
+        /* width:100%; */
     }
 
     #text_edit {
