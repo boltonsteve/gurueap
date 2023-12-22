@@ -138,6 +138,11 @@ span {
     color: var(--grey);
 }
 
+.btn-outline-secondary:hover, .btn-active-secondary {
+    background: var(--grey);
+    color: var(--dark);
+}
+
 .btn-group {
     display: flex;
     justify-content: space-around;

@@ -1,89 +1,89 @@
 <script>
 
     import SvelteSeo from "svelte-seo";
-    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise } from "svelte-bootstrap-icons";
+    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise, Clipboard2Plus, Clipboard2Minus, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit } from "svelte-bootstrap-icons";
     import { slide, scale } from 'svelte/transition';
     import { onMount } from 'svelte';
 
-    /* let claims_dev = [ */
-    /*     { */
-    /*         text:"a", */
-    /*         indent:0, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:true */
-    /*     }, */
-    /*     { */
-    /*         text:"b", */
-    /*         indent:1, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     }, */
-    /*     { */
-    /*         text:"c", */
-    /*         indent:2, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     }, */
-    /*     { */
-    /*         text:"d", */
-    /*         indent:3, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     }, */
-    /*     { */
-    /*         text:"e", */
-    /*         indent:3, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     }, */
-    /*     { */
-    /*         text:"f", */
-    /*         indent:2, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     }, */
-    /*     { */
-    /*         text:"g", */
-    /*         indent:3, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     }, */
-    /*     { */
-    /*         text:"h", */
-    /*         indent:3, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     }, */
-    /*     { */
-    /*         text:"i", */
-    /*         indent:3, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     }, */
-    /*     { */
-    /*         text:"j", */
-    /*         indent:2, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     }, */
-    /*     { */
-    /*         text:"k", */
-    /*         indent:1, */
-    /*         borderColor:'green', */
-    /*         bullet:true, */
-    /*         active:false */
-    /*     } */
-    /* ] */
+    let claims_dev = [
+        {
+            text:"a",
+            indent:0,
+            borderColor:'black',
+            bullet:true,
+            active:true
+        },
+        {
+            text:"b",
+            indent:1,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"c",
+            indent:2,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"d",
+            indent:3,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"e",
+            indent:3,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"f",
+            indent:2,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"g",
+            indent:3,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"h",
+            indent:3,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"i",
+            indent:3,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"j",
+            indent:2,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"k",
+            indent:1,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        }
+    ]
 
     let claims = [
         {
@@ -164,7 +164,7 @@
             active:false
         },
         {
-            text:"With this tool you can include labels with claims that indicate their logical function.",
+            text:"With this tool you can include signal words with claims that indicate their logical function.",
             indent:3,
             borderColor:'green',
             bullet:true,
@@ -183,9 +183,7 @@
     const borderThickness = 2;
     const size = 30;
     let current = 0;
-
     let currIndent = 0;
-
     let input = claims[0].text;
     let info = false;
     let editing = false;
@@ -194,9 +192,20 @@
     let showLabels = true;
     let toSave = '';
 
+    let undos = [];
+    let redos = [];
+
+    let history = [claims];
+    let toHistory = [];
+    let now = 0;
+
     onMount(() => {
-        toggleEditArrange();
-        toggleEditArrange();
+        redraw();
+        now = 0;
+        editing = false;
+        let elEdit = document.getElementById('editing');
+        elEdit.blur().setAttribute("disabled","").classList.remove('bg-yellow');
+        redraw();
     });
 
     const toggleMode = () => {
@@ -395,8 +404,6 @@
             for(let i=0; i<downCount; i++) {
                 claims[current + i].indent ++;
             }
-        } else {
-            claims[current].indent ++;
         }
         redraw();
     }
@@ -448,8 +455,6 @@
             toggleMode();
         } else if(e.key == '?' && editing == false) {
             toggleInfo();
-        } else if(e.key == 'n' && editing == false) {
-            newMap();
         } else if(e.key == '+' && editing == false) {
             addClaim();
         } else if(e.key == '-' && editing == false) {
@@ -476,8 +481,13 @@
             loadMap();
         } else if(e.key == 'n' && editing == false) {
             newMap();
+        } else if(e.key == 'u' && editing == false) {
+            undo();
+        } else if(e.key == 'r' && editing == false) {
+            redo();
+        } else if(e.key == 's' && editing == false) {
+            toggleSignals();
         }
-
     }
 
     const getLabel = (i) => {
@@ -491,15 +501,20 @@
                 let thisIndent = claims[i].indent;
                 let lastIndent = claims[i-1].indent;
 
+                let previous = i-1;
 
-                if(claims[i-1].borderColor == 'green' && thisIndent == lastIndent) {
+                if(claims[previous].borderColor == 'green' && thisIndent == lastIndent) {
                     label = '<b><i>and..</i></b> ';
-                } else if(claims[i-1].borderColor == 'blue' || claims[i-1].borderColor == 'grey') {
+                } else if(claims[previous].borderColor == 'blue' && thisIndent == lastIndent) {
+                    /* claims[i].borderColor = 'blue'; */
+                    label = '<b><i>and..</i></b> ';
+                } else if(claims[previous].borderColor == 'blue' && thisIndent > lastIndent) {
+                    label = '<b><i>because..</i></b> ';
+                } else if(claims[previous].borderColor == 'grey' && thisIndent == lastIndent) {
                     label = '<b><i>and..</i></b> ';
                 } else {
                     label = '<b><i>because..</i></b> ';
                 }
-
 
             } else if(claims[i].borderColor == 'red') {
                 label = '<b><i>but..</i></b> ';
@@ -527,6 +542,8 @@
         let str = ''
         let arr = [];
 
+        toHistory = [];
+
         claims.forEach( (next,i) => {
             next.active = false;
 
@@ -553,15 +570,24 @@
 
             arr.push(tabs + next.borderColor+'|'+bulletBH+'|' + str)
 
+            toHistory.push({
+                text:next.text,
+                indent:next.indent,
+                borderColor:next.borderColor,
+                bullet:next.bullet,
+                active:next.active
+            });
+
         })
 
+        // Add latest redraw to history (working!)
+        history.splice(now,1,toHistory);
+        // ..and increment place in history
+        now ++;
+
         claims[current].active = true;
-        claims = [...claims];
         input = claims[current].text;
-
         toSave = arr.join('\r\n');
-
-        /* navigator.clipboard.writeText(str); */
 
     }
 
@@ -681,7 +707,7 @@
         info = !info;
     }
 
-    const toggleLabels = () => {
+    const toggleSignals = () => {
         showLabels = !showLabels;
         redraw();
     }
@@ -736,14 +762,19 @@
     }
 
     const undo = () => {
-        console.log('undoing');
+        if(now > 1) {
+            now = now-2;
+            claims = [...history[now]];
+            redraw();
+        }
     }
 
     const redo = () => {
-        console.log('redoing');
+        if(now < history.length) {
+            claims = [...history[now]];
+            redraw();
+        }
     }
-
-    /* toggleLabels(); */
 
 </script>
 
@@ -751,145 +782,150 @@
     title="ArgOut"
 /> 
 
-<div id="text_edit">
-    <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);" placeholder="start typing..">{input}</textarea>
+<div id="navbar" style="position:sticky;top:0px;">
+
+    <div id="text_edit">
+        <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);" placeholder="start typing..">{input}</textarea>
+    </div>
+
+    <div id="controls">
+
+        <div id="file">
+            <div title="help" on:click={toggleInfo}><QuestionCircle width={size} height={size} /></div>
+            <div title="new activity" on:click={newMap}><FileEarmarkPlus width={size} height={size} /></div>
+            <div title="copy to clipboard" on:click={saveMap}><Clipboard2Plus width={size} height={size} /></div>
+            <div title="load from clipboard" on:click={loadMap}><Clipboard2Minus width={size} height={size} /></div>
+        </div>
+
+        <div id="arranging">
+            <div title="undo arrange" on:click={undo}><ArrowCounterclockwise width={size} height={size} /></div>
+            <div title="redo arrange" on:click={redo}><ArrowClockwise width={size} height={size} /></div>
+            <div title="add item" on:click={addClaim}><NodePlus width={size} height={size} /></div>
+            <div title="remove selected item" on:click={deleteClaim}><NodeMinus width={size} height={size} /></div>
+            <div title="toggle edit/arrange" on:click={toggleMode}><Toggles width={size} height={size} /></div>
+            <div title="show/hide signal words" on:click={toggleSignals}><SignpostSplit width={size} height={size} /></div>
+        </div>
+
+        <div id="movement">
+            <div title="tab <" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
+            <div title="tab >" on:click={rightFocus}><ChevronRight width={size} height={size} /></div>
+            <div title="tab <" on:click={leftBlock}><ChevronDoubleLeft width={size} height={size} /></div>
+            <div title="tab >" on:click={rightBlock}><ChevronDoubleRight width={size} height={size} /></div>
+            <div title="select item above (move +Shift)" on:click={upFocus}><ChevronUp width={size} height={size} /></div>
+            <div title="select item below (move +Shift)" on:click={downFocus}><ChevronDown width={size} height={size} /></div>
+            <div title="select item above (move +Shift)" on:click={upBlock}><ChevronDoubleUp width={size} height={size} /></div>
+            <div title="select item below (move +Shift)" on:click={downBlock}><ChevronDoubleDown width={size} height={size} /></div>
+        </div>
+
+        <div id="colors" on:click={changeColor}>
+            <button id="green" title="" class="btn btn-outline-success">&nbsp;</button>
+            <button id="red" title="" class="btn btn-outline-danger">&nbsp;</button>
+            <button id="orange" title="" class="btn btn-outline-warning">&nbsp;</button>
+            <button id="blue" title="" class="btn btn-outline-primary">&nbsp;</button>
+            <button id="black" title="" class="btn btn-outline-dark">&nbsp;</button>
+            <button id="grey" title="" class="btn btn-outline-secondary">&nbsp;</button>
+        </div>
+
+    </div>
+
 </div>
 
-<div id="cols">
+<div id="activity">
 
-    <div id="col_left">
-        <div>
+    {#if info}
+        <div id="info" transition:slide>
+            <div class="mb-1">
+                <p>Press <code>enter</code> to toggle between 'Insert' and 'Arrange'.</p>
+            </div>
+            <h3 style="margin-left:30px;">In 'Insert' mode</h3>
+            <div style="margin-left:60px;">
+                <p><code>Type</code> to edit items.</p>
+            </div>
+            <h3 style="margin-left:30px;">In 'Arrange' mode</h3>
+            <div style="margin-left:60px;">
+                <p><code>click</code> <QuestionCircle /> or <code>type ?</code> to toggle instructions.</p>
+                <p><code>click</code> <FileEarmarkPlus /> (or <code>type n</code>) for new map/outline.</p>
+                <p><code>click</code> <Clipboard2Plus /> (or <code>type s</code>) to save map/outline to clipboard.</p>
+                <p><code>click</code> <Clipboard2Minus /> (or <code>type l</code>) to load map/outline from clipboard.</p>
+                <p><code>click</code> <ArrowCounterclockwise /> or <code>type u</code> to undo arrange.</p>
+                <p><code>click</code> <ArrowClockwise /> or <code>type r</code> to redo arrange.</p>
+                <p><code>click</code> or <code>type</code> <NodePlus /> to add an item, <NodeMinus /> to remove an item.</p>
+                <p><code>click</code> <Toggles /> (or <code>type t</code>) to toggle between outline and argument mode.</p>
+                <p><code>click</code> <SignpostSplit /> (or <code>type l</code>) to toggle signal words on/off.</p>
+                <p><code>type &uarr;</code> or <code>click <ChevronUp /></code> to select next claim up, <code>&darr;</code> or <code><ChevronDown /></code> to select next claim down.</p>
+                <p><code>type shift &uarr;</code> or <code>click <ChevronDoubleUp /></code> to move block up, <code>shift &darr;</code> or <code><ChevronDoubleDown /></code> to move block down.</p>
+                <p><code>type &larr;</code> or <code>click <ChevronLeft /></code> to indent left, <code>&rarr;</code> or <code><ChevronRight /></code> to indent right.</p>
+                <p><code>type shift &larr;</code> or <code>click <ChevronDoubleLeft /></code> to move block left, <code>shift &rarr;</code> or <code><ChevronDoubleRight /></code> to move block right.</p>
+                <p><code>click</code> colours to change border colour.</p>
+            </div>
+        </div>
+    {/if}
 
-            {#if info}
-                <div id="info" transition:slide>
-                    <div class="mb-1">
-                        <p>Press <code>enter</code> to toggle between 'Insert' and 'Arrange'.</p>
-                    </div>
-                    <h3 style="margin-left:30px;">In 'Insert' mode</h3>
-                    <div style="margin-left:60px;">
-                        <p><code>Type</code> to edit items.</p>
-                    </div>
-                    <h3 style="margin-left:30px;">In 'Arrange' mode</h3>
-                    <div style="margin-left:60px;">
-                        <p><code>click</code> <b><i>help</i></b> or <code>type ?</code> to toggle instructions.</p>
-                        <p><code>click</code> <b><i>mode</i></b> (or <code>type t</code>) to toggle between outline and argument mode.</p>
-                        <p><code>click</code> <b><i>new</i></b> (or <code>type n</code>) for new map/outline.</p>
-                        <p><code>click</code> <b><i>save</i></b> (or <code>type s</code>) to save map/outline to clipboard.</p>
-                        <p><code>click</code> <b><i>load</i></b> (or <code>type l</code>) to load map/outline from clipboard.</p>
-                        <p><code>click</code> colours to change border colour.</p>
-                        <p><code>click</code> or <code>type <Plus /></code> to add an item, <code><Dash /></code> to remove an item.</p>
-                        <p><code>type &uarr;</code> or <code>click <ChevronUp /></code> to select next claim up, <code>&darr;</code> or <code><ChevronDown /></code> to select next claim down.</p>
-                        <p><code>type shift &uarr;</code> or <code>click <ChevronDoubleUp /></code> to move block up, <code>shift &darr;</code> or <code><ChevronDoubleDown /></code> to move block down.</p>
-                        <p><code>type &larr;</code> or <code>click <ChevronLeft /></code> to indent left, <code>&rarr;</code> or <code><ChevronRight /></code> to indent right.</p>
-                        <p><code>type shift &larr;</code> or <code>click <ChevronDoubleLeft /></code> to move block left, <code>shift &rarr;</code> or <code><ChevronDoubleRight /></code> to move block right.</p>
-                    </div>
-                </div>
-            {/if}
+    <div id="map" style="overflow:auto;">
+        {#each claims as claim, i}
+            <div style="margin-left:{50 * claim.indent}px;" on:click={handleClick}>
+                {#if claim.active}
 
-            <div id="map" style="overflow:auto;">
-                {#each claims as claim, i}
-                    <div style="margin-left:{50 * claim.indent}px;" on:click={handleClick}>
-                        {#if claim.active}
-
-                            <div id="c{i}" style="border-color:{claim.borderColor}">
-                                {#if outline}
-                                    <div id="c{i}" class="outline-item claim-active">
-                                        {#if claim.bullet}
-                                            <ul style="list-style-type:{claim.lst}">
-                                                <li>{@html claim.text}</li>
-                                            </ul>
-                                        {:else}
-                                            {#if claim.indent == 0}
-                                                <h1>{@html claim.text}</h1>
-                                            {:else if claim.indent == 1}
-                                                <h2>{@html claim.text}</h2>
-                                            {:else if claim.indent == 2}
-                                                <h3>{@html claim.text}</h3>
-                                            {:else if claim.indent == 3}
-                                                <h4>{@html claim.text}</h4>
-                                            {:else}
-                                                <p>{@html claim.text}</p>
-                                            {/if} 
-                                        {/if} 
-                                    </div>
+                    <div id="c{i}" style="border-color:{claim.borderColor}">
+                        {#if outline}
+                            <div id="c{i}" class="outline-item claim-active">
+                                {#if claim.bullet}
+                                    <ul style="list-style-type:{claim.lst}">
+                                        <li>{@html claim.text}</li>
+                                    </ul>
                                 {:else}
-                                    <div class="claim map-item claim-active" style="border-color:{claim.borderColor}">{@html claim.label}{@html claim.text}</div>
+                                    {#if claim.indent == 0}
+                                        <h1>{@html claim.text}</h1>
+                                    {:else if claim.indent == 1}
+                                        <h2>{@html claim.text}</h2>
+                                    {:else if claim.indent == 2}
+                                        <h3>{@html claim.text}</h3>
+                                    {:else if claim.indent == 3}
+                                        <h4>{@html claim.text}</h4>
+                                    {:else}
+                                        <p>{@html claim.text}</p>
+                                    {/if} 
                                 {/if} 
                             </div>
-
                         {:else}
-
-                            <div style="border-color:{claim.borderColor}">
-                                {#if outline}
-                                    <div class="outline-item">
-                                        {#if claim.bullet}
-                                            <ul style="list-style-type:{claim.lst}">
-                                                <li id="c{i}">{@html claim.text}</li>
-                                            </ul>
-                                        {:else}
-                                            <div>
-                                                {#if claim.indent == 0}
-                                                    <h1 id="c{i}">{@html claim.text}</h1>
-                                                {:else if claim.indent == 1}
-                                                    <h2 id="c{i}">{@html claim.text}</h2>
-                                                {:else if claim.indent == 2}
-                                                    <h3 id="c{i}">{@html claim.text}</h3>
-                                                {:else if claim.indent == 3}
-                                                    <h4 id="c{i}">{@html claim.text}</h4>
-                                                {:else}
-                                                    <p id="c{i}">{@html claim.text}</p>
-                                                {/if} 
-                                            </div>
-                                        {/if} 
-                                    </div>
-                                {:else}
-                                    <div id="c{i}" class="claim map-item" style="border-color:{claim.borderColor}">{@html claim.label}{@html claim.text}</div>
-                                {/if} 
-                            </div>
-
+                            <div class="claim map-item claim-active" style="border-color:{claim.borderColor}">{@html claim.label}{@html claim.text}</div>
                         {/if} 
                     </div>
 
-                {/each} 
+                {:else}
+
+                    <div style="border-color:{claim.borderColor}">
+                        {#if outline}
+                            <div class="outline-item">
+                                {#if claim.bullet}
+                                    <ul style="list-style-type:{claim.lst}">
+                                        <li id="c{i}">{@html claim.text}</li>
+                                    </ul>
+                                {:else}
+                                    <div>
+                                        {#if claim.indent == 0}
+                                            <h1 id="c{i}">{@html claim.text}</h1>
+                                        {:else if claim.indent == 1}
+                                            <h2 id="c{i}">{@html claim.text}</h2>
+                                        {:else if claim.indent == 2}
+                                            <h3 id="c{i}">{@html claim.text}</h3>
+                                        {:else if claim.indent == 3}
+                                            <h4 id="c{i}">{@html claim.text}</h4>
+                                        {:else}
+                                            <p id="c{i}">{@html claim.text}</p>
+                                        {/if} 
+                                    </div>
+                                {/if} 
+                            </div>
+                        {:else}
+                            <div id="c{i}" class="claim map-item" style="border-color:{claim.borderColor}">{@html claim.label}{@html claim.text}</div>
+                        {/if} 
+                    </div>
+
+                {/if} 
             </div>
 
-        </div>
-    </div>
-
-    <div id="col_right">
-
-        <div id="buttons">
-            <button title="toggle help" class="btn btn-outline-dark" on:click={toggleInfo}>help</button>
-            <button title="toggle argument / outline" class="btn btn-outline-dark" on:click={toggleMode}>mode</button>
-            <button title="new activity" class="btn btn-outline-dark" on:click={newMap}>new</button>
-            <button title="save activity" class="btn btn-outline-dark" on:click={saveMap}>save</button>
-            <button title="load from clipboard" class="btn btn-outline-dark" on:click={loadMap}>load</button>
-            <button title="toggle labels" class="btn btn-outline-dark" on:click={toggleLabels}>labels</button>
-        </div>
-        <div id="colors" on:click={changeColor}>
-            <button id="green" title="" class="btn btn-outline-success bg-success">&nbsp;</button>
-            <button id="red" title="" class="btn btn-outline-danger bg-danger">&nbsp;</button>
-            <button id="orange" title="" class="btn btn-outline-warning bg-warning">&nbsp;</button>
-            <button id="blue" title="" class="btn btn-outline-primary bg-primary">&nbsp;</button>
-            <button id="black" title="" class="btn btn-outline-dark bg-dark">&nbsp;</button>
-            <button id="grey" title="" class="btn btn-outline-secondary bg-secondary">&nbsp;</button>
-        </div>
-        {#if editing == false}
-            <div id="controls" transition:slide>
-                <div title="undo" on:click={undo}><ArrowCounterclockwise width={size} height={size} /></div>
-                <div title="redo" on:click={redo}><ArrowClockwise width={size} height={size} /></div>
-                <div title="add item" on:click={addClaim}><Plus width={size} height={size} /></div>
-                <div title="remove selected item" on:click={deleteClaim}><Dash width={size} height={size} /></div>
-                <div title="tab <" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
-                <div title="tab <" on:click={leftBlock}><ChevronDoubleLeft width={size} height={size} /></div>
-                <div title="tab >" on:click={rightFocus}><ChevronRight width={size} height={size} /></div>
-                <div title="tab >" on:click={rightBlock}><ChevronDoubleRight width={size} height={size} /></div>
-                <div title="select item above (move +Shift)" on:click={upFocus}><ChevronUp width={size} height={size} /></div>
-                <div title="select item above (move +Shift)" on:click={upBlock}><ChevronDoubleUp width={size} height={size} /></div>
-                <div title="select item below (move +Shift)" on:click={downFocus}><ChevronDown width={size} height={size} /></div>
-                <div title="select item below (move +Shift)" on:click={downBlock}><ChevronDoubleDown width={size} height={size} /></div>
-            </div>
-        {/if} 
+        {/each} 
     </div>
 
 </div>
@@ -898,13 +934,41 @@
 
 <style>
 
-    #colorss {
+    #navbar {
+        padding-top:10px;
+        padding-bottom:10px;
         display:grid;
-        grid-template-columns: 1fr 1fr;
-        gap:5px;
+        grid-template-columns:370px 1fr;
+        gap:10px;
+        background: var(--light);
     }
-    #colorss > div {
-        border-radius:5px;
+
+    #controls {
+        /* width:100dvh; */
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        align-items:center;
+        column-gap:10px;
+        cursor:pointer;
+    }
+
+    #activity {
+        /* padding-top:140px; */
+        overflow:auto;
+    }
+
+    #colors, #movement, #file, #arranging {
+        display:flex;
+        gap:10px;
+    }
+
+    button {
+        cursor:pointer;
+        width:30px;
+        height:30px;
+        border-radius:15px;
+        border-width:2px;
     }
 
     #info {
@@ -925,8 +989,6 @@
 
     .claim-active {
         background:yellow;
-        /* box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.7); */
-        /* margin-bottom: 20px; */
     }
 
     .outline-item {
@@ -954,89 +1016,13 @@
         padding:2px;
     }
 
-    #cols {
-        display:grid;
-        grid-template-columns: 1fr 100px;
-        gap:10px;
-
-    }
-
-    #col_left {
-        height:100dvh;
-        overflow:auto;
-    }
-
-    #col_right {
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        gap:5px;
-        padding-top:120px;
-    }
-
-    #controls {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
-        text-align:center;
-        cursor:pointer;
-        margin-top:5px;
-    }
-
-    #buttons {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        align-items:center;
-        gap:5px;
-        margin-top: 10px;
-        cursor:pointer;
-    }
-
-    #buttons > div {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        align-items:center;
-        gap:5px;
-        margin-top: 10px;
-        cursor:pointer;
-    }
-
-    button {
-        width:45px;
-        /* width:100%; */
-    }
-    
-    #colors {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        align-items:center;
-        gap:5px;
-        cursor:pointer;
-    }
-
-    #colors > div {
-        cursor:pointer;
-        width:30px;
-        height:30px;
-        border-radius:15px;
-    }
-
     textarea {
         border-radius: 5px;
         padding:5px;
         width:350px;
-        /* width:100%; */
     }
 
-    #text_edit {
-        position:fixed;
-        top:10px;
-        right:20px;
-        width:350px;
-        z-index:2;
-    }
-
-    /* * { */
+    /* div { */
     /*     border:1px solid pink; */
     /* } */
 
