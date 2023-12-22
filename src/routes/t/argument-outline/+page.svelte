@@ -1,7 +1,7 @@
 <script>
 
     import SvelteSeo from "svelte-seo";
-    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise, Clipboard2Plus, Clipboard2Minus, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit } from "svelte-bootstrap-icons";
+    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise, Copy, Clipboard, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit, FileText } from "svelte-bootstrap-icons";
     import { slide, scale } from 'svelte/transition';
     import { onMount } from 'svelte';
 
@@ -243,9 +243,7 @@
     const handleInput = (e) => {
         if(editing) {
             input = e.target.value;
-
             input = input.replace(/\[(\w+)\]/,'<b>$1</b>');
-
             claims[current].text = input;
             claims = [...claims];
         }
@@ -793,8 +791,9 @@
         <div id="file">
             <div title="help" on:click={toggleInfo}><QuestionCircle width={size} height={size} /></div>
             <div title="new activity" on:click={newMap}><FileEarmarkPlus width={size} height={size} /></div>
-            <div title="copy to clipboard" on:click={saveMap}><Clipboard2Plus width={size} height={size} /></div>
-            <div title="load from clipboard" on:click={loadMap}><Clipboard2Minus width={size} height={size} /></div>
+            <div title="copy to clipboard" on:click={saveMap}><Copy width={size} height={size} /></div>
+            <div title="load from clipboard" on:click={loadMap}><Clipboard width={size} height={size} /></div>
+            <div title="create text"><FileText width={size} height={size} /></div>
         </div>
 
         <div id="arranging">
