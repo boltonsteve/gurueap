@@ -1,7 +1,7 @@
 <script>
 
     import SvelteSeo from "svelte-seo";
-    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise, Copy, Clipboard, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit, FileText } from "svelte-bootstrap-icons";
+    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise, Copy, Clipboard, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit, FileText, Diagram2, WrenchAdjustableCircle, Clipboard2Plus, Clipboard2Minus, ZoomIn, ZoomOut, PlusSquare, DashSquare, BoxArrowInDown } from "svelte-bootstrap-icons";
     import { slide, scale } from 'svelte/transition';
     import { onMount } from 'svelte';
 
@@ -185,11 +185,13 @@
     let current = 0;
     let currIndent = 0;
     let input = claims[0].text;
-    let info = false;
     let editing = false;
     let outline = false;
     let label = '';
     let showLabels = true;
+    let showTools = true;
+    let showInfo = false;
+    let highlightNode = false;
     let toSave = '';
 
     let undos = [];
@@ -198,20 +200,42 @@
     let history = [claims];
     let toHistory = [];
     let now = 0;
+    let borderStyle = 'solid';
+    let borderWidth = 2;
+    let zoom = 1;
 
     onMount(() => {
         redraw();
+        current = 0;
         now = 0;
         editing = false;
         let elEdit = document.getElementById('editing');
-        elEdit.blur().setAttribute("disabled","").classList.remove('bg-yellow');
+        elEdit.blur();
+        elEdit.setAttribute("disabled","");
+        elEdit.classList.remove('bg-yellow');
         redraw();
     });
+
+    // Toggles
 
     const toggleMode = () => {
         outline = !outline;
         document.getElementById('type').blur();
         redraw();
+    }
+
+    const toggleHighlightNode = () => {
+        highlightNode = !highlightNode;
+        redraw();
+    }
+
+    const toggleTools = () => {
+        showTools = !showTools;
+        redraw();
+    }
+
+    const toggleInfo = () => {
+        showInfo = !showInfo;
     }
 
     const toggleEditArrange = () => {
@@ -250,6 +274,7 @@
     }
 
 // Movement
+    
     const upBlock = () => {
 
         let currIndent = 0;
@@ -413,38 +438,22 @@
             let str = document.getElementById('editing').value;
             str = str.replace(/\n/g,'');
             document.getElementById('editing').value = str;
-        } else if(e.key == 'ArrowUp' || e.key == 'k' && editing == false) {
-            if(e.shiftKey) {
-                upBlock();
-            } else {
-                upFocus();
-            }
-        } else if(e.key == 'K' && editing == false) {
-            upBlock();
-        } else if(e.key == 'ArrowDown' || e.key == 'j' && editing == false) {
-            if(e.shiftKey) {
-                downBlock();
-            } else {
-                downFocus();
-            }
-        } else if(e.key == 'J' && editing == false) {
-            downBlock();
-        } else if(e.key == 'ArrowLeft' || e.key == 'h' && editing == false) {
-            if(e.shiftKey) {
-                leftBlock();
-            } else {
-                leftFocus();
-            }
         } else if(e.key == 'H' && editing == false) {
             leftBlock();
-        } else if(e.key == 'ArrowRight' || e.key == 'l' && editing == false) {
-            if(e.shiftKey) {
-                rightBlock();
-            } else {
-                rightFocus();
-            }
+        } else if(e.key == 'J' && editing == false) {
+            downBlock();
+        } else if(e.key == 'K' && editing == false) {
+            upBlock();
         } else if(e.key == 'L' && editing == false) {
             rightBlock();
+        } else if(e.key == 'ArrowUp' || e.key == 'k' && editing == false) {
+            e.shiftKey ? upBlock() : upFocus();
+        } else if(e.key == 'ArrowDown' || e.key == 'j' && editing == false) {
+            e.shiftKey ? downBlock() : downFocus();
+        } else if(e.key == 'ArrowLeft' || e.key == 'h' && editing == false) {
+            e.shiftKey ? leftBlock() : leftFocus();
+        } else if(e.key == 'ArrowRight' || e.key == 'l' && editing == false) {
+            e.shiftKey ? rightBlock() : rightFocus();
         } else if(e.key == 'b' && editing == false) {
             claims[current].bullet = true;
         } else if(e.key == 'h' && editing == false) {
@@ -457,24 +466,18 @@
             addClaim();
         } else if(e.key == '-' && editing == false) {
             deleteClaim();
-        } else if(e.key == 'H' && editing == false) {
+        } else if(e.key == 'K' && editing == false) {
             claims[current].borderColor = 'black';
-            redraw();
         } else if(e.key == 'R' && editing == false) {
             claims[current].borderColor = 'red';
-            redraw();
         } else if(e.key == 'B' && editing == false) {
             claims[current].borderColor = 'blue';
-            redraw();
         } else if(e.key == 'G' && editing == false) {
             claims[current].borderColor = 'green';
-            redraw();
         } else if(e.key == 'O' && editing == false) {
             claims[current].borderColor = 'orange';
-            redraw();
         } else if(e.key == 'A' && editing == false) {
             claims[current].borderColor = 'grey';
-            redraw();
         } else if(e.key == 'c' && editing == false) {
             loadMap();
         } else if(e.key == 'n' && editing == false) {
@@ -485,6 +488,12 @@
             redo();
         } else if(e.key == 's' && editing == false) {
             toggleSignals();
+        } else if(e.key == '[' && editing == false) {
+            zoomOut();
+        } else if(e.key == ']' && editing == false) {
+            zoomIn();
+        } else if(e.key == '0' && editing == false) {
+            zoom = 1;
         }
     }
 
@@ -537,13 +546,33 @@
 
     const redraw = () => {
 
+        // Get array for current node block
+        let blockArr = [];
+        if(current > 0 && highlightNode) {
+            blockArr.push(current);
+            let n = current+1;
+            while(claims[n].indent > claims[current].indent && n < claims.length) {
+                blockArr.push(n);
+                n ++;
+            }
+        }
+
         let str = ''
         let arr = [];
 
         toHistory = [];
 
         claims.forEach( (next,i) => {
+
             next.active = false;
+
+            if(blockArr.includes(i)) {
+                claims[i].borderStyle = 'dotted';
+                claims[i].borderWidth = 3;
+            } else {
+                claims[i].borderStyle = 'solid';
+                claims[i].borderWidth = 2;
+            }
 
             // Set list style types
             let ind = claims[i].indent;
@@ -572,6 +601,8 @@
                 text:next.text,
                 indent:next.indent,
                 borderColor:next.borderColor,
+                borderStyle:next.borderStyle,
+                borderWidth:next.borderWidth,
                 bullet:next.bullet,
                 active:next.active
             });
@@ -701,10 +732,6 @@
 
     }
 
-    const toggleInfo = () => {
-        info = !info;
-    }
-
     const toggleSignals = () => {
         showLabels = !showLabels;
         redraw();
@@ -774,64 +801,69 @@
         }
     }
 
+    const zoomIn = () => {
+        console.log('zoom in');
+        zoom += 0.1;
+    }
+
+    const zoomOut = () => {
+        console.log('zoom Out');
+        zoom -= 0.1;
+    }
+
 </script>
 
 <SvelteSeo
     title="ArgOut"
 /> 
 
-<div id="navbar" style="position:sticky;top:0px;">
-
-    <div id="text_edit">
-        <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);" placeholder="start typing..">{input}</textarea>
-    </div>
+<div id="text_edit">
+    <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);" placeholder="start typing..">{input}</textarea>
+</div>
+    
+<div id="navbar">
 
     <div id="controls">
 
-        <div id="file">
-            <div title="help" on:click={toggleInfo}><QuestionCircle width={size} height={size} /></div>
-            <div title="new activity" on:click={newMap}><FileEarmarkPlus width={size} height={size} /></div>
-            <div title="copy to clipboard" on:click={saveMap}><Copy width={size} height={size} /></div>
-            <div title="load from clipboard" on:click={loadMap}><Clipboard width={size} height={size} /></div>
-            <div title="create text"><FileText width={size} height={size} /></div>
-        </div>
-
-        <div id="arranging">
-            <div title="undo arrange" on:click={undo}><ArrowCounterclockwise width={size} height={size} /></div>
-            <div title="redo arrange" on:click={redo}><ArrowClockwise width={size} height={size} /></div>
-            <div title="add item" on:click={addClaim}><NodePlus width={size} height={size} /></div>
-            <div title="remove selected item" on:click={deleteClaim}><NodeMinus width={size} height={size} /></div>
-            <div title="toggle edit/arrange" on:click={toggleMode}><Toggles width={size} height={size} /></div>
-            <div title="show/hide signal words" on:click={toggleSignals}><SignpostSplit width={size} height={size} /></div>
-        </div>
-
-        <div id="movement">
-            <div title="tab <" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
-            <div title="tab >" on:click={rightFocus}><ChevronRight width={size} height={size} /></div>
-            <div title="tab <" on:click={leftBlock}><ChevronDoubleLeft width={size} height={size} /></div>
-            <div title="tab >" on:click={rightBlock}><ChevronDoubleRight width={size} height={size} /></div>
-            <div title="select item above (move +Shift)" on:click={upFocus}><ChevronUp width={size} height={size} /></div>
-            <div title="select item below (move +Shift)" on:click={downFocus}><ChevronDown width={size} height={size} /></div>
-            <div title="select item above (move +Shift)" on:click={upBlock}><ChevronDoubleUp width={size} height={size} /></div>
-            <div title="select item below (move +Shift)" on:click={downBlock}><ChevronDoubleDown width={size} height={size} /></div>
-        </div>
-
-        <div id="colors" on:click={changeColor}>
-            <button id="green" title="" class="btn btn-outline-success">&nbsp;</button>
-            <button id="red" title="" class="btn btn-outline-danger">&nbsp;</button>
-            <button id="orange" title="" class="btn btn-outline-warning">&nbsp;</button>
-            <button id="blue" title="" class="btn btn-outline-primary">&nbsp;</button>
-            <button id="black" title="" class="btn btn-outline-dark">&nbsp;</button>
-            <button id="grey" title="" class="btn btn-outline-secondary">&nbsp;</button>
-        </div>
-
+        <div title="help" on:click={toggleInfo}><QuestionCircle width={size} height={size} /></div>
+        <div title="new activity" on:click={newMap}><FileEarmarkPlus width={size} height={size} /></div>
+        <div title="copy to clipboard" on:click={saveMap}><Copy width={size} height={size} /></div>
+        <div title="load from clipboard" on:click={loadMap}><BoxArrowInDown width={size} height={size} /></div>
+        <div title="undo arrange" on:click={undo}><ArrowCounterclockwise width={size} height={size} /></div>
+        <div title="redo arrange" on:click={redo}><ArrowClockwise width={size} height={size} /></div>
+        <div title="zoom out" on:click={zoomOut}><ZoomOut width={size} height={size} /></div>
+        <div title="zoom in" on:click={zoomIn}><ZoomIn width={size} height={size} /></div>
+        <div title="add item" on:click={addClaim}><PlusSquare width={size} height={size} /></div>
+        <div title="remove selected item" on:click={deleteClaim}><DashSquare width={size} height={size} /></div>
+        <div title="create text"><FileText width={size} height={size} /></div>
+        <div title="toggle edit/arrange" on:click={toggleMode}><Toggles width={size} height={size} /></div>
+        <div title="show/hide signal words" on:click={toggleSignals}><SignpostSplit width={size} height={size} /></div>
+        <div title="toggle highlight node" on:click={toggleHighlightNode}><Diagram2 width={size} height={size} /></div>
+        <div title="tab <" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
+        <div title="tab >" on:click={rightFocus}><ChevronRight width={size} height={size} /></div>
+        <div title="tab <" on:click={leftBlock}><ChevronDoubleLeft width={size} height={size} /></div>
+        <div title="tab >" on:click={rightBlock}><ChevronDoubleRight width={size} height={size} /></div>
+        <div title="select item above (move +Shift)" on:click={upFocus}><ChevronUp width={size} height={size} /></div>
+        <div title="select item below (move +Shift)" on:click={downFocus}><ChevronDown width={size} height={size} /></div>
+        <div title="select item above (move +Shift)" on:click={upBlock}><ChevronDoubleUp width={size} height={size} /></div>
+        <div title="select item below (move +Shift)" on:click={downBlock}><ChevronDoubleDown width={size} height={size} /></div>
     </div>
+
+    <div id="colors" on:click={changeColor}>
+        <button id="green" title="" class="btn btn-outline-success">&nbsp;</button>
+        <button id="red" title="" class="btn btn-outline-danger">&nbsp;</button>
+        <button id="orange" title="" class="btn btn-outline-warning">&nbsp;</button>
+        <button id="blue" title="" class="btn btn-outline-primary">&nbsp;</button>
+        <button id="black" title="" class="btn btn-outline-dark">&nbsp;</button>
+        <button id="grey" title="" class="btn btn-outline-secondary">&nbsp;</button>
+    </div>
+
 
 </div>
 
 <div id="activity">
 
-    {#if info}
+    {#if showInfo}
         <div id="info" transition:slide>
             <div class="mb-1">
                 <p>Press <code>enter</code> to toggle between 'Insert' and 'Arrange'.</p>
@@ -887,7 +919,7 @@
                                 {/if} 
                             </div>
                         {:else}
-                            <div class="claim map-item claim-active" style="border-color:{claim.borderColor}">{@html claim.label}{@html claim.text}</div>
+                            <div class="claim map-item claim-active" style="border-width:{claim.borderWidth}px;border-style:{claim.borderStyle};border-color:{claim.borderColor};zoom:{zoom};">{@html claim.label}{@html claim.text}</div>
                         {/if} 
                     </div>
 
@@ -917,7 +949,7 @@
                                 {/if} 
                             </div>
                         {:else}
-                            <div id="c{i}" class="claim map-item" style="border-color:{claim.borderColor}">{@html claim.label}{@html claim.text}</div>
+                            <div id="c{i}" class="claim map-item" style="border-width:{claim.borderWidth}px;border-style:{claim.borderStyle};border-color:{claim.borderColor};zoom:{zoom};">{@html claim.label}{@html claim.text}</div>
                         {/if} 
                     </div>
 
@@ -934,32 +966,33 @@
 <style>
 
     #navbar {
-        padding-top:10px;
-        padding-bottom:10px;
-        display:grid;
-        grid-template-columns:370px 1fr;
-        gap:10px;
+        position:fixed;
+        top: 125px;
+        right:20px;
+        width:70px;
+        border:1px solid #cccccc;
+        border-radius:5px;
+        padding:5px;
         background: var(--light);
+        z-index:1;
     }
 
     #controls {
-        /* width:100dvh; */
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-around;
-        align-items:center;
-        column-gap:10px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content:center;
+        gap:3px;
         cursor:pointer;
     }
 
     #activity {
-        /* padding-top:140px; */
         overflow:auto;
     }
 
-    #colors, #movement, #file, #arranging {
-        display:flex;
-        gap:10px;
+    #colors {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:5px;
     }
 
     button {
@@ -978,11 +1011,12 @@
     }
 
     .claim {
-        border:2px solid;
+        border-width:2px;
+        border-style:solid;
         padding:5px;
         border-radius:5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 7px;
+        margin-bottom: 7px;
         cursor:pointer;
     }
 
@@ -1019,6 +1053,13 @@
         border-radius: 5px;
         padding:5px;
         width:350px;
+    }
+
+    #text_edit {
+        position: fixed;
+        top:10px;
+        right:20px;
+        z-index:1;
     }
 
     /* div { */
