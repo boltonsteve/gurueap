@@ -180,9 +180,9 @@
         }
     ]
 
-    const indent = 50;
     const borderThickness = 2;
     const size = 30;
+    let indent = 50;
     let current = 0;
     let currIndent = 0;
     let input = claims[0].text;
@@ -857,10 +857,12 @@
 
     const zoomIn = () => {
         zoom += 0.1;
+        indent += 5;
     }
 
     const zoomOut = () => {
         zoom -= 0.1;
+        indent -= 5;
     }
 
 </script>
@@ -894,7 +896,6 @@
         <p><code>type shift &larr;</code> or <code>click <ChevronDoubleLeft /></code> to move block left, <code>shift &rarr;</code> or <code><ChevronDoubleRight /></code> to move block right.</p>
         <p><code>click</code> colours to change border colour.</p>
     </div>
-
 </div>
 
 <Modal {showModal} msg={modalBody} modalWidth={600} on:click={toggleModal} />
@@ -907,7 +908,7 @@
 
     <div id="map" style="overflow:auto;">
         {#each claims as claim, i}
-            <div style="margin-left:{50 * claim.indent}px;" on:click={handleClick}>
+            <div style="margin-left:{indent * claim.indent}px;" on:click={handleClick}>
                 {#if claim.active}
 
                     <div id="c{i}" style="border-color:{claim.borderColor}">
