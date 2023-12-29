@@ -3,12 +3,13 @@
     export let msg = 'Please attempt all questions.';
     export let btn_txt = 'OK';
     export let showModal = false;
+    export let modalWidth = 300;
 </script>
 
 
 {#if showModal}
 <div class="backdrop" transition:fade on:click|self>
-    <div class="modal">
+    <div class="modal" style="width:{modalWidth}px;">
         <div>{@html msg}</div>
         <div class="btn-div">
             <button class="mt-2" on:click|self>{btn_txt}</button>
@@ -19,20 +20,24 @@
 
 <style>
     .backdrop {
-        width:100%;
-        height:100%;
+        width:100dvw;
+        height:dvh;
         background: rgba(0,0,0,0.8);
         position: fixed; 
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
+        z-index:50;
+        overflow:scroll;
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
     .modal {
         padding:20px;
         border-radius:10px;
-        max-width:300px;
-        margin:10% auto;
+        min-width:200px;
         background:white;
     }
     .btn-div {

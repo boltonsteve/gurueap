@@ -1,8 +1,9 @@
 <script>
 
     import SvelteSeo from "svelte-seo";
-    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise, Copy, Clipboard, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit, FileText, Diagram2, WrenchAdjustableCircle, Clipboard2Plus, Clipboard2Minus, ZoomIn, ZoomOut, PlusSquare, DashSquare, BoxArrowInDown } from "svelte-bootstrap-icons";
+    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise, Copy, Clipboard, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit, FileText, Diagram2, WrenchAdjustableCircle, Clipboard2Plus, Clipboard2Minus, ZoomIn, ZoomOut, PlusSquare, DashSquare, BoxArrowInDown, ListNested, ListUl } from "svelte-bootstrap-icons";
     import { slide, scale } from 'svelte/transition';
+    import Modal from '../../components/Modal.svelte'
     import { onMount } from 'svelte';
 
     let claims_dev = [
@@ -191,7 +192,7 @@
     let showLabels = true;
     let showTools = true;
     let showInfo = false;
-    let highlightNode = false;
+    let highlightNode = true;
     let toSave = '';
 
     let undos = [];
@@ -201,8 +202,18 @@
     let toHistory = [];
     let now = 0;
     let borderStyle = 'solid';
+    let borderColor = 'green';
     let borderWidth = 2;
     let zoom = 1;
+
+    let modalBody = '';
+
+    let showModal = false;
+    const toggleModal = () => {
+        showModal = !showModal;
+    }
+
+    let helpHtml = '';
 
     onMount(() => {
         redraw();
@@ -210,6 +221,7 @@
         now = 0;
         editing = false;
         let elEdit = document.getElementById('editing');
+        modalBody = document.getElementById('modal').innerHTML;
         elEdit.blur();
         elEdit.setAttribute("disabled","");
         elEdit.classList.remove('bg-yellow');
@@ -218,9 +230,35 @@
 
     // Toggles
 
+    const toggleEditArrange = () => {
+        if(editing) {
+            editing = false;
+            document.getElementById('editing').blur();
+            document.getElementById('editing').setAttribute("disabled","");
+            document.getElementById('editing').classList.remove('bg-yellow');
+
+            /* document.getElementById('c'+current).contentEditable = false; */
+
+        } else {
+            editing = true;
+            document.getElementById('editing').removeAttribute("disabled");
+            document.getElementById('editing').classList.add('bg-yellow');
+            document.getElementById('editing').focus();
+
+            /* document.getElementById('c'+current).contentEditable = true; */
+
+        }
+        redraw();
+    }
+
     const toggleMode = () => {
         outline = !outline;
         document.getElementById('type').blur();
+        redraw();
+    }
+
+    const toggleSignals = () => {
+        showLabels = !showLabels;
         redraw();
     }
 
@@ -236,32 +274,21 @@
 
     const toggleInfo = () => {
         showInfo = !showInfo;
-    }
-
-    const toggleEditArrange = () => {
-        if(editing) {
-            editing = false;
-            document.getElementById('editing').blur();
-            document.getElementById('editing').setAttribute("disabled","");
-            document.getElementById('editing').classList.remove('bg-yellow');
-        } else {
-            editing = true;
-            document.getElementById('editing').removeAttribute("disabled");
-            document.getElementById('editing').classList.add('bg-yellow');
-            document.getElementById('editing').focus();
-        }
-        redraw();
+        toggleModal();
     }
 
     const handleClick = (e) => {
-        let id = Number(e.target.id.replace(/c/,''));
-        claims.forEach( next => {
-            next.active = false;
-        })
-        current = id;
-        claims[current].active = true;
-        claims = [...claims];
-        input = claims[current].text;
+        if(!editing) {
+            let id = Number(e.target.id.replace(/c/,''));
+            claims.forEach( next => {
+                next.active = false;
+            })
+            current = id;
+            claims[current].active = true;
+            claims = [...claims];
+            input = claims[current].text;
+        }
+        redraw();
     }
 
     const handleInput = (e) => {
@@ -438,104 +465,129 @@
             let str = document.getElementById('editing').value;
             str = str.replace(/\n/g,'');
             document.getElementById('editing').value = str;
-        } else if(e.key == 'H' && editing == false) {
-            leftBlock();
-        } else if(e.key == 'J' && editing == false) {
-            downBlock();
-        } else if(e.key == 'K' && editing == false) {
-            upBlock();
-        } else if(e.key == 'L' && editing == false) {
-            rightBlock();
-        } else if(e.key == 'ArrowUp' || e.key == 'k' && editing == false) {
-            e.shiftKey ? upBlock() : upFocus();
-        } else if(e.key == 'ArrowDown' || e.key == 'j' && editing == false) {
-            e.shiftKey ? downBlock() : downFocus();
-        } else if(e.key == 'ArrowLeft' || e.key == 'h' && editing == false) {
-            e.shiftKey ? leftBlock() : leftFocus();
-        } else if(e.key == 'ArrowRight' || e.key == 'l' && editing == false) {
-            e.shiftKey ? rightBlock() : rightFocus();
-        } else if(e.key == 'b' && editing == false) {
-            claims[current].bullet = true;
-        } else if(e.key == 'h' && editing == false) {
-            claims[current].bullet = false;
-        } else if(e.key == 't' && editing == false) {
-            toggleMode();
-        } else if(e.key == '?' && editing == false) {
-            toggleInfo();
-        } else if(e.key == '+' && editing == false) {
-            addClaim();
-        } else if(e.key == '-' && editing == false) {
-            deleteClaim();
-        } else if(e.key == 'K' && editing == false) {
-            claims[current].borderColor = 'black';
-        } else if(e.key == 'R' && editing == false) {
-            claims[current].borderColor = 'red';
-        } else if(e.key == 'B' && editing == false) {
-            claims[current].borderColor = 'blue';
-        } else if(e.key == 'G' && editing == false) {
-            claims[current].borderColor = 'green';
-        } else if(e.key == 'O' && editing == false) {
-            claims[current].borderColor = 'orange';
-        } else if(e.key == 'A' && editing == false) {
-            claims[current].borderColor = 'grey';
-        } else if(e.key == 'c' && editing == false) {
-            loadMap();
-        } else if(e.key == 'n' && editing == false) {
-            newMap();
-        } else if(e.key == 'u' && editing == false) {
-            undo();
-        } else if(e.key == 'r' && editing == false) {
-            redo();
-        } else if(e.key == 's' && editing == false) {
-            toggleSignals();
-        } else if(e.key == '[' && editing == false) {
-            zoomOut();
-        } else if(e.key == ']' && editing == false) {
-            zoomIn();
-        } else if(e.key == '0' && editing == false) {
-            zoom = 1;
+        }
+
+        if(!editing) {
+            if(e.key == 'H') {
+                leftBlock();
+            } else if(e.key == 'J') {
+                downBlock();
+            } else if(e.key == 'K') {
+                upBlock();
+            } else if(e.key == 'L') {
+                rightBlock();
+            } else if(e.key == 'ArrowUp' || e.key == 'k') {
+                e.shiftKey ? upBlock() : upFocus();
+            } else if(e.key == 'ArrowDown' || e.key == 'j') {
+                e.shiftKey ? downBlock() : downFocus();
+            /* } else if(e.key == 'ArrowLeft' || e.key == 'h') { */
+            } else if(e.key == 'ArrowLeft') {
+                e.shiftKey ? leftBlock() : leftFocus();
+            } else if(e.key == 'ArrowRight' || e.key == 'l') {
+                e.shiftKey ? rightBlock() : rightFocus();
+            } else if(e.key == 'b') {
+                claims[current].bullet = true;
+            } else if(e.key == 'h') {
+                claims[current].bullet = false;
+            } else if(e.key == 't') {
+                toggleMode();
+            } else if(e.key == '?') {
+                toggleInfo();
+            } else if(e.key == '+') {
+                addClaim();
+            } else if(e.key == '-') {
+                deleteClaim();
+            } else if(e.key == 'K') {
+                claims[current].borderColor = 'black';
+            } else if(e.key == 'R') {
+                claims[current].borderColor = 'red';
+            } else if(e.key == 'B') {
+                claims[current].borderColor = 'blue';
+            } else if(e.key == 'G') {
+                claims[current].borderColor = 'green';
+            } else if(e.key == 'O') {
+                claims[current].borderColor = 'orange';
+            } else if(e.key == 'A') {
+                claims[current].borderColor = 'grey';
+            } else if(e.key == 'c') {
+                loadMap();
+            } else if(e.key == 'n') {
+                newMap();
+            } else if(e.key == 'u') {
+                undo();
+            } else if(e.key == 'r') {
+                redo();
+            } else if(e.key == 's') {
+                toggleSignals();
+            } else if(e.key == 'Z') {
+                zoomOut();
+            } else if(e.key == 'z') {
+                zoomIn();
+            } else if(e.key == '0') {
+                zoom = 1;
+            }
         }
     }
 
     const getLabel = (i) => {
 
+        let becauses = [false,false,false,false,false,false,false,false,false,false];
+        let currentColor = claims[i].borderColor;
+
         if(showLabels) {
 
-            if(claims[i].borderColor == 'black') {
-                label = '';
-            } else if(claims[i].borderColor == 'green') {
+            if(currentColor == 'green') {
 
+                /* let previous = i-1; */
                 let thisIndent = claims[i].indent;
                 let lastIndent = claims[i-1].indent;
+                let previousColor = claims[i-1].borderColor;
 
-                let previous = i-1;
 
-                if(claims[previous].borderColor == 'green' && thisIndent == lastIndent) {
+                if(previousColor == 'green' && thisIndent == lastIndent) {
                     label = '<b><i>and..</i></b> ';
-                } else if(claims[previous].borderColor == 'blue' && thisIndent == lastIndent) {
-                    /* claims[i].borderColor = 'blue'; */
-                    label = '<b><i>and..</i></b> ';
-                } else if(claims[previous].borderColor == 'blue' && thisIndent > lastIndent) {
+
+                } else if(previousColor == 'green' && thisIndent > lastIndent) {
                     label = '<b><i>because..</i></b> ';
-                } else if(claims[previous].borderColor == 'grey' && thisIndent == lastIndent) {
+                    becauses[thisIndent] = true;
+
+                } else if(previousColor == 'green' && thisIndent == lastIndent-1) {
+
+                    if(becauses[thisIndent]) {
+                        label = '<b><i>and because..</i></b> ';
+                        becauses[thisIndent] = false;
+                    } else {
+                        label = '<b><i>because..</i></b> ';
+                        becauses[thisIndent] = true;
+                    }
+
+                } else if(previousColor == 'blue' && thisIndent == lastIndent) {
+                    /* currentColor = 'blue'; */
+                    label = '<b><i>and..</i></b> ';
+                } else if(previousColor == 'blue' && thisIndent > lastIndent) {
+                    label = '<b><i>because..</i></b> ';
+                } else if(previousColor == 'grey' && thisIndent == lastIndent) {
                     label = '<b><i>and..</i></b> ';
                 } else {
+                    // indents not =
                     label = '<b><i>because..</i></b> ';
                 }
 
-            } else if(claims[i].borderColor == 'red') {
+
+            } else if(currentColor == 'red') {
                 label = '<b><i>but..</i></b> ';
-            } else if(claims[i].borderColor == 'orange') {
+            } else if(currentColor == 'orange') {
                 label = '<b><i>however..</i></b> ';
-            } else if(claims[i].borderColor == 'blue') {
+            } else if(currentColor == 'blue') {
                 label = '<b><i>in fact..</i></b> ';
-            } else if(claims[i].borderColor == 'grey') {
+            } else if(currentColor == 'grey') {
                 label = '<b><i>for example..</i></b> ';
-            } else {
-                label = '<b><i>because..</i></b> ';
+            } else { // black
+                label = '';
             }
 
         } else {
+            // Showing labels disabled
             label = '';
         }
 
@@ -550,10 +602,12 @@
         let blockArr = [];
         if(current > 0 && highlightNode) {
             blockArr.push(current);
-            let n = current+1;
-            while(claims[n].indent > claims[current].indent && n < claims.length) {
-                blockArr.push(n);
-                n ++;
+            if(current < claims.length-1) {
+                let n = current+1;
+                while(claims[n].indent > claims[current].indent && n < claims.length) {
+                    blockArr.push(n);
+                    n ++;
+                }
             }
         }
 
@@ -567,8 +621,9 @@
             next.active = false;
 
             if(blockArr.includes(i)) {
-                claims[i].borderStyle = 'dotted';
-                claims[i].borderWidth = 3;
+                /* claims[i].borderStyle = 'dotted'; */
+                claims[i].borderStyle = 'solid';
+                claims[i].borderWidth = 4;
             } else {
                 claims[i].borderStyle = 'solid';
                 claims[i].borderWidth = 2;
@@ -595,7 +650,9 @@
             }
             let bulletBH = next.bullet ? 'B' : 'H';
 
-            arr.push(tabs + next.borderColor+'|'+bulletBH+'|' + str)
+            /* borderColor = i==0 ? 'black' : next.borderColor; */
+
+            arr.push(tabs + next.borderColor + '|' + bulletBH + '|' + str)
 
             toHistory.push({
                 text:next.text,
@@ -617,6 +674,8 @@
         claims[current].active = true;
         input = claims[current].text;
         toSave = arr.join('\r\n');
+
+        /* document.getElementById('c'+current).scrollIntoView(); */
 
     }
 
@@ -675,7 +734,7 @@
         setTimeout(function() {
 
             let lines = str.split(/[\r\n]/);
-            let newClaims = lines.map( next => {
+            let newClaims = lines.map( (next,i) => {
 
                 if(next !== '') {
 
@@ -704,7 +763,7 @@
                         // No formatting
                         text = next.replace(/\t/g,'');
                         bullet = 'B';
-                        borderColor = 'green';
+                        borderColor = i==0 ? 'black' : 'green';
                     }
 
                     let nObj = {
@@ -730,11 +789,6 @@
 
         }, 300); // End timeout
 
-    }
-
-    const toggleSignals = () => {
-        showLabels = !showLabels;
-        redraw();
     }
 
     const saveMap = () => {
@@ -802,95 +856,54 @@
     }
 
     const zoomIn = () => {
-        console.log('zoom in');
         zoom += 0.1;
     }
 
     const zoomOut = () => {
-        console.log('zoom Out');
         zoom -= 0.1;
     }
 
 </script>
 
 <SvelteSeo
-    title="ArgOut"
+    title="ArguLine"
 /> 
+
+<div id="modal" style="display:none;">
+    <div class="mb-1">
+        <p>Press <code>enter</code> to toggle between 'Insert' and 'Arrange'.</p>
+    </div>
+    <h3 style="margin-left:30px;">In 'Insert' mode</h3>
+    <div style="margin-left:60px;">
+        <p><code>Type</code> to edit items.</p>
+    </div>
+    <h3 style="margin-left:30px;">In 'Arrange' mode</h3>
+    <div style="margin-left:60px;">
+        <p><code>click</code> <QuestionCircle /> or <code>type ?</code> to toggle instructions.</p>
+        <p><code>click</code> <FileEarmarkPlus /> (or <code>type n</code>) for new map/outline.</p>
+        <p><code>click</code> <Clipboard2Plus /> (or <code>type s</code>) to save map/outline to clipboard.</p>
+        <p><code>click</code> <Clipboard2Minus /> (or <code>type l</code>) to load map/outline from clipboard.</p>
+        <p><code>click</code> <ArrowCounterclockwise /> or <code>type u</code> to undo arrange.</p>
+        <p><code>click</code> <ArrowClockwise /> or <code>type r</code> to redo arrange.</p>
+        <p><code>click</code> or <code>type</code> <NodePlus /> to add an item, <NodeMinus /> to remove an item.</p>
+        <p><code>click</code> <Toggles /> (or <code>type t</code>) to toggle between outline and argument mode.</p>
+        <p><code>click</code> <SignpostSplit /> (or <code>type l</code>) to toggle signal words on/off.</p>
+        <p><code>type &uarr;</code> or <code>click <ChevronUp /></code> to select next claim up, <code>&darr;</code> or <code><ChevronDown /></code> to select next claim down.</p>
+        <p><code>type shift &uarr;</code> or <code>click <ChevronDoubleUp /></code> to move block up, <code>shift &darr;</code> or <code><ChevronDoubleDown /></code> to move block down.</p>
+        <p><code>type &larr;</code> or <code>click <ChevronLeft /></code> to indent left, <code>&rarr;</code> or <code><ChevronRight /></code> to indent right.</p>
+        <p><code>type shift &larr;</code> or <code>click <ChevronDoubleLeft /></code> to move block left, <code>shift &rarr;</code> or <code><ChevronDoubleRight /></code> to move block right.</p>
+        <p><code>click</code> colours to change border colour.</p>
+    </div>
+
+</div>
+
+<Modal {showModal} msg={modalBody} modalWidth={600} on:click={toggleModal} />
 
 <div id="text_edit">
     <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);" placeholder="start typing..">{input}</textarea>
 </div>
-    
-<div id="navbar">
-
-    <div id="controls">
-
-        <div title="help" on:click={toggleInfo}><QuestionCircle width={size} height={size} /></div>
-        <div title="new activity" on:click={newMap}><FileEarmarkPlus width={size} height={size} /></div>
-        <div title="copy to clipboard" on:click={saveMap}><Copy width={size} height={size} /></div>
-        <div title="load from clipboard" on:click={loadMap}><BoxArrowInDown width={size} height={size} /></div>
-        <div title="undo arrange" on:click={undo}><ArrowCounterclockwise width={size} height={size} /></div>
-        <div title="redo arrange" on:click={redo}><ArrowClockwise width={size} height={size} /></div>
-        <div title="zoom out" on:click={zoomOut}><ZoomOut width={size} height={size} /></div>
-        <div title="zoom in" on:click={zoomIn}><ZoomIn width={size} height={size} /></div>
-        <div title="add item" on:click={addClaim}><PlusSquare width={size} height={size} /></div>
-        <div title="remove selected item" on:click={deleteClaim}><DashSquare width={size} height={size} /></div>
-        <div title="create text"><FileText width={size} height={size} /></div>
-        <div title="toggle edit/arrange" on:click={toggleMode}><Toggles width={size} height={size} /></div>
-        <div title="show/hide signal words" on:click={toggleSignals}><SignpostSplit width={size} height={size} /></div>
-        <div title="toggle highlight node" on:click={toggleHighlightNode}><Diagram2 width={size} height={size} /></div>
-        <div title="tab <" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
-        <div title="tab >" on:click={rightFocus}><ChevronRight width={size} height={size} /></div>
-        <div title="tab <" on:click={leftBlock}><ChevronDoubleLeft width={size} height={size} /></div>
-        <div title="tab >" on:click={rightBlock}><ChevronDoubleRight width={size} height={size} /></div>
-        <div title="select item above (move +Shift)" on:click={upFocus}><ChevronUp width={size} height={size} /></div>
-        <div title="select item below (move +Shift)" on:click={downFocus}><ChevronDown width={size} height={size} /></div>
-        <div title="select item above (move +Shift)" on:click={upBlock}><ChevronDoubleUp width={size} height={size} /></div>
-        <div title="select item below (move +Shift)" on:click={downBlock}><ChevronDoubleDown width={size} height={size} /></div>
-    </div>
-
-    <div id="colors" on:click={changeColor}>
-        <button id="green" title="" class="btn btn-outline-success">&nbsp;</button>
-        <button id="red" title="" class="btn btn-outline-danger">&nbsp;</button>
-        <button id="orange" title="" class="btn btn-outline-warning">&nbsp;</button>
-        <button id="blue" title="" class="btn btn-outline-primary">&nbsp;</button>
-        <button id="black" title="" class="btn btn-outline-dark">&nbsp;</button>
-        <button id="grey" title="" class="btn btn-outline-secondary">&nbsp;</button>
-    </div>
-
-
-</div>
 
 <div id="activity">
-
-    {#if showInfo}
-        <div id="info" transition:slide>
-            <div class="mb-1">
-                <p>Press <code>enter</code> to toggle between 'Insert' and 'Arrange'.</p>
-            </div>
-            <h3 style="margin-left:30px;">In 'Insert' mode</h3>
-            <div style="margin-left:60px;">
-                <p><code>Type</code> to edit items.</p>
-            </div>
-            <h3 style="margin-left:30px;">In 'Arrange' mode</h3>
-            <div style="margin-left:60px;">
-                <p><code>click</code> <QuestionCircle /> or <code>type ?</code> to toggle instructions.</p>
-                <p><code>click</code> <FileEarmarkPlus /> (or <code>type n</code>) for new map/outline.</p>
-                <p><code>click</code> <Clipboard2Plus /> (or <code>type s</code>) to save map/outline to clipboard.</p>
-                <p><code>click</code> <Clipboard2Minus /> (or <code>type l</code>) to load map/outline from clipboard.</p>
-                <p><code>click</code> <ArrowCounterclockwise /> or <code>type u</code> to undo arrange.</p>
-                <p><code>click</code> <ArrowClockwise /> or <code>type r</code> to redo arrange.</p>
-                <p><code>click</code> or <code>type</code> <NodePlus /> to add an item, <NodeMinus /> to remove an item.</p>
-                <p><code>click</code> <Toggles /> (or <code>type t</code>) to toggle between outline and argument mode.</p>
-                <p><code>click</code> <SignpostSplit /> (or <code>type l</code>) to toggle signal words on/off.</p>
-                <p><code>type &uarr;</code> or <code>click <ChevronUp /></code> to select next claim up, <code>&darr;</code> or <code><ChevronDown /></code> to select next claim down.</p>
-                <p><code>type shift &uarr;</code> or <code>click <ChevronDoubleUp /></code> to move block up, <code>shift &darr;</code> or <code><ChevronDoubleDown /></code> to move block down.</p>
-                <p><code>type &larr;</code> or <code>click <ChevronLeft /></code> to indent left, <code>&rarr;</code> or <code><ChevronRight /></code> to indent right.</p>
-                <p><code>type shift &larr;</code> or <code>click <ChevronDoubleLeft /></code> to move block left, <code>shift &rarr;</code> or <code><ChevronDoubleRight /></code> to move block right.</p>
-                <p><code>click</code> colours to change border colour.</p>
-            </div>
-        </div>
-    {/if}
 
     <div id="map" style="overflow:auto;">
         {#each claims as claim, i}
@@ -961,38 +974,83 @@
 
 </div>
 
+<div id="navbar">
+
+    <div id="controls">
+        <div title="help" on:click={toggleInfo}><QuestionCircle width={size} height={size} /></div>
+        <div title="new activity" on:click={newMap}><FileEarmarkPlus width={size} height={size} /></div>
+        <div title="copy to clipboard" on:click={saveMap}><Copy width={size} height={size} /></div>
+        <div title="load from clipboard" on:click={loadMap}><BoxArrowInDown width={size} height={size} /></div>
+        <div title="undo arrange" on:click={undo}><ArrowCounterclockwise width={size} height={size} /></div>
+        <div title="redo arrange" on:click={redo}><ArrowClockwise width={size} height={size} /></div>
+        <div title="zoom out" on:click={zoomOut}><ZoomOut width={size} height={size} /></div>
+        <div title="zoom in" on:click={zoomIn}><ZoomIn width={size} height={size} /></div>
+        <div title="add item" on:click={addClaim}><PlusSquare width={size} height={size} /></div>
+        <div title="remove selected item" on:click={deleteClaim}><DashSquare width={size} height={size} /></div>
+        <div title="create text"><FileText width={size} height={size} /></div>
+
+        {#if outline}
+            <div title="argument mode" on:click={toggleMode}><ListNested width={size} height={size} /></div>
+        {:else}
+            <div title="outline mode" on:click={toggleMode}><ListUl width={size} height={size} /></div>
+        {/if}
+
+        <div title="show/hide signal words" on:click={toggleSignals}><SignpostSplit width={size} height={size} /></div>
+        <div title="toggle highlight node" on:click={toggleHighlightNode}><Diagram2 width={size} height={size} /></div>
+        <div title="tab <" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
+        <div title="tab >" on:click={rightFocus}><ChevronRight width={size} height={size} /></div>
+        <div title="tab <" on:click={leftBlock}><ChevronDoubleLeft width={size} height={size} /></div>
+        <div title="tab >" on:click={rightBlock}><ChevronDoubleRight width={size} height={size} /></div>
+        <div title="select item above (move +Shift)" on:click={upFocus}><ChevronUp width={size} height={size} /></div>
+        <div title="select item below (move +Shift)" on:click={downFocus}><ChevronDown width={size} height={size} /></div>
+        <div title="select item above (move +Shift)" on:click={upBlock}><ChevronDoubleUp width={size} height={size} /></div>
+        <div title="select item below (move +Shift)" on:click={downBlock}><ChevronDoubleDown width={size} height={size} /></div>
+    </div>
+
+    <div id="colors" on:click={changeColor}>
+        <button id="green" title="" class="btn btn-outline-success">&nbsp;</button>
+        <button id="red" title="" class="btn btn-outline-danger">&nbsp;</button>
+        <button id="orange" title="" class="btn btn-outline-warning">&nbsp;</button>
+        <button id="blue" title="" class="btn btn-outline-primary">&nbsp;</button>
+        <button id="black" title="" class="btn btn-outline-dark">&nbsp;</button>
+        <button id="grey" title="" class="btn btn-outline-secondary">&nbsp;</button>
+    </div>
+
+</div>
+
+
 <svelte:window on:keyup|preventDefault={onKeyUp} />
 
 <style>
 
     #navbar {
         position:fixed;
-        top: 125px;
-        right:20px;
-        width:70px;
-        border:1px solid #cccccc;
-        border-radius:5px;
-        padding:5px;
-        background: var(--light);
-        z-index:1;
+        top: 10px;
+        /* right:70px; */
+        /* width:270px; */
+        /* border-radius:5px; */
+        /* padding:5px; */
+        /* background: var(--light); */
+        /* z-index:1; */
+        cursor:pointer;
     }
 
     #controls {
         display:grid;
         grid-template-columns: 1fr 1fr;
-        justify-content:center;
         gap:3px;
-        cursor:pointer;
-    }
-
-    #activity {
-        overflow:auto;
     }
 
     #colors {
         display:grid;
         grid-template-columns: 1fr 1fr;
-        gap:5px;
+        gap:3px;
+    }
+
+    #activity {
+        padding-top:10px;
+        padding-left: 80px;
+        overflow:auto;
     }
 
     button {
@@ -1007,7 +1065,6 @@
         border-radius:5px;
         padding:10px;
         background:#eeeeee;
-        margin-top: 10px;
     }
 
     .claim {
