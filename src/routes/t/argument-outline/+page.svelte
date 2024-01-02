@@ -195,6 +195,10 @@
     let highlightNode = true;
     let toSave = '';
 
+    let sequence = ['First of all','Secondly','Thirdly','Next'];
+    let adding = ['In addition','Furthermore','Moreover','What is more'];
+    let thisIndent = 0;
+
     let undos = [];
     let redos = [];
 
@@ -278,6 +282,12 @@
     }
 
     const handleClick = (e) => {
+
+        editing = false;
+        document.getElementById('editing').blur();
+        document.getElementById('editing').setAttribute("disabled","");
+        document.getElementById('editing').classList.remove('bg-yellow');
+
         if(!editing) {
             let id = Number(e.target.id.replace(/c/,''));
             claims.forEach( next => {
@@ -425,36 +435,37 @@
 
     const leftBlock = () => {
         let currIndent = claims[current].indent;
-        // STOP lefts if indent same as previous
-        if(claims[current-1].indent !== currIndent) {
-            if(currIndent > 0 && (currIndent-1) > 0 && current < claims.length-1) { // (Block is already at hard left!)
-                let downCount = 1;
-                while(claims[current+downCount].indent > currIndent && downCount < claims.length -1) {
-                    downCount ++;
+        let largerIndent = true;
+        if(currIndent > 1) { // Don't allow anything except Contention at indent 0!
+            claims[current].indent --;
+            claims.forEach( (next,i) => {
+                if(i > current) {
+                    if(next.indent > currIndent && largerIndent) {
+                        claims[i].indent --;
+                    } else {
+                        // Clumsy way to exit the loop, but it works!
+                        largerIndent = false;
+                    }
                 }
-                for(let i=0; i<downCount; i++) {
-                    claims[current + i].indent --;
-                }
-            } else {
-                if(currIndent > 1) {
-                    claims[current].indent --;
-                }
-            }
+            })
+            redraw();
         }
-        redraw();
     }
 
     const rightBlock = () => {
         let currIndent = claims[current].indent;
-        if(current > 0 && current < claims.length-1) { // (DO NOT move contention block > right!)
-            let downCount = 1;
-            while(claims[current+downCount].indent > currIndent) {
-                downCount ++;
+        let largerIndent = true;
+        claims[current].indent ++;
+        claims.forEach( (next,i) => {
+            if(i > current) {
+                if(next.indent > currIndent && largerIndent) {
+                    claims[i].indent ++;
+                } else {
+                    // Clumsy way to exit the loop, but it works!
+                    largerIndent = false;
+                }
             }
-            for(let i=0; i<downCount; i++) {
-                claims[current + i].indent ++;
-            }
-        }
+        })
         redraw();
     }
 
@@ -600,15 +611,19 @@
 
         // Get array for current node block
         let blockArr = [];
+        let largerIndent = true;
         if(current > 0 && highlightNode) {
             blockArr.push(current);
-            if(current < claims.length-1) {
-                let n = current+1;
-                while(claims[n].indent > claims[current].indent && n < claims.length) {
-                    blockArr.push(n);
-                    n ++;
+            claims.forEach( (next,i) => {
+                if(i > current) {
+                    if(next.indent > claims[current].indent && largerIndent) {
+                        blockArr.push(i);
+                    } else {
+                        // Clumsy way to exit the loop..
+                        largerIndent = false;
+                    }
                 }
-            }
+            })
         }
 
         let str = ''
@@ -621,9 +636,10 @@
             next.active = false;
 
             if(blockArr.includes(i)) {
-                /* claims[i].borderStyle = 'dotted'; */
-                claims[i].borderStyle = 'solid';
-                claims[i].borderWidth = 4;
+                claims[i].borderStyle = 'dashed';
+                /* claims[i].borderStyle = 'solid'; */
+                /* claims[i].borderWidth = 4; */
+                claims[i].borderWidth = 2;
             } else {
                 claims[i].borderStyle = 'solid';
                 claims[i].borderWidth = 2;
@@ -680,12 +696,21 @@
     }
 
     const addClaim = () => {
+
+        let theIndent = claims[current].indent;
+
+        if(claims[current].borderColor !== 'green') {
+            theIndent ++;
+        }
+
         let newClaim = {
             text: "",
-            indent: claims[current].indent,
+            indent: theIndent,
+            /* indent: claims[current].indent, */
             borderColor: 'green',
             active: false
         }
+
         claims.splice(current+1, 0, newClaim);
         claims.forEach( next => {
             next.active = false;
@@ -865,6 +890,71 @@
         indent -= 5;
     }
 
+    const createText = () => {
+
+        let prevBorderCol = '';
+        let prevIndent = 0;
+        let htmlArr = [];
+        let col = '';
+        let sig = '';
+        let seqCount = 0;
+        let addCount = 0;
+
+        claims.forEach( (next,i) => {
+
+            col = claims[i].borderColor;
+            thisIndent = claims[i].indent;
+            sig = '';
+
+            if(i == 0) {
+
+                // Introduction + Contention
+                htmlArr[i] = `\n\n<p>Consectetur molestiae odit quibusdam elit suscipit. Earum eligendi obcaecati modi tempora dolore facilis Nemo corrupti cupiditate quod dicta dolor laborum a Suscipit quia illo debitis voluptatem quod Nostrum expedita veniam aspernatur soluta odit nam Reprehenderit aliquam sint quaerat accusamus iusto. It will be argued that <b><i>${claims[i].text}</i></b>, as follows.`;
+
+            } else {
+
+                if(thisIndent == 1) {
+                    if(col == 'red') {
+                        sig = '[It could be argued that]';
+                    } else if(col == 'green') {
+                        sig = '[Because]';
+                    }
+                } else {
+                    if(col == 'red') {
+                        sig = '[Although]';
+                    } else if(col == 'orange') {
+                        sig = '[However]';
+                    } else if(col == 'green') {
+                        if(thisIndent == prevIndent) {
+                            sig = `[${adding[addCount]}]`;
+                            addCount ++;
+                        } else {
+                            sig = '[Because]';
+                            addCount = 0;
+                        }
+                    }
+                }
+
+                htmlArr[i] = `${sig} ${claims[i].text}`;
+
+            }
+
+            // Paragraph break
+            if(claims[i].indent == 1 && i <= claims.length-1) {
+                htmlArr[i] = `\n\n<p>${htmlArr[i].trim()}`;
+            }
+
+            prevIndent = next.indent;
+            prevBorderCol = next.borderColor;
+
+        })
+
+        let htmlStr = htmlArr.join(' ');
+        console.log(htmlStr);
+        navigator.clipboard.writeText(htmlStr);
+
+    }
+
 </script>
 
 <SvelteSeo
@@ -872,29 +962,36 @@
 /> 
 
 <div id="modal" style="display:none;">
-    <div class="mb-1">
-        <p>Press <code>enter</code> to toggle between 'Insert' and 'Arrange'.</p>
-    </div>
+    <div class="alert">Press <code>enter</code> to toggle between <b><i>Insert</i></b> and <b><i>Arrange</i></b></div>
     <h3 style="margin-left:30px;">In 'Insert' mode</h3>
     <div style="margin-left:60px;">
         <p><code>Type</code> to edit items.</p>
+        <p>HTML markup is allowed: &lt;b&gt;<b>bold</b>&lt;/b&gt;; &lt;i&gt;<i>italic</i>&lt;/i&gt;; etc.</p>
     </div>
     <h3 style="margin-left:30px;">In 'Arrange' mode</h3>
     <div style="margin-left:60px;">
-        <p><code>click</code> <QuestionCircle /> or <code>type ?</code> to toggle instructions.</p>
-        <p><code>click</code> <FileEarmarkPlus /> (or <code>type n</code>) for new map/outline.</p>
-        <p><code>click</code> <Clipboard2Plus /> (or <code>type s</code>) to save map/outline to clipboard.</p>
-        <p><code>click</code> <Clipboard2Minus /> (or <code>type l</code>) to load map/outline from clipboard.</p>
-        <p><code>click</code> <ArrowCounterclockwise /> or <code>type u</code> to undo arrange.</p>
-        <p><code>click</code> <ArrowClockwise /> or <code>type r</code> to redo arrange.</p>
-        <p><code>click</code> or <code>type</code> <NodePlus /> to add an item, <NodeMinus /> to remove an item.</p>
-        <p><code>click</code> <Toggles /> (or <code>type t</code>) to toggle between outline and argument mode.</p>
-        <p><code>click</code> <SignpostSplit /> (or <code>type l</code>) to toggle signal words on/off.</p>
-        <p><code>type &uarr;</code> or <code>click <ChevronUp /></code> to select next claim up, <code>&darr;</code> or <code><ChevronDown /></code> to select next claim down.</p>
-        <p><code>type shift &uarr;</code> or <code>click <ChevronDoubleUp /></code> to move block up, <code>shift &darr;</code> or <code><ChevronDoubleDown /></code> to move block down.</p>
-        <p><code>type &larr;</code> or <code>click <ChevronLeft /></code> to indent left, <code>&rarr;</code> or <code><ChevronRight /></code> to indent right.</p>
-        <p><code>type shift &larr;</code> or <code>click <ChevronDoubleLeft /></code> to move block left, <code>shift &rarr;</code> or <code><ChevronDoubleRight /></code> to move block right.</p>
+        <p><code>click <QuestionCircle /></code> or <code>type ?</code> to toggle instructions.</p>
+        <p><code>click <FileEarmarkPlus /></code> or <code>type n</code> for <b><i>new</i></b> argument/outline.</p>
+        <p><code>click <Copy /></code> to <b><i>save</i></b> activity to clipboard.</p>
+        <p><code>click <BoxArrowInDown  /></code> or <code>type c</code> to <b><i>load</i></b> activity from clipboard.</p>
+        <p><code>click <ArrowCounterclockwise /></code> or <code>u</code> to <i><b>undo</b></i>, <code><ArrowClockwise /></code> or <code>type r</code> to <i><b>redo</b></i>.</p>
+        <p><code>click <ZoomIn /></code> or <code>type z</code> to <i><b>zoom in</b></i>, <code><ZoomOut /></code> or <code>type shift z</code> to <i><b>zoom out</b></i>.</p>
+        <p><code>click <PlusSquare /></code> or <code>type +</code> to <b><i>add item</i></b>, <code><DashSquare /></code> to <b><i>remove item</i></b>.</p>
+
+        <p><code>click <FileText /></code> to output a completed text <i>while editing an argument</i>.</p>
+
+        <p><code>click <ListUl /></code> for <b><i>outline</i></b> type, <code><ListNested /></code> for <b><i>argument</i></b> type.</p>
+
+        <p>When outlining, <code>type h</code> for <i><b>heading</b></i>, <code>b</code> for <i><b>bullet</b></i>.</p>
+
+        <p><code>click <SignpostSplit /></code> or <code>type l</code> to toggle signal words on/off.</p>
+
+        <p><code>click <ChevronUp /></code> or <code>type &uarr;</code> to select <b><i>next claim up</i></b>, <code><ChevronDown /></code> or <code>&darr;</code> <b><i>next claim down</i></b>.</p>
+        <p><code>click <ChevronDoubleUp /></code> or <code>type shift &uarr;</code> to <b><i>move block up</i></b>, <code><ChevronDoubleDown /></code> or <code>shift &darr;</code> to <b><i>move block down</i></b>.</p>
+        <p><code>click <ChevronLeft /></code> or <code>type &larr;</code> to <b><i>indent left</i></b>, <code><ChevronRight /></code> or <code>&rarr;</code> to <b><i>indent right</i></b>.</p>
+        <p><code>click <ChevronDoubleLeft /></code> or <code>type shift &larr;</code> to <b><i>move block left</i></b>, <code><ChevronDoubleRight /></code> or <code>shift &rarr;</code> to <b><i>move block right</i></b>.</p>
         <p><code>click</code> colours to change border colour.</p>
+
     </div>
 </div>
 
@@ -984,11 +1081,11 @@
         <div title="load from clipboard" on:click={loadMap}><BoxArrowInDown width={size} height={size} /></div>
         <div title="undo arrange" on:click={undo}><ArrowCounterclockwise width={size} height={size} /></div>
         <div title="redo arrange" on:click={redo}><ArrowClockwise width={size} height={size} /></div>
-        <div title="zoom out" on:click={zoomOut}><ZoomOut width={size} height={size} /></div>
         <div title="zoom in" on:click={zoomIn}><ZoomIn width={size} height={size} /></div>
+        <div title="zoom out" on:click={zoomOut}><ZoomOut width={size} height={size} /></div>
         <div title="add item" on:click={addClaim}><PlusSquare width={size} height={size} /></div>
         <div title="remove selected item" on:click={deleteClaim}><DashSquare width={size} height={size} /></div>
-        <div title="create text"><FileText width={size} height={size} /></div>
+        <div title="create text" on:click={createText}><FileText width={size} height={size} /></div>
 
         {#if outline}
             <div title="argument mode" on:click={toggleMode}><ListNested width={size} height={size} /></div>
@@ -1123,5 +1220,14 @@
     /* div { */
     /*     border:1px solid pink; */
     /* } */
+
+    .alert {
+        border: 3px dotted var(--red);
+        border-radius: 5px;
+        padding:5px;
+        text-align:center;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
 
 </style>
