@@ -211,6 +211,9 @@
     let zoom = 1;
 
     let modalBody = '';
+    let scratchpad = true;
+    let scratchpad_text = '';
+    let scratchpad_btn_text = 'hide scratchpad';
 
     let showModal = false;
     const toggleModal = () => {
@@ -233,6 +236,16 @@
     });
 
     // Toggles
+
+    const toggleScratchpad = () => {
+        if(scratchpad) {
+            scratchpad = false;
+            scratchpad_btn_text = 'show scratchpad';
+        } else {
+            scratchpad = true;
+            scratchpad_btn_text = 'hide scratchpad';
+        }
+    }
 
     const toggleEditArrange = () => {
         if(editing) {
@@ -966,6 +979,11 @@
 
     }
 
+    const saveScratchpadText = (e) => {
+        /* console.log(e.target.value); */
+        scratchpad_text = e.target.value;
+    }
+
 </script>
 
 <SvelteSeo
@@ -988,21 +1006,15 @@
         <p><code>click <ArrowCounterclockwise /></code> or <code>u</code> to <i><b>undo</b></i>, <code><ArrowClockwise /></code> or <code>type r</code> to <i><b>redo</b></i>.</p>
         <p><code>click <ZoomIn /></code> or <code>type z</code> to <i><b>zoom in</b></i>, <code><ZoomOut /></code> or <code>type shift z</code> to <i><b>zoom out</b></i>.</p>
         <p><code>click <PlusSquare /></code> or <code>type +</code> to <b><i>add item</i></b>, <code><DashSquare /></code> to <b><i>remove item</i></b>.</p>
-
         <p><code>click <FileText /></code> to output a completed text <i>while editing an argument</i>.</p>
-
         <p><code>click <ListUl /></code> for <b><i>outline</i></b> format, <code><ListNested /></code> for <b><i>argument</i></b> format.</p>
-
         <p>When outlining, <code>type h</code> for <i><b>heading</b></i>, <code>b</code> for <i><b>bullet</b></i>.</p>
-
         <p><code>click <SignpostSplit /></code> or <code>type l</code> to toggle signal words on/off.</p>
-
         <p><code>click <ChevronUp /></code> or <code>type &uarr;</code> to select <b><i>next claim up</i></b>, <code><ChevronDown /></code> or <code>&darr;</code> <b><i>next claim down</i></b>.</p>
         <p><code>click <ChevronDoubleUp /></code> or <code>type shift &uarr;</code> to <b><i>move block up</i></b>, <code><ChevronDoubleDown /></code> or <code>shift &darr;</code> to <b><i>move block down</i></b>.</p>
         <p><code>click <ChevronLeft /></code> or <code>type &larr;</code> to <b><i>indent left</i></b>, <code><ChevronRight /></code> or <code>&rarr;</code> to <b><i>indent right</i></b>.</p>
         <p><code>click <ChevronDoubleLeft /></code> or <code>type shift &larr;</code> to <b><i>move block left</i></b>, <code><ChevronDoubleRight /></code> or <code>shift &rarr;</code> to <b><i>move block right</i></b>.</p>
         <p><code>click</code> colours to change border colour.</p>
-
     </div>
 </div>
 
@@ -1010,6 +1022,13 @@
 
 <div id="text_edit">
     <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);" placeholder="start typing..">{input}</textarea>
+</div>
+
+<div id="scratchpad">
+    <button class="btn btn-outline-dark mt-1" on:click={toggleScratchpad} style="position:absolute;top:-30px;right:0px;font-size:0.7rem;width:100px;z-index:1;">{scratchpad_btn_text}</button>
+    {#if scratchpad}
+        <textarea on:keyup={saveScratchpadText} transition:slide rows="20" placeholder="scratchpad..">{scratchpad_text}</textarea>
+    {/if}
 </div>
 
 <div id="activity">
@@ -1097,13 +1116,11 @@
         <div title="add item" on:click={addClaim}><PlusSquare width={size} height={size} /></div>
         <div title="remove selected item" on:click={deleteClaim}><DashSquare width={size} height={size} /></div>
         <div title="create text" on:click={createText}><FileText width={size} height={size} /></div>
-
         {#if outline}
             <div title="argument format" on:click={toggleMode}><ListNested width={size} height={size} /></div>
         {:else}
             <div title="outline format" on:click={toggleMode}><ListUl width={size} height={size} /></div>
         {/if}
-
         <div title="show/hide signal words" on:click={toggleSignals}><SignpostSplit width={size} height={size} /></div>
         <div title="toggle highlight block" on:click={toggleHighlightNode}><Diagram2 width={size} height={size} /></div>
         <div title="move item left" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
@@ -1145,6 +1162,14 @@
         gap:3px;
     }
 
+    #colors > button {
+        cursor:pointer;
+        width:30px;
+        height:30px;
+        border-radius:15px;
+        border-width:2px;
+    }
+
     #colors {
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -1155,14 +1180,6 @@
         padding-top:10px;
         padding-left: 80px;
         overflow:auto;
-    }
-
-    button {
-        cursor:pointer;
-        width:30px;
-        height:30px;
-        border-radius:15px;
-        border-width:2px;
     }
 
     #info {
@@ -1214,11 +1231,19 @@
         border-radius: 5px;
         padding:5px;
         width:350px;
+        resize: none;
     }
 
     #text_edit {
         position: fixed;
         top:10px;
+        right:20px;
+        z-index:1;
+    }
+
+    #scratchpad {
+        position: fixed;
+        top:150px;
         right:20px;
         z-index:1;
     }
