@@ -143,6 +143,19 @@ span {
     color: var(--dark);
 }
 
+
+.btn-outline-explanation {
+    background: white;
+    border: 1px solid pink;
+    color: pink;
+}
+
+.btn-outline-explanation:hover, .btn-active-explanation {
+    background: pink;
+    color: pink;
+}
+
+
 .btn-group {
     display: flex;
     justify-content: space-around;
