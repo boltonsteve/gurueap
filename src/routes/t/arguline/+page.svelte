@@ -191,7 +191,6 @@
     let label = '';
     let showLabels = false;
     let showTools = true;
-    let showInfo = false;
     let highlightNode = true;
     let toSave = '';
 
@@ -215,10 +214,8 @@
     let scratchpad_text = '';
     let scratchpad_btn_text = 'hide scratchpad';
 
+    let modalWidth = 600;
     let showModal = false;
-    const toggleModal = () => {
-        showModal = !showModal;
-    }
 
     let helpHtml = '';
 
@@ -228,14 +225,36 @@
         now = 0;
         editing = false;
         let elEdit = document.getElementById('editing');
-        modalBody = document.getElementById('modal').innerHTML;
         elEdit.blur();
         elEdit.setAttribute("disabled","");
         elEdit.classList.remove('bg-yellow');
         redraw();
     });
 
+
     // Toggles
+
+    const toggleModal = () => {
+        showModal = !showModal;
+    }
+
+    const toggleInfo = () => {
+        modalBody = document.getElementById('modal').innerHTML;
+        modalWidth = 600;
+        toggleModal();
+    }
+
+    const toggleSaved = () => {
+        modalBody = 'Your activity has been copied to the clipboard.';
+        modalWidth = 300;
+        toggleModal();
+    }
+
+    const toggleEssay = (htmlStr) => {
+        modalBody = 'Your essay has been copied to the clipboard:<br><br>' + htmlStr.replace(/\n/g,'<br>');
+        modalWidth = 500;
+        toggleModal();
+    }
 
     const toggleScratchpad = () => {
         if(scratchpad) {
@@ -289,10 +308,6 @@
         redraw();
     }
 
-    const toggleInfo = () => {
-        showInfo = !showInfo;
-        toggleModal();
-    }
 
     const handleClick = (e) => {
 
@@ -323,9 +338,10 @@
         }
     }
 
+
 // Movement
     
-    const upBlock = () => {
+    const upMoveBlock = () => {
 
         let currIndent = 0;
 
@@ -369,7 +385,7 @@
 
     }
 
-    const downBlock = () => {
+    const downMoveBlock = () => {
 
         if(current < claims.length-1) {
 
@@ -432,21 +448,21 @@
         redraw()
     }
 
-    const leftFocus = () => {
+    const leftMove = () => {
         if(claims[current].indent > 1 && current !== 0) {
             claims[current].indent = claims[current].indent - 1;
         }
         redraw();
     }
 
-    const rightFocus = () => {
-        if(current > 0) {
+    const rightMove = () => {
+        if(current > 0 && claims[current-1].indent >= claims[current].indent) {
             claims[current].indent = claims[current].indent + 1;
         }
         redraw();
     }
 
-    const leftBlock = () => {
+    const leftMoveBlock = () => {
         let currIndent = claims[current].indent;
         let largerIndent = true;
         if(currIndent > 1) { // Don't allow anything except Contention at indent 0!
@@ -465,22 +481,25 @@
         }
     }
 
-    const rightBlock = () => {
-        let currIndent = claims[current].indent;
-        let largerIndent = true;
-        claims[current].indent ++;
-        claims.forEach( (next,i) => {
-            if(i > current) {
-                if(next.indent > currIndent && largerIndent) {
-                    claims[i].indent ++;
-                } else {
-                    // Clumsy way to exit the loop, but it works!
-                    largerIndent = false;
+    const rightMoveBlock = () => {
+        if(current > 0 && claims[current-1].indent >= claims[current].indent) {
+            let currIndent = claims[current].indent;
+            let largerIndent = true;
+            claims[current].indent ++;
+            claims.forEach( (next,i) => {
+                if(i > current) {
+                    if(next.indent > currIndent && largerIndent) {
+                        claims[i].indent ++;
+                    } else {
+                        // Clumsy way to exit the loop, but it works!
+                        largerIndent = false;
+                    }
                 }
-            }
-        })
-        redraw();
+            })
+            redraw();
+        }
     }
+
 
     let onKeyUp = (e) => {
 
@@ -493,22 +512,22 @@
 
         if(!editing) {
             if(e.key == 'H') {
-                leftBlock();
+                leftMoveBlock();
             } else if(e.key == 'J') {
-                downBlock();
+                downMoveBlock();
             } else if(e.key == 'K') {
-                upBlock();
+                upMoveBlock();
             } else if(e.key == 'L') {
-                rightBlock();
+                rightMoveBlock();
             } else if(e.key == 'ArrowUp' || e.key == 'k') {
-                e.shiftKey ? upBlock() : upFocus();
+                e.shiftKey ? upMoveBlock() : upFocus();
             } else if(e.key == 'ArrowDown' || e.key == 'j') {
-                e.shiftKey ? downBlock() : downFocus();
+                e.shiftKey ? downMoveBlock() : downFocus();
             /* } else if(e.key == 'ArrowLeft' || e.key == 'h') { */
             } else if(e.key == 'ArrowLeft') {
-                e.shiftKey ? leftBlock() : leftFocus();
+                e.shiftKey ? leftMoveBlock() : leftMove();
             } else if(e.key == 'ArrowRight' || e.key == 'l') {
-                e.shiftKey ? rightBlock() : rightFocus();
+                e.shiftKey ? rightMoveBlock() : rightMove();
             } else if(e.key == 'b') {
                 claims[current].bullet = true;
             } else if(e.key == 'h') {
@@ -876,6 +895,8 @@
         console.log(toSave);
         navigator.clipboard.writeText(toSave);
 
+        toggleSaved();
+
     }
 
     const countTabs = (str) => {
@@ -977,6 +998,8 @@
         console.log(htmlStr);
         navigator.clipboard.writeText(htmlStr);
 
+        toggleEssay(htmlStr);
+
     }
 
     const saveScratchpadText = (e) => {
@@ -1018,7 +1041,7 @@
     </div>
 </div>
 
-<Modal {showModal} msg={modalBody} modalWidth={600} on:click={toggleModal} />
+<Modal {showModal} msg={modalBody} modalWidth={modalWidth} on:click={toggleModal} />
 
 <div id="text_edit">
     <textarea id="editing" rows="5" on:input={handleInput} onkeydown="return (event.keyCode!=13);" placeholder="start typing..">{input}</textarea>
@@ -1123,14 +1146,14 @@
         {/if}
         <div title="show/hide signal words" on:click={toggleSignals}><SignpostSplit width={size} height={size} /></div>
         <div title="toggle highlight block" on:click={toggleHighlightNode}><Diagram2 width={size} height={size} /></div>
-        <div title="move item left" on:click={leftFocus}><ChevronLeft width={size} height={size} /></div>
-        <div title="move item right" on:click={rightFocus}><ChevronRight width={size} height={size} /></div>
-        <div title="move block left" on:click={leftBlock}><ChevronDoubleLeft width={size} height={size} /></div>
-        <div title="move block right" on:click={rightBlock}><ChevronDoubleRight width={size} height={size} /></div>
+        <div title="move item left" on:click={leftMove}><ChevronLeft width={size} height={size} /></div>
+        <div title="move item right" on:click={rightMove}><ChevronRight width={size} height={size} /></div>
+        <div title="move block left" on:click={leftMoveBlock}><ChevronDoubleLeft width={size} height={size} /></div>
+        <div title="move block right" on:click={rightMoveBlock}><ChevronDoubleRight width={size} height={size} /></div>
         <div title="select item above" on:click={upFocus}><ChevronUp width={size} height={size} /></div>
         <div title="select item below" on:click={downFocus}><ChevronDown width={size} height={size} /></div>
-        <div title="move block up" on:click={upBlock}><ChevronDoubleUp width={size} height={size} /></div>
-        <div title="move block udown" on:click={downBlock}><ChevronDoubleDown width={size} height={size} /></div>
+        <div title="move block up" on:click={upMoveBlock}><ChevronDoubleUp width={size} height={size} /></div>
+        <div title="move block udown" on:click={downMoveBlock}><ChevronDoubleDown width={size} height={size} /></div>
     </div>
 
     <div id="colors" on:click={changeColor}>
