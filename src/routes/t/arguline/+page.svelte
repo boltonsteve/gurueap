@@ -95,7 +95,7 @@
             active:true
         },
         {
-            text:"This tool makes it is easy to make a standard outline (press 't' to toggle between <b><i>argument</i></b> and <b><i>outline</i></b> mode).",
+            text:"This tool makes it is easy to make a standard outline (press 'f' to toggle between <b><i>argument</i></b> and <b><i>outline</i></b> format).",
             indent:1,
             borderColor:'green',
             bullet:true,
@@ -123,7 +123,7 @@
             active:false
         },
         {
-            text:"With this tool you can visualise an argument (press 't' to toggle between <b><i>argument</i></b> and <b><i>outline</i></b> mode).",
+            text:"With this tool you can visualise an argument (press 'f' to toggle between <b><i>argument</i></b> and <b><i>outline</i></b> format).",
             indent:1,
             borderColor:'green',
             bullet:true,
@@ -511,31 +511,22 @@
         }
 
         if(!editing) {
-            if(e.key == 'H') {
-                leftMoveBlock();
-            } else if(e.key == 'J') {
-                downMoveBlock();
-            } else if(e.key == 'K') {
-                upMoveBlock();
-            } else if(e.key == 'L') {
-                rightMoveBlock();
-            } else if(e.key == 'ArrowUp' || e.key == 'k') {
+            if(e.key == '?') {
+                toggleInfo();
+            } else if(e.key == 'ArrowUp') {
                 e.shiftKey ? upMoveBlock() : upFocus();
-            } else if(e.key == 'ArrowDown' || e.key == 'j') {
+            } else if(e.key == 'ArrowDown') {
                 e.shiftKey ? downMoveBlock() : downFocus();
-            /* } else if(e.key == 'ArrowLeft' || e.key == 'h') { */
             } else if(e.key == 'ArrowLeft') {
                 e.shiftKey ? leftMoveBlock() : leftMove();
-            } else if(e.key == 'ArrowRight' || e.key == 'l') {
+            } else if(e.key == 'ArrowRight') {
                 e.shiftKey ? rightMoveBlock() : rightMove();
+            } else if(e.key == 'f') {
+                toggleMode();
             } else if(e.key == 'b') {
                 claims[current].bullet = true;
             } else if(e.key == 'h') {
                 claims[current].bullet = false;
-            } else if(e.key == 't') {
-                toggleMode();
-            } else if(e.key == '?') {
-                toggleInfo();
             } else if(e.key == '+') {
                 addClaim();
             } else if(e.key == '-') {
@@ -1030,7 +1021,7 @@
         <p><code>click <ZoomIn /></code> or <code>type z</code> to <i><b>zoom in</b></i>, <code><ZoomOut /></code> or <code>type shift z</code> to <i><b>zoom out</b></i>.</p>
         <p><code>click <PlusSquare /></code> or <code>type +</code> to <b><i>add item</i></b>, <code><DashSquare /></code> to <b><i>remove item</i></b>.</p>
         <p><code>click <FileText /></code> to output a completed text <i>while editing an argument</i>.</p>
-        <p><code>click <ListUl /></code> for <b><i>outline</i></b> format, <code><ListNested /></code> for <b><i>argument</i></b> format.</p>
+        <p><code>click <ListUl /></code> for <b><i>outline</i></b> format, <code><ListNested /></code> for <b><i>argument</i></b> format, OR <code>press f</code> to toggle between formats.</p>
         <p>When outlining, <code>type h</code> for <i><b>heading</b></i>, <code>b</code> for <i><b>bullet</b></i>.</p>
         <p><code>click <SignpostSplit /></code> or <code>type l</code> to toggle signal words on/off.</p>
         <p><code>click <ChevronUp /></code> or <code>type &uarr;</code> to select <b><i>next claim up</i></b>, <code><ChevronDown /></code> or <code>&darr;</code> <b><i>next claim down</i></b>.</p>
@@ -1185,6 +1176,17 @@
         gap:3px;
     }
 
+    #controls > div {
+        opacity: 0.5;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        transition: opacity .3s;
+    }
+
+    #controls > div:hover {
+        opacity: 1;
+    }
+
     #colors > button {
         cursor:pointer;
         width:30px;
@@ -1222,7 +1224,7 @@
     }
 
     .claim-active {
-        background:yellow;
+        background: var(--yellow);
     }
 
     .outline-item {

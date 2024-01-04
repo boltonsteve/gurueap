@@ -9,6 +9,8 @@
   --grey: #9FA6B2;
   --light: #FBFBFB;
   --dark: #332D2D;
+  --yellow: yellow;
+  /* --yellow: #FFFF8F; */
   --0: 0px;
   --1: 10px;
   --2: 20px;
@@ -216,7 +218,7 @@ span {
     background: var(--dark);
 }
 .bg-yellow {
-    background: yellow;
+    background: var(--yellow);
 }
 
 /* Borders */
