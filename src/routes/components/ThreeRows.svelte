@@ -5,10 +5,12 @@
     export let items;
 
     let item = {}
-    let top = ''
-    let middle = []
-    let bottom = []
-    let showTop, showMiddle, showBottom
+    let top = "'t' = top"
+    let middle = ["'m' = middle"]
+    let bottom = ["'b' = bottom; 'n' = next; 'N' = previous"]
+    let showTop = true
+    let showMiddle = true
+    let showBottom = true
     let current = -1
 
     function redraw() {

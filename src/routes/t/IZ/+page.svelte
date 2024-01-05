@@ -7,7 +7,7 @@
     let showName = true;
     let showText = true;
     let name = 'IZ';
-    let text = 'IZ';
+    let text = 'press \'n\' for next';
     let classOn = false;
 
     let texts = [

@@ -19,73 +19,73 @@
     </div>
 </nav>
 
-<div class="container">
+<div id="activity">
 
-    <div id="content">
+<div id="box">
+
+    <div id="intro">
+        <h1>Teachers</h1>
+        <p>Classroom activities using projector and whiteboard.</p>
+    </div>
+
+    <div id="cols">
 
         <div>
-            <h1>GuruEAP Teachers</h1>
+
+            <h3>Boardwork</h3>
+            <ul>
+                <li><a href="../t/independent-subordinate" target="_blank">independent subordinate</a><br><span class="penjelasan">using subordinating conjunctions to join independent clauses</span>
+            </ul>
+
+            <h3>Pronunciation</h3>
+            <ul>
+                <li><a href="../t/IZ" target="_blank">IZ</a><br><span class="penjelasan">Plurals that end in 'IZ'</span>
+            </ul>
+
+            <h3>Guided Paraphrasing - Analysis</h3>
+            <ul>
+                <li>
+                    <a href="../t/paraphrasing-1" target="_blank">1</a>
+                    <a href="../t/paraphrasing-2" target="_blank">2</a>
+                    <a href="../t/paraphrasing-3" target="_blank">3</a>
+                    <a href="../t/paraphrasing-4" target="_blank">4</a>
+                    <a href="../t/paraphrasing-5" target="_blank">5</a>
+                    <a href="../t/paraphrasing-6" target="_blank">6</a>
+                    <a href="../t/paraphrasing-7" target="_blank">7</a>
+                    <a href="../t/paraphrasing-8" target="_blank">8</a>
+                </li>
+            </ul>
+
+            <h3>Writing Scaffolds</h3>
+            <ul>
+                <li>
+                    <a href="../t/consumerism" target="_blank">consumerism</a>
+                </li>
+            </ul>
+
         </div>
 
-        <div class="cols">
+        <div>
 
-            <div>
+            <h3>Essay Planning</h3>
+            <ul>
+                <li><a href="../t/arguline" target="_blank">ArguLine</a><br><span class="penjelasan">essay outlining and argument mapping</span>
+            </ul>
 
-                <h3>Boardwork</h3>
-                <ul>
-                    <li><a href="../t/independent-subordinate" target="_blank">independent subordinate</a></li>
-                    <li class="penjelasan">using subordinating conjunctions to join independent clauses</li>
-                </ul>
-
-                <h3>Pronunciation</h3>
-                <ul>
-                    <li><a href="../t/IZ" target="_blank">IZ</a></li>
-                    <li class="penjelasan">Plurals that end in 'IZ'</li>
-                </ul>
-
-                <h3>Guided Paraphrasing - Analysis</h3>
-                <ul>
-                    <li>
-                        <a href="../t/paraphrasing-1" target="_blank">1</a>
-                        <a href="../t/paraphrasing-2" target="_blank">2</a>
-                        <a href="../t/paraphrasing-3" target="_blank">3</a>
-                        <a href="../t/paraphrasing-4" target="_blank">4</a>
-                        <a href="../t/paraphrasing-5" target="_blank">5</a>
-                        <a href="../t/paraphrasing-6" target="_blank">6</a>
-                        <a href="../t/paraphrasing-7" target="_blank">7</a>
-                        <a href="../t/paraphrasing-8" target="_blank">8</a>
-                    </li>
-                </ul>
-
-                <h3>Writing Scaffolds</h3>
-                <ul>
-                    <li>
-                        <a href="../t/consumerism" target="_blank">consumerism</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div>
-
-                <h3>Multiplayer games</h3>
-                <ul>
-                    <li><a href="../t/art-of-which" target="_blank">art of 'which'</a></li>
-                    <li class="penjelasan">joining independent clauses using 'yang'</li>
-                </ul>
-                <ul>
-                    <li><a href="../t/two-verbs" target="_blank">nominalising verbs</a></li>
-                    <li class="penjelasan">modifying sentences containing multiple verbs</li>
-                </ul>
-                <ul>
-                    <li><a href="../t/dependent-prepositions" target="_blank">dependent prepositions</a></li>
-                </ul>
-                <ul>
-                    <li><a href="../t/minority-languages" target="_blank">minority languages</a></li>
-                    <li class="penjelasan">Yes/no questions to reconstruct a text</li>
-                </ul>
-
-            </div>
+            <h3>Multiplayer games</h3>
+            <ul>
+                <li><a href="../t/art-of-which" target="_blank">art of 'which'</a><br><span class="penjelasan">joining independent clauses using 'yang'</span>
+            </ul>
+            <ul>
+                <li><a href="../t/two-verbs" target="_blank">nominalising verbs</a><br>
+                    <span class="penjelasan">modifying sentences containing multiple verbs</span>
+            </ul>
+            <ul>
+                <li><a href="../t/dependent-prepositions" target="_blank">dependent prepositions</a></li>
+            </ul>
+            <ul>
+                <li><a href="../t/minority-languages" target="_blank">minority languages</a><br><span class="penjelasan">Yes/no questions to reconstruct a text (total cloze)</span>
+            </ul>
 
         </div>
 
@@ -93,38 +93,51 @@
 
 </div>
 
+</div>
+
 <style>
 
-/* div { */
+/* div, nav { */
 /*     border: 1px solid red; */
 /* } */
 
-h1,h3 {
-    margin-top:0px;
-}
+    h1,h3 {
+        margin-bottom:0px;
+    }
 
-.container {
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    ul {
+        margin:7px auto;
+    }
 
-.penjelasan {
-    list-style-type:none;
-    font-style: italic;
-    font-size:0.9rem;
-}
+    .penjelasan {
+        font-style: italic;
+        font-size:0.9rem;
+    }
+
+    #activity {
+        padding-top:2%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #box {
+        max-width:650px;
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    #cols {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        column-gap:10px;
+
+    }
+
+    #cols > div {
+        max-width:300px;
+    }
     
-.cols {
-    display: flex;
-    flex-wrap: wrap;
-    gap:20px;
-}
-
-.cols div {
-    max-width:300px;
-}
-
 </style>
 
