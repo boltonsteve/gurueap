@@ -1,7 +1,7 @@
 <script>
 
     import SvelteSeo from "svelte-seo";
-    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, Plus, Dash, ArrowCounterclockwise, ArrowClockwise, Copy, Clipboard, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit, FileText, Diagram2, WrenchAdjustableCircle, Clipboard2Plus, Clipboard2Minus, ZoomIn, ZoomOut, PlusSquare, DashSquare, BoxArrowInDown, ListNested, ListUl } from "svelte-bootstrap-icons";
+    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, ArrowCounterclockwise, ArrowClockwise, Copy, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit, FileText, Diagram2, WrenchAdjustableCircle, ZoomIn, ZoomOut, PlusSquare, DashSquare, BoxArrowInDown, ListNested, ListUl } from "svelte-bootstrap-icons";
     import { slide, scale } from 'svelte/transition';
     import Modal from '../../components/Modal.svelte'
     import { onMount } from 'svelte';
@@ -179,9 +179,12 @@
             active:false
         }
     ]
-
+    
+    // Declarations
     const borderThickness = 2;
     const size = 30;
+    const sequence = ['First of all','Secondly','Thirdly','Fourth','Next'];
+    const adding = ['In addition','Furthermore','Moreover','also','additionally','What is more'];
     let indent = 50;
     let current = 0;
     let currIndent = 0;
@@ -193,14 +196,9 @@
     let showTools = true;
     let highlightNode = true;
     let toSave = '';
-
-    let sequence = ['First of all','Secondly','Thirdly','Fourth','Next'];
-    let adding = ['In addition','Furthermore','Moreover','also','additionally','What is more'];
     let thisIndent = 0;
-
     let undos = [];
     let redos = [];
-
     let history = [claims];
     let toHistory = [];
     let now = 0;
@@ -208,15 +206,12 @@
     let borderColor = 'green';
     let borderWidth = 2;
     let zoom = 1;
-
-    let modalBody = '';
     let scratchpad = true;
     let scratchpad_text = '';
     let scratchpad_btn_text = 'hide scratchpad';
-
-    let modalWidth = 600;
     let showModal = false;
-
+    let modalBody = '';
+    let modalWidth = 600;
     let helpHtml = '';
 
     onMount(() => {
@@ -272,17 +267,11 @@
             document.getElementById('editing').blur();
             document.getElementById('editing').setAttribute("disabled","");
             document.getElementById('editing').classList.remove('bg-yellow');
-
-            /* document.getElementById('c'+current).contentEditable = false; */
-
         } else {
             editing = true;
             document.getElementById('editing').removeAttribute("disabled");
             document.getElementById('editing').classList.add('bg-yellow');
             document.getElementById('editing').focus();
-
-            /* document.getElementById('c'+current).contentEditable = true; */
-
         }
         redraw();
     }
@@ -343,7 +332,8 @@
     
     const upMoveBlock = () => {
 
-        let currIndent = 0;
+        currIndent = 0;
+        /* let currIndent = 0; */
 
         if(current > 0) {
 
@@ -463,7 +453,8 @@
     }
 
     const leftMoveBlock = () => {
-        let currIndent = claims[current].indent;
+        currIndent = claims[current].indent;
+        /* let currIndent = claims[current].indent; */
         let largerIndent = true;
         if(currIndent > 1) { // Don't allow anything except Contention at indent 0!
             claims[current].indent --;
@@ -483,7 +474,8 @@
 
     const rightMoveBlock = () => {
         if(current > 0 && claims[current-1].indent >= claims[current].indent) {
-            let currIndent = claims[current].indent;
+            currIndent = claims[current].indent;
+            /* let currIndent = claims[current].indent; */
             let largerIndent = true;
             claims[current].indent ++;
             claims.forEach( (next,i) => {
@@ -572,8 +564,8 @@
 
             if(currentColor == 'green') {
 
-                /* let previous = i-1; */
-                let thisIndent = claims[i].indent;
+                thisIndent = claims[i].indent;
+                /* let thisIndent = claims[i].indent; */
                 let lastIndent = claims[i-1].indent;
                 let previousColor = claims[i-1].borderColor;
 

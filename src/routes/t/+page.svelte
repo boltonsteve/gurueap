@@ -42,7 +42,7 @@
                 <li><a href="../t/IZ" target="_blank">IZ</a><br><span class="penjelasan">Plurals that end in 'IZ'</span>
             </ul>
 
-            <h3>Guided Paraphrasing - Analysis</h3>
+            <h3>Guided paraphrasing - Analysis</h3>
             <ul>
                 <li>
                     <a href="../t/paraphrasing-1" target="_blank">1</a>
@@ -56,7 +56,7 @@
                 </li>
             </ul>
 
-            <h3>Writing Scaffolds</h3>
+            <h3>Writing scaffolds</h3>
             <ul>
                 <li>
                     <a href="../t/consumerism" target="_blank">consumerism</a>
@@ -67,7 +67,7 @@
 
         <div>
 
-            <h3>Essay Planning</h3>
+            <h3>Essay planning</h3>
             <ul>
                 <li><a href="../t/arguline" target="_blank">ArguLine</a><br><span class="penjelasan">essay outlining and argument mapping</span>
             </ul>
