@@ -1151,7 +1151,15 @@
 
 </div>
 
-<div id="logo">ArguLine</div>
+    <!--<div id="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argu<i>Line</i></div>-->
+    <div id="logo" style="position:fixed;bottom:10px;right:30px;">
+        <div style="position">
+            Argu<i>Line</i>
+            <div style="position:absolute;bottom:10px;right:12px;border-bottom:2px solid #cccccc;width:250px;"></div>
+
+        </div>
+    
+</div>
 
 <svelte:window on:keyup|preventDefault={onKeyUp} />
 
@@ -1286,5 +1294,10 @@
         font-size:3rem;
         color:#cccccc;
         z-index:2;
+        /* text-decoration:line-through; */
+        /* text-decoration-style: dotted; */
+        /* text-decoration: underline #cccccc dashed; */
+        /* border-bottom:1px dashed #cccccc; */
+        /* text-align:baseline; */
     }
 </style>
