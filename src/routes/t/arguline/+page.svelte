@@ -1151,6 +1151,7 @@
 
 </div>
 
+<div id="logo">ArguLine</div>
 
 <svelte:window on:keyup|preventDefault={onKeyUp} />
 
@@ -1278,4 +1279,12 @@
         margin-bottom: 10px;
     }
 
+    #logo {
+        position:fixed;
+        right:30px;
+        bottom:10px;
+        font-size:3rem;
+        color:#cccccc;
+        z-index:2;
+    }
 </style>
