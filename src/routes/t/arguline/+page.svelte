@@ -1,7 +1,7 @@
 <script>
 
     import SvelteSeo from "svelte-seo";
-    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, ArrowCounterclockwise, ArrowClockwise, Copy, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit, FileText, Diagram2, WrenchAdjustableCircle, ZoomIn, ZoomOut, PlusSquare, DashSquare, BoxArrowInDown, ListNested, ListUl } from "svelte-bootstrap-icons";
+    import { ChevronUp, ChevronDown, ChevronDoubleUp, ChevronDoubleDown, ChevronLeft, ChevronRight, ChevronDoubleLeft, ChevronDoubleRight, ArrowCounterclockwise, ArrowClockwise, Copy, FileEarmarkPlus, TagsFill, QuestionCircle, Toggles, NodePlus, NodeMinus, SignpostSplit, FileText, Diagram2, WrenchAdjustableCircle, ZoomIn, ZoomOut, PlusSquare, DashSquare, BoxArrowInDown, ListNested, ListUl, Indent, Unindent } from "svelte-bootstrap-icons";
     import { slide, scale } from 'svelte/transition';
     import Modal from '../../components/Modal.svelte'
     import { onMount } from 'svelte';
@@ -188,6 +188,7 @@
     let indent = 50;
     let current = 0;
     let currIndent = 0;
+    let max_indent = 0;
     let input = claims[0].text;
     let editing = false;
     let outline = false;
@@ -206,9 +207,9 @@
     let borderColor = 'green';
     let borderWidth = 2;
     let zoom = 1;
-    let scratchpad = true;
+    let scratchpad = false;
     let scratchpad_text = '';
-    let scratchpad_btn_text = 'hide scratchpad';
+    let scratchpad_btn_text = 'show scratchpad';
     let showModal = false;
     let modalBody = '';
     let modalWidth = 600;
@@ -243,11 +244,21 @@
         modalBody = 'Your activity has been copied to the clipboard.';
         modalWidth = 300;
         toggleModal();
+        setTimeout(function() {
+            if(showModal) {
+                toggleModal();
+            }
+        },2000);
     }
 
     const toggleEssay = (htmlStr) => {
         modalBody = 'Your essay has been copied to the clipboard:<br><br>' + htmlStr.replace(/\n/g,'<br>');
         modalWidth = 500;
+        setTimeout(function() {
+            if(showModal) {
+                toggleModal();
+            }
+        },2000);
         toggleModal();
     }
 
@@ -330,12 +341,30 @@
 
 // Movement
     
+    const upMove= () => {
+        if(current > 1) {
+            let beingMoved = claims.splice(current,1);
+            current --;
+            claims.splice(current,0,beingMoved[0]);
+        }
+        redraw();
+    }
+
+    const downMove= () => {
+        if(current < claims.length-1) {
+            let beingMoved = claims.splice(current,1);
+            current ++
+            claims.splice(current,0,beingMoved[0]);
+        }
+        redraw();
+    }
+
     const upMoveBlock = () => {
 
         currIndent = 0;
         /* let currIndent = 0; */
 
-        if(current > 0) {
+        if(current > 1) {
 
             currIndent = claims[current].indent;
 
@@ -505,13 +534,13 @@
         if(!editing) {
             if(e.key == '?') {
                 toggleInfo();
-            } else if(e.key == 'ArrowUp') {
+            } else if(e.key == 'ArrowUp' || e.key == 'k') {
                 e.shiftKey ? upMoveBlock() : upFocus();
-            } else if(e.key == 'ArrowDown') {
+            } else if(e.key == 'ArrowDown' || e.key == 'j') {
                 e.shiftKey ? downMoveBlock() : downFocus();
-            } else if(e.key == 'ArrowLeft') {
+            } else if(e.key == 'ArrowLeft' || e.key == 'J') {
                 e.shiftKey ? leftMoveBlock() : leftMove();
-            } else if(e.key == 'ArrowRight') {
+            } else if(e.key == 'ArrowRight' || e.key == 'K') {
                 e.shiftKey ? rightMoveBlock() : rightMove();
             } else if(e.key == 'f') {
                 toggleMode();
@@ -525,19 +554,25 @@
                 deleteClaim();
             } else if(e.key == 'K') {
                 claims[current].borderColor = 'black';
+                redraw();
             } else if(e.key == 'R') {
                 claims[current].borderColor = 'red';
+                redraw();
             } else if(e.key == 'B') {
                 claims[current].borderColor = 'blue';
+                redraw();
             } else if(e.key == 'G') {
                 claims[current].borderColor = 'green';
+                redraw();
             } else if(e.key == 'O') {
                 claims[current].borderColor = 'orange';
+                redraw();
             } else if(e.key == 'A') {
                 claims[current].borderColor = 'grey';
+                redraw();
             } else if(e.key == 'c') {
                 loadMap();
-            } else if(e.key == 'n') {
+            } else if(e.key == 'N') {
                 newMap();
             } else if(e.key == 'u') {
                 undo();
@@ -551,6 +586,18 @@
                 zoomIn();
             } else if(e.key == '0') {
                 zoom = 1;
+            } else if(e.key == '[') {
+                indent --;
+            } else if(e.key == ']') {
+                indent ++;
+            } else if(e.key == '\\') {
+                indent = 50;
+            } else if(e.key == 'p') {
+                toggleScratchpad();
+            } else if(e.key == '.') {
+                upMove();
+            } else if(e.key == ',') {
+                downMove();
             }
         }
     }
@@ -647,8 +694,11 @@
         let arr = [];
 
         toHistory = [];
+        max_indent = 0
 
         claims.forEach( (next,i) => {
+
+            max_indent = next.indent > max_indent ? next.indent : max_indent;
 
             next.active = false;
 
@@ -723,9 +773,9 @@
         let newClaim = {
             text: "",
             indent: theIndent,
-            /* indent: claims[current].indent, */
             borderColor: 'green',
-            active: false
+            active: false,
+            bullet: true
         }
 
         claims.splice(current+1, 0, newClaim);
@@ -1006,7 +1056,7 @@
     <h3 style="margin-left:30px;">In 'Arrange' mode</h3>
     <div style="margin-left:60px;">
         <p><code>click <QuestionCircle /></code> or <code>type ?</code> to toggle instructions.</p>
-        <p><code>click <FileEarmarkPlus /></code> or <code>type n</code> for <b><i>new</i></b> argument/outline.</p>
+        <p><code>click <FileEarmarkPlus /></code> or <code>type N</code> for <b><i>new</i></b> argument/outline.</p>
         <p><code>click <Copy /></code> to <b><i>save</i></b> activity to clipboard.</p>
         <p><code>click <BoxArrowInDown  /></code> or <code>type c</code> to <b><i>load</i></b> activity from clipboard.</p>
         <p><code>click <ArrowCounterclockwise /></code> or <code>u</code> to <i><b>undo</b></i>, <code><ArrowClockwise /></code> or <code>type r</code> to <i><b>redo</b></i>.</p>
@@ -1039,7 +1089,7 @@
 
 <div id="activity">
 
-    <div id="map" style="overflow:auto;">
+    <div id="map" style="overflow:auto;position:relative;">
         {#each claims as claim, i}
             <div style="margin-left:{indent * claim.indent}px;" on:click={handleClick}>
                 {#if claim.active}
@@ -1104,6 +1154,13 @@
             </div>
 
         {/each} 
+
+        {#if !outline}
+            {#each Array(max_indent) as _, index (index)}
+                <div class="stripe" style="left:{(index+1) * indent}px;"></div>
+            {/each}
+        {/if}
+
     </div>
 
 </div>
@@ -1151,15 +1208,12 @@
 
 </div>
 
-    <!--<div id="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argu<i>Line</i></div>-->
     <div id="logo" style="position:fixed;bottom:10px;right:30px;">
         <div style="position">
             Argu<i>Line</i>
-            <div style="position:absolute;bottom:10px;right:12px;border-bottom:2px solid #cccccc;width:250px;"></div>
-
+            <div id="line"></div>
         </div>
-    
-</div>
+    </div>
 
 <svelte:window on:keyup|preventDefault={onKeyUp} />
 
@@ -1188,18 +1242,18 @@
         opacity: 1;
     }
 
+    #colors {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:3px;
+    }
+
     #colors > button {
         cursor:pointer;
         width:30px;
         height:30px;
         border-radius:15px;
         border-width:2px;
-    }
-
-    #colors {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        gap:3px;
     }
 
     #activity {
@@ -1217,6 +1271,7 @@
     .claim {
         border-width:2px;
         border-style:solid;
+        background: white;
         padding:5px;
         border-radius:5px;
         margin-top: 7px;
@@ -1289,15 +1344,26 @@
 
     #logo {
         position:fixed;
-        right:30px;
-        bottom:10px;
-        font-size:3rem;
-        color:#cccccc;
+        right:20px;
+        bottom:20px;
+        font-size:2rem;
         z-index:2;
-        /* text-decoration:line-through; */
-        /* text-decoration-style: dotted; */
-        /* text-decoration: underline #cccccc dashed; */
-        /* border-bottom:1px dashed #cccccc; */
-        /* text-align:baseline; */
+        background: white;
+        opacity:0.5;
     }
+
+    #logo ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .stripe {
+        position:absolute;
+        top:0px;
+        height:100%;
+        width:2px;
+        border-left:2px dotted #aaaaaa;
+        z-index:-1;
+    }
+
 </style>
