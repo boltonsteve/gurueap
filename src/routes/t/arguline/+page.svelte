@@ -254,11 +254,6 @@
     const toggleEssay = (htmlStr) => {
         modalBody = 'Your essay has been copied to the clipboard:<br><br>' + htmlStr.replace(/\n/g,'<br>');
         modalWidth = 500;
-        setTimeout(function() {
-            if(showModal) {
-                toggleModal();
-            }
-        },2000);
         toggleModal();
     }
 
@@ -338,6 +333,17 @@
         }
     }
 
+    const increaseIndent = () => {
+        if(indent < 150) {
+            indent += 5;
+        }
+    }
+
+    const decreaseIndent = () => {
+        if(indent > 20) {
+            indent -= 5;
+        }
+    }
 
 // Movement
     
@@ -587,9 +593,9 @@
             } else if(e.key == '0') {
                 zoom = 1;
             } else if(e.key == '[') {
-                indent --;
+                decreaseIndent();
             } else if(e.key == ']') {
-                indent ++;
+                increaseIndent();
             } else if(e.key == '\\') {
                 indent = 50;
             } else if(e.key == 'p') {
