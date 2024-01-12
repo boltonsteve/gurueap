@@ -273,6 +273,10 @@
             document.getElementById('editing').blur();
             document.getElementById('editing').setAttribute("disabled","");
             document.getElementById('editing').classList.remove('bg-yellow');
+
+            let element = document.getElementById("c"+current);
+            element.scrollIntoView();
+
         } else {
             editing = true;
             document.getElementById('editing').removeAttribute("disabled");
@@ -317,6 +321,7 @@
                 next.active = false;
             })
             current = id;
+            console.log("current: " + current);
             claims[current].active = true;
             claims = [...claims];
             input = claims[current].text;
@@ -770,11 +775,7 @@
 
     const addClaim = () => {
 
-        let theIndent = claims[current].indent;
-
-        if(claims[current].borderColor !== 'green') {
-            theIndent ++;
-        }
+        let theIndent = claims[current].indent + 1;
 
         let newClaim = {
             text: "",
@@ -784,16 +785,35 @@
             bullet: true
         }
 
-        claims.splice(current+1, 0, newClaim);
+        current ++;
+
+        if(current < claims.length) { // = more claims below
+            let remainder = (claims.length) - current;
+            if(remainder > 0) { // check indents in remaining claims
+                let bigger = true;
+                for(let i=0; i<remainder; i++) {
+                    if(bigger) {
+                        /* current ++; */
+                        if(claims[current].indent < theIndent) {
+                            bigger = false;
+                        } else {
+                            current ++;
+                        }
+                    }
+                }
+            }
+        }
+
+        claims.splice(current, 0, newClaim);
         claims.forEach( next => {
             next.active = false;
         })
-        current ++;
 
         claims[current].active = true;
         claims = [...claims];
         input = claims[current].text;
         toggleEditArrange();
+
     }
 
     const deleteClaim = () => {
