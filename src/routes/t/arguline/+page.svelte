@@ -102,21 +102,21 @@
             active:false
         },
         {
-            text:"With this tool you can edit selected items.",
+            text:"With this tool you can edit selected items (select an item using the arrow keys, press 'enter' to start editing, and 'enter' again when you've finished).",
             indent:2,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"With this tool you can move selected items up and down.",
+            text:"With this tool you can move selected items up and down (select an item and use the up and down arrow keys while holding down shift).",
             indent:3,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"With this tool you can indent selected items left and right.",
+            text:"With this tool you can indent selected items left and right (select an item and use the left and right arrow keys [+ shift to move entire blocks]).",
             indent:3,
             borderColor:'green',
             bullet:true,
@@ -130,7 +130,7 @@
             active:false
         },
         {
-            text:"With this tool you can edit selected claims.",
+            text:"With this tool you can edit selected claims (select a claim using the arrow keys, press 'enter' to start editing, and 'enter' again when you've finished).",
             indent:2,
             borderColor:'green',
             bullet:true,
@@ -144,14 +144,14 @@
             active:false
         },
         {
-            text:"With this tool you can move selected claims up and down.",
+            text:"With this tool you can move selected claims up and down (select a claim and use the up and down arrow keys while holding down shift).",
             indent:3,
             borderColor:'green',
             bullet:true,
             active:false
         },
         {
-            text:"With this tool you can indent claims (nodes) left and right to highlight their logical function.",
+            text:"With this tool you can indent claims (nodes) left and right to highlight their logical function (select a claim and use the left and right arrow keys [+ shift to move entire blocks]).",
             indent:3,
             borderColor:'green',
             bullet:true,
@@ -173,6 +173,13 @@
         },
         {
             text:"With this tool you can easily save and load <b><i>outlines</i></b> and <b><i>arguments</i></b> in plain text format.",
+            indent:1,
+            borderColor:'green',
+            bullet:true,
+            active:false
+        },
+        {
+            text:"With this tool you can output an essay based on your argument map.",
             indent:1,
             borderColor:'green',
             bullet:true,
