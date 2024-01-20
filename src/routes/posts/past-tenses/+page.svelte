@@ -9,18 +9,11 @@
 />
 
 <div class="container">
-
     <Youtube id="dkq30EI5oTQ" />
     <h1>Past tenses explained</h1>
-
 </div>
 
 <style>
-
-    /* * { */
-        /* border:1px solid purple; */
-    /* } */
-
     .container {
         height:80dvh;
         display:flex;
@@ -30,5 +23,4 @@
         max-width:500px;
         margin:0px auto;
     }
-
 </style>
