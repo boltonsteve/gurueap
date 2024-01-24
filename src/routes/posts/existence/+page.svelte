@@ -25,7 +25,7 @@
     <p class="font-italic alert alert-danger">Some people believe that <span class="font-weight-bold text-danger">the existence of</span> machines helps to generate more profit than loss.</p>
 
     <WithIcon icon="flag">
-        <div slot="html">This is a common translation problem for Indonesians. Keberadaan!</div>
+        <div slot="html">This is a common translation problem for Indonesians: <b><i>Keberadaan!</i></b></div>
     </WithIcon>
 
     <p>In English it is automatically assumed that things and people exist, unless otherwise stated.</p>

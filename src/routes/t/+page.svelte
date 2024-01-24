@@ -74,6 +74,9 @@
 
             <h3>Multiplayer games</h3>
             <ul>
+                <li><a href="../t/definitions" target="_blank">definitions</a><br><span class="penjelasan">improving 'bad' definitions</span>
+            </ul>
+            <ul>
                 <li><a href="../t/art-of-which" target="_blank">art of 'which'</a><br><span class="penjelasan">joining independent clauses using 'yang'</span>
             </ul>
             <ul>
