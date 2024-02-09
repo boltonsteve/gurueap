@@ -21,7 +21,7 @@
 <style>
     .backdrop {
         width:100dvw;
-        height:dvh;
+        height:100dvh;
         background: rgba(0,0,0,0.8);
         position: fixed; 
         top: 0;
@@ -35,10 +35,13 @@
         align-items:center;
     }
     .modal {
+        max-height:100dvh;
+        margin-top:30px;
         padding:20px;
         border-radius:10px;
         min-width:200px;
         background:white;
+        overflow:auto;
     }
     .btn-div {
         text-align: right;

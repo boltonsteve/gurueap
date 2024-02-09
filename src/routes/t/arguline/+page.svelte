@@ -88,7 +88,7 @@
 
     let claims = [
         {
-            text:"This is a good tool for outlining texts and visualising arguments (press '?' for instructions).",
+            text:"This is a good tool for outlining and visualising arguments (press '?' for instructions).",
             indent:0,
             borderColor:'black',
             bullet:true,
@@ -1014,7 +1014,7 @@
             if(i == 0) {
 
                 // Introduction + Contention
-                htmlArr[i] = `Consectetur molestiae odit quibusdam elit suscipit. Earum eligendi obcaecati modi tempora dolore facilis Nemo corrupti cupiditate quod dicta dolor laborum a Suscipit quia illo debitis voluptatem quod Nostrum expedita veniam aspernatur soluta odit nam Reprehenderit aliquam sint quaerat accusamus iusto. [It will be argued that] ${claims[i].text.replace(/<.*?>/g,'')} [, as follows/for the following reasons].`;
+                htmlArr[i] = `In this first sentence give a general introduction to your topic. In the second sentence (optional), ask your reader a question so that they can consider their own position before reading yours. In the third sentence tell us what other people think about this situation. [It will be argued that] ${claims[i].text.replace(/<.*?>/g,'')} [, as follows/for the following reasons].`;
 
             } else {
 
@@ -1059,6 +1059,8 @@
             prevBorderCol = next.borderColor;
 
         })
+
+        htmlArr.push(`\n\n[In conclusion] ${claims[0].text.replace(/<.*?>/g,'')}. In this sentence summarise your main points (ITO). In a third sentence make a prediction about future trends or consequences.`);
 
         let htmlStr = htmlArr.join(' ');
         console.log(htmlStr);
