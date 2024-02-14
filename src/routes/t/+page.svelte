@@ -37,8 +37,9 @@
                 <li><a href="../t/independent-subordinate" target="_blank">independent subordinate</a><br><span class="penjelasan">using subordinating conjunctions to join independent clauses</span>
             </ul>
 
-            <h3>Pronunciation</h3>
+            <h3>Speaking</h3>
             <ul>
+                <li><a href="../t/part2" target="_blank">Wh Brainstorming</a><br><span class="penjelasan">Speaking Part 2 - Brainstorming with WH</span>
                 <li><a href="../t/IZ" target="_blank">IZ</a><br><span class="penjelasan">Plurals that end in 'IZ'</span>
             </ul>
 
