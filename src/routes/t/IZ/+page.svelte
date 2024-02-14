@@ -32,20 +32,16 @@
     ];
 
     let names = [
-        'Fikri',
-        'Ira',
-        'Cindy',
-        'Andel',
-        'Lidya',
-        'Jain',
-        'Web',
-        'Ditha',
-        'Akbar',
-        'Lisa',
-        'Hery Potter',
-        'Firman',
-        'Soli',
-        'Dennis'
+        'Des',
+        'Awan',
+        'Bowo',
+        'Iin',
+        'Yuli',
+        'Ara',
+        'Haz',
+        'Hafidz',
+        'Linda',
+        'Nia'
     ];
 
     function doNext() {
