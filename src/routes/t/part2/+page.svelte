@@ -75,4 +75,4 @@
     title="Speaking Part 2 - WH"
  /> 
 
- <RandomStudent {texts} name="WH Brainstorming" />
+ <RandomStudent texts={texts} student="WH Brainstorming" />

@@ -30,4 +30,4 @@
     title="IZ Plurals"
  /> 
 
-<RandomStudent {texts} name="IZ" />
+<RandomStudent texts={texts} name="IZ" />

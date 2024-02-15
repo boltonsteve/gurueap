@@ -1,7 +1,7 @@
 <script>
 
     export let texts;
-    export let name;
+    export let student;
 
     import { scale,fade } from 'svelte/transition';
     let showActivity = false;
@@ -10,7 +10,7 @@
     let showText = true;
 
     let text = 'press \'n\' for next';
-    let names = 'Steve'; // (student names)
+    let students = 'Steve'; // (students)
 
     const teachers = {
         Steve: ['Dave','Sue','John'],
@@ -29,8 +29,8 @@
     }
 
     const setTeacher = (e) => {
-        let name = e.target.textContent;
-        names = teachers[name];
+        let teacher = e.target.textContent;
+        students = teachers[teacher];
         showActivity = true;
         showTeacherSelect = false;
     }
@@ -48,14 +48,14 @@
 
         if(texts.length) {
 
-            names = shuffle(names);
+            students = shuffle(students);
             texts = shuffle(texts);
 
-            name = names[0];
+            student = students[0];
             text = texts.pop();
 
         } else {
-            name = 'Oops!';
+            student = 'Oops!';
             text = 'No more texts!';
         }
 
@@ -105,7 +105,7 @@
     <div class="activity" transition:fade>
         <div>
             {#if showName}
-                <div id="name" transition:fade>{@html name}</div>
+                <div id="student" transition:fade>{@html student}</div>
             {/if}
         </div>
         <div>
@@ -149,7 +149,7 @@
     text-align:center;
 }
 
-#name {
+#student {
     font-size:5rem;
 }
 
