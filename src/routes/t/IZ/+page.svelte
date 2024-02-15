@@ -2,7 +2,6 @@
 
     import SvelteSeo from "svelte-seo"
     import RandomStudent from "../../Components/RandomStudent.svelte"
-    import { scale,fade } from 'svelte/transition';
 
     let texts = [
         'Bosses sit in offices filling pages with percentages.',
@@ -31,4 +30,4 @@
     title="IZ Plurals"
  /> 
 
-<RandomStudent {texts} />
+<RandomStudent {texts} name="IZ" />

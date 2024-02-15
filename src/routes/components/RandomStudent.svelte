@@ -1,13 +1,13 @@
 <script>
 
     export let texts;
+    export let name;
 
     import { scale,fade } from 'svelte/transition';
     let showActivity = false;
     let showTeacherSelect = true;
     let showName = true;
     let showText = true;
-    let name = 'IZ';
 
     let text = 'press \'n\' for next';
     let names = 'Steve'; // (students's names)

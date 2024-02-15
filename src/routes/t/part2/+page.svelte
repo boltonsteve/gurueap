@@ -2,7 +2,6 @@
 
     import SvelteSeo from "svelte-seo"
     import RandomStudent from "../../Components/RandomStudent.svelte"
-    import { scale,fade } from 'svelte/transition';
 
     let texts = [
         "your favourite kind of weather",
@@ -76,4 +75,4 @@
     title="Speaking Part 2 - WH"
  /> 
 
- <RandomStudent {texts} />
+ <RandomStudent {texts} name="WH Brainstorming" />
