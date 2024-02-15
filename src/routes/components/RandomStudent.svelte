@@ -10,7 +10,7 @@
     let showText = true;
 
     let text = 'press \'n\' for next';
-    let names = 'Steve'; // (students's names)
+    let names = 'Steve'; // (student names)
 
     const teachers = {
         Steve: ['Dave','Sue','John'],
@@ -55,7 +55,7 @@
             text = texts.pop();
 
         } else {
-            name = '<a href="../posts/s-iz">listen here</a>';
+            name = 'Oops!';
             text = 'No more texts!';
         }
 
@@ -105,7 +105,7 @@
     <div class="activity" transition:fade>
         <div>
             {#if showName}
-                <div id="name" transition:scale>{@html name}</div>
+                <div id="name" transition:fade>{@html name}</div>
             {/if}
         </div>
         <div>
