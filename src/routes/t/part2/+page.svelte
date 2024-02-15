@@ -1,7 +1,7 @@
 <script>
 
     import SvelteSeo from "svelte-seo"
-    import RandomStudent from "../../Components/RandomStudent.svelte"
+    import RandomStudent from "../../components/RandomStudent.svelte"
 
     let texts = [
         "your favourite kind of weather",

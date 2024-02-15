@@ -1,7 +1,7 @@
 <script>
 
     import SvelteSeo from "svelte-seo"
-    import RandomStudent from "../../Components/RandomStudent.svelte"
+    import RandomStudent from "../../components/RandomStudent.svelte"
 
     let texts = [
         'Bosses sit in offices filling pages with percentages.',
@@ -30,4 +30,4 @@
     title="IZ Plurals"
  /> 
 
-<RandomStudent texts={texts} name="IZ" />
+<RandomStudent texts={texts} student="IZ" />
