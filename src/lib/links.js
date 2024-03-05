@@ -8,7 +8,7 @@ export const links = [
     {
         title: "In terms of #2",
         href: "posts/in-terms-of-2",
-        keywords: ['vocabulary','coeherence cohesion'],
+        keywords: ['vocabulary','coherence cohesion'],
         description: "Taking care to avoid repetition when using 'in terms of'."
     },
     {
