@@ -13,7 +13,26 @@
     let students = 'Steve'; // (students)
 
     const teachers = {
-        Steve: ['Dave','Sue','John'],
+        Steve: [
+            'Bima',
+            'Widya',
+            'Arjuna',
+            'Sita',
+            'Nick',
+            'Wira',
+            'Wipra',
+            'Indira',
+            'Devi',
+            'Raditya',
+            'Prisma',
+            'Dinda',
+            'Anya',
+            'Rama',
+            'xxx'
+        ]
+
+
+            'Dave','Sue','John'],
         Des: [
             'Des',
             'Awan',
