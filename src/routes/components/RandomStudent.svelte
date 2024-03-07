@@ -28,11 +28,8 @@
             'Dinda',
             'Anya',
             'Rama',
-            'xxx'
-        ]
-
-
-            'Dave','Sue','John'],
+            'Indi'
+        ],
         Des: [
             'Des',
             'Awan',
