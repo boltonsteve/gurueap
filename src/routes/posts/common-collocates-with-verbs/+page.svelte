@@ -163,8 +163,8 @@
 
 </script>
 
-<div style="max-width:400px;margin:0px auto;">
-    <img src="/img/go-shopping.png" class="img-fluid rounded" alt="go shopping">
+<div style="max-width:400px;" class="mx-auto">
+    <img src="/img/go-shopping.png" class="img-fluid rounded mt-3" alt="go shopping">
 </div>
 
 <McQuiz title="Common verb collcates" task="Select suitable verbs, then click 'Check answers'." qa={qa} />
