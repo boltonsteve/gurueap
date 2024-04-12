@@ -4,6 +4,10 @@
     export let title;
     export let task;
     export let qa;
+    export let jumble = false; 
+    export let limit = 100;
+
+console.log("limit: " + limit);
 
     task = task.replace(/\|/g,'<br>');
 
@@ -12,7 +16,13 @@
     let showFeedback = false;
     let scoreMsg = '';
 
-    qa = shuffle(qa);
+    if(jumble) {
+        qa = shuffle(qa);
+    }
+
+    if(limit < 100) {
+        qa = qa.slice(0,limit);
+    }
 
     let active = false;
     let score = 0;
@@ -21,7 +31,7 @@
     let attempts = qa.map( next => '');
     let feedbacks = qa.map( next => '');
 
-    let shuffled = qa.map( next => {
+    let shuffled = qa.map( (next,i) => {
         let a_shuffle = shuffle(next.answers).map(next => {
             return {
                 answer:next,

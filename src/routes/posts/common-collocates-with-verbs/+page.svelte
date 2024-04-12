@@ -172,7 +172,7 @@
     <img src="/img/go-shopping.png" class="img-fluid rounded mt-3" alt="go shopping">
 </div>
 
-<McQuiz title="Common verb collcates" task="Select suitable verbs, then click 'Check answers'." qa={qa} />
+    <McQuiz title="Common verb collcates" task="Select suitable verbs, then click 'Check answers'. Reload the page for more examples." qa={qa} jumble={true} limit={10} />
 
 
 
