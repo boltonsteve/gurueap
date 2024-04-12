@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Common collocates with verbs",
+        href: "posts/common-collocates-with-verbs",
+        keywords: ['vocabulary','collocation','quiz'],
+        description: "Common collocates with verbs. Many of these may not be the same as the collocate used in your first language."
+    },
+    {
         title: "Incomplete passives",
         href: "posts/passives",
         keywords: ['grammar','passive voice','Bahasa Indonesia'],

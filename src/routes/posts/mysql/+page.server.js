@@ -4,7 +4,7 @@ export async function load() {
     let mysqlconn = await mysqlconnFn();
     try {
         let results = await mysqlconn
-            .query("SELECT * FROM final_results;")
+            .query("SELECT * FROM mock_results;")
             .then(function ([rows, fields]) {
                 return rows;
             });

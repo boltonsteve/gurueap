@@ -12,6 +12,8 @@
     let showFeedback = false;
     let scoreMsg = '';
 
+    qa = shuffle(qa);
+
     let active = false;
     let score = 0;
 
@@ -124,7 +126,8 @@
 
     .q-grid {
         display:grid;
-        grid-template-columns: 20px 1fr;
+        grid-template-columns: 30px 1fr;
+        font-weight:bold;
     }
 
     .question {
@@ -137,8 +140,9 @@
 
     .options {
         display:flex;
+        flex-wrap:wrap;
         justify-content:space-around;
-        gap:20px;
+        gap:10px;
         padding:10px 0px 10px 0px;
     }
 
