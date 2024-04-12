@@ -163,6 +163,11 @@
 
 </script>
 
+<SvelteSeo
+    title="Common collocates with verbs"
+  description="Examples of common verb-noun collocation, including those that don't always translate directly from one language to another!"
+/>
+
 <div style="max-width:400px;" class="mx-auto">
     <img src="/img/go-shopping.png" class="img-fluid rounded mt-3" alt="go shopping">
 </div>
