@@ -25,15 +25,30 @@
 
     <p>Sometimes - in fact quite often - 2 or more words appear together, but not for any grammatical reason. They just do!</p>
 
-    <p>For example, which of the following do we <span class="uli">never</span> say?</p>
+    <div class="my-grid font-weight-bold">
+        <div>Collocate</div>
+        <div>Don't collocate</div>
+    </div>
+    <hr>
+    <div class="my-grid">
+        <div>Strong tea/coffee</div>
+        <div>Powerful tea/coffee</div>
+        <div>Tall tree</div>
+        <div>High tree</div>
+        <div>Heavy rain</div>
+        <div>Weighty rain</div>
+        <div>Rich taste</div>
+        <div>Deep taste</div>
+        <div>Big mistake</div>
+        <div>Large mistake</div>
+        <div>Great fun</div>
+        <div>Big fun</div>
+        <div>Sweet dreams</div>
+        <div>Nice dreams</div>
+    </div>
+    <hr>
 
-    <ul>
-        <li>Merry Christmas</li>
-        <li>Happy Birthday</li>
-        <li>Merry Birthday</li>
-    </ul>
-
-    <p>We <span class="uli">never</span> say <b><i>Merry Birthday</i></b>. It's grammatically correct, and it's communicative, but we never say it.</p>
+    <p>We say Merry Christmas and Happy Birthday, but we <span class="uli">never</span> say <b><i>Merry Birthday</i></b>. It's grammatically correct, and it's communicative, but we never say it.</p>
 
     <p>Another example would be <span class="font-weight-bold text-primary">verbs</span> that go together with <span class="font-weight-bold text-success">nouns</span>. Here is an example from Bahasa Indonesia.</p>
 
@@ -78,3 +93,12 @@
     
 
 </div>
+
+
+<style>
+.my-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2px;
+}
+</style>
