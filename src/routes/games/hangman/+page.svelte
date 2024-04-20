@@ -111,62 +111,62 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 <div class="container">
 
-<h1 class="text-center my-1">AWL Hangman</h1>
+    <h1 class="text-center my-1">AWL Hangman</h1>
 
-<div class="gaps">{@html blanks}</div>
+    <div class="gaps">{@html blanks}</div>
 
-{#if done}
-    <button class="btn btn-outline-dark" on:click={nextWord}>next</button>
-{/if}
+    {#if done}
+        <button class="btn btn-outline-dark" on:click={nextWord}>next</button>
+    {/if}
 
     {#if showDictionary}
         <Dictionary bind:word="{word}" mode="hangman" />
     {/if}
 
-<div class="gallows">
-    {#each cats as cat, index}
-        <div style="margin:0px 2px;">
-            {#if cats.length < 2}
-                <EmojiGrimace width={iconSize} height={iconSize} />
-            {:else if cats.length < 4}
-                <EmojiFrown width={iconSize} height={iconSize} />
-            {:else if cats.length < 6}
-                <EmojiNeutral width={iconSize} height={iconSize} />
-            {:else}
-                <EmojiSmile width={iconSize} height={iconSize} />
-            {/if}
-        </div>
-    {/each}
-</div>
+    <div class="gallows">
+        {#each cats as cat, index}
+            <div>
+                {#if cats.length < 2}
+                    <EmojiGrimace width={iconSize} height={iconSize} />
+                {:else if cats.length < 4}
+                    <EmojiFrown width={iconSize} height={iconSize} />
+                {:else if cats.length < 6}
+                    <EmojiNeutral width={iconSize} height={iconSize} />
+                {:else}
+                    <EmojiSmile width={iconSize} height={iconSize} />
+                {/if}
+            </div>
+        {/each}
+    </div>
 
-<div class="letters">
-    <div class="letter" id="a" on:click={tryLetter}>a</div>
-    <div class="letter" id="b" on:click={tryLetter}>b</div>
-    <div class="letter" id="c" on:click={tryLetter}>c</div>
-    <div class="letter" id="d" on:click={tryLetter}>d</div>
-    <div class="letter" id="e" on:click={tryLetter}>e</div>
-    <div class="letter" id="f" on:click={tryLetter}>f</div>
-    <div class="letter" id="g" on:click={tryLetter}>g</div>
-    <div class="letter" id="h" on:click={tryLetter}>h</div>
-    <div class="letter" id="i" on:click={tryLetter}>i</div>
-    <div class="letter" id="j" on:click={tryLetter}>j</div>
-    <div class="letter" id="k" on:click={tryLetter}>k</div>
-    <div class="letter" id="l" on:click={tryLetter}>l</div>
-    <div class="letter" id="m" on:click={tryLetter}>m</div>
-    <div class="letter" id="n" on:click={tryLetter}>n</div>
-    <div class="letter" id="o" on:click={tryLetter}>o</div>
-    <div class="letter" id="p" on:click={tryLetter}>p</div>
-    <div class="letter" id="q" on:click={tryLetter}>q</div>
-    <div class="letter" id="r" on:click={tryLetter}>r</div>
-    <div class="letter" id="s" on:click={tryLetter}>s</div>
-    <div class="letter" id="t" on:click={tryLetter}>t</div>
-    <div class="letter" id="u" on:click={tryLetter}>u</div>
-    <div class="letter" id="v" on:click={tryLetter}>v</div>
-    <div class="letter" id="w" on:click={tryLetter}>w</div>
-    <div class="letter" id="x" on:click={tryLetter}>x</div>
-    <div class="letter" id="y" on:click={tryLetter}>y</div>
-    <div class="letter" id="z" on:click={tryLetter}>z</div>
-</div>
+    <div class="letters">
+        <div class="letter" id="a" on:click={tryLetter}>a</div>
+        <div class="letter" id="b" on:click={tryLetter}>b</div>
+        <div class="letter" id="c" on:click={tryLetter}>c</div>
+        <div class="letter" id="d" on:click={tryLetter}>d</div>
+        <div class="letter" id="e" on:click={tryLetter}>e</div>
+        <div class="letter" id="f" on:click={tryLetter}>f</div>
+        <div class="letter" id="g" on:click={tryLetter}>g</div>
+        <div class="letter" id="h" on:click={tryLetter}>h</div>
+        <div class="letter" id="i" on:click={tryLetter}>i</div>
+        <div class="letter" id="j" on:click={tryLetter}>j</div>
+        <div class="letter" id="k" on:click={tryLetter}>k</div>
+        <div class="letter" id="l" on:click={tryLetter}>l</div>
+        <div class="letter" id="m" on:click={tryLetter}>m</div>
+        <div class="letter" id="n" on:click={tryLetter}>n</div>
+        <div class="letter" id="o" on:click={tryLetter}>o</div>
+        <div class="letter" id="p" on:click={tryLetter}>p</div>
+        <div class="letter" id="q" on:click={tryLetter}>q</div>
+        <div class="letter" id="r" on:click={tryLetter}>r</div>
+        <div class="letter" id="s" on:click={tryLetter}>s</div>
+        <div class="letter" id="t" on:click={tryLetter}>t</div>
+        <div class="letter" id="u" on:click={tryLetter}>u</div>
+        <div class="letter" id="v" on:click={tryLetter}>v</div>
+        <div class="letter" id="w" on:click={tryLetter}>w</div>
+        <div class="letter" id="x" on:click={tryLetter}>x</div>
+        <div class="letter" id="y" on:click={tryLetter}>y</div>
+        <div class="letter" id="z" on:click={tryLetter}>z</div>
+    </div>
 
 </div>
 
@@ -189,12 +189,10 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     .gallows {
         font-size: 1.2rem;
-        width: 350px;
-        margin: 0px auto;
+        margin: 10px 0px;
         text-align: center;
-        margin-top:20px;
-        margin-bottom:20px;
         display:flex;
+        column-gap:3px;
         justify-content: center;
     }
 
