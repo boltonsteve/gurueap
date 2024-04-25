@@ -1,11 +1,10 @@
 <script>
     import SvelteSeo from "svelte-seo"
-
 </script>
 
 <SvelteSeo
   title="GuruEAP Teachers"
-  description="Classroom activities for use by teachers."
+  description="Classroom resources for use by teachers."
 />
 
 <nav>
@@ -67,6 +66,11 @@
         </div>
 
         <div>
+
+            <h3>Books</h3>
+            <ul>
+                <li><a href="../t/thinking" target="_blank">Thinking from A-Z</a><br><span class="penjelasan">By Nigel Warburton</span>
+            </ul>
 
             <h3>Essay planning</h3>
             <ul>
