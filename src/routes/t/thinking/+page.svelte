@@ -796,10 +796,10 @@ const handleClick = (e) => {
 
 <div id="last" on:click={handleClick}>{last}</div>
 
-<div id="cols">
+<div id="cols" class="mt-0 pt-0">
 
     <div id="article" on:click={handleClick}>
-        <h3>{article.title}</h3><div>{@html article.text.replace(/"target/g,'"target font-weight-bold')}</div>
+        <h3 class="mt-0 pt-0">{article.title}</h3><div>{@html article.text.replace(/"target/g,'"target font-weight-bold')}</div>
     </div>
     <div id="menu">
         {#each titles as next}
@@ -813,6 +813,8 @@ const handleClick = (e) => {
         font-family:arial;
     }
     #last {
+        margin-top:15px;
+        margin-bottom: 0px;
         cursor: pointer;
         font-weight: bold;
     }
