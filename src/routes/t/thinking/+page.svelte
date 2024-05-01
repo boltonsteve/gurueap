@@ -58,7 +58,7 @@ const az = [
     },
     {
         title: "antecedent",
-        text: "<p>The first part of an 'if ...then' statement (see <span class=\"target\">conditional statement</span>). For example, in 'If you spend too long at the computer screen then you'll get eye strain', the antecedent is 'you spend too long at the computer screen'.</p><p>See <span class=\"target\">affirming the antecedent</span>, <span class=\"target\">affirming the consequent</span>, <span class=\"target\">consequent</span>, <span class=\"target\">denying the antecedent</span>, <span class=\"target\">denying the consequent</span>.</p>"
+        text: "<p>The first part of an 'if ...then' statement (see <span class=\"target\">conditional statements</span>). For example, in 'If you spend too long at the computer screen then you'll get eye strain', the antecedent is 'you spend too long at the computer screen'.</p><p>See <span class=\"target\">affirming the antecedent</span>, <span class=\"target\">affirming the consequent</span>, <span class=\"target\">consequent</span>, <span class=\"target\">denying the antecedent</span>, <span class=\"target\">denying the consequent</span>.</p>"
     },
     {
         title: "appeals to authority",
@@ -158,7 +158,7 @@ const az = [
     },
     {
         title: "consequent",
-        text: "<p>The second part of an 'if...then' statement (see <span class=\"target\">conditional statement</span>). For example, in If you spend too long in front of the computer screen then you'll get eye strain', the consequent is 'you'll get eye strain'.</p><p>See <span class=\"target\">antecedent</span>, <span class=\"target\">affirming the antecedent</span>, <span class=\"target\">affirming the consequent</span>, <span class=\"target\">denying the antecedent</span>, <span class=\"target\">denying the consequent</span>.</p>"
+        text: "<p>The second part of an 'if...then' statement (see <span class=\"target\">conditional statements</span>). For example, in If you spend too long in front of the computer screen then you'll get eye strain', the consequent is 'you'll get eye strain'.</p><p>See <span class=\"target\">antecedent</span>, <span class=\"target\">affirming the antecedent</span>, <span class=\"target\">affirming the consequent</span>, <span class=\"target\">denying the antecedent</span>, <span class=\"target\">denying the consequent</span>.</p>"
     },
     {
         title: "consistency",
