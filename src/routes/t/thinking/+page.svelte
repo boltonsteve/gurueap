@@ -18,7 +18,7 @@ const az = [
     },
     {
         title: "ad hoc clauses",
-        text: "<p>Clauses added to a <span class=\"target\">hypothesis</span> to make the hypothesis consistent with some new observation or discovered fact. If your hypothesis is threatened by some inconvenient fact which it is incapable of explaining, you have two options: you can either abandon your hypothesis and seek a new one which <i>is</i> capable of explaining this new fact; or else you can add a special clause to your general hypothesis, an <i>ad hoc</i> clause. Patching up a hypothesis is a move which can be acceptable, but often is not.</p><p>This is most clearly seen by considering examples.</p><p>A politician might claim that if the rich are encouraged to grow richer then the poorest of the nation will benefit because the wealth that the rich generate will gradually trickle down to the poor. For the sake of argument, suppose (see <span class=\"target\">supposition</span>) that a five-year study showed that no such trickle-down effect occurred. The politician might then be expected to abandon the initial hypothesis. However, another option would be to add a special clause to the hypothesis to prevent the evidence presented by the study standing as a <span class=\"target\">refutation</span> of it. For instance, the new hypothesis could be, 'If the rich are encouraged to grow richer then the poorest of the nation will benefit because the wealth that the rich generate will gradually trickle down to the poor, <i>but the effects of this will not be visible in the first five years</i>.' If the country in question was just coming out of a recession, a different <i>ad hoc</i> clause could be appended: <i>'but the effects of encouraging the rich to become richer will be masked by the effects of a recession.'</i> A biologist might begin with the hypothesis that all independent living organisms are either unicellular (consist of a single cell) or multicellular (have many cells). However, the existence of a bizarre animal, known as slime mould, confounds this hypothesis, revealing it as a <span class=\"target\">false dichotomy</span> since at one stage slime mould is an independent unicellular organism and at another stage of its development it combines with other unicellular slime moulds to form a multicellular organism.</p><p>The existence of slime mould confounds the hypothesis. In the light of this, the biologist might modify the initial hypothesis to, 'All independent living organisms <i>except slime mould</i> are either unicellular or multicellular.' This would be an acceptable modification; however, if there were a large number of species which, like slime mould, defied the simple dichotomy in the hypothesis then adding further <i>ad hoc</i> clauses would at a certain point undermine the power of the generalisation.</p><p>There is a fine line between making a hypothesis more detailed in the light of further evidence and undermining its power as a generalisation by adding numerous exception clauses.</p>"
+        text: "<p>Clauses added to a <span class=\"target\">hypothesis</span> to make the hypothesis consistent with some new observation or discovered fact. If your hypothesis is threatened by some inconvenient fact which it is incapable of explaining, you have two options: you can either abandon your hypothesis and seek a new one which <i>is</i> capable of explaining this new fact; or else you can add a special clause to your general hypothesis, an <i>ad hoc</i> clause. Patching up a hypothesis is a move which can be acceptable, but often is not.</p><p>This is most clearly seen by considering examples.</p><p>A politician might claim that if the rich are encouraged to grow richer then the poorest of the nation will benefit because the wealth that the rich generate will gradually trickle down to the poor. For the sake of argument, suppose (see <span class=\"target\">supposition</span>) that a five-year study showed that no such trickle-down effect occurred. The politician might then be expected to abandon the initial hypothesis. However, another option would be to add a special clause to the hypothesis to prevent the evidence presented by the study standing as a <span class=\"target\">refutation</span> of it. For instance, the new hypothesis could be, 'If the rich are encouraged to grow richer then the poorest of the nation will benefit because the wealth that the rich generate will gradually trickle down to the poor, <i>but the effects of this will not be visible in the first five years</i>.' If the country in question was just coming out of a recession, a different <i>ad hoc</i> clause could be appended: <i>'but the effects of encouraging the rich to become richer will be masked by the effects of a recession.'</i></p><p>A biologist might begin with the hypothesis that all independent living organisms are either unicellular (consist of a single cell) or multicellular (have many cells). However, the existence of a bizarre animal, known as slime mould, confounds this hypothesis, revealing it as a <span class=\"target\">false dichotomy</span> since at one stage slime mould is an independent unicellular organism and at another stage of its development it combines with other unicellular slime moulds to form a multicellular organism. The existence of slime mould confounds the hypothesis. In the light of this, the biologist might modify the initial hypothesis to, 'All independent living organisms <i>except slime mould</i> are either unicellular or multicellular.' This would be an acceptable modification; however, if there were a large number of species which, like slime mould, defied the simple dichotomy in the hypothesis then adding further <i>ad hoc</i> clauses would at a certain point undermine the power of the generalisation.</p><p>There is a fine line between making a hypothesis more detailed in the light of further evidence and undermining its power as a generalisation by adding numerous exception clauses.</p>"
     },
     {
         title: "ad hominem move",
@@ -775,11 +775,15 @@ const az = [
 let titles = az.map( next => {
     return next.title;
 })
+
 // Article
 let article = az[0];
+let last = '';
+let title = '';
 
 const handleClick = (e) => {
-    let title = e.target.innerText;
+    last = article.title;
+    title = e.target.innerText;
     az.forEach( (next,i) => {
         if(next.title == title) {
             article = next;
@@ -790,7 +794,10 @@ const handleClick = (e) => {
 
 </script>
 
+<div id="last" on:click={handleClick}>{last}</div>
+
 <div id="cols">
+
     <div id="article" on:click={handleClick}>
         <h3>{article.title}</h3><div>{@html article.text.replace(/"target/g,'"target font-weight-bold')}</div>
     </div>
@@ -803,7 +810,11 @@ const handleClick = (e) => {
 
 <style>
     * {
-         font-family:arial;
+        font-family:arial;
+    }
+    #last {
+        cursor: pointer;
+        font-weight: bold;
     }
     .target {
         font-weight:bold;
