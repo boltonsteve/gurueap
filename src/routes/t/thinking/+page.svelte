@@ -832,8 +832,9 @@ const handleSelect = (e) => {
     }
     #last {
         cursor:pointer;
-        font-size:1.3rem;
-        margin-bottom: 15px;
+        font-size:1.2rem;
+        padding: 8px 0px;
+        margin: 0px;
     }
     * {
         font-family:arial;
@@ -859,19 +860,20 @@ const handleSelect = (e) => {
     #article {
         max-width:600px;
         margin:0px auto;
+        font-size: 1rem;
     }
     #menu {
         width: 100%;
         font-weight: bold;
-        font-size: 1.5rem;
-        padding:3px;
-        text-align: center;
-        height: 50px;
+        font-size: 1.3rem;
+        /* padding:3px; */
         background: #FBFBFB;
         color: #333333;
-        margin-bottom:15px;
+        /* margin-bottom:15px; */
     }
-    option {
-        padding: 10px;
+    select {
+        height:50px;
+        text-align: center;
+        border-radius: 5px;
     }
 </style>
