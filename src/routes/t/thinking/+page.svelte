@@ -865,7 +865,7 @@ const handleSelect = (e) => {
     #menu {
         width: 100%;
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         /* padding:3px; */
         background: #FBFBFB;
         color: #333333;
