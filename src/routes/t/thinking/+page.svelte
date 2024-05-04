@@ -813,8 +813,8 @@ const handleSelect = (e) => {
 
 <div id="article">
     <div class="sticky-div">
-        <h5 id="last" on:click={handleClick} class="bg-light text-secondary mb-1 text-center">{last}</h5>
-        <select bind:value={selected} id="menu" on:change={handleSelect}>
+        <h5 id="last" on:click={handleClick} class="bg-light text-secondary text-center">{last}</h5>
+        <select bind:value={selected} id="menu" class="mb-0" on:change={handleSelect}>
             {#each titles as next}
                 <option value="{next}">{next}</option>
             {/each}
@@ -833,6 +833,7 @@ const handleSelect = (e) => {
     #last {
         cursor:pointer;
         font-size:1.3rem;
+        margin-bottom: 15px;
     }
     * {
         font-family:arial;
@@ -862,8 +863,15 @@ const handleSelect = (e) => {
     #menu {
         width: 100%;
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding:3px;
         text-align: center;
+        height: 50px;
+        background: #FBFBFB;
+        color: #333333;
+        margin-bottom:15px;
+    }
+    option {
+        padding: 10px;
     }
 </style>
