@@ -821,7 +821,7 @@ const handleSelect = (e) => {
         </select>
     </div>
 
-    <div>{@html article.text.replace(/span/g,"span on:click={handleClick}")}</div>
+    <div on:click={handleClick}>{@html article.text.replace(/target"/g, 'target font-weight-bold"')}</div>
 </div>
 
 <style>
