@@ -278,7 +278,7 @@ const az = [
     },
     {
         title: "false charge of fallacy",
-        text: "<p>See 'that's a fallacy'.</p>"
+        text: "<p>See <span class=\"target\">that's a fallacy</span>.</p>"
     },
     {
         title: "false dichotomy",
@@ -689,11 +689,11 @@ const az = [
         text: "<p>See <span class=\"target\">jargon</span>.</p>"
     },
     {
-        title: "'that's a fallacy'",
+        title: "that's a fallacy",
         text: "<p>The manoeuvre of falsely accusing someone of committing a fallacy (see <span class=\"target\">formal fallacy</span> and <span class=\"target\">informal fallacy</span>). It is a form of <span class=\"target\">rhetoric</span> which can be particularly pernicious. If you are putting forward a case and someone confidently declares that what you have just said involves a number of fallacies, then you may be tempted to back down, giving your attacker the benefit of the doubt. But the onus should be on those who accuse others of fallacious reasoning to spell out precisely why they believe this to be a fair charge, otherwise the charge is at best vague (see <span class=\"target\">vagueness</span>). The situation is made more complicated because of the <span class=\"target\">ambiguity</span> of the word 'fallacy'; it can mean invalid reasoning, an unreliable pattern of argument, or, in some contexts it may simply be shorthand for 'I disagree with your last statement'. This latter use, like the increasingly common use of '<span class=\"target\">begging the question</span>' to mean 'suggests the question', should be avoided as it muddies the important distinction between a statement being thought false and a form of argument being fallacious.  The best defence against a claim that you have used a fallacy is to request an explanation of the charge from anyone who makes it.</p>"
     },
     {
-        title: "'that's a value judgement'",
+        title: "that's a value judgement",
         text: "<p>A statement sometimes mistakenly treated by its utterer as a <span class=\"target\">knockdown argument</span> against what has just been said. The assumption so obviously being made by those who use this phrase to silence debate is that, for some usually unspecified reason, value judgements are not permitted in rational argument.</p><p>So, for example, in a debate about which authors' work should be included in the school curriculum one teacher might say 'The reason why we include <i>King Lear</i> on the curriculum is that it is a great play'. The response 'That's a value judgement' may then be heard. But the person using the words 'great play' undoubtedly realises that he or she is making a value judgement: that is the point of the statement. If the responder's implicit view is that it is a mistaken value judgment, then the onus is on him or her to provide evidence to back up this claim. Simply declaring that a judgement has been made in no way refutes the particular judgement, nor in most cases does it rule it out of court. Similarly, the person who declares <i>King Lear</i> 'a great play' needs to provide some evidence to support this view.</p><p>The idea that we should not make value judgements is not an easy position to defend in any context since almost every aspect of our lives which we are likely to argue about is infused with values: we make implicit value judgements in nearly everything we say. There is rarely any justification for deeming value judgements impermissible. The statement 'that's a value judgement' can itself be construed as a value judgement: it is a judgement that what has just been said is worthless because it makes a value judgement. The act of deeming worthless itself involves a value judgement, so this position is selfrefuting.</p>"
     },
     {
@@ -794,7 +794,7 @@ const handleClick = (e) => {
 
 </script>
 
-<div id="last" on:click={handleClick}>{last}</div>
+<div id="last" on:click={handleClick}><h3 class="m-0 p-0 text-info">{last}</h3></div>
 
 <div id="cols" class="mt-0 pt-0">
 
@@ -813,6 +813,9 @@ const handleClick = (e) => {
         font-family:arial;
     }
     #last {
+        position: absolute;
+        top:0px;
+        left: 20px;
         margin-top:15px;
         margin-bottom: 0px;
         cursor: pointer;
@@ -836,8 +839,11 @@ const handleClick = (e) => {
         margin-top:0px;
     }
     #article, #menu {
-        height:100vh;
-        overflow:auto;
+        height:95vh;
+        overflow:scroll;
+    }
+    #article {
+        padding-top:40px;
     }
     #menu > div {
         margin-bottom:5px;
