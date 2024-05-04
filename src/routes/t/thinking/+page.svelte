@@ -781,46 +781,61 @@ let article = az[0];
 let last = '';
 let title = '';
 
+let selected;
+
 const handleClick = (e) => {
-    last = article.title;
-    title = e.target.innerText;
+    last = selected;
+    selected = e.target.innerText;
+    console.log("selected: " + selected);
     az.forEach( (next,i) => {
-        if(next.title == title) {
+        if(next.title == selected) {
             article = next;
             articleDiv.scrollTo({ top: 0, behavior: 'smooth' });
         }
     })
 }
 
+const handleSelect = (e) => {
+    last = article.title;
+    selected = e.target.value;
+    /* console.log("selected: " + selected); */
+    az.forEach( (next,i) => {
+        if(next.title == selected) {
+            article = next;
+            articleDiv.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    })
+}
+
+
 </script>
 
-<div id="last" on:click={handleClick}><h3 class="m-0 px-2 py-1 text-secondary bg-light">{last}</h3></div>
 
-<div id="cols" class="mt-0 pt-0">
+<div id="article">
+    <div class="sticky-div">
+        <h5 id="last" on:click={handleClick} class="bg-light text-secondary mb-1 text-center">{last}</h5>
+        <select bind:value={selected} id="menu" on:change={handleSelect}>
+            {#each titles as next}
+                <option value="{next}">{next}</option>
+            {/each}
+        </select>
+    </div>
 
-    <div id="article" on:click={handleClick}>
-        <h3 class="mt-0 pt-0">{article.title}</h3><div>{@html article.text.replace(/"target/g,'"target font-weight-bold')}</div>
-    </div>
-    <div id="menu">
-        {#each titles as next}
-            <div class="target" on:click={handleClick}>{next}</div>
-        {/each}
-    </div>
+    <div>{@html article.text.replace(/span/g,"span on:click={handleClick}")}</div>
 </div>
 
 <style>
-    * {
-        font-family:arial;
+    .sticky-div {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
     }
     #last {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        /* margin-bottom: 0px; */
-        cursor: pointer;
-        font-weight: bold;
-        width: 100%;
-        max-width:900px;
+        cursor:pointer;
+        font-size:1.3rem;
+    }
+    * {
+        font-family:arial;
     }
     .target {
         font-weight:bold;
@@ -840,12 +855,15 @@ const handleClick = (e) => {
         margin-top:0px;
         padding-top:0px;
     }
-    #article, #menu {
-        height:95vh;
-        overflow:scroll;
-        padding-top:35px;
+    #article {
+        max-width:600px;
+        margin:0px auto;
     }
-    #menu > div {
-        margin-bottom:5px;
+    #menu {
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding:3px;
+        text-align: center;
     }
 </style>
