@@ -778,10 +778,9 @@ let titles = az.map( next => {
 
 // Article
 let article = az[0];
-let last = '';
-let title = '';
-
-let selected;
+let selected,last;
+/* let title = ''; */
+/* let selected; */
 
 const handleClick = (e) => {
     last = selected;
@@ -807,37 +806,53 @@ const handleSelect = (e) => {
     })
 }
 
+    /* document.body.style.background = "#0093AF"; */
+    /* document.body.style.color = "#FBFBFB"; */
 
 </script>
 
 
 <div id="article">
     <div class="sticky-div">
-        <h5 id="last" on:click={handleClick} class="bg-light text-secondary text-center">{last}</h5>
-        <select bind:value={selected} id="menu" class="mb-0" on:change={handleSelect}>
-            {#each titles as next}
-                <option value="{next}">{next}</option>
-            {/each}
-        </select>
+        {#if last}
+            <h5 id="last" on:click={handleClick} class="bg-light text-secondary text-center">{last}</h5>
+        {/if}
+        <div id="menu_div">
+            <select bind:value={selected} id="menu" on:change={handleSelect}>
+                {#each titles as next}
+                    <option value="{next}">{next}</option>
+                {/each}
+            </select>
+        </div>
     </div>
 
     <div on:click={handleClick}>{@html article.text.replace(/target"/g, 'target font-weight-bold"')}</div>
 </div>
 
 <style>
+    * {
+        font-family:arial;
+    }
     .sticky-div {
         position: -webkit-sticky; /* Safari */
         position: sticky;
-        top: 0;
+        top: 0px;
+
+        padding: 0px 0px 0px 0px;
     }
     #last {
         cursor:pointer;
         font-size:1.2rem;
-        padding: 8px 0px;
-        margin: 0px;
+        padding: 15px 0px 15px 0px;
+        margin:0px;
+        background: #FBFBFB;
     }
-    * {
-        font-family:arial;
+    #menu {
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.2rem;
+        background: #FBFBFB;
+        color: #333333;
     }
     .target {
         font-weight:bold;
@@ -858,22 +873,13 @@ const handleSelect = (e) => {
         padding-top:0px;
     }
     #article {
-        max-width:600px;
+        max-width:500px;
         margin:0px auto;
         font-size: 1rem;
-    }
-    #menu {
-        width: 100%;
-        font-weight: bold;
-        font-size: 1.2rem;
-        /* padding:3px; */
-        background: #FBFBFB;
-        color: #333333;
-        /* margin-bottom:15px; */
     }
     select {
         height:50px;
         text-align: center;
-        border-radius: 5px;
+        border: 0px;
     }
 </style>
