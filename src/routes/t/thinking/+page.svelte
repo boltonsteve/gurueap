@@ -794,7 +794,7 @@ const handleClick = (e) => {
 
 </script>
 
-<div id="last" on:click={handleClick}><h3 class="m-0 p-0 text-info">{last}</h3></div>
+<div id="last" on:click={handleClick}><h3 class="m-0 px-2 py-1 text-secondary bg-light">{last}</h3></div>
 
 <div id="cols" class="mt-0 pt-0">
 
@@ -816,11 +816,11 @@ const handleClick = (e) => {
         position: absolute;
         top: 0px;
         left: 0px;
-        margin-bottom: 0px;
+        /* margin-bottom: 0px; */
         cursor: pointer;
         font-weight: bold;
-        padding: 7px 7px 7px 15px;
         width: 100%;
+        max-width:900px;
     }
     .target {
         font-weight:bold;
