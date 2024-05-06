@@ -30,7 +30,7 @@
             ],
             "bottom":[
                 "She returned the computer after she noticed it was damaged.",
-                "After she returned the computer, she noticed it was damaged."
+                "After she noticed the computer was damaged, she returned it."
             ]
         },
         {
@@ -41,7 +41,7 @@
             ],
             "bottom":[
                 "When the cost goes up, customers buy less clothing.",
-                "The cost goes up when customers buy less clothing."
+                "Customers buy less clothing when the cost goes up."
             ]
         },
         {
@@ -85,7 +85,7 @@
             ],
             "bottom":[
                 "Evergreen trees are a symbol of fertility because they do not die in the winter.",
-                "Because they do not die in the winter, evergreen trees are a symbol of fertility."
+                "Because evergreen trees do not die in the winter, they are a symbol of fertility."
             ]
         },
         {
@@ -107,7 +107,7 @@
             ],
             "bottom":[
                 "The museum was very interesting, as I expected.",
-                "As i expected, the museum was very interesting."
+                "As I expected, the museum was very interesting."
             ]
         },
         {
