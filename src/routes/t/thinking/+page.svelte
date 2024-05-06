@@ -833,7 +833,7 @@ const handleSelect = (e) => {
         /* font-family:calibri; */
         /* font-family:garamond; */
         /* font-family:cambria; */
-        max-width:420px;
+        max-width:500px;
         margin:0px auto;
     }
     #last {
