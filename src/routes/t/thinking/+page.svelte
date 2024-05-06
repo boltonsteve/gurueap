@@ -841,7 +841,7 @@ const handleSelect = (e) => {
     }
     #article {
         font-size: 1.2rem;
-        text-align: justify;
+        /* text-align: justify; */
     }
     .sticky-div {
         position: -webkit-sticky; /* Safari */
