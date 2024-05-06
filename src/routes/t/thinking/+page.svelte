@@ -824,9 +824,23 @@ const handleSelect = (e) => {
     <div id="article" on:click={handleClick}>
         {@html article.text.replace(/target"/g, 'target text-success font-weight-bold"')}
     </div>
+
+    <div id="image">
+        <img src="../../img/thinking.png" alt="thinking">
+    </div>
+
 </div>
 
 <style>
+    #image {
+        display:flex;
+        justify-content: center;
+        margin:15px auto;
+    }
+    img {
+        max-width:200px;
+        border-radius: 5px;
+    }
     #container {
         font-family:times;
         /* font-family:arial; */
