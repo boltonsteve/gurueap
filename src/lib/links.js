@@ -682,7 +682,7 @@ export const links = [
     {
         title: "Parallel Structures",
         href: "posts/parallel",
-        keywords: ['grammar','coherence and cohesion']
+        keywords: ['grammar','coherence and cohesion','parallelism']
     },
     {
         title: "Could or Can",
