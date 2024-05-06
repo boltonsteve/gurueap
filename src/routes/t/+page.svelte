@@ -59,6 +59,9 @@
             <h3>Writing scaffolds</h3>
             <ul>
                 <li>
+                    <a href="../t/stress" target="_blank">IELTS stress</a>
+                </li>
+                <li>
                     <a href="../t/consumerism" target="_blank">consumerism</a>
                 </li>
             </ul>

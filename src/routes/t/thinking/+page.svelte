@@ -836,10 +836,11 @@ const handleSelect = (e) => {
         max-width:420px;
         margin:0px auto;
     }
-    #article, #last {
+    #last {
         font-size: 1rem;
     }
     #article {
+        font-size: 1.2rem;
         text-align: justify;
     }
     .sticky-div {
