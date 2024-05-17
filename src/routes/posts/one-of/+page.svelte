@@ -9,6 +9,9 @@
 
 <div class="mb-3 mw-500">
 
+
+    <img src="/img/one-of.png" class="img-fluid rounded" alt="one of">
+
     <h1>One of</h1>
 
     <div class="alert alert-danger font-italic">Euthanasia may be <span class="font-weight-bold text-danger">one of</span> ways to deliver health resources fairly to people who still want to live. </div>
