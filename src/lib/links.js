@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "As 'sebagai'",
+        href: "posts/sebagai",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Discouraging Indonesians from directly translating 'sebagai'!"
+    },
+    {
         title: "Elder, elderly, older people",
         href: "posts/elderly",
         keywords: ['vocabulary','age language'],
