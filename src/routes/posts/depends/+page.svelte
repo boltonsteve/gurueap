@@ -32,7 +32,14 @@
         </ul>
     </div>
 
-    <p>In these examples, adjectives give information about nouns: <b><i>red</i></b> tells us about <b><i>Roses</i></b>, <b><i>tired</i></b> tells us about <b><i>I</i></b>, etc. Notice that the verb <b><i>to be</i></b> needs to 'agree' with the subject:</p>
+    <p>In these examples, adjectives give information about nouns:</p>
+
+    <ul class="my-0" style="list-style-type:none;">
+        <li><b><i>red</i></b> tells us about <b><i>Roses</i></b></li>
+        <li><b><i>tired</i></b> tells us about <b><i>I</i></b></li>
+    </ul>
+
+    <p>Notice that the verb <b><i>to be</i></b> needs to 'agree' with the subject:</p>
 
     <ul class="my-0" style="list-style-type:none;">
         <li><b><i>Are</i></b> agrees with <b><i>Roses</i></b> (3rd person plural)</li>
@@ -56,7 +63,7 @@
 <p>In these examples, nouns give information about other nouns:</p>
 
     <ul class="my-0 font-italic" style="list-style-type:none;">
-        <li><b><i>Doctor</i></b> gives information about <b><i>I</i></b></li>
+        <li><b><i>doctor</i></b> gives information about <b><i>I</i></b></li>
         <li><b><i>office chairs</i></b> gives information about <b><i>these chairs</i></b></li>
     </ul>
 
