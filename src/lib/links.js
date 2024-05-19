@@ -32,7 +32,7 @@ export const links = [
     {
         title: "In terms of #2",
         href: "posts/in-terms-of-2",
-        keywords: ['vocabulary','coherence cohesion'],
+        keywords: ['vocabulary','coherence and cohesion'],
         description: "Taking care to avoid repetition when using 'in terms of'."
     },
     {
@@ -639,7 +639,7 @@ export const links = [
     {
         title: "One of",
         href: "posts/one-of",
-        keywords: ['grammar','quantifiers','Bahasa Indonesia']
+        keywords: ['grammar','quantifiers','Bahasa Indonesia','articles']
     },
     {
         title: "Present tenses explained",
@@ -755,7 +755,7 @@ export const links = [
     {
         title: "When 'become' is NOT becoming",
         href: "posts/become",
-        keywords: ["Bahasa Indonesia","change(s) over time","vocabulary"]
+        keywords: ["Bahasa Indonesia","changes over time","vocabulary"]
     },
     {
         title: "Youths and young people",

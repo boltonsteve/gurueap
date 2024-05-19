@@ -20,8 +20,6 @@
 
     <p>Let’s take a look at some structures that use <b><i>to be</i></b> and think about those that do not.</p>
 
-    <hr>
-
     <h2>‘to be’ + adjective</h2>
 
     <div class="alert alert-success">
@@ -48,8 +46,6 @@
 
     <WithIcon icon="info" position="right" msg='If you are not familiar with the conjugation of verbs (1st person, 2nd person, etc.), see <a href="https://www.grammarly.com/blog/verb-conjugation/" target="_blank">here</a>.' />
 
-    <hr>
-
     <h2>‘to be’ + noun</h2>
 
 <div class="alert alert-success">
@@ -75,8 +71,6 @@
         </li>
     </ul>
 
-    <hr>
-
     <h2>‘to be’ + preposition phrase</h2>
 
     <div class="alert alert-success">
@@ -94,8 +88,6 @@
         <li><b><i>on the back of the truck</i></b> tells us about <b><i>The chairs</i></b></li>
     </ul>
 
-    <hr>
-
     <h2 class="text-danger">‘to be’ + verb</h2>
 
     <p>In our opening example, <span class="text-danger font-weight-bold">to be</span> is put before the verb <span class="text-primary font-weight-bold">depend</span> (V1).</p>
@@ -112,7 +104,7 @@
         </ul>
     </div>
 
-    <WithIcon icon="warning" position="right" msg="Notice the tense may be past, present or future!<br>And always make sure that subjects ‘agree’ with verbs:<ul><li>My brother (singular) + 'is' (NOT 'are')</li><li>they (plural) + 'were' (NOT 'was')</li></ul>" />
+    <WithIcon icon="info" position="right" msg="Notice the tense may be past, present or future!<br>And always make sure that subjects ‘agree’ with verbs:<ul><li>My brother (singular) + 'is' (NOT 'are')</li><li>they (plural) + 'were' (NOT 'was')</li></ul>" />
 
 </div>
 
