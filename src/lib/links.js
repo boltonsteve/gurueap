@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "It's depend",
+        href: "posts/depends",
+        keywords: ['vocabulary','grammar','subject verb agreement','Bahasa Indonesia'],
+        description: "Discouraging students from using 'to be' before V1."
+    },
+    {
         title: "As 'sebagai'",
         href: "posts/sebagai",
         keywords: ['vocabulary','Bahasa Indonesia'],

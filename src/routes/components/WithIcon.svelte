@@ -41,9 +41,9 @@
 
 </script>
 
-<div class="my-1" class:item-left={right} class:item-right={left}>
+<div class="my-1 py-1" class:item-left={right} class:item-right={left}>
     {#if right}
-        <div id="html">{msg}<slot name="html"></slot></div>
+        <div id="html"><p class="m-0">{@html msg}</p><slot name="html"></slot></div>
     {/if}
     <div id="icon">
         {#if showBook}
@@ -75,7 +75,7 @@
         {/if}
     </div>
     {#if left}
-        <div id="html">{msg}<slot name="html"></slot></div>
+        <div id="html"><p class="m-0">{@html msg}</p><slot name="html"></slot></div>
     {/if}
 </div>
 
