@@ -18,7 +18,7 @@
 
     <WithIcon icon="flag" position="right" msg="Indonesian candidates often use <b><i>search</i></b> (memeriksa) when they mean <b><i>search for</i></b> (mencari)." />
 
-    <h3>Search</h3>
+    <h3 class="mt-0">Search</h3>
 
     <p>In the photograph at the top of the page, a policewoman is <b><i>searching</i></b> a car. She is not <b><i>searching for</i></b> the car - she has already found the car!</p>
 
