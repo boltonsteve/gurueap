@@ -40,7 +40,6 @@ h3 {
     margin-bottom:0px;
 }
 p {
-    /* padding-top:0px; */
     margin-top:0px;
 }
 </style>
