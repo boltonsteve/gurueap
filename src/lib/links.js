@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Search - Search for",
+        href: "posts/search",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Demonstrating the difference in meaning between 'search' and 'search for'."
+    },
+    {
         title: "It's depend",
         href: "posts/depends",
         keywords: ['vocabulary','grammar','subject verb agreement','Bahasa Indonesia'],
