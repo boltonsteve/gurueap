@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Humans are usually redundant",
+        href: "posts/redundant-humans",
+        keywords: ['vocabulary','Bahasa Indonesia','culture'],
+        description: "Highlighting the tendency for Indonesian IELTS candidates to mention humans when it is not necessary to do so."
+    },
+    {
         title: "Your yard is not 'wide'",
         href: "posts/yard",
         keywords: ['vocabulary','Bahasa Indonesia'],
