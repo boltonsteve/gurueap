@@ -40,5 +40,9 @@
 
     <img src="../img/pay.png" class="img-fluid mx-auto border p-1" alt="pay for" style="width:75%;">
 
+    <p>In our original example, then, we need:</p>
+
+    <div class="alert alert-success font-italic">In Australia I will need a lot of money to <span class="text-success font-weight-bold">pay for</span> my basic needs.</div>
+
 </div>
 
