@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Not Tuesday! Thursday!",
+        href: "posts/tuesday-thursday",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Demonstrating the grammar of 'pay'"
+    },
+    {
         title: "Paying (for) basic needs",
         href: "posts/pay",
         keywords: ['vocabulary','Bahasa Indonesia'],
