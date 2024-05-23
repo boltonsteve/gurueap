@@ -38,4 +38,37 @@
 
 <div class="alert alert-success font-italic">Euthanasia may be <span class="font-weight-bold text-success">a</span> way to deliver health resources fairly to people who still want to live.</div>
 
+
 </div>
+
+
+<!--I have also been a teacher in one of high schools in Padang.
+
+flag-of-indonesia This is a common mistake made by Indonesians desperate to translate ‘salah satu’ or maybe ‘sebuah’.
+
+In English, when we want to communicate ‘one of many’, we use the indefinite article ‘a/an’:
+
+I have also been a teacher at a high school in Padang.
+
+This is sometimes called ‘generic’ reference. The school in the example is not a particular school – we don’t yet know the name of the school, its address, etc. So far we’re just imagining a typical school. The image of the school in the writer’s mind will not be exactly the same as the image of the school in the reader’s mind, and that doesn’t matter.
+
+I might use ‘one of’ if I’m introducing more specific information about ‘a’ school. For example:
+
+There are many schools in Padang. One of them is close to my house.
+(information about the location of the school)
+
+Only one of the schools in Padang offers an international curriculum.
+(information about the curriculum of the school)
+
+I studied at one of the best schools in Padang.
+(information about the quality of the school)
+
+Notice also that ‘one of’ is followed by certain words, in particular:
+
+the / them (pronouns)
+these / those (demonstratives)
+my/his/their (possessives)
+superlative adjectives
+For more examples, click here.
+
+    As a general rule – if you’re talking generally (generically!), use ‘a/an’ for countable nouns. For uncountable nouns use ‘some’.-->

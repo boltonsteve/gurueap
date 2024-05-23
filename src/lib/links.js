@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Paying (for) basic needs",
+        href: "posts/pay",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Demonstrating the grammar of 'pay'"
+    },
+    {
         title: "Are the benefits beneficial?",
         href: "posts/benefit",
         keywords: ['vocabulary','Bahasa Indonesia'],
