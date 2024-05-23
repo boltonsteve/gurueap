@@ -11,6 +11,8 @@
 
 <div class="mb-3 mw-500">
 
+    <h1>Not tuesday! Thursday!</h1>
+
     <div class="dialogue">
         <div>Customer:</div>
         <div>Hi. I’ve come to collect one of the free iPhones.</div>
@@ -54,7 +56,7 @@
 <style>
     .dialogue {
         display:grid;
-        grid-template-columns: 70px 1fr;
+        grid-template-columns: 90px 1fr;
         gap: 10px;
         
     }
