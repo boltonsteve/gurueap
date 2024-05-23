@@ -30,13 +30,17 @@
 
     <img src="../img/redundant-humans.jpg" class="img-fluid mx-auto" alt="redundant humans" style="width:75%;">
 
-        <p>If I'm describing a manufacturing process from assembly to shipping, I would write:</p>
+    <p>If I'm describing a manufacturing process from assembly to shipping, I would simply write:</p>
 
     <div class="alert alert-success font-italic">Finally, goods are packaged ready for distribution.</div>
+
+    <p>In this case there is no need to mention the people/robots doing the packaging(often referred to as the <i>doer</i> or the <i>agent</i>). Notice I used <i>passive voice</i> (to be + V3) in order to achieve this.</p>
 
     <p>However, if I'm writing about automation and the threat to employment, I might write:</p>
 
     <div class="alert alert-success font-italic">In the automated process, goods are no longer packaged <span class="text-success font-weight-bold">by humans</span>. There are now <span class="text-success font-weight-bold">robots</span> for this purpose.</div>
+
+    <p>Here it is reasonable to mention the <i>doer</i>, or <i>agent</i>, since the <i>doer</i> - in this case robots - plays a key role in a social shift from human-powered to automated labour.</p>
 
 </div>
 
