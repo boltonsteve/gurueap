@@ -34,11 +34,11 @@
 
     <p>In the following picture, a man is <b><i>paying</i></b> a woman <b><i>for</i></b> some fruit:</p>
 
-    <img src="../img/pay-for.png" class="img-fluid" alt="pay for">
+    <img src="../img/pay-for.png" class="img-fluid mx-auto" alt="pay for" style="width:75%;">
 
     <p>In the next illustration, a man is <b><i>paying</i></b> some fruit. He’s giving money to the fruit:</p>
 
-    <img src="../img/pay.png" class="img-fluid" alt="pay for">
+    <img src="../img/pay.png" class="img-fluid mx-auto border" alt="pay for" style="width:75%;">
 
     <p>In our original example, then, we need:</p>
 
