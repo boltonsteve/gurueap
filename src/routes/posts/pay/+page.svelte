@@ -32,13 +32,13 @@
         <li>When you’re in town could you <b><i>pay</i></b> my electricity bill for me? Here’s the money. (<i>bayarkan</i>)</li>
     </ul>
 
-    <p>In the first picture (below), a man is <b><i>paying</i></b> a woman <b><i>for</i></b> some vegetables:</p>
+    <p>In the following picture, a man is <b><i>paying</i></b> a woman <b><i>for</i></b> some fruit:</p>
 
-    <img src="../img/pay-for.png" class="img-fluid mx-auto border p-1" alt="pay for" style="width:65%;">
+    <img src="../img/pay-for.png" class="img-fluid" alt="pay for">
 
-    <p>In the next illustration, a man is <b><i>paying</i></b> some fruit and vegetables. He’s giving money to the fruit and vegetables:</p>
+    <p>In the next illustration, a man is <b><i>paying</i></b> some fruit. He’s giving money to the fruit:</p>
 
-    <img src="../img/pay.png" class="img-fluid mx-auto border p-1" alt="pay for" style="width:75%;">
+    <img src="../img/pay.png" class="img-fluid" alt="pay for">
 
     <p>In our original example, then, we need:</p>
 

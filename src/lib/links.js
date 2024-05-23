@@ -1,9 +1,15 @@
 export const links = [
     {
+        title: "Change in graphs, tables and charts",
+        href: "posts/change-gtc",
+        keywords: ['GTC','task1','change'],
+        description: ""
+    },
+    {
         title: "Not Tuesday! Thursday!",
         href: "posts/tuesday-thursday",
-        keywords: ['vocabulary','Bahasa Indonesia'],
-        description: "Demonstrating the grammar of 'pay'"
+        keywords: ['pronunciation','Bahasa Indonesia'],
+        description: "Demonstrating the difference in pronunciation between 'tuesday and 'thursday'"
     },
     {
         title: "Paying (for) basic needs",
