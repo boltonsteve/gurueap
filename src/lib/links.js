@@ -1,5 +1,17 @@
 export const links = [
     {
+        title: "Your yard is not 'wide'",
+        href: "posts/yard",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Demonstrating to Indonesian candidates the correct translation for 'luas' (not 'wide'!)"
+    },
+    {
+        title: "Remember, Memorise, Reminder",
+        href: "posts/remember-memorise",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Demonstrating the difference in meaning between 'remember' and 'memorise'"
+    },
+    {
         title: "Search - Search for",
         href: "posts/search",
         keywords: ['vocabulary','Bahasa Indonesia'],
