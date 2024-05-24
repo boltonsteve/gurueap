@@ -1,9 +1,15 @@
 export const links = [
     {
+        title: "Two meanings of 'used to'",
+        href: "posts/used-to",
+        keywords: ['vocabulary','grammar'],
+        description: "Demonstrating the grammatical rules for 'used to'."
+    },
+    {
         title: "Change in graphs, tables and charts",
         href: "posts/change-gtc",
         keywords: ['GTC','task1','change'],
-        description: ""
+        description: "A warning about changes over time in bar charts and pie charts."
     },
     {
         title: "Not Tuesday! Thursday!",
