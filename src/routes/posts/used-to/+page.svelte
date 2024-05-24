@@ -33,7 +33,7 @@
 
     <h3 class="headroom">3. <span class="font-weight-bold font-italic text-primary">didn't</span> <span class="font-weight-bold font-italic text-success">use to</span> + <span class="font-weight-bold font-italic text-primary">V1</span></h3>
 
-    <p><b>If you mean</b> you <i>didn't</i> eat spicy food regularly in the past but now I <i>do</i>, then you need:</p>
+    <p><b>If you mean</b> you <i>didn't</i> eat spicy food regularly in the past but now you <i>do</i>, then you need:</p>
 
     <div class="alert alert-success font-italic">I <span class="font-weight-bold font-italic text-primary">didn't</span> <span class="text-success font-weight-bold"> use to</span> <span class="font-weight-bold font-italic text-primary">eat</span> spicy food.<ol style="list-style-type:none;" class="mb-0"><li class="text-danger">Notice there is no <b>d</b> on <b>used</b> in this negative!</li></ol></div>
 
