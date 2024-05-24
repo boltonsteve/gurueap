@@ -16,7 +16,7 @@
 
     <WithIcon icon="flag" position="right" msg="Translating 'pay' from Bahasa Indonesia is problematic." />
 
-    <ul>
+    <ul class="mt-0">
         <li>If I <b><i>pay</i></b> the shopkeeper, I give money to the shopkeeper.</li>
         <li>If I <b><i>pay for</i></b> the bananas, I give money to the shopkeeper.</li>
         <li>If I <b><i>pay</i></b> the shopkeeper <b><i>for</i></b> the bananas, I give money to the shopkeeper.</li>

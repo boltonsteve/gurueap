@@ -21,7 +21,7 @@ export const links = [
         title: "Are the benefits beneficial?",
         href: "posts/benefit",
         keywords: ['vocabulary','Bahasa Indonesia'],
-        description: "demonstrating the grammar involved with the word 'benefit'"
+        description: "Demonstrating the grammar involved with the word 'benefit'"
     },
     {
         title: "Humans are usually redundant",
