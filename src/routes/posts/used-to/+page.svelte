@@ -21,7 +21,7 @@
 
     <h3>1. <span class="font-weight-bold font-italic text-success">used to</span> + <span class="font-weight-bold font-italic text-primary">___ing</span></h3>
 
-    <p><b>If you mean</b> that you <i>don't</i> eat spicy food <i>very often</i> and when you do, then your stomach hurts, then you need:</p>
+    <p><b>If you mean</b> that you <i>don't</i> eat spicy food <i>very often</i> and when you do your stomach hurts, then you need:</p>
 
     <div class="alert alert-success font-italic">I’m not <span class="text-success font-weight-bold">used to</span> <span class="font-weight-bold font-italic text-primary">eating</span> spicy food.</div>
 
