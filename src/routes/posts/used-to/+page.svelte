@@ -4,7 +4,7 @@
 </script>
 
 <SvelteSeo
-    title="Two meanings of 'used to'"
+    title="Saying what you mean with 'used to'"
     description="Demonstrating the grammatical rules for 'used to'."
 />
 
@@ -13,11 +13,11 @@
     <img src="../img/maag.png" class="img-fluid mx-auto mb-0" alt="maag" style="width:50%;">
     <hr class="mt-0">
 
-    <h1>Two meanings of 'used to'</h1>
+    <h1>Saying what you mean with 'used to'</h1>
 
     <div class="alert alert-danger font-italic">I’m not <span class="text-danger font-weight-bold">used to</span> eat spicy food.</div>
 
-    <WithIcon icon="warning" position="right" msg="Here there is a problem!<br>There are 2 meanings of <b><i>used to</i></b>, and 3 possible meanings of the statement above:" />
+    <WithIcon icon="warning" position="right" msg="Here there is a problem!<br>There are 3 possible meanings of the statement above.<br>Which one do you mean?" />
 
     <h3>1. <span class="font-weight-bold font-italic text-success">used to</span> + <span class="font-weight-bold font-italic text-primary">___ing</span></h3>
 

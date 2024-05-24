@@ -1,6 +1,6 @@
 export const links = [
     {
-        title: "Two meanings of 'used to'",
+        title: "Saying what you mean with 'used to'",
         href: "posts/used-to",
         keywords: ['vocabulary','grammar'],
         description: "Demonstrating the grammatical rules for 'used to'."
