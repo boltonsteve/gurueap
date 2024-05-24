@@ -11,8 +11,7 @@
 <div class="mb-3 mw-500">
 
     <img src="../img/maag.png" class="img-fluid mx-auto mb-0" alt="maag" style="width:50%;">
-
-    <hr class="mt-0" style="height:5px;">
+    <hr class="mt-0">
 
     <h1>Two meanings of 'used to'</h1>
 
@@ -20,31 +19,25 @@
 
     <WithIcon icon="warning" position="right" msg="Here there is a problem!<br>There are 2 meanings of <b><i>used to</i></b>, and 3 possible meanings of the statement above:" />
 
-    <h3 class="mt-0">1. <span class="font-weight-bold font-italic text-success">used to</span> + <span class="font-weight-bold font-italic text-primary">___ing</span></h3>
+    <h3>1. <span class="font-weight-bold font-italic text-success">used to</span> + <span class="font-weight-bold font-italic text-primary">___ing</span></h3>
 
     <p><b>If you mean</b> that you <i>don't</i> eat spicy food <i>very often</i> and when you do, then your stomach hurts, then you need:</p>
 
     <div class="alert alert-success font-italic">I’m not <span class="text-success font-weight-bold">used to</span> <span class="font-weight-bold font-italic text-primary">eating</span> spicy food.</div>
 
-    <hr style="width:100px;height:5px;">
-
-    <h3>2. <span class="font-weight-bold font-italic text-success">used to</span> + <span class="font-weight-bold font-italic text-primary">V1</span></h3>
+    <h3 class="headroom">2. <span class="font-weight-bold font-italic text-success">used to</span> + <span class="font-weight-bold font-italic text-primary">V1</span></h3>
 
     <p><b>If you mean</b> you regularly ate spicy food in the past but <i>now you don't</i>, then you need:</p>
 
     <div class="alert alert-success font-italic">I <span class="text-success font-weight-bold">used to</span> <span class="font-weight-bold font-italic text-primary">eat</span> spicy food.</div>
 
-    <hr style="width:100px;height:5px;">
-
-    <h3>3. <span class="font-weight-bold font-italic text-primary">didn't</span> <span class="font-weight-bold font-italic text-success">use to</span> + <span class="font-weight-bold font-italic text-primary">V1</span></h3>
+    <h3 class="headroom">3. <span class="font-weight-bold font-italic text-primary">didn't</span> <span class="font-weight-bold font-italic text-success">use to</span> + <span class="font-weight-bold font-italic text-primary">V1</span></h3>
 
     <p><b>If you mean</b> you <i>didn't</i> eat spicy food regularly in the past but now I <i>do</i>, then you need:</p>
 
     <div class="alert alert-success font-italic">I <span class="font-weight-bold font-italic text-primary">didn't</span> <span class="text-success font-weight-bold"> use to</span> <span class="font-weight-bold font-italic text-primary">eat</span> spicy food.<ol style="list-style-type:none;" class="mb-0"><li class="text-danger">Notice there is no <b>d</b> on <b>used</b> in this negative!</li></ol></div>
 
-    <hr style="width:100px;height:5px;">
-
-    <h3 class="mb-0">Putting it together</h3>
+    <h3 class="mb-0 headroom">Putting it together</h3>
 
     <p class="mt-0">Let’s see how this might work in a text.</p>
 
@@ -58,7 +51,7 @@
 </div>
 
 <style>
-hr {
-    background:#CCCCCC;
-}
+    .headroom {
+        margin-top:40px;
+    }
 </style>
