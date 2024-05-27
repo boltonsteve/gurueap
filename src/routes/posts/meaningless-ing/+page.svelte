@@ -16,7 +16,7 @@
 
     <img src="../img/meaningless-ing.png" class="img-fluid mx-auto" alt="meaningless ing">
 
-    <h1>Time and the meaningless __ing</h1>
+    <h1>Time and the meaningless <i>__ing</i></h1>
 
     <div class="alert alert-danger font-italic">The number of viewers at 11pm <span class="text-danger font-weight-bold">fluctuating</span> greatly.</div>
 
