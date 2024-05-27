@@ -1,8 +1,14 @@
 export const links = [
     {
+        title: "Nothing needs high cost",
+        href: "posts/high-cost",
+        keywords: ['vocabulary','money','grammar','Bahasa Indonesia'],
+        description: "Demonstrating the meanings and uses of 'high cost'"
+    },
+    {
         title: "Time and the meaningless __ing",
         href: "posts/meaningless-ing",
-        keywords: ['tenses','grammar','Bahasa Indonesia'],
+        keywords: ['tenses','past simple','present simple','present continuous','grammar','Bahasa Indonesia'],
         description: "Reminding Indonesian IELTS candidates in particular that the verb participle (__ing) requires 'to be' in order to communicate 'continuous'"
     },
     {
