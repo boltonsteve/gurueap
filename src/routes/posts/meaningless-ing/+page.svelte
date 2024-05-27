@@ -8,7 +8,7 @@
 </script>
 
 <SvelteSeo
-    title="The meaningless __ing"
+    title="Time and the meaningless __ing"
     description="Reminding Indonesian IELTS candidates in particular that the verb participle (__ing) requires 'to be' in order to communicate 'continuous'"
 />
 
@@ -16,7 +16,7 @@
 
     <img src="../img/meaningless-ing.png" class="img-fluid mx-auto" alt="meaningless ing">
 
-    <h1>The meaningless __ing</h1>
+    <h1>Time and the meaningless __ing</h1>
 
     <div class="alert alert-danger font-italic">The number of viewers at 11pm <span class="text-danger font-weight-bold">fluctuating</span> greatly.</div>
 

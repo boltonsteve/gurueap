@@ -1,6 +1,6 @@
 export const links = [
     {
-        title: "The meaningless __ing",
+        title: "Time and the meaningless __ing",
         href: "posts/meaningless-ing",
         keywords: ['tenses','grammar','Bahasa Indonesia'],
         description: "Reminding Indonesian IELTS candidates in particular that the verb participle (__ing) requires 'to be' in order to communicate 'continuous'"
