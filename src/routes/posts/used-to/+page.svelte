@@ -43,10 +43,10 @@
 
     <div class="alert alert-success font-italic">
         <p class="mt-0">When Europeans visit Bali and eat in a restaurant, the staff assume that these visitors do not want to eat spicy food because they assume that Europeans are not <span class="text-success font-weight-bold">used to</span> eating spicy food.</p>
-        <p class="mb-0">On the other hand I have a Javanese friend who <span class="text-success font-weight-bold">used to</span> eat spicy food but had to stop because he developed stomach ulcers.</p>
+        <p>On the other hand I have a Javanese friend who <span class="text-success font-weight-bold">used to</span> eat spicy food but had to stop because he developed stomach ulcers.</p>
+        <p class="mb-0"><b><i>Ouch!</i></b></p>
     </div>
 
-    <h3>Ouch!</h3>
 
 </div>
 
