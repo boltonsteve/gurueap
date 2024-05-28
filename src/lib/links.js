@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Book or film?",
+        href: "posts/book-or-film",
+        keywords: ['reading','extensive reading'],
+        description: "Is it better to read the book before watching the film, or vice-versa?"
+    },
+    {
         title: "Using grammar to communicate 'Which one(s)?'",
         href: "posts/which-one",
         keywords: ['grammar','articles','Bahasa Indonesia'],
