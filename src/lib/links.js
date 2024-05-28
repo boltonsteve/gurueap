@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Reaching a peak in IELTS Task 1",
+        href: "posts/reach-a-peak",
+        keywords: ['vocabulary','overview','trends','Task 1'],
+        description: "A warning about reach a peak and collocation"
+    },
+    {
         title: "Being trendy without 'trend'",
         href: "posts/trend",
         keywords: ['vocabulary','overview','trends','Task 1'],
