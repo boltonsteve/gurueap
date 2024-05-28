@@ -14,8 +14,9 @@
 
     <h3>First some fun with vocab - <b><i>Smart</i></b> and <b><i>Article</i></b></h3>
 
-    <p>Before we get into the grammatical meaning of articles, it's interesting to note that in British English <b><i>smart</i></b> is more commonly used to mean <b><i>elegantly dressed</i></b>.</p>
     <img src="../img/bond.png" class="img-fluid mx-auto mb-0" alt="smartest remote" style="width:150px;float:right;">
+
+    <p>Before we get into the grammatical meaning of articles, it's interesting to note that in British English <b><i>smart</i></b> is more commonly used to mean <b><i>elegantly dressed</i></b>.</p>
 
     <p>In American English, meanwhile, <b><i>smart</i></b> usually means <b><i>intelligent</i></b>, hence the term <b><i>smartphone</i></b>, although a lot of smartphones these days also look <b><i>smart</i></b>!</p>
 
