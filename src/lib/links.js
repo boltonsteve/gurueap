@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Being trendy without 'trend'",
+        href: "posts/trend",
+        keywords: ['vocabulary','overview','trends','Task 1'],
+        description: "Highlighting some potential problems using the word 'trend'"
+    },
+    {
         title: "Nothing needs high cost",
         href: "posts/high-cost",
         keywords: ['vocabulary','money','grammar','Bahasa Indonesia'],
@@ -20,7 +26,7 @@ export const links = [
     {
         title: "Change in graphs, tables and charts",
         href: "posts/change-gtc",
-        keywords: ['GTC','task1','change'],
+        keywords: ['GTC','Task 1','change'],
         description: "A warning about changes over time in bar charts and pie charts."
     },
     {
