@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "The smartest use of articles",
+        href: "posts/smart-articles",
+        keywords: ['vocabulary','grammar','articles'],
+        description: "A nice example demonstrating definite and indefinite article"
+    },
+    {
         title: "Reaching a peak in IELTS Task 1",
         href: "posts/reach-a-peak",
         keywords: ['vocabulary','overview','trends','Task 1'],
