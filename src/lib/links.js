@@ -1,9 +1,9 @@
 export const links = [
     {
-        title: "Using grammar to show communicate 'which one?'",
+        title: "Using grammar to communicate 'Which one(s)?'",
         href: "posts/which-one",
         keywords: ['grammar','articles','Bahasa Indonesia'],
-        description: "Using grammar to communicate which one"
+        description: "Using grammar to communicate 'Which one(s)?'"
     },
     {
         title: "The smartest use of articles",

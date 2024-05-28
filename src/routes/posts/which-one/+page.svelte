@@ -4,15 +4,15 @@
 </script>
 
 <SvelteSeo
-    title="Using grammar to communicate which one"
-    description="Using grammar to communicate which one"
+    title="Using grammar to communicate 'Which one(s)?'"
+    description="Using grammar to communicate 'Which one(s)?'"
 />
 
 <div class="mb-3 mw-500">
 
     <img src="../img/edge-of-space.png" class="img-fluid mx-auto mb-0" alt="edge of space">
 
-    <h1>Using grammar to communicate 'which one?'</h1>
+    <h1>Using grammar to communicate <i>'Which one(s)?'</i></h1>
 
     <div class="alert alert-danger font-italic">Many countries are spending a lot of money on space exploration in order to reach <span class="font-weight-bold text-danger">edge of</span> the universe.</div>
 
