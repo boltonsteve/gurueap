@@ -53,7 +53,7 @@
 
     <h3>edge</h3>
     <div class="myGrid">
-        <div>Which one?</div><div>There is some text immediately after <b><i>edge</i></b> that tells us exactly which edge - <b><i>the edge <span class="uli">of the universe</span></i></b> (NOT the edge <span class="uli">of the table</span>). However, if it’s clear to both writer and reader exactly which noun is being referred to then in English we have to use the definite article <b><i>the</i></b> in front of the noun. This was the grammatical error in the sentence - <span class="font-weight-bold text-danger">a missing the:</span> <b><i>the edge <span class="uli">of the universe</span></i></b>.</div>
+        <div>Which one?</div><div>There is some text immediately after <b><i>edge</i></b> that tells us exactly which edge - <b><i>the edge <span class="uli">of the universe</span></i></b> (NOT the edge <span class="uli">of the table</span>). However, if it’s clear to both writer and reader exactly which noun is being referred to then in English we have to use the definite article <b><i>the</i></b> in front of the noun. This was the grammatical error in the sentence - <span class="font-weight-bold text-danger">a missing 'the':</span> <b><i>the edge <span class="uli">of the universe</span></i></b>.</div>
         <div>Whose?</div><div>Irrelevant.</div>
         <div>How many?</div><div>Also irrelevant.</div>
     </div>
@@ -82,9 +82,9 @@
         It makes me wonder how I keep from goin' under
     </div>
 
-    <p>You can listen to The Message <a href="https://www.youtube.com/watch?v=gqky4dSGJnE" target="_blank">here</a> and follow the lyrics, but be warned – it’s full of other less useful idioms!</p>
+    <p>You can listen to The Message <a href="https://www.youtube.com/watch?v=PobrSpMwKk4" target="_blank">here</a> and follow the lyrics, but be warned – it’s full of other less useful idioms!</p>
 
-    <p>And while we’re talking about music, back in 1972 British prog rock band <b>Yes</b> made an album called <a href="https://www.youtube.com/watch?v=GNkWac-Nm0A" target="_blank" class="font-weight-bold">Close to the edge</a>!</p>
+    <p>And while we’re talking about music, back in 1972 British prog rock band <b>Yes</b> made an album called <a href="https://www.youtube.com/watch?v=WRSugblInEY" target="_blank" class="font-weight-bold">Close to the edge</a>!</p>
 
 </div>
 
