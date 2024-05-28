@@ -2,7 +2,7 @@ export const links = [
     {
         title: "The smartest use of articles",
         href: "posts/smart-articles",
-        keywords: ['vocabulary','grammar','articles'],
+        keywords: ['vocabulary','grammar','articles','Bahasa Indonesia'],
         description: "A nice example demonstrating definite and indefinite article"
     },
     {
