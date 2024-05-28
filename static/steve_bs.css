@@ -237,6 +237,10 @@ span {
     background: #eeeeee;
 }
 
+.border-secondary {
+    border-color: #aaaaaa;
+}
+
 .border-info {
     border-color: var(--teal);
 }

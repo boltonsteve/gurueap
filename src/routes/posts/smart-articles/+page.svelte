@@ -28,7 +28,7 @@
 
     <p>I was browsing through DIGG this morning and saw an interesting headline – interesting because it demonstrates two important functions of articles.</p>
 
-    <img src="../img/smartest-remote.png" class="img-fluid mx-auto mb-0 border" alt="smartest remote" style="width:75%;">
+    <img src="../img/smartest-remote.png" class="img-fluid mx-auto mb-0 border border-secondary" alt="smartest remote" style="width:75%;">
 
     <h3 class="font-italic">This isn't <span class="uli">a</span> smart remote</h3>
 
