@@ -12,7 +12,7 @@
 
     test
 
-    <img src="/img/consumptive-consumers.png" class="img-fluid rounded" alt="consumptive consumers">
+    <img src="/img/consumptive-consumers.png" class="img-fluid rounded mt-1" alt="consumptive consumers">
 
     <h1>Consumptive consumers</h1>
 

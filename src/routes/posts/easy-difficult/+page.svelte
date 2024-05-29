@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/circus-elephant.jpg" class="img-fluid rounded" alt="circus elephant">
+    <img src="/img/circus-elephant.jpg" class="img-fluid rounded mt-1" alt="circus elephant">
 
     <h1>Easy can be difficult</h1>
 

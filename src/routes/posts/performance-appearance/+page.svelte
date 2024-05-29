@@ -20,7 +20,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/clown.png" class="img-fluid" alt="clown" style="border-bottom:3px solid red;">
+    <img src="/img/clown.png" class="img-fluid mt-1" alt="clown" style="border-bottom:3px solid red;">
 
     <h1>Performance and Appearance</h1>
 

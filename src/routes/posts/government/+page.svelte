@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img class="mx-auto" src="/img/bhinneka-tunggal-ika.png" alt="Bhinneka Tunggal Ika" style="max-width:200px;">
+    <img class="mx-auto mt-1" src="/img/bhinneka-tunggal-ika.png" alt="Bhinneka Tunggal Ika" style="max-width:200px;">
 
     <h1 class="text-center">Government</h1>
 

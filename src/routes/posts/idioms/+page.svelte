@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/rose-tinted-glasses.png" class="img-fluid rounded" alt="idiom: rose tinted glasses">
+    <img src="/img/rose-tinted-glasses.png" class="img-fluid rounded mt-1" alt="idiom: rose tinted glasses">
 
     <h1>Idiomatic language</h1>
 

@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/competition.png" class="img-fluid rounded" alt="Competition">
+    <img src="/img/competition.png" class="img-fluid rounded mt-1" alt="Competition">
 
     <h1>Competition(s)</h1>
 

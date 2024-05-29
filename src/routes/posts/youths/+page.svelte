@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/youth-hoodies.png" class="img-fluid rounded" alt="youths">
+    <img src="/img/youth-hoodies.png" class="img-fluid rounded mt-1" alt="youths">
 
     <h1>Youths and young people</h1>
 

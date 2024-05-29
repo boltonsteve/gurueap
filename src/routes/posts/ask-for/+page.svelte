@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/ask-the-menu.png" class="img-fluid rounded" alt="menu couple">
+    <img src="/img/ask-the-menu.png" class="img-fluid rounded mt-1" alt="menu couple">
 
     <h1>Ask (for)</h1>
 

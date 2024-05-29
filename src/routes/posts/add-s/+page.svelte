@@ -10,7 +10,7 @@
   description="A video of George describing Yuana, and trying his best to put 's' on the end of words that require it."
 />
 
-<div class="mb-3 mw-500">
+<div class="mb-3 mw-500 pt-1">
 
     <Youtube id="jNyF0TPm6ns" />
 

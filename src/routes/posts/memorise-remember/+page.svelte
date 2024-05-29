@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/sydney-students.png" class="img-fluid rounded" alt="EAP IELTS students in Sydney, Australia">
+    <img src="/img/sydney-students.png" class="img-fluid rounded mt-1" alt="EAP IELTS students in Sydney, Australia">
 
     <h1>Memorising and remembering memories</h1>
 

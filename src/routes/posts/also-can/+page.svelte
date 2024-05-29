@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/can-choir.jpg" class="img-fluid rounded" alt="can choir">
+    <img src="/img/can-choir.jpg" class="img-fluid rounded mt-1" alt="can choir">
 
     <h1>Cannot, also can</h1>
 

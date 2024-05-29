@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/aliens-animals-robots.png" class="img-fluid rounded" alt="aliens animals robots" style="border:1px solid #7accf4;">
+    <img src="/img/aliens-animals-robots.png" class="img-fluid rounded mt-1" alt="aliens animals robots" style="border:1px solid #7accf4;">
 
     <h1>People's lives</h1>
 

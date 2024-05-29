@@ -18,7 +18,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/existentialists.png" class="img-fluid rounded" alt="existentialists">
+    <img src="/img/existentialists.png" class="img-fluid rounded mt-1" alt="existentialists">
 
     <h1>When 'existence' should not exist</h1>
 

@@ -12,7 +12,7 @@
 
 <div class="mw-500 mb-3">
 
-    <img src="/img/opinion-for-against.png" class="img-fluid rounded" alt="opinions">
+    <img src="/img/opinion-for-against.png" class="img-fluid rounded mt-1" alt="opinions">
 
     <h1>Opinion in Task 2 Introductions</h1>
 

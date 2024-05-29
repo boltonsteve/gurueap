@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/audience.jpg" class="img-fluid rounded" alt="audience">
+    <img src="/img/audience.jpg" class="img-fluid rounded mt-1" alt="audience">
 
     <h1>Audience(s)</h1>
 

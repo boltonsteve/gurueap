@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/time.jpg" class="img-fluid rounded" alt="time">
+    <img src="/img/time.jpg" class="img-fluid rounded mt-1" alt="time">
 
     <h1>Every time / All the time</h1>
 

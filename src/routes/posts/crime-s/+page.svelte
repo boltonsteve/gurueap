@@ -18,7 +18,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/crime.jpg" class="img-fluid" alt="crime">
+    <img src="/img/crime.jpg" class="img-fluid mt-1" alt="crime">
 
     <h1>Crime or Crimes</h1>
 

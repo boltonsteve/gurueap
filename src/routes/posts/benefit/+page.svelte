@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500 pt-1">
 
-    <img src="../img/diet-exercise.png" class="img-fluid mx-auto" alt="redundant humans" style="width:75%;">
+    <img src="../img/diet-exercise.png" class="img-fluid mx-auto mt-1" alt="redundant humans" style="width:75%;">
 
     <h1>Are the benefits beneficial?</h1>
 

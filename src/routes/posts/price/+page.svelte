@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/price.jpg" class="img-fluid rounded" alt="price">
+    <img src="/img/price.jpg" class="img-fluid rounded mt-1" alt="price">
 
     <h1>The price is NOT expensive</h1>
 

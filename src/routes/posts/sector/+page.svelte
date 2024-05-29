@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/sectors.jpg" class="img-fluid rounded" alt="sectors">
+    <img src="/img/sectors.jpg" class="img-fluid rounded mt-1" alt="sectors">
 
     <h1>The blah blah sector</h1>
 

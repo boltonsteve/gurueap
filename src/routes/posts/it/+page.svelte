@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/it.png" class="img-fluid rounded" alt="it">
+    <img src="/img/it.png" class="img-fluid rounded mt-1" alt="it">
 
     <h1>Use 'it' with care!</h1>
 

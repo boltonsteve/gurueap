@@ -12,7 +12,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/how-often.jpg" class="img-fluid rounded" alt="How often?">
+    <img src="/img/how-often.jpg" class="img-fluid rounded mt-1" alt="How often?">
 
     <h1>How often in IELTS speaking</h1>
 

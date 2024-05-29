@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/australian-woman-2.png" class="img-fluid mx-auto" alt="australian-woman" style="width:75%;">
+    <img src="/img/australian-woman-2.png" class="img-fluid mx-auto mt-1" alt="australian-woman" style="width:75%;">
 
     <h1 class="mt-0">Measurements</h1>
 

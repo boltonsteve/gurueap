@@ -11,7 +11,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 <div class="mw-500 mb-5">
 
-    <img src="/img/zygote.png" class="img-fluid" alt="zygote">
+    <img src="/img/zygote.png" class="img-fluid mt-1" alt="zygote">
 
     <h1>Processes and stages</h1>
 

@@ -57,7 +57,7 @@
 <Modal {showModal} on:click={toggleModal} />
 <div class="mb-3 mw-500">
 
-    <img src="/img/alexander-technique.png" class="img-fluid" alt="Alexander Technique">
+    <img src="/img/alexander-technique.png" class="img-fluid mt-1" alt="Alexander Technique">
 
     <h1>it and this / theme and rheme</h1>
 

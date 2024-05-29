@@ -170,7 +170,7 @@ Instead of wondering when your next vacation is, you ought to set up a life you 
 
 <svelte:window on:keydown={handleKeydown} />
 
-<div class="mb-3 mw-500">
+<div class="mb-3 mw-500 pt-1">
 
     <img src="/img/work-png.png" class="mx-auto" style="width:200px;" alt="work">
 

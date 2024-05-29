@@ -11,7 +11,7 @@
 
 <div class="mw-500 mb-3">
 
-    <img src="/img/same-as.png" class="img-fluid rounded" alt="same as triplets">
+    <img src="/img/same-as.png" class="img-fluid rounded mt-1" alt="same as triplets">
 
     <h1><b><i>Same as</i></b> or <b><i>Same with</i></b></h1>
 

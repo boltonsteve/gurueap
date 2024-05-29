@@ -10,7 +10,7 @@
 
 <div class="mw-500 mb-3">
 
-    <img src="/img/labour.jpg" class="img-fluid rounded" alt="labourer">
+    <img src="/img/labour.jpg" class="img-fluid rounded mt-1" alt="labourer">
 
     <h1>Labouring over <b><i>labourers</i></b></h1>
 

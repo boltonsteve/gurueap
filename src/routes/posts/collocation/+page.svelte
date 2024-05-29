@@ -15,7 +15,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/location.jpg" class="img-fluid rounded" alt="location">
+    <img src="/img/location.jpg" class="img-fluid rounded mt-1" alt="location">
 
     <h1>Collocation</h1>
 

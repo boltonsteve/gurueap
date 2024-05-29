@@ -12,7 +12,7 @@
 
 <div class="mw-500 mb-3">
 
-    <img src="/img/researcher.png" class="img-fluid rounded" alt="researcher">
+    <img src="/img/researcher.png" class="img-fluid rounded mt-1" alt="researcher">
 
     <h1 class="tooltip" title="Almost never plural! Usually uncountable." use:tooltip>Research(es)</h1>
 

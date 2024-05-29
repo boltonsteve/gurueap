@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/concerned.jpeg" class="img-fluid rounded" alt="concerned government">
+    <img src="/img/concerned.jpeg" class="img-fluid rounded mt-1" alt="concerned government">
 
     <h1>Concerning 'concern'</h1>
 

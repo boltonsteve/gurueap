@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/ed-tech.png" class="img-fluid rounded" alt="ed tech">
+    <img src="/img/ed-tech.png" class="img-fluid rounded mt-1" alt="ed tech">
 
     <h1><i>Use</i> or <i>Usage</i></h1>
 

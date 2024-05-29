@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/by.png" class="img-fluid rounded" alt="by">
+    <img src="/img/by.png" class="img-fluid rounded mt-1" alt="by">
 
     <h1>Goodbye to 'By'</h1>
 

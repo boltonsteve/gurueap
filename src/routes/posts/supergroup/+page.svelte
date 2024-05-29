@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <div class="pie mb-3">
+    <div class="pie mb-3 mt-1">
         <img src="/img/british-vegetarian.png" class="w-50" alt="vegetarian pie chart">
         <h3>British People</h3>
     </div>

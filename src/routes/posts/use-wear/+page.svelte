@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/shoes.jpg" class="mx-auto img-fluid rounded" alt="shoes" style="border:1px solid #333333;">
+    <img src="/img/shoes.jpg" class="mx-auto img-fluid rounded mt-1" alt="shoes" style="border:1px solid #333333;">
 
     <h1>Use or Wear</h1>
 

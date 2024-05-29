@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/superman.png" class="img-fluid rounded" alt="Superman">
+    <img src="/img/superman.png" class="img-fluid rounded mt-1" alt="Superman">
 
     <h1>When 'become' is not becoming</h1>
 

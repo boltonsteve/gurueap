@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/domestic-appliances.jpg" class="img-fluid rounded border mb-0" alt="domestic appliances">
+    <img src="/img/domestic-appliances.jpg" class="img-fluid rounded border mb-0 mt-1" alt="domestic appliances">
 
     <h1>All of them everywhere</h1>
 

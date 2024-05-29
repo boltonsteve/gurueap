@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/tom-indira.png" class="img-fluid rounded" alt="tom indira">
+    <img src="/img/tom-indira.png" class="img-fluid rounded mt-1" alt="tom indira">
 
     <h1>Know (of)</h1>
 

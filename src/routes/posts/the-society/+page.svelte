@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/society.jpg" class="img-fluid" alt="society">
+    <img src="/img/society.jpg" class="img-fluid mt-1" alt="society">
 
     <h1>(the) Society</h1>
 

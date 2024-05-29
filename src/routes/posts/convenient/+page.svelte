@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/convenient.jpg" class="img-fluid rounded" alt="convenience">
+    <img src="/img/convenient.jpg" class="img-fluid rounded mt-1" alt="convenience">
 
     <h1>Convenient</h1>
 

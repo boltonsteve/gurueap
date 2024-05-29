@@ -10,7 +10,7 @@ description="Highlighting the difference in meaning between 'demand for' and dem
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/demand.png" class="mx-auto" alt="dmand">
+    <img src="/img/demand.png" class="mx-auto mt-1" alt="demand">
 
         <h1>Demand(s) (of/for)</h1>
 

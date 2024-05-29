@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/lcgc.png" class="img-fluid rounded" alt="LCGC cars - enough expensive">
+    <img src="/img/lcgc.png" class="img-fluid rounded mt-1" alt="LCGC cars - enough expensive">
 
     <h1>When <b><i>enough</i></b> is too much</h1>
 

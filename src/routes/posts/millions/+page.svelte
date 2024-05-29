@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/million-air.png" class="img-fluid rounded" alt="million air">
+    <img src="/img/million-air.png" class="img-fluid rounded mt-1" alt="million air">
 
     <h1>Million or millions?</h1>
 

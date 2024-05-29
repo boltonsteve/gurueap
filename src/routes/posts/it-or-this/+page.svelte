@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/it-or-this.jpg" class="img-fluid" alt="it or this">
+    <img src="/img/it-or-this.jpg" class="img-fluid mt-1" alt="it or this">
 
     <h1><b><i>It</i></b> or <b><i>this</i></b>?</h1>
 

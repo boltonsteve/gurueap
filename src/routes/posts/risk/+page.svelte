@@ -63,7 +63,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/callum.jpg" class="img-fluid rounded" alt="risk">
+    <img src="/img/callum.jpg" class="img-fluid rounded mt-1" alt="risk">
 
     <h1>When risk is risky</h1>
 

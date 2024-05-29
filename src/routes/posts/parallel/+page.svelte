@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/parallel-lines.png" class="img-fluid mb-0" alt="parallel lines">
+    <img src="/img/parallel-lines.png" class="img-fluid mb-0 mt-1" alt="parallel lines">
 
     <h1>Parallel Structures</h1>
 

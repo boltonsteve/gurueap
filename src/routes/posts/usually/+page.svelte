@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/with-friends.png" class="img-fluid rounded" alt="with friends">
+    <img src="/img/with-friends.png" class="img-fluid rounded mt-1" alt="with friends">
 
     <h1>When <i>usually</i> is <i>unusual</i></h1>
 

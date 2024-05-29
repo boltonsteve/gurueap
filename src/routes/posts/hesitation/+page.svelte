@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/silence.png" class="img-fluid rounded" alt="silence in IELTS speaking">
+    <img src="/img/silence.png" class="img-fluid rounded mt-1" alt="silence in IELTS speaking">
 
     <h1>Hesitation and Fluency in IELTS Speaking</h1>
 

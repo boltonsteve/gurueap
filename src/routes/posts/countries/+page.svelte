@@ -125,7 +125,7 @@
 
 <div class="container mb-3">
 
-    <img src="/img/countries.png" class="img-fluid" alt="countries - world map">
+    <img src="/img/countries.png" class="img-fluid mt-1" alt="countries - world map">
 
     {#if showing}
         <button class="btn btn-outline-primary mx-auto my-2" on:click={doTest}>test me</button>

@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/production.jpg" class="img-fluid rounded" alt="production">
+    <img src="/img/production.jpg" class="img-fluid rounded mt-1" alt="production">
 
     <h1>Production(s)</h1>
 

@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/chicken.png" class="img-fluid" alt="chicken">
+    <img src="/img/chicken.png" class="img-fluid mt-1" alt="chicken">
 
     <h1 class="mt-0">Countable AND Uncountable (?!)</h1>
 

@@ -9,7 +9,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/could.jpeg" class="img-fluid rounded" alt="could can">
+    <img src="/img/could.jpeg" class="img-fluid rounded mt-1" alt="could can">
 
     <h1><i>Could</i> or <i>Can</i></h1>
 

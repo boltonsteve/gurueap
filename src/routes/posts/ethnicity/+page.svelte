@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/ethnicity.png" class="img-fluid rounded" alt="ethnicity">
+    <img src="/img/ethnicity.png" class="img-fluid rounded mt-1" alt="ethnicity">
 
     <h1>Ethnic(ity)</h1>
 
