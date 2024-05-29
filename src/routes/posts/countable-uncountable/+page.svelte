@@ -23,9 +23,13 @@
 
     <p>On the other hand if you're talking about <b><i>specific</i></b> things then use the <b><i>countable</i></b> form - for example you may be talking about the time you failed an exam and saying what <b><i>a terrible experience</i></b> that was.</p>
 
-    <p>In the original example, I think we're talking generally:</p>
+    <p>In the original example, I think the writer is being <i>general</i>:</p>
 
     <div class="alert alert-success font-italic">Moreover, <span class="font-weight-bold text-success">failure</span> can be caused by a lack of practical <span class="font-weight-bold text-success">experience</span>.</div>
+
+    <p>Meanwhile, if you are being <i>specific</i> then you could write:</p>
+
+    <div class="alert alert-success font-italic">I'm such <span class="font-weight-bold text-success">a failure</span>. Taking an exam is always <span class="font-weight-bold text-success">a terrible experience</span> for me.</div>
 
     <p class="mb-0">Other posts on GuruEAP examine other <b><i>words that can be either countable or uncountable</i></b>:</p>
 
