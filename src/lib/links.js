@@ -474,12 +474,6 @@ export const links = [
         description: "Investigating the collocation and structural peculiarities of the word 'worth'."
     },
     {
-        title: "The past of can",
-        href: "posts/past-of-can",
-        keywords: ['vocabulary','grammar','ability'],
-        description: "A minor collocation problem caused by first language interference. Same with instead of same as."
-    },
-    {
         title: "Same as or Same with?",
         href: "posts/same-as-with",
         keywords: ['vocabulary','compare contrast','Bahasa Indonesia'],
