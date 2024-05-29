@@ -42,9 +42,9 @@
 
     <p>In this example, <b><i>dollars</i></b> is a label used only for <b><i>money</i></b>, and so the word <b><i>money</i></b> is redundant in the phrase <i>1,000 dollars of money</i>.</p>
 
+    <img src="/img/australian-woman.png" class="img-fluid mx-auto" alt="australian-woman" style="width:25%;float:right;">
     <p>If we apply this to the original problem then we get:</p>
 
-    <img src="/img/australian-woman.png" class="img-fluid mx-auto" alt="australian-woman" style="width:25%;float:right;">
     <div class="alert alert-success font-italic">Just like their male counterparts, many Australian women earn 2,000 dollars per month.</div>
     
 </div>
