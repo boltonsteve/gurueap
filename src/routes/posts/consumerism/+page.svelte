@@ -1,5 +1,6 @@
 <script>
     import SvelteSeo from "svelte-seo"
+    import WithIcon from '../../components/WithIcon.svelte'
 </script>
 
 <SvelteSeo
@@ -8,6 +9,8 @@
 />
 
 <div class="mb-3 mw-500">
+
+    test
 
     <img src="/img/consumptive-consumers.png" class="img-fluid rounded" alt="consumptive consumers">
 
