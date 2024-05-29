@@ -11,7 +11,7 @@
 
 <div class="mw-500 mb-5">
     
-    <img src="/img/japan-thailand.png" class="img-fluid rounded" alt="Japan Thailand">
+    <img src="/img/japan-thailand.png" class="img-fluid rounded mt-1" alt="Japan Thailand">
 
     <h1>'Like with like' in Task 1</h1>
 

@@ -11,7 +11,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/consider.jpg" class="img-fluid rounded" alt="consider">
+    <img src="/img/consider.jpg" class="img-fluid rounded mt-1" alt="consider">
 
     <h1>Considering 'consider'</h1>
 

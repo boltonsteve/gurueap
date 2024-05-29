@@ -14,7 +14,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="../img/meaningless-ing.png" class="img-fluid mx-auto" alt="meaningless ing">
+    <img src="../img/meaningless-ing.png" class="img-fluid mt-1" alt="meaningless ing">
 
     <h1>Time and the meaningless <i>__ing</i></h1>
 

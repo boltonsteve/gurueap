@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/could-was-able-to.png" class="img-fluid border" alt="could or was able to">
+    <img src="/img/could-was-able-to.png" class="img-fluid mt-1" alt="could or was able to">
 
     <h1><b><i>Could</i></b> <span class="uli">or</span> <b><i>Was able to?</i></b></h1>
     

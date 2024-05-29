@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="../img/yard.jpg" class="img-fluid mt-2 border" alt="Your yard is not wide.">
+    <img src="../img/yard.jpg" class="img-fluid mt-1 border" alt="Your yard is not wide.">
 
     <h1>Your yard is not 'wide'!</h1>
 

@@ -14,7 +14,7 @@
 
     <div class="alert alert-danger font-italic">People call this <span class="font-weight-bold text-danger">as</span> the ‘big data era’.</div>
 
-    <WithIcon icon="flag" position="right" msg="In Bahasa Indonesia disebut (called) collocates strongly with sebagai (as). Not so in English. Indeed, sebagai is often redundant in English, except when it collocates with certain verbs." />
+    <WithIcon icon="flag" position="right" msg="In Bahasa Indonesia <b><i>disebut</i></b> (called) collocates strongly with <b><i>sebagai</i></b> (as). Not so in English. Indeed, sebagai is often redundant in English, except when it collocates with certain verbs." />
 
 
 <p>The correct options here are:</p>

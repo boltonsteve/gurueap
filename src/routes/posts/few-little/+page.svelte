@@ -56,7 +56,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/few-little.jpg" class="img-fluid rounded" alt="few - little">
+    <img src="/img/few-little.jpg" class="img-fluid rounded mt-1" alt="few - little">
 
     <h1>(A) few, (a) little</h1>
 

@@ -11,7 +11,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/substitution.png" class="img-fluid rounded" alt="substitution">
+    <img src="/img/substitution.png" class="img-fluid rounded mt-1" alt="substitution">
 
     <h1>Pronoun substitution and an alternative</h1>
 

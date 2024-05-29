@@ -11,7 +11,7 @@
 
 <div class="mw-500 mb-3">
 
-    <img src="/img/budget.png" class="img-fluid rounded" alt="budget">
+    <img src="/img/budget.png" class="img-fluid rounded mt-1" alt="budget">
 
     <h1>Budget</h1>
 

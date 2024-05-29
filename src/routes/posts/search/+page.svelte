@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/search.png" class="img-fluid border" alt="search (for)">
+    <img src="/img/search.png" class="img-fluid border mt-1" alt="search (for)">
 
     <h1>Search / Search for</h1>
 

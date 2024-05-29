@@ -122,7 +122,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/university-caps.png" class="img-fluid" alt="university">
+    <img src="/img/university.png" class="img-fluid mt-1" alt="university">
 
     <h1 class="my-1">At (the) universit(y/ies)</h1>
 

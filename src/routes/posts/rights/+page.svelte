@@ -11,7 +11,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/freadom.png" class="img-fluid rounded" alt="Freadom">
+    <img src="/img/freadom.png" class="img-fluid rounded mt-1" alt="Freadom">
 
     <h1>Writing 'rights' right!</h1>
 
@@ -27,6 +27,6 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     <p>To see relative frequencies we can consult Google NGRAM viewer:</p>
 
-    <img src="/img/ngram-rights.png" class="mb-3 mx-auto" alt="NGRAM Rights">
+    <img src="/img/ngram-rights.png" class="img-fluid mb-3 mx-auto" alt="NGRAM Rights">
 
 </div>

@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="../img/reach-the-peak.png" class="img-fluid mx-auto mb-0" alt="reach the peak">
+    <img src="../img/reach-the-peak.png" class="img-fluid mx-auto mt-1" alt="reach the peak">
 
     <h1>Reaching a peak in IELTS Task 1</h1>
 

@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="../img/university.png" class="img-fluid mx-auto mb-2" alt="meaningless ing">
+    <img src="../img/university.png" class="img-fluid mx-auto mt-1 mb-1" alt="meaningless ing">
 
     <div class="alert alert-danger font-italic">Studying abroad needs <span class="font-weight-bold text-danger">high cost</span>!</div>
 

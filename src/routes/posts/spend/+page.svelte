@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/spend.jpg" class="img-fluid rounded" alt="spend">
+    <img src="/img/spend.jpg" class="img-fluid rounded mt-1" alt="spend">
 
     <h1>Spend, spend, spend!</h1>
 

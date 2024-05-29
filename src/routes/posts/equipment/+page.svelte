@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/equipment.png" class="img-fluid rounded" alt="equipment">
+    <img src="/img/equipment.png" class="img-fluid rounded mt-1" alt="equipment">
 
     <h1>Equipment</h1>
 

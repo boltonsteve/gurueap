@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="../img/change-gtc.png" class="img-fluid mx-auto" alt="Change in graphs tables and charts">
+    <img src="../img/change-gtc.png" class="img-fluid mt-1" alt="Change in graphs tables and charts">
 
     <h1>Change in graphs, tables and charts</h1>
 

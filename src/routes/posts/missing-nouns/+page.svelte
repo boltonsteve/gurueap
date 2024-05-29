@@ -12,7 +12,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 <div class="mw-500 mb-3">
 
-    <img src="/img/police-search.jpg" class="img-fluid rounded" alt="police noun search">
+    <img src="/img/police-search.jpg" class="img-fluid rounded mt-1" alt="police noun search">
 
     <h1>Missing nouns</h1>
 

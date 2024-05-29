@@ -11,7 +11,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="../img/book-or-film.png" class="img-fluid mx-auto mb-0" alt="book or film">
+    <img src="../img/book-or-film.png" class="img-fluid mx-auto mt-1" alt="book or film">
 
     <h1>Book or film?</h1>
 

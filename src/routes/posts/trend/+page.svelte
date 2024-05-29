@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="../img/trendy.png" class="img-fluid mx-auto mb-0" alt="trendy">
+    <img src="../img/trendy.png" class="img-fluid mx-auto mt-1" alt="trendy">
 
     <h1>Being trendy without 'trend'</h1>
 

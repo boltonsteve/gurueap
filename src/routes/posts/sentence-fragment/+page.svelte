@@ -6,7 +6,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/fragments.png" class="img-fluid rounded" alt="fragments">
+    <img src="/img/fragments.png" class="img-fluid rounded mt-1" alt="fragments">
 
     <h1>Sentence Fragments</h1>
 

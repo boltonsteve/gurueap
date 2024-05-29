@@ -5,9 +5,9 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/beer-bellies.png" class="img-fluid rounded" alt="beer bellies">
+    <img src="/img/beer-bellies.png" class="img-fluid rounded mt-1" alt="beer bellies">
 
-    <h1>as...as</h1>
+    <h1 class="mt-0">as...as</h1>
 
     <WithIcon icon="flag" position="right">
         <div slot="html">Sometimes comparing with <span class="font-weight-bold font-italic text-danger">as</span> leads to some first language interference, at least for Indonesians!</div>

@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/homework.png" class="img-fluid" alt="homework">
+    <img src="/img/homework.png" class="img-fluid mt-1" alt="homework">
 
     <h3>Have you done your homework?</h3>
 

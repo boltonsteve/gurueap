@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="../img/selfie.jpg" class="img-fluid mt-2 border" alt="remember memorise">
+    <img src="../img/selfie.jpg" class="img-fluid mt-1 border" alt="remember memorise">
 
     <h1>Remember, Memorise, Reminder</h1>
 

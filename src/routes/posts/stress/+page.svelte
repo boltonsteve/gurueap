@@ -11,7 +11,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/stress.jpg" class="img-fluid rounded border" alt="stress">
+    <img src="/img/stress.jpg" class="img-fluid rounded border mt-1" alt="stress">
 
     <h1>Stress caused by 'stress'</h1>
 

@@ -34,7 +34,7 @@
 
     <div class="alert alert-success font-italic">Finally, goods are packaged ready for distribution.</div>
 
-    <p>In this case there is no need to mention the people/robots doing the packaging(often referred to as the <i>doer</i> or the <i>agent</i>). Notice I used <i>passive voice</i> (to be + V3) in order to achieve this.</p>
+    <p>In this case there is no need to mention the people/robots doing the packaging (often referred to as the <i>doer</i> or the <i>agent</i>). Notice I used <i>passive voice</i> (to be + V3) in order to achieve this.</p>
 
     <p>However, if I'm writing about automation and the threat to employment, I might write:</p>
 

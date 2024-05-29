@@ -6,7 +6,7 @@
 
 <div class="mb-3 mw-500">
     
-    <img src="/img/those.jpg" class="img-fluid border" alt="those">
+    <img src="/img/those.jpg" class="img-fluid border mt-1" alt="those">
 
     <h1>Those!</h1>
 

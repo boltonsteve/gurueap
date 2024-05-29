@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/its-depend.png" class="img-fluid mx-auto my-1 border" alt="It's depend!">
+    <img src="/img/its-depend.png" class="img-fluid mx-auto my-1 border mt-1" alt="It's depend!">
 
     <h1>It's depend!</h1>
 

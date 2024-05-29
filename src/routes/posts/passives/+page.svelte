@@ -20,20 +20,21 @@
     <WithIcon icon="flag">
         <div slot="html">
             In Bahasa Indonesia there is a <b><i>passive</i></b> form but it does not include <b><i>to be</i></b>. Indonesians should make a habit of chanting, every evening before bedtime:
-            <ul>
-                <li>to be + verb 3 is best for me</li>
-                <li>to be + verb 3 is best for me</li>
-                <li>to be + verb 3 is best for me</li>
-                <li>to be + verb 3 is best for me</li>
-                <li>to be + verb 3 is best for me</li>
-                <li>to be + verb 3 is best for me</li>
-                <li>to be + verb 3 is best for me</li>
-                <li>to be + verb 3 is best for me</li>
-                <li>to be + verb 3 is best for me</li>
-                <li>to be + verb 3 is best for me</li>
-            </ul>
         </div>
     </WithIcon>
+
+    <ul>
+        <li>to be + verb 3 is best for me</li>
+        <li>to be + verb 3 is best for me</li>
+        <li>to be + verb 3 is best for me</li>
+        <li>to be + verb 3 is best for me</li>
+        <li>to be + verb 3 is best for me</li>
+        <li>to be + verb 3 is best for me</li>
+        <li>to be + verb 3 is best for me</li>
+        <li>to be + verb 3 is best for me</li>
+        <li>to be + verb 3 is best for me</li>
+        <li>to be + verb 3 is best for me</li>
+    </ul>
 
     <p>How about if we include <b><i>to be</i></b> in the passive used in the opening example?</p>
 

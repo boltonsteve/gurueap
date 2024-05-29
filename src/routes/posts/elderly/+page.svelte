@@ -10,7 +10,7 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/elderly-people.jpg" class="img-fluid border" alt="elderly people">
+    <img src="/img/elderly-people.jpg" class="img-fluid border mt-1" alt="elderly people">
 
     <h3>Elder, Elderly, Older people</h3>
 
