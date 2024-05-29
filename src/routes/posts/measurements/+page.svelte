@@ -18,8 +18,8 @@
 
     <WithIcon icon="flag" position="right" msg="Bahasa Indonesia has this kind of labelling: <i>dapat uang 2,000 dolar per bulan.</i>" />
 
-    <h3 class="mb-0 mt-0">Units used to measure many different things</h3>
-    <p class="mt-0">If a <b><i>unit</i></b> like <b><i>kg</i></b> can be used as a measurement of more than one <i>thing</i>, then you need to specify the <i>thing</i>:</p>
+    <h3>Units used to measure <b><i>many different things</i></b></h3>
+    <p>If a <b><i>unit</i></b> like <b><i>kg</i></b> can be used as a measurement of more than one <i>thing</i>, then you need to specify the <i>thing</i>:</p>
 
     <div class="myGrid">
         <div>Shopkeeper</div>
@@ -30,8 +30,8 @@
 
     <p>In this example, <b><i>kg</i></b> can be used to measure many other things: <i>potatoes</i>, <i>chocolate</i>, etc, and so it is necessary to be specific about <i>rice</i>.</p>
 
-    <h3 class="mb-0">Units used to measure only one thing</h3>
-    <p class="mt-0">On the other hand if the <b><i>unit</i></b> can only be used to measure a single thing, unambiguously, for example <b><i>dollars</i></b>, then there’s no need to mention that thing:</p>
+    <h3 class="mt-3">Units used to measure <b><i>only one thing</i></b></h3>
+    <p>On the other hand if the <b><i>unit</i></b> can only be used to measure a single thing, unambiguously, for example <b><i>dollars</i></b>, then there’s no need to mention that thing:</p>
 
     <div class="myGrid">
         <div>Bank teller</div>
@@ -43,7 +43,7 @@
     <p>In this example, <b><i>dollars</i></b> is a label used only for <b><i>money</i></b>, and so the word <b><i>money</i></b> is redundant in the phrase <i>1,000 dollars of money</i>.</p>
 
     <img src="/img/australian-woman.png" class="img-fluid mx-auto" alt="australian-woman" style="width:25%;float:right;">
-    <p>If we apply this to the original problem then we get:</p>
+    <p class="mt-3">If we apply this to the original problem then we get:</p>
 
     <div class="alert alert-success font-italic">Just like their male counterparts, many Australian women earn 2,000 dollars per month.</div>
     
