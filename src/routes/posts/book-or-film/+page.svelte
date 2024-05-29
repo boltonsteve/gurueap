@@ -29,6 +29,8 @@
 
     <Youtube id="gg5-lCg5UG4" />
 
+    <h3>2. Watching</h3>
+
     <p>Now watch the <b><i>movie</i></b>. Compare what you see in the film to what you saw in your mind as you were reading. Did you ‘see’ the same things? How are the images in the video different from the images you saw in your mind when you were reading?</p>
 
     <Youtube id="u3bVjadfXD4" />
@@ -50,5 +52,4 @@
         margin:0px auto;
     }
 </style>
-    <h3>2. Watching</h3>
 
