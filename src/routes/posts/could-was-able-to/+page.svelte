@@ -25,14 +25,26 @@
     <p>Here there are two kinds of ability:</p>
 
     <ol>
-        <li class="mb-1">A <i>permanent ability</i> that existed/exists continuously over time (<i>“..he could speak../..he can speak..”</i>). Note that this can be past <i>or</i> present.</li>
-        <li>A <i>temporary ability</i> in the past that existed momentarily, relating to a particular event (<i>“..he was able to negotiate..”</i>). Note that this is always past.</li>
+        <li class="mb-2">A permanent ability that existed/exists <span class="uli">continuously</span> over time ("..he <b><i>could</i></b> speak../..he <b><i>can</i></b> speak.."). Note that this can be past or present.</li>
+        <li>A temporary ability in the past that existed <span class="uli">momentarily</span>, relating to a particular event ("..he <b><i>was able to</i></b> negotiate.."). Note that this is <span class="uli">always past</span>.</li>
     </ol>
 
     <p>So if we return to the original problem:</p>
 
     <div class="alert alert-success font-italic">Budi tried to teach himself IELTS but made no progress. Then he discovered GuruEAP and last Saturday <span class="font-weight-bold text-success">he was able</span> to achieve band 7.0.</div>
 
-    <p>Note that the temporary ability was required in a situation that was difficult and required effort / struggle.</p>
+    <WithIcon icon="warning" position="right">
+        <div slot="html">Note that the temporary ability was required in a situation that was difficult and required effort or even struggle.</div>
+    </WithIcon>
+
+    <p class="mt-0">Here are some similar examples:</p>
     
+    <div class="alert alert-success font-italic">
+        <p class="mt-0">After a struggle, she <span class="font-weight-bold text-success">was able to</span> upright herself and swim to shore.</p>
+        <p>All of the other workers left the project, but I <span class="font-weight-bold text-success">was able to</span> complete it by myself.</p>
+        <p>Despite the pandemic, the business <span class="font-weight-bold text-success">was able to</span> continue operating.</p>
+        <p>Unfortunately, nobody <span class="font-weight-bold text-success">was able to</span> help.</p>
+        <p class="mb-0">When she saw Tom with another woman, Kelly <span class="font-weight-bold text-success">was unable to</span> hide her disappointment.</p>
+    </div>
+
 </div>

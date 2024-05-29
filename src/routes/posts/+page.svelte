@@ -4,7 +4,7 @@
     import { links } from '$lib/links.js';
     import { Film, PersonArmsUp, SquareHalf, MusicNoteBeamed, CircleHalf, Youtube, Pencil, Ear, Hammer } from "svelte-bootstrap-icons";
 
-    links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
+    /* links.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)); */
 
     let showBadge = false;
     let cards = [];
