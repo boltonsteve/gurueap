@@ -25,8 +25,8 @@
     <p>Here there are two kinds of ability:</p>
 
     <ol>
-        <li class="mb-1">A <i>permanent ability</i> that existed/exists continuously over time (“..he could speak../..he can speak..”). Note that this can be past <i>or</i> present.</li>
-        <li>A <i>temporary ability</i> in the past that existed momentarily, relating to a particular event (“..he was able to negotiate..”). Note that this is always past.</li>
+        <li class="mb-1">A <i>permanent ability</i> that existed/exists continuously over time (<i>“..he could speak../..he can speak..”</i>). Note that this can be past <i>or</i> present.</li>
+        <li>A <i>temporary ability</i> in the past that existed momentarily, relating to a particular event (<i>“..he was able to negotiate..”</i>). Note that this is always past.</li>
     </ol>
 
     <p>So if we return to the original problem:</p>
