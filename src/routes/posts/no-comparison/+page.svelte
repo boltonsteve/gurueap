@@ -10,6 +10,8 @@ description="Demonstrating incomplete comparisons in Indonesian IELTS candidate 
 
 <div class="mw-500 mb-3">
 
+    <img src="/img/no-comparison.png" class="img-fluid rounded border border-secondary mt-1" alt="half baked comparison">
+
     <h1>No comparison</h1>
 
     <div class="alert alert-danger font-italic">Most Asians these days have <span class="font-weight-bold text-danger">less difficulty</span> in intercultural communication.</div>

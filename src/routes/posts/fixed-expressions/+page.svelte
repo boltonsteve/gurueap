@@ -16,7 +16,7 @@
 
     <img src="../img/fixie.png" class="img-fluid mx-auto" alt="fixie" style="width:200px;">
 
-    <h1 class="mt-0"><b><i>As we know</i></b>, fixed expressions are cool</h1>
+    <h1 class="mt-0 mb-1"><b><i>As we know</i></b>, fixed expressions are cool</h1>
 
     <div class="alert alert-danger font-italic"><span class="font-weight-bold text-danger">As we know that</span>, last year the government removed English from the elementary school curriculum.</div>
 
