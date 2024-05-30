@@ -31,7 +31,7 @@
     <p>In English it is automatically assumed that things and people exist, unless otherwise stated.</p>
 
     <ul class="lst-none lh-15 font-italic alert alert-success">
-        <li>Some people believe that <span class="font-weight-bold text-success">machines</span> help to generate more profit than loss.</li>
+        <li>Some people believe that <span class="font-weight-bold text-success">machines</span> help to generate more profit than loss.</li>
         <li>Some people believe that <span class="font-weight-bold text-success">the absence of</span> machines can result in losses.</li>
     </ul>
 
@@ -39,8 +39,8 @@
 
     {#if show}
         <div id="answer" in:slide>
+            <div><img src="/img/existentialists.png" class="rounded img-fluid mx-auto mb-1" style="width:180px;" alt="existentialists"></div>
             <div>The photo shows French philosophers Jean Paul Sartre and Simone de Beauvoir. The pair were mainly responsible for devoloping the branch of philosophy known as <b><i>existentialism</i></b>.</div>
-            <div><img src="/img/existentialists.png" class="rounded img-fluid" style="width:180px;" alt="existentialists"></div>
         </div>
     {/if}
 
@@ -51,7 +51,7 @@
 
 <style>
 #answer {
-    display:flex;
+    /* display:flex; */
 
 }
 </style>

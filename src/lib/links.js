@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Fixed expressions are cool!",
+        href: "posts/fixed-expressions",
+        keywords: ['vocabulary','fixed expressions'],
+        description: "Explaining and demonstrating fixed expressions, together with their usefulness in IELTS speaking and writing"
+    },
+    {
         title: "Have you done your homework?",
         href: "posts/homework",
         keywords: ['grammar','tenses','present perfect','Bahasa Indonesia'],

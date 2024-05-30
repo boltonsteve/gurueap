@@ -19,6 +19,8 @@
 
     <p>Take a look at some examples of sentences using <a href="https://skell.sketchengine.eu/#result?lang=en&query=content&f=concordance" target="_blank">content</a> (uncountable) and <a href="https://skell.sketchengine.eu/#result?lang=en&query=contents&f=concordance" target="_blank">contents</a> (plural countable). Remember that when you're talking about something that can be <i>either</i> countable <i>or</i> uncountable, and if you are writing in general terms about that thing, then you should use the uncountable form.</p>
 
-    <div class="alert alert-success font-italic">Children these days spend a lot of time using interactive media which increases their exposure to aggressive <span class="font-weight-bold text-success">content</span>.</div>
+    <div class="alert alert-success font-italic mb-1">Children these days spend a lot of time using interactive media which increases their exposure to aggressive <span class="font-weight-bold text-success">content</span>.</div>
     
+    <img src="/img/contents2.png" class="img-fluid mx-auto" alt="aggressive contents" style="width:70%;">
+
 </div>

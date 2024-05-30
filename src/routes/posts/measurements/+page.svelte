@@ -8,9 +8,9 @@
     description="Explaining when to and when not to mention the thing being measured"
 />
 
-<div class="mb-3 mw-500">
+<div class="mb-3 pt-1 mw-500">
 
-    <img src="/img/australian-woman-2.png" class="img-fluid mx-auto mt-1" alt="australian-woman" style="width:75%;">
+    <img src="/img/australian-woman-2.png" class="img-fluid mx-auto" alt="australian-woman" style="width:75%;">
 
     <h1 class="mt-0">Measurements</h1>
 
@@ -22,9 +22,9 @@
     <p class="mt-0">If a <b><i>unit</i></b> like <b><i>kg</i></b> can be used as a measurement of more than one <i>thing</i>, then you need to specify the <i>thing</i>:</p>
 
     <div class="myGrid">
-        <div>Shopkeeper</div>
+        <div>Shopkeeper:</div>
         <div><i>Good morning. Can I help you?</i></div>
-        <div>Customer</div>
+        <div>Customer:</div>
         <div><i>I’d like 2kg of <b>rice</b>, please.</i></div>
     </div>
 
@@ -34,9 +34,9 @@
     <p class="mt-0">On the other hand if the <b><i>unit</i></b> can only be used to measure a single thing, unambiguously, for example <b><i>dollars</i></b>, then there’s no need to mention that thing:</p>
 
     <div class="myGrid">
-        <div>Bank teller</div>
+        <div>Bank teller:</div>
         <div><i>Good morning. Can I help you?</i></div>
-        <div>Customer</div>
+        <div>Customer:</div>
         <div><i>I’d like to withdraw 1,000 dollars, please.</i></div>
     </div>
 
@@ -54,7 +54,6 @@
     .myGrid {
         display:grid;
         grid-template-columns: 90px 1fr;
-        column-gap: 10px;
-        padding-left: 30px;
+        column-gap: 8px;
     }
 </style>

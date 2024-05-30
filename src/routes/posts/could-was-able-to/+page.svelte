@@ -12,7 +12,7 @@
 
     <img src="/img/could-was-able-to.png" class="img-fluid mt-1" alt="could or was able to">
 
-    <h1><b><i>Could</i></b> <span class="uli">or</span> <b><i>Was able to?</i></b></h1>
+    <h1 class="my-1"><b><i>Could</i></b> <span class="uli">or</span> <b><i>Was able to?</i></b></h1>
     
     <div class="alert alert-danger font-italic">Budi tried to teach himself IELTS but made no progress. Then he discovered GuruEAP and last Saturday he <span class="font-weight-bold text-danger">could</span> achieve band 7.0.</div>
 
