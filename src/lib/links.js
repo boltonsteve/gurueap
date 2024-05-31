@@ -1,9 +1,15 @@
 export const links = [
     {
+        title: "Wrong because of 'because of'",
+        href: "posts/because-of",
+        keywords: ['grammar','cause effect'],
+        description: "Demonstrating the grammatical use of 'because of' and 'due to'"
+    },
+    {
         title: "Why is..?",
         href: "posts/why",
         keywords: ['grammar','question forms'],
-        description: "Correcting a common error with question forms beginning 'why?'"
+        description: "Revealing that there is no such word as 'fluctuative'"
     },
     {
         title: "Fluctuative",
