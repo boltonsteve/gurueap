@@ -18,14 +18,14 @@ description="Explaining the use of tenses when reporting sources."
 
     <p>I know, I know. 2023 is past and finished, so you want to use past simple tense. However, in this case the <b><i>currency</i></b> of the idea – is it recent and/or valid? – is more important than when it was written.</p>
 
-    <p>The <b><i>currency</i></b> of an idea can occasionally be difficult to determine, but in most cases it is obvious. If we assume that Chomsky is still alive (<a href="https://en.wikipedia.org/wiki/noam_chomsky" target="_blank">as he is at the time of this writing</a>) and that his idea is still current then we use <i>present simple tense</i>, even if the idea was written in the finished past:</p>
+    <p>The <b><i>currency</i></b> of an idea can occasionally be difficult to determine, but in most cases it is obvious. If we assume that Chomsky is still alive (<a href="https://en.wikipedia.org/wiki/noam_chomsky" target="_blank">as he is at the time of this writing</a>) and that his idea is still current then we use <i>present simple tense</i>, <span class="uli">even if the idea was written in the finished past</span>:</p>
 
     <div class="alert alert-success font-italic">Chomsky (2023) <span class="font-weight-bold text-success">argues</span> that Grammar Monopoly is an effective way to highlight first language interference.</div>
 
     <p>In most postgraduate writing we are dealing with <b><i>current</i></b> ideas, from <b><i>recent</i></b> sources, and so most of the time you will need <i>present tense</i> for your reporting verbs.</p>
 
     <WithIcon icon="flag" position="right">
-        <div slot="html">Indonesian candidates will feel a strong urge to translate <b><i>bahwa</i></b> ('that'), which is used in Bahasa Indonesia to introduce claims made by other people. <b><i>Resist this temptation!</i></b></div>
+        <div slot="html">Indonesian candidates will feel a strong urge to translate bahwa ('that'), which is used in Bahasa Indonesia to introduce claims made by other people. <b><i>Resist this temptation!</i></b></div>
     </WithIcon>
 
 </div>

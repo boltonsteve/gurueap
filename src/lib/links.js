@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Directions: 'pass'",
+        href: "posts/directions-pass",
+        keywords: ['vocabulary','directions','Bahasa Indonesia'],
+        description: "Demonstrating how 'pass' and it's different forms can easily become lost in translation!"
+    },
+    {
         title: "Reporting verbs: tenses",
         href: "posts/reporting-verbs-tenses",
         keywords: ['grammar','tenses','reporting verbs','that','Bahasa Indonesia'],
