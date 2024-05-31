@@ -11,9 +11,9 @@
 
 <div class="mb-3 mw-500">
 
-    <img src="/img/domestic-appliances.jpg" class="img-fluid rounded border mb-0 mt-1" alt="domestic appliances">
+    <img src="/img/domestic-appliances.png" class="img-fluid mb-0 mt-1" alt="domestic appliances">
 
-    <h1>All of them everywhere</h1>
+    <h1 class="mt-0">All of them everywhere</h1>
 
     <p class="alert alert-danger font-italic">Domestic work is made easier with the use of <span class="font-weight-bold text-danger">dishwasher</span>, <span class="font-weight-bold text-danger">vacuum cleaner</span>, and <span class="font-weight-bold text-danger">washing machine</span>.</p>
 
