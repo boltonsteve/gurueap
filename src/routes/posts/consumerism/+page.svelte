@@ -16,7 +16,7 @@
 
     <h1>Consumptive consumers</h1>
 
-    <div class="alert alert-danger font-italic">Advertising tends to make people more <span class="font-weight-bold text-danger">consumptive</span>.</div>
+    <div class="alert alert-danger font-italic mb-1">Advertising tends to make people more <span class="font-weight-bold text-danger">consumptive</span>.</div>
 
     <WithIcon icon="flag" position="right" msg="This is a classic case of inappropriate or inaccurate borrowing of a word!" />
 

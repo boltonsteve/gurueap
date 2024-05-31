@@ -31,7 +31,7 @@
 
     <p>So if we return to the original problem:</p>
 
-    <div class="alert alert-success font-italic">Budi tried to teach himself IELTS but made no progress. Then he discovered GuruEAP and last Saturday <span class="font-weight-bold text-success">he was able</span> to achieve band 7.0.</div>
+    <div class="alert alert-success font-italic mb-2">Budi tried to teach himself IELTS but made no progress. Then he discovered GuruEAP and last Saturday <span class="font-weight-bold text-success">he was able</span> to achieve band 7.0.</div>
 
     <WithIcon icon="warning" position="right">
         <div slot="html">Note that the temporary ability was required in a situation that was difficult and required effort or even struggle.</div>

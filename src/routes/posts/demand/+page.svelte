@@ -8,9 +8,9 @@ title="Demand(s) (for)"
 description="Highlighting the difference in meaning between 'demand for' and demand 'of'."
  />
 
-<div class="mb-3 mw-500">
+<div class="mb-3 mw-500 pt-1">
 
-    <img src="/img/demand.png" class="mx-auto mt-1" alt="demand">
+    <img src="/img/demand.png" class="mx-auto" alt="demand">
 
         <h1>Demand(s) (of/for)</h1>
 

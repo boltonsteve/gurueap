@@ -40,6 +40,7 @@
         grid-template-columns: 80px 1fr;
         row-gap: 2px;
         padding-left: 30px;
+        margin-bottom:15px;
     }
 </style>
 

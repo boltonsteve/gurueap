@@ -14,11 +14,11 @@
 
     <h1>Being trendy without 'trend'</h1>
 
-    <div class="alert alert-danger font-italic">In general, all the lines show that there is <span class="font-weight-bold text-danger">an increasing trend</span> of people with bronchitis.</div>
+    <div class="alert alert-danger font-italic mb-2">In general, all the lines show that there is <span class="font-weight-bold text-danger">an increasing trend</span> of people with bronchitis.</div>
 
     <WithIcon icon="warning" position="right" msg="When students are preparing for IELTS Task 1 writing they learn the importance of describing <b><i>trends</i></b> in graphs, tables and charts. Not surprisingly, they go ahead and use the word <b><i>trend</i></b> to describe these trends. But native speakers are less likely to do this." />
 
-    <p class="mt-0">In the opening example a trend is described, but the word <b><i>trend</i></b> is redundant. It is enough to write:</p>
+    <p class="mt-2">In the opening example a trend is described, but the word <b><i>trend</i></b> is redundant. It is enough to write:</p>
 
     <div class="alert alert-success font-italic">In general, all the lines show that the incidence of bronchitis is increasing.</div>
 

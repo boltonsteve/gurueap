@@ -10,6 +10,8 @@
 
 <div class="mb-3 mw-500">
 
+    <img src="/img/boncengan-tiga.png" class="img-fluid mt-1" alt="boncengan tiga">
+
     <h1><i>Even</i> is not <i>Bahkan</i></h1>
 
     <div class="alert alert-danger font-italic">Motorcyclists in Bali don't seem to care about their own safety or other people's. They weave in and out of traffic without leaving room to manoevre. They cut in front of cars and then brake hard. They ride on the pavement and on the wrong side of the road. <span class="font-weight-bold text-danger">Even</span> they don't wear helmets.</div>

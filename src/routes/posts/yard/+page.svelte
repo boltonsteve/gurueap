@@ -14,7 +14,7 @@
 
     <h1>Your yard is not 'wide'!</h1>
 
-    <div class="alert alert-danger font-italic">Of course I love my house. It has a yard. Actually it’s not a very <span class="text-danger font-weight-bold">wide</span> yard.</div>
+    <div class="alert alert-danger font-italic mb-1">Of course I love my house. It has a yard. Actually it’s not a very <span class="text-danger font-weight-bold">wide</span> yard.</div>
 
     <WithIcon icon="flag" position="right" msg="Here an Indonesian candidate is translating <b><i>luas</i></b> as <b><i>wide</i></b>, which is not the best translation." />
     

@@ -42,7 +42,7 @@
     
     <h3>as...as + plural and uncountable nouns</h3>
 
-    <div class="alert alert-danger">
+    <div class="alert alert-danger mb-1">
         <p class="font-italic my-0">If someone poisons your dog, give your dog coconut water as much as possible!</p>
 
     </div>
@@ -144,6 +144,7 @@
         display:grid;
         grid-template-columns: 1fr 1fr;
         gap:10px;
+        margin-bottom:15px;
     }
 
     hr {

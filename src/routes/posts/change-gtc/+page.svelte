@@ -14,11 +14,11 @@
 
     <h1>Change in graphs, tables and charts</h1>
 
-    <div class="alert alert-danger font-italic">In 2015 sales of all 3 types of fast food <span class="text-danger font-weight-bold">increased</span> dramatically.</div>
+    <div class="alert alert-danger font-italic mb-2">In 2015 sales of all 3 types of fast food <span class="text-danger font-weight-bold">increased</span> dramatically.</div>
 
     <WithIcon icon="alert" position="right" msg="This is a common error. Unfortunately there is no information about change <b><i>IN</i></b> 2015, only <b><i>FROM</i></b> 2005 <b><i>TO</i></b> 2015!" />
 
-    <div class="alert alert-success font-italic"><i><b>Between</b> 2005 <b>and</b> 2015</i> sales of all 3 types of fast food <span class="text-success font-weight-bold">increased</span> dramatically.</div>
+    <div class="alert alert-success font-italic mt-2"><i><b>Between</b> 2005 <b>and</b> 2015</i> sales of all 3 types of fast food <span class="text-success font-weight-bold">increased</span> dramatically.</div>
 
     <p>If you are not specific about the time frame then your reporting of data will be inaccurate and you will receive a low score in IELTS for Task Achievement.</p>
 

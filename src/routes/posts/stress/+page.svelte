@@ -15,11 +15,11 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     <h1>Stress caused by 'stress'</h1>
 
-    <div class="alert alert-danger font-italic">The rapid pace of modern life is what causes most people to <span class="font-weight-bold text-danger">get stress</span>.</div>
+    <div class="alert alert-danger font-italic mb-1">The rapid pace of modern life is what causes most people to <span class="font-weight-bold text-danger">get stress</span>.</div>
 
     <WithIcon icon="flag" msg="Collocation! For a stress-free life (and for a higher IELTS score for vocabulary), use one of the following instead:" />
 
-    <div class="alert alert-success font-italic">
+    <div class="alert alert-success font-italic mb-2">
         <p class="mt-0">The rapid pace of modern life is what causes most people to <span class="font-weight-bold text-success">experience stress</span>.</p>
         <p>The rapid pace of modern life is what causes most people to <span class="font-weight-bold text-success">suffer stress</span>.</p>
         <p>The rapid pace of modern life is what causes most people to <span class="font-weight-bold text-success">suffer from stress</span>.</p>

@@ -22,7 +22,7 @@
         <div slot="html">Indonesians need to consider the difference between <b><i>avoid</i></b> (menghindar) and <b><i>prevent</i></b> (mencegah)!</div>
     </WithIcon>
 
-    <div class="alert alert-success font-italic">Everybody knows that condoms can <span class="font-weight-bold text-success">prevent</span> pregnancy.</div>
+    <div class="alert alert-success font-italic mt-2">Everybody knows that condoms can <span class="font-weight-bold text-success">prevent</span> pregnancy.</div>
 
     <p>Think of the condom as the agent that does the preventing. Humans can avoid pregnancy through the use of condoms, where the condom is the agent of prevention. So..</p>
 

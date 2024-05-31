@@ -12,7 +12,7 @@
 
     <h1>Paying (for) basic needs</h1>
 
-    <div class="alert alert-danger font-italic">In Australia I will need a lot of money to <span class="text-danger font-weight-bold">pay</span> my basic needs.</div>
+    <div class="alert alert-danger font-italic mb-2">In Australia I will need a lot of money to <span class="text-danger font-weight-bold">pay</span> my basic needs.</div>
 
     <WithIcon icon="flag" position="right" msg="Translating 'pay' from Bahasa Indonesia is problematic." />
 

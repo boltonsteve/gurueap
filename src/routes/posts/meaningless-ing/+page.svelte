@@ -18,7 +18,7 @@
 
     <h1>Time and the meaningless <i>__ing</i></h1>
 
-    <div class="alert alert-danger font-italic">The number of viewers at 11pm <span class="text-danger font-weight-bold">fluctuating</span> greatly.</div>
+    <div class="alert alert-danger font-italic mb-2">The number of viewers at 11pm <span class="text-danger font-weight-bold">fluctuating</span> greatly.</div>
 
     <WithIcon icon="flag" position="right" msg="Be careful if your language does not have this grammar. I see this mistake a lot in the writing of Indonesian IELTS candidates." />
 

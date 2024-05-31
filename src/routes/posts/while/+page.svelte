@@ -10,6 +10,8 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
 <div class="mw-500 mb-3">
     
+    <img src="/img/compare.png" class="img-fluid mt-1" alt="elderly people">
+
     <h1>Contrasting with 'while'</h1>
 
     <div class="alert alert-danger font-italic">The average years of education of a person without a disability is 6.5 years. <span class="text-danger font-weight-bold">While</span>, for someone with a moderate disability it is 4.4 years.</div>

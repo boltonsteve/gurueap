@@ -19,7 +19,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     <p>I know, I know. You mention more than one right. Normally your teacher would be yelling at you to add an 's'. But this is a vocabulary/collocation issue.</p>
 
-    <div class="alert alert-success font-italic">The principle of the social services is that people <span class="font-weight-bold text-success">have the right to</span> live happily and without discrimination.</div>
+    <div class="alert alert-success font-italic mb-2">The principle of the social services is that people <span class="font-weight-bold text-success">have the right to</span> live happily and without discrimination.</div>
 
     <WithIcon icon="flag" position="right">
         <div slot="html">You can think of it as a phrasal verb (Indonesians will be translating <b><i>berhak untuk</i></b>..). Sometimes it's <b><i>have the right to + V1</i></b>, and sometimes <b><i>have a right to + V1</i></b>.</div>

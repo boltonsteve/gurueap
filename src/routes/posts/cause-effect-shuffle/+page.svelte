@@ -178,9 +178,9 @@ When/If there is an increase in demand, prices rise.`;
 
 <svelte:window on:keydown={handleKeydown} />
 
-<div class="mb-3 mw-500">
+<div class="mb-3 mw-500 pt-1">
 
-    <img src="/img/cause-effect.png" class="mx-auto mt-1" style="width:200px;" alt="work">
+    <img src="/img/cause-effect.png" class="mx-auto" style="width:200px;" alt="work">
 
     <h1 class="text-center mt-2">Cause effect structures</h1>
 

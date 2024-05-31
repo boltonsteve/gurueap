@@ -43,7 +43,7 @@
 
     <p>And so returning to our opening example, we need:</p>
 
-    <div class="alert alert-success font-italic">Automation in industry means increased <span class="font-weight-bold text-success">productivity</span> and better <span class="font-weight-bold text-success">production</span>.</div>
+    <div class="alert alert-success font-italic mb-2">Automation in industry means increased <span class="font-weight-bold text-success">productivity</span> and better <span class="font-weight-bold text-success">production</span>.</div>
 
     <WithIcon icon="sign" position="right">
         <div slot="html">Elsewhere on GuruEAP you will find <a href="../posts/countable-uncountable">further discussion and examples of countable and uncountable nouns</a>.</div>

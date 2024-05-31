@@ -14,7 +14,7 @@
 
     <h1>It's depend!</h1>
 
-    <div class="alert alert-danger font-italic">Happiness <span class="font-weight-bold text-danger">is depend</span> on a person’s view of their life.</div>
+    <div class="alert alert-danger font-italic mb-1">Happiness <span class="font-weight-bold text-danger">is depend</span> on a person’s view of their life.</div>
 
     <WithIcon icon="warning" position="right" msg="Students often mistakenly add <b><i>to be</i></b> to V1 to make present simple tense. It could be that they have seen other structures using <b><i>to be</i></b> and apply the same ‘rules’ to present simple verb forms." />
 
@@ -39,7 +39,7 @@
 
     <p>Notice that the verb <b><i>to be</i></b> needs to 'agree' with the subject:</p>
 
-    <ul class="my-0" style="list-style-type:none;">
+    <ul class="mt-0 mb-2" style="list-style-type:none;">
         <li><b><i>Are</i></b> agrees with <b><i>Roses</i></b> (3rd person plural)</li>
         <li><b><i>Am</i></b> agrees with <b><i>I</i></b> (1st person singular)</li>
     </ul>
@@ -96,7 +96,7 @@
 
     <p>This is incorrect! The only time <b><i>to be</i></b> appears before a verb is <span class="uli">when the form of the verb is continuous</span>:</p>
 
-    <div class="alert alert-success">
+    <div class="alert alert-success mb-2">
         <ul class="pl-0 my-0 font-italic" style="list-style-type:none;">
             <li>My brother <span class="text-danger font-weight-bold">is</span> prepar<span class="text-primary font-weight-bold">ing</span> to sit the IELTS test.</li>
             <li>This time next week I <span class="text-danger font-weight-bold">will be</span> sitting on a beach sipp<span class="text-primary font-weight-bold">ing</span> martinis.</li>

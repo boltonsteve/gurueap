@@ -13,7 +13,7 @@
 
     <h1>Not tuesday! Thursday!</h1>
 
-    <div class="dialogue">
+    <div class="dialogue mb-2">
         <div>Customer:</div>
         <div>Hi. I’ve come to collect one of the free iPhones.</div>
         <div>Shopkeeper:</div>

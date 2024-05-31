@@ -34,7 +34,7 @@
 
     <p>If we say <b><i><span class="uli">a</span> smart remote</i></b>, we're not talking about one remote in particular. We're talking in this case about a hypothetical remote – <b><i>one of many</i></b>.</p>
 
-    <p class="mb-0">This use of the indefinite article <b><i>a</i></b> to talk about one of many is extremely common in English, but is often neglected by students, especially by Indonesian students who do not have good translations for articles in their own language.</p>
+    <p class="mb-2">This use of the indefinite article <b><i>a</i></b> to talk about one of many is extremely common in English, but is often neglected by students, especially by Indonesian students who do not have good translations for articles in their own language.</p>
 
     <WithIcon icon="flag" position="right" msg="Indonesian students either omit the article completely or use a strategy from their first language to communicate <b><i>one of many</i></b>, usually translating directly from <b><i>salah satu</i></b> (one of), or simply <b><i>satu</i></b> (one)." />
 

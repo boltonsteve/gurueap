@@ -14,11 +14,11 @@
 
     <h1>Search / Search for</h1>
 
-    <div class="alert alert-danger font-italic">Now I am <span class="text-danger font-weight-bold">searching</span> ways to make the Lombok community aware of mental health.</div>
+    <div class="alert alert-danger font-italic mb-1">Now I am <span class="text-danger font-weight-bold">searching</span> ways to make the Lombok community aware of mental health.</div>
 
     <WithIcon icon="flag" position="right" msg="Indonesian candidates often use <b><i>search</i></b> (memeriksa) when they mean <b><i>search for</i></b> (mencari)." />
 
-    <h3 class="mt-0">Search</h3>
+    <h3 class="mt-1">Search</h3>
 
     <p>In the photograph at the top of the page, a policewoman is <b><i>searching</i></b> a car. She is not <b><i>searching for</i></b> the car - she has already found the car!</p>
 

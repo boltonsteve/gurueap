@@ -15,7 +15,7 @@
 
     <h1>Saying what you mean with 'used to'</h1>
 
-    <div class="alert alert-danger font-italic">I’m not <span class="text-danger font-weight-bold">used to</span> eat spicy food.</div>
+    <div class="alert alert-danger font-italic mb-2">I’m not <span class="text-danger font-weight-bold">used to</span> eat spicy food.</div>
 
     <WithIcon icon="warning" position="right" msg="Here there is a problem!<br>There are 3 possible meanings of the statement above.<br>Which one do you mean?" />
 

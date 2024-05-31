@@ -20,6 +20,8 @@
         <div slot="html">Indonesians hate to add 's' to <b><i>plurals</i></b>, <b><i>possessives</i></b> and <b><i>third person verbs</i></b>. In Bahasa Indonesia these grammatical features are produced in other ways.</div>
     </WithIcon>
 
+    <p class="my-0">&nbsp;</p>
+
     <WithIcon icon="flag">
         <div slot="html">It's also extremely unusual in Bahasa Indonesia to see <b><i>two or more consonants together</i></b>, which is often what happens when you add 's' to the end of a word.</div>
     </WithIcon>

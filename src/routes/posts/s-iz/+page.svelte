@@ -17,7 +17,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     <WithIcon icon="warning" position="right" msg="When you add an ‘s’ to some spoken words, you may need to do more than simply add ‘s’. Sometimes you have to add ‘Iz’, instead." />
 
-    <div class="my-grid">
+    <div class="my-grid mt-2">
         <div>This happens to words that in their normal form end with the sounds to the right.</div>
         <div class="phonemic my-flex">
             <div>/s/</div>
@@ -79,7 +79,7 @@ Try reading the following sentences aloud!
         .my-flex {
             display:grid;
             grid-template-columns:1fr 1fr;
-            gap:10px;
+            gap:5px;
         }
 
         .my-flex div {

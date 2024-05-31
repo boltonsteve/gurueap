@@ -22,7 +22,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
         <div slot="html">However, <b><i>way</i></b> (noun) does not collocate in English with <b><i>do</i></b> (verb). You cannot <b><i>do</i></b> a <b><i>way</i></b>. This is possible in Bahasa Indonesia but not in English.</div>
     </WithIcon>
 
-    Another problem here is the redundant use of <b><i>there are</i></b> (see <a href="../posts/there-is-ada" target="_blank">separate post</a>).
+    <p>Another problem here is the redundant use of <b><i>there are</i></b> (see <a href="../posts/there-is-ada" target="_blank">separate post</a>).</p>
 
     <p>In English you might write:</p>
 

@@ -12,7 +12,7 @@
 
     <h1>Humans are usually redundant</h1>
 
-    <div class="alert alert-danger font-italic">In conclusion, long working hours are necessary <span class="text-danger font-weight-bold">for human beings</span>.</div>
+    <div class="alert alert-danger font-italic mb-1">In conclusion, long working hours are necessary <span class="text-danger font-weight-bold">for human beings</span>.</div>
 
     <WithIcon icon="flag" position="right" msg="In Indonesian writing culture, humans are mentioned often. This is not the case in written English." />
 

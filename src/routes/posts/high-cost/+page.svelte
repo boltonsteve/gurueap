@@ -12,7 +12,7 @@
 
     <img src="../img/university.png" class="img-fluid mx-auto mt-1 mb-1" alt="meaningless ing">
 
-    <div class="alert alert-danger font-italic">Studying abroad needs <span class="font-weight-bold text-danger">high cost</span>!</div>
+    <div class="alert alert-danger font-italic mb-2">Studying abroad needs <span class="font-weight-bold text-danger">high cost</span>!</div>
 
     <WithIcon icon="flag" position="right" msg="This one does not translate directly from Indonesian. In fact the meaning changes dramatically!" />
 

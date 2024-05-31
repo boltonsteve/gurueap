@@ -15,7 +15,7 @@
 
     <h1 class="mt-0">Countable AND Uncountable (?!)</h1>
 
-    <div class="alert alert-danger font-italic">Moreover, <span class="font-weight-bold text-danger">a failure</span> can be caused by a lack of practical <span class="font-weight-bold text-danger">experiences</span>.</div>
+    <div class="alert alert-danger font-italic mb-2">Moreover, <span class="font-weight-bold text-danger">a failure</span> can be caused by a lack of practical <span class="font-weight-bold text-danger">experiences</span>.</div>
 
     <WithIcon icon="warning" msg="It's annoying, I know, but while some nouns are countable and others are uncountable, yet others can be either countable or uncountable, and here are two examples in the same sentence: failure and experience." />
 
@@ -31,7 +31,7 @@
 
     <div class="alert alert-success font-italic">I'm such <span class="font-weight-bold text-success">a failure</span>. Taking an exam is always <span class="font-weight-bold text-success">a terrible experience</span> for me.</div>
 
-    <p class="mb-0">Other posts on GuruEAP examine other <b><i>words that can be either countable or uncountable</i></b>:</p>
+    <p>Other posts on GuruEAP examine other <b><i>words that can be either countable or uncountable</i></b>:</p>
 
     <WithIcon icon="sign">
         <div slot="html">

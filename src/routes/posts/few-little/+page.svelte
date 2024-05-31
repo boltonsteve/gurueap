@@ -60,7 +60,7 @@
 
     <h1>(A) few, (a) little</h1>
 
-    <div class="alert alert-danger font-italic"><span class="font-weight-bold text-danger">Only some</span> students hand in their homework on time.</div>
+    <div class="alert alert-danger font-italic mb-2"><span class="font-weight-bold text-danger">Only some</span> students hand in their homework on time.</div>
 
     <WithIcon icon="flag" position="right">
         <div slot="html">Elsewhere on GuruEAP we've looked at <a href="../posts/some" target="_blank" rel="noopener">alternatives to <b><i>some</i></b></a>, which tends to be overused by Indonesians translating from <b><i>beberapa</i></b>, or, in the example above - <b><i>hanya beberapa</i></b>.</div>

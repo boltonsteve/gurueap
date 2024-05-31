@@ -15,7 +15,7 @@
 
     <h1>Audience(s)</h1>
 
-    <div class="alert alert-danger font-italic"><span class="font-weight-bold text-danger">Several audiences</span> left before the film finished.</div>
+    <div class="alert alert-danger font-italic mb-2"><span class="font-weight-bold text-danger">Several audiences</span> left before the film finished.</div>
 
     <WithIcon icon="warning" position="right">
         <div slot="html"><b><i>Audience</i></b> is indeed countable but it is a 'collective' noun, and so an (=1) audience can comprise many people.</div>

@@ -14,7 +14,7 @@
 
     <h1>Are the benefits beneficial?</h1>
 
-    <div class="alert alert-danger font-italic">Constructing impressive buildings <span class="text-danger font-weight-bold">benefits</span> more <span class="text-danger font-weight-bold">for</span> visitors than local people.</div>
+    <div class="alert alert-danger font-italic mb-2">Constructing impressive buildings <span class="text-danger font-weight-bold">benefits</span> more <span class="text-danger font-weight-bold">for</span> visitors than local people.</div>
 
     <WithIcon icon="flag" position="right" msg="This is another word that gets partly lost in translation. Let</i></b>s look at some possible improvements." />
 

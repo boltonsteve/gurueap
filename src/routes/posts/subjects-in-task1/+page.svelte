@@ -14,17 +14,17 @@
 
     <h1>Subjects in Task 1</h1>
 
-    <div class="alert alert-danger font-italic mb-1"><span class="font-weight-bold text-danger">Americans rose</span> steadily, while <span class="font-weight-bold text-danger">Indonesians fell</span> dramatically.</div>
+    <div class="alert alert-danger font-italic mb-2"><span class="font-weight-bold text-danger">Americans rose</span> steadily, while <span class="font-weight-bold text-danger">Indonesians fell</span> dramatically.</div>
 
     <img src="/img/USD_IDR.jpg" class="mx-auto w-75 rounded" alt="Americans rising and Indonesians falling">
 
-    <p class="small text-center mt-1">Americans rising and Indonesians falling</p>
+    <p class="small text-center mt-1 mb-2">Americans rising and Indonesians falling</p>
 
     <WithIcon icon="warning" position="right">
         <div slot="html">With a sentence like the one above you are unlikely to communicate anything meaningful about a graph, table or chart. If there was a rise or a fall, then you need to state precisely <span class="uli">what it was that rose</span> and <span class="uli">what it was that fell</span>. <b><i>What is the subject?</i></b></div>
     </WithIcon>
     
-    <img src="/img/divorce_rate.jpg" class="mx-auto w-75 border rounded mb-2" alt="chart: divorce rate">
+    <img src="/img/divorce_rate.jpg" class="mx-auto w-75 border rounded my-2" alt="chart: divorce rate">
 
     <div class="alert alert-success font-italic"><span class="uli">The divorce rate in America</span> rose steadily, while <span class="uli">the divorce rate in Indonesia</span> fell dramatically.</div>
 

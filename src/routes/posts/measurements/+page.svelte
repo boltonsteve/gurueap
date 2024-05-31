@@ -14,7 +14,7 @@
 
     <h1 class="mt-0">Measurements</h1>
 
-    <div class="alert alert-danger font-italic">Just like their male counterparts, many Australian women earn <span class="font-weight-bold text-danger">money</span> 2,000 dollars per month.</div>
+    <div class="alert alert-danger font-italic mb-2">Just like their male counterparts, many Australian women earn <span class="font-weight-bold text-danger">money</span> 2,000 dollars per month.</div>
 
     <WithIcon icon="flag" position="right" msg="Bahasa Indonesia has this kind of labelling: <i>dapat uang 2,000 dolar per bulan.</i>" />
 

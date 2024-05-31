@@ -13,7 +13,7 @@ keywords="IELTS,EAP,academic English,Indonesia,study abroad,English for academic
 
     <h1>Nominalisation Yin and 'Yang'</h1>
 
-    <div class="my-mini-grid">
+    <div class="my-mini-grid mb-2">
         <div>You can easily avoid relative clauses when you're post-modifying nouns. This is especially useful in IELTS Task 1 writing where you have to modify a statistics word (number, amount, etc.) to include information from the axes of a graph, or from the labels attached to a chart, or from the column and row headings of a table.</div>
         <div class="my-right"><img src="/img/yin-yang-nominalisation.png" class="img-fluid" alt="yin yang"></div>
     </div>

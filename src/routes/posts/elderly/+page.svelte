@@ -14,7 +14,7 @@
 
     <h3>Elder, Elderly, Older people</h3>
 
-    <div class="alert alert-danger font-italic">Young people find it easier to use technology than <span class="font-weight-bold text-danger">elder</span>.</div>
+    <div class="alert alert-danger font-italic mb-2">Young people find it easier to use technology than <span class="font-weight-bold text-danger">elder</span>.</div>
     
     <WithIcon icon="warning" position="right" msg="Often a candidate will attempt to use synonyms in order to avoid repetition, but this can lead to incorrect meaning." />
 
