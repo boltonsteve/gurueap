@@ -31,9 +31,3 @@
     <p class="mt-1 text-center"><b><i>human</i></b> as plural countable noun</p>
 
 </div>
-
-<style>
-    img {
-        width:75%;
-    }
-</style>
