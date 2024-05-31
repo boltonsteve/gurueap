@@ -1,8 +1,14 @@
 export const links = [
     {
+        title: "Reporting verbs: tenses",
+        href: "posts/reporting-verbs-tenses",
+        keywords: ['grammar','tenses','reporting verbs','that','Bahasa Indonesia'],
+        description: "Explaining the use of tenses when reporting sources."
+    },
+    {
         title: "Missing verb",
         href: "posts/missing-verb",
-        keywords: ['grammar','sentence structure','verbs'],
+        keywords: ['grammar','sentence structure','verbs','Bahasa Indonesia'],
         description: "Recommending the use of at least one verb in a sentence in order to make a sentence."
     },
     {
