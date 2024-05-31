@@ -41,7 +41,7 @@
 
 </script>
 
-<div class="py-1" class:item-left={right} class:item-right={left}>
+<div class:item-left={right} class:item-right={left}>
     {#if right}
         <div id="html"><p class="m-0">{@html msg}</p><slot name="html"></slot></div>
     {/if}
@@ -75,7 +75,7 @@
         {/if}
     </div>
     {#if left}
-        <div id="html"><p class="m-0">{@html msg}</p><slot name="html"></slot></div>
+        <div id="html"><p class="m-0 p-0">{@html msg}</p><slot name="html"></slot></div>
     {/if}
 </div>
 

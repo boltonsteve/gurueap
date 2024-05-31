@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Missing verb",
+        href: "posts/missing-verb",
+        keywords: ['grammar','sentence structure','verbs'],
+        description: "Recommending the use of at least one verb in a sentence in order to make a sentence."
+    },
+    {
         title: "Fixed expressions are cool!",
         href: "posts/fixed-expressions",
         keywords: ['vocabulary','fixed expressions'],
