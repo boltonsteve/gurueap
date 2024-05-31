@@ -1,5 +1,17 @@
 export const links = [
     {
+        title: "Thank(s) God",
+        href: "posts/thank-god",
+        keywords: ['grammar','Bahasa Indonesia'],
+        description: "Explaining when and when NOT to add 's' in the expression 'Thank God'"
+    },
+    {
+        title: "To + __ing (?!)",
+        href: "posts/to-ing",
+        keywords: ['grammar','prepositions'],
+        description: "Demonstrating situations where 'to' is followed by '__ing' rather than the infinitive (V1)."
+    },
+    {
         title: "Age in Task 1",
         href: "posts/age-task1",
         keywords: ['vocabulary','age','Bahasa Indonesia'],

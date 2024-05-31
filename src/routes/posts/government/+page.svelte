@@ -8,9 +8,9 @@
     description="Are you talking about your own government, other governments, or the institution of government?"
 />
 
-<div class="mb-3 mw-500">
+<div class="mb-3 mw-500 pt-1">
 
-    <img class="mx-auto mt-1" src="/img/bhinneka-tunggal-ika.png" alt="Bhinneka Tunggal Ika" style="max-width:200px;">
+    <img class="mx-auto" src="/img/bhinneka-tunggal-ika.png" alt="Bhinneka Tunggal Ika" style="max-width:200px;">
 
     <h1 class="text-center">Government</h1>
 
