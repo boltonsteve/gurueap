@@ -1,5 +1,17 @@
 export const links = [
     {
+        title: "Himself, Herself, Theirselves(?)",
+        href: "posts/themselves",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Clearing up some confusion about 'themselves'"
+    },
+    {
+        title: "Affected by 'Affect to'",
+        href: "posts/affect",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Demonstrating the correct use of 'affect'"
+    },
+    {
         title: "Thank(s) God",
         href: "posts/thank-god",
         keywords: ['grammar','Bahasa Indonesia'],
@@ -50,7 +62,7 @@ export const links = [
     {
         title: "Measurements",
         href: "posts/measurements",
-        keywords: ['vocabulary','Bahasa Indonesia','task1'],
+        keywords: ['vocabulary','Bahasa Indonesia','Task 1'],
         description: "Explaining when to and when not to mention the thing being measured"
     },
     {
