@@ -1,9 +1,15 @@
 export const links = [
     {
+        title: "Humansss",
+        href: "posts/human",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Contrasting the adjective 'human' with the countable noun 'human'"
+    },
+    {
         title: "Himself, Herself, Theirselves(?)",
         href: "posts/themselves",
-        keywords: ['vocabulary','Bahasa Indonesia'],
-        description: "Clearing up some confusion about 'themselves'"
+        keywords: ['grammar','pronouns','personal pronouns'],
+        description: "Clearing up some confusion about the pronoun 'themselves'"
     },
     {
         title: "Affected by 'Affect to'",
