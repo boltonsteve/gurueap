@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Fluctuative",
+        href: "posts/fluctuative",
+        keywords: ['vocabulary','Task 1'],
+        description: "Revealing that there is no such word as 'fluctuative'"
+    },
+    {
         title: "Humansss",
         href: "posts/human",
         keywords: ['vocabulary','Bahasa Indonesia'],
