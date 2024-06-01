@@ -1,5 +1,11 @@
 export const links = [
     {
+        title: "Against the misuse of 'against'",
+        href: "posts/against",
+        keywords: ['vocabulary','Bahasa Indonesia'],
+        description: "Showing that 'against' is a preposition and cannot be used as a verb, and what to do if you're struggling with translation."
+    },
+    {
         title: "Lack (of)",
         href: "posts/lack-of",
         keywords: ['grammar','vocabulary'],
