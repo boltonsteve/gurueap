@@ -20,7 +20,7 @@
 
     <div class="alert alert-success font-italic">The fallopian tube is a tunnel which the sperm passes <span class="font-weight-bold text-primary">through</span> on its way to the egg.</div>
 
-    <img src="/img/tunnel.png" class="img-fluid mx-auto" alt="tunnel" style="width:75%;">
+    <img src="/img/tunnel.png" class="img-fluid mx-auto mb-0" alt="tunnel" style="width:75%;">
 
     <p>Compare these situations:</p>
 

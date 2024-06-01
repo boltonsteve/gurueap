@@ -1,6 +1,6 @@
 <script>
     import { flagIndo, flagUk } from '$lib/flags.js';
-    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle, CircleHalf, HandThumbsUp, HandThumbsDown, Link45deg, Key } from "svelte-bootstrap-icons";
+    import { ConeStriped, SignpostSplit, ExclamationTriangle, Book, InfoCircle, CircleHalf, HandThumbsUp, HandThumbsDown, Link45deg, Key, MusicNoteBeamed } from "svelte-bootstrap-icons";
     export let html = '';
     export let icon = 'cone';
     export let flag = 'indo';
@@ -9,7 +9,7 @@
 
     let theFlag = flag == 'indo' ? flagIndo : flagUk;
 
-    let showCone,showSign,showWarning,showFlag,showInfo,showBook,left,right,showThumbUp,showThumbDown, showKey;
+    let showCone,showSign,showWarning,showFlag,showInfo,showBook,left,right,showThumbUp,showThumbDown, showKey, showMusic;
 
     if(icon == 'flag') {
         showFlag = true;
@@ -27,6 +27,8 @@
         showThumbUp = true;
     } else if(icon == 'thumbDown') {
         showThumbDown = true;
+    } else if(icon == 'music') {
+        showMusic = true;
     } else {
         showCone = true;
     }
@@ -46,6 +48,9 @@
         <div id="html"><p class="m-0">{@html msg}</p><slot name="html"></slot></div>
     {/if}
     <div id="icon">
+        {#if showMusic}
+            <MusicNoteBeamed fill="var(--dark)" height={54} width={54} />
+        {/if}
         {#if showBook}
             <Book fill="var(--dark)" height={54} width={54} />
         {/if}

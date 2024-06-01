@@ -33,7 +33,7 @@ description="Recommending the use of at least one verb in a sentence in order to
  
     <div class="alert alert-success font-italic">First of all, <span class="font-weight-bold text-success">the problem of humans using too many of the world’s resources</span> <span class="font-weight-bold text-primary">is</span> a difficult problem to solve.</div>
 
-    <p>..or as an <span class="font-weight-bold text-danger">object</span> following <span class="font-weight-bold text-primary">a verb</span>:</p>
+    <p class="pl-2">..or as a <span class="font-weight-bold text-primary">a verb</span> followed by an <span class="font-weight-bold text-danger">object</span>:</p>
 
     <div class="alert alert-success font-italic mb-2">The government <span class="font-weight-bold text-primary">is striving to solve</span> <span class="font-weight-bold text-danger">the problem of humans using too many of the world’s resources</span>.</div>
 

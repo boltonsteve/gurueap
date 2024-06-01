@@ -1,6 +1,12 @@
 export const links = [
     {
-        title: "Wrong because of 'because of'",
+        title: "Lack (of)",
+        href: "posts/lack-of",
+        keywords: ['grammar','vocabulary'],
+        description: "Demonstrating the grammatical use of 'lack' and 'lack of'"
+    },
+    {
+        title: "Inaccurate due to 'because of'",
         href: "posts/because-of",
         keywords: ['grammar','cause effect'],
         description: "Demonstrating the grammatical use of 'because of' and 'due to'"
