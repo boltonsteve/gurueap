@@ -17,10 +17,10 @@
     <div class="alert alert-danger font-italic">Most Indonesian people <span class="font-weight-bold text-danger">against</span> the removal of fuel subsidies.</div>
 
     <WithIcon icon="flag">
-        <div slot="html">Indonesian IELTS candidates are sometimes confused about how to translate <b><i>tanya</i></b> and <b><i>minta</i></b>.</div>
+        <div slot="html">This could be an Indonesian writer attempting to translate the verb <b><i>menentang?</i></b></div>
     </WithIcon>
 
-    <p>In English, <b><i>against</i></b> is a preposition, and so this sentence does not contain a verb and is therefore not a sentence. To make a sentence, you can do this:</p>
+    <p>In English, <b><i>against</i></b> is a preposition, and since the opening sentence does not contain a verb it is therefore not a sentence. To make a sentence, you can do this:</p>
 
     <div class="alert alert-success font-italic">Most Indonesian people <span class="font-weight-bold text-success">are against</span> the removal of fuel subsidies.<br><span class="small">(to be + against)</span></div>
 
