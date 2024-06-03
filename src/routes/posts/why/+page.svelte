@@ -12,7 +12,7 @@
 
     <img src="../img/why.png" class="mx-auto w-75" alt="why">
 
-    <h1>Why is..?</h1>
+    <h1 class="mt-0">Why is..?</h1>
 
     <div class="alert alert-danger font-italic">Excuse me, why the answer to number 10 <span class="font-weight-bold text-danger">is</span> ‘A’?</div>
 

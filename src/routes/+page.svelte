@@ -19,6 +19,8 @@
         }
     })
 
+    console.log('Posts: ' + totalPosts + '; Games: ' + totalGames + '; Songs: ' + totalSongs);
+
     let hw = 50;
 
 </script>
@@ -46,19 +48,19 @@
         <div class="card">
         <a href="./posts">
                 <div><FilePost height={hw} width={hw} /></div>
-                {totalPosts} Posts
+                Posts
             </a>
         </div>
         <div class="card">
             <a href="./games">
                 <div><Controller  height={hw} width={hw} /></div>
-                {totalGames} Games
+                Games
             </a>
         </div>
         <div class="card">
             <a href="./songs">
                 <div><FileMusic  height={hw} width={hw} /></div>
-                {totalSongs} Songs
+                Songs
             </a>
         </div>
     </div>

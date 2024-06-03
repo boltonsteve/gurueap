@@ -35,7 +35,7 @@
     <hr>
 
     <h3 class="mb-0">Challenge!</h3>
-    <p class="mt-0">With a friend, use <b><i>against</i></b> discuss either approval or disapproval of the activity shown in the photo at the top of the page.</p>
+    <p class="mt-0">With a friend, use <b><i>against</i></b> to discuss either approval or disapproval of the activity shown in the photo at the top of the page.</p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
