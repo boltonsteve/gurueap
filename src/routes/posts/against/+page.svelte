@@ -14,7 +14,7 @@
 
     <h1>Against the misuse of 'against'</h1>
 
-    <div class="alert alert-danger font-italic">Most Indonesian people <span class="font-weight-bold text-danger">against</span> the removal of fuel subsidies.</div>
+    <div class="alert alert-danger font-italic mb-1">Most Indonesian people <span class="font-weight-bold text-danger">against</span> the removal of fuel subsidies.</div>
 
     <WithIcon icon="flag">
         <div slot="html">This could be an Indonesian writer attempting to translate the verb <b><i>menentang?</i></b></div>
