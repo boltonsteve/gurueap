@@ -6,7 +6,7 @@
 </script>
 
 <SvelteSeo
-    title="Add 's' by Georges"
+    title="Add 's' by George"
   description="A video of George describing Yuana, and trying his best to put 's' on the end of words that require it."
 />
 
