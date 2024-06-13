@@ -1158,6 +1158,7 @@
                 {:else}
 
                     <div style="border-color:{claim.borderColor}">
+
                         {#if outline}
                             <div class="outline-item">
                                 {#if claim.bullet}
@@ -1167,6 +1168,7 @@
                                 {:else}
                                     <div>
                                         {#if claim.indent == 0}
+
                                             <h1 id="c{i}">{@html claim.text}</h1>
                                         {:else if claim.indent == 1}
                                             <h2 id="c{i}">{@html claim.text}</h2>
@@ -1183,6 +1185,7 @@
                         {:else}
                             <div id="c{i}" class="claim map-item" style="border-width:{claim.borderWidth}px;border-style:{claim.borderStyle};border-color:{claim.borderColor};zoom:{zoom};">{@html claim.label}{@html claim.text}</div>
                         {/if} 
+
                     </div>
 
                 {/if} 
