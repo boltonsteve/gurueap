@@ -34,7 +34,7 @@
     <div id="wrapper"><div>
 <div id="landing_grid" class="mx-auto">
 
-    <img src="/img/line-student.png" class="mx-auto" alt="lecture sketch square characters" style="width:200px;">
+    <img src="/img/line-student.png" class="mx-auto" alt="lecture sketch square characters" style="width:180px;">
 
     <div id="div_top">
         <div id="title">GuruEAP</div>
