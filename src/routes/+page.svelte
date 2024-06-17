@@ -34,6 +34,8 @@
     <div id="wrapper"><div>
 <div id="landing_grid" class="mx-auto">
 
+    <img src="/img/line-student.png" class="mx-auto" alt="lecture sketch square characters" style="width:200px;">
+
     <div id="div_top">
         <div id="title">GuruEAP</div>
         <div id="tag">Academic English not only for Indonesians</div>
@@ -75,8 +77,12 @@
     /*     border: 1px solid red; */
     /* } */
 
+    .text-box, .card {
+        margin-top: 10px;
+    }
+
     #wrapper {
-        height: 80vh;
+        height: 90vh;
         display: flex;
 
         justify-content: center;
@@ -84,11 +90,11 @@
         max-width: 600px
     }
 
-    #landing_grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+    /* #landing_grid { */
+    /*     display: grid; */
+    /*     grid-template-columns: 1fr; */
+    /*     gap: 30px; */
+    /* } */
 
     #div_top {
         display: grid;
