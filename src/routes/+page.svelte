@@ -34,7 +34,7 @@
     <div id="wrapper"><div>
 <div id="landing_grid" class="mx-auto">
 
-    <img src="/img/line-guru.png" class="mx-auto" alt="lecture sketch square characters" style="width:250px;">
+    <img src="/img/line-guru.png" class="w-75 mx-auto" alt="lecture sketch square characters">
 
     <div id="div_top">
         <div id="title">GuruEAP</div>
@@ -105,6 +105,7 @@
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
+        margin-top:0px;
     }
 
     #title {
@@ -112,6 +113,7 @@
         text-align:center;
         font-weight:bold;
         color: #aaaaaa;
+        /* color: #0277BD; */
     }
 
     #tag {
