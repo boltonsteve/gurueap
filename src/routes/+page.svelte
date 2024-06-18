@@ -34,7 +34,7 @@
     <div id="wrapper"><div>
 <div id="landing_grid" class="mx-auto">
 
-    <img src="/img/line-student.png" class="mx-auto" alt="lecture sketch square characters" style="width:180px;">
+    <img src="/img/line-guru.png" class="mx-auto" alt="lecture sketch square characters" style="width:250px;">
 
     <div id="div_top">
         <div id="title">GuruEAP</div>
@@ -42,29 +42,36 @@
     </div>
 
     <div id="div_middle">
+
         <div class="text-box">GuruEAP was originally conceived as supplementary material for academic English self-study and for EAP classroom teaching (English for Academic Purposes) in Indonesia.</div>
+
         <div class="text-box">There's something for everybody, but certainly if you're Indonesian and you're preparing for IELTS and/or study in an English-speaking university, then you've come to the right place!</div>
+
     </div>
 
     <div id="div_bottom">
+
         <div class="card">
-        <a href="./posts">
+            <a href="./posts">
                 <div><FilePost height={hw} width={hw} /></div>
                 Posts
             </a>
         </div>
+
         <div class="card">
             <a href="./games">
                 <div><Controller  height={hw} width={hw} /></div>
                 Games
             </a>
         </div>
+
         <div class="card">
             <a href="./songs">
                 <div><FileMusic  height={hw} width={hw} /></div>
                 Songs
             </a>
         </div>
+
     </div>
 
 </div>
