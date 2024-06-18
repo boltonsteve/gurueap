@@ -42,11 +42,8 @@
     </div>
 
     <div id="div_middle">
-
         <div class="text-box">GuruEAP was originally conceived as supplementary material for academic English self-study and for EAP classroom teaching (English for Academic Purposes) in Indonesia.</div>
-
         <div class="text-box">There's something for everybody, but certainly if you're Indonesian and you're preparing for IELTS and/or study in an English-speaking university, then you've come to the right place!</div>
-
     </div>
 
     <div id="div_bottom">
@@ -85,7 +82,7 @@
     /* } */
 
     .text-box, .card {
-        margin-top: 10px;
+        margin-top: 25px;
     }
 
     #wrapper {
