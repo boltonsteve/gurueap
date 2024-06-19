@@ -32,11 +32,11 @@
         <li>You’re <span class="font-weight-bold text-danger">with fire playing</span>!<br><span class="explanation">(Changed word order)</span></li>
     </ul>
 
-    <p class="mb-0">You will be less likely to make errors like these if you memorise fixed expressions much as you might memorise individual vocabulary items. You may also notice how the structure of a fixed expression differs from its translation.</p>
+    <p>You will be less likely to make errors like these if you memorise fixed expressions much as you might memorise individual vocabulary items. You may also notice how the structure of a fixed expression differs from its translation.</p>
 
     <WithIcon icon="flag" position="right" msg="Indonesians feel a strong urge to add <b><i>bahwa</i></b> after <b><i>seperti kita ketahui</i></b>, whereas in English there is no <b><i>that</i></b>." />
 
-    <div class="alert alert-success font-italic"><span class="font-weight-bold text-success">As we know</span>, last year the government removed English from the elementary school curriculum.<p class="small mb-0"><b><i>As we know</i></b> = 1 item containing 3 words (not 4!)</p></div>
+    <div class="alert alert-success font-italic mt-2"><span class="font-weight-bold text-success">As we know</span>, last year the government removed English from the elementary school curriculum.<p class="small mb-0"><b><i>As we know</i></b> = 1 item containing 3 words (not 4!)</p></div>
 
     <p>Notice also that in this example <b><i>as we know</i></b> also requires a comma (,) to separate it from <b><i>last year</i></b>.</p>
 
