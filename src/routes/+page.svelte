@@ -31,49 +31,54 @@
     keywords="academic english,english for academic purposes,EAP,IELTS,international students,pre-departure,Indonesia"
 />
 
-    <div id="wrapper"><div>
-<div id="landing_grid" class="mx-auto">
+<div id="wrapper">
 
-    <img src="/img/line-guru.png" class="w-75 mx-auto" alt="lecture sketch square characters">
+    <div>
 
-    <div id="div_top">
-        <div id="title">GuruEAP</div>
-        <div id="tag">Academic English not only for Indonesians</div>
-    </div>
+        <div id="landing_grid" class="mx-auto">
 
-    <div id="div_middle">
-        <div class="text-box">GuruEAP was originally conceived as supplementary material for academic English self-study and for EAP classroom teaching (English for Academic Purposes) in Indonesia.</div>
-        <div class="text-box">There's something for everybody, but certainly if you're Indonesian and you're preparing for IELTS and/or study in an English-speaking university, then you've come to the right place!</div>
-    </div>
+            <img src="/img/line-guru.png" class="w-75 mx-auto" alt="lecture sketch square characters">
 
-    <div id="div_bottom">
+                <div id="div_top">
+                    <div id="title">GuruEAP</div>
+                    <div id="tag">Academic English not only for Indonesians</div>
+                </div>
 
-        <div class="card">
-            <a href="./posts">
-                <div><FilePost height={hw} width={hw} /></div>
-                Posts
-            </a>
-        </div>
+                <div id="div_middle">
+                    <div class="text-box">GuruEAP was originally conceived as supplementary material for academic English self-study and for EAP classroom teaching (English for Academic Purposes) in Indonesia.</div>
+                    <div class="text-box">There's something for everybody, but certainly if you're Indonesian and you're preparing for IELTS and/or study in an English-speaking university, then you've come to the right place!</div>
+                </div>
 
-        <div class="card">
-            <a href="./games">
-                <div><Controller  height={hw} width={hw} /></div>
-                Games
-            </a>
-        </div>
+                <div id="div_bottom">
 
-        <div class="card">
-            <a href="./songs">
-                <div><FileMusic  height={hw} width={hw} /></div>
-                Songs
-            </a>
-        </div>
+                    <div class="card">
+                        <a href="./posts">
+                            <div><FilePost height={hw} width={hw} /></div>
+                            Posts
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="./games">
+                            <div><Controller  height={hw} width={hw} /></div>
+                            Games
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="./songs">
+                            <div><FileMusic  height={hw} width={hw} /></div>
+                            Songs
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
 
     </div>
 
 </div>
-
-    </div></div>
 
 <style>
 
@@ -86,12 +91,14 @@
     }
 
     #wrapper {
-        height: 90vh;
+        /* height: 50vh; */
+        padding-top:30px;
         display: flex;
-
         justify-content: center;
-        align-items: center;
-        max-width: 600px
+        /* align-items: center; */
+        max-width: 600px;
+        /* overflow: auto; */
+
     }
 
     /* #landing_grid { */
