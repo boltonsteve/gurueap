@@ -22,7 +22,7 @@
 
     <p>Well, if you are a friend of Tom Cruise, then OK. But if you have never even met Tom Cruise then you might <b><i>know <span class="uli">of</span></i></b> him, but you probably don't <b><i>know</i></b> him.</p>
 
-    <h3 class="mb-0">Know (without 'of')</h3>
+    <h3 class="mb-0">Know - <i>without 'of'</i></h3>
 
     <p class="my-0">If you <b><i>know</i></b> someone, then they also <b><i>know</i></b> you:</p>
 
