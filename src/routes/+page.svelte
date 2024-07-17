@@ -38,6 +38,7 @@
         <div id="landing_grid" class="mx-auto">
 
             <img src="/img/line-guru.png" class="w-75 mx-auto" alt="lecture sketch square characters">
+                <!--<img src="/img/guy-with-laptop.png" class="w-50 mx-auto" alt="lecture sketch square characters">-->
 
                 <div id="div_top">
                     <div id="title">GuruEAP</div>

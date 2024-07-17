@@ -1,0 +1,101 @@
+<script>
+
+    import SvelteSeo from "svelte-seo";
+    import ScaffoldSpan from '../../components/ScaffoldSpan.svelte';
+
+    let title = 'Consumerism';
+    let finished = false;
+
+    let incoming = 'Jack and [Jill|And who?] went up the [hill|The what?] to fetch a pail of water.';
+
+    let x = `<p>In modern society, in order to improve the quality of their lives, people <ScaffoldSpan done={finished} ori='buy a range of items that allow them to live more comfortably' sc='[What do they do?]' />. Some people claim that as a result, we have moved too far away from <span class="text-primary">established beliefs and conduct</span>, and that this is <span class="text-primary">regrettable</span>. However, I believe that we should <span class="text-primary">take full advantage of the money we earn to enrich our lifestyles</span>, and that we should <span class="text-primary">progress rather than being stuck in outdated traditions</span>, so there is no cause for regret.</p>
+
+        <p>It is claimed that consumerism has done harm to our society because <span class="text-primary">the morals upheld by previous generations have been steadily eroded as we have become too focused on our own comfort</span>. People who hold this opinion contend that <span class="text-primary">values such as respect for the institution of the family have declined in importance</span>, and that this is <span class="text-primary">a shame</span>. However, it is important to remember that <span class="text-primary">many of these so-called values disadvantaged substantial numbers of people</span>. For example, it used to be believed that women should <span class="text-primary">stay at home</span>, <span class="text-primary">clean the house</span> and <span class="text-primary">bring up children</span>. Now, thanks to labour-saving devices bought using salaries of hard-working men and women, families have <span class="text-primary">more time together</span>, and surely nobody misses <span class="text-primary">the unfair old societal norms</span>. </p>
+
+        <p>It is further claimed by some that traditional rituals such as those related to family or social events have become overshadowed by <span class="text-primary">people's desire to acquire new possessions</span> and that this is <span class="text-primary">regrettable</span>. However, such customs continue to thrive in <span class="text-primary">so-called consumerist societies</span>. Wedding rituals, for example, have remained unchanged, and of course newly-weds now receive more <span class="text-primary">gifts</span> than they did in the past – all bought by the proceeds of people's work. Other customs are enhanced by consumer goods such as <span class="text-primary">video cameras</span> and <span class="text-primary">mobile phones</span> as more people can enjoy traditional events either remotely or after the event. Therefore, <span class="text-primary">nothing is lost and there is no need for regret</span>. </p>
+
+        <p>In conclusion, <span class="text-primary">traditions</span> have not been swept away by the desire of people to buy things that improve their lives. It is true that some <span class="text-primary">less-desirable societal norms and habits</span> have gone, but their passing is nothing to lament over.</p>`;
+
+    let inArr = incoming.split(/(\s\[|]\s?)/).filter( next => !next.match(/[\[\]]/) );
+    console.log(inArr);
+    let inObjs = inArr.map( next => {
+        let toReturn = '';
+        let items;
+        if(next.match(/\|/)) {
+            let items = next.split(/\|/);
+            toReturn = {
+                ori: items[0],
+                q: items[1],
+                user: ''
+            }
+        } else {
+            toReturn = {
+                ori: '',
+                q: '',
+                user: ''
+            }
+        }
+        return toReturn;
+    });
+    console.log(inObjs);
+
+    let showQ = true;
+    let showOri = false;
+
+</script>
+
+<div class="container">
+
+    <h1 class="text-center">{title}</h1>
+
+    <div id="activity">
+
+    {#if showQ}
+        {#each inObjs as next,i}
+            {#if next.ori == ''}
+                {inArr[i]}&nbsp;
+            {:else}
+                <span class="text-danger">{next.ori}</span>&nbsp;
+            {/if} 
+        {/each} 
+    {:else if showOri}
+        {#each inObjs as next,i}
+            {#if next.ori == ''}
+                {inArr[i]}&nbsp;
+            {:else}
+                <span class="text-success">{next.ori}</span>&nbsp;
+            {/if} 
+        {/each} 
+    {/if} 
+
+    <button id="check" class="btn btn-next btn-outline-info mx-auto my-3 d-block">Finish</button>
+
+    </div>
+
+</div>
+
+
+<style>
+
+    /* * { */
+    /*     border:1px solid red; */
+    /* } */
+
+span, p {
+    cursor:pointer;
+}
+span {
+    white-space:normal;
+}
+    #activity {
+        max-width:500px;
+        margin: 0px auto;
+    }
+
+    .flex-cc {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+</style>
