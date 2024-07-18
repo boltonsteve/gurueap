@@ -2,7 +2,6 @@
 
 import Multiplayer from '../../components/Multiplayer.svelte'
 
-
 let qa = [
     {
         q: [
@@ -65,10 +64,10 @@ let qa = [
             '<div>IALF Bali is close to the centre of Denpasar.</div>'
         ],
         a:[
-            '<div>IALF Bali is <b><i>strategically located</i></b> close to the centre of Denpasar.</div>
+            '<div>IALF Bali is <b><i>strategically located</i></b> close to the centre of Denpasar.</div>'
         ]
     }
-}
+]
 
 </script>
 

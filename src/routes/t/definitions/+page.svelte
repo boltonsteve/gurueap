@@ -21,18 +21,18 @@ let qa = [
     },
     {
         q:[
-        '<div>Calculus is a tough subject.</div>'
+            '<div>Calculus is a tough subject.</div>'
         ],
         a: [
-        '<div>Calculus is a branch of mathematics involving the rate of change of observable phenomena.</div>'
+            '<div>Calculus is a branch of mathematics involving the rate of change of observable phenomena.</div>'
         ]
     },
     {
         q:[
-        '<div>An ear is an auditory appendage of Homo sapiens and other species.</div>'
+            '<div>An ear is an auditory appendage of Homo sapiens and other species.</div>'
         ],
         a: [
-        '<div>An ear is an auditory appendage of Homo sapiens and other species.</div>'
+            '<div>An ear is an auditory appendage of Homo sapiens and other species.</div>'
         ]
     },
     {
