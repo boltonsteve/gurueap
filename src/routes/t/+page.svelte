@@ -82,6 +82,9 @@
 
             <h3>Multiplayer games</h3>
             <ul>
+                <li><a href="../t/definitions" target="_blank">no-evaluation</a><br><span class="penjelasan">making evaluative claims</span>
+            </ul>
+            <ul>
                 <li><a href="../t/definitions" target="_blank">definitions</a><br><span class="penjelasan">improving 'bad' definitions</span>
             </ul>
             <ul>
