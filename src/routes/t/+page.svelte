@@ -82,6 +82,9 @@
 
             <h3>Multiplayer games</h3>
             <ul>
+                <li><a href="../t/articles-error-correction" target="_blank">articles - error correction</a><br><span class="penjelasan">correcting errors in article use</span>
+            </ul>
+            <ul>
                 <li><a href="../t/no-evaluation" target="_blank">no-evaluation</a><br><span class="penjelasan">making evaluative claims</span>
             </ul>
             <ul>
