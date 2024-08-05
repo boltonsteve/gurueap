@@ -19,49 +19,50 @@
 
     <h1>Experience or experiences?</h1>
 
-    <p><i><b>‘Experience’ has two (main) meanings.</b></i></p>
+    <h2>‘Experience’ has two (main) meanings.</h2>
 
     <h3>Meaning #1 (the countable experience)</h3>
 
-    <p class="indent">I had an interesting experience at school today.</p>
+    <p class="indent">I had <b><i>an</i></b> interesting <b><i>experience</i></b> at school today.</p>
+
     <p>In this sentence, an experience is an <i>event</i> or <i>incident</i>. It is an event that you were a part of and the event made an impression on you (it's something you will remember). These type of experiences are <b>countable</b>, just like events. If you had an interesting experience at school today, that means one interesting thing happened to you. For example, you achieved band 7 in writing for the first time.</p>
 
     <p>Here are some other examples of the countable form of the word experience:</p>
 
-    <p class="indent">Climbing Mount Everest was an experience that I'll never forget.</p>
+    <p class="indent">Climbing Mount Everest was <b><i>an experience</i></b> that I'll never forget.</p>
     <p>(This is one event that happened in the past).</p>
 
-    <p class="indent">I've had some bad experiences with taxi drivers.</p>
+    <p class="indent">I've had <b><i>some</i></b> bad <b><i>experiences</i></b> with taxi drivers.</p>
     <p>(The speaker has had two or three unpleasant stories about taxi drivers that she has experienced herself. Each of these stories, or events, was a bad experience.)</p>
 
 
     <h3>Meaning #2 (the uncountable experience)</h3>
         
-    <p class="indent">I have experience with computers.</p>
+    <p class="indent">I have <b><i>experience</i></b> with computers.</p>
 
     <p>In this sentence, experience means <i>familiarity</i>.You have used computers for many years, so you are <i>familiar</i> with them, you have <i>knowledge</i> of them, and you have <i>skill</i> using them. This 'experience' is the familiarity and knowledge you have of something because you have used it for a period of time. This ‘experience’ is non-countable; it is not one event that happened to you. It is something you have gained over a period of time by doing something. Just like knowledge, understanding, or familiarity, you cannot count it.</p>
 
     <p>Here are some other examples of the uncountable form of the word experience:</p>
 
-    <p class="indent"><i>I have 8 years of teaching experience.</i> (This means I have taught, in practice, for 8 years.)</p>
+    <p class="indent"><i>I have 8 years of teaching <b><i>experience</i></b>.</i> (This means I have taught, in practice, for 8 years.)</p>
 
-    <p class="indent"><i>Mike has just graduated college. He doesn’t have any work experience.</i> (He has never worked; he has no familiarity with working and no knowledge of what working is like.)</p>
+    <p class="indent"><i>Mike has just graduated college. He doesn’t have any work <b><i>experience</i></b>.</i> (He has never worked; he has no familiarity with working and no knowledge of what working is like.)</p>
 
     <h3>Experience: Set Expressions & Idioms</h3>
 
     <p>We always say:</p>
 
     <ul>
-        <li>In my experience, Steve is a good teacher.</li>
-        <li>Based on my experience, Steve is a good teacher.</li>
-        <li>Speaking from experience, Steve is a good teacher.</li>
+        <li>In my <b><i>experience</i></b>, Steve is a good teacher.</li>
+        <li>Based on my <b><i>experience</i></b>, Steve is a good teacher.</li>
+        <li>Speaking from <b><i>experience</i></b>, Steve is a good teacher.</li>
     </ul>
 
     <p>Meaning: You have learned that Steve is a good teacher from the knowledge you have gained from studying with him personally.</p>
 
     <p>Here is one useful idiom:</p>
 
-    <p class="indent">Experience is the best teacher.</p>
+    <p class="indent"><b><i>Experience</i></b> is the best teacher.</p>
 
     <p>Meaning: We learn best by doing things and getting direct experience. For example, people learn more about surfing by going to the beach and trying to surf; this is a better than reading about surfing on the Internet.</p>
 
