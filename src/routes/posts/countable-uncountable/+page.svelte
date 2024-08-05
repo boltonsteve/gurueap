@@ -37,6 +37,9 @@
         <div slot="html">
             <ul class="mt-0">
                 <li>
+                    <a href="../posts/experience" target="_blank">experience</a>
+                </li>
+                <li>
                     <a href="../posts/performance-appearance" target="_blank">performance</a>
                 </li>
                 <li>
