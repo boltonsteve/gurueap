@@ -7,6 +7,8 @@
 
     const showAnswer = () => {
         show = true;
+    const element = document.getElementById("key");
+        element.scrollIntoView();
     }
 </script>
 

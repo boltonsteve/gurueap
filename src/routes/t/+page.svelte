@@ -66,14 +66,14 @@
                 </li>
             </ul>
 
-        </div>
-
-        <div>
-
             <h3>Books</h3>
             <ul>
                 <li><a href="../t/thinking" target="_blank">Thinking from A-Z</a><br><span class="penjelasan">By Nigel Warburton</span>
             </ul>
+
+        </div>
+
+        <div>
 
             <h3>Essay planning</h3>
             <ul>
