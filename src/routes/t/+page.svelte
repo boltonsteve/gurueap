@@ -81,6 +81,29 @@
             </ul>
 
             <h3>Multiplayer games</h3>
+            <p class="font-weight-bold mb-0">Cambridge Vocabulary for IELTS</p>
+            <ul>
+                <li><a href="../t/cvfori-1" target="_blank">family</a><br><span class="penjelasan">Unit 1 - Family</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-2" target="_blank">body and mind</a><br><span class="penjelasan">Unit 2 - Body and Mind</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-3" target="_blank">keeping fit</a><br><span class="penjelasan">Unit 3 - Keeping Fit</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-4" target="_blank">leisure</a><br><span class="penjelasan">Unit 4 - Leisure</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-5" target="_blank">education</a><br><span class="penjelasan">Unit 5 - Education</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-6" target="_blank">language</a><br><span class="penjelasan">Unit 6 - Language and Linguistics</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-7" target="_blank">tourism and travel</a><br><span class="penjelasan">Unit 7 - Tourism and Travel</span>
+            </ul>
+            <hr>
             <ul>
                 <li><a href="../t/articles-error-correction" target="_blank">articles - error correction</a><br><span class="penjelasan">correcting errors in article use</span>
             </ul>

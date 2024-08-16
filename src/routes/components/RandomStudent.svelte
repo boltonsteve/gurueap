@@ -14,21 +14,13 @@
 
     const teachers = {
         Steve: [
-            'Bima',
-            'Widya',
-            'Arjuna',
-            'Sita',
-            'Nick',
-            'Wira',
-            'Wipra',
-            'Indira',
-            'Devi',
-            'Raditya',
-            'Prisma',
-            'Dinda',
-            'Anya',
-            'Rama',
-            'Indi'
+            'Dyah',
+            'Subni',
+            'Raka',
+            'V',
+            'Utari',
+            'Fahrul',
+            'Devi'
         ],
         Des: [
             'Des',
