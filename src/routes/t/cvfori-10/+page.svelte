@@ -5,166 +5,167 @@ import Multiplayer from '../../components/Multiplayer.svelte'
 let qa = [
     {
         q:[
-            '<div>The best-known __________ in Sydney is the Opera House.</div>'
+            '<div>There are eight planets in our s__________ s__________.</div>'
         ],
         a:[
-            '<div>The best-known <b><i>tourist attraction</i></b> in Sydney is the Opera House.</div>'
+            '<div>There are eight planets in our <b><i>solar system</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>In the first few days, visitors to India may suffer from __________.</div>'
+            '<div>The first m__________ l__________ took place in July 1969.</div>'
         ],
         a:[
-            '<div>In the first few days, visitors to India may suffer from <b><i>culture shock</i></b>.</div>'
+            '<div>The first <b><i>moon landing</i></b> took place in July 1969.</div>'
         ]
     },
     {
         q:[
-            '<div>Montego Bay is a popular __________ in Jamaica.</div>'
+            '<div>The competition between the USA and the USSR to put a man on the moon was known as the S__________ R__________.</div>'
         ],
         a:[
-            '<div>Montego Bay is a popular <b><i>holiday resort</i></b> in Jamaica.</div>'
+            '<div>The competition between the USA and the USSR to put a man on the moon was known as the <b><i>Space Race</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>In Europe, the __________ for tourism is July-August.</div>'
+            '<div>Space rockets have to overcome the f__________ of g__________ to escape the earth’s atmosphere.</div>'
         ],
         a:[
-            '<div>In Europe, the <b><i>peak season</i></b> for tourism is July-August.</div>'
+            '<div>Space rockets have to overcome the <b><i>force</i></b> of <b><i>gravity</i></b> to escape the earth’s atmosphere.</div>'
         ]
     },
     {
         q:[
-            '<div>Nepal has established itself as a popular destination for __________ such as trekking and mountaineering.</div>'
+            '<div>L__________ of o__________ could prove to be an insurmountable obstacle to colonization of the moon.</div>'
         ],
         a:[
-            '<div>Nepal has established itself as a popular destination for <b><i>adventure tourism</i></b> such as trekking and mountaineering.</div>'
+            '<div><b><i>Lack</i></b> of <b><i>oxygen</i></b> could prove to be an insurmountable obstacle to colonization of the moon.</div>'
         ]
     },
     {
         q:[
-            '<div>In the long run, the best solution to traffic congestion is free, convenient __________.</div>'
+            '<div>I’d like to go into space because I have always wanted to e__________ w__________.</div>'
         ],
         a:[
-            '<div>In the long run, the best solution to traffic congestion is free, convenient <b><i>public transport</i></b>.</div>'
+            '<div>I’d like to go into space because I have always wanted to <b><i>experience weightlessness</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>Environmentally-conscious travelers have triggered a growth in __________.</div>'
+            '<div>The Apollo 13 l__________ m__________ almost ended in tragedy.</div>'
         ],
         a:[
-            '<div>Environmentally-conscious travelers have triggered a growth in <b><i>eco-tourism</i></b>.</div>'
+            '<div>The Apollo 13 <b><i>lunar mission</i></b> almost ended in tragedy.</div>'
         ]
     },
     {
         q:[
-            '<div>Sadly, an influx of Western holiday-makers has resulted in __________.</div>'
+            '<div>Many scientists believe there may be i__________ l__________ on other planets in our galaxy.</div>'
         ],
         a:[
-            '<div>Sadly, an influx of Western holiday-makers has resulted in <b><i>cultural degradation</i></b>.</div>'
+            '<div>Many scientists believe there may be <b><i>intelligent life</i></b> on other planets in our galaxy.</div>'
         ]
     },
     {
         q:[
-            '<div>Jim once visited Japan on a __________ but didn’t have time to do any sightseeing.</div>'
+            '<div>The Russian Yuri Gagarin achieved the first m__________ s__________ f__________.</div>'
         ],
         a:[
-            '<div>Jim once visited Japan on a <b><i>business trip</i></b> but didn’t have time to do any sightseeing.</div>'
+            '<div>The Russian Yuri Gagarin achieved the first <b><i>manned space flight</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>Most tourists come to the outback to enjoy the __________.</div>'
+            '<div>Space technology has had some k__________ b__________ in other fields of science.</div>'
         ],
         a:[
-            '<div>Most tourists come to the outback to enjoy the <b><i>unspoiled scenery</i></b>.</div>'
+            '<div>Space technology has had some <b><i>knock-on benefits</i></b> in other fields of science.</div>'
         ]
     },
     {
         q:[
-            '<div>People say that travel __________ the __________, but it is not always true.</div>'
+            '<div>The earth takes 365 days to o__________ the S__________.</div>'
         ],
         a:[
-            '<div>People say that travel <b><i>broadens</i></b> the <b><i>mind</i></b>, but it is not always true.</div>'
+            '<div>The earth takes 365 days to <b><i>orbit</i></b> the <b><i>Sun</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>With all these __________ airlines, international travel has become more affordable.</div>'
+            '<div>The c__________ of other p__________ may start with a proposed mission to Mars.</div>'
         ],
         a:[
-            '<div>With all these <b><i>low-cost</i></b> airlines, international travel has become more affordable.</div>'
+            '<div>The <b><i>colonization</i></b> of other <b><i>planets</i></b> may start with a proposed mission to Mars.</div>'
         ]
     },
     {
         q:[
-            '<div>In reality, the __________ do not always benefit from tourism.</div>'
+            '<div>The USSR was the first country to l__________ a s__________, Sputnik in 1957.</div>'
         ],
         a:[
-            '<div>In reality, the <b><i>local inhabitants</i></b> do not always benefit from tourism.</div>'
+            '<div>The USSR was the first country to <b><i>launch</i></b> a <b><i>satellite</i></b>, Sputnik in 1957.</div>'
         ]
     },
     {
         q:[
-            '<div>You may suffer from __________ if you fly from Europe to the Far East.</div>'
+            '<div>The planet Mars is considered too cold to s__________/s__________ life.</div>'
         ],
         a:[
-            '<div>You may suffer from <b><i>jet-lag</i></b> if you fly from Europe to the Far East.</div>'
+            '<div>The planet Mars is considered too cold to <b><i>sustain/support</i></b> life.</div>'
         ]
     },
     {
         q:[
-            '<div>Resorts like Kuta and Sanur boomed with the advent of __________ in the late 20th century.</div>'
+            '<div>Some travel companies have already started to promote s__________ t__________.</div>'
         ],
         a:[
-            '<div>Resorts like Kuta and Sanur boomed with the advent of <b><i>mass tourism</i></b> in the late 20th century.</div>'
+            '<div>Some travel companies have already started to promote <b><i>space tourism</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>More __________ are needed to accommodate the needs of holiday-makers.</div>'
+            '<div>Many people dismissed the US space program as a w__________ of m__________.</div>'
         ],
         a:[
-            '<div>More <b><i>tourist facilities</i></b> are needed to accommodate the needs of holiday-makers.</div>'
+            '<div>Many people dismissed the US space program as a <b><i>waste</i></b> of <b><i>money</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>Unless you are a citizen of the EU, you’ll need to __________ for a __________.</div>'
+            '<div>Space has inspired many works of s__________ f__________, such as Star Wars.</div>'
         ],
         a:[
-            '<div>Unless you are a citizen of the EU, you’ll need to <b><i>apply</i></b> for a <b><i>visa</i></b>.</div>'
+            '<div>Space has inspired many works of <b><i>science fiction</i></b>, such as Star Wars.</div>'
         ]
     },
     {
         q:[
-            '<div>The city sky-line has been transformed with the construction of dozens of __________ hotels.</div>'
+            '<div>The practical benefits of s__________ e__________ are often disputed.</div>'
         ],
         a:[
-            '<div>The city sky-line has been transformed with the construction of dozens of <b><i>high-rise</i></b> hotels.</div>'
+            '<div>The practical benefits of <b><i>space exploration</i></b> are often disputed.</div>'
         ]
     },
     {
         q:[
-            '<div>__________ tend to spend less money than older, more conventional tourists.</div>'
+            '<div>Neil Armstrong was the first man to walk on the s__________ of the m__________.</div>'
         ],
         a:[
-            '<div><b><i>Back-packers</i></b> tend to spend less money than older, more conventional tourists.</div>'
+            '<div>Neil Armstrong was the first man to walk on the <b><i>surface</i></b> of the <b><i>moon</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>It can be hard to keep kids occupied on a __________ flight, like the one from London to Tokyo.</div>'
+            '<div>Voyager is an u__________ s__________ that has traveled throughout the solar system.</div>'
         ],
         a:[
-            '<div>It can be hard to keep kids occupied on a <b><i>long-haul</i></b> flight, like the one from London to Tokyo.</div>'
+            '<div>Voyager is an <b><i>unmanned spacecraft</i></b> that has traveled throughout the solar system.</div>'
         ]
     }
 ]
 
+
 </script>
 
-<Multiplayer title="Tourism and Travel" qa={qa} />
+<Multiplayer title="Space" qa={qa} />
