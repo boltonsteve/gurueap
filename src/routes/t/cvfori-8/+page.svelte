@@ -165,7 +165,6 @@ let qa = [
     }
 ]
 
-
 </script>
 
 <Multiplayer title="Time and History" qa={qa} />

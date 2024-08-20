@@ -5,166 +5,166 @@ import Multiplayer from '../../components/Multiplayer.svelte'
 let qa = [
     {
         q:[
-            '<div>The best-known __________ in Sydney is the Opera House.</div>'
+            '<div>Pineapples and mangoes only grow in a t__________ c__________.</div>'
         ],
         a:[
-            '<div>The best-known <b><i>tourist attraction</i></b> in Sydney is the Opera House.</div>'
+            '<div>Pineapples and mangoes only grow in a <b><i>tropical climate</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>In the first few days, visitors to India may suffer from __________.</div>'
+            '<div>The a__________ k__________ can be divided into vertebrates and invertebrates.</div>'
         ],
         a:[
-            '<div>In the first few days, visitors to India may suffer from <b><i>culture shock</i></b>.</div>'
+            '<div>The <b><i>animal kingdom</i></b> can be divided into vertebrates and invertebrates.</div>'
         ]
     },
     {
         q:[
-            '<div>Montego Bay is a popular __________ in Jamaica.</div>'
+            '<div>Whether or not c_________ c_________ is man-made, it is certainly happening.</div>'
         ],
         a:[
-            '<div>Montego Bay is a popular <b><i>holiday resort</i></b> in Jamaica.</div>'
+            '<div>Whether or not <b><i>climate change</i></b> is man-made, it is certainly happening.</div>'
         ]
     },
     {
         q:[
-            '<div>In Europe, the __________ for tourism is July-August.</div>'
+            '<div>Pandas and rhinos are well-known examples of e_________ s_________.</div>'
         ],
         a:[
-            '<div>In Europe, the <b><i>peak season</i></b> for tourism is July-August.</div>'
+            '<div>Pandas and rhinos are well-known examples of <b><i>endangered species</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>Nepal has established itself as a popular destination for __________ such as trekking and mountaineering.</div>'
+            '<div>We are trying to re-i__________ orangutans to their natural habitat.</div>'
         ],
         a:[
-            '<div>Nepal has established itself as a popular destination for <b><i>adventure tourism</i></b> such as trekking and mountaineering.</div>'
+            '<div>We are trying to re-i<b><i>ntroduce</i></b> orangutans to their natural habitat.</div>'
         ]
     },
     {
         q:[
-            '<div>In the long run, the best solution to traffic congestion is free, convenient __________.</div>'
+            '<div>Because of its isolation, Australia’s f_________ and f__________ are very different from those of other continents.</div>'
         ],
         a:[
-            '<div>In the long run, the best solution to traffic congestion is free, convenient <b><i>public transport</i></b>.</div>'
+            '<div>Because of its isolation, Australia’s <b><i>flora</i></b> and <b><i>fauna</i></b> are very different from those of other continents.</div>'
         ]
     },
     {
         q:[
-            '<div>Environmentally-conscious travelers have triggered a growth in __________.</div>'
+            '<div>Horses, dogs and cats are examples of d_________ a_________.</div>'
         ],
         a:[
-            '<div>Environmentally-conscious travelers have triggered a growth in <b><i>eco-tourism</i></b>.</div>'
+            '<div>Horses, dogs and cats are examples of <b><i>domesticated animals</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>Sadly, an influx of Western holiday-makers has resulted in __________.</div>'
+            '<div>The civilizations of Southeast Asia have been shaped by the demands of r_________ c_________.</div>'
         ],
         a:[
-            '<div>Sadly, an influx of Western holiday-makers has resulted in <b><i>cultural degradation</i></b>.</div>'
+            '<div>The civilizations of Southeast Asia have been shaped by the demands of <b><i>rice cultivation</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>Jim once visited Japan on a __________ but didn’t have time to do any sightseeing.</div>'
+            '<div>Until humans arrived in Mauritius the dodo had few n_________ p_________.</div>'
         ],
         a:[
-            '<div>Jim once visited Japan on a <b><i>business trip</i></b> but didn’t have time to do any sightseeing.</div>'
+            '<div>Until humans arrived in Mauritius the dodo had few <b><i>natural predators</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>Most tourists come to the outback to enjoy the __________.</div>'
+            '<div>The cultivation of g_________-m__________ crops may solve the food shortage in sub-Saharan Africa.</div>'
         ],
         a:[
-            '<div>Most tourists come to the outback to enjoy the <b><i>unspoiled scenery</i></b>.</div>'
+            '<div>The cultivation of <b><i>genetically-modified</i></b> crops may solve the food shortage in sub-Saharan Africa.</div>'
         ]
     },
     {
         q:[
-            '<div>People say that travel __________ the __________, but it is not always true.</div>'
+            '<div>Deforestation has had a drastic effect on some v________ reptile species.</div>'
         ],
         a:[
-            '<div>People say that travel <b><i>broadens</i></b> the <b><i>mind</i></b>, but it is not always true.</div>'
+            '<div>Deforestation has had a drastic effect on some <b><i>vulnerable</i></b> reptile species.</div>'
         ]
     },
     {
         q:[
-            '<div>With all these __________ airlines, international travel has become more affordable.</div>'
+            '<div>The overuse of p_________ causes water pollution when they enter the river system.</div>'
         ],
         a:[
-            '<div>With all these <b><i>low-cost</i></b> airlines, international travel has become more affordable.</div>'
+            '<div>The overuse of <b><i>pesticides</i></b> causes water pollution when they enter the river system.</div>'
         ]
     },
     {
         q:[
-            '<div>In reality, the __________ do not always benefit from tourism.</div>'
+            '<div>Milk, cheese, yogurt, and other d_________ p_________ can provide calcium.</div>'
         ],
         a:[
-            '<div>In reality, the <b><i>local inhabitants</i></b> do not always benefit from tourism.</div>'
+            '<div>Milk, cheese, yogurt, and other <b><i>dairy products</i></b> can provide calcium.</div>'
         ]
     },
     {
         q:[
-            '<div>You may suffer from __________ if you fly from Europe to the Far East.</div>'
+            '<div>Charles Darwin discovered the process of n_________ s_________ when comparing species of finch on the Galapagos Islands.</div>'
         ],
         a:[
-            '<div>You may suffer from <b><i>jet-lag</i></b> if you fly from Europe to the Far East.</div>'
+            '<div>Charles Darwin discovered the process of <b><i>natural selection</i></b> when comparing species of finch on the Galapagos Islands.</div>'
         ]
     },
     {
         q:[
-            '<div>Resorts like Kuta and Sanur boomed with the advent of __________ in the late 20th century.</div>'
+            '<div>The government has encouraged farmers to grow d_________-r__________ crops that are unaffected by pests.</div>'
         ],
         a:[
-            '<div>Resorts like Kuta and Sanur boomed with the advent of <b><i>mass tourism</i></b> in the late 20th century.</div>'
+            '<div>The government has encouraged farmers to grow <b><i>disease-resistant</i></b> crops that are unaffected by pests.</div>'
         ]
     },
     {
         q:[
-            '<div>More __________ are needed to accommodate the needs of holiday-makers.</div>'
+            '<div>If a_________ l_________ continues to be lost to urban sprawl, the food supply will be diminished.</div>'
         ],
         a:[
-            '<div>More <b><i>tourist facilities</i></b> are needed to accommodate the needs of holiday-makers.</div>'
+            '<div>If <b><i>arable land</i></b> continues to be lost to urban sprawl, the food supply will be diminished.</div>'
         ]
     },
     {
         q:[
-            '<div>Unless you are a citizen of the EU, you’ll need to __________ for a __________.</div>'
+            '<div>This species of grasshopper is e_________ to the island of Timor.</div>'
         ],
         a:[
-            '<div>Unless you are a citizen of the EU, you’ll need to <b><i>apply</i></b> for a <b><i>visa</i></b>.</div>'
+            '<div>This species of grasshopper is <b><i>endemic</i></b> to the island of Timor.</div>'
         ]
     },
     {
         q:[
-            '<div>The city sky-line has been transformed with the construction of dozens of __________ hotels.</div>'
+            '<div>Even a small change in the environment can have l_________-t__________ repercussions.</div>'
         ],
         a:[
-            '<div>The city sky-line has been transformed with the construction of dozens of <b><i>high-rise</i></b> hotels.</div>'
+            '<div>Even a small change in the environment can have <b><i>long-term</i></b> repercussions.</div>'
         ]
     },
     {
         q:[
-            '<div>__________ tend to spend less money than older, more conventional tourists.</div>'
+            '<div>The sudden introduction of predatory cats upset the ecological balance of the island.</div>'
         ],
         a:[
-            '<div><b><i>Back-packers</i></b> tend to spend less money than older, more conventional tourists.</div>'
+            '<div>The sudden introduction of predatory cats upset the e_________ b_________ of the island.</div>'
         ]
     },
     {
         q:[
-            '<div>It can be hard to keep kids occupied on a __________ flight, like the one from London to Tokyo.</div>'
+            '<div>The world’s water supply is divided into f__________-w__________, found in lakes, rivers and glaciers, and s__________-w__________, found in the oceans and seas.</div>'
         ],
         a:[
-            '<div>It can be hard to keep kids occupied on a <b><i>long-haul</i></b> flight, like the one from London to Tokyo.</div>'
+            '<div>The world’s water supply is divided into <b><i>fresh-water</i></b>, found in lakes, rivers and glaciers, and <b><i>salt-water</i></b>, found in the oceans and seas.</div>'
         ]
     }
 ]
 
 </script>
 
-<Multiplayer title="Tourism and Travel" qa={qa} />
+<Multiplayer title="Nature" qa={qa} />
