@@ -106,6 +106,12 @@
             <ul>
                 <li><a href="../t/cvfori-8" target="_blank">time and history</a><br><span class="penjelasan">Unit 8 - Time and History</span>
             </ul>
+            <ul>
+                <li><a href="../t/cvfori-9" target="_blank">flora and fauna</a><br><span class="penjelasan">Unit 9 - Flora and Fauna</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-10" target="_blank">space</a><br><span class="penjelasan">Unit 10 - Space</span>
+            </ul>
             <hr>
             <ul>
                 <li><a href="../t/articles-error-correction" target="_blank">articles - error correction</a><br><span class="penjelasan">correcting errors in article use</span>
