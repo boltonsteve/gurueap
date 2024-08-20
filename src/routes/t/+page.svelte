@@ -81,6 +81,33 @@
             </ul>
 
             <h3>Multiplayer games</h3>
+            <ul>
+                <li><a href="../t/articles-error-correction" target="_blank">articles - error correction</a><br><span class="penjelasan">correcting errors in article use</span>
+            </ul>
+            <ul>
+                <li><a href="../t/no-evaluation" target="_blank">no-evaluation</a><br><span class="penjelasan">making evaluative claims</span>
+            </ul>
+            <ul>
+                <li><a href="../t/definitions" target="_blank">definitions</a><br><span class="penjelasan">improving 'bad' definitions</span>
+            </ul>
+            <ul>
+                <li><a href="../t/art-of-which" target="_blank">art of 'which'</a><br><span class="penjelasan">joining independent clauses using 'yang'</span>
+            </ul>
+            <ul>
+                <li><a href="../t/two-verbs" target="_blank">nominalising verbs</a><br>
+                    <span class="penjelasan">modifying sentences containing multiple verbs</span>
+            </ul>
+            <ul>
+                <li><a href="../t/dependent-prepositions" target="_blank">dependent prepositions</a></li>
+            </ul>
+            <ul>
+                <li><a href="../t/minority-languages" target="_blank">minority languages</a><br><span class="penjelasan">Yes/no questions to reconstruct a text (total cloze)</span>
+            </ul>
+
+        </div>
+
+        <div>
+            <h3>More multiplayer games</h3>
             <p class="font-weight-bold mb-0">Cambridge Vocabulary for IELTS</p>
             <ul>
                 <li><a href="../t/cvfori-1" target="_blank">family</a><br><span class="penjelasan">Unit 1 - Family</span>
@@ -112,30 +139,6 @@
             <ul>
                 <li><a href="../t/cvfori-10" target="_blank">space</a><br><span class="penjelasan">Unit 10 - Space</span>
             </ul>
-            <hr>
-            <ul>
-                <li><a href="../t/articles-error-correction" target="_blank">articles - error correction</a><br><span class="penjelasan">correcting errors in article use</span>
-            </ul>
-            <ul>
-                <li><a href="../t/no-evaluation" target="_blank">no-evaluation</a><br><span class="penjelasan">making evaluative claims</span>
-            </ul>
-            <ul>
-                <li><a href="../t/definitions" target="_blank">definitions</a><br><span class="penjelasan">improving 'bad' definitions</span>
-            </ul>
-            <ul>
-                <li><a href="../t/art-of-which" target="_blank">art of 'which'</a><br><span class="penjelasan">joining independent clauses using 'yang'</span>
-            </ul>
-            <ul>
-                <li><a href="../t/two-verbs" target="_blank">nominalising verbs</a><br>
-                    <span class="penjelasan">modifying sentences containing multiple verbs</span>
-            </ul>
-            <ul>
-                <li><a href="../t/dependent-prepositions" target="_blank">dependent prepositions</a></li>
-            </ul>
-            <ul>
-                <li><a href="../t/minority-languages" target="_blank">minority languages</a><br><span class="penjelasan">Yes/no questions to reconstruct a text (total cloze)</span>
-            </ul>
-
         </div>
 
     </div>
@@ -171,7 +174,7 @@
     }
 
     #box {
-        max-width:650px;
+        max-width:950px;
         display:grid;
         grid-template-columns: 1fr;
     }
@@ -179,7 +182,7 @@
     #cols {
         display:flex;
         flex-wrap:wrap;
-        justify-content:space-between;
+        justify-content:center;
         column-gap:10px;
 
     }
