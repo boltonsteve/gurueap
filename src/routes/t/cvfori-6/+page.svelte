@@ -5,7 +5,7 @@ import Multiplayer from '../../components/Multiplayer.svelte'
 let qa = [
     {
         q:[
-            '<div>The official language is Indonesian but my __________ is Balinese.</div>'
+            '<div>The official language is Indonesian but my m__________ t__________ is Balinese.</div>'
         ],
         a:[
             '<div>The official language is Indonesian but my <b><i>mother tongue</i></b> is Balinese.</div>'
@@ -13,7 +13,7 @@ let qa = [
     },
     {
         q:[
-            '<div>His pronunciation is very good considering he is not actually a __________ of English.</div>'
+            '<div>His pronunciation is very good considering he is not actually a n__________ s__________ of English.</div>'
         ],
         a:[
             '<div>His pronunciation is very good considering he is not actually a <b><i>native speaker</i></b> of English.</div>'
@@ -21,7 +21,7 @@ let qa = [
     },
     {
         q:[
-            '<div>In a face-to-face situation, __________ can be just as important as the words you use.</div>'
+            '<div>In a face-to-face situation, non-v__________ c__________ can be just as important as the words you use.</div>'
         ],
         a:[
             '<div>In a face-to-face situation, <b><i>non-verbal communication</i></b> can be just as important as the words you use.</div>'
@@ -29,7 +29,7 @@ let qa = [
     },
     {
         q:[
-            '<div>A successful __________ needs to be willing to take risks.</div>'
+            '<div>A successful l__________ l__________ needs to be willing to take risks.</div>'
         ],
         a:[
             '<div>A successful <b><i>language learner</i></b> needs to be willing to take risks.</div>'
@@ -37,7 +37,7 @@ let qa = [
     },
     {
         q:[
-            '<div>__________ accuracy tends to be more important in writing than in speaking.</div>'
+            '<div>G__________ accuracy tends to be more important in writing than in speaking.</div>'
         ],
         a:[
             '<div><b><i>Grammatical</i></b> accuracy tends to be more important in writing than in speaking.</div>'
@@ -45,7 +45,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Some __________, like Gaelic and Welsh, are in danger of extinction.</div>'
+            '<div>Some m__________ l__________, like Gaelic and Welsh, are in danger of extinction.</div>'
         ],
         a:[
             '<div>Some <b><i>minority languages</i></b>, like Gaelic and Welsh, are in danger of extinction.</div>'
@@ -53,7 +53,7 @@ let qa = [
     },
     {
         q:[
-            '<div>__________ and __________ are important features of phonology.</div>'
+            '<div>S__________ and i__________ are important features of phonology.</div>'
         ],
         a:[
             '<div><b><i>Stress</i></b> and <b><i>intonation</i></b> are important features of phonology.</div>'
@@ -61,7 +61,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Watching movies can be a good way to learn __________ expressions that are not often taught in formal language lessons.</div>'
+            '<div>Watching movies can be a good way to learn c__________ expressions that are not often taught in formal language lessons.</div>'
         ],
         a:[
             '<div>Watching movies can be a good way to learn <b><i>colloquial</i></b> expressions that are not often taught in formal language lessons.</div>'
@@ -69,7 +69,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Jono found his lecturer’s Scottish accent __________ to __________.</div>'
+            '<div>Jono found his lecturer’s Scottish accent d__________ to u__________.</div>'
         ],
         a:[
             '<div>Jono found his lecturer’s Scottish accent <b><i>difficult</i></b> to <b><i>understand</i></b>.</div>'
@@ -77,7 +77,7 @@ let qa = [
     },
     {
         q:[
-            '<div>The written word is a __________ of communication unique to humans.</div>'
+            '<div>The written word is a m__________ of communication unique to humans.</div>'
         ],
         a:[
             '<div>The written word is a <b><i>means</i></b> of communication unique to humans.</div>'
@@ -85,7 +85,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Kevin can __________, but he has no knowledge of formal grammar.</div>'
+            '<div>Kevin can s__________ f__________, but he has no knowledge of formal grammar.</div>'
         ],
         a:[
             '<div>Kevin can <b><i>speak fluently</i></b>, but he has no knowledge of formal grammar.</div>'
@@ -93,15 +93,15 @@ let qa = [
     },
     {
         q:[
-            '<div>It was easy to identify the kidnapper’s hometown because of his strong __________ accent.</div>'
+            '<div>It was easy to identify the kidnapper’s hometown because of his strong r__________ a__________.</div>'
         ],
         a:[
-            '<div>It was easy to identify the kidnapper’s hometown because of his strong <b><i>regional</i></b> accent.</div>'
+            '<div>It was easy to identify the kidnapper’s hometown because of his strong <b><i>regional accent</i></b>.</div>'
         ]
     },
     {
         q:[
-            '<div>It takes an adult learner a long time to __________ in a language.</div>'
+            '<div>It takes an adult learner a long time to b__________ f__________ in a language.</div>'
         ],
         a:[
             '<div>It takes an adult learner a long time to <b><i>become fluent</i></b> in a language.</div>'
@@ -109,7 +109,7 @@ let qa = [
     },
     {
         q:[
-            '<div>King George VI suffered from a __________ and found it hard to speak in public.</div>'
+            '<div>King George VI suffered from a s__________ i__________ and found it hard to speak in public.</div>'
         ],
         a:[
             '<div>King George VI suffered from a <b><i>speech impediment</i></b> and found it hard to speak in public.</div>'
@@ -117,7 +117,7 @@ let qa = [
     },
     {
         q:[
-            '<div>If you want your spoken English to be understood, you need to work on your __________.</div>'
+            '<div>If you want your spoken English to be understood, you need to work on your p__________.</div>'
         ],
         a:[
             '<div>If you want your spoken English to be understood, you need to work on your <b><i>pronunciation</i></b>.</div>'
@@ -125,7 +125,7 @@ let qa = [
     },
     {
         q:[
-            '<div>A key part of mastering a language is learning from __________.</div>'
+            '<div>A key part of mastering a language is learning from __________s.</div>'
         ],
         a:[
             '<div>A key part of mastering a language is learning from <b><i>mistakes</i></b>.</div>'
@@ -133,7 +133,7 @@ let qa = [
     },
     {
         q:[
-            '<div>With a German mother and a Spanish father, she grew up in a __________ environment.</div>'
+            '<div>With a German mother and a Spanish father, she grew up in a b__________ environment.</div>'
         ],
         a:[
             '<div>With a German mother and a Spanish father, she grew up in a <b><i>bilingual</i></b> environment.</div>'
@@ -141,7 +141,7 @@ let qa = [
     },
     {
         q:[
-            '<div>When you work in Japan, it can be hard to overcome the language __________.</div>'
+            '<div>When you work in Japan, it can be hard to overcome the language b__________.</div>'
         ],
         a:[
             '<div>When you work in Japan, it can be hard to overcome the language <b><i>barrier</i></b>.</div>'
@@ -149,7 +149,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Is it possible to just __________ a second language without formal study?</div>'
+            '<div>Is it possible to just p__________ u__________ a second language without formal study?</div>'
         ],
         a:[
             '<div>Is it possible to just <b><i>pick up</i></b> a second language without formal study?</div>'
@@ -157,7 +157,7 @@ let qa = [
     },
     {
         q:[
-            '<div>If you rely on __________ from Indonesian, you may find your English doesn’t make sense.</div>'
+            '<div>If you rely on d__________ t__________ from Indonesian, you may find your English doesn’t make sense.</div>'
         ],
         a:[
             '<div>If you rely on <b><i>direct translation</i></b> from Indonesian, you may find your English doesn’t make sense.</div>'
