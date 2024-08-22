@@ -5,7 +5,7 @@ import Multiplayer from '../../components/Multiplayer.svelte'
 let qa = [
     {
         q:[
-            '<div>The best-known __________ in Sydney is the Opera House.</div>'
+            '<div>The best-known t__________ a__________ in Sydney is the Opera House.</div>'
         ],
         a:[
             '<div>The best-known <b><i>tourist attraction</i></b> in Sydney is the Opera House.</div>'
@@ -13,7 +13,7 @@ let qa = [
     },
     {
         q:[
-            '<div>In the first few days, visitors to India may suffer from __________.</div>'
+            '<div>In the first few days, visitors to India may suffer from c__________ s__________.</div>'
         ],
         a:[
             '<div>In the first few days, visitors to India may suffer from <b><i>culture shock</i></b>.</div>'
@@ -21,7 +21,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Montego Bay is a popular __________ in Jamaica.</div>'
+            '<div>Montego Bay is a popular h__________ r__________ in Jamaica.</div>'
         ],
         a:[
             '<div>Montego Bay is a popular <b><i>holiday resort</i></b> in Jamaica.</div>'
@@ -29,7 +29,7 @@ let qa = [
     },
     {
         q:[
-            '<div>In Europe, the __________ for tourism is July-August.</div>'
+            '<div>In Europe, the p__________ s__________ for tourism is July-August.</div>'
         ],
         a:[
             '<div>In Europe, the <b><i>peak season</i></b> for tourism is July-August.</div>'
@@ -37,7 +37,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Nepal has established itself as a popular destination for __________ such as trekking and mountaineering.</div>'
+            '<div>Nepal has established itself as a popular destination for a__________ t__________ such as trekking and mountaineering.</div>'
         ],
         a:[
             '<div>Nepal has established itself as a popular destination for <b><i>adventure tourism</i></b> such as trekking and mountaineering.</div>'
@@ -45,7 +45,7 @@ let qa = [
     },
     {
         q:[
-            '<div>In the long run, the best solution to traffic congestion is free, convenient __________.</div>'
+            '<div>In the long run, the best solution to traffic congestion is free, convenient p__________ t__________.</div>'
         ],
         a:[
             '<div>In the long run, the best solution to traffic congestion is free, convenient <b><i>public transport</i></b>.</div>'
@@ -53,7 +53,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Environmentally-conscious travelers have triggered a growth in __________.</div>'
+            '<div>Environmentally-conscious travelers have triggered a growth in e__________-t__________.</div>'
         ],
         a:[
             '<div>Environmentally-conscious travelers have triggered a growth in <b><i>eco-tourism</i></b>.</div>'
@@ -61,7 +61,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Sadly, an influx of Western holiday-makers has resulted in __________.</div>'
+            '<div>Sadly, an influx of Western holiday-makers has resulted in c__________ d__________.</div>'
         ],
         a:[
             '<div>Sadly, an influx of Western holiday-makers has resulted in <b><i>cultural degradation</i></b>.</div>'
@@ -69,7 +69,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Jim once visited Japan on a __________ but didn’t have time to do any sightseeing.</div>'
+            '<div>Jim once visited Japan on a b__________ t__________ but didn’t have time to do any sightseeing.</div>'
         ],
         a:[
             '<div>Jim once visited Japan on a <b><i>business trip</i></b> but didn’t have time to do any sightseeing.</div>'
@@ -77,7 +77,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Most tourists come to the outback to enjoy the __________.</div>'
+            '<div>Most tourists come to the outback to enjoy the u__________ s__________.</div>'
         ],
         a:[
             '<div>Most tourists come to the outback to enjoy the <b><i>unspoiled scenery</i></b>.</div>'
@@ -85,7 +85,7 @@ let qa = [
     },
     {
         q:[
-            '<div>People say that travel __________ the __________, but it is not always true.</div>'
+            '<div>People say that travel b__________ the m__________, but it is not always true.</div>'
         ],
         a:[
             '<div>People say that travel <b><i>broadens</i></b> the <b><i>mind</i></b>, but it is not always true.</div>'
@@ -93,7 +93,7 @@ let qa = [
     },
     {
         q:[
-            '<div>With all these __________ airlines, international travel has become more affordable.</div>'
+            '<div>With all these low__________-c__________ airlines, international travel has become more affordable.</div>'
         ],
         a:[
             '<div>With all these <b><i>low-cost</i></b> airlines, international travel has become more affordable.</div>'
@@ -101,7 +101,7 @@ let qa = [
     },
     {
         q:[
-            '<div>In reality, the __________ do not always benefit from tourism.</div>'
+            '<div>In reality, the l__________ i__________ do not always benefit from tourism.</div>'
         ],
         a:[
             '<div>In reality, the <b><i>local inhabitants</i></b> do not always benefit from tourism.</div>'
@@ -109,7 +109,7 @@ let qa = [
     },
     {
         q:[
-            '<div>You may suffer from __________ if you fly from Europe to the Far East.</div>'
+            '<div>You may suffer from j__________-l__________ if you fly from Europe to the Far East.</div>'
         ],
         a:[
             '<div>You may suffer from <b><i>jet-lag</i></b> if you fly from Europe to the Far East.</div>'
@@ -117,7 +117,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Resorts like Kuta and Sanur boomed with the advent of __________ in the late 20th century.</div>'
+            '<div>Resorts like Kuta and Sanur boomed with the advent of m__________ t__________ in the late 20th century.</div>'
         ],
         a:[
             '<div>Resorts like Kuta and Sanur boomed with the advent of <b><i>mass tourism</i></b> in the late 20th century.</div>'
@@ -125,7 +125,7 @@ let qa = [
     },
     {
         q:[
-            '<div>More __________ are needed to accommodate the needs of holiday-makers.</div>'
+            '<div>More t__________ f__________ are needed to accommodate the needs of holiday-makers.</div>'
         ],
         a:[
             '<div>More <b><i>tourist facilities</i></b> are needed to accommodate the needs of holiday-makers.</div>'
@@ -133,7 +133,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Unless you are a citizen of the EU, you’ll need to __________ for a __________.</div>'
+            '<div>Unless you are a citizen of the EU, you’ll need to a__________ for a v__________.</div>'
         ],
         a:[
             '<div>Unless you are a citizen of the EU, you’ll need to <b><i>apply</i></b> for a <b><i>visa</i></b>.</div>'
@@ -141,7 +141,7 @@ let qa = [
     },
     {
         q:[
-            '<div>The city sky-line has been transformed with the construction of dozens of __________ hotels.</div>'
+            '<div>The city sky-line has been transformed with the construction of dozens of h__________-r__________ hotels.</div>'
         ],
         a:[
             '<div>The city sky-line has been transformed with the construction of dozens of <b><i>high-rise</i></b> hotels.</div>'
@@ -149,7 +149,7 @@ let qa = [
     },
     {
         q:[
-            '<div>__________ tend to spend less money than older, more conventional tourists.</div>'
+            '<div>B__________-p__________ tend to spend less money than older, more conventional tourists.</div>'
         ],
         a:[
             '<div><b><i>Back-packers</i></b> tend to spend less money than older, more conventional tourists.</div>'
@@ -157,7 +157,7 @@ let qa = [
     },
     {
         q:[
-            '<div>It can be hard to keep kids occupied on a __________ flight, like the one from London to Tokyo.</div>'
+            '<div>It can be hard to keep kids occupied on a l__________-h__________ flight, like the one from London to Tokyo.</div>'
         ],
         a:[
             '<div>It can be hard to keep kids occupied on a <b><i>long-haul</i></b> flight, like the one from London to Tokyo.</div>'
