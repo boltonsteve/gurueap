@@ -238,6 +238,9 @@ const updateOutput = () => {
     /* div { */
     /*     border: 1px solid red; */
     /* } */
+    textarea, #output {
+        padding:10px;
+    }
     .my-flex {
         display:flex;
         flex-wrap:wrap;
@@ -266,5 +269,6 @@ const updateOutput = () => {
             grid-template-columns: 1fr;
         }
     }
+
 </style>
 
