@@ -27,7 +27,7 @@
     <ul>
         <li>A to B: The sperm <b><i>passes through</i></b> the tunnel.</li>
         <li>C to D: The tunnel <b><i>is passed by</i></b> the sperm. / The sperm <b><i>passes</i></b> the tunnel.</li>
-        <li>D to E: The tunnel <b><i>is passed by</i></b> the sperm. / The sperm passes the tunnel.</li>
+        <li>D to E: The tunnel <b><i>is passed by</i></b> the sperm. / The sperm <b><i>passes</i></b> the tunnel.</li>
     </ul>
 
     <WithIcon icon="flag" position="right">
