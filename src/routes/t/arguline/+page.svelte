@@ -1099,8 +1099,9 @@
         <p><code>click <PlusSquare /></code> or <code>type +</code> to <b><i>add item</i></b>, <code><DashSquare /></code> to <b><i>remove item</i></b>.</p>
         <p><code>click <FileText /></code> to output a completed text <i>while editing an argument</i>.</p>
         <p><code>click <ListUl /></code> for <b><i>outline</i></b> format, <code><ListNested /></code> for <b><i>argument</i></b> format, OR <code>press f</code> to toggle between formats.</p>
-        <p>When outlining, <code>type h</code> for <i><b>heading</b></i>, <code>b</code> for <i><b>bullet</b></i>.</p>
+        <p>When outlining, leave editing mode and <code>type h</code> for <i><b>heading</b></i>, <code>b</code> for <i><b>bullet</b></i>.</p>
         <p><code>click <SignpostSplit /></code> or <code>type l</code> to toggle signal words on/off.</p>
+        <p><code>click <Diagram2 /></code> to toggle dotted outline block.</p>
         <p><code>click <ChevronUp /></code> or <code>type &uarr;</code> to select <b><i>next claim up</i></b>, <code><ChevronDown /></code> or <code>&darr;</code> <b><i>next claim down</i></b>.</p>
         <p><code>click <ChevronDoubleUp /></code> or <code>type shift &uarr;</code> to <b><i>move block up</i></b>, <code><ChevronDoubleDown /></code> or <code>shift &darr;</code> to <b><i>move block down</i></b>.</p>
         <p><code>click <ChevronLeft /></code> or <code>type &larr;</code> to <b><i>indent left</i></b>, <code><ChevronRight /></code> or <code>&rarr;</code> to <b><i>indent right</i></b>.</p>
@@ -1334,7 +1335,7 @@
     }
 
     h1,h2,h3,h4,h5,p {
-        margin:5px 0px;
+        margin:0px 0px;
     }
 
     ul {
