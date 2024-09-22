@@ -1,4 +1,5 @@
 <script>
+    import SvelteSeo from "svelte-seo"
 
     export let title;
     export let items;
@@ -75,6 +76,11 @@
 
 </script>
 
+<SvelteSeo
+    title="{title}"
+  description="Paraphrasing Analysis"
+/>
+
 
 <div class="container">
 
@@ -97,15 +103,22 @@
 
 <style>
 
+    div {
+        /* border:1px solid pink; */
+    }
+
     h3 {
         margin:5px;
         padding:0px;
     }
+    h1 {
+        margin-top:0px;
+    }
 
     .container {
-        height:100vh;
         max-width:700px;
         margin:0px auto;
+        height:100vh;
         display:flex;
         justify-content:center;
         align-items:center;
@@ -130,4 +143,5 @@
     #cols > div {
         max-width:340px;
     }
+
 </style>

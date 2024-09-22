@@ -1258,6 +1258,10 @@
 
 <style>
 
+    /* div { */
+    /*     border:1px solid pink; */
+    /* } */
+
     #navbar {
         position:fixed;
         top: 10px;
@@ -1335,7 +1339,7 @@
     }
 
     h1,h2,h3,h4,h5,p {
-        margin:0px 0px;
+        margin:9px 0px;
     }
 
     ul {
@@ -1344,7 +1348,7 @@
     }
 
     li {
-        padding:2px;
+        padding:0px;
     }
 
     textarea {
@@ -1367,10 +1371,6 @@
         right:20px;
         z-index:1;
     }
-
-    /* div { */
-    /*     border:1px solid pink; */
-    /* } */
 
     .alert {
         border: 3px dotted var(--red);

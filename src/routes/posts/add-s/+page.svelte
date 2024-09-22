@@ -14,7 +14,7 @@
 
     <Youtube id="jNyF0TPm6ns" />
 
-    <h1>Add 's' - by Georges</h1>
+    <h1>Add 's' - by George</h1>
 
     <WithIcon icon="flag">
         <div slot="html">Indonesians hate to add 's' to <b><i>plurals</i></b>, <b><i>possessives</i></b> and <b><i>third person verbs</i></b>. In Bahasa Indonesia these grammatical features are produced in other ways.</div>
