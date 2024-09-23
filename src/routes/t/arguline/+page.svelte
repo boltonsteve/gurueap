@@ -222,6 +222,9 @@
     let modalWidth = 600;
     let helpHtml = '';
 
+    // added 23/8/24 to facilitate save on every edit
+    let saveClicked = false;
+
     onMount(() => {
         redraw();
         current = 0;
@@ -283,6 +286,8 @@
 
             let element = document.getElementById("c"+current);
             element.scrollIntoView();
+
+            saveMap();
 
         } else {
             editing = true;
@@ -745,6 +750,8 @@
             let str = next.text.replace(/\n/,'');
             str = str.replace(/\t/g,'');
 
+            console.log("str: " + str);
+
             let tabs = '';
             for(let i=0;i<next.indent;i++) {
                 tabs += '\t';
@@ -774,6 +781,7 @@
 
         claims[current].active = true;
         input = claims[current].text;
+
         toSave = arr.join('\r\n');
 
         /* document.getElementById('c'+current).scrollIntoView(); */
@@ -837,7 +845,8 @@
 
     const newMap = () => {
 
-        /* saveMap(); */
+        // Steve 23/9/24
+        saveMap();
 
         claims = [
             {
@@ -948,6 +957,8 @@
             }
             let bulletBH = next.bullet ? 'B' : 'H';
 
+
+
             arr.push(tabs + next.borderColor+'|'+bulletBH+'|' + str)
 
         })
@@ -961,7 +972,9 @@
         console.log(toSave);
         navigator.clipboard.writeText(toSave);
 
-        toggleSaved();
+        if(saveClicked) {
+            toggleSaved();
+        }
 
     }
 
