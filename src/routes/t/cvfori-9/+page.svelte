@@ -149,10 +149,10 @@ let qa = [
     },
     {
         q:[
-            '<div>The sudden introduction of predatory cats upset the ecological balance of the island.</div>'
+            '<div>The sudden introduction of predatory cats upset the e_________ b_________ of the island.</div>'
         ],
         a:[
-            '<div>The sudden introduction of predatory cats upset the e_________ b_________ of the island.</div>'
+            '<div>The sudden introduction of predatory cats upset the ecological balance of the island.</div>'
         ]
     },
     {
