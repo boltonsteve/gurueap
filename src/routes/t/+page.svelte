@@ -146,6 +146,9 @@
                 <li><a href="../t/cvfori-11" target="_blank">design and innovation</a><br><span class="penjelasan">Unit 11 - Design and innovation</span>
             </ul>
             <ul>
+                <li><a href="../t/cvfori-13" target="_blank">globalisation</a><br><span class="penjelasan">Unit 13 - Globalisation</span>
+            </ul>
+            <ul>
                 <li><a href="../t/cvfori-18" target="_blank">the law</a><br><span class="penjelasan">Unit 18 - The Law</span>
             </ul>
         </div>
