@@ -48,7 +48,7 @@ let qa = [
             '<div>We played tennis with <b><i>Carlo</i></b>.</div>'
         ],
         a:[
-            '<div>Who did we play tennis with?<br>With whom did we play tennis?</div>'
+            '<div>Who did you play tennis with?<br>With whom did you play tennis?</div>'
         ]
     },
     {
