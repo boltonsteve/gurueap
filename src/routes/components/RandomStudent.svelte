@@ -4,8 +4,8 @@
     export let student;
 
     import { scale,fade } from 'svelte/transition';
-    let showActivity = false;
-    let showTeacherSelect = true;
+    let showActivity = true;
+    let showTeacherSelect = false;
     let showName = true;
     let showText = true;
 
@@ -14,13 +14,22 @@
 
     const teachers = {
         Steve: [
-            'Dyah',
-            'Subni',
-            'Raka',
-            'V',
-            'Utari',
-            'Fahrul',
-            'Devi'
+            'Faqih',
+            'Helena',
+            'Sri',
+            'Ghulam',
+            'Didik',
+            'Mia',
+            'Shintia',
+            'Inara',
+            'Ismi',
+            'Petrus',
+            'Sol',
+            'Wawan',
+            'Roy',
+            'Yasmeen',
+            'Yansu',
+            'Arekha'
         ],
         Des: [
             'Des',
@@ -36,12 +45,13 @@
         ]
     }
 
-    const setTeacher = (e) => {
-        let teacher = e.target.textContent;
+    /* const setTeacher = (e) => { */
+        let teacher = 'Steve';
+        /* let teacher = e.target.textContent; */
         students = teachers[teacher];
         showActivity = true;
         showTeacherSelect = false;
-    }
+    /* } */
 
     const tNames = Object.keys(teachers);
     const tNamesLinksArr = tNames.map( next => {
@@ -63,8 +73,9 @@
             text = texts.pop();
 
         } else {
-            student = 'Oops!';
-            text = 'No more texts!';
+            student = 'No more texts..!';
+            /* text = 'No more texts!'; */
+            text = '<a href="https://www.gurueap.com/posts/s-iz" target="_blank">IZ: examples!</a>';
         }
 
         setTimeout(function() {
