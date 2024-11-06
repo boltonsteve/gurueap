@@ -20,13 +20,19 @@
 
     <p class="mt-0">In English if you say <b><i>on the contrary</i></b> then you are contrasting 2 debatable claims:</p>
 
-    <ul>
+    <ol>
         <li>You believe that the first claim is FALSE.</li>
         <li>You modify the first claim to make it TRUE.</li>
-    </ul>
+    </ol>
 
     <div class="alert alert-success font-italic">People think my dog is dangerous. <span class="font-weight-bold text-success">On the contrary</span>, he's a very sweet dog!</div>
 
+    <p>Here we move from the false claim:</p>
+    <p class="ml-3">..my dog is dangerous.</p>
+    <p>..to a true claim:</p>
+    <p class="ml-3">..my dog is very sweet. (i.e. NOT dangerous)</p>
+    <hr>
+    
     <p>On the other hand(!), if you're comparing two claims and BOTH CLAIMS ARE ALREADY TRUE:</p>
 
     <div class="alert alert-success font-italic">My dog is friendly. <span class="font-weight-bold text-success">On the other hand</span>, my neighbour's dog is aggressive.</div>
@@ -37,3 +43,10 @@
     <p>&nbsp;</p>
 
 </div>
+
+<style>
+    .ml-3 {
+        margin-left: 30px;
+        font-style: italic;
+    }
+</style>
