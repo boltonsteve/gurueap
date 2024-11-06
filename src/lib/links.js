@@ -1,5 +1,11 @@
 export const links = [
     {
+      title: "On the contrary",
+      href: "posts/on-the-contrary",
+      keywords: ['vocabulary','compare contrast','Bahasa Indonesia'],
+      description: "The correct use of 'on the contrary'"
+    },
+    {
       title: "Experience or experiences?",
       href: "posts/experience",
       keywords: ['vocabulary','countable uncountable','task2','writing','speaking'],
