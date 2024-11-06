@@ -18,22 +18,20 @@
 
     <WithIcon icon="flag" position="right" msg="This one does not translate directly from Indonesian. In fact the meaning changes dramatically!" />
 
-    <p class="mt-0">In English if you say <b><i>on the contrary</i></b> then you are saying:</p>
+    <p class="mt-0">In English if you say <b><i>on the contrary</i></b> then you are contrasting 2 debatable claims:</p>
 
     <ul>
-        <li>The evaluative claim someone is making is incorrect.</li>
-        <li>The person making a claim is very much mistaken.</li>
+        <li>You believe that the first claim is FALSE.</li>
+        <li>You modify the first claim to make it TRUE.</li>
     </ul>
-
-    <p>To communicate this kind of 'correction', you can use <i><b>on the contrary</b></i> as follows:</p>
 
     <div class="alert alert-success font-italic">People think my dog is dangerous. <span class="font-weight-bold text-success">On the contrary</span>, he's a very sweet dog!</div>
 
-    <p>If you're comparing two claims and both claims are true, use:</p>
+    <p>On the other hand(!), if you're comparing two claims and BOTH CLAIMS ARE ALREADY TRUE:</p>
 
     <div class="alert alert-success font-italic">My dog is friendly. <span class="font-weight-bold text-success">On the other hand</span>, my neighbour's dog is aggressive.</div>
 
-    <p>For this kind of contrast, many synonyms are available: <b><i>in contrast</i></b>, <b><i>meanwhile</i></b>, <b><i>on the other hand</i></b>, etc.</p>
+    <p>For this kind of <b><i>truthy</i></b> contrast, many synonyms are available: <b><i>in contrast</i></b>, <b><i>meanwhile</i></b>, <b><i>on the other hand</i></b>, etc.</p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
