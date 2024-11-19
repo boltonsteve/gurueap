@@ -14,7 +14,7 @@
 
     <h1 class="mt-0">Where 'where' should be nowhere</h1>
 
-    <div class="alert alert-danger font-italic mb-1">This is in line with his motto of “think globally, act locally” <span class="text-danger font-weight-bold">where</span> he will learn in another country and implement the result in Indonesia.
+    <div class="alert alert-danger font-italic mb-1">This is in line with his motto of 'think globally, act locally' <span class="text-danger font-weight-bold">where</span> he will learn in another country and implement the result in Indonesia.
     </div>
 
     <WithIcon icon="flag" msg="I suspect this is an Indonesian speaker translating from 'di mana'. (Indonesian students please correct me if I'm wrong!)" />

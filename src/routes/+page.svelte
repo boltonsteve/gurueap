@@ -55,7 +55,7 @@
                     <div class="card">
                         <a href="./posts">
                             <div><FilePost height={hw} width={hw} /></div>
-                            Posts
+                            Posts ({totalPosts})
                         </a>
                     </div>
 
