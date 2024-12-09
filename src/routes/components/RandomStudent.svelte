@@ -14,22 +14,14 @@
 
     const teachers = {
         Steve: [
-            'Faqih',
-            'Helena',
-            'Sri',
-            'Ghulam',
-            'Didik',
-            'Mia',
-            'Shintia',
-            'Inara',
-            'Ismi',
-            'Petrus',
-            'Sol',
-            'Wawan',
-            'Roy',
-            'Yasmeen',
-            'Yansu',
-            'Arekha'
+            'Gladis',
+            'Rezki',
+            'Syakira',
+            'Pam',
+            'Reni',
+            'Novia',
+            'Ary',
+            'Dwily'
         ],
         Des: [
             'Des',

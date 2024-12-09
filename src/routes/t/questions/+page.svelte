@@ -136,7 +136,7 @@ let qa = [
             '<div>We met <b><i>Fraser’s</i></b> sister in the Sunshine Diner.</div>'
         ],
         a:[
-            '<div>Whose sister did we meet in the Sunshine Diner?</div>'
+            '<div>Whose sister did you meet in the Sunshine Diner?</div>'
         ]
     },
     {
@@ -176,7 +176,7 @@ let qa = [
             '<div><b><i>The Boeing 737</i></b> had some design problems a few years ago.</div>'
         ],
         a:[
-            '<div>What had some design problems a few years ago?</div>'
+            '<div>What had some design problems a few years ago?</div>','<div>Which aircraft had some design problems a few years ago?</div>'
         ]
     },
     {
