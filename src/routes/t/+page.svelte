@@ -90,6 +90,9 @@
 
             <h3>Multiplayer games</h3>
             <ul>
+                <li><a href="../t/strong-weak" target="_blank">strong/weak</a><br><span class="penjelasan">identifying strengthening and weakening strategies</span>
+            </ul>
+            <ul>
                 <li><a href="../t/questions" target="_blank">question forms</a><br><span class="penjelasan">question form practice</span>
             </ul>
             <ul>

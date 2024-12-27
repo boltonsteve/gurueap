@@ -14,7 +14,7 @@
     let qna = {};
     let question = []
     let answer = []
-    let current = 0
+    let current = -1;
     let remaining = qa.length
 
     let men = [
@@ -97,7 +97,7 @@
         answer = qa[current].a;
     }
 
-    redraw();
+    /* redraw(); */
 
 </script>
 
