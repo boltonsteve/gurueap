@@ -166,7 +166,16 @@
                 <li><a href="../t/cvfori-15" target="_blank">green movement</a><br><span class="penjelasan">Unit 15 - The Green Movement</span>
             </ul>
             <ul>
+                <li><a href="../t/cvfori-16" target="_blank">energy crisis</a><br><span class="penjelasan">Unit 16 - The Energy Crisis</span>
+            </ul>
+            <ul>
                 <li><a href="../t/cvfori-18" target="_blank">the law</a><br><span class="penjelasan">Unit 18 - The Law</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-19" target="_blank">the media</a><br><span class="penjelasan">Unit 19 - The Media</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-20" target="_blank">the arts</a><br><span class="penjelasan">Unit 20 - The Arts</span>
             </ul>
         </div>
 
