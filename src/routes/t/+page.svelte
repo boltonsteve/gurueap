@@ -154,7 +154,10 @@
                 <li><a href="../t/cvfori-10" target="_blank">space</a><br><span class="penjelasan">Unit 10 - Space</span>
             </ul>
             <ul>
-                <li><a href="../t/cvfori-11" target="_blank">design and innovation</a><br><span class="penjelasan">Unit 11 - Design and innovation</span>
+                <li><a href="../t/cvfori-11" target="_blank">design and innovation</a><br><span class="penjelasan">Unit 11 - Design and Innovation</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-12" target="_blank">technology</a><br><span class="penjelasan">Unit 12 - Telecommunications and Technology</span>
             </ul>
             <ul>
                 <li><a href="../t/cvfori-13" target="_blank">globalisation</a><br><span class="penjelasan">Unit 13 - Globalisation</span>
@@ -167,6 +170,9 @@
             </ul>
             <ul>
                 <li><a href="../t/cvfori-16" target="_blank">energy crisis</a><br><span class="penjelasan">Unit 16 - The Energy Crisis</span>
+            </ul>
+            <ul>
+                <li><a href="../t/cvfori-17" target="_blank">business</a><br><span class="penjelasan">Unit 17 - Business</span>
             </ul>
             <ul>
                 <li><a href="../t/cvfori-18" target="_blank">the law</a><br><span class="penjelasan">Unit 18 - The Law</span>
