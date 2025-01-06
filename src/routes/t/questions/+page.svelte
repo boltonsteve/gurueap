@@ -5,7 +5,7 @@ import Multiplayer from '../../components/Multiplayer.svelte'
 let qa = [
     {
         q:[
-            '<div>The price of mangoes falls during the mango season.</div>'
+            '<div>Yes, the price of mangoes falls during the mango season.</div>'
         ],
         a:[
             '<div>Does the price of mangoes fall during the mango season?</div>'
@@ -29,7 +29,7 @@ let qa = [
     },
     {
         q:[
-            '<div>The article about French 19th century art is now available online.</div>'
+            '<div>Yes, the article about French 19th century art is now available online.</div>'
         ],
         a:[
             '<div>Is the article about French 19th century art available (online) now?</div>'
@@ -61,7 +61,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Both of Lady Gaga’s parents have Italian ancestry.</div>'
+            '<div>Yes, both of Lady Gaga’s parents have Italian ancestry.</div>'
         ],
         a:[
             '<div>Do both of Lady Gaga’s parents have Italian ancestry?</div>'
@@ -69,7 +69,7 @@ let qa = [
     },
     {
         q:[
-            '<div>The government of the city should construct a new bridge over the river.</div>'
+            '<div>Yes, the government of the city should construct a new bridge over the river.</div>'
         ],
         a:[
             '<div>Should the government of the city construct a new bridge over the river?</div>'
@@ -77,7 +77,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Martial arts like Kendo and Karate are often compulsory in Japanese schools.</div>'
+            '<div>Yes, martial arts like Kendo and Karate are often compulsory in Japanese schools.</div>'
         ],
         a:[
             '<div>Are martial arts like Kendo and Karate compulsory in Japanese schools?</div>'
@@ -101,7 +101,7 @@ let qa = [
     },
     {
         q:[
-            '<div>Some people are allergic to coriander leaves or seeds.</div>'
+            '<div>Yes, some people are allergic to coriander leaves or seeds.</div>'
         ],
         a:[
             '<div>Are some people allergic to coriander leaves or seeds?</div>'
@@ -109,7 +109,7 @@ let qa = [
     },
     {
         q:[
-            '<div>If you live outside the city border, you are eligible for a train pass.</div>'
+            '<div>Yes, if you live outside the city border, you are eligible for a train pass.</div>'
         ],
         a:[
             '<div>If you live outside the city border, are you eligible for a train pass?<br>Are you eligible for a train pass if you live outside the city?</div>'
@@ -141,7 +141,7 @@ let qa = [
     },
     {
         q:[
-            '<div>The second book by Norma Wyatt is available now.</div>'
+            '<div>Yes, the second book by Norma Wyatt is available now.</div>'
         ],
         a:[
             '<div>Is the second book by Norma Wyatt available now?</div>'
@@ -149,15 +149,15 @@ let qa = [
     },
     {
         q:[
-            '<div>Joseph McMurray’s high school friends had all died before him.</div>'
+            '<div>Yes, William’s high school friends had all died before him.</div>'
         ],
         a:[
-            '<div>Had Joseph McMurray’s high school friends all died before him?</div>'
+            '<div>Had William’s high school friends all died before him?</div>'
         ]
     },
     {
         q:[
-            '<div>George did not seek medical treatment <b><i>because he didn’t believe in modern Open medicine</i></b>.</div>'
+            '<div>George did not seek medical treatment <b><i>because he didn’t believe in modern medicine</i></b>.</div>'
         ],
         a:[
             '<div>Why didn\'t George seek medical treatment?</div>'
