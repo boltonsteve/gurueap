@@ -31,7 +31,7 @@ description="Demonstrating incomplete comparisons in Indonesian IELTS candidate 
         <li>Is he comparing Asians and <b><i>intercutural communication</i></b> today with Asians and <b><i>intercultural communication</i></b> in the past?</li>
     </ul>
 
-    <p>If you're an Indonesian translating <b><i>kurang</i></b> then you're probably not comparing anything. You're simply saying:</p>
+    <p>If you're an Indonesian translating <b><i>kurang</i></b> <u>as a comparative adjective</u> then you're probably not comparing anything. You're simply saying:</p>
 
     <div class="alert alert-success font-italic">Some Asians find intercultural communication easy.</div>
 
