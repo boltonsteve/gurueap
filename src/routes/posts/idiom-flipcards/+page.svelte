@@ -155,7 +155,8 @@
 
 <h1 class="text-center mb-0">Idioms</h1>
 
-<p class="text-center mt-0">Mouse over (or tap) cards to flip them.</p>
+<p class="text-center my-0">Mouse over (or tap) cards to flip them.</p>
+<p class="text-center mt-0"><span class="text-success font-weight-bold">Green backing</span> = speaking AND writing; <span class="text-danger font-weight-bold">Red backing</span> = speaking only!</p>
 
 <div id="main">
 
