@@ -1,15 +1,16 @@
 <script>
     export let front;
     export let back;
+    export let bg;
 </script>
 
-<div class="flip-card">
+<div class="flip-card border-primary">
     <div class="flip-card-inner">
-        <div class="flip-card-front">
+        <div class="flip-card-front bg-light text-dark">
             <div>{@html front}</div>
         </div>
-        <div class="flip-card-back">
-            {back}
+        <div class="flip-card-back bg-{bg} text-light">
+            <div>{@html back}</div>
         </div>
     </div>
 </div>
@@ -58,14 +59,12 @@
 }
 
 .flip-card-front {
-    background-color: #fff;
+    /* background-color: #fff; */
     /* background-color: #bbb; */
-    color: black;
+    /* color: black; */
 }
 
 .flip-card-back {
-    background-color: #000;
-    color: white;
     transform: rotateY(180deg);
 }
 
