@@ -8,7 +8,7 @@ let qa = [
             '<div>Through online shopping, many problematic situations such as parking, queueing as well as a crowd can be prevented. </div>'
         ],
         a: [
-            '<div>Through online shopping, many problematic situations such as parking, queueing as well as a <b><i>crowds</i></b> can be prevented. </div>'
+            '<div>Through online shopping, many problematic situations such as parking, queueing as well as <b><i>crowds</i></b> can be prevented. </div>'
         ]
     },
     {
@@ -32,7 +32,7 @@ let qa = [
             '<div>For example, Wish, which is one of online store applications, offers half price discounts for winter equipment when summer arrives.</div>'
         ],
         a: [
-            '<div>For example, Wish, which is <b><i>an</i></b> the online store <b><i>application</i></b>, offers half price discounts for winter equipment when summer arrives.</div>'
+            '<div>For example, Wish, which is <b><i>an</i></b> online store <b><i>application</i></b>, offers half price discounts for winter equipment when summer arrives.</div>'
         ]
     },
     {
@@ -53,18 +53,18 @@ let qa = [
     },
     {
         q: [
-            '<div>Finally, people can save their quality time with their families rather than spending time to go to physical stores.</div>'
+            '<div>Finally, people can save quality times with their families rather than spending time going to physical stores.</div>'
         ],
         a: [
-            '<div>Finally, people can save quality <b><i>time</i></b> with their families rather than spending time to go to physical stores.</div>'
+            '<div>Finally, people can save quality <b><i>time</i></b> with their families rather than spending time going to physical stores.</div>'
         ]
     },
     {
         q: [
-            '<div>Firstly online shops offer discounts and sometimes people might find price are half or third of price being charged in physical shops. </div>'
+            '<div>Firstly online shops offer discounts and sometimes people might find price are a half or a third of price being charged in physical shops. </div>'
         ],
         a: [
-            '<div>Firstly online shops offer discounts and sometimes people might find <b><i>prices</i></b> are half or third of <b><i>the prices</i></b> being charged in physical shops. </div>'
+            '<div>Firstly online shops offer discounts and sometimes people might find <b><i>prices</i></b> are a half or a third of <b><i>the prices</i></b> being charged in physical shops. </div>'
         ]
     },
     {
