@@ -80,7 +80,7 @@
 
             <h3>Essay planning</h3>
             <ul>
-                <li><a href="../t/arguline" target="_blank">ArguLine</a><br><span class="penjelasan">essay outlining and argument mapping</span>
+                <li><a href="https://arguline.id" target="_blank"><i>Argu</i>/<b>line</b></a><br><span class="penjelasan">essay outlining and argument mapping</span>
             </ul>
 
             <h3>Vocabulary</h3>

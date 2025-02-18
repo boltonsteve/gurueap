@@ -1,5 +1,11 @@
 export const links = [
     {
+      title: "Unlike 'rather than'",
+      href: "posts/rather-than",
+      keywords: ['vocabulary','Bahasa Indonesia','compare contrast'],
+      description: "'Rather than' possibly getting lost in translation(?)"
+    },
+    {
       title: "Where 'where' should be nowhere",
       href: "posts/where",
       keywords: ['vocabulary','Bahasa Indonesia'],
