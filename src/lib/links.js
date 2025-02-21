@@ -1,5 +1,11 @@
 export const links = [
     {
+      title: "Captive in 'captivity'",
+      href: "posts/captivity",
+      keywords: ['vocabulary','zoos','word forms'],
+      description: "Demonstrating different forms of the word 'captive'"
+    },
+    {
       title: "Unlike 'rather than'",
       href: "posts/rather-than",
       keywords: ['vocabulary','Bahasa Indonesia','compare contrast'],
