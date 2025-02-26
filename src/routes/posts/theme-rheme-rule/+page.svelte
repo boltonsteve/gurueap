@@ -77,7 +77,7 @@
 
     <p class="font-weight-bold">In the following two paragraphs, circle it or this as appropriate.</p>
 
-    <p>The head-neck-back relationship is an important part if Alexander Technique. In children <Select count="4" options="it,this" /> remains the same when the child is sitting or standing, whereas in adults <Select count="5" options="it,this" /> changes as the adult moves from a standing to a sitting position. Alexander hypothesised that <Select count="6" options="this,it" /> might cause back problems in adult humans.</p>
+    <p>The head-neck-back relationship is an important part of Alexander Technique. In children <Select count="4" options="it,this" /> remains the same when the child is sitting or standing, whereas in adults <Select count="5" options="it,this" /> changes as the adult moves from a standing to a sitting position. Alexander hypothesised that <Select count="6" options="this,it" /> might cause back problems in adult humans.</p>
 
     <p>Another important feature of Alexander Technique is inhibition. <Select count="7" options="This,It" /> is the attempt to 'forget' bad use of the body before exercising 'correct' use. <Select count="8" options="It,This" /> involves, for example, telling yourself to ‘not stand’ before standing. Not surprisingly, <Select count="9" options="this,it" /> is usually quite confusing for Alexander Technique beginners!</p>
 
