@@ -15,11 +15,11 @@
 
     <h1>Captive and captivating in captivity</h1>
 
-    <div class="alert alert-danger font-italic">It is not necessary to capture a manner of animals from natural environment in one place like a <span class="text-danger font-weight-bold">captivated</span> area.</div>
+    <div class="alert alert-danger font-italic">It is not good to capture animals from the natural environment and put them in one place like a <span class="text-danger font-weight-bold">captivated</span> area.</div>
 
     <p>To make this gramatically correct, a different word form is needed:</p>
 
-    <div class="alert alert-success font-italic">It is not necessary to capture a manner of animals from natural environment in one place like a <span class="text-success font-weight-bold">captivity</span> area.</div>
+    <div class="alert alert-success font-italic">It is not good to capture animals from the natural environment and put them in one place like a <span class="text-success font-weight-bold">captivity</span> area.</div>
 
     <p>It is unusual to refer to places like zoos as 'captivity areas'. However, there are several forms of the same word that can be useful when talking about animals.</p>
 
