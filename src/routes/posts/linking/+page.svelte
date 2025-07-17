@@ -21,6 +21,7 @@ const toggleModal = () => {
 
 onMount(() => {
     modalBody = document.getElementById('modal').innerHTML;
+    updateOutput();
 });
 
 function elision() {
@@ -166,6 +167,8 @@ const clearInput = () => {
 const updateOutput = () => {
     update_output();
 }
+
+/* updateOutput(); */
 
 </script>
 
