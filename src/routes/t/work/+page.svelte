@@ -3,8 +3,6 @@
 import Multiplayer from '../../components/Multiplayer.svelte'
 
 let qa = [
-
-
     {
         q: [
             '<div>is interesting about job your what</div>'

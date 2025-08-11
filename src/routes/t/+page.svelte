@@ -31,6 +31,11 @@
 
         <div>
 
+            <h3>Individual study program</h3>
+            <ul>
+                <li><a href="../t/work" target="_blank">work questions</a><br><span class="penjelasan">multiplayer game: 20 work-related questions, jumbled</span>
+            </ul>
+
             <h3>Boardwork</h3>
             <ul>
                 <li><a href="../t/independent-subordinate" target="_blank">independent subordinate</a><br><span class="penjelasan">using subordinating conjunctions to join independent clauses</span>
@@ -97,6 +102,9 @@
             </ul>
             <ul>
                 <li><a href="../t/questions" target="_blank">question forms</a><br><span class="penjelasan">question form practice</span>
+            </ul>
+            <ul>
+                <li><a href="../t/articles-quiz" target="_blank">articles - quiz</a><br><span class="penjelasan">quiz</span>
             </ul>
             <ul>
                 <li><a href="../t/articles-error-correction" target="_blank">articles - error correction</a><br><span class="penjelasan">correcting errors in article use</span>
