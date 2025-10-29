@@ -9,7 +9,7 @@ let qa = [
             'Computers are more a hindrance than a help.'
         ],
         a:[
-            'Computers can be more a hindrance than a help.'
+            'Computers can sometimes be more a hindrance than a help.'
         ]
     },
     {
